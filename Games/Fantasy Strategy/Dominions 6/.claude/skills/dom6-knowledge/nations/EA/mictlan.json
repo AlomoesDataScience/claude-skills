@@ -1,0 +1,135 @@
+{
+ "description": "Mictlan isan ancient tribal empire that has been isolated for centuries. The foul practices of the priest-kings of Mictlan have caused most of their neighbors to leave or face slavery and blood sacrifice. Since the dawn of the kingdom, blood has been spilled in the temples of the capital to feed the waning powers of the Hungry God. The armies are mainly composed of slaves from newly conquered lands. The mage-priests of Mictlan celebrate the liwo Faces and the two Dominions of the Hungry God, namely the Sun and the Moon, the Rain and the Forest. They are all skilled blood mages.",
+ "features": {
+  "Race": "Humans, prefers Heat scale +1",
+  "Military": "Light infantry with slings and javelins, tribal kings can levy slaves, sacred Jaguar and Eagle Warriors",
+  "Magic": "Blood, Fire, Astral, Nature, Water",
+  "Priests": "Powerful, can perform blood sacrifices, Dominion does not spread unless blood is sacrificed",
+  "Scales & Blesses": "Turmoil limit +1, Heat limit +1, Bless points +3",
+  "Buildings": "Primitive Fortified Cities"
+ },
+ "commanders": 8,
+ "units": 9,
+ "sites": 0,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    338,
+    546,
+    366,
+    579
+   ],
+   [
+    401,
+    543,
+    426,
+    579
+   ],
+   [
+    467,
+    543,
+    487,
+    579
+   ],
+   [
+    531,
+    543,
+    548,
+    579
+   ],
+   [
+    589,
+    541,
+    609,
+    579
+   ],
+   [
+    650,
+    541,
+    670,
+    579
+   ],
+   [
+    712,
+    541,
+    731,
+    579
+   ],
+   [
+    772,
+    540,
+    792,
+    579
+   ]
+  ],
+  "units": [
+   [
+    338,
+    647,
+    365,
+    677
+   ],
+   [
+    399,
+    646,
+    426,
+    677
+   ],
+   [
+    460,
+    645,
+    487,
+    677
+   ],
+   [
+    524,
+    645,
+    548,
+    677
+   ],
+   [
+    584,
+    642,
+    609,
+    677
+   ],
+   [
+    648,
+    641,
+    670,
+    677
+   ],
+   [
+    707,
+    628,
+    744,
+    667
+   ],
+   [
+    767,
+    646,
+    792,
+    677
+   ],
+   [
+    828,
+    645,
+    853,
+    677
+   ]
+  ]
+ },
+ "window": [
+  312,
+  55,
+  1607,
+  852
+ ],
+ "ocr_score": 0.063,
+ "name": "Mictlan, Reign of Blood",
+ "era": "EA",
+ "read": "2026-10-26",
+ "id": "25",
+ "inspector": "=== nation 25: EA Mictlan, Reign of Blood\nEA Mictlan - Reign of Blood\nNation #:25\n+2F+1W+1S+1N+3B\n[wiki]\ncommanders: #729 Scout, #730 Tribal King, #731 Mictlan Priest, #1361 Nahualli\nunits: #721 Warrior, #722 Warrior, #723 Warrior, #724 Warrior, #860 Feathered Warrior, #1882 Moon Warrior, #727 Jaguar Warrior\ncapital-only commanders: #732 Priest King, #733 Rain Priest, #734 Moon Priest, #735 High Priest of the Sun\ncapital-only units: #726 Eagle Warrior, #725 Sun Warrior\nheroes: #933 “Mictlipoctli“ - King of Legends, #936 “Tepeyocatl“ - Eagle Priest\npretenders: #603 Teotl of Rain, #604 Teotl of the Night, #958 Colossal Head, #2434 Teteo Inan, #2442 Teotl of War, #2443 Teotl of the Sky, #2444 Teotl of the Underworld, #2461 Statue of the Bloody Mother, #2755 Hun Came, #2756 Bolon-ti-ku, #2764 Hun Balam, #2777 Demon Macaw, #3394 Serpent of the Underworld, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #269 Wyrm, #606 Great Mother, #653 Serpent King, #657 Monolith, #857 Smoking Mirror, #3876 Sacred Geyser\nstart sites: #30 Temple of the Land, #31 Temple of the Rain, #32 Temple of the Moon, #33 High Temple of the Sun\nnational spells: #504 Summon Jaguar Toads, #505 Summon Jaguars, #506 Summon Jade Serpents, #507 Summon Monster Toad, #508 Contact Couatl, #509 Summon Tlaloque, #510 Bind Beast Bats, #511 Bind Jaguar Fiends, #512 Contact Civateteo, #513 Bind Tzitzimitl, #514 Contact Tlahuelpuchi, #515 Contact Onaqui, #516 Rain of Jaguars\nhome realms: 10, 6",
+ "image": "img/mictlan.jpg"
+}

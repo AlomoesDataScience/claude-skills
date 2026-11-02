@@ -1,0 +1,191 @@
+{
+ "description": "Machaka is an old sacral kingdom divided into totemic clans. The clans follow their totemic spirits and worship them as bringers of civilization and tell myths about their interactions with men. For centuries the Lion Clan has dominated the others and formed a unified kingdom under their wise rule. The Lion Clan is blessed by Lion and they are superior to other men. The Great Men of Mababwe, called ‘Colossi’ by Arcoscephalean historians, have ruled. the plains since Hyena was coerced to teach metalworking to men and Rhino was defeated by spears longer than his. From Great Mababwe, the semi-divine Colossi of the Lion Clan rule their lesser kin as sacred Kings and Queens. There are many totemic clans, but some have been more influential. Hyena, Rhino, Elephant and Spider all serve Lion with their totemic masters’ skills and guidance. Recent contact with Berytos and other nations has seen the rise of ambition among the Colossi royalty and the Lion Kings are preparing for the Awakening of Lion.",
+ "features": {
+  "Race": "Humans and Colossi, prefers Heat scale +2",
+  "Military": "Infantry, poison archers, spider riders, gnu cavalry, war lions, elephants",
+  "Magic": "Fire, Earth, Death, Nature, Glamour",
+  "Priests": "Average",
+  "Scales & Blesses": "Heat limit +1",
+  "Buildings": "Standard Forts"
+ },
+ "commanders": 11,
+ "units": 13,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    406,
+    624,
+    426,
+    652
+   ],
+   [
+    479,
+    611,
+    494,
+    652
+   ],
+   [
+    518,
+    604,
+    565,
+    655
+   ],
+   [
+    601,
+    615,
+    617,
+    652
+   ],
+   [
+    650,
+    625,
+    670,
+    647
+   ],
+   [
+    708,
+    615,
+    726,
+    630
+   ],
+   [
+    768,
+    612,
+    790,
+    652
+   ],
+   [
+    835,
+    615,
+    851,
+    652
+   ],
+   [
+    891,
+    615,
+    914,
+    646
+   ],
+   [
+    958,
+    613,
+    977,
+    652
+   ],
+   [
+    1016,
+    616,
+    1039,
+    652
+   ]
+  ],
+  "units": [
+   [
+    409,
+    721,
+    424,
+    750
+   ],
+   [
+    470,
+    713,
+    484,
+    750
+   ],
+   [
+    524,
+    717,
+    550,
+    750
+   ],
+   [
+    592,
+    726,
+    605,
+    737
+   ],
+   [
+    652,
+    716,
+    678,
+    750
+   ],
+   [
+    719,
+    729,
+    734,
+    750
+   ],
+   [
+    765,
+    705,
+    800,
+    750
+   ],
+   [
+    826,
+    706,
+    861,
+    750
+   ],
+   [
+    884,
+    680,
+    939,
+    751
+   ],
+   [
+    939,
+    680,
+    1003,
+    751
+   ],
+   [
+    1003,
+    680,
+    1049,
+    751
+   ],
+   [
+    1049,
+    680,
+    1124,
+    751
+   ],
+   [
+    1134,
+    706,
+    1161,
+    750
+   ]
+  ],
+  "sites": [
+   [
+    349,
+    802,
+    394,
+    842
+   ],
+   [
+    394,
+    802,
+    440,
+    842
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1608,
+  926
+ ],
+ "ocr_score": 0.063,
+ "name": "Machaka, Lion Kings",
+ "era": "EA",
+ "read": "2026-10-26",
+ "id": "28",
+ "inspector": "=== nation 28: EA Machaka, Lion Kings\nEA Machaka - Lion Kings\nNation #:28\n+1F+2E+1D+1N+1G\n[wiki]\ncommanders: #2288 Machaka Scout, #2289 Rhino Clan Commander, #2290 Lion Clan Commander, #4134 Gnu Clan Commander, #2291 Voice of Lion, #2292 Hyena Clan Witch Doctor, #2293 Bouda, #2310 Voice of Spider, #2403 Spider Clan Witch Doctor\nunits: #2126 Pygmy, #2298 Machaka Militia, #2299 Bird Clan Archer, #2300 Machaka Warrior, #2303 Hyena Clan Warrior, #2304 Rhino Clan Warrior, #2305 Lion Clan Warrior, #2306 War Lion, #4133 Gnu Clan Cavalry, #2307 Elephant Rider\ncapital-only commanders: #2295 Spider Clan Sorcerer, #2297 Lion Queen, #2296 Lion King\ncapital-only units: #2301 Spider Clan Archer, #2302 Spider Clan Warrior, #2308 Spider Rider, #2309 Lion Warrior\nheroes: #952 “Abasi“ - Hero, #953 “Yasini“ - King Triumphant, #946 “Ainra“ - Lady of Spiders, #1426 “Mwaka“ - Crowned Ape, #1706 “Mchumba“ - Ape Oracle\npretenders: #159 Monument, #384 Neter of Crafts, #385 Neteret of Joy, #386 Neter of the Sun, #387 Neteret of Many Names, #388 Neter of Chaos, #395 Lich Queen, #608 Phoenix, #653 Serpent King, #654 Serpent King, #2445 Neter of the Underworld, #2446 Neter of Kings, #2464 Neter of the Moon, #2790 Myrmecoleon, #2792 Solar Serpent, #2793 Serpent of Chaos, #2797 Hieracosphinx, #2798 Criosphinx, #2799 Wadjet, #2958 Golden Lion, #3651 God Spider, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #269 Wyrm, #606 Great Mother, #655 Scorpion King, #657 Monolith, #957 Lord of The Desert Sun, #978 Great Black Bull, #979 Great White Bull, #1025 Divine Glyph, #1097 Lord of The Summer Plague, #1346 Colossal Fetish, #2138 Sphinx, #2426 Bouda Father, #2786 Celestial Gryphon, #2787 Celestial Lion, #2788 Man-Eater, #3328 God Block, #3329 Betyl of the Sun, #3330 Betyl of Writing, #3331 Betyl of the Stars, #3369 Ilahat of Fate, #3370 Ilahat of Might, #3386 Ilah of the Sky, #3387 Ilah of the Sacred Mountain, #3388 Ilah of the Moon, #3661 Elephant Idol, #3876 Sacred Geyser\nstart sites: #153 Forest of Spider, #154 Great Mababwe\nnational spells: #340 Herd of Elephants, #343 Weavers of the Wood, #956 Pride of Lions, #1473 Herd of Gnus\nhome realms: 10, 7",
+ "image": "img/machaka.jpg"
+}

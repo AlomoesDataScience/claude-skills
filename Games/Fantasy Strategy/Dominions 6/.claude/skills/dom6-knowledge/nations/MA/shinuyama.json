@@ -1,0 +1,167 @@
+{
+ "description": "When the entrance to the Netherworld closed, the Oni became fewer and fewer. Their Bakemono slaves and human servants rebelled, and when the last of the Dai Oni died, the realm was taken over by Bakemono Kings. Human smiths were forced to reveal the secrets of metalcraft and the Bakemono have become ready to conquer the lowlands from the humans. The Bakemono still live in a tribal society ruled by the strongest and most powerful of their kin. The Bakemono are a diverse kind. Huge lumbering O-Bakemono, proud Dai-Bakemono, ghostly apparitions and shapeshifting animals of the enchanted forests all heed the call of the Bakemono Kings and the Awakening God. National G-eatures",
+ "features": {
+  "Race": "Bakemono. Lesser bakemonos rebated in mountain.",
+  "Military": "Light infantry, medium infantry, heavy infantry. Kappas able to enter the sea, supernatural commanders. No sacred troops",
+  "Magic": "Death, Fire, Earth, Water, Nature. Many national summons",
+  "Priests": "Weak",
+  "Scales & Blesses": "Turmoil limit +1, Magic limit +1",
+  "Buildings": "Primitive Forts, cave forts increase gold/resources/rec.p. by 15%"
+ },
+ "commanders": 9,
+ "units": 12,
+ "sites": 1,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    348,
+    573,
+    363,
+    595
+   ],
+   [
+    465,
+    566,
+    486,
+    595
+   ],
+   [
+    531,
+    574,
+    546,
+    595
+   ],
+   [
+    589,
+    565,
+    609,
+    589
+   ],
+   [
+    654,
+    550,
+    673,
+    595
+   ],
+   [
+    718,
+    562,
+    729,
+    573
+   ],
+   [
+    771,
+    569,
+    790,
+    595
+   ],
+   [
+    832,
+    562,
+    851,
+    590
+   ],
+   [
+    888,
+    550,
+    924,
+    596
+   ]
+  ],
+  "units": [
+   [
+    346,
+    672,
+    362,
+    693
+   ],
+   [
+    409,
+    672,
+    424,
+    693
+   ],
+   [
+    468,
+    672,
+    485,
+    693
+   ],
+   [
+    528,
+    671,
+    546,
+    693
+   ],
+   [
+    590,
+    672,
+    607,
+    693
+   ],
+   [
+    651,
+    662,
+    669,
+    694
+   ],
+   [
+    712,
+    663,
+    730,
+    694
+   ],
+   [
+    774,
+    671,
+    793,
+    693
+   ],
+   [
+    832,
+    663,
+    854,
+    687
+   ],
+   [
+    896,
+    648,
+    912,
+    675
+   ],
+   [
+    953,
+    655,
+    977,
+    689
+   ],
+   [
+    1013,
+    652,
+    1046,
+    685
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    745,
+    388,
+    784
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  869
+ ],
+ "ocr_score": 0.08,
+ "name": "Shinuyama, Land of the Bakemono",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "70",
+ "inspector": "=== nation 70: MA Shinuyama, Land of the Bakemono\nMA Shinuyama - Land of the Bakemono\nNation #:70\n+1F+1W+1E+2D\n[wiki]\ncommanders: #1963 Bakemono Scout, #2467 Bakemono Chief, #1313 Bandit Leader, #1398 Bakemono General, #1531 Kappa Chief, #1436 Noppera-bo, #1549 Shuten-doji, #1429 Uba, #1608 Bakemono Shaman, #1427 Bakemono Sorcerer\nunits: #1311 Bandit, #1312 Bandit, #1393 Bakemono-Sho, #1394 Bakemono-Sho, #1395 Bakemono Archer, #1390 Bakemono-Sho, #1391 Bakemono Archer, #1392 Bakemono Warrior, #1550 Kappa, #1399 O-bakemono, #1396 Dai Bakemono, #1397 Dai Bakemono\nunderwater commanders: #1531 Kappa Chief\nunderwater units: #1550 Kappa\nmountain commanders: #1963 Bakemono Scout, #2467 Bakemono Chief, #1608 Bakemono Shaman\nmountain units: #1393 Bakemono-Sho, #1394 Bakemono-Sho, #1395 Bakemono Archer\nheroes: #1670 “Yukinaga“ - Heart Hider, #3246 “Sojobo“ - Tengu King, #3247 “Tamamo-no-Mae“ - Kitsune, #3249 “Zennyo Ryuo“ - Dragon of the Cave\npretenders: #905 Jade Emperor, #1339 Nyorai, #1345 Celestial General, #2316 Dragon King, #2318 Celestial Dragon, #2465 Statue of War, #2556 Celestial Carp, #3072 Kami of the Sun, #3073 Kami of the Moon, #3074 Kami of Storms, #3088 Dharmapala of the Underworld, #3928 White Tiger of the West, #3929 Azure Dragon of the East, #3931 Vermilion Bird of the South, #3932 Black Tortoise of the North, #179 Master Lich, #180 Demilich, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3642 Great Sage, #3711 Storm Father, #250 Frost Father, #608 Phoenix, #657 Monolith, #1428 Bakemono Kunshu, #2447 Idol of Men, #2448 Idol of Beasts, #2449 Idol of Sorcery, #3651 God Spider, #3876 Sacred Geyser\nstart sites: #106 Mount Shinuyama\nnational spells: #299 Summon Okami, #300 Contact Bakeneko, #303 Summon Omukade, #307 Contact Mujina, #308 Contact Tanuki, #311 Summon Gozu Mezu, #312 Contact Jorogumo, #586 Summon Ko-Oni, #588 Summon Ao-Oni, #589 Summon Karasu Tengus, #590 Summon Aka-Oni, #591 Summon Konoha Tengus, #592 Ghost General, #593 Summon Oni, #594 Contact Dai Tengu, #595 Contact Nushi, #596 Summon Kuro-Oni, #597 Summon Oni General, #598 Contact Kitsune, #599 Summon Dai Oni, #957 Ambush of Tigers\nhome realms: 10, 4",
+ "image": "img/shinuyama.jpg"
+}

@@ -1,0 +1,167 @@
+{
+ "description": "When the Warlocks began their horrible breeding experiments, they unknowingly spelled the doom of Abysia. But it was not the Demonbreds that posed la threat. The real danger came from the Humanbreds, who were multiplying like vermin and swarming the kingdom. Now the heat of the Smouldercone is faltering with the declining number of pure Abysians and magic is seeping from the land. Other sources of magic are needed and the Blood Cult of ancient times is renewed with fervor. Pureblooded Abysians, now rare, serve as priests and sacred warriors. eee j (National -eatures",
+ "features": {
+  "Race": "Humanbred Abysians. Fire resistance, prefers Heat scale +2, wasteland survival. Death and Growth scales have half the standard effect on income and population growth and no effect on supplies.",
+  "Military": "Light and heavy infantry, axe throwers",
+  "Magic": "Fire, Blood, Astral, Death, some Earth",
+  "Priests": "Powerful, can perform blood sacrifices",
+  "Scales & Blesses": "Heat limit +1, Death limit +1",
+  "Buildings": "Standard Forts, forts reduce heat scale deaths by 1 step"
+ },
+ "commanders": 9,
+ "units": 9,
+ "sites": 4,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    348,
+    564,
+    366,
+    598
+   ],
+   [
+    403,
+    565,
+    425,
+    595
+   ],
+   [
+    472,
+    567,
+    488,
+    595
+   ],
+   [
+    714,
+    564,
+    730,
+    595
+   ],
+   [
+    777,
+    565,
+    793,
+    595
+   ],
+   [
+    836,
+    566,
+    854,
+    595
+   ],
+   [
+    899,
+    565,
+    913,
+    595
+   ],
+   [
+    960,
+    565,
+    974,
+    595
+   ],
+   [
+    1017,
+    564,
+    1036,
+    596
+   ]
+  ],
+  "units": [
+   [
+    354,
+    663,
+    368,
+    693
+   ],
+   [
+    403,
+    663,
+    425,
+    693
+   ],
+   [
+    464,
+    663,
+    486,
+    693
+   ],
+   [
+    528,
+    663,
+    547,
+    693
+   ],
+   [
+    584,
+    660,
+    609,
+    696
+   ],
+   [
+    647,
+    660,
+    669,
+    696
+   ],
+   [
+    708,
+    663,
+    729,
+    693
+   ],
+   [
+    763,
+    660,
+    793,
+    696
+   ],
+   [
+    831,
+    663,
+    851,
+    693
+   ]
+  ],
+  "sites": [
+   [
+    350,
+    753,
+    376,
+    778
+   ],
+   [
+    376,
+    753,
+    403,
+    778
+   ],
+   [
+    454,
+    759,
+    470,
+    778
+   ],
+   [
+    470,
+    759,
+    487,
+    778
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  869
+ ],
+ "ocr_score": 0.106,
+ "name": "Abysia, Blood of Humans",
+ "era": "LA",
+ "read": "2026-10-26",
+ "id": "104",
+ "inspector": "=== nation 104: LA Abysia, Blood of Humans\nLA Abysia - Blood of Humans\nNation #:104\n+4F\n[wiki]\ncommanders: #1964 Slayer Newt, #1965 Slayer Worm, #992 Abysian Commander, #1091 Sanguine Acolyte, #991 Newt, #1969 Anathemant Salamander, #1092 Sanguine Anathemant\nunits: #1090 Abysian Axe Thrower, #984 Abysian Light Infantry, #985 Abysian Light Infantry, #986 Abysian Heavy Infantry, #987 Abysian Heavy Infantry, #988 Abysian Heavy Infantry, #989 Abysian Heavy Infantry, #1972 Warbred\ncapital-only commanders: #1970 Anathemant Dragon, #1966 Slayer Anathemant, #1967 Slayer Sanguine, #923 Warlock Apprentice, #89 Warlock\ncapital-only units: #990 Guardian of the Pyre\nheroes: #581 “Ba'al Chozron“ - Anathemant Warlock, #867 “Chuzrael“ - Slayer, #1968 “Ba'an Rachis“ - Slayer Dragon\npretenders: #159 Monument, #384 Neter of Crafts, #385 Neteret of Joy, #386 Neter of the Sun, #387 Neteret of Many Names, #388 Neter of Chaos, #395 Lich Queen, #608 Phoenix, #653 Serpent King, #654 Serpent King, #2445 Neter of the Underworld, #2446 Neter of Kings, #2464 Neter of the Moon, #2790 Myrmecoleon, #2792 Solar Serpent, #2793 Serpent of Chaos, #2797 Hieracosphinx, #2798 Criosphinx, #2958 Golden Lion, #3651 God Spider, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #120 Moloch, #269 Wyrm, #486 Great Warlock, #655 Scorpion King, #957 Lord of The Desert Sun, #1025 Divine Glyph, #1097 Lord of The Summer Plague, #1384 Solar Disc, #2137 Urmahlullu, #2138 Sphinx, #2608 Azi, #2610 Angra Mainyu, #2788 Man-Eater, #3328 God Block, #3329 Betyl of the Sun, #3330 Betyl of Writing, #3331 Betyl of the Stars, #3346 Bronze Colossus, #3369 Ilahat of Fate, #3370 Ilahat of Might, #3386 Ilah of the Sky, #3387 Ilah of the Sacred Mountain, #3388 Ilah of the Moon, #3876 Sacred Geyser\nstart sites: #38 Temple of the Everburning Pyre, #76 Temple Sanguine, #39 The Smouldercone\nnational spells: #315 Summon Abysian Ancestors, #316 Reawaken Fossil, #318 Contact Scorpion Man, #319 Inner Furnace, #320 Infernal Breeding, #690 Liquid Flames of Rhuax, #850 Hellscape, #956 Pride of Lions\nhome realms: 10, 7",
+ "image": "img/abysia.jpg"
+}

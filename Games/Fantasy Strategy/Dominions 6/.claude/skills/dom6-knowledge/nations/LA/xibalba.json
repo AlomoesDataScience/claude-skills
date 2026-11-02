@@ -1,0 +1,173 @@
+{
+ "description": "Xibalba is a vast realm of dark caverns beneath the forests of Mictlan. Living in the caverns were the bat people, Zotz, but that changed when the cavernous realm was struck by a great disaster. A star fell into the ocean and a great deluge flooded the caves of Xibalba. The Zotz were almost wiped out and their realm was conquered by atlantian refugees. For a long time the toad people ruled Xibalba and became powerful. Eventually the Bacabob left the caverns to conquer the sun-lit world. There they met Mictlan and the Lawgiver. The humans were more numerous and while the Xibalban Bacabob were mighty, they could not prevent the death of their kin. Slowly the Xibalbans were decimated and the Bacabob withdrew into the flooded city and fell into a centennial torpor. When the caves began to dry up the Zotz started to return in numbers. In the still waterfilled depths of Xibalba the Zotz priests found and unwittingly awoke the Bacabob. Now the Zotz once more inhabit their ancestral home, but serve the divinities of subterranean waters and the Awakening God. National G-ecatures",
+ "features": {
+  "Race": "Swarms of cheap, flying, stealthy cave dwellers, a few Muuch toad men remain. Prefers Heat scale +1",
+  "Military": "Flying, stealthy light infantry, amphibious infantry",
+  "Magic": "Water, Death, Earth, Blood, Nature and some Air",
+  "Priests": "Powerful, can perform blood sacrifices",
+  "Scales & Blesses": "Sloth limit +1, Heat limit +1",
+  "Buildings": "Very Primitive Forts, cave forts increase gold/resources/rec.p. by 10%"
+ },
+ "commanders": 10,
+ "units": 11,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    344,
+    659,
+    373,
+    681
+   ],
+   [
+    411,
+    659,
+    434,
+    680
+   ],
+   [
+    469,
+    659,
+    495,
+    680
+   ],
+   [
+    530,
+    645,
+    552,
+    682
+   ],
+   [
+    587,
+    656,
+    615,
+    685
+   ],
+   [
+    649,
+    654,
+    679,
+    680
+   ],
+   [
+    709,
+    660,
+    740,
+    680
+   ],
+   [
+    769,
+    656,
+    802,
+    684
+   ],
+   [
+    814,
+    635,
+    865,
+    682
+   ],
+   [
+    919,
+    645,
+    952,
+    682
+   ]
+  ],
+  "units": [
+   [
+    338,
+    755,
+    395,
+    782
+   ],
+   [
+    395,
+    755,
+    452,
+    782
+   ],
+   [
+    452,
+    755,
+    508,
+    782
+   ],
+   [
+    508,
+    755,
+    565,
+    782
+   ],
+   [
+    565,
+    755,
+    622,
+    782
+   ],
+   [
+    653,
+    745,
+    736,
+    783
+   ],
+   [
+    774,
+    748,
+    796,
+    780
+   ],
+   [
+    824,
+    745,
+    872,
+    783
+   ],
+   [
+    872,
+    745,
+    919,
+    783
+   ],
+   [
+    979,
+    745,
+    1027,
+    783
+   ],
+   [
+    1027,
+    745,
+    1075,
+    783
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    830,
+    390,
+    869
+   ],
+   [
+    390,
+    830,
+    432,
+    869
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  954
+ ],
+ "ocr_score": 0.074,
+ "name": "Xibalba, Return of the Zotz",
+ "era": "LA",
+ "read": "2026-10-26",
+ "id": "112",
+ "inspector": "=== nation 112: LA Xibalba, Return of the Zotz\nLA Xibalba - Return of the Zotz\nNation #:112\n+1W+1E+2D\n[wiki]\ncommanders: #2782 Batab, #2675 Ajaw, #2676 Ajaw Kan Ek', #2750 Chilan, #2753 Ah Itz, #2751 Way, #2748 Ah Ha'\nunits: #2738 Zotz Warrior, #2739 Zotz Warrior, #2740 Zotz Dart Thrower, #2741 Zotz Guard, #2742 Zotz Guard, #2744 Sak Muuch Dart Thrower, #2745 Sak Muuch Warrior, #2746 Sak Muuch Warrior\ncapital-only commanders: #2749 Bacab, #2754 Camazotz\ncapital-only units: #2747 Wo' Muuch, #2743 Obsidian Warrior\nunderwater commanders: #2891 Lakam Ha' Batab, #2748 Ah Ha'\nunderwater units: #2889 Lakam Ha' Warrior, #2890 Lakam Ha' Warrior\nforest commanders: #2782 Batab, #2751 Way\nforest units: #2738 Zotz Warrior, #2739 Zotz Warrior\ncave commanders: #2782 Batab, #2750 Chilan\ncave units: #2738 Zotz Warrior, #2739 Zotz Warrior\nheroes: #2763 “Mam Lum“ - Grandfather Earth\npretenders: #603 Teotl of Rain, #604 Teotl of the Night, #958 Colossal Head, #2434 Teteo Inan, #2442 Teotl of War, #2443 Teotl of the Sky, #2444 Teotl of the Underworld, #2461 Statue of the Bloody Mother, #2755 Hun Came, #2756 Bolon-ti-ku, #2764 Hun Balam, #2777 Demon Macaw, #3394 Serpent of the Underworld, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #109 Dagon, #269 Wyrm, #606 Great Mother, #653 Serpent King, #657 Monolith, #2853 Ghost King, #3192 Great Camazotz, #3639 Crystal Soul, #3876 Sacred Geyser\nstart sites: #180 The Flooded City, #181 The Obsidian Cavern\nnational spells: #504 Summon Jaguar Toads, #505 Summon Jaguars, #506 Summon Jade Serpents, #507 Summon Monster Toad, #510 Bind Beast Bats, #511 Bind Jaguar Fiends, #515 Contact Onaqui, #516 Rain of Jaguars, #518 Summon Sacred Scorpion, #519 Break the First Soul, #520 Break the Second Soul, #521 Break the Third Soul, #522 Break the Fourth Soul, #523 Gift of the First Soul, #524 Gift of the Second Soul, #525 Gift of the Third Soul, #526 Gift of the Fourth Soul, #527 Summon Balam, #528 Summon Chaac\nhome realms: 10, 6",
+ "image": "img/xibalba.jpg"
+}

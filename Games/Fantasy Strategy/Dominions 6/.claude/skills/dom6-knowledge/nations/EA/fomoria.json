@@ -1,0 +1,178 @@
+{
+ "description": "The bountiful land of Fomoria was claimed by giants who once guarded the dark and stormy ocean realm of the drowned dead. With death ever near, their loyalties had changed and their malice grown. With the ascendancy of a previous Pantokrator, they were punished for their sins and banished from their dark home. The full effects of the Curse became evident when the Fomorians settled in a fertile land. Their offspring were short and cursed with monstrous appearance. The few surviving Fomorian giants saw their once proud race degenerate and die. Then came the Invasions. Partholonians, Nemedians, Fir Bolg and Tuatha all claimed the land of Fomoria. Twice the Fomorians were all but defeated by foreign magic, but twice they conjured a 7 plague that slew the invaders. The third wave of invaders, the Fir Bolg, accepted Fomorian rule and aided the giants in defeating the Tuatha. Now Fir Bolg compose much of the Fomorian population. Fomorians are skilled shipwrights, powerful storm crafters and have a legacy of mastery over the dead.",
+ "features": {
+  "Race": "Malformed Fomorian giants, Fir Bolg, remnant Nemedians. Ocean sailing and units able to enter the sea.",
+  "Military": "Fir Bolg infantry, Fomorian infantry, Nemedian infantry",
+  "Magic": "Air, Glamour, Death, some Water and Nature",
+  "Priests": "Mostly weak, Fomorian King of average skill",
+  "Buildings": "Giant Forts"
+ },
+ "commanders": 10,
+ "units": 12,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    348,
+    592,
+    368,
+    623
+   ],
+   [
+    397,
+    569,
+    439,
+    623
+   ],
+   [
+    470,
+    592,
+    490,
+    607
+   ],
+   [
+    529,
+    567,
+    561,
+    625
+   ],
+   [
+    590,
+    567,
+    622,
+    625
+   ],
+   [
+    657,
+    592,
+    672,
+    624
+   ],
+   [
+    712,
+    566,
+    739,
+    625
+   ],
+   [
+    775,
+    589,
+    795,
+    618
+   ],
+   [
+    833,
+    594,
+    856,
+    625
+   ],
+   [
+    890,
+    546,
+    935,
+    625
+   ]
+  ],
+  "units": [
+   [
+    342,
+    690,
+    365,
+    706
+   ],
+   [
+    411,
+    688,
+    428,
+    716
+   ],
+   [
+    468,
+    690,
+    486,
+    705
+   ],
+   [
+    525,
+    690,
+    551,
+    716
+   ],
+   [
+    579,
+    666,
+    617,
+    723
+   ],
+   [
+    640,
+    666,
+    683,
+    723
+   ],
+   [
+    700,
+    666,
+    739,
+    687
+   ],
+   [
+    718,
+    703,
+    737,
+    723
+   ],
+   [
+    761,
+    666,
+    803,
+    723
+   ],
+   [
+    829,
+    687,
+    856,
+    716
+   ],
+   [
+    883,
+    666,
+    925,
+    723
+   ],
+   [
+    934,
+    645,
+    996,
+    723
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    774,
+    394,
+    813
+   ],
+   [
+    394,
+    774,
+    440,
+    813
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  897
+ ],
+ "ocr_score": 0.082,
+ "name": "Fomoria, The Cursed Ones",
+ "era": "EA",
+ "read": "2026-10-26",
+ "id": "10",
+ "inspector": "=== nation 10: EA Fomoria, The Cursed Ones\nEA Fomoria - The Cursed Ones\nNation #:10\n+2A+1W+2D+1G\n[wiki]\ncommanders: #1811 Fir Bolg Scout, #1815 Fir Bolg Champion, #2469 Fir Bolg Druid, #1816 Fomorian Scout, #1800 Fomorian Champion, #1818 Unmarked Champion, #1819 Fomorian Druid\nunits: #1820 Fir Bolg Militia, #1814 Fir Bolg Slinger, #1812 Fir Bolg Warrior, #1813 Fir Bolg Warrior, #1796 Fomorian Militia, #1797 Fomorian Javelinist, #1798 Fomorian Spearman, #1799 Fomorian Warrior\ncapital-only commanders: #1802 Fomorian King, #1791 Nemedian Champion, #1792 Nemedian Sorceress\ncapital-only units: #1817 Unmarked, #1801 Fomorian Giant, #1790 Nemedian Warrior\nheroes: #1793 “Macha“ - Nemedian Queen, #1794 “Tuan“ - Last Partholonian, #1803 “Bres“ - Uncursed, #1804 “Balor“ - High King\npretenders: #270 Arch Druid, #606 Great Mother, #657 Monolith, #779 Rams-Headed Serpent, #1378 Lord of the Forest, #2450 Horned One, #2784 Thrice Horned Boar, #2795 Dog of the Underworld, #2848 Father of the Sea, #2856 Son of the Sea, #2930 Hooded Spirit, #3076 Morrigna, #3077 Morrigna, #3078 Morrigna, #3079 Duiu of Thunder, #3080 Duiu of Farming, #3081 Duiu of War, #3082 Matrona of the Healing Spring, #3632 Mother of Storms, #3692 Great Stag, #3693 Great White Stag, #3894 Serpent of Heavenly Fires, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #250 Frost Father, #269 Wyrm, #979 Great White Bull, #1898 Fomorian Sorcerer, #1899 Fomorian God King\nstart sites: #136 Isle of Balor, #137 Rath Chimbaith\nnational spells: #438 Summon Black Dogs, #440 Summon Barghests, #442 Summon Morrigan, #443 Dance of the Morrigans, #444 Curse of Balor, #446 xxx, #1294 Geas\nhome realms: 10, 2",
+ "image": "img/fomoria.jpg"
+}

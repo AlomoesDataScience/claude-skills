@@ -1,0 +1,185 @@
+{
+ "description": "Mictlan is an ancient tribal empire that has been isolated for centuries. The foul practices of the priest-kings of Mictlan have caused most of their neighbors to leave or face slavery and blood sacrifice. Since the dawn of the kingdom, blood has been spilled in the temples of the capital. Now a new era has dawned and the isolation is broken with the coming of the Lawgiver. The Blood Cult has been abolished and the priests now follow the Lawgiver. Isolation has made Mictlan a backward nation and its warriors use archaic weaponry and armor. The armies are mainly composed of slaves from newly conquered lands. The mage-priests of Mictlan celebrate the two Faces and the two Dominions of the Lawgiver, namely the Sun and the Moon, the Rain and the Forest. National Features",
+ "features": {
+  "Race": "Humans, prefers Heat scale +1",
+  "Military": "Light infantry with slings and javelins, tribal kings can levy slaves, sacred Eagle and Jaguar Warriors",
+  "Magic": "Air, Fire, Astral, Nature, Water",
+  "Priests": "Powerful",
+  "Scales & Blesses": "Heat limit +1, Bless points +3",
+  "Buildings": "Primitive Fortified Cities"
+ },
+ "commanders": 11,
+ "units": 9,
+ "sites": 5,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    338,
+    595,
+    366,
+    625
+   ],
+   [
+    401,
+    589,
+    425,
+    616
+   ],
+   [
+    468,
+    590,
+    487,
+    625
+   ],
+   [
+    529,
+    587,
+    548,
+    625
+   ],
+   [
+    592,
+    590,
+    609,
+    625
+   ],
+   [
+    651,
+    587,
+    670,
+    625
+   ],
+   [
+    712,
+    588,
+    731,
+    625
+   ],
+   [
+    773,
+    588,
+    792,
+    625
+   ],
+   [
+    834,
+    585,
+    853,
+    625
+   ],
+   [
+    895,
+    584,
+    914,
+    625
+   ],
+   [
+    954,
+    584,
+    988,
+    603
+   ]
+  ],
+  "units": [
+   [
+    338,
+    692,
+    366,
+    722
+   ],
+   [
+    399,
+    693,
+    427,
+    722
+   ],
+   [
+    459,
+    691,
+    488,
+    722
+   ],
+   [
+    524,
+    692,
+    547,
+    721
+   ],
+   [
+    584,
+    689,
+    607,
+    722
+   ],
+   [
+    648,
+    688,
+    669,
+    725
+   ],
+   [
+    708,
+    675,
+    744,
+    712
+   ],
+   [
+    767,
+    689,
+    791,
+    722
+   ],
+   [
+    828,
+    691,
+    853,
+    721
+   ]
+  ],
+  "sites": [
+   [
+    350,
+    774,
+    389,
+    813
+   ],
+   [
+    389,
+    774,
+    427,
+    813
+   ],
+   [
+    427,
+    774,
+    466,
+    813
+   ],
+   [
+    466,
+    774,
+    504,
+    813
+   ],
+   [
+    504,
+    774,
+    543,
+    813
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  897
+ ],
+ "ocr_score": 0.078,
+ "name": "Mictlan, Reign of the Lawgiver",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "73",
+ "inspector": "=== nation 73: MA Mictlan, Reign of the Lawgiver\nMA Mictlan - Reign of the Lawgiver\nNation #:73\n+1F+1A+1W+1S+1N\n[wiki]\ncommanders: #729 Scout, #730 Tribal King, #1189 Mictlan Priest, #1361 Nahualli, #1888 Sky Priest\nunits: #721 Warrior, #1545 Warrior, #1546 Warrior, #1547 Warrior, #1548 Feathered Warrior, #1883 Moon Warrior, #726 Eagle Warrior\ncapital-only commanders: #1192 Moon Priest, #1193 Sun Priest, #1191 Rain Priest, #1907 High Priest of the Sky, #1190 Priest King, #1194 Couatl\ncapital-only units: #725 Sun Warrior, #727 Jaguar Warrior\nheroes: #933 “Mictlipoctli“ - King of Legends, #1884 “Topiltzin“ - Priest King, #1886 “Mixcoatl“ - Priest King\npretenders: #603 Teotl of Rain, #604 Teotl of the Night, #958 Colossal Head, #2434 Teteo Inan, #2442 Teotl of War, #2443 Teotl of the Sky, #2444 Teotl of the Underworld, #2461 Statue of the Bloody Mother, #2755 Hun Came, #2756 Bolon-ti-ku, #2764 Hun Balam, #2777 Demon Macaw, #3394 Serpent of the Underworld, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #269 Wyrm, #1896 Lawgiver, #3876 Sacred Geyser\nstart sites: #89 Temple of the Moon, #90 Temple of the Sun, #88 High Temple of the Sky and the Rain, #87 High Temple of the Land\nnational spells: #504 Summon Jaguar Toads, #505 Summon Jaguars, #506 Summon Jade Serpents, #507 Summon Monster Toad, #508 Contact Couatl, #509 Summon Tlaloque, #510 Bind Beast Bats, #511 Bind Jaguar Fiends, #512 Contact Civateteo, #513 Bind Tzitzimitl, #514 Contact Tlahuelpuchi, #515 Contact Onaqui, #516 Rain of Jaguars\nhome realms: 10, 6",
+ "image": "img/mictlan.jpg"
+}

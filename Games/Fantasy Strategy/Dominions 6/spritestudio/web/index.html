@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sprite Studio</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.min.js", "three/addons/": "./vendor/" } }
+</script>
+</head>
+<body>
+<header>
+  <strong class="brand">Sprite Studio</strong>
+  <select id="modelSel" title="Project"></select>
+  <button id="btnNew" title="Start a new project">New…</button>
+  <button id="btnImport" title="Import a Dominions sprite (.tga/.png) to re-pose, or a Sprite Studio model (.json)">Import…</button>
+  <input type="file" id="importFile" accept=".tga,.png,.bmp,.gif,.webp,.json" multiple hidden>
+  <button id="btnSave" title="Save (Ctrl+S)">Save</button>
+  <button id="btnSaveAs">Save as…</button>
+  <span class="sep"></span>
+  <button id="btnUndo" title="Undo (Ctrl+Z)">Undo</button>
+  <button id="btnRedo" title="Redo (Ctrl+Y)">Redo</button>
+  <span class="sep"></span>
+  <span id="frameTabs" class="seg"></span>
+  <span class="sep"></span>
+  <span class="seg" id="viewSeg">
+    <button data-view="3d"><span class="only3d">3D model</span><span class="only2d">Editor</span></button><button data-view="both" class="on">Both</button><button data-view="sprite">Sprite</button>
+  </span>
+  <span class="grow"></span>
+  <label class="chk" title="Re-render the sprite after every change"><input type="checkbox" id="autoRender" checked> auto-render</label>
+  <button id="btnRender" class="primary">Render sprite</button>
+  <button id="btnExport" title="Copy the rendered TGAs into a mod folder">Export…</button>
+  <button id="btnQuit" title="Close Sprite Studio (stops the local server)">Quit</button>
+  <span id="dirty" class="dirty" hidden>unsaved</span>
+</header>
+
+<aside id="left">
+  <nav class="tabs" id="leftTabs">
+    <button data-tab="parts" class="on"><span class="only3d">Parts</span><span class="only2d">Pieces</span></button><button data-tab="pose">Pose</button><button data-tab="materials">Colors</button><button data-tab="canvas">Canvas</button>
+  </nav>
+  <section data-panel="parts">
+    <div id="cutPieces" class="only2d"></div>
+    <div class="only3d">
+    <div class="row">
+      <input id="partFilter" placeholder="Filter parts…">
+    </div>
+    <div class="row">
+      <select id="addType" title="Shape to add"></select>
+      <button id="btnAdd">Add</button>
+      <button id="btnDup" title="Duplicate (Ctrl+D)">Duplicate</button>
+      <button id="btnMirror" title="Copy mirrored to the other side (L↔R)">Mirror</button>
+      <button id="btnDel" title="Delete (Del)">Delete</button>
+    </div>
+    <div class="row" title="A new bone carries the parts you put on it. It follows the selected part's bone and turns about that part's centre.">
+      <input id="newBoneName" placeholder="new bone name">
+      <button id="btnAddBone">Add bone</button>
+    </div>
+    <div id="partTree" class="tree"></div>
+    </div>
+  </section>
+  <section data-panel="pose" hidden>
+    <div id="cutPose" class="only2d"></div>
+    <div class="only3d">
+    <p class="hint">Pose for the frame selected at the top. Drag the yellow handles in the 3D view to move hands, feet and props, or use the sliders.</p>
+    <div class="row"><button id="btnCopyPose">Copy pose from other frame</button><button id="btnResetPose">Reset frame to rest</button></div>
+    <div id="poseList"></div>
+    </div>
+  </section>
+  <section data-panel="materials" hidden>
+    <div id="cutColors" class="only2d"></div>
+    <div class="only3d">
+    <div id="matList"></div>
+    <div class="row"><input id="newMatName" placeholder="new color name"><button id="btnAddMat">Add color</button></div>
+    </div>
+  </section>
+  <section data-panel="canvas" hidden>
+    <div id="cutCanvas" class="only2d"></div>
+    <div id="canvasForm" class="only3d"></div>
+  </section>
+</aside>
+
+<main id="views" class="both">
+  <div id="view2d" class="only2d">
+    <canvas id="c2d"></canvas>
+    <div class="overlay tl" id="tools2d"></div>
+  </div>
+  <div id="view3d" class="only3d">
+    <canvas id="c3d"></canvas>
+    <div class="overlay tl">
+      <button id="btnSpriteCam" title="Look through the sprite camera">Sprite camera</button>
+      <button id="btnFreeCam">Free camera</button>
+      <label class="chk"><input type="checkbox" id="showCuts" checked> cuts</label>
+      <label class="chk"><input type="checkbox" id="showBones" checked> bones</label>
+      <label class="chk" title="Show the model as a wireframe"><input type="checkbox" id="wire3d"> wire</label>
+      <span class="seg" id="gizmoSeg" title="What dragging the gizmo does"><button data-g="translate" class="on">Move</button><button data-g="rotate">Turn</button></span>
+    </div>
+    <div class="overlay bl hint">Left-drag orbit · right-drag pan · wheel zoom · click a part to select · Esc deselect</div>
+  </div>
+  <div id="viewSprite">
+    <div class="overlay tl">
+      <span class="seg" id="bgSeg"><button data-bg="game" class="on">In game</button><button data-bg="raw">Raw</button><button data-bg="checker">Checker</button></span>
+      <span class="seg" id="zoomSeg"><button data-z="4">4×</button><button data-z="6" class="on">6×</button><button data-z="8">8×</button></span>
+    </div>
+    <div class="rotbar only3d" id="rotateBar">
+      <span class="lbl">Rotate</span>
+      <button data-turn="-45" title="Turn 45° one way">⟲45</button><button data-turn="-15">⟲15</button>
+      <input type="range" id="yawSlider" min="-180" max="180" step="1" title="Turn (camera yaw)">
+      <button data-turn="15">15⟳</button><button data-turn="45">45⟳</button>
+      <span class="lbl">tilt</span><input type="range" id="pitchSlider" min="-10" max="60" step="1" title="Tilt (camera pitch)">
+      <span id="angleLbl" class="lbl"></span>
+      <button id="btnFacing" title="Back to the standard Dominions angle: facing left, three-quarter view">Reset</button>
+      <button id="btnTurntable" title="Render 8 angles side by side; click one to use it">Turntable</button>
+    </div>
+    <div id="spriteStage">
+      <div class="spriteBig"><canvas id="spriteBig"></canvas><div class="cap" id="spriteCap">not rendered yet</div></div>
+      <div class="spriteRow" id="spriteRow"></div>
+      <div class="turntable" id="turntable" hidden></div>
+    </div>
+    <div id="renderStatus" class="status"></div>
+  </div>
+</main>
+
+<aside id="right">
+  <h3><span class="only3d">Selected part</span><span class="only2d">Selected piece</span></h3>
+  <div id="inspector"><p class="hint">Click a part in the 3D view or the list.</p></div>
+</aside>
+
+<dialog id="newDlg">
+  <form method="dialog" id="newForm">
+    <h3>New project</h3>
+    <div class="field"><label>name</label><input type="text" id="newName" placeholder="e.g. sparkknight (lowercase)"></div>
+    <div class="choices" id="newKind">
+      <label><input type="radio" name="kind" value="humanoid" checked> <b>Humanoid</b> (3D) <small>a rigged person to reshape: arms and legs already posable</small></label>
+      <label><input type="radio" name="kind" value="empty"> <b>Empty</b> (3D) <small>one block to build from</small></label>
+      <label><input type="radio" name="kind" value="copy"> <b>Copy of the current project</b></label>
+      <label><input type="radio" name="kind" value="sprite"> <b>From a sprite</b> (2D) <small>cut an existing .tga/.png into pieces and re-pose it</small></label>
+    </div>
+    <div class="field" id="newStyleRow"><label>look</label><select id="newStyle"><option value="cel">cel (painted, like the nation units)</option><option value="studio">studio (shiny metal)</option></select></div>
+    <div class="field" id="newSizeRow"><label>canvas</label><select id="newSize"><option>32</option><option selected>64</option><option>128</option></select></div>
+    <div class="field" id="newFileRow" hidden><label>sprite</label><input type="file" id="newFile" accept=".tga,.png,.bmp,.gif,.webp" multiple></div>
+    <div class="field" id="newGroundRow" hidden><label></label><label class="chk"><input type="checkbox" id="newGround" checked> stand it on the ground row (feet 2 px above the bottom)</label></div>
+    <p class="hint" id="newHint"></p>
+    <div class="btns" style="justify-content:flex-end"><button value="cancel" formnovalidate>Cancel</button><button value="ok" class="primary">Create</button></div>
+  </form>
+</dialog>
+<dialog id="convDlg">
+  <form method="dialog" id="convForm">
+    <h3 id="convTitle">Convert to 3D</h3>
+    <p class="hint" id="convFiles"></p>
+    <div class="choices" id="convHow">
+      <label id="convHow2d"><input type="radio" name="how" value="2d"> <b>2D sprite</b> <small>cut it into pieces and put them on layers first (Pieces tab), then Canvas → Convert to 3D</small></label>
+      <label id="convHowLayers"><input type="radio" name="how" value="layers"> <b>3D objects, using the layers</b> <small>each layer is a slab; the top layer is nearest you; each piece becomes a bone with its pose</small></label>
+      <label><input type="radio" name="how" value="flat"> <b>3D objects, flat</b> <small>everything on one layer: every pixel becomes a block</small></label>
+    </div>
+    <div class="field" id="convGroundRow"><label>placement</label><label class="chk"><input type="checkbox" id="convGround" checked> stand it on the ground row (feet 2 px above the bottom, as Dominions expects)</label></div>
+    <div id="convOpts">
+      <div class="field"><label>look</label><select id="convLook">
+        <option value="wire">wireframe: wire in the 3D view, the sprite shows what is in front</option>
+        <option value="flat">flat colours: exactly the sprite, seen straight on</option>
+        <option value="cel">cel shaded: sides get shading when you turn it</option></select></div>
+      <div class="field" id="convGapRow"><label>layer gap</label><span class="vec"><input type="number" id="convGap" value="3" min="1" max="20" step="1"><span class="hint" style="margin:0">px between layers</span></span></div>
+      <div class="field"><label>thickness</label><span class="vec"><input type="number" id="convThick" value="2" min="1" max="20" step="1"><span class="hint" style="margin:0">px deep per block</span></span></div>
+    </div>
+    <div class="btns" style="justify-content:flex-end"><button value="cancel" formnovalidate>Cancel</button><button value="ok" class="primary" id="convOk">Create</button></div>
+  </form>
+</dialog>
+<div id="toast" hidden></div>
+<div id="errorBox" hidden></div>
+<script>
+  window.addEventListener("error", e => { const b = document.getElementById("errorBox"); b.hidden = false; b.textContent = "Error: " + e.message + " (" + (e.filename || "").split("/").pop() + ":" + e.lineno + ")"; });
+  window.addEventListener("unhandledrejection", e => { const b = document.getElementById("errorBox"); b.hidden = false; b.textContent = "Error: " + (e.reason && e.reason.message || e.reason); });
+</script>
+<script>
+  // test hook: ?wait=ms holds the page's load event so headless screenshots show the loaded state
+  const w = new URLSearchParams(location.search).get("wait");
+  if (w) document.write('<img src="/api/wait?ms=' + parseInt(w) + '" hidden>');
+</script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

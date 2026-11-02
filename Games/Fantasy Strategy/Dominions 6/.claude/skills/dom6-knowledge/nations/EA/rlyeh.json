@@ -1,0 +1,159 @@
+{
+ "description": "in the deepest of oceans lives the strange fishlike race called the Aboleths. These beings are highly intelligent and the older Aboleths called Mind Lords can enslave lesser beings by force of mind alone. Having this power means they have enslaved mermen and Deep Ones to do the daily work and to fill lup the ranks of their armies. In a deep gorge the enslaved workers have built a score of small but magnificent cities for their rulers. In this gorge live the greatest of the Aboleths.",
+ "features": {
+  "Race": "Underwater",
+  "Military": "Atlantian and Oceanian slaves, Aboleths",
+  "Magic": "Astral, Water, some Death, Earth, Glamour and Nature",
+  "Priests": "Average",
+  "Scales & Blesses": "Magic limit +1",
+  "Buildings": "Standard Forts"
+ },
+ "commanders": 10,
+ "units": 11,
+ "sites": 0,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    343,
+    548,
+    365,
+    579
+   ],
+   [
+    391,
+    532,
+    433,
+    572
+   ],
+   [
+    463,
+    538,
+    489,
+    575
+   ],
+   [
+    524,
+    537,
+    550,
+    575
+   ],
+   [
+    569,
+    506,
+    646,
+    581
+   ],
+   [
+    646,
+    506,
+    696,
+    581
+   ],
+   [
+    696,
+    506,
+    758,
+    581
+   ],
+   [
+    758,
+    506,
+    833,
+    581
+   ],
+   [
+    848,
+    529,
+    905,
+    579
+   ],
+   [
+    933,
+    539,
+    957,
+    573
+   ]
+  ],
+  "units": [
+   [
+    347,
+    643,
+    426,
+    680
+   ],
+   [
+    426,
+    643,
+    488,
+    680
+   ],
+   [
+    517,
+    635,
+    564,
+    672
+   ],
+   [
+    564,
+    635,
+    611,
+    672
+   ],
+   [
+    639,
+    636,
+    673,
+    673
+   ],
+   [
+    695,
+    634,
+    733,
+    662
+   ],
+   [
+    757,
+    646,
+    792,
+    669
+   ],
+   [
+    825,
+    639,
+    880,
+    679
+   ],
+   [
+    880,
+    639,
+    936,
+    679
+   ],
+   [
+    936,
+    639,
+    991,
+    679
+   ],
+   [
+    1047,
+    637,
+    1079,
+    665
+   ]
+  ]
+ },
+ "window": [
+  312,
+  55,
+  1607,
+  852
+ ],
+ "ocr_score": 0.141,
+ "name": "R'lyeh, Time of Aboleths",
+ "era": "EA",
+ "read": "2026-10-26",
+ "id": "44",
+ "inspector": "=== nation 44: EA R'lyeh, Time of Aboleths\nEA R'lyeh - Time of Aboleths\nNation #:44\n+2W+1E+3S\n[wiki]\ncommanders: #432 Scout, #1523 Slave Prince, #1527 Slave Priest, #1518 Slave Mage, #2886 Grandmother, #1520 Aboleth\nunits: #1517 Slave Trooper, #1526 Slave Guardian, #1515 Slave Trooper, #1524 Slave Guardian, #335 Slave Trooper, #1619 Slave Guardian, #336 Slave Guardian, #337 Lobo Guard, #425 Shambler Thrall, #1403 Giboleth\ncapital-only commanders: #1521 Mind Lord, #2883 Abodai\ncapital-only units: #1522 Gibodai\nforeign commanders: #1401 Polypal Mother\ncoast commanders: #2885 Androdai, #2885 Androdai\ncoast units: #2884 Androleth, #2884 Androleth\nheroes: #1691 “Auluudh“ - Mind Lord\npretenders: #109 Dagon, #1231 Drakaina, #1232 Old Man of the Sea, #1233 Lord of the Waves, #2440 Sea Dragon, #2849 Father of Monsters, #2855 Floating Mind, #3055 Grand Hydromancer, #179 Master Lich, #248 Arch Mage, #269 Wyrm, #546 Void Lurker, #657 Monolith, #872 Ghost King, #961 Titan of the Sea, #973 Ancient Kraken, #1402 Polypal Queen, #2791 Earth Serpent, #3098 First Spawn\nstart sites: #116 The Gorge of Ancient Cities\nnational spells: #628 Mind Vessel, #629 Enslave Sea Trolls\nhome realms: 9",
+ "image": "img/rlyeh.jpg"
+}

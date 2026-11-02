@@ -1,0 +1,197 @@
+{
+ "description": "Xibalba is a vast realm of dark water-filled caverns beneath the forests of Mictlan. According to legend, the sun and the moon passed through the cavernous realm on their daily journey to the eastern horizon. On this journey they were guarded by the bat people, Zotz, that dwelled in the dark reaches of the Xibalban underworld. But the cavernous realm was struck by a great disaster. A star fell into the ocean and a great deluge flooded the caves of Xibalba. The bat people drowned or fled the caves, but other inhabitants soon emerged. The Zotz were replaced by refugees from the shattered Atlantis. The fallen star, or possibly the dark magic of Xibalba, changed the Atlantians. The Atlantians of Xibalba developed more toadlike traits and different broods emerged. They called themselves Muuch, toad people. Their kings, the Bacabs, mighty mages of the deluge, conquered the last Xibalban city and built a Muuch kingdom in the caves underneath the forests of Mictlan. After a while the Muuch began to settle the forests above their caverns and a new brood of Muuch appeared. A brittle alliance of Muuch and Zotz has formed in the forests. Meanwhile the Bacabs hunted down the remaining Zotz hiding in dried-out caves and forced them into servitude. Now Xibalba is a Muuch kingdom with a small subjugated Zotz population, National G-eatures",
+ "features": {
+  "Race": "Amphibious cave dwellers, a few Zotz remain, prefers Heat scale +1",
+  "Military": "Amphibious infantry, flying stealthy light infantry",
+  "Magic": "Water, Earth, Death, Nature and some Blood and Air",
+  "Priests": "Average",
+  "Scales & Blesses": "Sloth limit +1, Heat limit +1",
+  "Buildings": "Primitive Forts, cave forts increase gold/resources/rec.p. by 10%"
+ },
+ "commanders": 10,
+ "units": 14,
+ "sites": 3,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    342,
+    664,
+    367,
+    699
+   ],
+   [
+    409,
+    685,
+    428,
+    703
+   ],
+   [
+    470,
+    673,
+    491,
+    702
+   ],
+   [
+    526,
+    664,
+    550,
+    689
+   ],
+   [
+    647,
+    685,
+    683,
+    713
+   ],
+   [
+    692,
+    663,
+    741,
+    710
+   ],
+   [
+    808,
+    677,
+    830,
+    706
+   ],
+   [
+    870,
+    680,
+    891,
+    702
+   ],
+   [
+    927,
+    687,
+    957,
+    710
+   ],
+   [
+    988,
+    688,
+    1014,
+    710
+   ]
+  ],
+  "units": [
+   [
+    336,
+    778,
+    369,
+    808
+   ],
+   [
+    410,
+    778,
+    430,
+    808
+   ],
+   [
+    458,
+    778,
+    491,
+    808
+   ],
+   [
+    531,
+    778,
+    551,
+    808
+   ],
+   [
+    580,
+    778,
+    613,
+    808
+   ],
+   [
+    653,
+    778,
+    674,
+    808
+   ],
+   [
+    715,
+    778,
+    734,
+    807
+   ],
+   [
+    774,
+    778,
+    792,
+    807
+   ],
+   [
+    831,
+    777,
+    854,
+    807
+   ],
+   [
+    927,
+    780,
+    957,
+    808
+   ],
+   [
+    988,
+    780,
+    1018,
+    808
+   ],
+   [
+    1053,
+    777,
+    1074,
+    808
+   ],
+   [
+    1102,
+    778,
+    1135,
+    808
+   ],
+   [
+    1162,
+    775,
+    1197,
+    803
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    859,
+    393,
+    898
+   ],
+   [
+    393,
+    859,
+    439,
+    898
+   ],
+   [
+    439,
+    859,
+    484,
+    898
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  982
+ ],
+ "ocr_score": 0.069,
+ "name": "Xibalba, Flooded Caves",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "74",
+ "inspector": "=== nation 74: MA Xibalba, Flooded Caves\nMA Xibalba - Flooded Caves\nNation #:74\n+3W+1E+1D\n[wiki]\ncommanders: #2715 Muuch Ajaw, #2718 Ah Itz, #2717 Ah Ha', #2716 Muuch K'uhul\nunits: #2721 Muuch Militia, #2722 Muuch Dart Thrower, #2723 Muuch Warrior, #2724 Muuch Warrior, #2725 Muuch Warrior, #2726 Muuch Warrior\ncapital-only commanders: #2732 Chak Muuch Assassin, #2714 Bacab, #2719 Camazotz\ncapital-only units: #2730 Chak Muuch Dart Thrower, #2731 Chak Muuch Obsidian Warrior, #2729 Wo' Muuch\nunderwater commanders: #2715 Muuch Ajaw, #2717 Ah Ha', #2716 Muuch K'uhul\nunderwater units: #2887 Lakam Ha' Warrior, #2888 Lakam Ha' Warrior\nforest commanders: #2720 Muuch Scout, #2728 Muuch Batab, #2733 Zotz Batab, #2682 Way\nforest units: #2727 Muuch Jungle Warrior, #2734 Zotz Warrior, #2735 Zotz Warrior\ncave commanders: #2733 Zotz Batab, #2682 Way, #2719 Camazotz\ncave units: #2734 Zotz Warrior, #2735 Zotz Warrior\nheroes: #3260 “Mamich Lum“ - Grandmother Earth, #3261 Red Face\npretenders: #603 Teotl of Rain, #604 Teotl of the Night, #958 Colossal Head, #2434 Teteo Inan, #2442 Teotl of War, #2443 Teotl of the Sky, #2444 Teotl of the Underworld, #2461 Statue of the Bloody Mother, #2755 Hun Came, #2756 Bolon-ti-ku, #2764 Hun Balam, #2777 Demon Macaw, #3394 Serpent of the Underworld, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #109 Dagon, #269 Wyrm, #606 Great Mother, #653 Serpent King, #657 Monolith, #2853 Ghost King, #3192 Great Camazotz, #3639 Crystal Soul, #3876 Sacred Geyser\nstart sites: #177 The Sacred Cenote, #178 The Flooded City, #179 The Cave of Perpetual Darkness\nnational spells: #504 Summon Jaguar Toads, #506 Summon Jade Serpents, #507 Summon Monster Toad, #519 Break the First Soul, #520 Break the Second Soul, #521 Break the Third Soul, #522 Break the Fourth Soul, #523 Gift of the First Soul, #524 Gift of the Second Soul, #525 Gift of the Third Soul, #526 Gift of the Fourth Soul, #527 Summon Balam, #528 Summon Chaac\nhome realms: 10, 6",
+ "image": "img/xibalba.jpg"
+}

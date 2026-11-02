@@ -1,0 +1,71 @@
+{
+ "materials": {
+  "paint": {
+   "kind": "paint",
+   "color": [
+    0.62,
+    0.64,
+    0.68
+   ]
+  }
+ },
+ "bones": [
+  {
+   "name": "body",
+   "type": "free",
+   "parent": null,
+   "pivot": [
+    0,
+    0.6,
+    0
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "name": "block",
+   "type": "box",
+   "c": [
+    0,
+    0.6,
+    0
+   ],
+   "half": [
+    0.15,
+    0.3,
+    0.1
+   ],
+   "rnd": 0.02,
+   "mat": "paint",
+   "bone": "body"
+  }
+ ],
+ "frames": {
+  "1": {
+   "label": "Idle",
+   "pose": {}
+  },
+  "2": {
+   "label": "Attack",
+   "pose": {}
+  }
+ },
+ "render": {
+  "style": "cel",
+  "res": [
+   64,
+   64
+  ],
+  "px_per_m": 18.085,
+  "cx": 32,
+  "y0": 61.6,
+  "shadow": [
+   19,
+   60,
+   45,
+   63
+  ],
+  "file": "new"
+ },
+ "name": "new"
+}

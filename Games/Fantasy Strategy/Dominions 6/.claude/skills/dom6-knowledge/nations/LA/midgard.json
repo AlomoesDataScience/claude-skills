@@ -1,0 +1,131 @@
+{
+ "description": "Once Midgard was called Vanheim, home of the Vanir. But since the coming of man, the Vanir have dwindled in number. At first, the Vanir were the undisputed rulers of the land, but the growing human population has taken over the land and renamed it Midgard. Only a few Vanir survive, but their magic has not yet departed the land. The Vanir are sacred to the human population and the few surviving Vanjarls carry great influence. The humans of Midgard themselves have become altered by the ancient magic of the Vanir and skinshifters are more common than they once were. National Gcatures",
+ "features": {
+  "Race": "Ocean sailing, trace income across oceans, illusions, prefers Cold scale +1",
+  "Military": "Heavy infantry, skinshifters, berserkers, Vanir",
+  "Magic": "Air, Astral, Blood, Earth, Death and some Glamour",
+  "Priests": "Average, can perform blood sacrifices",
+  "Scales & Blesses": "Cold limit +1",
+  "Buildings": "Standard Forts"
+ },
+ "commanders": 8,
+ "units": 7,
+ "sites": 1,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    347,
+    561,
+    365,
+    578
+   ],
+   [
+    408,
+    546,
+    429,
+    562
+   ],
+   [
+    465,
+    546,
+    486,
+    578
+   ],
+   [
+    524,
+    546,
+    547,
+    570
+   ],
+   [
+    593,
+    548,
+    606,
+    572
+   ],
+   [
+    649,
+    546,
+    670,
+    578
+   ],
+   [
+    703,
+    529,
+    746,
+    579
+   ],
+   [
+    763,
+    529,
+    806,
+    579
+   ]
+  ],
+  "units": [
+   [
+    350,
+    643,
+    368,
+    660
+   ],
+   [
+    463,
+    640,
+    491,
+    663
+   ],
+   [
+    524,
+    640,
+    551,
+    673
+   ],
+   [
+    590,
+    640,
+    611,
+    663
+   ],
+   [
+    654,
+    637,
+    673,
+    674
+   ],
+   [
+    702,
+    641,
+    732,
+    671
+   ],
+   [
+    763,
+    632,
+    806,
+    677
+   ]
+  ],
+  "sites": [
+   [
+    335,
+    700,
+    388,
+    767
+   ]
+  ]
+ },
+ "window": [
+  312,
+  55,
+  1607,
+  852
+ ],
+ "ocr_score": 0.086,
+ "name": "Midgard, Age of Men",
+ "era": "LA",
+ "read": "2026-10-26",
+ "id": "115",
+ "inspector": "=== nation 115: LA Midgård, Age of Men\nLA Midgård - Age of Men\nNation #:115\n+2A+1E+1G\n[wiki]\ncommanders: #426 Scout, #2150 Herse, #2139 Jarl, #2140 Gode, #846 Galderman, #950 Völva\nunits: #2148 Archer, #142 Huskarl, #143 Huskarl, #144 Hirdman, #145 Hirdman, #146 Einhere, #853 Skinshifter\ncapital-only commanders: #263 Vanherse, #264 Vanjarl\ncapital-only units: #262 Van\nheroes: #544 “Farbaute“ - Einhere, #590 “Vanlade“ - Vanadrott\npretenders: #250 Frost Father, #401 Bitch Queen, #501 Allfather, #1098 Asynja, #1229 Son of Fenrer, #1379 Keeper of the Bridge, #1561 Father of Winters, #2206 Eldest Dwarf, #2234 Irminsul, #2239 Asynja, #2447 Idol of Men, #2448 Idol of Beasts, #2449 Idol of Sorcery, #2800 Ormr, #2801 Linnormr, #2802 Svartalf Mastersmith, #2803 Linnormr, #3086 Deives of the Sun, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #606 Great Mother, #657 Monolith, #3876 Sacred Geyser\nstart sites: #58 Vanhalla\nnational spells: #491 Summon Dwarf of the Four Directions, #492 Summon Valkyries, #493 Awaken Draugar, #955 Sloth of Bears, #1466 Herd of Moose\nhome realms: 1, 10",
+ "image": "img/midgard.jpg"
+}

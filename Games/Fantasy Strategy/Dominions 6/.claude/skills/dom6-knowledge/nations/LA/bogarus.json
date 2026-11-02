@@ -1,0 +1,167 @@
+{
+ "description": "Bogarus is a land of harsh winters and short summers. When the Vanir claimed this cold and bitter land of the north, they named it Vanarus and carved la kingdom out of the frozen land. Now humans have replaced the last of the Vanjarls and the kingdom is guided by Eparchs and Exarchs of the religious order. Mighty cities under the rule of warring princes have united under a few Grand Princes and a reformed faith. Bogatyrs of heroic stature and prowess, defenders and champions of the faith, occasionally emerge to lead and protect the people from the wicked. The Grand Princes use infantry as well as elite cavalry forces. Mages of various traditions ply their trade in the palaces of the Grand Princes. The people of Bogarus prefer a cold climate. National -eatures",
+ "features": {
+  "Race": "Humans with partial cold resistance, prefers Cold scale +2",
+  "Military": "Heavy cavalry, mounted archers, infantry",
+  "Magic": "Fire, Astral, Blood, some Air, Earth and Death, Summonable beings of earlier eras",
+  "Priests": "Powerful",
+  "Scales & Blesses": "Cold limit +1, Misfortune limit +1",
+  "Buildings": "Standard Forts"
+ },
+ "commanders": 10,
+ "units": 10,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    346,
+    591,
+    362,
+    609
+   ],
+   [
+    411,
+    602,
+    421,
+    614
+   ],
+   [
+    456,
+    581,
+    499,
+    625
+   ],
+   [
+    517,
+    581,
+    560,
+    625
+   ],
+   [
+    594,
+    596,
+    612,
+    615
+   ],
+   [
+    774,
+    593,
+    790,
+    623
+   ],
+   [
+    835,
+    594,
+    848,
+    617
+   ],
+   [
+    896,
+    594,
+    909,
+    617
+   ],
+   [
+    958,
+    594,
+    971,
+    613
+   ],
+   [
+    1075,
+    588,
+    1092,
+    613
+   ]
+  ],
+  "units": [
+   [
+    350,
+    684,
+    369,
+    714
+   ],
+   [
+    399,
+    696,
+    425,
+    710
+   ],
+   [
+    470,
+    684,
+    484,
+    713
+   ],
+   [
+    525,
+    688,
+    551,
+    706
+   ],
+   [
+    587,
+    685,
+    619,
+    706
+   ],
+   [
+    648,
+    685,
+    737,
+    724
+   ],
+   [
+    737,
+    685,
+    801,
+    724
+   ],
+   [
+    837,
+    696,
+    865,
+    724
+   ],
+   [
+    918,
+    689,
+    957,
+    713
+   ],
+   [
+    977,
+    669,
+    1016,
+    713
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    774,
+    394,
+    812
+   ],
+   [
+    394,
+    774,
+    440,
+    812
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  897
+ ],
+ "ocr_score": 0.092,
+ "name": "Bogarus, Age of Heroes",
+ "era": "LA",
+ "read": "2026-10-26",
+ "id": "116",
+ "inspector": "=== nation 116: LA Bogarus, Age of Heroes\nLA Bogarus - Age of Heroes\nNation #:116\n+1F+1A+2S\n[wiki]\ncommanders: #3099 Bogarusian Scout, #1918 Voivode, #1917 Knyaz, #1916 Veliki Knyaz, #1960 Exarch, #1920 Skopets, #1919 Fivefold Angel, #1934 Occultist, #1933 Kalendologist, #1935 Astrapelagist, #1936 Master of Names, #1932 Alchemist\nunits: #1929 Voi Spearman, #1930 Voi Axeman, #1931 Voi Archer, #1928 Peshtsi Spearman, #1927 Peshtsi Axeman, #1926 Peshtsi City Guard, #1922 Grid Druzhina, #1923 Malaia Druzhina, #1921 Khlyst\ncapital-only commanders: #1961 Eparch, #1937 Starets\nwaste units: #1925 Black Hood, #1924 Styag\nheroes: #1958 “Baba Yaga“ - Hag, #1959 “Koschei“ - Deathless, #1962 “Alexej“ - Patriarch\nmultiheroes: #1957 Bogatyr\npretenders: #250 Frost Father, #401 Bitch Queen, #501 Allfather, #1098 Asynja, #1229 Son of Fenrer, #1379 Keeper of the Bridge, #1561 Father of Winters, #2206 Eldest Dwarf, #2234 Irminsul, #2239 Asynja, #2447 Idol of Men, #2448 Idol of Beasts, #2449 Idol of Sorcery, #2800 Ormr, #2801 Linnormr, #2802 Svartalf Mastersmith, #2803 Linnormr, #3086 Deives of the Sun, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #215 Virtue, #550 Master Alchemist, #606 Great Mother, #862 Vampire Queen, #1340 Tiwaz of War, #1370 Volla of the Bountiful Forest, #2786 Celestial Gryphon, #2787 Celestial Lion\nstart sites: #140 Grand Cathedral, #141 Hall of Elders\nnational spells: #322 Summon Simargl, #323 Summon Firebird, #324 Send Lady Midday, #325 Contact Sirin, #326 Send Vodyanoy, #327 Summon Rusalka, #328 Summon Likho, #329 Contact Alkonost, #330 Summon Zmey, #331 Send Bukavac, #332 Contact Gamayun, #333 Contact Beregina, #334 Contact Mountain Vila, #335 Contact Cloud Vila, #336 Contact Leshiy, #955 Sloth of Bears, #1466 Herd of Moose\nhome realms: 1, 10",
+ "image": "img/bogarus.jpg"
+}

@@ -1,0 +1,177 @@
+{
+ "description": "The realm of Man is a feudal kingdom. Their kingdom was established by conquering a race of tall and magically powerful beings known as the Tuatha. When the Tuatha were destroyed, their greatest treasure was found: the magical Forest of Avalon. Hidden deep within was great magic. The Witches of Man entered the forest, learned the old lore, and helped Man to grow in power and influence. The infantry of Manis limited and lacks heavy troops. Their regular armies most often consist of powerful knights and skilled longbowmen. The Witches train their own special troops, the Wardens and Knights of Avalon. These troops are very skilled and are also magically enchanted by the Witches. The monks who serve the God of Man are divinely inspired scholars who gather and record knowledge in the monasteries scattered throughout the land. Descendants of the Logrian people displaced by the Witches and their servants dwell outside the fortified castles of the nobility. National G-eatures",
+ "features": {
+  "Race": "Humans",
+  "Military": "Infantry, longbowmen, knights, special troops of Avalon",
+  "Magic": "Nature, Glamour, some Water, Earth, Air and Fire",
+  "Priests": "Weak, divinely inspired researchers. |[Buildings: Standard Forts, temples cost 300"
+ },
+ "commanders": 10,
+ "units": 12,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    345,
+    593,
+    365,
+    624
+   ],
+   [
+    407,
+    591,
+    425,
+    617
+   ],
+   [
+    472,
+    605,
+    486,
+    618
+   ],
+   [
+    533,
+    590,
+    552,
+    623
+   ],
+   [
+    592,
+    590,
+    612,
+    620
+   ],
+   [
+    653,
+    590,
+    671,
+    619
+   ],
+   [
+    708,
+    579,
+    731,
+    619
+   ],
+   [
+    760,
+    579,
+    806,
+    624
+   ],
+   [
+    837,
+    590,
+    847,
+    603
+   ],
+   [
+    929,
+    593,
+    949,
+    624
+   ]
+  ],
+  "units": [
+   [
+    354,
+    693,
+    367,
+    715
+   ],
+   [
+    404,
+    690,
+    428,
+    721
+   ],
+   [
+    458,
+    686,
+    488,
+    721
+   ],
+   [
+    530,
+    691,
+    555,
+    704
+   ],
+   [
+    593,
+    686,
+    609,
+    716
+   ],
+   [
+    650,
+    689,
+    668,
+    707
+   ],
+   [
+    712,
+    693,
+    729,
+    721
+   ],
+   [
+    770,
+    692,
+    788,
+    713
+   ],
+   [
+    831,
+    674,
+    877,
+    712
+   ],
+   [
+    877,
+    674,
+    923,
+    712
+   ],
+   [
+    951,
+    687,
+    977,
+    715
+   ],
+   [
+    1003,
+    674,
+    1050,
+    721
+   ]
+  ],
+  "sites": [
+   [
+    349,
+    774,
+    394,
+    812
+   ],
+   [
+    394,
+    774,
+    440,
+    812
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  897
+ ],
+ "ocr_score": 0.08,
+ "name": "Man, Tower of Avalon",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "57",
+ "inspector": "=== nation 57: MA Man, Tower of Avalon\nMA Man - Tower of Avalon\nNation #:57\n+3N+2G\n[wiki]\ncommanders: #56 Royal Forester, #54 Castellan, #60 Monk, #658 Bard, #151 Daughter of Avalon, #152 Mother of Avalon\nunits: #1 Logrian Slinger, #2127 Forester, #61 Spearman, #62 Longspear, #53 Logrian Warrior, #59 Longbowman, #63 Tower Guard, #2129 Logrian Cavalry, #3275 Landless Knight, #57 Knight of Man\ncapital-only commanders: #212 Lord Warden, #2128 Knight Commander of Avalon, #153 Crone of Avalon\ncapital-only units: #65 Warden of Avalon, #64 Knight of Avalon\nforeign commanders: #60 Monk, #2439 Logrian Wise Man\nforeign units: #1 Logrian Slinger, #53 Logrian Warrior, #2129 Logrian Cavalry\nforest commanders: #56 Royal Forester\nforest units: #2127 Forester\nheroes: #376 “Bernlad“ - Green Knight, #381 “Rhianne“ - Heroine, #582 “Brangwen“ - Blind One, #2481 “Nog“ - Ettin King, #3236 “Myrddin“ - Cambion, #3239 “Morgaine“ - Fay\nmultiheroes: #58 Knight of the Stone\npretenders: #270 Arch Druid, #606 Great Mother, #779 Rams-Headed Serpent, #1378 Lord of the Forest, #2450 Horned One, #2784 Thrice Horned Boar, #2795 Dog of the Underworld, #2848 Father of the Sea, #2856 Son of the Sea, #2930 Hooded Spirit, #3076 Morrigna, #3077 Morrigna, #3078 Morrigna, #3079 Duiu of Thunder, #3080 Duiu of Farming, #3081 Duiu of War, #3082 Matrona of the Healing Spring, #3632 Mother of Storms, #3692 Great Stag, #3693 Great White Stag, #3894 Serpent of Heavenly Fires, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #250 Frost Father, #401 Bitch Queen, #657 Monolith, #1340 Tiwaz of War, #1370 Volla of the Bountiful Forest, #1905 Great Sorceress, #2234 Irminsul, #2786 Celestial Gryphon, #2787 Celestial Lion\nstart sites: #5 Forest of Avalon, #6 Tower of Avalon\nnational spells: #283 Herd of Unicorns, #284 Chorus Master, #285 Chorus Slave, #438 Summon Black Dogs, #439 Summon Cu Sidhe, #440 Summon Barghests, #1294 Geas\nhome realms: 10, 2",
+ "image": "img/man.jpg"
+}

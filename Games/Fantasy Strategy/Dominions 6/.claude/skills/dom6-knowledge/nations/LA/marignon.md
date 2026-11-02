@@ -1,0 +1,45 @@
+# Marignon, Conquerors of the Sea (LA)
+
+*nation 103; read from the game's nation info screen on 2026-10-26 (OCR, score 0.054; small reading slips are possible)*
+
+![info screen](img/marignon.jpg)
+
+## Description
+
+Marignon is a feudal theocracy that rose out of the ashes of Ermor. Through religious austerity and fanaticism the young kingdom prevailed when death walked the land. When kingdom after kingdom crumbled under the might of the Ashen Empire, the leaders of Marignon turned to desperate measures. The Grand Masters of the House of Fiery Justice struck a bargain with infernal forces. Devils started to fill the ranks of the human armies and with time Marignon became dependent on devils to survive. Devils and the Holy Knights of the Chalice were all that kept death at bay. In a cataclysmic battle the knights fought a great army of walking dead. Both armies were annihilated, but new Ermorian legions would soon re-emerge from the ashen realm. The Grand Masters called their Infernal Lords and a host of demons was released upon Eldregate. The Holy Chalice was captured and brought to the House of Fiery Justice. Ermor was destroyed, but the Infernal Lords demanded continued sacrifice and devil-worship became part of the faith. Imps are bound as jesters and servants and most noble families have their own imp familiar. Order has returned to the kingdom and Marignon is slowly turning its interests outwards. Recent developments in shipbuilding and navigation have allowed the priests and nobles of Marignon to expand the influence of God to distant shores. To bring the True Faith to the heathens has become more important than hunting heretics at home. Witch Hunters have been replaced by Navigators and Chartmakers who serve under the command of admirals to spread the might of the kingdom to distant shores. National Geatures
+
+## National features
+
+- **Race:** Humans, Ocean sailing, trace income across oceans
+- **Military:** Heavy infantry, crossbows, Flagellants
+- **Magic:** Fire, Blood, Glamour, Astral, Earth, Air, some Water and a little Nature
+- **Priests:** Powerful, Inquisitors, can perform blood sacrifices
+- **Inquisition:** Automatically reduces enemy dominion and spreads own dominion up to 1 in owned provinces
+- **Scales & Blesses:** Order limit +1, Productivity limit +1, Bless points +3
+- **Buildings:** Standard Forts, starts with a Grand Citadel (Architects can build better forts)
+
+## On the info screen
+
+- 19 commanders, 10 units, 4 start sites shown (right-click a sprite in game for its stats)
+
+## From the inspector (vanilla data)
+
+```
+=== nation 103: LA Marignon, Conquerors of the Sea
+LA Marignon - Conquerors of the Sea
+Nation #:103
++1F+1A+1S+1G
+[wiki]
+commanders: #426 Scout, #2197 Assassin, #2107 Troubadour, #3419 Plague Doctor, #2116 Lieutenant, #1029 Captain, #2428 Goetic Captain, #1033 Missionary, #2198 Inquisitor, #744 Diabolist, #2200 Goetic Adept, #1031 Chartmaker, #3859 Mirror Mage, #3862 Imp Trainer
+units: #2108 Crossbowman, #2109 City Guard, #2110 Pikeneer, #2111 Halberdier, #2112 Swordsman, #2113 Palace Guard, #2115 Royal Guard, #217 Flagellant
+capital-only commanders: #3011 Architect, #1030 Admiral, #3861 Royal Alchemist, #2199 High Inquisitor, #745 Goetic Master, #3860 Master of Mirrors
+capital-only units: #2114 Hand of Justice, #3868 Deliverer of Justice
+foreign commanders: #1033 Missionary
+foreign units: #217 Flagellant
+coast commanders: #1032 Royal Navigator
+heroes: #583 “Carmont“ - Cardinal, #588 “Angelique d'Armant“ - Heroine, #589 “Tomaso del Monferrada“ - Witch Hunter General
+pretenders: #270 Arch Druid, #606 Great Mother, #1378 Lord of the Forest, #2450 Horned One, #2784 Thrice Horned Boar, #2795 Dog of the Underworld, #2848 Father of the Sea, #2856 Son of the Sea, #2930 Hooded Spirit, #3077 Morrigna, #3078 Morrigna, #3079 Duiu of Thunder, #3080 Duiu of Farming, #3081 Duiu of War, #3082 Matrona of the Healing Spring, #3632 Mother of Storms, #3692 Great Stag, #3693 Great White Stag, #3894 Serpent of Heavenly Fires, #472 Statue of Order, #600 Titan of War and Wisdom, #602 Titan of Heaven, #979 Great White Bull, #1230 Titan of the Forge, #1342 Titan of Rivers, #1343 Titan of Love, #1348 Titan of Serpents and Medicine, #1371 Titan of Death and Rebirth, #2431 Titan of the Underworld, #2460 Statue of Fertility, #2463 Statue of War, #2783 Drakon, #2796 Hound of Hades, #2850 Statue of the Underworld, #2851 Titan of Winds and Waves, #3121 Eldest Cyclops, #3124 Titan of Forethought, #3203 Titan of the Hunt, #3204 Grey One, #3205 Titan of Crossroads, #3206 Titan of Crossroads, #3207 Titan of Crossroads, #3208 Titan of the Spring, #3209 Titan of Growth, #3368 Bronze Colossus, #3395 Demiurge, #3416 Great Archon, #3895 Ferryman, #603 Teotl of Rain, #604 Teotl of the Night, #958 Colossal Head, #2434 Teteo Inan, #2442 Teotl of War, #2443 Teotl of the Sky, #2444 Teotl of the Underworld, #2461 Statue of the Bloody Mother, #2755 Hun Came, #2756 Bolon-ti-ku, #2764 Hun Balam, #2777 Demon Macaw, #3394 Serpent of the Underworld, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #120 Moloch, #215 Virtue, #250 Frost Father, #550 Master Alchemist, #607 Baphomet, #608 Phoenix, #2786 Celestial Gryphon, #2787 Celestial Lion, #2788 Man-Eater
+start sites: #70 The Royal Academy, #71 House of Justice, #232 The Hall of Mirrors
+national spells: #448 Holy Pyre, #477 Contact Angel of the Host, #478 Contact Harbinger, #479 Angelic Choir, #480 Angelic Host, #481 Heavenly Wrath, #482 Heavenly Choir, #483 Bind Harlequin, #485 Reascendance, #486 Amalgamation of Fire and Flesh, #487 Amalgamation of Air and Flesh, #488 Amalgamation of Water and Flesh, #489 Amalgamation of Earth and Flesh, #490 Mirror Walk
+home realms: 10, 2, 3, 6
+```

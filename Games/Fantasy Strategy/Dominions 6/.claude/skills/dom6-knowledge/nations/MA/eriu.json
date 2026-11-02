@@ -1,0 +1,179 @@
+{
+ "description": "When men came to the land of the Tuatha and the Fir Bolg, there was a drawn out battle which ended with the defeat and total withdrawal of the Tuatha. The Land of the Ever Young was forever lost to this world and Avalon was taken by the Witches of Man. The Sidhe, descendants of the Tuatha, retreated into strange twilight realms with entrances hidden in ancient mounds. The land of the Fir Bolg was split by the invading forces: Man and their Witches, and the Milesians. The Milesians named their land Eriu. Most of the Eriu population is composed of humans of Milesian ancestry, but a few Fir Bolg still survive in remote villages. With the coming of the New God, the Daoine Sidhe have re-emerged from their magical mounds to lead the Milesians. Eriu is now a nation of humans and Fir Bolg led by the awakening Sidhe. National -eatures",
+ "features": {
+  "Race": "Milesian humans and Fir Bolg ruled by Sidhe and Tuatha, illusions",
+  "Military": "Milesian infantry, Fir Bolg infantry, sacred Sidhe infantry",
+  "Magic": "Glamour, Air, Nature, Water, Earth, some Fire",
+  "Priests": "Average",
+  "Scales & Blesses": "Luck limit +1",
+  "Buildings": "Standard Forts, temples cost 300"
+ },
+ "commanders": 12,
+ "units": 10,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    335,
+    650,
+    367,
+    667
+   ],
+   [
+    347,
+    595,
+    365,
+    624
+   ],
+   [
+    404,
+    587,
+    425,
+    622
+   ],
+   [
+    472,
+    605,
+    486,
+    618
+   ],
+   [
+    534,
+    593,
+    552,
+    623
+   ],
+   [
+    595,
+    592,
+    608,
+    618
+   ],
+   [
+    653,
+    592,
+    673,
+    608
+   ],
+   [
+    716,
+    593,
+    733,
+    619
+   ],
+   [
+    764,
+    576,
+    806,
+    622
+   ],
+   [
+    836,
+    592,
+    855,
+    618
+   ],
+   [
+    901,
+    592,
+    916,
+    624
+   ],
+   [
+    946,
+    576,
+    989,
+    622
+   ]
+  ],
+  "units": [
+   [
+    353,
+    693,
+    367,
+    721
+   ],
+   [
+    397,
+    686,
+    429,
+    721
+   ],
+   [
+    457,
+    682,
+    496,
+    721
+   ],
+   [
+    527,
+    688,
+    546,
+    721
+   ],
+   [
+    594,
+    688,
+    612,
+    721
+   ],
+   [
+    653,
+    687,
+    678,
+    724
+   ],
+   [
+    712,
+    690,
+    733,
+    721
+   ],
+   [
+    769,
+    690,
+    795,
+    721
+   ],
+   [
+    826,
+    682,
+    902,
+    721
+   ],
+   [
+    902,
+    682,
+    977,
+    721
+   ]
+  ],
+  "sites": [
+   [
+    349,
+    774,
+    394,
+    812
+   ],
+   [
+    394,
+    774,
+    440,
+    812
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  897
+ ],
+ "ocr_score": 0.082,
+ "name": "Eriu, Last of the Tuatha",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "58",
+ "inspector": "=== nation 58: MA Eriu, Last of the Tuatha\nMA Eriu - Last of the Tuatha\nNation #:58\n+2N+3G\n[wiki]\ncommanders: #1789 Milesian Scout, #1783 Milesian Champion, #1784 Milesian Monk, #2425 Bard, #3887 Milesian Mage, #850 Sidhe Champion, #848 Sidhe Lord, #1774 Bean Sidhe\nunits: #1779 Milesian Slinger, #1780 Milesian Spearman, #1781 Milesian Longspear, #1782 Milesian Swordsman, #3631 Milesian Man at Arms\ncapital-only commanders: #856 Tuatha, #2469 Fir Bolg Druid, #1788 Fir Bolg Champion\ncapital-only units: #849 Daoine Sidhe, #1785 Fir Bolg Slinger, #1786 Fir Bolg Clan Warrior, #1787 Fir Bolg Clan Warrior, #3630 Fir Bolg Cattle Raider, #3634 Fir Bolg Charioteer\nheroes: #1777 “Ferdiad“ - Fir Bolg Hero, #1778 “Cu Chulainn“ - Hero, #1794 “Tuan“ - Last Partholonian, #1844 “Scathach“ - Trainer of Heroes\nmultiheroes: #1806 Fianna\npretenders: #270 Arch Druid, #606 Great Mother, #779 Rams-Headed Serpent, #1378 Lord of the Forest, #2450 Horned One, #2784 Thrice Horned Boar, #2795 Dog of the Underworld, #2848 Father of the Sea, #2856 Son of the Sea, #2930 Hooded Spirit, #3076 Morrigna, #3077 Morrigna, #3078 Morrigna, #3079 Duiu of Thunder, #3080 Duiu of Farming, #3081 Duiu of War, #3082 Matrona of the Healing Spring, #3632 Mother of Storms, #3692 Great Stag, #3693 Great White Stag, #3894 Serpent of Heavenly Fires, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #250 Frost Father, #657 Monolith, #1340 Tiwaz of War, #1370 Volla of the Bountiful Forest, #1905 Great Sorceress, #2234 Irminsul, #2786 Celestial Gryphon\nstart sites: #135 Mound of Ancient Kings, #225 Fir Bolg Highlands\nnational spells: #439 Summon Cu Sidhe, #445 xxx, #446 xxx, #1294 Geas\nhome realms: 10, 2",
+ "image": "img/eriu.jpg"
+}

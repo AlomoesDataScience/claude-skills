@@ -1,0 +1,41 @@
+# Caelum, Return of the Raptors (LA)
+
+*nation 106; read from the game's nation info screen on 2026-10-26 (OCR, score 0.046; small reading slips are possible)*
+
+![info screen](img/caelum.jpg)
+
+## Description
+
+Caelum is a magocracy of winged humanoids who inhabit the highest mountain peaks. In ancient times, there were three Caelian clans led by semi-divine beings known as Yazatas. Centuries ago the Harab Seraphs of the Raptor clan were accused of polluting the purifying flames and tainting the sacred task of the Seraphines. They were condemned by the High Seraphs of the Airya clan and civil war broke out. The Raptors were banished and scattered across the world. But now a new God is rising and the scattered tribes have gathered. The Raptors have returned to Caelum and overthrown the magocracy. Harab Seraphs, the mage-priests of this new and dark faith, have replaced the High Seraphs and black-winged Raptors have become the ruling elite. Now the Raptors have cast their eyes upon other nations. The Harab Seraphs are skilled lin Air, Death and Earth magic. A few of the Airya Seraphs remain, but the ice crafters have been replaced by iron crafters, Raptorian mage-smiths who forge weapons of iron and steel. The secrets of the magical ice of former times are all but forgotten. Caelians are thin and light. The Raptorians are slightly stronger and are martially superior to the other clans. They are not as resistant to the elements as the other Caelians. Airya Clan Caelians are resistant to cold, but few of them remain. Spire Horn Caelians are less resistant to cold but have partial resistance to lightning. They are skilled archers and prefer hit-and-run tactics, even though they do have some heavy troops, such as huge
+
+## National features
+
+- **Race:** Flying, cold resistant, prefers Cold scale +1
+- **Military:** Flying units, skilled archers, mammoths
+- **Magic:** Air, Death, Earth, some Water and Fire
+- **Priests:** Average
+- **Scales & Blesses:** Cold limit +1
+- **Buildings:** Standard Forts
+
+## On the info screen
+
+- 9 commanders, 16 units, 2 start sites shown (right-click a sprite in game for its stats)
+
+## From the inspector (vanilla data)
+
+```
+=== nation 106: LA Caelum, Return of the Raptors
+LA Caelum - Return of the Raptors
+Nation #:106
++1A+1W+1E+1D
+[wiki]
+commanders: #2595 Airya Scout, #418 Storm General, #2313 Raven Lord, #951 Harab Seraph, #1281 Iron Crafter, #1282 Caretaker
+units: #2564 Spire Horn Militia, #2593 Spire Horn Archer, #2594 Spire Horn Warrior, #421 Storm Guard, #130 Airya Light Infantry, #420 Airya Infantry, #2571 Raptorian Militia, #2572 Raptorian Warrior, #2573 Raptorian Warrior, #2574 Raptorian Warrior, #1279 Iron Crow, #949 Raven Guard, #419 Mammoth Rider
+capital-only commanders: #1004 Caelian Seraph, #1003 Harab Elder
+capital-only units: #2576 Iceclad, #2548 Iron Hail Archer, #1280 Earthbound
+heroes: #556 “Caelos“ - Sacred One, #557 “Zaelinys“ - Harab Seraphine
+pretenders: #120 Moloch, #655 Scorpion King, #661 Shedu, #957 Lord of The Desert Sun, #1097 Lord of The Summer Plague, #1372 Annunaki of the Sky, #1373 Annunaki of Sweet Waters, #1374 Annunaki of the Morning Star, #1384 Solar Disc, #2137 Urmahlullu, #2138 Sphinx, #2435 Annunaki of Love and War, #2436 Annunaki of the Moon, #2437 Annunaki of Growth and Rebirth, #2438 Annunaki of the Underworld, #2462 Golden Idol, #2786 Celestial Gryphon, #2787 Celestial Lion, #2788 Man-Eater, #3328 God Block, #3329 Betyl of the Sun, #3330 Betyl of Writing, #3331 Betyl of the Stars, #3344 Statue of Beginnings, #3345 Wooden Colossus, #3369 Ilahat of Fate, #3370 Ilahat of Might, #3386 Ilah of the Sky, #3387 Ilah of the Sacred Mountain, #3388 Ilah of the Moon, #499 Nataraja, #1096 Destroyer of Worlds, #1341 Devi of Darkness, #1344 Devi of Good Fortunes, #2466 Kamadhenu, #3661 Elephant Idol, #3662 Asura, #3875 Nagasiddha, #3926 Devi of Strength, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #250 Frost Father, #509 Arch Seraph, #2552 Ahura of Wisdom, #2553 Ahura of the Oath, #2554 Ahura of the Waters, #2555 Spenta Mainyu, #2608 Azi, #2610 Angra Mainyu, #2611 Gannag Menog, #2627 Daeva of Wrath, #3876 Sacred Geyser
+start sites: #40 The Citadel of Frozen Crystal, #41 Ravens Vale
+national spells: #340 Herd of Elephants, #461 Parting of the Soul, #462 Call Ahurani, #463 Call Celestial Yazad, #464 Call Fravashi, #465 Call Amesha Spenta, #466 Summon Yazatas, #467 Call Daevas, #468 Call Jahi, #469 Call Yata, #470 Call of the Drugvant, #471 Call Greater Daeva, #957 Ambush of Tigers, #958 Herd of Buffaloes
+home realms: 10, 5, 8
+```

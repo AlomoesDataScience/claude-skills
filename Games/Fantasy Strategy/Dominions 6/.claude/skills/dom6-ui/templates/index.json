@@ -1,0 +1,254 @@
+{
+ "ability_forge_bonus": {
+  "kind": "icon",
+  "note": "ability: Forge Bonus (hammer)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   27,
+   24
+  ]
+ },
+ "ability_inquisitor": {
+  "kind": "icon",
+  "note": "ability: Inquisitor",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   25,
+   36
+  ]
+ },
+ "ability_resource_bonus": {
+  "kind": "icon",
+  "note": "ability: Resource Bonus (hammer on anvil)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   26,
+   28
+  ]
+ },
+ "ability_sacred": {
+  "kind": "icon",
+  "note": "ability: Sacred",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   31,
+   36
+  ]
+ },
+ "ability_skilled_rider": {
+  "kind": "icon",
+  "note": "unit screen ability icon: Skilled Rider",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   29,
+   30
+  ]
+ },
+ "dmg_blunt": {
+  "kind": "icon",
+  "note": "damage type: bludgeoning (mace) - weapon popups and unit weapon table",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   20,
+   21
+  ]
+ },
+ "dmg_pierce": {
+  "kind": "icon",
+  "note": "damage type: piercing (spear tip)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   23,
+   22
+  ]
+ },
+ "path_air": {
+  "kind": "icon",
+  "note": "Air magic path icon (design screen, size 19 text)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   25,
+   26
+  ]
+ },
+ "path_astral": {
+  "kind": "icon",
+  "note": "Astral magic path icon (design screen, size 19 text)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   25,
+   26
+  ]
+ },
+ "path_blood": {
+  "kind": "icon",
+  "note": "Blood magic path icon (design screen, size 19 text)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   25,
+   26
+  ]
+ },
+ "path_death": {
+  "kind": "icon",
+  "note": "Death magic path icon (design screen, size 19 text)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   25,
+   26
+  ]
+ },
+ "path_earth": {
+  "kind": "icon",
+  "note": "Earth magic path icon (design screen, size 19 text)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   25,
+   26
+  ]
+ },
+ "path_fire": {
+  "kind": "icon",
+  "note": "Fire magic path icon (design screen, size 19 text)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   25,
+   26
+  ]
+ },
+ "path_glamour": {
+  "kind": "icon",
+  "note": "Glamour magic path icon (design screen, size 19 text)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   25,
+   26
+  ]
+ },
+ "path_nature": {
+  "kind": "icon",
+  "note": "Nature magic path icon (design screen, size 19 text)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   25,
+   26
+  ]
+ },
+ "path_water": {
+  "kind": "icon",
+  "note": "Water magic path icon (design screen, size 19 text)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   25,
+   26
+  ]
+ },
+ "unit_magic_earth": {
+  "kind": "icon",
+  "note": "unit screen magic symbol: Earth (hammer)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   25,
+   25
+  ]
+ },
+ "unit_magic_fire": {
+  "kind": "icon",
+  "note": "unit screen magic symbol: Fire (number after it = level)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   21,
+   25
+  ]
+ },
+ "unit_magic_holy": {
+  "kind": "icon",
+  "note": "unit screen magic symbol: Holy / priest level (lit candelabra; number after it)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   30,
+   36
+  ]
+ },
+ "unit_magic_random": {
+  "kind": "icon",
+  "note": "unit screen: random magic skill (yellow ?), right-click shows possible paths, level, chance",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   18,
+   27
+  ]
+ },
+ "unit_research": {
+  "kind": "icon",
+  "note": "unit screen: Research ability (books)",
+  "screen": [
+   1920,
+   1044
+  ],
+  "size": [
+   22,
+   24
+  ]
+ }
+}

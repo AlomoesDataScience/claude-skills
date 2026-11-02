@@ -1,0 +1,154 @@
+{
+ "description": "For centuries the seas have been the domain of the Tritons, but recently a nation of beings resembling a cross between fish, frog and human has emerged in the deepest gorges of the oceans. The race is not entirely unknown, for there are a few of them who have made shallow coastal reefs their home, but the Triton Kings never imagined that they were numerous or powerful enough to form a nation. These Atlantians of the deeps never stop growing and will live for several hundred years unless killed. The Atlantian society is organized in a strict hierarchy of size and age. The oldest and most cunning Atlantians have made themselves kings and queens of the Basalt City in the deepest reaches of the ocean. The Atlantians of the Deeps use Weapons of enchanted basalt made by the Basalt Kings.",
+ "features": {
+  "Race": "Amphibious",
+  "Military": "Light infantry, shamblers, no missile weapons",
+  "Magic": "Earth, Water, Fire, some Astral",
+  "Priests": "Powerful",
+  "Buildings": "Advanced Forts"
+ },
+ "commanders": 8,
+ "units": 9,
+ "sites": 3,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    335,
+    521,
+    415,
+    540
+   ],
+   [
+    392,
+    557,
+    425,
+    576
+   ],
+   [
+    456,
+    552,
+    495,
+    586
+   ],
+   [
+    525,
+    566,
+    547,
+    595
+   ],
+   [
+    579,
+    554,
+    608,
+    583
+   ],
+   [
+    637,
+    555,
+    669,
+    595
+   ],
+   [
+    704,
+    549,
+    725,
+    582
+   ],
+   [
+    752,
+    527,
+    811,
+    595
+   ]
+  ],
+  "units": [
+   [
+    331,
+    665,
+    365,
+    685
+   ],
+   [
+    393,
+    663,
+    426,
+    694
+   ],
+   [
+    464,
+    670,
+    490,
+    694
+   ],
+   [
+    524,
+    669,
+    551,
+    694
+   ],
+   [
+    644,
+    655,
+    669,
+    680
+   ],
+   [
+    702,
+    655,
+    737,
+    683
+   ],
+   [
+    764,
+    655,
+    799,
+    683
+   ],
+   [
+    822,
+    652,
+    860,
+    684
+   ],
+   [
+    886,
+    655,
+    921,
+    681
+   ]
+  ],
+  "sites": [
+   [
+    357,
+    761,
+    369,
+    776
+   ],
+   [
+    401,
+    761,
+    416,
+    776
+   ],
+   [
+    416,
+    761,
+    432,
+    776
+   ]
+  ]
+ },
+ "window": [
+  312,
+  43,
+  1607,
+  869
+ ],
+ "ocr_score": 0.087,
+ "name": "Atlantis, Emergence of the Deep Ones",
+ "era": "EA",
+ "read": "2026-10-26",
+ "id": "43",
+ "inspector": "=== nation 43: EA Atlantis, Emergence of the Deep Ones\nEA Atlantis - Emergence of the Deep Ones\nNation #:43\n+1F+2W+3E\n[wiki]\ncommanders: #1680 Scout, #1694 Coral Priest, #1700 Shambler Chief, #1701 Coral Commander, #1693 Mother of the Deep, #1692 Mage of the Deep\nunits: #1682 Reef Dweller, #1681 Atlantian Spearman, #1683 Shambler, #1684 War Shambler, #1685 Coral Guard, #1686 Deep One, #1687 Deep One Spearman, #1688 Shambler of the Deep, #1689 Warrior of the Deep\ncapital-only commanders: #1695 Basalt Queen, #1702 Basalt King\ncapital-only units: #1690 Living Pillar\ncoast commanders: #1694 Coral Priest\ncoast units: #1682 Reef Dweller\npretenders: #1232 Old Man of the Sea, #1233 Lord of the Waves, #2440 Sea Dragon, #2849 Father of Monsters, #2855 Floating Mind, #3055 Grand Hydromancer, #109 Dagon, #179 Master Lich, #180 Demilich, #248 Arch Mage, #269 Wyrm, #657 Monolith, #961 Titan of the Sea, #973 Ancient Kraken, #1231 Drakaina, #2791 Earth Serpent, #2853 Ghost King, #3640 Dark Crystal\nstart sites: #128 The Basalt City, #129 The Dark Crystal\nnational spells: #370 Summon Monster Fish\nhome realms: 9",
+ "image": "img/atlantis.jpg"
+}

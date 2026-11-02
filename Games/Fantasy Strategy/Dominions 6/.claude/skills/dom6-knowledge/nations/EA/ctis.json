@@ -1,0 +1,93 @@
+{
+ "description": "C'tis iS a Swampy river valley surrounded by sandy deserts. In the fertile valley a sacral kingdom of lizard-like humanoids has formed. The kingdomis ancient by human standards and its wisdom and magical knowledge is great. At the top of the society is the Lizard King and his Royal Heirs. The king is the highest priest of C'tis. Under the king are the High Priests with their sacred serpents and the enigmatic Sauromancers, great mages of death and rebirth. The lizards are herbivores, but have enslaved a race of carnivorous lizardmen who serve as soldiers and workers. The C'tissians are somewhat slow in movement, but have thick hides that protect them from cuts and bruises. Both lizard races are cold-blooded and become exhausted very quickly when fighting in cold provinces. They have partial resistance to poison. The inhabitants of C'tis prefer to live in warm provinces.",
+ "features": {
+  "Race": "Thick hides, cold-blooded, poison resistance, prefers Heat scale +2",
+  "Military": "Chariots, infantry, slave warriors, sacred serpents",
+  "Magic": "Death, Nature, some Water and Astral",
+  "Priests": "Powerful",
+  "Scales & Blesses": "Order limit +1, Heat limit +1",
+  "Buildings": "Standard Forts"
+ },
+ "commanders": 9,
+ "units": 0,
+ "sites": 1,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    347,
+    590,
+    436,
+    625
+   ],
+   [
+    464,
+    590,
+    497,
+    625
+   ],
+   [
+    531,
+    586,
+    557,
+    624
+   ],
+   [
+    591,
+    588,
+    606,
+    613
+   ],
+   [
+    642,
+    583,
+    685,
+    625
+   ],
+   [
+    715,
+    591,
+    740,
+    625
+   ],
+   [
+    776,
+    582,
+    837,
+    625
+   ],
+   [
+    837,
+    582,
+    880,
+    625
+   ],
+   [
+    891,
+    586,
+    923,
+    625
+   ]
+  ],
+  "sites": [
+   [
+    349,
+    774,
+    388,
+    809
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  897
+ ],
+ "ocr_score": 0.068,
+ "name": "C'tis, Lizard Kings",
+ "era": "EA",
+ "read": "2026-10-26",
+ "id": "27",
+ "inspector": "=== nation 27: EA C'tis, Lizard Kings\nEA C'tis - Lizard Kings\nNation #:27\n+4D+2N\n[wiki]\ncommanders: #169 Taskmaster, #163 Commander of C'tis, #162 Lizard Lord, #160 High Priest of C'tis, #510 Hierodule, #170 Lizard Shaman, #1387 Reborn, #161 Sauromancer\nunits: #168 Militia, #167 C'tissian Light Infantry, #4062 C'tissian Medium Infantry, #166 City Guard, #165 C'tissian Heavy Infantry, #504 Falchioneer, #171 Slave Warrior, #172 Elite Warrior, #173 Runner, #1365 Lizard Charioteer\ncapital-only commanders: #177 Lizard King, #1366 Lizard Heir\ncapital-only units: #783 Serpent Dancer\nheroes: #379 “Niklatu“ - Lizard Hero, #1660 “Udum'ukinna“ - Reassembled Prince, #1708 “Zilammu“ - Consort of the Dead, #635 “Kabti'ili“ - Ancient Shaman\npretenders: #159 Monument, #384 Neter of Crafts, #385 Neteret of Joy, #386 Neter of the Sun, #387 Neteret of Many Names, #388 Neter of Chaos, #395 Lich Queen, #608 Phoenix, #653 Serpent King, #654 Serpent King, #2445 Neter of the Underworld, #2446 Neter of Kings, #2464 Neter of the Moon, #2790 Myrmecoleon, #2792 Solar Serpent, #2793 Serpent of Chaos, #2797 Hieracosphinx, #2798 Criosphinx, #2799 Wadjet, #2958 Golden Lion, #3651 God Spider, #158 Oracle, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #157 Mother of Monsters, #269 Wyrm, #320 Grand Saurolich, #1349 Devourer of Souls, #2138 Sphinx, #2205 Great Sauromancer, #2786 Celestial Gryphon, #2787 Celestial Lion, #2788 Man-Eater\nstart sites: #9 The Temple City\nnational spells: #318 Contact Scorpion Man, #339 Sacred Crocodile, #459 Summon Monster Toads, #460 Contact Couatl, #956 Pride of Lions\nhome realms: 10, 7",
+ "image": "img/ctis.jpg"
+}

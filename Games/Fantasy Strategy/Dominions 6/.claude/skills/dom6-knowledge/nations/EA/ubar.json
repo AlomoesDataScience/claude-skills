@@ -1,0 +1,162 @@
+{
+ "description": "Ubar is the kingdom of the Unseen, the Jinnun of the deserts. Its heart is a paradise hidden beyond three deserts of scorching heat, one red, one white, and one as black as the night. Beyond the three deserts lies a plateau hidden with the mirages of the Jinnun. There is but one entrance in the cliffside of Hthe plateau, and it is always guarded by invisible sentinels. Once you have passed the entrance you enter a city covered in sand. This is lram of a Thousand Pillars, home of the Jinnun. Once this was a paradise with date palms, fountains and palaces in abundance. Towers of brass and marble rose towards the heavens, fist-sized rubies and diamonds lit the streets and palaces, and the air was filled with music and pleasant fragrances. This was the City of Brass. But the Lords of Ubar rebelled against the powers that were and the city was sealed by a divine decree. The Afarit, the mightiest of the Jinnun, were imprisoned in their palaces with their rebel God. Now Iram is a desert city inhabited by a few Jinn and their human slaves, waiting for the Gates of Brass to open, and the return of the Ifrit Sultan",
+ "features": {
+  "Race": "Jinn and human slaves. Prefers Heat scale +3",
+  "Military": "Human infantry and camel riders, Ghuls, Jinn Warriors, sacred Ifrit warriors.",
+  "Magic": "Fire, Air, Glamour, Blood, some Earth and very little Astral.",
+  "Priests": "Weak, Guardian Spirits.",
+  "Dominion": "Dominion hides province ownership.",
+  "Scales & Blesses": "Heat limit +1, Magic limit +1",
+  "Buildings": "Standard Forts, forts reduce heat scale deaths by 1 step"
+ },
+ "commanders": 8,
+ "units": 7,
+ "sites": 6,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    346,
+    673,
+    366,
+    704
+   ],
+   [
+    405,
+    674,
+    425,
+    709
+   ],
+   [
+    453,
+    659,
+    502,
+    710
+   ],
+   [
+    533,
+    676,
+    547,
+    704
+   ],
+   [
+    596,
+    675,
+    604,
+    691
+   ],
+   [
+    655,
+    676,
+    669,
+    698
+   ],
+   [
+    713,
+    658,
+    736,
+    710
+   ],
+   [
+    776,
+    662,
+    797,
+    710
+   ]
+  ],
+  "units": [
+   [
+    344,
+    771,
+    366,
+    802
+   ],
+   [
+    408,
+    774,
+    426,
+    807
+   ],
+   [
+    462,
+    775,
+    486,
+    807
+   ],
+   [
+    527,
+    775,
+    547,
+    807
+   ],
+   [
+    592,
+    770,
+    609,
+    800
+   ],
+   [
+    636,
+    755,
+    685,
+    808
+   ],
+   [
+    713,
+    755,
+    737,
+    808
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    859,
+    391,
+    899
+   ],
+   [
+    391,
+    859,
+    434,
+    899
+   ],
+   [
+    434,
+    859,
+    477,
+    899
+   ],
+   [
+    477,
+    859,
+    520,
+    899
+   ],
+   [
+    520,
+    859,
+    563,
+    899
+   ],
+   [
+    563,
+    859,
+    606,
+    899
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  982
+ ],
+ "ocr_score": 0.066,
+ "name": "Ubar, Kingdom of the Unseen",
+ "era": "EA",
+ "read": "2026-10-26",
+ "id": "18",
+ "inspector": "=== nation 18: EA Ubar, Kingdom of the Unseen\nEA Ubar - Kingdom of the Unseen\nNation #:18\n+2F+1A+1D+1G\n[wiki]\ncommanders: #3457 Ubaran Scout, #3458 Ubaran Commander, #3459 Ubaran Sheikh, #3460 Kahin, #3461 Tubba, #3462 Human Sahir\nunits: #3453 Ubaran Desert Warrior, #3454 Ubaran Camel Rider, #3470 Ubaran Archer, #3455 Ubaran Soldier, #3456 Brazen Guard\ncapital-only commanders: #3468 Jinn Sahir, #3469 Jinn Emir\ncapital-only units: #3463 Jinn Warrior, #3477 Ghul\nforeign commanders: #3459 Ubaran Sheikh\nforeign units: #3453 Ubaran Desert Warrior, #3454 Ubaran Camel Rider\nwaste units: #3477 Ghul\nfuture capital commanders: #3466 Houri, #3465 Ifrit Sultan, #3472 Shaytan\nfuture capital units: #3467 Guardian of the Forbidden Chambers, #3464 Ifrit Warrior\nheroes: #3475 “Al-Malik al-Aswad“ - Black King, #3484 “'Umm Ghulah“ - Mother Ghul\nmultiheroes: #3474 Banu Si'lat\npretenders: #120 Moloch, #655 Scorpion King, #661 Shedu, #957 Lord of The Desert Sun, #1097 Lord of The Summer Plague, #1372 Annunaki of the Sky, #1373 Annunaki of Sweet Waters, #1374 Annunaki of the Morning Star, #1384 Solar Disc, #2137 Urmahlullu, #2138 Sphinx, #2435 Annunaki of Love and War, #2436 Annunaki of the Moon, #2437 Annunaki of Growth and Rebirth, #2438 Annunaki of the Underworld, #2462 Golden Idol, #2786 Celestial Gryphon, #2787 Celestial Lion, #2788 Man-Eater, #3328 God Block, #3329 Betyl of the Sun, #3330 Betyl of Writing, #3331 Betyl of the Stars, #3344 Statue of Beginnings, #3345 Wooden Colossus, #3369 Ilahat of Fate, #3370 Ilahat of Might, #3386 Ilah of the Sky, #3387 Ilah of the Sacred Mountain, #3388 Ilah of the Moon, #384 Neter of Crafts, #385 Neteret of Joy, #386 Neter of the Sun, #387 Neteret of Many Names, #388 Neter of Chaos, #395 Lich Queen, #608 Phoenix, #653 Serpent King, #654 Serpent King, #2445 Neter of the Underworld, #2446 Neter of Kings, #2464 Neter of the Moon, #2790 Myrmecoleon, #2792 Solar Serpent, #2793 Serpent of Chaos, #2797 Hieracosphinx, #2798 Criosphinx, #2799 Wadjet, #2958 Golden Lion, #3651 God Spider, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #159 Monument, #606 Great Mother, #978 Great Black Bull, #979 Great White Bull, #1025 Divine Glyph, #2082 Son of the Fallen, #3346 Bronze Colossus, #3473 Firstborn of the Smokeless Flame, #3876 Sacred Geyser\nstart sites: #214 The Three Deserts, #215 Iram of a Thousand Pillars\nfuture sites: #216 Jannah, #217 City of Brass, #211 The Vault of Incense and Marvels\nnational spells: #542 Summon Hinn, #546 Contact Marid, #547 Scorching Wind, #548 Smokeless Flame, #551 Feast for Ghuls, #552 Summon Ghulah, #553 Summon Binn, #554 Summon Si'lat, #956 Pride of Lions\nhome realms: 10, 5, 7",
+ "image": "img/ubar.jpg"
+}

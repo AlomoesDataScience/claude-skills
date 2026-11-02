@@ -1,0 +1,198 @@
+{
+ "description": "In ages past, a distant star inhabited by a great race of strange, alien beings was struck with an unimaginable catastrophe. The star fell from the heavens, breaking into tiny shards. One such shard fell through the Spheres and down upon the world. The shard came to rest on the ocean floor and there a remnant of this great race adapted and survived. They multiplied and enslaved a race of fishlike humanoids by sheer strength of mind and conquered the underwater realms of the world. Hin the halls of R'lyeh the Starspawns, the Great Ones who survived the Fall opened a gate into the Void and unleashed its horrors upon the world. But the Void was not to be controlled even by the Starspawns. The very fabric of the Veil was weakened and madness struck the inhabitants of mighty R'lyeh. Only the most powerful of the Starspawns were able to keep their minds intact. The Empire crumbled as insanity took the leaders and the former slaves and servants of the Empire were able to lift the yoke of R'lyeh. But now a God is awakening, and it is aGod Dreaming of the Void. The mind-breaking Dreams of the Sleeping God plague the inhabitants of coastal and underwater cities and with the Dreams come the horrors. Strange, cannibalistic cults worshiping the Void call them from Beyond. The Dreamlands of R'lyeh threaten to destroy the world. All coastal forts of R'lyeh have a special well where women can submerge themselves in the hope of being impregnated by a Great One. However, most will be taken by Deep Ones instead and the women's offspring will be strange, fishlike humanoids instead of the noble Starchildren they wanted. These half-human hybrids are usually devoted to the cause of putting mankind below the sea and often join the army of R'lyeh free of charge. National G-catures",
+ "features": {
+  "Race": "Underwater",
+  "Military": "Atlantian and Oceanian slaves, hybrids, Illithids",
+  "Magic": "Astral, Water, Glamour, Earth, and some Nature",
+  "Priests": "Average, can summon Void Beings, might get additional insane prophets",
+  "Dominion effect": "Kills population. Creates dreamers, madmen and Void Beings. Makes all non-Void Beings apart from the pretender insane.",
+  "Scales & Blesses": "Sloth limit +1, Magic limit +1",
+  "Buildings": "Standard Forts"
+ },
+ "commanders": 10,
+ "units": 15,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    295,
+    702,
+    313,
+    722
+   ],
+   [
+    350,
+    686,
+    388,
+    721
+   ],
+   [
+    415,
+    687,
+    462,
+    730
+   ],
+   [
+    495,
+    697,
+    516,
+    731
+   ],
+   [
+    558,
+    692,
+    580,
+    722
+   ],
+   [
+    633,
+    709,
+    643,
+    723
+   ],
+   [
+    690,
+    692,
+    712,
+    722
+   ],
+   [
+    755,
+    687,
+    787,
+    730
+   ],
+   [
+    821,
+    686,
+    853,
+    730
+   ],
+   [
+    923,
+    700,
+    946,
+    718
+   ]
+  ],
+  "units": [
+   [
+    287,
+    752,
+    315,
+    768
+   ],
+   [
+    300,
+    809,
+    321,
+    823
+   ],
+   [
+    349,
+    794,
+    381,
+    814
+   ],
+   [
+    415,
+    792,
+    447,
+    821
+   ],
+   [
+    485,
+    782,
+    512,
+    817
+   ],
+   [
+    551,
+    784,
+    581,
+    813
+   ],
+   [
+    618,
+    783,
+    644,
+    817
+   ],
+   [
+    680,
+    782,
+    712,
+    811
+   ],
+   [
+    746,
+    794,
+    778,
+    813
+   ],
+   [
+    811,
+    789,
+    845,
+    824
+   ],
+   [
+    1020,
+    781,
+    1052,
+    822
+   ],
+   [
+    1077,
+    781,
+    1123,
+    822
+   ],
+   [
+    1186,
+    798,
+    1212,
+    820
+   ],
+   [
+    1253,
+    797,
+    1280,
+    820
+   ],
+   [
+    1320,
+    793,
+    1344,
+    810
+   ]
+  ],
+  "sites": [
+   [
+    287,
+    842,
+    334,
+    901
+   ],
+   [
+    334,
+    842,
+    382,
+    901
+   ]
+  ]
+ },
+ "window": [
+  263,
+  43,
+  1654,
+  986
+ ],
+ "ocr_score": 0.071,
+ "name": "R'lyeh, Dreamlands",
+ "era": "LA",
+ "read": "2026-10-26",
+ "id": "127",
+ "inspector": "=== nation 127: LA R'lyeh, Dreamlands\nLA R'lyeh - Dreamlands\nNation #:127\n+3S+1G\n[wiki]\ncommanders: #432 Scout, #444 Traitor Prince, #1527 Slave Priest, #1518 Slave Mage, #445 Illithid Lord, #443 Star Child, #3858 Starspawn\nunits: #1517 Slave Trooper, #1526 Slave Guardian, #1515 Slave Trooper, #1524 Slave Guardian, #335 Slave Trooper, #1619 Slave Guardian, #336 Slave Guardian, #337 Lobo Guard, #424 Meteorite Guard, #425 Shambler Thrall, #243 Crab Hybrid, #331 Illithid, #407 Illithid Soldier\ncapital-only commanders: #3857 Starspawn\nland commanders (water nations): #1563 Void Cultist\ncoast commanders: #443 Star Child, #2470 Hybrid Commander\ncoast units: #970 Hybrid, #971 Hybrid Trooper, #972 Hybrid Soldier\nheroes: #560 “Cthugul“ - Stargazer, #660 “Auluudh“ - Aboleth\npretenders: #109 Dagon, #1232 Old Man of the Sea, #1233 Lord of the Waves, #2440 Sea Dragon, #2849 Father of Monsters, #2855 Floating Mind, #3055 Grand Hydromancer, #179 Master Lich, #248 Arch Mage, #269 Wyrm, #546 Void Lurker, #652 Void Lord, #657 Monolith, #872 Ghost King, #961 Titan of the Sea, #973 Ancient Kraken, #1231 Drakaina, #2791 Earth Serpent, #2850 Statue of the Underworld, #2980 Uttervast, #3054 Firstborn of the Star, #3396 King in Yellow\nstart sites: #164 The City of Unfullfilled Dreams, #231 The Void Gate\nnational spells: #627 Contact Void Spectre, #630 Dreams of R'lyeh\nhome realms: 9",
+ "image": "img/rlyeh.jpg"
+}

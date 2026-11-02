@@ -1,0 +1,166 @@
+{
+ "description": "The Celestial Empire is crumbling. Constant invasions from the barbaric khans have all but destroyed the Imperial Bureaucracy. The Imperial family has been replaced by Barbarian Kings. The Imperial Guard is no more and the cavalry of old has been replaced by skilled barbarian horsemen. Ancestral worship is popular once more and priest-mages of barbarian heritage who lead the Ancestor Cult are replacing the priests of the Bureaucracy. With the displacement of the eunuchs from power, conscription has fallen out of use. National Cyeatures",
+ "features": {
+  "Race": "Humans",
+  "Military": "Cavalry, heavy infantry, archers.",
+  "Magic": "Water, Earth, Death, Nature, Air, Astral and some Glamour, Summon Celestial Beings",
+  "Priests": "Weak",
+  "Buildings": "Standard Forts"
+ },
+ "commanders": 9,
+ "units": 11,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    331,
+    521,
+    374,
+    551
+   ],
+   [
+    399,
+    515,
+    434,
+    564
+   ],
+   [
+    460,
+    515,
+    498,
+    553
+   ],
+   [
+    524,
+    536,
+    545,
+    565
+   ],
+   [
+    589,
+    534,
+    607,
+    568
+   ],
+   [
+    647,
+    535,
+    668,
+    565
+   ],
+   [
+    709,
+    532,
+    731,
+    568
+   ],
+   [
+    768,
+    532,
+    792,
+    568
+   ],
+   [
+    827,
+    532,
+    851,
+    568
+   ]
+  ],
+  "units": [
+   [
+    335,
+    590,
+    367,
+    607
+   ],
+   [
+    356,
+    631,
+    425,
+    662
+   ],
+   [
+    457,
+    631,
+    483,
+    662
+   ],
+   [
+    527,
+    631,
+    546,
+    662
+   ],
+   [
+    576,
+    631,
+    608,
+    662
+   ],
+   [
+    640,
+    631,
+    667,
+    662
+   ],
+   [
+    699,
+    631,
+    730,
+    662
+   ],
+   [
+    761,
+    631,
+    789,
+    646
+   ],
+   [
+    820,
+    619,
+    874,
+    654
+   ],
+   [
+    874,
+    619,
+    928,
+    654
+   ],
+   [
+    928,
+    619,
+    982,
+    654
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    714,
+    391,
+    754
+   ],
+   [
+    391,
+    714,
+    434,
+    754
+   ]
+  ]
+ },
+ "window": [
+  311,
+  69,
+  1607,
+  837
+ ],
+ "ocr_score": 0.074,
+ "name": "Tien Ch'i, Barbarian Kings",
+ "era": "LA",
+ "read": "2026-10-26",
+ "id": "109",
+ "inspector": "=== nation 109: LA T'ien Ch'i, Barbarian Kings\nLA T'ien Ch'i - Barbarian Kings\nNation #:109\n+1A+1E+1S+1D\n[wiki]\ncommanders: #1771 Mounted Scout, #3979 General, #930 Khan, #1895 Ceremonial Master, #808 Master of the Way, #1709 Ancestor Smith, #1710 Spirit Master, #1711 Ancestor Guide\nunits: #794 Footman, #795 Footman, #796 Footman, #797 Archer, #1901 Medium Footman, #1904 Medium Footman, #928 Heavy Footman, #929 Heavy Footman, #938 Barbarian Horseman, #939 Barbarian Heavy Horseman\ncapital-only commanders: #1712 Celestial Master\ncapital-only units: #1577 Ancestor Vessel\nmountain commanders: #1709 Ancestor Smith\nwaste commanders: #930 Khan\nwaste units: #938 Barbarian Horseman, #939 Barbarian Heavy Horseman\nheroes: #942 “Ho Hsien-Ku“ - Immortal, #943 “Lu Tung-Pin“ - Immortal, #944 “Li T'ieh-Kuai“ - Master With The Iron Crutch\npretenders: #905 Jade Emperor, #1339 Nyorai, #1345 Celestial General, #2316 Dragon King, #2318 Celestial Dragon, #2457 Bodhisattva of Mercy, #2465 Statue of War, #2556 Celestial Carp, #3072 Kami of the Sun, #3073 Kami of the Moon, #3074 Kami of Storms, #3088 Dharmapala of the Underworld, #3928 White Tiger of the West, #3929 Azure Dragon of the East, #3931 Vermilion Bird of the South, #3932 Black Tortoise of the North, #158 Oracle, #179 Master Lich, #180 Demilich, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3642 Great Sage, #3711 Storm Father, #250 Frost Father, #499 Nataraja, #608 Phoenix, #1341 Devi of Darkness, #1344 Devi of Good Fortunes, #3662 Asura, #3926 Devi of Strength\nstart sites: #52 The Celestial City, #130 The Heavenly Gate\nnational spells: #286 Celestial Chastisement, #289 Internal Alchemy, #529 Celestial Servant, #531 Celestial Hounds, #533 Call Celestial Soldiers, #534 Call Ancestor, #535 Wrath of the Ancestors, #958 Herd of Buffaloes\nhome realms: 10, 4",
+ "image": "img/tien_chi.jpg"
+}

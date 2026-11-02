@@ -1,0 +1,179 @@
+{
+ "description": "Andramania is arepublic of Calystrii, civilized and culturally advanced Cynocephalians. The Cynocephalian clans of Gog and Magog once served Magnificent Ind and their barking hordes were released upon the enemies of the Prester King. But when the Khans of T’ien Ch’i defeated the sacred armies of Ind and killed the Prester King himself, the dominion of Ind was broken and all subservient tribes and kingdoms found themselves free from the yoke of the Magnificent Kingdom. The Cynocephalians had become increasingly more civilized under the benevolent rule of the Prester King and when Ind fell cynocephalian magistrates replaced the viceroys of Ind and united the cynocephalian tribes in a nation of virtue far beyond that of the kingdoms of men. They called themselves Calystrii and promised never to fall back into the barbarism and gruesome practices of old. Now most Calystri regard men with disdain as the inferior beings they are. National Features",
+ "features": {
+  "Race": "Cynocephalian dog-men. Prefers Heat scale +1.",
+  "Military": "Skilled and disciplined infantry and crossbowmen. Conscription.",
+  "Magic": "Fire, Astral, Nature, Earth and some Water. Rarely Blood or Death.",
+  "Priests": "Mostly weak.",
+  "Scales & Blesses": "Order limit +1",
+  "Buildings": "Standard Forts"
+ },
+ "commanders": 12,
+ "units": 10,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    342,
+    614,
+    367,
+    645
+   ],
+   [
+    413,
+    611,
+    427,
+    654
+   ],
+   [
+    463,
+    613,
+    489,
+    652
+   ],
+   [
+    524,
+    613,
+    550,
+    652
+   ],
+   [
+    596,
+    612,
+    609,
+    653
+   ],
+   [
+    652,
+    611,
+    672,
+    637
+   ],
+   [
+    709,
+    611,
+    733,
+    648
+   ],
+   [
+    770,
+    610,
+    794,
+    654
+   ],
+   [
+    823,
+    610,
+    854,
+    652
+   ],
+   [
+    892,
+    611,
+    915,
+    654
+   ],
+   [
+    952,
+    611,
+    976,
+    654
+   ],
+   [
+    1044,
+    610,
+    1075,
+    649
+   ]
+  ],
+  "units": [
+   [
+    337,
+    710,
+    367,
+    750
+   ],
+   [
+    395,
+    710,
+    428,
+    750
+   ],
+   [
+    466,
+    710,
+    488,
+    750
+   ],
+   [
+    516,
+    710,
+    570,
+    750
+   ],
+   [
+    570,
+    710,
+    624,
+    750
+   ],
+   [
+    624,
+    710,
+    688,
+    750
+   ],
+   [
+    688,
+    710,
+    732,
+    750
+   ],
+   [
+    761,
+    710,
+    807,
+    750
+   ],
+   [
+    807,
+    710,
+    854,
+    750
+   ],
+   [
+    924,
+    710,
+    952,
+    750
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    802,
+    394,
+    842
+   ],
+   [
+    394,
+    802,
+    440,
+    842
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  926
+ ],
+ "ocr_score": 0.077,
+ "name": "Andramania, Dog Republic",
+ "era": "LA",
+ "read": "2026-10-26",
+ "id": "121",
+ "inspector": "=== nation 121: LA Andramania, Dog Republic\nLA Andramania - Dog Republic\nNation #:121\n+1F+1E+1S+1N\n[wiki]\ncommanders: #3848 Calystri Scout, #3849 Calystri Commander, #3973 Calystri General, #3919 Calystri Presbyter, #3920 Apprentice Magus, #3921 Calystri Magus, #3922 Calystri Magistrate\nunits: #3840 Calystri Militia, #3841 Calystri City Guard, #3842 Calystri Crossbowman, #3843 Calystri Footman, #3844 Calystri Soldier, #3845 Calystri Pikeneer, #3846 Calystri Man at Arms, #3847 Calystri Senatorial Guard\ncapital-only commanders: #3923 Presbyter Magistrate, #3924 Magistrate Magus, #3925 Calystri Senator, #3975 Serene Master\ncapital-only units: #3974 Serene One\nmountain commanders: #3976 Howler Champion\nmountain units: #3880 Howler\npretenders: #159 Monument, #384 Neter of Crafts, #385 Neteret of Joy, #386 Neter of the Sun, #387 Neteret of Many Names, #388 Neter of Chaos, #395 Lich Queen, #608 Phoenix, #653 Serpent King, #654 Serpent King, #2445 Neter of the Underworld, #2446 Neter of Kings, #2464 Neter of the Moon, #2790 Myrmecoleon, #2792 Solar Serpent, #2793 Serpent of Chaos, #2797 Hieracosphinx, #2798 Criosphinx, #2799 Wadjet, #2958 Golden Lion, #3651 God Spider, #499 Nataraja, #1096 Destroyer of Worlds, #1341 Devi of Darkness, #1344 Devi of Good Fortunes, #2202 Great Siddha, #2466 Kamadhenu, #2549 Maharishi, #3661 Elephant Idol, #3662 Asura, #3875 Nagasiddha, #3926 Devi of Strength, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #4003 Divine Consul\nstart sites: #230 The Senate Palace, #239 The Shrine Serene\nnational spells: #340 Herd of Elephants, #956 Pride of Lions, #957 Ambush of Tigers, #958 Herd of Buffaloes\nhome realms: 10, 7, 8",
+ "image": "img/andramania.jpg"
+}

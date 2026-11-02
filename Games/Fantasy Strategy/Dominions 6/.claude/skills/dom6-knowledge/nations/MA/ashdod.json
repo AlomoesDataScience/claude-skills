@@ -1,0 +1,161 @@
+{
+ "description": "Ashdod is a dry wasteland inhabited by the Rephaim, giants descended from the Nephilim of primordial times. The Rephaim have degenerated and lost the prodigal powers of their predecessors, but they are still mighty in comparison to other beings. While not as mighty as they once were, there are still a few Rephaim with pure blood. In the Twin Cities of Ashdod and Ashkelon live the Anakim, mightiest of the Rephaim, and the Anakite priest-kings. With the disappearance of the Nephilim and the pureblooded Rephaim, the Nephilim Cult has been replaced by ancestor worship. Malikum, Rephaite kings of old, are worshiped at sacred banquets for the dead. The Kohanim of earlier times have been replaced by the Zamzummim, priest-mages and shepherds of the dead, who fulfill their purpose in life by being devoured at the funerary banquets. National Features",
+ "features": {
+  "Race": "Giants",
+  "Military": "Rephaite giant infantry and human slaves. Prefers Heat scale +2",
+  "Magic": "Fire, Earth, Astral, Death.",
+  "Priests": "Weak, with one medium priest, sacred Anakite giants",
+  "Scales & Blesses": "Heat limit +1, Death limit +1",
+  "Buildings": "Giant Forts"
+ },
+ "commanders": 8,
+ "units": 11,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    355,
+    575,
+    380,
+    625
+   ],
+   [
+    400,
+    568,
+    433,
+    625
+   ],
+   [
+    454,
+    567,
+    490,
+    625
+   ],
+   [
+    515,
+    567,
+    551,
+    625
+   ],
+   [
+    588,
+    567,
+    612,
+    625
+   ],
+   [
+    638,
+    559,
+    676,
+    625
+   ],
+   [
+    699,
+    567,
+    728,
+    606
+   ],
+   [
+    769,
+    559,
+    800,
+    625
+   ]
+  ],
+  "units": [
+   [
+    347,
+    691,
+    364,
+    722
+   ],
+   [
+    401,
+    691,
+    425,
+    721
+   ],
+   [
+    464,
+    673,
+    502,
+    723
+   ],
+   [
+    512,
+    668,
+    523,
+    683
+   ],
+   [
+    532,
+    665,
+    557,
+    723
+   ],
+   [
+    573,
+    668,
+    584,
+    682
+   ],
+   [
+    592,
+    664,
+    618,
+    723
+   ],
+   [
+    642,
+    664,
+    674,
+    723
+   ],
+   [
+    705,
+    664,
+    737,
+    723
+   ],
+   [
+    759,
+    657,
+    798,
+    723
+   ],
+   [
+    820,
+    657,
+    859,
+    723
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    774,
+    394,
+    813
+   ],
+   [
+    394,
+    774,
+    440,
+    813
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  897
+ ],
+ "ocr_score": 0.093,
+ "name": "Ashdod, Reign of the Anakim",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "64",
+ "inspector": "=== nation 64: MA Ashdod, Reign of the Anakim\nMA Ashdod - Reign of the Anakim\nNation #:64\n+1F+2E+1S+1D\n[wiki]\ncommanders: #2010 Edomite Scout, #2009 Rephaite Commander, #2029 Kohen, #2060 Rephaite Sage, #2038 Emite\nunits: #2003 Human Slinger, #2004 Human Slave, #2005 Edomite, #2006 Amorite, #2007 Gileadite, #2061 Gileadite Archer, #2008 Bashanite\ncapital-only commanders: #2011 Zamzummite, #2027 Adon, #2028 Talmai Elder\ncapital-only units: #2025 Sheshai Anakite, #2026 Ahiman Anakite\nheroes: #2047 “Sheshai“ - First Son of Anak, #2048 “Ahiman“ - Second Son of Anak, #2049 “Talmai“ - Third Son of Anak\npretenders: #120 Moloch, #655 Scorpion King, #661 Shedu, #957 Lord of The Desert Sun, #1097 Lord of The Summer Plague, #1372 Annunaki of the Sky, #1373 Annunaki of Sweet Waters, #1374 Annunaki of the Morning Star, #1384 Solar Disc, #2137 Urmahlullu, #2138 Sphinx, #2435 Annunaki of Love and War, #2436 Annunaki of the Moon, #2437 Annunaki of Growth and Rebirth, #2438 Annunaki of the Underworld, #2462 Golden Idol, #2786 Celestial Gryphon, #2787 Celestial Lion, #2788 Man-Eater, #3328 God Block, #3329 Betyl of the Sun, #3330 Betyl of Writing, #3331 Betyl of the Stars, #3344 Statue of Beginnings, #3345 Wooden Colossus, #3369 Ilahat of Fate, #3370 Ilahat of Might, #3386 Ilah of the Sky, #3387 Ilah of the Sacred Mountain, #3388 Ilah of the Moon, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #159 Monument, #606 Great Mother, #978 Great Black Bull, #979 Great White Bull, #1025 Divine Glyph, #2082 Son of the Fallen, #2958 Golden Lion, #3346 Bronze Colossus\nstart sites: #144 The Twin Cities, #145 Mount Seir\nnational spells: #345 Strange Fire, #347 Dirge for the Dead, #348 Banquet for the Dead, #350 Summon Se'irim, #351 Summon Shedim, #352 Call Malakh, #353 Call Hashmal, #354 Call Arel, #355 Call Ophan, #356 Call Merkavah, #358 Summon Mazzikim, #359 Summon Lilot\nhome realms: 10, 5",
+ "image": "img/ashdod.jpg"
+}

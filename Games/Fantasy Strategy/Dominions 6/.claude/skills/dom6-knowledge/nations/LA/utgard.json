@@ -1,0 +1,179 @@
+{
+ "description": "Uigard is a land of bitter winters and cool summers. It was once Jotunheim, the home of giants. But with the coming of man, the giant population has dwindled. After man ventured to the icy lands of Jotunheim, the giants of Jotun discovered the humans to be resourceful allies. With the Awakening God, all grudges have been cast aside and men and giants fight side by side. The alliance with the humans has estranged the Gygjas and their Vaetti servants, who no longer aid the giants. Instead, human seeresses have become influential. In the heart of Utgard lies the magical Well of Urd where the Norns gather and divine the future of the world. The giants of Utgard are immensely strong and resilient. They are born in the cold and do not suffer from leold i climates. The people of Utgard prefer to live in cool provinces. National Features",
+ "features": {
+  "Race": "Cold resistant, prefers Cold scale +1",
+  "Military": "Giant infantry, human infantry",
+  "Magic": "Water, Astral, Death, Glamour, Blood and some Nature",
+  "Priests": "Average",
+  "Scales & Blesses": "Cold limit +1, Luck limit +1",
+  "Buildings": "Giant Forts"
+ },
+ "commanders": 8,
+ "units": 14,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    347,
+    595,
+    365,
+    624
+   ],
+   [
+    397,
+    569,
+    438,
+    622
+   ],
+   [
+    469,
+    591,
+    490,
+    618
+   ],
+   [
+    528,
+    557,
+    561,
+    622
+   ],
+   [
+    585,
+    592,
+    608,
+    624
+   ],
+   [
+    648,
+    573,
+    682,
+    623
+   ],
+   [
+    711,
+    557,
+    744,
+    623
+   ],
+   [
+    824,
+    571,
+    862,
+    623
+   ]
+  ],
+  "units": [
+   [
+    346,
+    689,
+    368,
+    709
+   ],
+   [
+    403,
+    689,
+    429,
+    706
+   ],
+   [
+    467,
+    686,
+    489,
+    708
+   ],
+   [
+    524,
+    686,
+    550,
+    708
+   ],
+   [
+    590,
+    686,
+    611,
+    708
+   ],
+   [
+    646,
+    671,
+    681,
+    721
+   ],
+   [
+    707,
+    671,
+    742,
+    721
+   ],
+   [
+    765,
+    671,
+    803,
+    721
+   ],
+   [
+    829,
+    671,
+    864,
+    721
+   ],
+   [
+    899,
+    668,
+    921,
+    724
+   ],
+   [
+    951,
+    671,
+    986,
+    721
+   ],
+   [
+    1009,
+    671,
+    1047,
+    721
+   ],
+   [
+    1075,
+    671,
+    1108,
+    721
+   ],
+   [
+    1125,
+    671,
+    1169,
+    721
+   ]
+  ],
+  "sites": [
+   [
+    349,
+    774,
+    368,
+    793
+   ],
+   [
+    368,
+    774,
+    386,
+    793
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  897
+ ],
+ "ocr_score": 0.068,
+ "name": "Utgard, Well of Urd",
+ "era": "LA",
+ "read": "2026-10-26",
+ "id": "117",
+ "inspector": "=== nation 117: LA Utgård, Well of Urd\nLA Utgård - Well of Urd\nNation #:117\n+2S+1D+1G\n[wiki]\ncommanders: #426 Scout, #839 Herse, #2149 Gode, #280 Seithkona, #786 Jotun Scout, #437 Jotun Herse, #274 Jotun Jarl, #275 Jotun Gode, #3432 Jotun Skratti\nunits: #837 Huskarl, #838 Huskarl, #3436 Human Godihuskarl, #3437 Human Godihuskarl, #3438 Human Hirdman, #277 Jotun Bondi, #276 Jotun Javelinist, #300 Jotun Hurler, #278 Jotun Spearman, #279 Jotun Axeman, #840 Jotun Huskarl, #841 Godihuskarl, #842 Jotun Hirdman\ncapital-only commanders: #281 Norna\ncapital-only units: #784 Garmhirding\nheroes: #1382 “Tjatse“ - Abductor, #3439 “Urd“ - Norna of the Past, #3440 “Verdandi“ - Norna of the Present, #3441 “Skuld“ - Norna of the Future\npretenders: #250 Frost Father, #401 Bitch Queen, #1229 Son of Fenrer, #1379 Keeper of the Bridge, #1561 Father of Winters, #2234 Irminsul, #2447 Idol of Men, #2448 Idol of Beasts, #2449 Idol of Sorcery, #2800 Ormr, #2801 Linnormr, #2803 Linnormr, #3086 Deives of the Sun, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #500 Skratti, #605 Son of Niefel, #606 Great Mother, #643 Bog Mummy, #644 Dracolich, #657 Monolith, #3876 Sacred Geyser\nstart sites: #47 Well of Urd\nnational spells: #491 Summon Dwarf of the Four Directions, #494 Seith Curse, #495 Summon Glosos, #496 Brood of Garm, #497 Awaken Jotun Draugar, #500 Illwinter, #955 Sloth of Bears, #1466 Herd of Moose\nhome realms: 1, 10",
+ "image": "img/utgard.jpg"
+}

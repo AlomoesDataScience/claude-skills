@@ -1,0 +1,179 @@
+{
+ "description": "When the Star fell into the sea, the Basalt City and the Dark Crystal were destroyed, the reign of the Basalt Queens was ended and the surviving Atlantians reformed the kingdom. Atlantis is an underwater nation of strange beings resembling a cross between fish, frog and human. Atlantians never stop growing and will live for several hundred years unless killed. The Atlantian society is organized ina strict hierarchy of size and age. The oldest and most cunning Atlantians are trained as priests or mages. Because the Atlantians find it difficult to use magic, they often capture human children and train them in magic in the Coral Towers. The soldiers of Atlantis use spears tipped with living coral shards and wear armor made of coral chunks. The coral is poisonous and is cultivated solely for purposes of war. National Features",
+ "features": {
+  "Race": "Amphibious",
+  "Military": "Coral-armed infantry, shamblers, war lobsters, no missile weapons",
+  "Magic": "Water, Astral, Fire, Earth",
+  "Priests": "Powerful",
+  "Scales & Blesses": "Productivity limit +1",
+  "Buildings": "Standard Forts"
+ },
+ "commanders": 9,
+ "units": 14,
+ "sites": 1,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    343,
+    600,
+    364,
+    617
+   ],
+   [
+    392,
+    584,
+    427,
+    613
+   ],
+   [
+    456,
+    581,
+    494,
+    614
+   ],
+   [
+    521,
+    581,
+    547,
+    614
+   ],
+   [
+    576,
+    582,
+    610,
+    625
+   ],
+   [
+    632,
+    577,
+    680,
+    625
+   ],
+   [
+    715,
+    593,
+    731,
+    625
+   ],
+   [
+    811,
+    593,
+    827,
+    625
+   ],
+   [
+    867,
+    595,
+    888,
+    614
+   ]
+  ],
+  "units": [
+   [
+    331,
+    693,
+    365,
+    721
+   ],
+   [
+    393,
+    693,
+    426,
+    715
+   ],
+   [
+    454,
+    693,
+    487,
+    715
+   ],
+   [
+    515,
+    691,
+    548,
+    715
+   ],
+   [
+    575,
+    687,
+    627,
+    724
+   ],
+   [
+    627,
+    687,
+    680,
+    724
+   ],
+   [
+    680,
+    687,
+    732,
+    724
+   ],
+   [
+    765,
+    682,
+    792,
+    711
+   ],
+   [
+    824,
+    682,
+    860,
+    710
+   ],
+   [
+    883,
+    682,
+    921,
+    710
+   ],
+   [
+    932,
+    679,
+    973,
+    726
+   ],
+   [
+    990,
+    713,
+    999,
+    726
+   ],
+   [
+    1005,
+    682,
+    1043,
+    711
+   ],
+   [
+    1113,
+    691,
+    1136,
+    721
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    774,
+    380,
+    812
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  897
+ ],
+ "ocr_score": 0.091,
+ "name": "Atlantis, Kings of the Deep",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "88",
+ "inspector": "=== nation 88: MA Atlantis, Kings of the Deep\nMA Atlantis - Kings of the Deep\nNation #:88\n+5W\n[wiki]\ncommanders: #432 Scout, #207 Shambler Chief, #441 Consort, #112 Coral Queen, #322 King of the Deep, #3096 Mage of the Deep\nunits: #110 Atlantian Militia, #111 Atlantian Shield Bearer, #107 Atlantian Light Infantry, #1621 Atlantian Infantry, #1620 Reef Warrior, #108 Coral Guard, #1622 Coral Guard, #206 Shambler, #2862 Shambler Guard, #208 War Shambler, #211 Lobster Rider\ncapital-only commanders: #104 Deep Seer\ncapital-only units: #209 Mother Guard\ncoast commanders: #207 Shambler Chief, #102 Initiate of the Deep, #2859 Witness of the Deep, #207 Shambler Chief, #102 Initiate of the Deep, #2859 Witness of the Deep\ncoast units: #107 Atlantian Light Infantry, #2860 Soldier of the Deep, #107 Atlantian Light Infantry, #2860 Soldier of the Deep, #1620 Reef Warrior\nheroes: #373 “Shudul Cthuda“ - Coral Prince, #558 “Chuddar Kadul“ - Seer King\npretenders: #109 Dagon, #294 Nerid, #1232 Old Man of the Sea, #2440 Sea Dragon, #2847 Protogenos of the Sea, #2849 Father of Monsters, #2855 Floating Mind, #3055 Grand Hydromancer, #179 Master Lich, #180 Demilich, #248 Arch Mage, #269 Wyrm, #472 Statue of Order, #657 Monolith, #873 Great Seer of the Deeps, #961 Titan of the Sea, #973 Ancient Kraken, #1231 Drakaina, #1233 Lord of the Waves, #2463 Statue of War, #2791 Earth Serpent, #2850 Statue of the Underworld, #2853 Ghost King, #3058 God-King of the Deep\nstart sites: #2 The Coral Towers\nnational spells: #370 Summon Monster Fish\nhome realms: 9",
+ "image": "img/atlantis.jpg"
+}

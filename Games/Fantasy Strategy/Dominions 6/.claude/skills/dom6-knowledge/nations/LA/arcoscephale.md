@@ -1,0 +1,43 @@
+# Arcoscephale, Sibylline Guidance (LA)
+
+*nation 95; read from the game's nation info screen on 2026-10-26 (OCR, score 0.068; small reading slips are possible)*
+
+![info screen](img/arcoscephale.jpg)
+
+## Description
+
+Arcoscephale is an old kingdom that once ruled much of the known world. With the fall of the Old Kingdom centuries ago, tradition was the only thing that remained to the population. Mystics and priestesses of the old cult still serve the kings of Arcoscephale. The infantry and cavalry are still hopelessly archaic, but the Awakening of the New God has brought some changes. Some traditions have been abandoned and the cavalry has been improved. Skilled and lightly armed phalangites are starting to replace the heavier hoplites and the cardaces. Although the wise Astrologers who aided past kings were killed or disbanded, a new breed of seeresses called the Sibyls has appeared. The Sibyls offer great help in maneuvering the once-mighty kingdom to a powerful platform for the Awakening God. Priestesses with great knowledge of healing are trained in ancient temples built during the peak of the Old Kingdom. The priestesses are able to scry upon enemy troops and provinces that are located within the God's Dominion. The former conquest of the known world has led to an acceptance of strange cultures and beliefs. The Arcoscephalian population are quick to adopt foreign cults, but only to incorporate them into their own belief system. The Awakening God is viewed as the Master of All and all other gods are just aspects of the Great One. Temples and religious sites of other faiths are converted and the faith of the Awakening One is imposed upon newly conquered lands. National Features
+
+## National features
+
+- **Race:** Humans
+- **Military:** Heavy spear-armed infantry, elephants, companion cavalry, ape warriors
+- **Magic:** Astral, Nature, Fire, Earth, Water, Death and some Glamour
+- **Priests:** Average, healing
+- **Dominion:** Scry (accurate and automatic military reports inside dominion)
+- **Syncretism:** Enemy temples are not razed, but converted if a priest is in the army. God starts with one additional divine title.
+- **Scales & Blesses:** Order limit +1
+- **Buildings:** Standard Forts, labs cost 300
+
+## On the info screen
+
+- 20 commanders, 0 units, 0 start sites shown (right-click a sprite in game for its stats)
+
+## From the inspector (vanilla data)
+
+```
+=== nation 95: LA Arcoscephale, Sibylline Guidance
+LA Arcoscephale - Sibylline Guidance
+Nation #:95
++3S+1N
+[wiki]
+commanders: #431 Scout, #1552 Phalangite Commander, #13 Hoplite Commander, #15 Hypaspist Commander, #1554 Agema Commander, #746 Strategos, #3199 Neokoros, #3200 Panageis, #311 Mystic, #3128 Orphic Mystic
+units: #50 Slinger, #201 Peltast, #1551 Phalangite, #14 Hoplite, #16 Hypaspist, #1553 Agema Companion, #1555 Elephant Rider
+capital-only commanders: #1557 Sibyl, #3172 Cerulean Commander
+capital-only units: #1556 Cerulean Warrior, #747 Heart Companion
+heroes: #587 “Orokestes“ - Hierophant, #954 “Pathos“ - Son of Titans, #1089 “Asterios“ - Monster in the Maze
+pretenders: #138 Gorgon, #157 Mother of Monsters, #383 Prince of Death, #472 Statue of Order, #600 Titan of War and Wisdom, #602 Titan of Heaven, #812 Lord of the Wild, #961 Titan of the Sea, #978 Great Black Bull, #979 Great White Bull, #1230 Titan of the Forge, #1342 Titan of Rivers, #1343 Titan of Love, #1348 Titan of Serpents and Medicine, #1371 Titan of Death and Rebirth, #2431 Titan of the Underworld, #2460 Statue of Fertility, #2463 Statue of War, #2783 Drakon, #2796 Hound of Hades, #2850 Statue of the Underworld, #2851 Titan of Winds and Waves, #3121 Eldest Cyclops, #3124 Titan of Forethought, #3203 Titan of the Hunt, #3204 Grey One, #3205 Titan of Crossroads, #3206 Titan of Crossroads, #3207 Titan of Crossroads, #3208 Titan of the Spring, #3209 Titan of Growth, #3368 Bronze Colossus, #3395 Demiurge, #3416 Great Archon, #3650 Immortal Gorgon, #3876 Sacred Geyser, #3895 Ferryman, #120 Moloch, #655 Scorpion King, #661 Shedu, #957 Lord of The Desert Sun, #1097 Lord of The Summer Plague, #1372 Annunaki of the Sky, #1373 Annunaki of Sweet Waters, #1374 Annunaki of the Morning Star, #1384 Solar Disc, #2137 Urmahlullu, #2435 Annunaki of Love and War, #2436 Annunaki of the Moon, #2437 Annunaki of Growth and Rebirth, #2438 Annunaki of the Underworld, #2462 Golden Idol, #2787 Celestial Lion, #3328 God Block, #3329 Betyl of the Sun, #3330 Betyl of Writing, #3331 Betyl of the Stars, #3344 Statue of Beginnings, #3345 Wooden Colossus, #3369 Ilahat of Fate, #3370 Ilahat of Might, #3386 Ilah of the Sky, #3387 Ilah of the Sacred Mountain, #3388 Ilah of the Moon, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #1231 Drakaina, #1232 Old Man of the Sea, #1233 Lord of the Waves, #2138 Sphinx, #2786 Celestial Gryphon, #2788 Man-Eater, #2958 Golden Lion, #3053 Grand Hierophant
+start sites: #122 The Sibylline Caves, #123 The Cerulean Tower, #124 Gymnasium
+national spells: #253 Monster Boar, #254 Summon Hound of Twilight, #255 Sow Dragon Teeth, #256 Bind Keres, #257 Rhapsody of Life, #259 Rhapsody of the Dead, #261 From Death Comes Life, #262 Curse Tablet, #269 Craft Keledone, #270 Forge Brass Bull, #274 Awaken Hamadryad, #369 Procession of the Underworld
+home realms: 10, 3, 5
+```

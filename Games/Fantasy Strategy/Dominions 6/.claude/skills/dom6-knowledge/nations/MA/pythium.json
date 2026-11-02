@@ -1,0 +1,203 @@
+{
+ "description": "The Emerald Empire of Pythium is a splinter empire of the great Empire of Ermor. As dark arts were practiced in the heart of the Empire, the stars warned the Theurgs of Pythia to flee the impending doom. They led Pythia away from the falling Empire and formed an imperial theocracy under their wise rule. But this was not enough to save them. As Ermor crumbled, the provinces of Pythium rebelled and broke away from their old masters. The Emperor of Pythium could not reclaim the rebelling lands and the power of the Emerald Empire diminished over the centuries. The war machine of Pythium is based on the old legionnaire army of Ermor with some minor modifications. During Ermorian times, part of the Pythian lands were under the sway of the Sauromatian tribes. The Androphags used hydras of the Pythian Marshes in warfare. For a long time hydras were only used ed in the Pythian arenas, but now the old practice has been adopted along with the usage of serpent mounts. National G-catures",
+ "features": {
+  "Race": "Humans",
+  "Military": "Legionnaires, serpent cataphracts, gladiators, hydras",
+  "Magic": "Astral, Air, Water, some Fire. High magic gem income.",
+  "Priests": "Powerful",
+  "Scales & Blesses": "Order limit +1",
+  "Buildings": "Standard Forts, starts with a Fortified City"
+ },
+ "commanders": 11,
+ "units": 15,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    347,
+    623,
+    365,
+    653
+   ],
+   [
+    409,
+    620,
+    427,
+    655
+   ],
+   [
+    465,
+    616,
+    511,
+    656
+   ],
+   [
+    511,
+    616,
+    562,
+    656
+   ],
+   [
+    589,
+    619,
+    608,
+    653
+   ],
+   [
+    649,
+    619,
+    669,
+    653
+   ],
+   [
+    710,
+    619,
+    730,
+    653
+   ],
+   [
+    775,
+    621,
+    794,
+    654
+   ],
+   [
+    837,
+    620,
+    855,
+    654
+   ],
+   [
+    884,
+    620,
+    916,
+    652
+   ],
+   [
+    959,
+    619,
+    977,
+    654
+   ]
+  ],
+  "units": [
+   [
+    354,
+    721,
+    367,
+    741
+   ],
+   [
+    396,
+    721,
+    431,
+    750
+   ],
+   [
+    458,
+    721,
+    489,
+    750
+   ],
+   [
+    528,
+    718,
+    551,
+    751
+   ],
+   [
+    587,
+    720,
+    612,
+    751
+   ],
+   [
+    650,
+    721,
+    673,
+    751
+   ],
+   [
+    712,
+    720,
+    734,
+    750
+   ],
+   [
+    770,
+    710,
+    804,
+    751
+   ],
+   [
+    832,
+    720,
+    852,
+    751
+   ],
+   [
+    897,
+    681,
+    928,
+    751
+   ],
+   [
+    952,
+    719,
+    977,
+    752
+   ],
+   [
+    999,
+    714,
+    1049,
+    750
+   ],
+   [
+    1061,
+    684,
+    1114,
+    751
+   ],
+   [
+    1134,
+    714,
+    1169,
+    750
+   ],
+   [
+    1205,
+    719,
+    1221,
+    752
+   ]
+  ],
+  "sites": [
+   [
+    350,
+    802,
+    394,
+    841
+   ],
+   [
+    394,
+    802,
+    439,
+    841
+   ]
+  ]
+ },
+ "window": [
+  312,
+  43,
+  1607,
+  926
+ ],
+ "ocr_score": 0.076,
+ "name": "Pythium, Emerald Empire",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "56",
+ "inspector": "=== nation 56: MA Pythium, Emerald Empire\nMA Pythium - Emerald Empire\nNation #:56\n+2A+1W+5S\n[wiki]\ncommanders: #426 Scout, #428 Assassin, #683 Centurion, #1385 Legatus Legionis, #6 Emerald Lord, #5 Serpent Lord, #52 Battle Deacon, #43 Theurg Acolyte, #42 Theurg\nunits: #50 Slinger, #684 Velite, #685 Alae Legionnaire, #686 Hastatus, #687 Principe, #688 Triarius, #7 Emerald Guard, #689 Standard, #3 Serpent Cataphract, #11 Retiarius, #12 Gladiator, #538 Theurg Communicant\ncapital-only commanders: #41 Arch Theurg, #296 Hydra Tamer\ncapital-only units: #51 Battle Vestal, #1831 Hydra, #1840 Hydra Hatchling\nheroes: #584 “Bartholomeus“ - Patriarch, #505 “Marius Lorca“ - Hero, #506 “Hierogallus“ - Hero\nmultiheroes: #37 Master of the Games\npretenders: #138 Gorgon, #157 Mother of Monsters, #383 Prince of Death, #472 Statue of Order, #600 Titan of War and Wisdom, #602 Titan of Heaven, #812 Lord of the Wild, #961 Titan of the Sea, #978 Great Black Bull, #979 Great White Bull, #1230 Titan of the Forge, #1342 Titan of Rivers, #1343 Titan of Love, #1348 Titan of Serpents and Medicine, #1371 Titan of Death and Rebirth, #2431 Titan of the Underworld, #2460 Statue of Fertility, #2463 Statue of War, #2783 Drakon, #2796 Hound of Hades, #2850 Statue of the Underworld, #2851 Titan of Winds and Waves, #3121 Eldest Cyclops, #3124 Titan of Forethought, #3203 Titan of the Hunt, #3204 Grey One, #3205 Titan of Crossroads, #3206 Titan of Crossroads, #3207 Titan of Crossroads, #3208 Titan of the Spring, #3209 Titan of Growth, #3368 Bronze Colossus, #3395 Demiurge, #3416 Great Archon, #3650 Immortal Gorgon, #3876 Sacred Geyser, #3895 Ferryman, #159 Monument, #384 Neter of Crafts, #385 Neteret of Joy, #386 Neter of the Sun, #387 Neteret of Many Names, #388 Neter of Chaos, #395 Lich Queen, #608 Phoenix, #653 Serpent King, #654 Serpent King, #2445 Neter of the Underworld, #2446 Neter of Kings, #2464 Neter of the Moon, #2790 Myrmecoleon, #2792 Solar Serpent, #2793 Serpent of Chaos, #2797 Hieracosphinx, #2798 Criosphinx, #2799 Wadjet, #3651 God Spider, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #215 Virtue, #250 Frost Father, #874 Divine Emperor, #2138 Sphinx, #2786 Celestial Gryphon, #2787 Celestial Lion, #2788 Man-Eater, #2958 Golden Lion\nstart sites: #3 Cathedral of the Spheres, #4 Swamps of Pythia\nnational spells: #274 Awaken Hamadryad, #275 Contact Lar, #477 Contact Angel of the Host, #478 Contact Harbinger, #479 Angelic Choir, #480 Angelic Host, #481 Heavenly Wrath, #482 Heavenly Choir, #956 Pride of Lions\nhome realms: 10, 3, 7",
+ "image": "img/pythium.jpg"
+}

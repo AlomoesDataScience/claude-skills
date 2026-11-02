@@ -1,0 +1,131 @@
+{
+ "description": "Niefelheim, the Land of Eternal Frost, was once the home of the frost giants. The Rimtursar, primordial giants of godlike powers, were the undisputed rulers of the world until a God of Thunder hunted and slew them. The giants of Jotunheim are the descendants of the Rimtursar. From the cold glaciers in Niefelheim, frost giants have emerged anew. These Niefel Giants are not nearly as powerful as their ancestors, but they are stronger by far than the giants of later ages. Giants are immensely strong and resilient, and the Jotuns are even stronger and tougher than other giant races. They are almost impervious to the cold of winter, but thunder and lightning still recognize their old quarry and the giants of the land greatly fear the wielders of lightning bolts. Niefelheim is ruled by several Jarls who rarely join forces. Gygjas, old and wicked hags, serve the Niefel giants with sorcerous advice. The people of Niefelheim prefer to live in very cold provinces.",
+ "features": {
+  "Race": "Cold resistant, prefers Cold scale +3",
+  "Military": "Niefel Giants, giant infantry and skinshifters",
+  "Magic": "Water, Blood, Death, Glamour, Nature, Astral",
+  "Priests": "Average",
+  "Scales & Blesses": "Cold limit +2",
+  "Buildings": "Giant Forts, forts reduce cold scale deaths by 2 steps"
+ },
+ "commanders": 7,
+ "units": 8,
+ "sites": 1,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    336,
+    598,
+    377,
+    652
+   ],
+   [
+    406,
+    596,
+    439,
+    650
+   ],
+   [
+    465,
+    603,
+    500,
+    652
+   ],
+   [
+    528,
+    585,
+    561,
+    652
+   ],
+   [
+    586,
+    603,
+    614,
+    653
+   ],
+   [
+    641,
+    599,
+    679,
+    652
+   ],
+   [
+    697,
+    574,
+    743,
+    656
+   ]
+  ],
+  "units": [
+   [
+    342,
+    701,
+    377,
+    748
+   ],
+   [
+    399,
+    698,
+    439,
+    748
+   ],
+   [
+    464,
+    700,
+    500,
+    748
+   ],
+   [
+    533,
+    698,
+    556,
+    751
+   ],
+   [
+    585,
+    699,
+    622,
+    750
+   ],
+   [
+    643,
+    697,
+    683,
+    750
+   ],
+   [
+    709,
+    699,
+    744,
+    750
+   ],
+   [
+    755,
+    676,
+    805,
+    754
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    802,
+    388,
+    842
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1608,
+  926
+ ],
+ "ocr_score": 0.058,
+ "name": "Niefelheim, Sons of Winter",
+ "era": "EA",
+ "read": "2026-10-26",
+ "id": "33",
+ "inspector": "=== nation 33: EA Niefelheim, Sons of Winter\nEA Niefelheim - Sons of Winter\nNation #:33\n+4W+2D\n[wiki]\ncommanders: #786 Jotun Scout, #1301 Jotun Herse, #1299 Jotun Jarl, #1300 Jotun Gode, #553 Jotun Skratti, #785 Gygja\nunits: #1302 Jotun Bondi, #1303 Jotun Warrior, #1304 Jotun Warrior, #1305 Jotun Hurler, #1306 Jotun Huskarl, #1307 Godihuskarl, #1308 Jotun Hirdman, #845 Niefel Giant\ncapital-only commanders: #844 Niefel Jarl\nheroes: #1382 “Tjatse“ - Abductor, #586 “Angerboda“ - Great Hag\npretenders: #250 Frost Father, #401 Bitch Queen, #1229 Son of Fenrer, #1379 Keeper of the Bridge, #1561 Father of Winters, #2234 Irminsul, #2447 Idol of Men, #2448 Idol of Beasts, #2449 Idol of Sorcery, #2800 Ormr, #2801 Linnormr, #2803 Linnormr, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #500 Skratti, #605 Son of Niefel, #606 Great Mother, #643 Bog Mummy, #644 Dracolich, #657 Monolith, #3876 Sacred Geyser\nstart sites: #46 Niefelheim\nnational spells: #491 Summon Dwarf of the Four Directions, #494 Seith Curse, #496 Brood of Garm, #497 Awaken Jotun Draugar, #498 Summon Rimvaettir, #500 Illwinter, #955 Sloth of Bears, #1466 Herd of Moose\nhome realms: 1, 10",
+ "image": "img/niefelheim.jpg"
+}

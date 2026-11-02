@@ -1,0 +1,150 @@
+{
+ "description": "Feminie is a hidden queendom ina faraway land ruled by women. It was once an amazon queendom subservient to Magnificent Ind, but when the Khans of T’ien Ch’i defeated the sacred armies of Ind and killed the Prester King himself, the dominion of Ind was broken and the subservient tribes and kingdoms found themselves free from the yoke of the Magnificent Kingdom. The sorceresses of Feminie salvaged the esoteric knowledge of the sage-priests of Ind and have become keepers of their hidden lore. Throughout the queendom monasteries filled with ancient texts can be found. Abesses and their servants search the books for arcane secrets to further the magical might of Feminie. The queendom is now ruled by wise and able Sage-Queens who hide their lands from outside threats. National Features",
+ "features": {
+  "Race": "Humans. Prefers Heat scale +1",
+  "Military": "Human infantry and knights. Sacred human infantry.",
+  "Magic": "Astral, Glamour, Fire and some Water and Nature.",
+  "Priests": "Medium, divinely inspired researchers.",
+  "Dominion": "Dominion hides province ownership.",
+  "Scales & Blesses": "Magic limit +1",
+  "Buildings": "Standard Forts, temples cost 300"
+ },
+ "commanders": 10,
+ "units": 8,
+ "sites": 1,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    353,
+    622,
+    370,
+    652
+   ],
+   [
+    411,
+    619,
+    433,
+    651
+   ],
+   [
+    462,
+    606,
+    505,
+    653
+   ],
+   [
+    531,
+    621,
+    547,
+    654
+   ],
+   [
+    592,
+    622,
+    608,
+    647
+   ],
+   [
+    653,
+    620,
+    667,
+    643
+   ],
+   [
+    713,
+    617,
+    728,
+    643
+   ],
+   [
+    769,
+    621,
+    789,
+    640
+   ],
+   [
+    837,
+    618,
+    857,
+    653
+   ],
+   [
+    897,
+    620,
+    910,
+    637
+   ]
+  ],
+  "units": [
+   [
+    347,
+    719,
+    370,
+    750
+   ],
+   [
+    413,
+    719,
+    431,
+    749
+   ],
+   [
+    468,
+    717,
+    492,
+    749
+   ],
+   [
+    530,
+    718,
+    553,
+    750
+   ],
+   [
+    593,
+    718,
+    614,
+    750
+   ],
+   [
+    654,
+    719,
+    677,
+    749
+   ],
+   [
+    690,
+    704,
+    748,
+    751
+   ],
+   [
+    779,
+    716,
+    794,
+    751
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    802,
+    388,
+    839
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  926
+ ],
+ "ocr_score": 0.081,
+ "name": "Feminie, Sage-Queens",
+ "era": "LA",
+ "read": "2026-10-26",
+ "id": "119",
+ "inspector": "=== nation 119: LA Feminie, Sage-Queens\nLA Feminie - Sage-Queens\nNation #:119\n+1F+1S+2G\n[wiki]\ncommanders: #3810 Feminie Scout, #3811 Feminie Commander, #3812 Lady Commander, #3817 Cloistered Lady, #3818 Feminie Abbess, #3813 Feminie Savant, #3814 Feminie Sorceress, #3815 Loremistress\nunits: #3803 Feminie Militia, #3804 Feminie Archer, #3805 Feminie City Guard, #3806 Feminie Soldier, #3807 Feminie Swordswoman, #3808 Lady at Arms, #3809 Lady Knight\ncapital-only commanders: #3816 Sage-Queen, #3820 Unseen One\ncapital-only units: #3819 Veiled One\nforeign commanders: #3817 Cloistered Lady, #3818 Feminie Abbess\nheroes: #3877 Firstborn of the Lost\npretenders: #159 Monument, #384 Neter of Crafts, #385 Neteret of Joy, #386 Neter of the Sun, #387 Neteret of Many Names, #388 Neter of Chaos, #395 Lich Queen, #654 Serpent King, #2445 Neter of the Underworld, #2446 Neter of Kings, #2464 Neter of the Moon, #2790 Myrmecoleon, #2797 Hieracosphinx, #2798 Criosphinx, #3651 God Spider, #499 Nataraja, #1096 Destroyer of Worlds, #1341 Devi of Darkness, #1344 Devi of Good Fortunes, #2202 Great Siddha, #2466 Kamadhenu, #3661 Elephant Idol, #3662 Asura, #3875 Nagasiddha, #3926 Devi of Strength, #158 Oracle, #179 Master Lich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #157 Mother of Monsters, #180 Demilich, #215 Virtue, #269 Wyrm, #472 Statue of Order, #607 Baphomet, #608 Phoenix, #978 Great Black Bull, #979 Great White Bull, #1025 Divine Glyph, #2463 Statue of War, #2787 Celestial Lion, #2788 Man-Eater, #2792 Solar Serpent, #2793 Serpent of Chaos, #2799 Wadjet, #2850 Statue of the Underworld, #2958 Golden Lion, #3088 Dharmapala of the Underworld, #3395 Demiurge, #3416 Great Archon, #4002 First Queen\nstart sites: #229 The Veiled City\nnational spells: #340 Herd of Elephants, #357 Release Lord of Civilization, #537 Call the Birds of Splendor, #538 Deceive the Decree of the Lost, #956 Pride of Lions, #957 Ambush of Tigers, #958 Herd of Buffaloes\nhome realms: 10, 7, 8",
+ "image": "img/feminie.jpg"
+}

@@ -1,0 +1,41 @@
+# Sceleria, The Reformed Empire (MA)
+
+*nation 55; read from the game's nation info screen on 2026-10-26 (OCR, score 0.085; small reading slips are possible)*
+
+![info screen](img/sceleria.jpg)
+
+## Description
+
+Sceleria is a splinter empire of the great Empire of Ermor. As dark arts were practiced in the heart of the Empire, a new order of Thaumaturgs emerged. Guided by the stars and the knowledge of the Underworld, they foresaw the Cataclysm that would destroy the empire and led the emperor's twin brother in rebellion. The great empire was torn apart in a civil war that ended with the siege of Ermor. In desperation the Augurs and Bishops let Death loose, and everything went still. The great city of Eldregate and everything within leagues became an ashen waste. Ermor was no more, and the provinces of the old empire formed into new kingdoms and lesser empires. The twin brother of the last Ermorian emperor claimed the imperial crown. With the aid of the Thaumaturgs he reformed the empire and built a new capital named to always be a reminder of the wickedness that brought the great empire down. Now Sceleria is an empire permeated with the Death Cult of the Thaumaturgs. While the young kingdom of Marignon uses fire and faith to hold Death at bay, Sceleria trusts in the Laws of Death itself to persevere. The Thaumaturgs of Sceleria regard themselves as defenders of the living world and the last hope for mankind. With litanies and masses for the dead, they prevent the spread of the shadow by reanimating the dead under strict control. Now the dead serve the living and fight their wars. The war machine of Sceleria is based on the old legionnaire army of Ermor with the added might of the walking dead. National Creatures
+
+## National features
+
+- **Race:** Men and undead. Undead do not need supplies, can enter water, are unbreakable and can walk day and night.
+- **Military:** Human legionnaires and undead hordes of lesser quality.
+- **Magic:** Astral, Death, some Water and Air
+- **Priests:** National priests can reanimate the dead
+- **Scales & Blesses:** Order limit +1, Death limit +1
+- **Buildings:** Standard Forts, starts with a Fortified City
+
+## On the info screen
+
+- 9 commanders, 11 units, 2 start sites shown (right-click a sprite in game for its stats)
+
+## From the inspector (vanilla data)
+
+```
+=== nation 55: MA Sceleria, The Reformed Empire
+MA Sceleria - The Reformed Empire
+Nation #:55
++1S+4D
+[wiki]
+commanders: #426 Scout, #428 Assassin, #671 Centurion, #1386 Legatus Legionis, #2244 Scelerian Cultist, #669 Thaumaturg
+units: #50 Slinger, #662 Velite, #663 Alae Legionnaire, #664 Hastatus, #665 Principe, #666 Triarius, #667 Praetorian Guard, #668 Standard, #11 Retiarius, #12 Gladiator
+capital-only commanders: #1655 Censor, #670 Grand Thaumaturg
+capital-only units: #1654 Lictor, #809 Shadow Vestal
+heroes: #868 “Mortius“ - Scythe Wielder, #977 “Zirru“ - Grand Thaumaturg
+pretenders: #157 Mother of Monsters, #383 Prince of Death, #472 Statue of Order, #600 Titan of War and Wisdom, #602 Titan of Heaven, #961 Titan of the Sea, #978 Great Black Bull, #979 Great White Bull, #1230 Titan of the Forge, #1342 Titan of Rivers, #1343 Titan of Love, #1348 Titan of Serpents and Medicine, #1371 Titan of Death and Rebirth, #2431 Titan of the Underworld, #2460 Statue of Fertility, #2463 Statue of War, #2783 Drakon, #2796 Hound of Hades, #2850 Statue of the Underworld, #2851 Titan of Winds and Waves, #3121 Eldest Cyclops, #3124 Titan of Forethought, #3203 Titan of the Hunt, #3204 Grey One, #3205 Titan of Crossroads, #3206 Titan of Crossroads, #3207 Titan of Crossroads, #3208 Titan of the Spring, #3209 Titan of Growth, #3368 Bronze Colossus, #3395 Demiurge, #3416 Great Archon, #3876 Sacred Geyser, #3895 Ferryman, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #250 Frost Father, #874 Divine Emperor, #2138 Sphinx, #2786 Celestial Gryphon, #2787 Celestial Lion, #2788 Man-Eater
+start sites: #55 Temple of the Dead, #64 Temple of the Spheres, #148 Campus Sceleris
+national spells: #372 Unholy Command, #373 Unholy Protection, #374 Unholy Blessing, #375 Unholy Power, #376 Unholy Protection, #377 Unholy Blessing, #378 Apostasy, #379 Unholy Power, #380 Unholy Blessing, #381 Protection of the Sepulchre, #382 Power of the Sepulchre
+home realms: 10, 3
+```

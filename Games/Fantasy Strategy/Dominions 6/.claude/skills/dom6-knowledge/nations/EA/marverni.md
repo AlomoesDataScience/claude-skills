@@ -1,0 +1,39 @@
+# Marverni, Time of Druids (EA)
+
+*nation 12; read from the game's nation info screen on 2026-10-26 (OCR, score 0.075; small reading slips are possible)*
+
+![info screen](img/marverni.jpg)
+
+## Description
+
+Marverni is a nation of tribal chiefdoms guided by Druids and religious magistrates. The tribes have a long history of war and infighting, but recent developments have joined the tribes in pursuit of a single goal. The most prominent tribes are the Marverni, the Ambibates, the Eponi and the Carnutes. The Sequani, though a small tribe, are influential due to the large number of Druids among them. The smiths of the Marverni tribe are reputedly the inventors of chainmail and most nobles of the tribes use it. Lowborn warriors fight bare-chested. Both wear tattoos with dormant magical powers. The Ambibates are known for their martial skills. The Eponi nobles fight on horseback and are the only cavalry available to the nation. The Carnute tribe guards the Sacred Forest of Carnutes where the Druids gather every year. The Carnute warriors are able to go berserk when wounded. Boars area Sacred symbol to the Marverni nation.
+
+## National features
+
+- **Military:** Light and medium infantry, medium cavalry.
+- **Magic:** Earth, Astral, Nature, Water
+- **Priests:** Medium, can perform blood sacrifices
+- **Buildings:** Standard Forts, temples cost 300
+
+## On the info screen
+
+- 12 commanders, 11 units, 1 start sites shown (right-click a sprite in game for its stats)
+
+## From the inspector (vanilla data)
+
+```
+=== nation 12: EA Marverni, Time of Druids
+EA Marverni - Time of Druids
+Nation #:12
++2E+3S+1N
+[wiki]
+commanders: #1209 Marverni Scout, #1215 Marverni Chieftain, #1218 Ambibate Chieftain, #1221 Carnute Chieftain, #1207 Eponi Chieftain, #1206 Vergobret, #1225 Sequani Stargazer, #1205 Gutuater, #2468 Druid
+units: #1210 Marverni Horn Blower, #1211 Marverni Slinger, #1212 Marverni Javelineer, #1213 Marverni Bare Chested Warrior, #1214 Marverni Noble Warrior, #1216 Ambibate Bare Chested Warrior, #1217 Ambibate Noble Warrior, #1219 Carnute Bare Chested Warrior, #1220 Carnute Noble Warrior, #1208 Eponi Knight
+capital-only commanders: #1223 Boar Lord, #1204 Elder Druid
+capital-only units: #1222 Boar Warrior
+heroes: #1588 “The One in the Woods“ - Wanderer, #1843 “Carnon“ - Antlered One, #1849 “Corix“ - Blinded
+pretenders: #270 Arch Druid, #606 Great Mother, #657 Monolith, #779 Rams-Headed Serpent, #1378 Lord of the Forest, #2450 Horned One, #2784 Thrice Horned Boar, #2795 Dog of the Underworld, #2848 Father of the Sea, #2856 Son of the Sea, #2930 Hooded Spirit, #3076 Morrigna, #3077 Morrigna, #3078 Morrigna, #3079 Duiu of Thunder, #3080 Duiu of Farming, #3081 Duiu of War, #3082 Matrona of the Healing Spring, #3632 Mother of Storms, #3692 Great Stag, #3693 Great White Stag, #3894 Serpent of Heavenly Fires, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #138 Gorgon, #157 Mother of Monsters, #250 Frost Father, #812 Lord of the Wild, #978 Great Black Bull, #979 Great White Bull, #1340 Tiwaz of War, #1370 Volla of the Bountiful Forest, #2786 Celestial Gryphon, #3650 Immortal Gorgon
+start sites: #91 Carnutes
+national spells: #253 Monster Boar, #280 Awaken Tattoos, #281 Sounder of Boars, #282 Contact Boar of Carnutes, #955 Sloth of Bears
+home realms: 10, 2
+```

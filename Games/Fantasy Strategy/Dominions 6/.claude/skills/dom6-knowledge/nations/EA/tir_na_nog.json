@@ -1,0 +1,137 @@
+{
+ "description": "Tir na n'Og is a blessed isle surrounded by whispering mists. It is the home of the Tuatha, a highly magical race descended from the Nemedians who once warred with the Fomorians. The Tuatha have made themselves lords and masters over the Fir Bolg, a lesser race descended from the same Nemedian ancestors. With the aid of the Fir Bolg, the Tuatha attacked the Fomorian giants and almost succeeded where the Nemedians failed, but eventually the Fomorians proved too powerful and the Tuatha were driven back to their Blessed Isle. The Tuatha and their Sidhe descendants have turned to crafts, poetry and magical arts, but some have chosen the path of war and have become warriors and generals of great renown. The Fir Bolg, inferior to the Tuatha but still far superior to ordinary men, compose much of the population and serve as farmers and lowly warriors.",
+ "features": {
+  "Race": "Tuatha, Sidhe, Fir Bolg, illusions",
+  "Military": "Fir Bolg infantry, Sidhe infantry, sacred Tuatha warriors",
+  "Magic": "Glamour, Nature, Water, some Air and Earth",
+  "Priests": "Average",
+  "Scales & Blesses": "Luck limit +1, Magic limit +1",
+  "Buildings": "Standard Forts"
+ },
+ "commanders": 9,
+ "units": 6,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    348,
+    593,
+    367,
+    607
+   ],
+   [
+    409,
+    592,
+    429,
+    607
+   ],
+   [
+    472,
+    593,
+    489,
+    625
+   ],
+   [
+    535,
+    592,
+    550,
+    618
+   ],
+   [
+    592,
+    591,
+    612,
+    607
+   ],
+   [
+    655,
+    593,
+    672,
+    625
+   ],
+   [
+    702,
+    573,
+    746,
+    622
+   ],
+   [
+    763,
+    573,
+    806,
+    622
+   ],
+   [
+    833,
+    592,
+    856,
+    625
+   ]
+  ],
+  "units": [
+   [
+    342,
+    690,
+    368,
+    721
+   ],
+   [
+    411,
+    688,
+    429,
+    721
+   ],
+   [
+    468,
+    690,
+    490,
+    721
+   ],
+   [
+    525,
+    690,
+    551,
+    721
+   ],
+   [
+    586,
+    689,
+    612,
+    721
+   ],
+   [
+    646,
+    686,
+    673,
+    721
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    774,
+    394,
+    813
+   ],
+   [
+    394,
+    774,
+    440,
+    813
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  897
+ ],
+ "ocr_score": 0.062,
+ "name": "Tir na n'Og, Land of the Ever Young",
+ "era": "EA",
+ "read": "2026-10-26",
+ "id": "11",
+ "inspector": "=== nation 11: EA Tir na n'Og, Land of the Ever Young\nEA Tir na n'Og - Land of the Ever Young\nNation #:11\n+1E+2N+3G\n[wiki]\ncommanders: #1755 Fir Bolg Scout, #1750 Fir Bolg Champion, #2469 Fir Bolg Druid, #1752 Sidhe Champion, #1759 Sidhe Lord, #1774 Bean Sidhe, #1775 Baobhan Sidhe\nunits: #1749 Fir Bolg Militia, #1758 Fir Bolg Slinger, #1757 Fir Bolg Warrior, #1756 Fir Bolg Warrior, #1751 Sidhe Warrior\ncapital-only commanders: #1754 Ri, #1773 Tuatha Sorceress\ncapital-only units: #1753 Tuatha Warrior\nheroes: #1805 “Lugh“ - Long Handed\npretenders: #270 Arch Druid, #606 Great Mother, #657 Monolith, #779 Rams-Headed Serpent, #1378 Lord of the Forest, #2450 Horned One, #2784 Thrice Horned Boar, #2795 Dog of the Underworld, #2848 Father of the Sea, #2856 Son of the Sea, #2930 Hooded Spirit, #3076 Morrigna, #3077 Morrigna, #3078 Morrigna, #3079 Duiu of Thunder, #3080 Duiu of Farming, #3081 Duiu of War, #3082 Matrona of the Healing Spring, #3632 Mother of Storms, #3692 Great Stag, #3693 Great White Stag, #3894 Serpent of Heavenly Fires, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #250 Frost Father, #1905 Great Sorceress, #2234 Irminsul\nstart sites: #133 Tir na n'Og, #134 Mag Mor\nnational spells: #439 Summon Cu Sidhe, #445 xxx, #1294 Geas\nhome realms: 10, 2",
+ "image": "img/tir_na_nog.jpg"
+}

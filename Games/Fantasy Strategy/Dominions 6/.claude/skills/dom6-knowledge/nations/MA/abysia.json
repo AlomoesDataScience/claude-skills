@@ -1,0 +1,137 @@
+{
+ "description": "Abysia is a hot wasteland, at the center of which lies a great volcano whose lava-lit caverns are inhabited by magma-born humanoids. Their flesh radiates heat and they are not harmed by flames. Abysians are stronger than humans and prefer heavy armor and weaponry. Bows are not used, as they would burn to cinders in the glowing hands of the Abysians. The war machine of Abysia also includes salamanders, lizard-like beings composed of the same hot lava-born flesh as the Abysians. Abysian Warlocks are very powerful Blood mages and skilled crossbreeders. The Anathemant Priests of the Flame Cult practice blood sacrifice to strengthen the power of the Awakening God. Abysians prefer to live in extremely hot places. They do not farm or hunt for a living, so their income and supplies are not affected by the Growth or Death scale of a province. However, population will still die slowly in Abysia-controlled provinces with Death scales. National Features",
+ "features": {
+  "Race": "Radiates heat, fire resistance, prefers Heat scale +3, wasteland survival. Death and Growth scales have half the standard effect on income and population growth and no effect on supplies.",
+  "Military": "Heavy infantry, no missile weapons, salamanders",
+  "Magic": "Fire, Blood, Astral, some Earth",
+  "Priests": "Powerful, can perform blood sacrifices",
+  "Scales & Blesses": "Heat limit +2, Death limit +1, Bless points +1",
+  "Buildings": "Standard Forts, forts reduce heat scale deaths by 2 steps, cave forts increase gold/resources/rec.p. by 15%"
+ },
+ "commanders": 5,
+ "units": 8,
+ "sites": 4,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    396,
+    645,
+    433,
+    674
+   ],
+   [
+    470,
+    633,
+    491,
+    673
+   ],
+   [
+    531,
+    655,
+    548,
+    668
+   ],
+   [
+    591,
+    648,
+    610,
+    671
+   ],
+   [
+    708,
+    638,
+    734,
+    675
+   ]
+  ],
+  "units": [
+   [
+    354,
+    749,
+    369,
+    778
+   ],
+   [
+    403,
+    749,
+    425,
+    778
+   ],
+   [
+    463,
+    750,
+    485,
+    778
+   ],
+   [
+    526,
+    749,
+    546,
+    778
+   ],
+   [
+    586,
+    749,
+    607,
+    778
+   ],
+   [
+    648,
+    749,
+    668,
+    778
+   ],
+   [
+    697,
+    757,
+    744,
+    776
+   ],
+   [
+    771,
+    749,
+    790,
+    778
+   ]
+  ],
+  "sites": [
+   [
+    350,
+    844,
+    366,
+    863
+   ],
+   [
+    366,
+    844,
+    383,
+    863
+   ],
+   [
+    402,
+    844,
+    421,
+    863
+   ],
+   [
+    421,
+    844,
+    440,
+    863
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  954
+ ],
+ "ocr_score": 0.074,
+ "name": "Abysia, Blood and Fire",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "63",
+ "inspector": "=== nation 63: MA Abysia, Blood and Fire\nMA Abysia - Blood and Fire\nNation #:63\n+5F\n[wiki]\ncommanders: #429 Slayer, #119 Warlord, #214 Beast Trainer, #85 Anathemant Salamander, #86 Anathemant Dragon\nunits: #372 Humanbred, #983 Humanbred, #81 Abysian Infantry, #82 Abysian Infantry, #83 Abysian Infantry, #84 Abysian Infantry, #213 Salamander\ncapital-only commanders: #923 Warlock Apprentice, #89 Warlock, #87 Demonbred\ncapital-only units: #90 Lava Warrior\nheroes: #581 “Ba'al Chozron“ - Anathemant Warlock, #867 “Chuzrael“ - Slayer, #539 “Rago“ - Rage Lord\npretenders: #159 Monument, #384 Neter of Crafts, #385 Neteret of Joy, #386 Neter of the Sun, #387 Neteret of Many Names, #388 Neter of Chaos, #395 Lich Queen, #608 Phoenix, #653 Serpent King, #654 Serpent King, #2445 Neter of the Underworld, #2446 Neter of Kings, #2464 Neter of the Moon, #2790 Myrmecoleon, #2792 Solar Serpent, #2793 Serpent of Chaos, #2797 Hieracosphinx, #2798 Criosphinx, #2958 Golden Lion, #3651 God Spider, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #120 Moloch, #269 Wyrm, #486 Great Warlock, #655 Scorpion King, #957 Lord of The Desert Sun, #1025 Divine Glyph, #1097 Lord of The Summer Plague, #1384 Solar Disc, #2137 Urmahlullu, #2138 Sphinx, #2608 Azi, #2610 Angra Mainyu, #2788 Man-Eater, #3328 God Block, #3329 Betyl of the Sun, #3330 Betyl of Writing, #3331 Betyl of the Stars, #3346 Bronze Colossus, #3369 Ilahat of Fate, #3370 Ilahat of Might, #3386 Ilah of the Sky, #3387 Ilah of the Sacred Mountain, #3388 Ilah of the Moon, #3876 Sacred Geyser\nstart sites: #1 The Smouldercone, #121 Temple of the All-Consuming Flame\nnational spells: #317 Summon Spectral Infantry, #318 Contact Scorpion Man, #319 Inner Furnace, #320 Infernal Breeding, #690 Liquid Flames of Rhuax, #850 Hellscape, #956 Pride of Lions\nhome realms: 10, 7",
+ "image": "img/abysia.jpg"
+}

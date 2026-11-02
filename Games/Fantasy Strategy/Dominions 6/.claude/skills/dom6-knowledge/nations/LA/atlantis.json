@@ -1,0 +1,167 @@
+{
+ "description": "With the Second Fall of Atlantis and the demise of the Coral Queens at the hands of R'lyeh, the Atlantians were forced to retreat from the seas. A few surviving Kings of the Deep entered a pact with a sleeping God at a forsaken coast of ice and bones. The Atlantian Angakut, Shaman Kings, lead the -4 Bone Cult and practice Death magic previously unheard of in Atlantian history. The Angakut have coerced captured Caelian ice crafters to yield the secrets of their skills and now most of the Atlantians use arms of enchanted ice. Even their great city is built on interlinked ice floes. National Gcatures",
+ "features": {
+  "Race": "Amphibious, ocean sailing, trace income across oceans, prefers Cold scale +2",
+  "Military": "Polearms, magical ice armaments, no missile weapons other than harpoons",
+  "Magic": "Water, Death, some Air, Earth, Astral and Fire",
+  "Priests": "Medium",
+  "Scales & Blesses": "Cold limit +1, Death limit +1",
+  "Buildings": "Ice Forts in coastal provinces"
+ },
+ "commanders": 10,
+ "units": 10,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    330,
+    545,
+    383,
+    582
+   ],
+   [
+    383,
+    545,
+    435,
+    582
+   ],
+   [
+    435,
+    545,
+    488,
+    582
+   ],
+   [
+    335,
+    603,
+    367,
+    621
+   ],
+   [
+    517,
+    544,
+    548,
+    582
+   ],
+   [
+    571,
+    529,
+    620,
+    579
+   ],
+   [
+    671,
+    538,
+    705,
+    567
+   ],
+   [
+    736,
+    538,
+    764,
+    565
+   ],
+   [
+    796,
+    536,
+    834,
+    568
+   ],
+   [
+    854,
+    538,
+    888,
+    574
+   ]
+  ],
+  "units": [
+   [
+    330,
+    642,
+    385,
+    680
+   ],
+   [
+    385,
+    642,
+    440,
+    680
+   ],
+   [
+    440,
+    642,
+    494,
+    680
+   ],
+   [
+    494,
+    642,
+    549,
+    680
+   ],
+   [
+    585,
+    642,
+    670,
+    680
+   ],
+   [
+    700,
+    637,
+    790,
+    677
+   ],
+   [
+    854,
+    646,
+    887,
+    677
+   ],
+   [
+    915,
+    646,
+    948,
+    677
+   ],
+   [
+    976,
+    645,
+    1009,
+    677
+   ],
+   [
+    1040,
+    637,
+    1078,
+    676
+   ]
+  ],
+  "sites": [
+   [
+    349,
+    734,
+    368,
+    752
+   ],
+   [
+    368,
+    734,
+    388,
+    752
+   ]
+  ]
+ },
+ "window": [
+  312,
+  55,
+  1607,
+  852
+ ],
+ "ocr_score": 0.08,
+ "name": "Atlantis, Frozen Sea",
+ "era": "LA",
+ "read": "2026-10-26",
+ "id": "126",
+ "inspector": "=== nation 126: LA Atlantis, Frozen Sea\nLA Atlantis - Frozen Sea\nNation #:126\n+3W+1D\n[wiki]\ncommanders: #1631 Tent Owner, #1632 Snow Captain, #1633 Ice Captain, #1623 Tungalik\nunits: #1617 Seal Hunter, #1625 Snow Warrior, #1626 Snow Warrior, #1627 Ice Warrior, #1628 Ice Guard, #1629 Ice Guard, #1703 Mournful\ncapital-only commanders: #1618 Angakok\ncapital-only units: #1630 Arssartut\nunderwater commanders: #207 Shambler Chief, #2088 Unsleeping Consort, #2083 Forgiving Father, #2084 Merciful Mother\nunderwater units: #111 Atlantian Shield Bearer, #107 Atlantian Light Infantry, #1621 Atlantian Infantry, #2087 Unsleeping\nheroes: #1634 “Sialuk“ - Kivigtok, #2085 “Mother Hydra“ - Once and Future Queen\npretenders: #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #109 Dagon, #250 Frost Father, #269 Wyrm, #383 Prince of Death, #657 Monolith, #873 Great Seer of the Deeps, #961 Titan of the Sea, #1229 Son of Fenrer, #1231 Drakaina, #1232 Old Man of the Sea, #1233 Lord of the Waves, #1561 Father of Winters, #2444 Teotl of the Underworld, #2448 Idol of Beasts, #2449 Idol of Sorcery, #2850 Statue of the Underworld, #2852 King of Frozen Bones, #2853 Ghost King\nstart sites: #126 The Coast of Ice and Bones\nnational spells: #370 Summon Monster Fish, #371 Send Tupilak\nhome realms: 10",
+ "image": "img/atlantis.jpg"
+}

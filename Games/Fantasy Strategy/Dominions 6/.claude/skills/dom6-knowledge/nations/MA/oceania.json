@@ -1,0 +1,162 @@
+{
+ "description": "Oceania is an underwater realm of half-men. Since the Atlantians emerged from the deeps, the half-men have lost more and more of their former domains. Ravenous Deep Ones have consumed fish and kelp alike. The kelp groves have been desecrated and murky water has spread in the kelp. Only with the Fall of the Star was the Atlantian onslaught halted. The Starspawns of the Sunken City enslaved the Atlantians and consumed their will. During the war between Atlantis and R'lyeh, a new God emerged from the depths and the Capricorns were able to muster their forces. Now it is time to reclaim the deeps and conquer the world. The Capricorns, wild mages of the sea and the shores lead the nation in the conquest of a sea once theirs. Sirens, mermaids with shapeshifting powers who lure men to watery graves with their beautiful songs, aid them in conquering the shores. ese National -eatures",
+ "features": {
+  "Race": "Underwater",
+  "Military": "Amphibious half-men. Light infantry, medium infantry, sacred, aphroi ichtycentaurs",
+  "Magic": "Nature, Water, Glamour, some Air and Earth. Mages weaker on dry land",
+  "Priests": "Powerful, underwater only",
+  "Dominion": "+1 turmoil in coastal provinces, +1 order in other provinces",
+  "Scales & Blesses": "Turmoil limit +1, Growth limit +1",
+  "Buildings": "Primitive Forts, temples cost 300"
+ },
+ "commanders": 8,
+ "units": 12,
+ "sites": 1,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    335,
+    611,
+    363,
+    646
+   ],
+   [
+    396,
+    611,
+    420,
+    640
+   ],
+   [
+    449,
+    597,
+    502,
+    644
+   ],
+   [
+    528,
+    616,
+    547,
+    642
+   ],
+   [
+    578,
+    602,
+    628,
+    644
+   ],
+   [
+    637,
+    603,
+    685,
+    649
+   ],
+   [
+    710,
+    592,
+    751,
+    648
+   ],
+   [
+    751,
+    592,
+    811,
+    648
+   ]
+  ],
+  "units": [
+   [
+    335,
+    709,
+    368,
+    746
+   ],
+   [
+    396,
+    709,
+    429,
+    746
+   ],
+   [
+    457,
+    709,
+    490,
+    746
+   ],
+   [
+    518,
+    709,
+    545,
+    746
+   ],
+   [
+    577,
+    707,
+    606,
+    746
+   ],
+   [
+    633,
+    694,
+    691,
+    742
+   ],
+   [
+    691,
+    694,
+    750,
+    742
+   ],
+   [
+    761,
+    691,
+    785,
+    723
+   ],
+   [
+    792,
+    735,
+    802,
+    747
+   ],
+   [
+    817,
+    684,
+    846,
+    727
+   ],
+   [
+    854,
+    735,
+    863,
+    747
+   ],
+   [
+    874,
+    694,
+    928,
+    742
+   ]
+  ],
+  "sites": [
+   [
+    356,
+    813,
+    380,
+    833
+   ]
+  ]
+ },
+ "window": [
+  312,
+  43,
+  1607,
+  926
+ ],
+ "ocr_score": 0.114,
+ "name": "Oceania, Mermidons",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "87",
+ "inspector": "=== nation 87: MA Oceania, Mermidons\nMA Oceania - Mermidons\nNation #:87\n+1W+3N+1G\n[wiki]\ncommanders: #2370 Ichtysatyr Scout, #2372 Ichtysatyr Commander, #2410 Ichtycentaur Commander, #2392 Aphroi Hierophant, #1054 Siren, #2861 Haliade, #1038 Capricorn\nunits: #2404 Ichtysatyr, #2406 Ichtysatyr, #2408 Ichtysatyr Soldier, #1043 Ichtysatyr Soldier, #1045 Mermidon, #2412 Ichtytaur, #2414 Ichtytaur Warrior, #1408 Ichtycentaur, #1410 Ichtycentaur Cataphract\ncapital-only commanders: #2399 Aphroi Lord\ncapital-only units: #2401 Aphroi\ncoast commanders: #2373 Ichtysatyr Commander, #1055 Siren, #1039 Capricorn, #2373 Ichtysatyr Commander, #1055 Siren, #1039 Capricorn\ncoast units: #2377 Ichtysatyr, #2379 Ichtysatyr Warrior, #2407 Ichtysatyr, #2409 Ichtysatyr Soldier\npretenders: #2440 Sea Dragon, #2847 Protogenos of the Sea, #2849 Father of Monsters, #2855 Floating Mind, #3055 Grand Hydromancer, #179 Master Lich, #180 Demilich, #248 Arch Mage, #269 Wyrm, #294 Nerid, #472 Statue of Order, #657 Monolith, #872 Ghost King, #961 Titan of the Sea, #973 Ancient Kraken, #1231 Drakaina, #1232 Old Man of the Sea, #1233 Lord of the Waves, #2460 Statue of Fertility, #2463 Statue of War, #2791 Earth Serpent, #2850 Statue of the Underworld, #2851 Titan of Winds and Waves, #3056 Aphroi Sage\nstart sites: #162 The Grove of Aphros\nnational spells: #337 Grow Fortress\nhome realms: 9",
+ "image": "img/oceania.jpg"
+}

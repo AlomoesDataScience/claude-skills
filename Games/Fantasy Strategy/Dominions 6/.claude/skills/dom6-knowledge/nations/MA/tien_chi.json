@@ -1,0 +1,221 @@
+{
+ "description": "The Celestial Empire of T'ien Ch'i is ancient. Since the founding of the Empire, peace has reigned and a Bureaucracy of great efficiency has evolved. Ministers and officials chosen by skill rather than birth govern the Empire. The Emperor and his family are considered divine, but are not involved in the administration. The cavalry of T'ien Ch’i is well known and the infantry is varied and versatile. The eunuchs who run the Bureaucracy are able to conscript troops for the defense of provinces as part of the taxes due to the Emperor. A magic tradition called The Way is practiced by hermits and scholars in the kingdom. Prominent Masters of the Way come to the Heavenly Gate in the capital to be ordained as Celestial Masters. These lmage-priests can summon heavenly beings from the Celestial Sohere to serve the Empire. National -eatures",
+ "features": {
+  "Race": "Humans",
+  "Military": "Cavalry, heavy infantry, archers, crossbows. Conscription",
+  "Magic": "Water, Astral, Fire, Air, Earth, Nature and Glamour, Summon Celestial Beings",
+  "Priests": "Average.",
+  "Scales & Blesses": "Order limit +1, Misfortune limit +1",
+  "Buildings": "Fortified Cities"
+ },
+ "commanders": 13,
+ "units": 16,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    347,
+    595,
+    365,
+    624
+   ],
+   [
+    463,
+    595,
+    484,
+    625
+   ],
+   [
+    520,
+    580,
+    555,
+    624
+   ],
+   [
+    585,
+    596,
+    606,
+    625
+   ],
+   [
+    647,
+    594,
+    667,
+    625
+   ],
+   [
+    711,
+    593,
+    726,
+    615
+   ],
+   [
+    768,
+    595,
+    789,
+    615
+   ],
+   [
+    829,
+    595,
+    850,
+    625
+   ],
+   [
+    894,
+    596,
+    911,
+    625
+   ],
+   [
+    954,
+    593,
+    973,
+    628
+   ],
+   [
+    1009,
+    580,
+    1043,
+    616
+   ],
+   [
+    1077,
+    594,
+    1093,
+    625
+   ],
+   [
+    1132,
+    592,
+    1156,
+    628
+   ]
+  ],
+  "units": [
+   [
+    335,
+    650,
+    367,
+    667
+   ],
+   [
+    356,
+    691,
+    425,
+    722
+   ],
+   [
+    457,
+    691,
+    484,
+    721
+   ],
+   [
+    528,
+    692,
+    546,
+    722
+   ],
+   [
+    576,
+    690,
+    608,
+    722
+   ],
+   [
+    639,
+    690,
+    667,
+    706
+   ],
+   [
+    696,
+    686,
+    743,
+    725
+   ],
+   [
+    743,
+    686,
+    790,
+    725
+   ],
+   [
+    832,
+    690,
+    850,
+    721
+   ],
+   [
+    892,
+    690,
+    911,
+    721
+   ],
+   [
+    941,
+    691,
+    974,
+    721
+   ],
+   [
+    1015,
+    690,
+    1033,
+    721
+   ],
+   [
+    1064,
+    678,
+    1105,
+    721
+   ],
+   [
+    1125,
+    679,
+    1166,
+    721
+   ],
+   [
+    1186,
+    678,
+    1227,
+    721
+   ],
+   [
+    1253,
+    678,
+    1289,
+    714
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    774,
+    392,
+    813
+   ],
+   [
+    392,
+    774,
+    435,
+    813
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  897
+ ],
+ "ocr_score": 0.089,
+ "name": "Tien Ch'i, Imperial Bureaucracy",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "69",
+ "inspector": "=== nation 69: MA T'ien Ch'i, Imperial Bureaucracy\nMA T'ien Ch'i - Imperial Bureaucracy\nNation #:69\n+1A+1W+1E+2S\n[wiki]\ncommanders: #426 Scout, #792 General, #805 Eunuch, #813 Imperial Consort, #807 Ceremonial Master, #804 Minister of Rituals, #808 Master of the Way, #1890 Apothecary, #1891 Alchemist of the Five Elements, #1894 Minister of Magic, #1893 Imperial Geomancer\nunits: #797 Archer, #794 Footman, #795 Footman, #796 Footman, #1903 Ministry Footman, #1902 Ministry Guardsman, #3713 Ministry Guardsman, #801 Imperial Archer, #802 Imperial Crossbowman, #800 Imperial Footman, #1900 Imperial City Guard, #798 Imperial Guard, #788 Horseman, #789 Heavy Horseman, #790 Imperial Horseman\ncapital-only commanders: #793 Prince General, #1892 Imperial Alchemist, #803 Celestial Master\ncapital-only units: #791 Red Guard\nforeign commanders: #808 Master of the Way\nheroes: #942 “Ho Hsien-Ku“ - Immortal, #943 “Lu Tung-Pin“ - Immortal, #944 “Li T'ieh-Kuai“ - Master With The Iron Crutch\npretenders: #905 Jade Emperor, #1339 Nyorai, #1345 Celestial General, #2316 Dragon King, #2318 Celestial Dragon, #2457 Bodhisattva of Mercy, #2465 Statue of War, #2556 Celestial Carp, #3072 Kami of the Sun, #3073 Kami of the Moon, #3074 Kami of Storms, #3088 Dharmapala of the Underworld, #3928 White Tiger of the West, #3929 Azure Dragon of the East, #3931 Vermilion Bird of the South, #3932 Black Tortoise of the North, #158 Oracle, #179 Master Lich, #180 Demilich, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3642 Great Sage, #3711 Storm Father, #250 Frost Father, #499 Nataraja, #608 Phoenix, #1341 Devi of Darkness, #1344 Devi of Good Fortunes, #3060 Master, #3662 Asura, #3926 Devi of Strength\nstart sites: #51 The Celestial City, #50 The Heavenly Gate\nnational spells: #286 Celestial Chastisement, #287 Contact Huli Jing, #288 Thousand Year Ginseng, #289 Internal Alchemy, #529 Celestial Servant, #531 Celestial Hounds, #533 Call Celestial Soldiers, #616 Living Mercury, #957 Ambush of Tigers, #958 Herd of Buffaloes\nhome realms: 10, 4",
+ "image": "img/tien_chi.jpg"
+}

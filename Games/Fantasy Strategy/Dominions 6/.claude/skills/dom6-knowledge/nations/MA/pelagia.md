@@ -1,0 +1,42 @@
+# Pelagia, Triton Kings (MA)
+
+*nation 86; read from the game's nation info screen on 2026-10-26 (OCR, score 0.046; small reading slips are possible)*
+
+![info screen](img/pelagia.jpg)
+
+## Description
+
+Pelagia was the first kingdom to form in the deeps. It is a nation of Tritons, humanoid beings with fin-like legs. Ruled by powerful Triton priest-kings, it dominated much of the seas. After the devastating event that shattered the ocean depths, Pelagia quickly recovered. R'lyeh was destroyed and reformed under a strange race and Atlantis lost much of its former power when their basalt cities toppled and their kings were buried under broken pillars. Pelagia on the other hand was never dependent on the deeper seas and the Fallen Star did not touch their home. The Triton kingdom survived and evolved. The Triton Kings of earlier times lost much of their priestly authority. Respected, but not worshiped like divine beings, they turned themselves from their lesser kin. Now they rule in name only, looking inwards and trying to master the secrets of the seas. The tribal divisions of the kingdom have lessened over time and the Shark Tribe and the Turtle Tribe are now part of the greater Pelagian culture. The mermen and their coastal traders have found other partners since the destruction of Berytos, but they are still an important part of the Pelagian economy, and they have brought bronze to the deeps. Now Pelagian soldiers have abandoned the crude armor of earlier times and fight in armor of gleaming bronze. The earlier contact with Berytos and Therodos has kindled an interest in Telkhine secrets and lore. With the final rest of Therodos the secrets of the Telkhines have become available to the Pelagian sages.
+
+## National features
+
+- **Race:** Underwater
+- **Military:** Aquatic Tritons and amphibious mermen. Light infantry, heavy infantry, sacred, aquatic knights
+- **Magic:** Water, some Astral, Nature, Air, Earth and Fire. Mages weaker on dry land. Mages can convert water gems into astral pearls
+- **Priests:** Medium, weak on dry land
+- **Scales & Blesses:** Order limit +1, Productivity limit +1
+- **Buildings:** Standard Forts
+
+## On the info screen
+
+- 18 commanders, 10 units, 1 start sites shown (right-click a sprite in game for its stats)
+
+## From the inspector (vanilla data)
+
+```
+=== nation 86: MA Pelagia, Triton Kings
+MA Pelagia - Triton Kings
+Nation #:86
++4W+1N
+[wiki]
+commanders: #1050 Merman Scout, #1052 Wave Lord, #1069 Pelagian Captain, #2421 Amber Clan Noble, #1696 Merman Priest, #1415 Pelagian Mermage, #2823 Pelagian Mystic, #1418 Amber Clan Priest, #1417 Amber Clan Mage, #2422 Pearl Clan Priest, #2423 Pearl Mage
+units: #1046 Merman, #1048 Wave Warrior, #1056 Pelagian Militia, #1057 Pelagian Soldier, #2416 Coral Clan Hoplite, #1419 Amber Clan Guard
+capital-only commanders: #1061 Triton Prince, #1088 Triton King, #2865 Conqueror of the Closed Realm
+capital-only units: #1059 Knight of the Deeps, #2863 Champion of the Closed Realm
+coast commanders: #2826 Merman Commander, #1697 Merman Priest, #2868 Daduchos, #2826 Merman Commander, #1697 Merman Priest, #2868 Daduchos
+coast units: #2822 Merman Hoplite, #2870 Apostate of the Closed Realm, #2822 Merman Hoplite, #2870 Apostate of the Closed Realm
+pretenders: #1231 Drakaina, #2440 Sea Dragon, #2847 Protogenos of the Sea, #2849 Father of Monsters, #2855 Floating Mind, #3055 Grand Hydromancer, #159 Monument, #179 Master Lich, #180 Demilich, #248 Arch Mage, #269 Wyrm, #294 Nerid, #472 Statue of Order, #657 Monolith, #872 Ghost King, #961 Titan of the Sea, #973 Ancient Kraken, #1232 Old Man of the Sea, #1233 Lord of the Waves, #2460 Statue of Fertility, #2463 Statue of War, #2791 Earth Serpent, #2850 Statue of the Underworld, #2851 Titan of Winds and Waves, #2881 Telkhine God-King
+start sites: #160 Palace of Pearls
+national spells: #367 Summon Hekateride, #368 Summon Daktyl
+home realms: 9
+```

@@ -1,0 +1,165 @@
+{
+ "description": "When Atlantis was destroyed by R'lyeh and the Atlantians scattered, some fled into the deep swamps and jungles of Mictlan. Here they found a people who worshiped the Rain as one aspect of their God. The Atlantian Kings became Kings of Rain and reshaped the faith to their needs. They found the secrets of the long abandoned Blood Cult and reinstated the foul practices of ancient times. Then the New God rose, hungry for blood. Now Mictlan is once again expanding its territories to feed the hunger of its Lord. Isolation has made Mictlan a backward nation and its warriors use archaic weaponry and armor. The armies are mainly composed of slaves from newly conquered lands. The mage-priests of Mictlan celebrate the two Faces and the two Dominions of the Hungry God, namely the Sun and the Moon, the Rain and the Forest.",
+ "features": {
+  "Race": "Humans and Atlantians, prefers Heat scale +1",
+  "Military": "Light infantry with slings and javelins, tribal kings can levy slaves, sacred Jaguar and Eagle Warriors. Sacred Atlantians that can enter the sea.",
+  "Magic": "Water, Blood, Fire, Astral, Nature",
+  "Priests": "Powerful, can perform blood sacrifices, Dominion does not spread unless blood is sacrificed",
+  "Scales & Blesses": "Turmoil limit +1, Sloth limit +1, Heat limit +1, Bless points +3",
+  "Buildings": "Primitive Fortified Cities"
+ },
+ "commanders": 12,
+ "units": 10,
+ "sites": 0,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    338,
+    595,
+    366,
+    625
+   ],
+   [
+    401,
+    589,
+    425,
+    616
+   ],
+   [
+    468,
+    590,
+    487,
+    625
+   ],
+   [
+    531,
+    590,
+    548,
+    625
+   ],
+   [
+    588,
+    590,
+    607,
+    625
+   ],
+   [
+    651,
+    588,
+    670,
+    625
+   ],
+   [
+    712,
+    588,
+    731,
+    625
+   ],
+   [
+    773,
+    587,
+    792,
+    625
+   ],
+   [
+    814,
+    576,
+    863,
+    628
+   ],
+   [
+    924,
+    577,
+    959,
+    616
+   ],
+   [
+    987,
+    597,
+    1009,
+    610
+   ],
+   [
+    1042,
+    577,
+    1069,
+    612
+   ]
+  ],
+  "units": [
+   [
+    338,
+    692,
+    366,
+    722
+   ],
+   [
+    399,
+    693,
+    427,
+    722
+   ],
+   [
+    460,
+    692,
+    488,
+    721
+   ],
+   [
+    524,
+    692,
+    547,
+    721
+   ],
+   [
+    587,
+    689,
+    609,
+    722
+   ],
+   [
+    647,
+    675,
+    684,
+    712
+   ],
+   [
+    695,
+    689,
+    731,
+    721
+   ],
+   [
+    767,
+    691,
+    792,
+    722
+   ],
+   [
+    853,
+    695,
+    887,
+    713
+   ],
+   [
+    924,
+    682,
+    959,
+    712
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  897
+ ],
+ "ocr_score": 0.044,
+ "name": "Mictlan, Blood and Rain",
+ "era": "LA",
+ "read": "2026-10-26",
+ "id": "111",
+ "inspector": "=== nation 111: LA Mictlan, Blood and Rain\nLA Mictlan - Blood and Rain\nNation #:111\n+1F+1W+1S+1N+1B\n[wiki]\ncommanders: #729 Scout, #730 Tribal King, #731 Mictlan Priest, #1361 Nahualli\nunits: #721 Warrior, #1545 Warrior, #1546 Warrior, #1547 Warrior, #1548 Feathered Warrior, #727 Jaguar Warrior\ncapital-only commanders: #732 Priest King, #734 Moon Priest, #1424 Sun Priest, #1421 Rain Priest, #1420 King of Rain\ncapital-only units: #726 Eagle Warrior, #1423 Rain Warrior\nunderwater commanders: #2894 Lord of the Deep, #2892 Priest of All Waters, #2895 Mother of All Waters\nunderwater units: #2893 Warrior of the Deep, #2896 Returned\nheroes: #933 “Mictlipoctli“ - King of Legends, #936 “Tepeyocatl“ - Eagle Priest, #935 “Quetzalcoatl“ - Priest King\npretenders: #603 Teotl of Rain, #604 Teotl of the Night, #958 Colossal Head, #2434 Teteo Inan, #2442 Teotl of War, #2443 Teotl of the Sky, #2444 Teotl of the Underworld, #2461 Statue of the Bloody Mother, #2755 Hun Came, #2756 Bolon-ti-ku, #2764 Hun Balam, #2777 Demon Macaw, #3394 Serpent of the Underworld, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #109 Dagon, #269 Wyrm, #606 Great Mother, #653 Serpent King, #657 Monolith, #857 Smoking Mirror, #2853 Ghost King, #3876 Sacred Geyser\nstart sites: #102 Temple of the Land, #104 Temple of the Moon, #105 Temple of the Sun, #103 High Temple of the Rain\nnational spells: #504 Summon Jaguar Toads, #505 Summon Jaguars, #506 Summon Jade Serpents, #507 Summon Monster Toad, #508 Contact Couatl, #509 Summon Tlaloque, #510 Bind Beast Bats, #511 Bind Jaguar Fiends, #512 Contact Civateteo, #513 Bind Tzitzimitl, #514 Contact Tlahuelpuchi, #515 Contact Onaqui, #516 Rain of Jaguars\nhome realms: 10, 6",
+ "image": "img/mictlan.jpg"
+}

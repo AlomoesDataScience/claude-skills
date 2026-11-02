@@ -1,0 +1,221 @@
+{
+ "description": "Uruk is a warm plain inhabited by Enkidus, large, hairy wild men with horns and unkempt hair. Since the founding of Eridu, the First City, civilization has spread and the kingdom expanded. Other cities were founded in the image of Eridu, each with its own character. Administrators from the City of Scribes aided local rulers, while traders and merchants from the City of Trade improved the economic infrastructure of the kingdom. But the Ensi of Eridu lost power and petty kings of the new cities rose to power and claimed the Ensi title. Strife and turmoil tore the kingdom apart. One of the new cities, the City of Gods was blessed by the Awakening God and saw the first Entu of the Moon erect a great temple in the city. It soon replaced the First City as religious center and the Entu priestesses of the First City moved to the City of Gods, no longer bound in marriage to the ruling Ensi. With the coming of the Awakening God, the city states have set their differences aside and joined a common cause. In the plains of Uruk the First City still stands as a symbol of civilization, although its temporal and religious power has diminished. Now each city has its own Ensi ruler. The wild men are ino longer wild, and the shamans and Bone Readers of old have been replaced by the priests and mages of the cities. National G-eatures",
+ "features": {
+  "Race": "Large. Prefers Heat scale +1",
+  "Military": "Enkidu Infantry and fearsome Mushussu Chariots",
+  "Magic": "Astral, Nature, Earth, Water and some Air.",
+  "Priests": "Strong, good at recalling a dead God.",
+  "Scales & Blesses": "Order limit +1, Heat limit +1",
+  "Buildings": "Fortified Cities, temples cost 900"
+ },
+ "commanders": 17,
+ "units": 11,
+ "sites": 3,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    348,
+    661,
+    375,
+    711
+   ],
+   [
+    407,
+    661,
+    440,
+    711
+   ],
+   [
+    471,
+    665,
+    492,
+    711
+   ],
+   [
+    532,
+    665,
+    553,
+    711
+   ],
+   [
+    595,
+    664,
+    618,
+    711
+   ],
+   [
+    646,
+    660,
+    680,
+    711
+   ],
+   [
+    714,
+    657,
+    738,
+    710
+   ],
+   [
+    768,
+    660,
+    802,
+    711
+   ],
+   [
+    830,
+    664,
+    858,
+    711
+   ],
+   [
+    894,
+    659,
+    927,
+    711
+   ],
+   [
+    958,
+    656,
+    981,
+    710
+   ],
+   [
+    1012,
+    664,
+    1040,
+    711
+   ],
+   [
+    1107,
+    656,
+    1154,
+    711
+   ],
+   [
+    1154,
+    656,
+    1215,
+    711
+   ],
+   [
+    1215,
+    656,
+    1274,
+    711
+   ],
+   [
+    1274,
+    656,
+    1335,
+    711
+   ],
+   [
+    1335,
+    656,
+    1403,
+    711
+   ]
+  ],
+  "units": [
+   [
+    348,
+    759,
+    375,
+    808
+   ],
+   [
+    403,
+    759,
+    440,
+    808
+   ],
+   [
+    470,
+    759,
+    497,
+    808
+   ],
+   [
+    525,
+    759,
+    562,
+    808
+   ],
+   [
+    589,
+    759,
+    623,
+    808
+   ],
+   [
+    645,
+    754,
+    701,
+    808
+   ],
+   [
+    701,
+    754,
+    742,
+    808
+   ],
+   [
+    742,
+    754,
+    799,
+    808
+   ],
+   [
+    863,
+    754,
+    915,
+    808
+   ],
+   [
+    915,
+    754,
+    970,
+    808
+   ],
+   [
+    970,
+    754,
+    1036,
+    808
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    859,
+    393,
+    899
+   ],
+   [
+    393,
+    859,
+    439,
+    899
+   ],
+   [
+    439,
+    859,
+    484,
+    899
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  982
+ ],
+ "ocr_score": 0.061,
+ "name": "Uruk, City States",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "66",
+ "inspector": "=== nation 66: MA Uruk, City States\nMA Uruk - City States\nNation #:66\n+1W+1E+2S+1N\n[wiki]\ncommanders: #2934 Enkidu Scout, #2942 Enkidu Commander, #2943 Ensi, #2949 Gudu, #2950 Ishib, #2951 Ashipu, #2944 Nin, #2945 Gala, #2946 Naditu, #2947 Ereshdingir\nunits: #2935 Enkidu Archer, #2936 Enkidu Spearman, #2938 Enkidu Heavy Archer, #2939 Enkidu Soldier, #2940 Enkidu Iron Warrior, #2941 Enkidu Royal Guard\ncapital-only commanders: #2948 Entu, #2952 Mashmashu\ncapital-only units: #2953 Maiden of the Moon, #2963 Mushussu Charioteer\nforeign commanders: #2954 Enkidu Shaman\nforeign units: #2937 Enkidu Warrior\nunderwater commanders: #3093 Kulullu Commander, #3094 Kulullu King, #3092 Kuliltu Queen, #3091 Kulullu Sage\nunderwater units: #3089 Kulullu, #3090 Kulullu Soldier\nheroes: #2433 “Utnapishtim“ - Favored of Enki, #2965 “U'an“ - Apkallu\npretenders: #120 Moloch, #655 Scorpion King, #661 Shedu, #957 Lord of The Desert Sun, #1097 Lord of The Summer Plague, #1372 Annunaki of the Sky, #1373 Annunaki of Sweet Waters, #1374 Annunaki of the Morning Star, #1384 Solar Disc, #2137 Urmahlullu, #2138 Sphinx, #2435 Annunaki of Love and War, #2436 Annunaki of the Moon, #2437 Annunaki of Growth and Rebirth, #2438 Annunaki of the Underworld, #2462 Golden Idol, #2786 Celestial Gryphon, #2787 Celestial Lion, #2788 Man-Eater, #3328 God Block, #3329 Betyl of the Sun, #3330 Betyl of Writing, #3331 Betyl of the Stars, #3344 Statue of Beginnings, #3345 Wooden Colossus, #3369 Ilahat of Fate, #3370 Ilahat of Might, #3386 Ilah of the Sky, #3387 Ilah of the Sacred Mountain, #3388 Ilah of the Moon, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #159 Monument, #979 Great White Bull, #2958 Golden Lion, #2960 Apkallu, #3190 Bone Mother, #3191 Enkidu Great Sage\nstart sites: #186 Great Temple of the Moon, #187 The Swamps of Ur, #188 The House of Water\nnational spells: #318 Contact Scorpion Man, #360 Summon Kusarikkus, #361 Summon Ugallu, #362 Call Anzus, #363 Call Apkallu, #958 Herd of Buffaloes\nhome realms: 10, 5",
+ "image": "img/uruk.jpg"
+}

@@ -1,0 +1,167 @@
+{
+ "description": "In ages past, a distant star inhabited by a great race of strange, alien beings was struck with an unimaginable catastrophe. The star fell from the heavens, breaking into tiny shards. One such shard fell through the Spheres and down upon the world. The shard came to rest on the ocean floor and there a remnant of this great race adapted and survived. They multiplied and enslaved a race of fishlike humanoids by sheer strength of mind. R'lyeh, the Sunken City, is a mind-defying place built under the sea with an architecture unlike any known to man. In the halls of R'lyeh the Starspawns, the Great Ones who survived the Fall, plan the re-emergence of their Great Race. The Starspawns are powerful mages with great knowledge of distant stars and all of the Great Race are powerful mindcrafters. All coastal forts of R'lyeh have a special well where women can submerge themselves in the hope of being impregnated by a Great One. However, most wil be taken by Deep Ones instead, and the women's offspring will be strange, fishlike humanoids instead of the noble Starchildren they wanted. These half-human hybrids are usually devoted to the cause of putting mankind below the sea and often join the army of R'lyeh free of charge. National eatures",
+ "features": {
+  "Race": "Underwater",
+  "Military": "Atlantian and Oceanian slaves, hybrids, Illithids",
+  "Magic": "Astral, Water, Earth, some Glamour and Nature",
+  "Priests": "Average, can summon Void Beings",
+  "Scales & Blesses": "Magic limit +1",
+  "Buildings": "Standard Forts"
+ },
+ "commanders": 9,
+ "units": 11,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    343,
+    685,
+    363,
+    702
+   ],
+   [
+    392,
+    663,
+    433,
+    702
+   ],
+   [
+    452,
+    664,
+    502,
+    711
+   ],
+   [
+    524,
+    669,
+    548,
+    702
+   ],
+   [
+    595,
+    688,
+    608,
+    704
+   ],
+   [
+    646,
+    668,
+    673,
+    705
+   ],
+   [
+    706,
+    664,
+    741,
+    711
+   ],
+   [
+    767,
+    660,
+    802,
+    711
+   ],
+   [
+    863,
+    678,
+    890,
+    698
+   ]
+  ],
+  "units": [
+   [
+    517,
+    765,
+    549,
+    800
+   ],
+   [
+    578,
+    767,
+    611,
+    799
+   ],
+   [
+    640,
+    766,
+    672,
+    803
+   ],
+   [
+    695,
+    765,
+    733,
+    797
+   ],
+   [
+    755,
+    774,
+    793,
+    802
+   ],
+   [
+    816,
+    774,
+    854,
+    804
+   ],
+   [
+    886,
+    771,
+    975,
+    807
+   ],
+   [
+    1010,
+    764,
+    1046,
+    808
+   ],
+   [
+    1061,
+    764,
+    1112,
+    808
+   ],
+   [
+    1166,
+    783,
+    1194,
+    806
+   ],
+   [
+    1226,
+    782,
+    1257,
+    806
+   ]
+  ],
+  "sites": [
+   [
+    349,
+    856,
+    392,
+    893
+   ],
+   [
+    392,
+    856,
+    435,
+    893
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  982
+ ],
+ "ocr_score": 0.068,
+ "name": "R'lyeh, Fallen Star",
+ "era": "MA",
+ "read": "2026-10-26",
+ "id": "89",
+ "inspector": "=== nation 89: MA R'lyeh, Fallen Star\nMA R'lyeh - Fallen Star\nNation #:89\n+2W+3S\n[wiki]\ncommanders: #432 Scout, #444 Traitor Prince, #1527 Slave Priest, #1518 Slave Mage, #445 Illithid Lord, #443 Star Child, #333 Starspawn\nunits: #1517 Slave Trooper, #1526 Slave Guardian, #1515 Slave Trooper, #1524 Slave Guardian, #335 Slave Trooper, #1619 Slave Guardian, #336 Slave Guardian, #337 Lobo Guard, #424 Meteorite Guard, #425 Shambler Thrall, #243 Crab Hybrid, #331 Illithid, #407 Illithid Soldier\ncapital-only commanders: #332 Starspawn\ncoast commanders: #443 Star Child, #2470 Hybrid Commander\ncoast units: #970 Hybrid, #971 Hybrid Trooper\nheroes: #560 “Cthugul“ - Stargazer, #660 “Auluudh“ - Aboleth, #622 “Shadhul Ummush“ - Traitor King\npretenders: #109 Dagon, #1233 Lord of the Waves, #2440 Sea Dragon, #2849 Father of Monsters, #2855 Floating Mind, #3055 Grand Hydromancer, #179 Master Lich, #248 Arch Mage, #269 Wyrm, #546 Void Lurker, #652 Void Lord, #657 Monolith, #872 Ghost King, #961 Titan of the Sea, #973 Ancient Kraken, #1231 Drakaina, #1232 Old Man of the Sea, #2791 Earth Serpent, #2850 Statue of the Underworld, #2980 Uttervast, #3054 Firstborn of the Star, #3396 King in Yellow\nstart sites: #17 The Sunken City, #45 The Void Gate\nhome realms: 9",
+ "image": "img/rlyeh.jpg"
+}

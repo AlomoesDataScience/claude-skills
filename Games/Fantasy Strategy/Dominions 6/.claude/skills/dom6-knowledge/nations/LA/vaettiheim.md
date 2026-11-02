@@ -1,0 +1,43 @@
+# Vaettiheim, Wolf Kin Jarldom (LA)
+
+*nation 118; read from the game's nation info screen on 2026-10-26 (OCR, score 0.093; small reading slips are possible)*
+
+![info screen](img/vaettiheim.jpg)
+
+## Description
+
+Vaettiheim is a land of bitter winters and cool summers. It is the home of the Vaettir, small and wicked goblins who once dwelled in the icy forests of Jotunheim. When the Jarls of Jotunheim sealed the alliance with humankind the remaining Gygjas and their Vaetti servants retreated to the wild woods. With the guidance of the few remaining Gygjas the Vaettir formed a nation of their own. Vaettiheim is a land of Vaettir and giants centered at the Iron Wood, the ancient home of the Jotun Gygjas. With the coming of the Awakening God the Vaetti Hags of earlier times have been more or less replaced by Vaetti Gygjas trained in the Iron Wood and the Vaettir have adopted the weapons and armaments used by Jotuns and humans. National Gcatures
+
+## National features
+
+- **Race:** Cold resistant, prefers Cold scale +2
+- **Military:** Small stealthy Vaettir, Wolf Riders and a few giants
+- **Magic:** Death, Glamour, Nature, Blood, Water, Astral
+- **Priests:** Weak
+- **Scales & Blesses:** Cold limit +1
+- **Buildings:** Primitive Forts, labs cost 300 in forests
+
+## On the info screen
+
+- 6 commanders, 13 units, 1 start sites shown (right-click a sprite in game for its stats)
+
+## From the inspector (vanilla data)
+
+```
+=== nation 118: LA Vaettiheim, Wolf Kin Jarldom
+LA Vaettiheim - Wolf Kin Jarldom
+Nation #:118
++1S+1D+2N
+[wiki]
+commanders: #3435 Vaetti Herse, #3410 Vaetti Jarl, #3411 Vaetti Gode, #3408 Vaetti Gygja
+units: #3401 Vaetti Archer, #3412 Vaetti Crossbowman, #3402 Light Vaetti Infantry, #3417 Light Vaetti Infantry, #3403 Vaetti Spearman, #3404 Vaetti Berserker, #3405 Hirdvaetti, #3418 Wolf Rider, #3413 Wolf Brother, #3415 Moose Rider
+capital-only commanders: #3409 Jotun Gygja, #3414 Dimvaetti
+capital-only units: #3406 Rimvaetti, #3421 Jotun Hurler, #3422 Jotun Axeman
+forest commanders: #3407 Vaetti Hag, #3435 Vaetti Herse
+forest units: #3401 Vaetti Archer, #3402 Light Vaetti Infantry, #3417 Light Vaetti Infantry, #3418 Wolf Rider, #3401 Vaetti Archer
+heroes: #586 “Angerboda“ - Great Hag
+pretenders: #250 Frost Father, #401 Bitch Queen, #1229 Son of Fenrer, #1379 Keeper of the Bridge, #1561 Father of Winters, #2234 Irminsul, #2447 Idol of Men, #2448 Idol of Beasts, #2449 Idol of Sorcery, #2800 Ormr, #2801 Linnormr, #2803 Linnormr, #3086 Deives of the Sun, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #500 Skratti, #605 Son of Niefel, #606 Great Mother, #643 Bog Mummy, #644 Dracolich, #657 Monolith, #3876 Sacred Geyser
+start sites: #213 The Iron Wood
+national spells: #491 Summon Dwarf of the Four Directions, #494 Seith Curse, #495 Summon Glosos, #496 Brood of Garm, #499 Winter's Call, #500 Illwinter, #955 Sloth of Bears, #1466 Herd of Moose
+home realms: 1, 10
+```

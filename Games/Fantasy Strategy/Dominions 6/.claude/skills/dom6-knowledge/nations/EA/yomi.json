@@ -1,0 +1,119 @@
+{
+ "description": "LYomi is a land of inhospitable mountains, steaming, sulphuric pools and sudden volcanic eruptions. At the center of this unforgiving land lies a great cone-shaped mouniain at the top of which is an entrance to the Netherworld. From this gate the Oni have come, one by one or in small groups. Oni are demons of the wild, ugly, pot-bellied and mischievous. They are ruled by Oni Kings who occasionally emerge from the Netherworld to wreak havoc on the land of the living. Oni are almost immortal and must be killed in spirit as well as in body if they are to stay dead. They are worshiped by human priests who build profane temple-gates through which even more Oni can enter the land.",
+ "features": {
+  "Race": "Demons. Reduced income. Halved income effects of heat and cold scales.",
+  "Military": "Semi-immortal Oni, Bakemono and human servants. Light infantry, medium infantry. No sacred troops",
+  "Magic": "Death, Fire, Earth, some Air and Nature. Powerful mages, bad at research. Some national summons",
+  "Priests": "Weak, Provinces with temples spawn Oni",
+  "Scales & Blesses": "Turmoil limit +1",
+  "Buildings": "Primitive Forts, temples cost 300, cave forts increase gold/resources/rec.p. by 15%"
+ },
+ "commanders": 8,
+ "units": 5,
+ "sites": 1,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    343,
+    565,
+    364,
+    595
+   ],
+   [
+    409,
+    573,
+    424,
+    595
+   ],
+   [
+    471,
+    562,
+    488,
+    597
+   ],
+   [
+    528,
+    565,
+    546,
+    587
+   ],
+   [
+    589,
+    564,
+    609,
+    583
+   ],
+   [
+    647,
+    560,
+    670,
+    598
+   ],
+   [
+    709,
+    540,
+    736,
+    599
+   ],
+   [
+    756,
+    531,
+    801,
+    600
+   ]
+  ],
+  "units": [
+   [
+    345,
+    671,
+    363,
+    693
+   ],
+   [
+    400,
+    664,
+    424,
+    693
+   ],
+   [
+    468,
+    671,
+    485,
+    693
+   ],
+   [
+    529,
+    662,
+    547,
+    694
+   ],
+   [
+    589,
+    662,
+    608,
+    694
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    745,
+    388,
+    784
+   ]
+  ]
+ },
+ "window": [
+  312,
+  43,
+  1607,
+  869
+ ],
+ "ocr_score": 0.06,
+ "name": "Yomi, Oni Kings",
+ "era": "EA",
+ "read": "2026-10-26",
+ "id": "23",
+ "inspector": "=== nation 23: EA Yomi, Oni Kings\nEA Yomi - Oni Kings\nNation #:23\n+1F+1A+1E+3D\n[wiki]\ncommanders: #2467 Bakemono Chief, #1313 Bandit Leader, #1314 Demon General, #3069 Namanari, #1315 Sorcerer, #1609 Demon Priest, #1276 Oni Shugo\nunits: #1393 Bakemono-Sho, #1394 Bakemono-Sho, #1395 Bakemono Archer, #1311 Bandit, #1312 Bandit\ncapital-only commanders: #1316 Dai Oni\nforeign commanders: #1609 Demon Priest\nmountain commanders: #2467 Bakemono Chief, #3069 Namanari\nmountain units: #1393 Bakemono-Sho, #1394 Bakemono-Sho, #1395 Bakemono Archer\nheroes: #1671 “Masatora“ - Ghost General, #1672 “Kurofumi“ - Master of the Shadow Blossom, #1673 “Tsunekage“ - Devourer of Demons\npretenders: #905 Jade Emperor, #1339 Nyorai, #1345 Celestial General, #2316 Dragon King, #2318 Celestial Dragon, #2465 Statue of War, #2556 Celestial Carp, #3072 Kami of the Sun, #3073 Kami of the Moon, #3074 Kami of Storms, #3088 Dharmapala of the Underworld, #3928 White Tiger of the West, #3929 Azure Dragon of the East, #3931 Vermilion Bird of the South, #3932 Black Tortoise of the North, #179 Master Lich, #180 Demilich, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3642 Great Sage, #3711 Storm Father, #608 Phoenix, #657 Monolith, #2203 Oni Kunshu, #2447 Idol of Men, #2448 Idol of Beasts, #2449 Idol of Sorcery, #2978 Master Sorcerer, #3876 Sacred Geyser\nstart sites: #95 Mountain of the Oni Kings\nnational spells: #290 Hannya Pact, #291 Greater Hannya Pact, #292 End of Culture, #293 End of Weakness, #301 Summon Shikome, #311 Summon Gozu Mezu, #313 Summon Araburu-kami, #587 Summon Kappa, #589 Summon Karasu Tengus, #591 Summon Konoha Tengus, #592 Ghost General, #594 Contact Dai Tengu, #595 Contact Nushi, #957 Ambush of Tigers\nhome realms: 10, 4",
+ "image": "img/yomi.jpg"
+}

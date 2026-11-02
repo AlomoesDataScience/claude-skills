@@ -1,0 +1,179 @@
+{
+ "description": "Gath is a dry land that has only recently recovered from the devastation caused by its earlier inhabitants. For ages the land has been dominated by giants, but under constant pressure from human immigrants and the Abysian Tide of Fire, the original inhabitants of the land were forced to retreat and watch as city after city was destroyed. Now there is but one city left: Gath, the City of Giants. The Gittite descendants of the Anakites of Ashdod still dominate the surrounding land and have subjugated several human tribes. While the human tribes comprise much of the population of the kingdom, the Gittites are the undisputed rulers of the land. By keeping iron-working from the human population and through a strictly centralized cult focused around bloody sacrifices at the Great Temple, the Gittites have kept control of the land. The Gittites are small compared to the ancient Rephaim, but still large by human standards. National Features",
+ "features": {
+  "Race": "Gittite giants and humans. Prefers Heat scale +1.",
+  "Military": "Gittite infantry, several human tribes with different skills.",
+  "Magic": "Fire, Earth, Astral, Blood, Nature, Death.",
+  "Priests": "Medium with powerful priest at capital, sacred Gibborite giants, can perform blood sacrifices.",
+  "Scales & Blesses": "Heat limit +1",
+  "Buildings": "Giant Forts, temples cost 1200"
+ },
+ "commanders": 11,
+ "units": 11,
+ "sites": 2,
+ "sprite_boxes": {
+  "commanders": [
+   [
+    348,
+    620,
+    364,
+    652
+   ],
+   [
+    411,
+    619,
+    427,
+    654
+   ],
+   [
+    468,
+    623,
+    486,
+    652
+   ],
+   [
+    535,
+    603,
+    563,
+    654
+   ],
+   [
+    594,
+    619,
+    610,
+    654
+   ],
+   [
+    653,
+    621,
+    669,
+    654
+   ],
+   [
+    702,
+    604,
+    730,
+    653
+   ],
+   [
+    771,
+    604,
+    793,
+    653
+   ],
+   [
+    824,
+    607,
+    853,
+    653
+   ],
+   [
+    888,
+    599,
+    920,
+    654
+   ],
+   [
+    951,
+    584,
+    983,
+    653
+   ]
+  ],
+  "units": [
+   [
+    347,
+    719,
+    365,
+    750
+   ],
+   [
+    401,
+    720,
+    425,
+    750
+   ],
+   [
+    468,
+    720,
+    486,
+    750
+   ],
+   [
+    529,
+    718,
+    547,
+    750
+   ],
+   [
+    584,
+    716,
+    608,
+    750
+   ],
+   [
+    649,
+    718,
+    669,
+    750
+   ],
+   [
+    711,
+    713,
+    735,
+    750
+   ],
+   [
+    767,
+    706,
+    778,
+    721
+   ],
+   [
+    784,
+    701,
+    805,
+    751
+   ],
+   [
+    833,
+    720,
+    852,
+    750
+   ],
+   [
+    888,
+    701,
+    920,
+    751
+   ]
+  ],
+  "sites": [
+   [
+    348,
+    802,
+    394,
+    842
+   ],
+   [
+    394,
+    802,
+    440,
+    842
+   ]
+  ]
+ },
+ "window": [
+  311,
+  43,
+  1607,
+  926
+ ],
+ "ocr_score": 0.085,
+ "name": "Gath, Last of the Giants",
+ "era": "LA",
+ "read": "2026-10-26",
+ "id": "107",
+ "inspector": "=== nation 107: LA Gath, Last of the Giants\nLA Gath - Last of the Giants\nNation #:107\n+1F+1E+2S\n[wiki]\ncommanders: #1995 Iassacharite Scout, #2486 Benjaminite Commander, #1997 Iassacharite Sage, #2069 Iassacharite Sibyl, #1984 Levite Priest, #2002 Gittite Commander, #2012 Abba, #1988 Yeddeoni, #1986 Kohen\nunits: #1994 Reubenite Archer, #1996 Benjaminite Slinger, #1993 Naphtali Spearman, #1992 Zebulunite Soldier, #2050 Zebulunite Horn Blower, #1991 Gadite Swordsman, #1990 Asherite Soldier, #1989 Levite Zealot, #1999 Gittite Soldier\ncapital-only commanders: #2001 Seren, #1987 Kohen Gadol\ncapital-only units: #2000 Gibbor\nheroes: #2070 “Sabba“ - Sibyl of Hermon\nmultiheroes: #1985 Nabi\npretenders: #120 Moloch, #655 Scorpion King, #661 Shedu, #957 Lord of The Desert Sun, #1097 Lord of The Summer Plague, #1372 Annunaki of the Sky, #1373 Annunaki of Sweet Waters, #1374 Annunaki of the Morning Star, #1384 Solar Disc, #2137 Urmahlullu, #2138 Sphinx, #2435 Annunaki of Love and War, #2436 Annunaki of the Moon, #2437 Annunaki of Growth and Rebirth, #2438 Annunaki of the Underworld, #2462 Golden Idol, #2786 Celestial Gryphon, #2787 Celestial Lion, #2788 Man-Eater, #3328 God Block, #3329 Betyl of the Sun, #3330 Betyl of Writing, #3331 Betyl of the Stars, #3344 Statue of Beginnings, #3345 Wooden Colossus, #3369 Ilahat of Fate, #3370 Ilahat of Might, #3386 Ilah of the Sky, #3387 Ilah of the Sacred Mountain, #3388 Ilah of the Moon, #158 Oracle, #179 Master Lich, #180 Demilich, #216 Dragon, #226 Arch Mage, #244 Arch Mage, #245 Master Enchanter, #246 Freak Lord, #249 Crone, #251 Great Sage, #265 Dragon, #266 Dragon, #267 Frost Father, #268 Master Enchanter, #485 Great Enchantress, #656 Fountain of Blood, #872 Ghost King, #2785 Solar Eagle, #2789 Raven of the Underworld, #2791 Earth Serpent, #3641 Dragon, #3642 Great Sage, #3710 Dragon, #3711 Storm Father, #3888 Dracolich, #159 Monument, #606 Great Mother, #978 Great Black Bull, #979 Great White Bull, #1025 Divine Glyph, #2082 Son of the Fallen, #2958 Golden Lion, #3346 Bronze Colossus\nstart sites: #142 Palace of the Sage King, #143 Temple of the Sage King\nnational spells: #345 Strange Fire, #346 Memories of Stone, #349 Scapegoats, #351 Summon Shedim, #352 Call Malakh, #353 Call Hashmal, #354 Call Arel, #355 Call Ophan, #356 Call Merkavah, #358 Summon Mazzikim, #359 Summon Lilot\nhome realms: 10, 5",
+ "image": "img/gath.jpg"
+}
