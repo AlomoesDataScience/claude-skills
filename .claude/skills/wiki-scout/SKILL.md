@@ -68,3 +68,6 @@ Put the page link in the game's `Resources` file too.
 - A game's wiki: `<game folder>/wiki/` (text) + `SOURCE.md`; note it in the game's guide skill.
 - An IP or franchise wiki: `Games/IP Wikis/<IP>/wiki/` (Gundam first).
 - Community wiki text is for Claude's reading: summarise in Claude's own words, don't republish.
+
+## Related skills
+game-sources (manuals and wikis as text), manual-first (manual before wiki), library-intake, learn-to-play, learn-to-mod

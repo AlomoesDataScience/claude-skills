@@ -1,6 +1,6 @@
 ---
 name: se4-guide
-description: Starter guide to Space Empires IV Deluxe (Malfador Machinations, 2000/2005), a space 4X game - what it is, the first-turns flow (design a ship, build queue, research, warp-point exploration, colony ships, facilities, diplomacy), hotkeys, victory conditions, the races and modding, with a page map of SE4DeluxeManual.pdf (searchable as SE4DeluxeManual.txt; PDF page = printed page + 7). Uses game-sources (manual lookups), game-ui (driving the game window), learn-a-game (method). Use when the user wants to play, learn, mod or talk about Space Empires IV / SE4, or asks how one of its rules, screens or designs works.
+description: Starter guide to Space Empires IV Deluxe (Malfador Machinations, 2000/2005), a space 4X game - what it is, the first-turns flow (design a ship, build queue, research, warp-point exploration, colony ships, facilities, diplomacy), hotkeys, victory conditions, the races and modding, with a page map of SE4DeluxeManual.pdf (searchable as SE4DeluxeManual.txt; PDF page = printed page + 7). Uses game-sources (manual lookups), game-ui (driving the game window), learn-to-play (method). Use when the user wants to play, learn, mod or talk about Space Empires IV / SE4, or asks how one of its rules, screens or designs works.
 ---
 
 # Space Empires IV Deluxe - starter guide

@@ -1,9 +1,21 @@
 ---
-name: learn-a-game
-description: How Claude learns to play a video game it does not know yet, the way it learned Dominions 6 with the user: read the manual and the in-game help first, map the screen and the controls, explore menus safely without committing anything, test one thing at a time and check the screen after every action, take the teacher's corrections as rules, write down every lesson (knowledge base, game skill, memory), then play for real in small reviewed steps. Covers turn-based strategy games (4X, Dominions, Civilization-likes) and real-time games such as platformers and metroidvanias (Metroid): controls and movement tests, map and backtracking, ability gates, cheap deaths as experiments. Uses dom6-ui-style guarded input and screen reading. Use when the user asks Claude to learn, try, practise or get started with a game, to learn a new screen, mechanic or genre, or asks how Claude should approach a game it has not played.
+name: learn-to-play
+description: How Claude learns to PLAY a video game it does not know yet (its twin learn-to-mod covers learning a game to mod it - the two compound, do both), the way it learned Dominions 6 with the user: read the manual and the in-game help first, map the screen and the controls, explore menus safely without committing anything, test one thing at a time and check the screen after every action, take the teacher's corrections as rules, write down every lesson (knowledge base, game skill, memory), then play for real in small reviewed steps. Covers turn-based strategy games (4X, Dominions, Civilization-likes) and real-time games such as platformers and metroidvanias (Metroid): controls and movement tests, map and backtracking, ability gates, cheap deaths as experiments. Uses dom6-ui-style guarded input and screen reading. Use when the user asks Claude to learn, try, practise or get started with a game, to learn a new screen, mechanic or genre, or asks how Claude should approach a game it has not played.
 ---
 
-# Learn a game
+**Rule (the user, 2026-11-02): every new game gets learned with this method BEFORE real play - no exceptions.**
+
+# Learn a game to play
+
+**Twin skill: learn-to-mod.** Learning to play and learning to mod are directly related and compound
+on each other (the user, 2026-11-02). It's recommended to do both to get good at either:
+- Playing shows what matters: which units, rules and screens decide games, how things feel, and
+  what's broken or dull. Without play, a mod is guesswork.
+- Modding shows the exact rules: the data tables, scripts and real numbers behind what the screen
+  shows. That knowledge makes play precise. Order of truth still holds (game > manual > hypothesis),
+  and while playing, read the screen and manual first (play fairly; never hook game data during play).
+- Each one feeds the other's notes: play lessons go in the game guide, data facts go in the modding
+  skill, and each links to the other.
 
 A method, not a tool: how to go from "never played it" to "plays it sensibly" by reading, clicking,
 testing and writing things down. It is how Dominions 6 was learned with the user (2026-10-26/27).
@@ -149,3 +161,54 @@ notice them on the screenshot, fix them, and write the lesson down so it happens
 - Checks that are too strict stop good work: a window may have no title, or a lone commander no
   formations. Loosen the check, then look at the screenshot.
 - Don't guess what a symbol, title or term means. Say it is unknown and ask, or test it.
+
+## Load the game's guide first (the user, 2026-11-02: "I kinda thought you read the manual")
+- At the start of every session with a game and before every battle/turn sequence, load that game's
+  guide skill and read its play reference (FoG II: fog2m-guide PLAY.md). Game guides live in the
+  game's folder and do not surface on their own - invoke them.
+- When learning a game, read the manual **to play it**: unit types and capabilities, combat tables,
+  terrain, morale, victory conditions, hot keys - written into a play reference file. A design
+  summary (Systems section) is a separate job and is not enough to play.
+
+## The method, as the user walked me through it (FoG II setup, 2026-11-02) - use for every game
+0. **Reflex for anything new: manual-first skill (lookup.py).**
+   **FIRST: hotkeys and commands** (the user: "this should literally be first thing you look for").
+   Every manual has a UI guide - the colour/ebook version has screenshots with labels pointing at
+   each element. Read those pages, the hot key list, every order/command, and the in-game key list
+   (F1 or similar - the game wins). Write a COMMANDS.md in the game's guide before playing.
+1. **Settings first** - every page of them; know what each option does (hover the control itself,
+   not its label, for the tooltip); make the game run how we want it before playing.
+2. **Every screen: identify each element** - what it is, what it does; read the text the game
+   puts on screen (info boxes, blurbs, tooltips) - that's the game telling you what things are.
+3. **Go through lists entry by entry** - click each one, read its description; notice patterns
+   (e.g. one blurb per nation, filters) instead of assuming. Markers like FoG II's "$" (= DLC you don't own) are specific to each game - find out what they mean there, never carry them over.
+4. **THE MAIN THING (the user): look at the units and what they do** - every unit type on both sides: type, quality, armour, abilities, what it beats and what beats it. That is what the plan is built from.
+4b. **Preview before committing** - look at my side's options AND the opponent's (army/unit previews,
+   unit cards) before any battle or match.
+5. **Every term you see -> look it up in the manual** and write what it means for play (unit card
+   words, stats, abilities). Read the manual TO PLAY: tables, unit types, terrain, morale, victory.
+6. **Turn knowledge into a plan** - what the opponent fields, what beats it, what that means for my
+   choices - saved in a plan file (planning skill), then confirmed against the actual map/situation.
+7. **One intentional action at a time**, look at the result, report it; repetition only over items
+   already seen and chosen. The user leads the walkthrough; don't run ahead (no Create / End Turn on my own).
+
+## Order of truth (the user, 2026-11-02)
+1. **The game itself** is the holy grail - what it shows and does (tooltips, combat breakdowns,
+   results) wins, even over the manual. If the game contradicts the manual, respect the game and
+   note the difference.
+2. **The manual** - when gameplay hasn't shown it yet, check the manual (from the page, not memory).
+3. **Hypothesis** - if neither settles it, write it down as a hypothesis with how to test it, and
+   test it later. In single-player games, play on until it can be tested; record the result.
+Never present an assumption as a rule. Each game guide keeps a "Hypotheses to test" list AND a
+"Game vs manual" list: every place the game behaves differently from the manual (or the manual is
+silent and the game does something odd) - what the manual says, what the game did, when, evidence
+(screenshot/log). Watch for these actively during play, not only when something breaks.
+
+## Map games: write a `<game>-map` skill (the user, 2026-11-02)
+Every game with a map or board gets its own map skill before real play, next to its guide. The
+required sections are in the **map-usage** skill, part 4: layout, camera, terrain legend (look →
+tooltip → rule class → visible or invisible), overlays, units on the map, building the board,
+hypotheses. Example: FoG II `fog2m-map`.
+
+## Related skills
+save-scum (DARK ARTS, learning only: save before a test, reload after; never in real games), learn-to-mod (twin - they compound), manual-first (reflex for anything new), game-setup, game-ui, map-usage + map-camera + photo-map (map games), battle-tactics, planning, learn-from-tutorials, generalize-learning, skills-manager

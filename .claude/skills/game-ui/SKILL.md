@@ -51,6 +51,7 @@ focus stealing, no idle wait, and nothing he types reaches the game.
 ```
 bgplay.py start                      # virtual screen + "Claude game screen" window; locked by default
 bgplay.py launch flatpak run org.develz.Crawl
+bgplay.py steam 1368870              # a Steam game onto the virtual screen (launch option needed, below)
 bgplay.py windows | shot [--full] | zoom X Y W H
 bgplay.py seq "key o" "wait 2500" "type abc" "click 400 300" "shot --full"
 bgplay.py lock | unlock | locked     # lock: The user's mouse/keyboard can't touch the game (he can watch)
@@ -59,13 +60,47 @@ bgplay.py stop
 
 - Lock = the Xephyr window's own mouse and keyboard devices disabled (`xinput`); Claude's input
   uses the XTEST devices, so it still works. `unlock` lets the user play along; toggle any time.
+  Locked is the default and must hold (the user, 2026-11-02, "I have access"): the first lock right
+  after `start` used to fail silently; now `lock` retries until both devices are off, writes
+  `~/.cache/game-ui/bg5/locked`, and the keeper re-locks within 4 s if anything re-enables them.
 - No window manager on the screen: keys go to the window under the pointer, so bgplay parks the
   pointer on the biggest window before keys. Coordinates are virtual-screen pixels.
-- Proton/umu games ignore the virtual screen and open on the real desktop.
+- **Steam games** (2026-11-02, FoG II Medieval): Steam starts the game itself, so the game needs this
+  Steam launch option (Properties > General > Launch Options; open it with
+  `steam steam://gameproperties/APPID`, type it with gameui, then check the box's start and end):
+  `env $(cat "$HOME/.cache/game-ui/steam-env" 2>/dev/null) %command%`
+  No file = the game runs on the user's screen as always. `bgplay.py steam APPID` writes
+  `DISPLAY=:5 PROTON_USE_WINED3D=1` there, starts the game, and removes the file when the first
+  window appears (children of the launcher inherit it).
+- **Why WineD3D:** Xephyr has no DRI3, so Vulkan can't present ("Could not find both graphics and
+  present queues"); DXVK games crash right after loading (FoG II died at "TS: UILoaded"). With
+  `PROTON_USE_WINED3D=1` Proton draws through OpenGL on llvmpipe: software, slow, fine for turn-based
+  games. `start --glamor` does not help. No gamescope installed.
+- Other Proton/umu games launched outside bgplay still open on the real desktop.
 - `show` brings the window back; a keeper (started with `start`) repaints it, since with xfwm4's
   compositor Xephyr shows what was behind it after being hidden.
-- Fine for 2D games and roguelikes; 3D games get software rendering there (slow or broken), so
-  those still use the guarded desktop route above.
+- Fine for 2D games and roguelikes; 3D games get software rendering there (slow), fine when
+  turn-based. Set the game to windowed at a size that fits the virtual screen (FoG II: 1600x900 in a
+  1600x990 screen) through the game's own settings.
+
+## Waiting, held keys, hovering (bgplay seq steps and hoversheet.py)
+
+- `mark` then `waitchange [N]`: whole-screen change against the mark, then settle (loads, turns).
+- `hold KEY MS`: a key held down (3D camera keys act only while held). `scroll up|down N [X Y]`.
+- `hoversheet.py --bg X,Y X,Y ...`: hover each point, find the tooltip by difference, OCR it, one
+  contact sheet. Setup, GPU and UI parsing method: the **game-setup** skill.
+
+## Is the game working? (`scripts/gamecheck.py`, the user's rule 2026-11-02)
+
+Assume a freshly launched game is NOT working until shown otherwise, and check in periodically:
+30 s to 1 min tells. Expect popups (notices, error boxes, launchers): they are separate windows.
+```
+UI_WMCLASS=steam_app_1368870 gamecheck.py --secs 60 --every 15 --hover X Y   # desktop window
+gamecheck.py --bg --secs 60 --every 15 --hover X Y                           # bgplay screen
+```
+Reports GONE (window gone), POPUP (more than one window of the class), BLANK (flat picture), FROZEN
+(hovering a button changes nothing), OK; then a verdict. When not OK, Read the last shot and the
+game's own log (FoG II: `Documents/My Games/FieldOfGloryMedieval/error.log` in its Proton prefix).
 
 ## Reading text (`scripts/ocr.py`)
 
@@ -104,6 +139,22 @@ ocr.py langs | ocr.py getlang LANG [--fast]
 
 ## Learning a new game's screen
 
-See `learn-a-game` for the method. Per game, record in its own skill (in the game's folder under
+See `learn-to-play` for the method. Per game, record in its own skill (in the game's folder under
 the genre folder): window class, window size, screen map with click points and hotkeys, which keys
 are dangerous (end turn, quit, delete), and a template/glossary of what is on each screen.
+
+## Related skills
+game-setup (getting a game running), map-camera and photo-map (camera and photos on bgplay), learn-to-play, stream-panel, obs-record
+
+## Whose turn is it? (turnwait.py)
+Turn-based games: never guess from timing alone. Find the on-screen sign of "my turn" (an End Turn
+button that is replaced by an enemy-turn banner, a turn counter, a side colour) by photographing the
+screen every ~1.5 s through one whole enemy turn after End Turn - then cut a reference of it.
+- `turnwait.py make REF.png SHOT.png --box ...` (from a screenshot on my turn)
+- `turnwait.py wait REF.png --box ... --mask ... --min 8` right after confirming End Turn (the user: assume the
+  AI turn takes 5-10 s); prints MINE, then take the turn's photos. `check` = one look; `test` = score frames.
+- Mask anything inside the box that changes on my turn too (turn number).
+- The AI turn may move the camera: park the mouse on a fixed UI panel with no tooltip (idle-view). Not
+  outside the game window: the game keeps the last hover position.
+FoG II: box 1385 30 1590 115, mask 1435 42 1540 92, ref in the game folder ui/turn_mine.png.
+

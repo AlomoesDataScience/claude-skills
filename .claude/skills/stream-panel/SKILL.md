@@ -61,3 +61,6 @@ killed when the shell exits.
 ## Ideas not built yet
 Per-game tracker presets (Dominions turn/gold/gems from dom6-ui readers), a small game
 thumbnail or minimap, a chat column for the online Angband plan.
+
+## Related skills
+idle-view (natural camera and mouse while idle on a recording), obs-record, game-ui

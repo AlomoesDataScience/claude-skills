@@ -203,6 +203,12 @@ In my own words; check `docs/aptitudes.txt` for exact numbers, `%` at character 
        neighbours without a clear message about which one died. After any kill, take a fresh
        zoom (`bgplay.py shot --full; zoom ...`, free, no turn used) before the next directional
        attack; never attack from an old picture. Slowed, one wasted step is often the game.
+  - **Who is where (the user: screen first, never modify the game to read data; 2026-11-01):** the look
+    command `x` costs no time; its cursor starts on my square and direction keys move it one square
+    each; the bottom message line names what is there ("The floor.", "An orcish idol.", a monster
+    with its wounds). Escape leaves. Tiles are 32 px; I am drawn at about (580, 410) on the
+    1600x990 bgplay screen. To do: `near.py` (look at all 8 squares, `attack DIR` that refuses an
+    empty square, kills counted from "You kill" lines, plus a zoom image as a cross-check).
   - Tool: `scripts/crawlstep.py N` - one `o` per step, fights routine monsters one `Tab` at a
     time with a read after each, stops for items, unknown monsters, 3+ foes, low HP, prompts,
     webs/nets and "too injured". Hand play for anything it stops on.

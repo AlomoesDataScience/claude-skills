@@ -1,6 +1,6 @@
 ---
 name: vgap-guide
-description: Starter guide to VGA Planets Nu (planets.nu, the browser-based remake of Tim Wisseman's classic play-by-e-mail space 4X VGA Planets) - what it is, what is known so far, where its documentation lives, and what to learn first. No local sources yet. Uses game-sources (fetching its help pages), game-ui (driving the browser window), learn-a-game (method). Use when the user wants to play, learn or talk about VGA Planets / Planets Nu, or asks how one of its races, ships or rules works.
+description: Starter guide to VGA Planets Nu (planets.nu, the browser-based remake of Tim Wisseman's classic play-by-e-mail space 4X VGA Planets) - what it is, what is known so far, where its documentation lives, and what to learn first. No local sources yet. Uses game-sources (fetching its help pages), game-ui (driving the browser window), learn-to-play (method). Use when the user wants to play, learn or talk about VGA Planets / Planets Nu, or asks how one of its races, ships or rules works.
 ---
 
 # VGA Planets Nu - starter guide

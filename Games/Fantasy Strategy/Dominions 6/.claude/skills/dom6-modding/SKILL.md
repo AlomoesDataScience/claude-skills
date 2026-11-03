@@ -189,3 +189,6 @@ when setting stats:
 - Guns (this user's setting): cheap to train, so low recruitment points and few resources, but
   expensive in gold. Archers, by contrast, are expensive to train.
 - After a balance change, list every number that changed so the user can check it in game.
+
+## Related skills
+learn-to-mod (generic method; its twin learn-to-play), dom6-play (rules learned by playing), dom6-sprites, dom6-modinspector.

@@ -80,3 +80,6 @@ together in a streamer type set up"; don't slow down for them (YouTube can be pa
   OBS asks Normal/Safe mode: choose Normal (safe mode turns the WebSocket off).
 - Old alternative: an OBS scene with two window captures (game or the bgplay "Claude game screen", and the
   terminal) plus a text/browser source fed by a small tracker file Claude updates.
+
+## Related skills
+idle-view (natural screen while thinking during a recording), stream-panel, game-ui

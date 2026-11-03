@@ -1,6 +1,6 @@
 ---
 name: toc-guide
-description: Starter guide to Triumph of Chaos v2 DELUXE (Clash of Arms, D B Dockter), a two-player card-driven board wargame of the Russian Civil War 1918-1921 (RED vs WHITE) in the Paths of Glory tradition - turn sequence (political, action, logistics phases), political cards and 18 factions, action cards (operations, events, replacements, strategic redeployment), movement, combat, supply and attrition, leaders, with a page map of the v2.3 rulebook (May 2020; searchable .txt next to it). Uses game-sources (rulebook lookups), learn-a-game (method). Use when the user wants to play, learn, set up or talk about Triumph of Chaos / ToC, wants a rules question answered, or wants help planning a move or playing it on Vassal.
+description: Starter guide to Triumph of Chaos v2 DELUXE (Clash of Arms, D B Dockter), a two-player card-driven board wargame of the Russian Civil War 1918-1921 (RED vs WHITE) in the Paths of Glory tradition - turn sequence (political, action, logistics phases), political cards and 18 factions, action cards (operations, events, replacements, strategic redeployment), movement, combat, supply and attrition, leaders, with a page map of the v2.3 rulebook (May 2020; searchable .txt next to it). Uses game-sources (rulebook lookups), learn-to-play (method). Use when the user wants to play, learn, set up or talk about Triumph of Chaos / ToC, wants a rules question answered, or wants help planning a move or playing it on Vassal.
 ---
 
 # Triumph of Chaos v2 DELUXE - starter guide

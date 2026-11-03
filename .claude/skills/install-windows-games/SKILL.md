@@ -53,3 +53,6 @@ wininstall.py register imperialism "Imperialism" --year 1997
 ## Installed so far (2026-11-01)
 imperialism, star-wars-rebellion, the-elder-scrolls-ii-daggerfall (DOSBox for Windows, args from
 the .info), master-of-orion, master-of-orion-2 (Linux .sh). Imperialism launched and runs; the others not yet tried.
+
+## Related skills
+game-setup (first launch and graphics), library-intake, game-sources (copy the manual out)

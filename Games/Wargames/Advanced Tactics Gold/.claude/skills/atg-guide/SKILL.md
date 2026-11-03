@@ -1,6 +1,6 @@
 ---
 name: atg-guide
-description: Starter guide to Advanced Tactics Gold (VR Designs / Matrix, Victor Reijkersz), a hex wargame engine and construction set - random 4X-style games and scenarios, production with oil and ore, research, supply, battle stacks, combat rounds, alliances, the editor and its data structures, with a page map of ATGE-Manual-[EBOOK].pdf (140 pages, bookmarked; searchable .txt next to it). Uses game-sources (manual lookups), game-ui (window driving), learn-a-game (method). Use when the user wants to play, learn, build a scenario for or talk about Advanced Tactics / ATG, or asks how one of its rules, screens or editor features works.
+description: Starter guide to Advanced Tactics Gold (VR Designs / Matrix, Victor Reijkersz), a hex wargame engine and construction set - random 4X-style games and scenarios, production with oil and ore, research, supply, battle stacks, combat rounds, alliances, the editor and its data structures, with a page map of ATGE-Manual-[EBOOK].pdf (140 pages, bookmarked; searchable .txt next to it). Uses game-sources (manual lookups), game-ui (window driving), learn-to-play (method). Use when the user wants to play, learn, build a scenario for or talk about Advanced Tactics / ATG, or asks how one of its rules, screens or editor features works.
 ---
 
 # Advanced Tactics Gold - starter guide

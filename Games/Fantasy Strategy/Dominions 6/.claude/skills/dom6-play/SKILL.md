@@ -207,3 +207,6 @@ years).
 - A quick test: play the nation against Normal AI on a small map for 20-30 turns. Watch which
   units the replays show doing the killing, and whether research, gems and dominion keep pace.
   Report what was seen. A mod is not "balanced" until it has been played.
+
+## Related skills
+learn-to-play (generic method; twin learn-to-mod), battle-tactics, map-usage, dom6-modding.

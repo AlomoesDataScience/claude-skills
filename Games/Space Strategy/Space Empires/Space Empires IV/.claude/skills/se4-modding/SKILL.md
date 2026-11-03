@@ -105,3 +105,6 @@ what each does.
    numbers and roman numerals). Then `check` and save it as CHECK.txt next to the log.
 5. Play-test only with the user's go: he backs up and installs the build over the game's files (or
    picks it in the mod loader). Report that it is untested until it loads in a game.
+
+## Related skills
+learn-to-mod (generic method; its twin learn-to-play), se4-guide (playing), user-todo (WMD decisions).

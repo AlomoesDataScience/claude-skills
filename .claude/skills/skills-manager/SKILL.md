@@ -21,6 +21,13 @@ skills.py disable NAME / enable NAME  # unload to .claude/skills-disabled/, load
 skills.py index                       # rewrite INDEX.md
 ```
 
+
+**Rule (the user, 2026-11-02): before working anything out, check whether a skill already covers it**
+(route, INDEX.md, the game's guide). If it does, load it and follow it - don't re-derive what was
+figured out before ("You already figured that out yesterday!"). What I learned before is the PRIOR:
+assume it was correct and act on it, but still check it as it's used (the user: "anything you learned does
+need to be checked, but you should assume you were correct prior"). If the check fails, fix the skill.
+
 ## How skills load (Claude Code)
 
 - At the start of a session Claude sees every enabled skill's **name and description** only; the
@@ -87,7 +94,10 @@ cannot be disabled. Deleting a skill: only when the user asks, and `disable` fir
 ## Current skills
 
 `skills.py list` (every skill with its folder), `skills.py deps` (who builds on whom), INDEX.md.
-Hierarchy set up 2026-10-29 (51 skills): generic game-ui, game-sources, learn-a-game, obs-record,
+Hierarchy set up 2026-10-29 (51 skills): generic game-ui, game-sources, learn-to-play, obs-record,
 skills-manager at the root; the 20 dom6-* skills in `Games/Fantasy Strategy/Dominions 6/`; one starter
 `<prefix>-guide` per game (coe5, se4, efs, vgap, atg, hos, witp, toaw4, giren, pog, toc, ww1dx, starfire, sfgc, sfb, fe, thirdreich, eih, vbam, hellfire, coc, mnm, paranoia, faserip, fftow);
 greyhawk-lore in `Games/Tabletop RPGs/Dungeons & Dragons/`.
+
+## Related skills
+write-skill (the required format and checklist for writing one), generalize-learning (when to make a generic skill), INDEX.md, learn-to-play, learn-to-mod, user-todo

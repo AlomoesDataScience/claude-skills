@@ -1,6 +1,6 @@
 ---
 name: paranoia-guide
-description: Starter guide to PARANOIA (Mongoose Publishing, 2023 core book; Goldberg and Costikyan), the darkly comic RPG of Troubleshooters serving The Computer in Alpha Complex - clones, treason, security clearances, secret societies and mutant powers, dice pools of NODE plus skill, Treason Stars, mission briefings that are meant to go wrong, with a page map of The_Paranoia_Core_Book.pdf (146 pages, bookmarked; searchable .txt). Uses game-sources (rule lookups), learn-a-game (method). Use when the user wants to play, run or talk about Paranoia, make a Troubleshooter, or have Claude play The Computer and GM a mission.
+description: Starter guide to PARANOIA (Mongoose Publishing, 2023 core book; Goldberg and Costikyan), the darkly comic RPG of Troubleshooters serving The Computer in Alpha Complex - clones, treason, security clearances, secret societies and mutant powers, dice pools of NODE plus skill, Treason Stars, mission briefings that are meant to go wrong, with a page map of The_Paranoia_Core_Book.pdf (146 pages, bookmarked; searchable .txt). Uses game-sources (rule lookups), learn-to-play (method). Use when the user wants to play, run or talk about Paranoia, make a Troubleshooter, or have Claude play The Computer and GM a mission.
 ---
 
 # PARANOIA - starter guide

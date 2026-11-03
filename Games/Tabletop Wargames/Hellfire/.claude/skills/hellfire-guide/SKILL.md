@@ -1,6 +1,6 @@
 ---
 name: hellfire-guide
-description: Starter guide to Hellfire, a generic 1/300 (6mm) science-fiction tabletop miniatures wargame in a low-key, mercenary-and-militia universe (Jack Vance flavour), plus its campaign book Hellfire Campaigns - The Universe at Your Feet (building a home-made world, state finances, hiring mercenaries, drifting into war, solo campaigns) - groups, command by order points, reaction, small arms and anti-vehicle fire, artillery, close combat, morale, aliens, robots, psionics, scenarios. Uses game-sources (rule lookups), learn-a-game (method). Use when the user wants to play, learn or talk about Hellfire, set up a 6mm SF battle or a Hellfire campaign, or have Claude run one solo.
+description: Starter guide to Hellfire, a generic 1/300 (6mm) science-fiction tabletop miniatures wargame in a low-key, mercenary-and-militia universe (Jack Vance flavour), plus its campaign book Hellfire Campaigns - The Universe at Your Feet (building a home-made world, state finances, hiring mercenaries, drifting into war, solo campaigns) - groups, command by order points, reaction, small arms and anti-vehicle fire, artillery, close combat, morale, aliens, robots, psionics, scenarios. Uses game-sources (rule lookups), learn-to-play (method). Use when the user wants to play, learn or talk about Hellfire, set up a 6mm SF battle or a Hellfire campaign, or have Claude run one solo.
 ---
 
 # Hellfire - starter guide

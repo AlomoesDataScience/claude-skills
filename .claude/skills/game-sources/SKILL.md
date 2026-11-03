@@ -63,7 +63,7 @@ wikifetch.py api API_URL TITLES.txt OUTDIR       # each page's wikitext as OUTDI
 
 `<Genre>/<Game>/` holds the manual and its .txt; `<Genre>/<Game>/.claude/skills/<prefix>-guide/`
 is the starter skill (what the game is, manual map with page numbers, core rules in Claude's
-words, open questions). See learn-a-game for the whole method.
+words, open questions). See learn-to-play for the whole method.
 
 ## the user's Steam library (steamlib.py)
 
@@ -72,3 +72,6 @@ The user has played or owns with hours and last-played date; `steamlib.py instal
 apps. It reads the local Steam client files only (appcache/appinfo.vdf for names and types,
 userdata/<id>/config/localconfig.vdf for playtime): nothing is written, nothing goes online.
 2026-11-01: 525 games. SteamDB (web) adds details, tags and the full catalogue when the user gives access.
+
+## Related skills
+manual-first (lookup.py builds on manual.py), wiki-scout (wikis and publisher docs), library-intake (where files go), learn-to-play, learn-to-mod

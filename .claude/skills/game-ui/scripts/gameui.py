@@ -324,7 +324,9 @@ def key(combo):
 CHARS = {" ": "space", ".": "period", ",": "comma", "-": "minus", "_": "underscore", ":": "colon", "/": "slash",
          "'": "apostrophe", '"': "quotedbl", "!": "exclam", "?": "question", "(": "parenleft", ")": "parenright",
          "@": "at", "#": "numbersign", "+": "plus", "=": "equal", ";": "semicolon", "&": "ampersand",
-         "*": "asterisk", "%": "percent", "$": "dollar", "\n": "Return"}
+         "*": "asterisk", "%": "percent", "$": "dollar", "\n": "Return", ">": "greater", "<": "less",
+         "|": "bar", "~": "asciitilde", "^": "asciicircum", "{": "braceleft", "}": "braceright",
+         "[": "bracketleft", "]": "bracketright", "\\": "backslash", "`": "grave"}
 
 
 def type_text(text):

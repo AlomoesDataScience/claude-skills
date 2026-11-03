@@ -74,3 +74,6 @@ big 3D game (Field of Glory II, Kingdoms) is mined for its rules, data formats a
 tooltips, map modes), never its art pipeline.
 
 Our games: engine4x-design (the user's 4X), heresiarch-guide, Pocket 4X and AMBS in `Projects/Stuff I made/`.
+
+## Related skills
+learn-to-play and learn-to-mod (where the systems knowledge comes from), game-sources and wiki-scout (manuals, wikis), generalize-learning

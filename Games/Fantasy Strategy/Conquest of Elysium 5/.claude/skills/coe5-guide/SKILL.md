@@ -1,6 +1,6 @@
 ---
 name: coe5-guide
-description: Starter guide to Conquest of Elysium 5 (Illwinter, the makers of Dominions) - what the game is, how a turn works, resources, commanders and armies, combat, magic and the 24 classes, with a page map of the manual (coe5manual.pdf, searchable as coe5manual.txt) and what is still to learn. Uses game-sources (manual lookups), game-ui (driving the game window), learn-a-game (method). Use when the user wants to play, learn, mod or talk about Conquest of Elysium 5 / CoE5, or asks how one of its rules, classes or screens works.
+description: Starter guide to Conquest of Elysium 5 (Illwinter, the makers of Dominions) - what the game is, how a turn works, resources, commanders and armies, combat, magic and the 24 classes, with a page map of the manual (coe5manual.pdf, searchable as coe5manual.txt) and what is still to learn. Uses game-sources (manual lookups), game-ui (driving the game window), learn-to-play (method). Use when the user wants to play, learn, mod or talk about Conquest of Elysium 5 / CoE5, or asks how one of its rules, classes or screens works.
 ---
 
 # Conquest of Elysium 5 - starter guide
@@ -72,7 +72,7 @@ each assumption in the manual or the game before relying on it.
 ## To learn next
 
 1. Find the game window's class (`wmctrl -lx` with the game open) and map the main screens with
-   game-ui (main menu, new game, map, recruit, army screen), following learn-a-game.
+   game-ui (main menu, new game, map, recruit, army screen), following learn-to-play.
 2. Pick one simple class to learn first (the manual's class pages: Baron or Barbarian look the most
    conventional) and play a small solo map with the user's go.
 3. Record the screen map, hotkeys and the "what is final" rules here (End Turn `y`).

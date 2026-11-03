@@ -1,6 +1,6 @@
 ---
 name: efs-guide
-description: Starter guide to Emperor of the Fading Suns (Holistic Design / SegaSoft, 1996), a hex-based space and planetary strategy game of feudal noble Houses - what it is, the turn sequence, the Regency/Emperor election (Sceptor votes, Byzantium Secundus), Church, Merchant League, labs and outlawed tech, cities, cargo pods and loyalty, scoring, with a map of the scanned manual (emperor_of_the_fading_suns_manual.pdf, OCR text in emperor_of_the_fading_suns_manual.txt). Uses game-sources (manual lookups), game-ui (window driving, OCR), learn-a-game (method). Use when the user wants to play, learn or talk about Emperor of the Fading Suns / EFS, or asks how one of its rules or screens works.
+description: Starter guide to Emperor of the Fading Suns (Holistic Design / SegaSoft, 1996), a hex-based space and planetary strategy game of feudal noble Houses - what it is, the turn sequence, the Regency/Emperor election (Sceptor votes, Byzantium Secundus), Church, Merchant League, labs and outlawed tech, cities, cargo pods and loyalty, scoring, with a map of the scanned manual (emperor_of_the_fading_suns_manual.pdf, OCR text in emperor_of_the_fading_suns_manual.txt). Uses game-sources (manual lookups), game-ui (window driving, OCR), learn-to-play (method). Use when the user wants to play, learn or talk about Emperor of the Fading Suns / EFS, or asks how one of its rules or screens works.
 ---
 
 # Emperor of the Fading Suns - starter guide

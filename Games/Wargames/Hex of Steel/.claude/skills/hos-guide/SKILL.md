@@ -1,6 +1,6 @@
 ---
 name: hos-guide
-description: Starter guide to Hex of Steel (a WWII-and-beyond hex wargame in the Panzer General tradition, native Linux build) - victory points, commander rank and core units, unit XP and heroes, two action points per unit, damage modifiers (soft/hard/air attack, armour shares, terrain, recon, morale, encirclement, entrenchment), supply lines, policies and HQ points, with a page map of its Manual.pdf (63 pages, bookmarked; searchable Manual.txt). Uses game-sources (manual lookups), game-ui (window driving), learn-a-game (method). Use when the user wants to play, learn or talk about Hex of Steel, or asks how one of its rules or screens works.
+description: Starter guide to Hex of Steel (a WWII-and-beyond hex wargame in the Panzer General tradition, native Linux build) - victory points, commander rank and core units, unit XP and heroes, two action points per unit, damage modifiers (soft/hard/air attack, armour shares, terrain, recon, morale, encirclement, entrenchment), supply lines, policies and HQ points, with a page map of its Manual.pdf (63 pages, bookmarked; searchable Manual.txt). Uses game-sources (manual lookups), game-ui (window driving), learn-to-play (method). Use when the user wants to play, learn or talk about Hex of Steel, or asks how one of its rules or screens works.
 ---
 
 # Hex of Steel - starter guide

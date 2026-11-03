@@ -1,0 +1,15 @@
+# example board (made up, for testing the tool)
+grid:
+....WWW....
+....WWW..H.
+TTTTTTTTTTT
+..R......H.
+.....FF....
+units:
+K1 royalblue 2 2 E Knights
+S1 royalblue 3 3 E Spears
+F1 firebrick 9 2 W French knights
+moves:
+K1 2 2 -> 6 2 advance
+marks:
+9 1 hill
