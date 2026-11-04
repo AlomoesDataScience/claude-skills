@@ -74,7 +74,7 @@ Scripts in use (turn 6, after the user's review; spell data from dom6-inspector)
   user's habit, over Cast spells). Slime: AoE, -2 att/def and slowed; **AoE beats single-target**
   because it still lands among the enemy when it misses.
 - Bartholomeus (A2 W2 S3 H4) is the **communion master**: Communion Master, Divine Blessing
-  (once: blesses all sacreds, Theurgs and Communicants), Star Fires x3 (its damage grows with the
+  (once: blesses all sacreds, Theurgs and Communicants), Lightning Bolt x3 (game T7; notes once said Star Fires; its damage grows with the
   boosted path level). The 5 Theurg Communicants are his squad with **Guard commander**
   ("bodyguards"); they cast Communion Slave by themselves. Other Theurgs are neither slaves nor
   masters for now.
@@ -127,3 +127,12 @@ Open Position Army (a squad's or the commander's green box) for every army that 
 For each army, one line: commander, mage paths (or none), script (or AI), main order, squads and
 orders, formation, leadership used / limits, problems fixed. Then tell the user, and only end
 the turn when the user says so.
+
+## Standards (audit 2026-11-03)
+- **Where it runs:** prefer Claude's virtual screen (dom6-ui bgplay, dom6bg.py); lock while working, hand back after (hand-back).
+- **MP games (the user's):** look only - right-click views, hovers; no orders, recruits, research, transfers or End Turn.
+- **Modded games:** numbers here are vanilla - check the mod first (dom6-scbm for SCBM; mod-docs).
+
+## Related skills
+dom6-game (turn loop), dom6-tactics (battle layout), dom6-items, dom6-spells (scripts), battle-tactics, army-log (both armies), delegate (acting alone).
+Also (2026-11-03): unit-combat-math, dom6-battle-ai, dom6-morale, dom6-combat-math.

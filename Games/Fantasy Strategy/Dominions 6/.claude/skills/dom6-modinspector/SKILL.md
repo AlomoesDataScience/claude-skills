@@ -70,3 +70,7 @@ and the parser messages so far. The site's scripts are in `<tmp>/dom6inspector-b
 Try the mods one at a time to find the one that breaks it, then add a workaround to
 `../dom6-inspector/scripts/dump.js` like the `prepareData_PostMod` one. A page that never
 finishes stops after 5 minutes (`HOLD` in build.py).
+
+## Related skills
+dom6-inspector, dom6-modding, learn-to-mod.
+Also (2026-11-03): mod-diff, dom6-mod-magic, mod-docs.

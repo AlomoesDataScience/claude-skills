@@ -74,6 +74,8 @@ X11 = ctypes.CDLL("libX11.so.6")
 XTST = ctypes.CDLL("libXtst.so.6")
 X11.XOpenDisplay.restype = ctypes.c_void_p
 X11.XOpenDisplay.argtypes = [ctypes.c_char_p]
+X11.XGetInputFocus.argtypes = [ctypes.c_void_p, ctypes.c_void_p, ctypes.c_void_p]
+X11.XSetInputFocus.argtypes = [ctypes.c_void_p, ctypes.c_ulong, ctypes.c_int, ctypes.c_ulong]
 X11.XStringToKeysym.restype = ctypes.c_ulong
 X11.XStringToKeysym.argtypes = [ctypes.c_char_p]
 X11.XKeysymToKeycode.restype = ctypes.c_ubyte
@@ -103,8 +105,24 @@ def run(*cmd):
 
 # ---------------------------------------------------------------- the game window
 
+_NOWM = None
+
+
+def no_wm():
+    """True on a screen with no window manager (bgplay's Xephyr): wmctrl can't list or focus there."""
+    global _NOWM
+    if _NOWM is None:
+        _NOWM = not run("wmctrl", "-m").strip()
+    return _NOWM
+
+
 def find_window():
     title = os.environ.get("UI_WMTITLE")              # optional: one window of the app (a dialog)
+    if no_wm():                                       # e.g. DISPLAY=:5 (bgplay): read the window tree
+        for line in run("xwininfo", "-root", "-tree").splitlines():
+            m = re.match(r'\s*(0x[0-9a-f]+) "([^"]*)": \("([^"]*)" "([^"]*)"\)', line)
+            if m and WM_CLASS in (m.group(3), m.group(4)) and (not title or title in m.group(2)):
+                return int(m.group(1), 16)
     for line in run("wmctrl", "-lx").splitlines():
         parts = line.split(None, 4)
         if len(parts) >= 3 and parts[2].split(".")[0] == WM_CLASS:
@@ -125,6 +143,10 @@ def geometry(wid):
 
 
 def active_window():
+    if no_wm():
+        w = ctypes.c_ulong(); r = ctypes.c_int()
+        X11.XGetInputFocus(dpy(), ctypes.byref(w), ctypes.byref(r))
+        return w.value
     m = re.search(r"window id # (0x[0-9a-f]+)", run("xprop", "-root", "_NET_ACTIVE_WINDOW"))
     return int(m.group(1), 16) if m else None
 
@@ -133,7 +155,10 @@ def focus(wid, tries=3):
     for _ in range(tries):
         if active_window() == wid and geometry(wid)[4]:
             return True
-        subprocess.run(["wmctrl", "-i", "-R", hex(wid)])           # bring to this desktop, raise, focus
+        if no_wm():
+            X11.XSetInputFocus(dpy(), ctypes.c_ulong(wid), 2, 0); X11.XFlush(dpy())
+        else:
+            subprocess.run(["wmctrl", "-i", "-R", hex(wid)])       # bring to this desktop, raise, focus
         time.sleep(0.8)
     return active_window() == wid
 
@@ -407,6 +432,8 @@ def hand_back(wid, prev_win, prev_ptr):
     """Give the pointer and focus back after acting. If the app itself was already in front (it
     took focus when it opened, or an earlier hand-back missed), focus goes to the terminal Claude
     runs in ($WINDOWID, set by the terminal), so focus never stays stuck in the app."""
+    if no_wm():                                       # Claude's own screen: nothing to hand back
+        return
     home = prev_win if prev_win and prev_win != wid else int(os.environ.get("WINDOWID") or 0)
     if home and home != wid:
         XTST.XTestFakeMotionEvent(dpy(), -1, prev_ptr[0], prev_ptr[1], 0)

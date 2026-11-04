@@ -16,10 +16,28 @@ in each phase."
   distance and leaves the fast units' extra moves unused.
 - A check between phases catches problems while they're small and before later orders build on them.
 
+Doctrine parallel (military-doctrine): phases are **bounds**. Moving the whole block at once is
+*traveling* (fine while contact is unlikely); once contact is possible, keep an element halted in
+**overwatch** (shooters ready, reserve in reach) while the other moves - traveling overwatch, then
+bounding overwatch when contact is expected. Goals per turn are **phase lines** ("line on col 17
+by turn 6").
+
 ## The phases (every turn)
 **Phase 0, plan:** roles for every unit (battle-tactics), the drawn proposal (draw-moves), and the
 move order. Units in front move before the units behind them. Screens move before what follows
 them. Clear a target square before moving into it.
+
+**Read the game's own reach display first.** Most games highlight where a selected unit can move (FoG II:
+white squares around it - the user). Select, photograph, read the highlight; only then plan the order. Don't
+compute reach by hand or probe square by square when the game already shows it.
+
+**Moving the line opens lanes** (the user, FoG II battle 2 turn 7: "if you move the line next turn, the knights
+can get through gaps"): order the moves so the line steps forward first and the units behind (knights,
+reserve) go through the gaps it leaves - passage of lines. A unit blocked now may be free after its
+neighbours move; plan the sequence, don't shuffle it sideways.
+
+**Sequence for lanes** (the user, FoG II turn 8): "One infantry one space, then knights, then the rest." Open
+the lane with the smallest move, pass the strike force through, then move everything else.
 
 **Phase 1, main body:** the line or block moves as planned. One order at a time, each verified:
 - the right unit was selected (name check);
@@ -36,6 +54,9 @@ what its role wants:
 - **Shooters:** into range or a better arc, or stay still if moving spoils their shooting.
 - **Reserve/strike:** usually held back. Write "held, on purpose".
 - **Main line:** usually nothing left, or kept together on purpose.
+- **FACING for next turn (every unit with AP left):** turning is an order too. Point strikers at next turn's
+  charge targets and shooters at their targets (charge and shooting arcs). "Can't turn" is almost never true -
+  check the turn costs in the manual (FoG II: knights pay 4/8 AP; the user, battle 2 turn 7).
 Draw the extensions, then execute and verify as in phase 1.
 → **Phase 2 check.**
 
@@ -65,5 +86,5 @@ both armies centred) and hand over for review. Never press End Turn without the 
     that open sideways near the screen's bottom edge.
 
 ## Related skills
-battle-tactics (turn method and roles; step 5 points here), screening (what screens do with their
+military-doctrine (bounds, overwatch, phase lines), battle-tactics (turn method and roles; step 5 points here), screening (what screens do with their
 extra moves), draw-moves (draw each phase), scouting (enemy reach for the final check), planning.

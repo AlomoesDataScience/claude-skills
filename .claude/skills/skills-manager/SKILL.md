@@ -100,4 +100,6 @@ skills-manager at the root; the 20 dom6-* skills in `Games/Fantasy Strategy/Domi
 greyhawk-lore in `Games/Tabletop RPGs/Dungeons & Dragons/`.
 
 ## Related skills
+skill-sync (inside skills: updates from generic and other games' skills, load/unload single files).
+
 write-skill (the required format and checklist for writing one), generalize-learning (when to make a generic skill), INDEX.md, learn-to-play, learn-to-mod, user-todo

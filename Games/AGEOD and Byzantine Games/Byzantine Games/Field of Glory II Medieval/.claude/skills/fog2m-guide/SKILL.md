@@ -10,7 +10,7 @@ Byzantine Games makes the tactical side of the AGEOD/Byzantine pair (the user, 2
 keeping is copied here. FoG II (ancient) is the same system with different armies.
 
 
-**FIRST read `COMMANDS.md` (every hotkey and order). Before any battle read `PLAY.md` and `UNITS.md` (incl. its "Hypotheses to test" and "Game vs manual" lists) (this folder; UNITS = troop types, card terms, capabilities, army lists) - the play reference: banners, command, movement, ZOC, shooting tables, charges, POAs, cohesion, terrain, victory, hot keys. Read from the manual for playing, 2026-11-02.**
+**War-language lexicon (game <-> doctrine terms, task -> game actions): `LEXICON.md`.** **FIRST read `COMMANDS.md` (every hotkey and order). Before any battle read `PLAY.md` and `UNITS.md` (incl. its "Hypotheses to test" and "Game vs manual" lists) (this folder; UNITS = troop types, card terms, capabilities, army lists) - the play reference: banners, command, movement, ZOC, shooting tables, charges, POAs, cohesion, terrain, victory, hot keys. Read from the manual for playing, 2026-11-02.**
 
 ## Files
 
@@ -284,6 +284,17 @@ turn limit, map size and force sizes above right." No tooltip on the value boxes
 - Centre scroll = briefing: armies, OBJECTIVE, "English Turn 1 of 24, Turns remaining: 23",
   "The enemy are offering open battle"; X to close at ~(840,680).
 - Right: Combat Log panel. Bottom right: minimap. Map visible behind.
+
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **tactical**; domain: **land**. Vocabulary: military-doctrine (FM 3-90 tactics) first; soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: The user's land salvo system and Lanchester (concentrate; make fights square when stronger, linear when weaker).
+- First full integration: LEXICON.md here, army log in plans/battle2-armies.json, `order.py cards` reads unit cards.
 
 ## Related skills
 fog2m-map (using the battle map), learn-to-play (method), learn-to-mod (modding: Squads.csv, BSF), manual-first, battle-tactics, map-usage, map-camera, photo-map, planning.

@@ -192,3 +192,4 @@ when setting stats:
 
 ## Related skills
 learn-to-mod (generic method; its twin learn-to-play), dom6-play (rules learned by playing), dom6-sprites, dom6-modinspector.
+Also (2026-11-03): mod-diff, dom6-mod-magic, dom6-modinspector.

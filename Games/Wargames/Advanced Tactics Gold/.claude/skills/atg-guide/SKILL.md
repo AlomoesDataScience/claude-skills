@@ -53,3 +53,13 @@ for a moddable hex wargame. Read them when we design our own.
 1. Play the tutorials (main menu) with the user's go; map the main game screen with game-ui.
 2. Read combat calculations (p105-115) and game flow (p97-105) in full and summarise them here.
 3. Note the short keys (p56) and what ends a turn.
+
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **operational (hex)**; domain: **land**. Vocabulary: military-operations (FM 3-0) + military-doctrine; soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: The user's land salvo system and Lanchester (concentrate; make fights square when stronger, linear when weaker).

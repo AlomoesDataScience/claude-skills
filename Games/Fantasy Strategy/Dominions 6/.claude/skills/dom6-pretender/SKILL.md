@@ -144,3 +144,7 @@ and chassis classes (by base dominion 1-4: humanoid, monster, titan, immobile) a
 (its JSON files, plus the bless list and nation fixes read from its JavaScript as plain data,
 without running the site's code). Chassis stats come from dom6-inspector's `data/`; rebuild that
 skill after a game patch too.
+
+## Related skills
+dom6-pretender-ingame (build it in game), dom6-nations, dom6-inspector, dom6-play.
+Also (2026-11-03): dom6-dominion, dom6-holy, dom6-supercombatants.

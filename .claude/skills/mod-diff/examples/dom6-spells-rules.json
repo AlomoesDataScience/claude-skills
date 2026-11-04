@@ -1,0 +1,4 @@
+{"lower_better": {"req_level": 3, "research": 2, "gems": 2, "fatigue": 1},
+ "higher_better": {"area": 2, "range": 1, "precision": 1},
+ "ignore": ["tier", "rank", "score", "value", "eff", "mage_k", "basis", "curated", "detail", "purpose"],
+ "group": "research"}

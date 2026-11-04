@@ -19,16 +19,30 @@ clicks and screenshots never touch the user's desktop, focus or keyboard.
                                               With VirtualGL installed (/opt/VirtualGL) the file also gets
                                               LD_PRELOAD=<its 64+32-bit fakers> VGL_DISPLAY=egl: OpenGL is
                                               drawn on the real GPU (--nogpu: software only)
+  start --cursor                              draw the mouse pointer in the window (Xephyr software
+                                              cursor) when a game hides it, e.g. for the user to play there
   start --glamor                              Xephyr's glamor drawing (2D only; it does NOT give the
                                               game DRI3 or Vulkan - tested with FoG II, 2026-11-02)
-  bgplay.py waitchange [--timeout 180] [--every 3] [--nosettle]
+  bgplay.py act NAME "STEP" [--timeout 180] [--took 3] [--tol 12]
+                                              THE way to start a load or screen change (the user's method): shot
+                                              before, STEP (e.g. "click 955 589"), grab every ~33 ms until it
+                                              TOOK (exit 2 if not), then the GENERAL loading test: no loading
+                                              screen = done; loading = poll it out. NAME keeps load times only
+  bgplay.py isloading [--window 1] [--nowords]  is the screen NOW a loading screen? LOADING (exit 10, evidence:
+                                              blank, fade, spinner-only motion, loading words) / NOT LOADING
+  bgplay.py waitload [--timeout 600] [--name N]  if LOADING, poll every second until it's gone
+  bgplay.py waitchange [--timeout 180] [--every 3] [--nosettle] [--until TEXT [--box X0 Y0 X1 Y1]]
+                                              --until = READY when TEXT is on screen (checked at once: a screen
+                                              already up counts) - use it whenever the target has known text;
+                                              settles on a still OR steadily animated screen
                                               wait for the whole screen to change, then hold still
                                               (loading screens, turn changes); ends with a shot.
                                               Use with mark:  seq "mark" "click X Y" "waitchange"
                                               (mark = the screen before the action, so a fast
                                               change can't happen before the polling starts)
   bgplay.py windows                           windows on the virtual screen (class, size, position)
-  bgplay.py shot [--full]                     screenshot of the virtual screen (half size unless --full)
+  bgplay.py shot [--full] [--box X0 Y0 X1 Y1] screenshot of the virtual screen (half size unless --full;
+                                              --box: only that part, fast, as crop_*.png - for sweeps in seq)
   bgplay.py zoom X Y W H [--scale 2]          crop of the last full shot
   bgplay.py key K [K...] | type "text" | click X Y [--right] | move X Y | scroll up|down N [X Y] | hold KEY MS | drag X1 Y1 X2 Y2 [--right] [--slow]
   bgplay.py seq "key o" "wait 800" "type abc" "click 400 300" "shot"
@@ -94,13 +108,13 @@ def need():
         sys.exit(f"no virtual screen on {DISP}: run  bgplay.py start")
 
 
-def start(size, glamor=False):
+def start(size, glamor=False, cursor=False):
     if running():
         print(f"virtual screen {DISP} already running")
         return
     log = open(os.path.join(OUT, "xephyr.log"), "w")
     subprocess.Popen(["Xephyr", DISP, "-screen", size, "-ac", "-title", "Claude game screen"]
-                     + (["-glamor"] if glamor else []),
+                     + (["-glamor"] if glamor else []) + (["-sw-cursor"] if cursor else []),
                      stdout=log, stderr=log, start_new_session=True, env=dict(os.environ, DISPLAY=HOST))
     for _ in range(50):
         if running():
@@ -129,9 +143,14 @@ def windows():
     return rows
 
 
-def shot(full=False):
+def shot(full=False, box=None):
     need()
     im = ImageGrab.grab(xdisplay=DISP)
+    if box:                                    # fast: only this part, light compression, no last_full
+        p = os.path.join(OUT, f"crop_{time.strftime('%H%M%S')}_{int(time.time() * 1000) % 1000:03d}.png")
+        im.crop(tuple(box)).save(p, compress_level=1)
+        print(p)
+        return
     im.save(os.path.join(OUT, "last_full.png"))
     if not full:
         im = im.resize((im.width // 2, im.height // 2))
@@ -154,11 +173,30 @@ def mark():
     thumb().save(MARK)
 
 
-def waitchange(timeout=180, every=3.0, settle=True):
-    """Wait until the whole screen differs from the mark (or from now, without a mark), then until
-    it holds still for one interval. The first check is immediate, so a change that already
-    happened counts. A heartbeat every ~30 s shows the poll is alive and the difference so far.
-    Ends with a half-size shot. Small-thumbnail comparison: a moving pointer doesn't count."""
+def _screen_has(text, box=None):
+    """OCR the screen (or a box) for TEXT, case-insensitive, spaces ignored; light and dark text both tried."""
+    import ocr as O
+    im = ImageGrab.grab(xdisplay=DISP)
+    b = tuple(box) if box else (0, 0, im.width, im.height)
+    want = re.sub(r"\s+", "", text.lower())
+    for dark in (False, True):
+        got = re.sub(r"\s+", "", O.ocr(O.prepare(im, b, scale=2, dark=dark), psm=11).lower())
+        if want in got:
+            return True
+    return False
+
+
+def waitchange(timeout=180, every=3.0, settle=True, until=None, box=None):
+    """Wait for a screen to be READY. Fixed 2026-11-03 after the user: "the checking for if stuff loading is broken"
+    (Dominions: the game had loaded while the wait still ran to its timeout). Ends on the first of:
+      READY     --until TEXT is on the screen (or in --box) - checked at once, so a screen that is ALREADY
+                there counts; this is the reliable test, use it whenever the target screen has known text;
+      CHANGED   the screen differs from the mark (or from the start) - with --nosettle;
+      SETTLED   after a change, the screen holds still (frame difference < 1.5), or keeps moving at a STEADY
+                low rate (animated backgrounds: Dominions' sea floor never holds still) - the last two
+                frame differences under 6 and within 1 of each other;
+      TIMEOUT   says which of the above never happened.
+    A heartbeat every ~30 s shows the poll is alive. Ends with a half-size shot."""
     from PIL import Image, ImageChops, ImageStat
     need()
 
@@ -177,12 +215,17 @@ def waitchange(timeout=180, every=3.0, settle=True):
         print("comparing with the mark taken before the action", flush=True)
     else:
         base = thumb()
-        print("no mark: comparing with the screen as it is now", flush=True)
-    prev, changed, beat, first = base, False, t0, True
+        print("no mark: comparing with the screen as it is now" + ("" if until else
+              " (if the target screen may already be up, use --until TEXT)"), flush=True)
+    prev, changed, beat, first, steps = base, False, t0, True, []
+    result = None
     while time.time() - t0 < timeout:
         if not first:
             time.sleep(every)
         first = False
+        if until and _screen_has(until, box):
+            result = f"READY: '{until}' on screen after {time.time() - t0:.0f} s"
+            break
         cur = thumb()
         if time.time() - beat > 30:
             beat = time.time()
@@ -190,14 +233,23 @@ def waitchange(timeout=180, every=3.0, settle=True):
         if not changed and diff(cur, base) > 6:
             changed = True
             print(f"changed after {time.time() - t0:.0f} s", flush=True)
-            if not settle:
+            if not settle and not until:
+                result = f"CHANGED after {time.time() - t0:.0f} s"
                 break
-        elif changed and diff(cur, prev) < 1.5:
-            print(f"settled after {time.time() - t0:.0f} s", flush=True)
-            break
+        elif changed and not until:
+            d = diff(cur, prev)
+            steps.append(d)
+            if d < 1.5:
+                result = f"SETTLED (still) after {time.time() - t0:.0f} s"
+                break
+            if len(steps) >= 2 and max(steps[-2:]) < 6 and abs(steps[-1] - steps[-2]) < 1:
+                result = f"SETTLED (steady animation, frame difference ~{d:.1f}) after {time.time() - t0:.0f} s"
+                break
         prev = cur
-    else:
-        print(f"{'still changing' if changed else 'NO CHANGE'} after {timeout} s", flush=True)
+    if result is None:
+        result = (f"TIMEOUT after {timeout} s: " + (f"'{until}' never appeared" if until else
+                  "still changing" if changed else "NO CHANGE"))
+    print(result, flush=True)
     shot()
 
 
@@ -273,6 +325,197 @@ def feed_tracker(hooks, region, text):
         print(f"(tracker hook skipped: {e})", file=sys.stderr)
 
 
+def _profile_dir():
+    d = os.getcwd()
+    while True:
+        if os.path.isfile(os.path.join(d, ".claude", "game-ui.json")):
+            return os.path.join(d, ".claude")
+        if os.path.dirname(d) == d:
+            return None
+        d = os.path.dirname(d)
+
+
+def changed(a, b, tol=12.0):
+    """Did the screen really change between thumbs A and B? Whole-screen mean difference > TOL (big changes),
+    OR >= 0.2% of pixels changed by more than 40 grey levels (a small dialog replacing another one in place -
+    Dominions' End Turn Yes -> "AI thinking" box read only 11.8 on the mean). Measured 2026-11-03: Dominions'
+    animated background moves no pixel more than 15 in 3 s, so 40 is safe. Returns (bool, why)."""
+    from PIL import ImageChops, ImageStat
+    d = ImageChops.difference(a, b)
+    m = ImageStat.Stat(d).mean[0]
+    if m > tol:
+        return True, f"mean {m:.1f}"
+    h = d.histogram()
+    frac = sum(h[41:]) / (d.width * d.height)
+    if frac >= 0.002:
+        return True, f"{frac * 100:.1f}% of pixels changed sharply"
+    return False, f"mean {m:.1f}, sharp {frac * 100:.2f}%"
+
+
+def loading_signs(window=1.0, words=True, pre=None):
+    """GENERAL test: does the screen look like a loading screen right now? (the user 2026-11-03: "the necessary part
+    is generalizing how you check if it's a loading screen ... then you can apply the same logic across other
+    things"). Watches WINDOW seconds of frames (~33 ms each, 160x99 grey) and reads the screen once:
+      blank     dark or near-uniform frame (black screen, a fade's bottom, a plain colour)
+      fade      brightness ramps steadily up or down over the window (fade in/out)
+      local     only a small patch moves (spinner, progress bar) while the rest holds still - an animated game
+                screen drifts all over instead (Dominions' sea: changes spread over the whole frame)
+      words     "loading", "please wait", "AI thinking", "reticulating"... (a hint: joke texts exist)
+    Returns (loading?, [evidence], last thumb). PRE (the shot before an action) adds "dark vs before"."""
+    from PIL import ImageChops, ImageStat
+    frames, t0 = [], time.time()
+    while time.time() - t0 < window or len(frames) < 3:
+        frames.append(thumb())
+    st = ImageStat.Stat(frames[-1])
+    mean, sd = st.mean[0], st.stddev[0]
+    ev = []
+    if mean < 25 or sd < 10:
+        ev.append(f"blank (mean {mean:.0f}, spread {sd:.0f})")
+    if pre is not None and mean < 0.5 * ImageStat.Stat(pre).mean[0]:
+        ev.append(f"dark vs before ({mean:.0f} vs {ImageStat.Stat(pre).mean[0]:.0f})")
+    ms_ = [ImageStat.Stat(f).mean[0] for f in frames]
+    steps = [y - x for x, y in zip(ms_, ms_[1:])]
+    if abs(ms_[-1] - ms_[0]) > 6 and (all(d >= -0.5 for d in steps) or all(d <= 0.5 for d in steps)):
+        ev.append(f"fade (brightness {ms_[0]:.0f} -> {ms_[-1]:.0f})")
+    weak = None
+    d = ImageChops.difference(frames[0], frames[-1]).point(lambda v: 255 if v > 25 else 0)
+    box = d.getbbox()
+    if box:
+        moving = sum(d.histogram()[255:]) / (d.width * d.height)
+        area = (box[2] - box[0]) * (box[3] - box[1]) / (d.width * d.height)
+        if area < 0.12 and 0.001 < moving < 0.03:
+            weak = f"local motion only ({area * 100:.1f}% of the screen: spinner / progress bar?)"
+    # local motion is a WEAK sign alone: a still game screen with one animated flag looks the same (Dominions
+    # map, 2026-11-03: false LOADING). It counts only with a loading word on the screen.
+    if words and not ev:
+        import ocr as O
+        im = ImageGrab.grab(xdisplay=DISP)
+        t = re.sub(r"\s+", "", O.ocr(O.prepare(im, (0, 0, im.width, im.height), scale=1, dark=False), psm=11).lower())
+        hit = next((w for w in LOADING_WORDS if w in t), None)
+        if hit:
+            ev.append(f"says '{hit}'")
+            if weak:
+                ev.append(weak)
+    return bool(ev), ev, frames[-1]
+
+
+def _history(name, load_ms=None):
+    """Load-time record per transition NAME (.claude/transitions/NAME.json): optional, for "slower than usual"."""
+    import json
+    if not name:
+        return []
+    tdir = os.path.join(_profile_dir() or OUT, "transitions")
+    os.makedirs(tdir, exist_ok=True)
+    jf = os.path.join(tdir, name + ".json")
+    hist = json.load(open(jf)).get("loads_ms", []) if os.path.exists(jf) else []
+    if load_ms is not None:
+        hist = (hist + [load_ms])[-10:]
+        json.dump({"loads_ms": hist, "updated": time.strftime("%Y-%m-%d %H:%M")}, open(jf, "w"), indent=1)
+    return hist
+
+
+def wait_out(t0, tol=12.0, timeout=600, name=None, pre=None):
+    """While loading_signs says loading, poll (fast for 5 s, then every second - cheap) until the screen has
+    left that loading screen and no longer looks like one. Returns how long the loading screen lasted (ms)."""
+    from PIL import ImageChops, ImageStat
+    md = lambda a, b: ImageStat.Stat(ImageChops.difference(a, b)).mean[0]
+    longest, warned, beat = max(_history(name) or [0]), False, time.time()
+    start = time.time()
+    loading, ev, L = loading_signs(0.3, words=True, pre=pre)
+    if not loading:
+        return None, ev
+    print(f"LOADING: {'; '.join(ev)}", flush=True)
+    while time.time() - t0 < timeout:
+        time.sleep(0.1 if time.time() - start < 5 else 1.0)
+        cur = thumb()
+        if changed(cur, L, tol)[0]:
+            loading, ev2, L2 = loading_signs(0.3, words=True)
+            if not loading:
+                ms_ = int((time.time() - start) * 1000)
+                _history(name, ms_)
+                return ms_, ev
+            L = L2                                   # a second loading screen (progress stages): follow it
+        el = int((time.time() - start) * 1000)
+        if longest and not warned and el > 2 * longest:
+            warned = True
+            print(f"  ...slower than ever before ({el} ms, longest seen {longest} ms) - maybe stuck", flush=True)
+        if time.time() - beat > 30:
+            beat = time.time()
+            print(f"  ...still loading, {el // 1000} s", flush=True)
+    return -1, ev
+
+
+def act(name, step, timeout=180.0, took_s=3.0, tol=12.0):
+    """Do STEP and see it through (the user's method): shot just BEFORE (same process, no gap); grab every ~33 ms
+    until the screen differs from it by TOL (else DID NOT TAKE, exit 2); then the GENERAL loading test
+    (loading_signs) on what came up: not loading = done (a button click), loading = wait it out polling
+    (wait_out). NAME only keeps a load-time history for "slower than usual". Exit 3 = timeout."""
+    from PIL import ImageChops, ImageStat
+    need()
+    md = lambda a, b: ImageStat.Stat(ImageChops.difference(a, b)).mean[0]
+    pre = thumb()
+    t0 = time.time()
+    do(step)
+    took = None
+    while time.time() - t0 < took_s:
+        if changed(thumb(), pre, tol)[0]:
+            took = int((time.time() - t0) * 1000)
+            break
+    if took is None:
+        print(f"DID NOT TAKE: '{step}' - the screen stayed within {tol} of the shot before it for {took_s:.0f} s")
+        shot()
+        sys.exit(2)
+    print(f"TOOK in {took} ms", flush=True)
+    load_ms, ev = wait_out(t0, tol, timeout, name, pre)
+    if load_ms is None:
+        print(f"READY at {int((time.time() - t0) * 1000)} ms: no loading screen (a button click)")
+    elif load_ms < 0:
+        print(f"TIMEOUT after {timeout:.0f} s: still loading ({'; '.join(ev)})")
+        shot()
+        sys.exit(3)
+    else:
+        print(f"READY at {int((time.time() - t0) * 1000)} ms: the loading screen lasted {load_ms} ms")
+    shot()
+
+
+LOADING_WORDS = ("loading", "pleasewait", "thinking", "generating", "saving", "connecting", "initializing",
+                 "preparing", "reticulating")   # The Sims: "Reticulating Splines" - joke texts exist; words are only a hint
+
+
+def isloading(window=1.0, words=True):
+    """Is the screen a loading screen NOW? LOADING (exit 10, with the evidence) or NOT LOADING (exit 0)."""
+    need()
+    loading, ev, _ = loading_signs(window, words)
+    print(("LOADING: " + "; ".join(ev)) if loading else "NOT LOADING: no blank/fade, no spinner-only motion, no loading words")
+    shot()
+    sys.exit(10 if loading else 0)
+
+
+def waitload(timeout=600, tol=12.0, name=None):
+    """isloading; if loading, poll every second until it's gone (wait_out)."""
+    need()
+    t0 = time.time()
+    load_ms, ev = wait_out(t0, tol, timeout, name)
+    print("NOT LOADING" if load_ms is None else f"TIMEOUT after {timeout} s: still loading" if load_ms < 0
+          else f"READY: the loading screen lasted {load_ms} ms")
+    shot()
+    if load_ms is not None and load_ms < 0:
+        sys.exit(3)
+
+
+def wait_args(p):
+    """waitchange's flags, from the command line or a seq step: [N] [--timeout N] [--every S] [--nosettle]
+    [--until TEXT (quote it in seq: "waitchange --until 'Combat round'")] [--box X0 Y0 X1 Y1]"""
+    import shlex
+    p = list(p) if isinstance(p, list) else shlex.split(p)     # the shell already split command-line args
+    if len(p) == 1 and " " in p[0]:
+        p = shlex.split(p[0])
+    t = opt(p, "--timeout", p[1] if len(p) > 1 and p[1].isdigit() else "180")
+    b = p.index("--box") if "--box" in p else -1
+    waitchange(int(t), float(opt(p, "--every", "3")), "--nosettle" not in p, opt(p, "--until"),
+               [int(v) for v in p[b + 1:b + 5]] if b >= 0 else None)
+
+
 KEY_GAP = [0.03]
 
 
@@ -282,13 +525,14 @@ def do(step):
     if c == "mark":
         mark()
         return
-    if c == "waitchange":
-        waitchange(int(p[1]) if len(p) > 1 and p[1].isdigit() else 180)
+    if c == "waitchange":                      # same flags as the command (they were ignored in seq before)
+        wait_args(step)
         return
     if c == "wait":
         time.sleep(int(p[1]) / 1000)
     elif c == "shot":
-        shot("--full" in p)
+        b = p.index("--box") if "--box" in p else -1
+        shot("--full" in p, [int(v) for v in p[b + 1:b + 5]] if b >= 0 else None)
     elif c == "read":
         read(p[1:])
     elif c == "fast":
@@ -490,7 +734,7 @@ def main(a):
     if c == "start":
         unlocked = "--unlocked" in a
         a = [x for x in a if x != "--unlocked"]
-        start(opt(a, "--size", "1600x990"), glamor="--glamor" in a)
+        start(opt(a, "--size", "1600x990"), glamor="--glamor" in a, cursor="--cursor" in a)
         if not unlocked:
             set_lock(True)
         subprocess.Popen([sys.executable, "-I", os.path.abspath(__file__), "--display", DISP, "keeper"],
@@ -512,12 +756,19 @@ def main(a):
     elif c == "mark":
         mark()
     elif c == "waitchange":
-        waitchange(int(opt(a, "--timeout", "180")), float(opt(a, "--every", "3")), "--nosettle" not in a)
+        wait_args(a)
+    elif c == "waitload":
+        waitload(float(opt(a, "--timeout", "600")), float(opt(a, "--tol", "12")), opt(a, "--name"))
+    elif c == "isloading":
+        isloading(float(opt(a, "--window", "1")), "--nowords" not in a)
+    elif c == "act":
+        act(a[1], a[2], float(opt(a, "--timeout", "180")), float(opt(a, "--took", "3")), float(opt(a, "--tol", "12")))
     elif c == "windows":
         for r in windows():
             print(f"{r[0]}  {r[2]:<16} {r[3]}x{r[4]}+{r[5]}+{r[6]}  {r[1]}")
     elif c == "shot":
-        shot("--full" in a)
+        b = a.index("--box") if "--box" in a else -1
+        shot("--full" in a, [int(v) for v in a[b + 1:b + 5]] if b >= 0 else None)
     elif c == "zoom":
         sc = int(opt(a, "--scale", "2"))
         zoom(*map(int, a[1:5]), scale=sc)

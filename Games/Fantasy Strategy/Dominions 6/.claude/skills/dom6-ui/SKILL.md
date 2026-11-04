@@ -237,3 +237,33 @@ checkboxes; Exit (959,679). View only unless asked. No hotkey list.
   name, pick the nation in Participants, finish the pretender, review Game Settings, and leave the
   first turn to the user unless told otherwise.
 - **Finish**: return the game to where it was (usually the main menu) and give focus back.
+
+## Virtual-screen commands (dom6bg.py - the default way to look at a game, 2026-11-03)
+The user: "we're using a virtual window, we should be using virtual commands." The FoG II order.py pattern:
+one command = one checked action, result read back, mouse parked. READ ONLY (no orders/recruits/End Turn).
+`scripts/dom6bg.py look | read REGION.. | capital | zoom out|in N | mapshot [N] | messages | goto TEXT |
+exitdialog | battle NAME | park`. Named regions (title, resources, commanders, province, sites, scout,
+hovername, dialog, replaylog) live in Dominions' `.claude/game-ui.json`, measured at 1912x1000, so
+`bgplay.py read province` works from the Dominions folder. Prefer `read` over screenshots for text.
+Never Esc to close a dialog (Esc = Options): find its Exit by OCR (`exitdialog`).
+
+## Dominions on Claude's virtual screen (bgplay, tested 2026-11-03)
+The user's own copy must be closed first. Then, from the install folder (~/.local/share/Steam/steamapps/common/Dominions6):
+`bgplay.py start --size 1912x1000 --unlocked --cursor` and `bgplay.py launch ./dom6.sh -w -r 1912 1000 --softmouse`
+(manual launch options: -w window, -r size, --softmouse draws Dominions' own pointer - without it the pointer is
+invisible in Xephyr). 1912x1000 fits the user's 1920x1080 desktop with the window frame; move it to the top-left.
+Unlocked = the user can click in it (e.g. to log in). **Never take screenshots while he types a password**; wait for his
+word. Don't restart it while he's using it. dom6 scripts on this screen: run them with DISPLAY=:5; coordinates
+calibrated at 1920x1044 may be off by a few pixels at 1912x1000 - check on the first shot.
+
+## Interface lessons that apply here (game-ui "Interface lessons", from FoG II - checked against Dominions)
+- Hover before acting: tooltips sit in the bottom bar (dom6-tooltips); hover the centre of text, not icons.
+- Forecast vs commit: in Dominions almost nothing commits until End Turn, but orders, recruits, research and
+  gem transfers ARE changes - in the user's MP game look only (right-click views; left-click on the map = move).
+- Popups: find the Exit by OCR of the popup's own bounds (`exitdialog`); stop loops when the screen stops changing.
+- **Esc opens Options, not cancel** - close dialogs with their Exit; Return can open Army Setup.
+- Verify every action with a fresh shot; leave the camera on the armies and the mouse parked (idle-view).
+
+## Related skills
+game-ui (the generic guard and bgplay), dom6-tooltips, dom6-game, idle-view.
+Also (2026-11-03): game-ui, dom6-map.

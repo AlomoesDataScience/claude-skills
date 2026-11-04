@@ -56,3 +56,13 @@ Vassal module window with game-ui (with the user's go for every move in a game a
 1. Get the Supplement; read the 1918 scenario setup and the political phase rules.
 2. Read combat 8.0 in full and write down the combat table logic here.
 3. Ask whether the user plays on the table or on Vassal.
+
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **strategic (card-driven)**; domain: **land**. Vocabulary: military-operations (strategic/operational levels, principles of war) + war-concepts' strategy section (total/limited war, escalation, war economy, war termination); soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: The user's land salvo system and Lanchester (concentrate; make fights square when stronger, linear when weaker).

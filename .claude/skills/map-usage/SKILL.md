@@ -67,5 +67,14 @@ Write it during learn-to-play, before real play. It sits next to the game's guid
 Point to the guide for the rules (terrain effects), not a copy of them. FoG II's
 `fog2m-map` is the first example.
 
+## Grid or graph? (the user, 2026-11-03: "dominions doesn't explicitly use a grid on the map")
+- Square/hex maps (FoG II, wargames): grid tools - gridshot, squares, a text board by col,row.
+- **Province/area maps** (Dominions, Paradox, board games with areas): a GRAPH - provinces with neighbours. Don't
+  sample them with a click grid (it misses small areas, double-reads big ones). Get the graph from the game's
+  own map data when every player has it (Dominions .map: provinces, neighbours, terrain, pixel areas ->
+  dom6-map provgraph.py), tie it to the screen once (snap + a few read provinces -> scale/offset), then visit
+  each province at its own centre and check the panel names that province. Ownership/visibility still come
+  from the screen. Reach and threats come from the neighbour lists, not dotted lines by eye.
+
 ## Related skills
 map-camera, photo-map, map-measure (size and squares, early), draw-map (optional drawing), draw-moves (movement proposals), battle-tactics, planning, manual-first, learn-to-play, generalize-learning; per-game example fog2m-map

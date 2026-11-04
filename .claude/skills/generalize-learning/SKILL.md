@@ -62,6 +62,12 @@ under a per-game section.
 | Tutorials | learn-from-tutorials |
 | Borrowing systems for our games | borrow-from-games |
 | Skills housekeeping | skills-manager |
+| Turning a game's rules into a skill family | rules-skills |
+| Dice odds (any dice system) | dice-math |
+| Unit-vs-unit combat, buffs measured in rounds | unit-combat-math |
+| Rank-everything databases | game-database |
+| What a mod or patch changed | mod-diff |
+| Watching videos as sources | video-watch |
 
 ## When
 - At the end of every lesson or teaching stretch with the user: go through what changed in the game
@@ -80,5 +86,12 @@ under a per-game section.
   and needs a tooltip; which FoG terrain is invisible stays in fog2m-map.
 - "You already figured that out yesterday" → skills-manager (check skills before re-deriving).
 
+## War terms go both ways
+A game-specific fact about how a rule works in war terms goes into that game's `LEXICON.md`
+(war-language); a mapping that holds in several games (e.g. ZOC = fix/block, cohesion = unit
+cohesion, evade = disengage) goes up into war-language's lexicon guidance or war-concepts.
+
 ## Related skills
+skill-sync (carry a lesson down to every game's skills and across games: status, diff, mark, gaps).
+
 write-skill (format checklist), save-scum (DARK ARTS, learning only: save before a test, reload after; never in real games), skills-manager, learn-to-play, learn-to-mod, and every generic skill in its table

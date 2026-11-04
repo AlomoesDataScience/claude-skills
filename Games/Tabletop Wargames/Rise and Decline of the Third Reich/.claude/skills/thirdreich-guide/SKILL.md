@@ -42,3 +42,13 @@ counters 33 (p40), Anglo-French cooperation 34, Axis in Africa 35, Gibraltar 37,
 
 1. Read 12 (sequence of play) and the sample turn (52) in full; set up the 1944 scenario with
    the user's physical game, Claude keeping the BRP track.
+
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **strategic**; domain: **land+air+naval**. Vocabulary: military-operations (strategic/operational levels, principles of war) + war-concepts' strategy section (total/limited war, escalation, war economy, war termination); soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: The user's land salvo system and Lanchester (concentrate; make fights square when stronger, linear when weaker). combat-models: Hughes' salvo model fits naval combat directly - scouting decides who fires first; war-concepts: fleet in being, sea denial, line of battle, wolfpack. air: sorties as salvos, interception, air supremacy/interdiction/close air support (war-concepts).

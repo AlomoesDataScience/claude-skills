@@ -33,6 +33,12 @@ already). Summaries are Claude's own words; quote the books sparingly.
   system, replenishment and areas of denial. See also his "Eras of Space War" (Projects/Our Games/4x
   Game Engine) and the WMD mod's eras.
 
+**Salvo Combat System for Land Battles** (`Salvo Combat System for Land Battles`, no extension, an
+earlier version of his system): Hughes' salvo model at company/platoon scale - frontage, rate of
+fire, accuracy mods, tactics saves split attack/defense, armour, ammo, fatigue, close assault, and
+planned initiative, spotting and morale. Summarised and runnable in the **combat-models** skill
+(`combat.py land`); air, naval and space versions still to be reviewed.
+
 ## The classics (files and core ideas)
 
 - **Clausewitz, On War** (`pg1946.txt`): war continues policy by other means; friction and
@@ -50,6 +56,25 @@ already). Summaries are Claude's own words; quote the books sparingly.
 - **Mao, On Guerrilla Warfare** (FMFRP 12-18, Griffith translation, PDF + txt): guerrillas need
   the people's support, avoid strength and strike weakness, protracted war in stages toward
   regular war. Fits the engine's rebellions and "collapse into independent nations".
+- **US Army FM 3-90, Tactics (2023)** (`ARN38160-FM_3-90-000-WEB-1.pdf` + `.txt`): modern tactical
+  doctrine - operations, forms of maneuver, tactical mission tasks, security and recon, movement,
+  control measures. Distilled for game play in the generic **military-doctrine** skill (load it
+  for any battle). Doctrine terms are narrower than the user's working terms (his *screen* covers
+  doctrine's screen, guard and cover).
+- **US Army FM 3-0, Operations (2025)** (`ARN43326-FM_3-0-000-WEB-1.pdf` + `.txt`): the operational
+  level - principles of war, tenets, defeat mechanisms, operational framework. Distilled in the
+  generic **military-operations** skill.
+- **FM 100-2-1, The Soviet Army: Operations and Tactics (1984)** (scan with OCR layer, + `.txt`) and
+  **CIA report on the Soviet Field Manual 1948 PU-48** (`CIA-RDP82-00047R000200530003-7`, typewriter
+  scan OCR'd by Claude, + `.txt`): the Soviet school - echelons, force ratios, attack from the march,
+  OMG, encirclement, the five 1948 formations. Distilled in the generic **soviet-doctrine** skill.
+- **Combat models** (`wiki/Lanchester's_laws.wiki`, `wiki/Salvo_combat_model.wiki`, Wikipedia wikitext):
+  Lanchester's linear and square laws, Helmbold parameters, Hughes' salvo model (missiles vs point
+  defence - fits the user's space-warfare essay). Distilled with a calculator in the generic
+  **combat-models** skill. `wiki/Index_of_war-related_articles.wiki` + `war-index.json` + `war/`: Wikipedia's war index,
+  1,146 articles triaged A/B/C, tier A in full - distilled in the generic **war-concepts** skill
+  (warwiki.py look/grep/fetch). `wiki/Screening_(tactical).wiki`: the general definition of screening
+  (in the **screening** skill). Wanted next: FM 3-98 Reconnaissance and Security Operations.
 - Not on the shelf yet: Sun Tzu (the "Art of War" PDF is Jomini's).
 
 ## Uses in our games

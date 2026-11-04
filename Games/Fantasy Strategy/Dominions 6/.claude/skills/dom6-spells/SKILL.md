@@ -65,3 +65,10 @@ Run Python with `python3 -I` (system Python with PIL only; no pip).
 - The model's damage per hit came out 1-2× higher than the Murias battle review (that was before the shield fix; recheck in the next battle). Use it for comparisons only.
 - Items are ranked in the **dom6-items** skill, which reuses this model.
 - Earth- and Nature-path spells in `castable.md` are the god's (E5 N5), who is dormant until about turns 10-13.
+
+## Standards (audit 2026-11-03)
+- **Modded games:** numbers here are vanilla - check the mod first (dom6-scbm for SCBM; mod-docs).
+
+## Related skills
+dom6-inspector, dom6-items, dom6-tactics (ai-casting.md), dom6-army-check.
+Also (2026-11-03): dom6-spell-db, dom6-best-by-purpose, game-database, unit-combat-math, dom6-evocations, dom6-buffs.

@@ -58,3 +58,12 @@ total siege strength of 25".
 
 Elsewhere (from dom6-game and dom6-knowledge): unit-screen path symbols ("fire mage level 1"),
 top-bar resources, recruitment portraits. Add new screens here as they are read.
+
+## Standards (audit 2026-11-03)
+- **Screen:** coordinates here were measured on the 1920x1044 desktop. On Claude's 1912x1000 virtual screen (dom6bg.py / bgplay) find positions by OCR or re-measure - never reuse a stale coordinate (memory: apply tools universally).
+- **Where it runs:** prefer Claude's virtual screen (dom6-ui bgplay, dom6bg.py); lock while working, hand back after (hand-back).
+- **MP games (the user's):** look only - right-click views, hovers; no orders, recruits, research, transfers or End Turn.
+
+## Related skills
+dom6-ui, dom6-game, dom6-knowledge, game-ui.
+Also (2026-11-03): dom6-abilities, dom6-game.

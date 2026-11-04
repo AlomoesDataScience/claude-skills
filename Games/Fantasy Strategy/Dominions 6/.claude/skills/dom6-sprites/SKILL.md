@@ -189,3 +189,7 @@ side and screen-left is "forward".
 - Realistic proportions, not cartoony.
 - Stances copied from Dominions Enhanced; each unit gets an idle and an attack frame.
 - Output into the nation folder (`Games/Fantasy Strategy/Dominions 6/Mods/<nation>/`) with the generator script.
+
+## Related skills
+dom6-modding, art direction (memory), spritestudio.
+Also (2026-11-03): art-direction memory (cheap Dominions-style sprites).

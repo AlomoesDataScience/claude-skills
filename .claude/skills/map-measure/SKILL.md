@@ -50,12 +50,32 @@ with column and row numbers. These are what terrain gets read from.
 Then: read the parts, write the text board (map-usage), optionally draw it (draw-map) and compare
 the drawing side by side with squares.png.
 
+## resnap.py - find the grid on ANY later screenshot (the user, 2026-11-02)
+"Create a tool to automatically resnap the grid based on an older picture, so you know where the grid
+is at. It should also support zooming in and zooming out." Runs on Claude's side only (photos in,
+numbers out). Once per map: `resnap.py build REF.png --sq S --cols C --rows R --margin 400 --strip
+STRIP.png MAPX0 MAPY0 ...` pastes the measured photo strips into one reference (in map pixels, with
+the border kept around it). Then for every screenshot: `resnap.py find REF.png SHOT.png [--zoom 0.9 3]`
+-> `sq S x0 X y0 Y match M` = square size on screen and where map corner (0,0) is. No border needs to
+be visible; units that moved since the reference only lower the score.
+- Method that works: smoothed BRIGHTNESS (woods dark, tracks light), masked normalised correlation
+  over the WHOLE map area with the fixed UI masked out (--ui boxes). Edge maps failed (0.11 on a right
+  answer; picked a wrong zoom); a small band failed when a selected unit drew square outlines over it.
+- Trust: right answers score 0.7-0.9 (selected unit ~0.7); under 0.5 look at the picture.
+- Check once per map by drawing the snapped grid over a zoomed-in shot (field hedges on grid lines).
+- OpenCV matchTemplate (masked) when installed: zoom search ~5.5 s, known zoom ~1.4 s; numpy FFT fallback ~13 s. FoG II reference: ui/map_ref_battle2.png (+ .json).
+
 ## FoG II numbers (battle 2, 2026-11-02)
 - 32 columns (west to east) × 24 rows (north to south).
 - Top view, fully zoomed out: 59.25 px per square at full resolution.
 - Border = grey stone: `--sat 14 --br 70 200`; on the tinted enemy side `--br 40 200`.
 - Strips, with the camera homed north: west x0 229 / y0 17; middle x0 −487 / y0 274; east
   x0 −1432 / y0 262.
+
+## resnap zoom range (Dominions, 2026-11-03)
+`find --zoom A B` searches scales A..B relative to the reference; a view outside the range fails quietly with a
+low match (0.25 at a closer zoom than 1.3-3.5). Search wide (1.2-6) once, then narrow to +-4% around the found
+scale; under 0.5 = re-search wide before trusting anything.
 
 ## Related skills
 photo-map (the photos), map-camera (views, zoom, strips), map-usage (step 1 "establish the map" uses

@@ -3,6 +3,20 @@
 Read from the manual for playing, 2026-11-02 (ch. 8-18, 23, 28-31; printer-friendly PDF pages in
 brackets). My words. The user: "go read the manual to learn to play, literally."
 
+## A battle turn, start to finish (tools + skills; the user 2026-11-02)
+1. **Look**: `order.py grid C R` (snapped, labelled photo; photo-map). Trust the photo for terrain.
+2. **Read and log both armies** (army-log): `order.py cards C R ...` for every unit whose state may
+   have changed (all of them after combat); write `plans/battle2-boards/armies/tN_<side>.csv`;
+   `armylog.py snap` both, `armylog.py eval` and `diff` against last turn.
+3. **UP** (war-language + LEXICON.md): situation, enemy most likely / most dangerous COA, power by
+   sector, time left; one-line read-out in doctrine words.
+4. **THINK**: re-read "The plan in doctrine" in the battle plan; adjust intent, tasks, phase lines.
+5. **DOWN** (move-phases): phase 1 main body, phase 2 extension pass, phase 3 final check;
+   `order.py move SC SR DC DR "Full Card Name (N)" --go`, one order at a time, AP checked after each.
+   Shooting and charges: hover first, read the tooltip (Win:Draw:Lose, ranges), then act.
+6. **CHECK + record**: re-log our side after orders; the turn's section in the plan file; `present`.
+   **End Turn only on the user's go.**
+
 ## Seeing the battlefield (ch. 8)
 - Grid squares, one unit per square, 8 facings. Diagonal move = 1.5x AP. **G** toggles the grid.
 - Fog of war: squares without line of sight are darkened; yellow ? marks terrain edges that may hide
@@ -52,6 +66,15 @@ brackets). My words. The user: "go read the manual to learn to play, literally."
 - Turns: moving within 45 deg of facing is free. In range non-light, non-unmanoeuvrable: one free 45
   deg turn per turn. Lights: one free turn any direction. Else 45 deg = 4 AP, 46-90 = 8 AP, more = all
   AP. => **foot can't turn >45 and move; horse can turn 90 and still move 1-2 squares.**
+- **Unmanoeuvrable does NOT mean it can't turn** (the user, battle 2 turn 7: "You can turn the knights to face
+  other directions, check the manual"; manual 11.4.1-11.4.3 p.100-102): it only loses the FREE 45 deg turn.
+  Knights (14 AP): 45 deg = 4 AP, 90 deg = 8 AP, more = all AP. Facing = any of the 8 neighbouring squares.
+  A move pays only for the angle between the old facing and the straight line to the end square (twists
+  on the way are free). Worked example: Knights 0 at (16,14) facing E -> (17,16) is a 63 deg line = 8 AP
+  turn + 2 squares 8 AP = 16 > 14 -> refused; it was NOT stuck - it could turn, or move 1 square.
+- **Spend leftover AP on facing for NEXT turn**: a charge needs the target within 45 deg of straight ahead
+  at the start (then a free 45 deg turn); shooting needs the target in arc (22.5 full, 45 half). Before the
+  turn is done, face strikers and shooters at next turn's targets.
 - Unmanoeuvrable: knights, undrilled heavy foot, warriors, cataphracts, elephants, artillery, large
   units (10+ models), raw/untrained units.
 - In an enemy primary ZOC you can only turn to face a flank threat or another enemy whose primary ZOC
@@ -199,3 +222,38 @@ Ctrl over a target = detailed tooltip, F1 key list. W/A/S/D scroll, F/R zoom, Q/
 In FoG II units are generally only hidden in FORESTS. Open ground, fields, hills: everything shows. So a
 "scout first" turn is only worth it when woods near the enemy could hide something - otherwise photograph
 the board, count both armies and start the plan (battle 2: the whole French army was visible at turn 2).
+- **Charge arc = the three squares in front** (the user: "You can attack in the three squares in front of them"):
+  straight ahead and the two front diagonals (= within 45 deg; charges add a free 45 deg turn).
+- **Engage to break ZOC** (the user, turn 8; manual 11.1.1): a unit in an enemy ZOC can only move AWAY from it,
+  but units in close combat exert no ZOC - so pin the enemy unit with one charge and the neighbours it
+  was holding are free to move. One unit to pin is enough (the user: "just one unit... just to pin").
+- **Flank/rear charge on an ENGAGED unit** (11.13.5 + PLAY): it drops a cohesion level automatically and
+  impact is at net +200. The charger must START its whole move behind the target's flank line - so it
+  takes a turn to get there (facing the threat), a turn to turn, a turn to charge (the user: "very
+  technically this will take 3 turns"). Only turn toward the target once nothing can hit your back.
+- **Spearmen v spearmen head-on is a draw** (game forecasts turn 8: Win 12-14 / Draw 72-75 / Lose 13-14;
+  Kerns v Defensive Spearmen head-on: melee Win 1 / Lose 38). Spear lines break only by flank/rear.
+- **Spearmen cannot charge knights** (the user) - knights can stand next to enemy spears safely.
+- **Look BEHIND the charge target** (the user, battle 2 turn 7: "there's cavalry behind them"): mounted winners
+  always pursue at least once and can do nothing else while pursuing (14.6 p.150-151), and the pursuit switches
+  onto an enemy it passes adjacent to (p.117). A won charge with enemy horse behind the target ends with our
+  knights deep, stuck and flank-open. Before charging: what is behind, where will the pursuit end, who can hit
+  it there next turn - and keep a second unit back to counter-charge.
+- **Mounted crossbows as bait** (the user, battle 2 turn 8: "mounted crossbows automatically retreat in a
+  charge" - checked with the manual 11.13.4 p.116 + AI ch.: NOT automatic. Non-lancer cavalry MAY evade;
+  the AI decides by its chance to win and to get away, and WILL evade chargers that outmatch it (knights)
+  unless the charger is so close it would likely catch them. Pursuit uses the charger's leftover AP (+-4).)
+  So: bait heavy cavalry from range 2 (mounted crossbow range), never adjacent - the knights spend most AP
+  reaching the square and can't catch them; the pursuit drags the knights out of position.
+- **Bait/blocker facing - check what happens WHEN CHARGED before placing it** (the user, battle 2 turn 8: "check
+  whether getting charged facing away or not is better"). From the manual: FACE the charger. (1) Only the
+  front projects ZOC (primary ahead, secondary either side), so facing it blocks its NORMAL moves - but NOT a
+  charge on the blocker itself, and "evaders, routers and pursuers ignore ZOCs completely" (11.1.1 p.98;
+  turn 8 result: Knights 3 charged the bait, it evaded, the pursuit ran 4 squares through the 'block' to
+  (18,9) and stopped with 0 AP inside our line). PLOT WHERE THE PURSUIT ENDS (leftover AP + 4) and keep
+  that square and its neighbours clear of units that can't take a frontal knight charge; (2) the AI evades
+  chargers that outmatch it anyway, and if escape is hopeless it stands and fights FRONTALLY; (3) facing away
+  makes it a rear charge: always evades, but if caught it is a rear hit (auto cohesion drop, +200 against).
+  Catch odds: 25% for knights starting ADJACENT (they always get +4 AP); at 2 squares less. Evade direction is
+  not in the manual (hypothesis: straight away from the charger) - watch and record. Turn and Shoot (11.12)
+  leaves the shooter facing the target - the way to square a bait up to the enemy it is baiting.

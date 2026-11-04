@@ -158,58 +158,9 @@ Strategy lives in dom6-knowledge (`play/strategy.md`, `plans/`).
 - **Province reports can be wrong about numbers** (rarely 30 reported, 80 there); what kinds of
   troops are there is generally not hidden.
 
-## The province panel (right side), item by item (Pythium, 2026-10-27)
-
-Left-click each line (middle of its text). Hovering gives a tooltip at the bottom (it follows the
-mouse sideways on the map). Popups close with their Exit.
-
-| Line | Click | Tooltip / what it says |
-|---|---|---|
-| Name (number) | nothing | none |
-| Terrain | nothing | terrain effects, e.g. "Plains, Mountains (low income, excellent resources, more magic sites)" |
-| Population | popup: growth breakdown | capital "ideal size for about 25000"; base growth 0.2%, density −0.2%, terrain −0.1% → −0.1% |
-| Income | nothing | gold per month for this province |
-| Resources | nothing | needed for metal armaments of units and commanders; local, not saved between months |
-| Recruitment points `519 / 2` | nothing | units / commanders recruitable per month here |
-| Supplies, Supply usage | nothing | one human-sized unit eats one supply; starvation if usage exceeds supplies |
-| Defence `25+/-` | the **d** screen: gold left, defence level, unrest reduction/month, patrol strength, a picture of the Defence Units | (don't buy defence casually: it costs gold) |
-| Unrest | nothing | unrest cuts tax; 100+ blocks recruiting |
-| Dominion candle / scale icons | popup: dominion strength here and every scale's effect (Order 3: income +9%, resources +9%, events −6%, unrest −3, recruitment +30%; Productivity 2: income +6%, resources +30%; Magic 1: research +1 RP) | each scale icon's tooltip names it ("Order: 3") |
-| Fortification | the **f** screen (fort stats) | "(f) Fort statistics" |
-| Laboratory | nothing | none |
-| Temple | the **o** screen (dominion stats, bless effect) | |
-| A magic site (e.g. Cathedral of the Spheres) | popup "Magic Site Effects": recruits it enables, gems it produces | Cathedral: Arch Theurg, Battle Vestal; 5 astral, 2 air, 1 water a month. Swamps of Pythia: Hydra Hatchling, Hydra, Hydra Tamer |
-
-- **Other provinces** (right-click, turn 1). An unseen province (Azimar, Fucan, Nom, Ashenton,
-  Copper Woods, Saetica, Duvan, Clon) shows only its name (number), terrain and empty Dominion
-  and Buildings & Sites headers. Helmshire (287), which has my dominion candle (one of the two
-  converted provinces), also shows population, income, resources, recruitment points and supply
-  usage, with Supplies "?". No defence, unrest, sites or armies. The commander column is empty
-  unless my commanders are there. The yellow dotted lines go from the viewed province to its
-  neighbours. Pythium shows only a red-and-yellow line toward Nom: probably the snowed-in pass
-  (not checked).
-- Province labels sit near the borders: right-clicking open land can hit the province behind it
-  (a click north of Helmshire got Duvan). Check the panel title after each click.
-- `probe.tooltip` finds the tooltip's frame, but the map shows through it and can hide the frame.
-  If it returns "", OCR the band `(0, 940, 1590, 1044)` and drop the junk before the sentence.
-
-## Recruit screen (`r`, or the second top-bar icon) — per province
-
-Armies and recruiting are province-dependent: the screen recruits in the viewed province
-("Recruitment in Pythium"). Two portrait grids: Commanders, then Units, each with an empty queue
-strip under it and a "repeat recruitment" checkbox. Bottom: Gold, Resources, Commander Points,
-Recruitment Points, Holy Points (sacred units), Reset recruitment, Exit. Hover a portrait for
-"Name (gold, resources, commander/recruitment points[, max 1/month])"; a left-click would queue it.
-Left-click a portrait = queue one (it appears in the strip below); **click a queued unit to
-remove it**. "repeat recruitment" (click the words) keeps that list's queue for following
-turns. Sacred recruits use Holy Points (the Theurg took 1). Check the bottom counters after.
-Pythium turn 1 (full-screen hover points, commanders y 160/238, units y 475/556):
-commanders Scout 35g, Assassin 80, Centurion 95, Legatus Legionis 150 (2 CP), Emerald Lord 125,
-Serpent Lord 100, Battle Deacon 90, Theurg Acolyte 100 (2 CP), Theurg 300 (2 CP), Hydra Tamer 35,
-Arch Theurg 565 (4 CP); units Slinger 7g/2r/3rp, Velite 10/10/9, Alae Legionnaire 10/20/9,
-Hastatus 11/21/12, Principe 14/21/20, Triarius 15/29/25, Emerald Guard 20/30/31, Standard
-20/21/21, Serpent Cataphract 45/41/41, Retiarius 10/1/9, Gladiator 10/1/9, Theurg Communicant
-50/1/31 (1/month), Battle Vestal 15/4/14, Hydra Hatchling 35/1/15, Hydra 200/1/50 (1/month).
+## Screen reference (moved to SCREENS.md, 2026-11-03)
+`SCREENS.md` here: the province panel line by line, the Recruit screen (Pythium lists), Research (F5),
+Mercenaries (`b`), the other top-bar screens and every menu seen. Read it before using one of those screens.
 
 ## Map reading (taught turn 2)
 
@@ -255,12 +206,13 @@ Hastatus 11/21/12, Principe 14/21/20, Triarius 15/29/25, Emerald Guard 20/30/31,
   type stats: XP 0, generic text). Quicker than the replay's F1 overview for losses.
 - **In the battle replay** (the user): click a unit's name to get its battle log; right-click
   any unit on the field to see what it is. Do it for strong mages and weird units.
-- In the replay, `?` lists Battle Shortcuts. Camera: **arrow keys** move (a press is a small step,
+- In the replay, **`p` pauses** (the user, 2026-11-03), `?` lists Battle Shortcuts. Camera: **arrow keys** move (a press is a small step,
   press 10-25 times), shift+arrows slowly, Page Up/Down raise/lower, middle mouse. Replay: n next
   round, x super slow, z slow, f fast, t turbo, **q exits**. Misc: g grid, w hide world, c team
   squares, **r round counter** (top right, "Combat round N"), **1-4 battle log detail** (4 = every
   attack, damage and protection roll), +/- scroll log, hold Tab highlights commanders, **F1 Unit
-  Overview** (toggle), F2 weather & dominion, ctrl+i version.
+  Overview** (toggle), F2 weather & dominion, ctrl+i version. Manual p. 58 adds: s normal speed, v (viewing a unit) its combat log, w = wire-frame
+  grid; +/- scroll the log (confirmed). Full table: dom6-battle-view "Replay keys".
 - `space` pauses the replay (tip of the turn). Top-right icons at y 34: pause (1676), slow motion z (1714), play, fast, turbo, then a list.
   `n` did nothing while paused in one test; clicking z resumed play.
 - The log is dark text on a see-through white box at the top left: OCR it line by line
@@ -330,43 +282,6 @@ Hastatus 11/21/12, Principe 14/21/20, Triarius 15/29/25, Emerald Guard 20/30/31,
   (x 567, 649, 736). Ashenton: Mounted Commander 70g/10r, Light Infantry 10g/10r/9rp,
   Light Cavalry 25g/9r/19rp, Cataphract 30g/40r/24rp.
 
-## Research (F5)
-
-"Magic Research": Magic Schools (level, progress bar, RP left per school), Research speed, then
-the Research Queue. **Click a school's name to queue its next level**; clicking again queues the
-level after. **Click a queue entry to remove it** (remove from the bottom up, then click the
-schools in the new order; the queue's entries are ~32 px apart from y≈484). The queue holds
-**at most 9 entries** (the user). Research only happens with mages
-on the Research order (space menu); turn 1 Pythium has none, so speed 0. School name points
-(full screen): Conjuration (651, 168), Alteration (641, 204), Evocation (646, 234), Construction
-(658, 264), Enchantment (661, 296), Thaumaturgy (659, 327); Blood Magic below.
-
-## Mercenaries (`b`, third top-bar icon)
-
-"Hire Mercenaries": Company name, Price (minimum), Employer, Bid, Land. Click `<bid>` (the word):
-a dialog "X demands at least N gold", `- N +` (+ at about (1025, 440), steps of 1), Hire, Cancel.
-After Hire the row shows your bid and the landing province. The bid is **charged once** (the
-user), for a 3-month contract; highest bidder wins; when it runs out the old employer's bid
-counts double that one turn (manual p. 29). Turn 1: bid 66 for Dagan, the Renegade Sage (Sage,
-S1, adept researcher 8), landing in Pythium.
-
-## Other top-bar screens (turn 1)
-
-- Send Messages (`s`): a "Send Message" list: text message, gold, magic gems, blood slaves, magic
-  item, diplomatic missive. Exit.
-- F1 Nation Overview: one row per province (Inc., Unr., Res., Sup., S.U., Def., Sites icons,
-  Searches) with its commanders and their orders underneath ("Theocratus Defend, commanding
-  45 units"; "Latinus Sneak to Azimar (263)"), then "Sneaking commanders".
-- F2 Score graphs: a row of nation banners to toggle, tabs Provinces, Forts, Income, Gem inc.,
-  Blood inc., Research, Dominion, Army Size, Ascension Points; empty on turn 1.
-- F3 Hall of Fame: Name, Nation, Kills, Exp.; empty on turn 1.
-- F4 Pretenders of the World: Name (with nation banner), Relation, Controller (AI/Human),
-  Blessing ("known" for my own). Scrolls (wheel). **Hover the name word** (not right of it)
-  for "Nation info for X" at the bottom (low rows' tips can hide under the Exit); click the name
-  for the nation info screen (description, National Features, recruits, sites, and "X worships
-  the pretender NAME, TITLES": the titles hint at the god's build). Long info screens put Ok
-  below the fold: scroll the wheel to reach it. Game 1 map: dom6-knowledge play/game1-pretenders.
-
 ## Map
 
 - **Mouse wheel zooms** (wheel up = in) with the pointer over the map. Page Up/Down and
@@ -404,23 +319,80 @@ ctrl move never sneak, ctrl+shift move & patrol, alt multi-move.
 
 Gems from the lab: alt + f/a/w/e/s/d/n/g/b (one gem of that type), alt+Backspace returns one.
 
-## Menus seen (open by hotkey, close with Escape)
+## The turn look (every turn, before any decision - the FoG II look process, 2026-11-03)
+The user: "we redid the entire look process to be better and improved." Generic: photo-map, map-measure,
+army-log, scouting, war-language. All on Claude's virtual screen with dom6bg.py (read only until the user says).
+1. **Screen elements** known (dom6-map section 1; named regions in game-ui.json). New screen -> hover first.
+2. **Messages first** (`dom6bg.py messages`): battles, deaths, events, spells. Record every battle replay
+   (`dom6bg.py battle NAME`, detail `4` every replay), read the report, add it to the dom6-tactics log.
+3. **Whole-map photo** (`dom6bg.py mapshot 6`), placed on the game's atlas (resnap.py); grow the atlas when
+   new land is seen.
+4. **Province board** in the game's plan file: owner, terrain, armies seen (with the turn seen), neighbours;
+   diff with last turn - new flags, lost provinces, armies that moved.
+5. **Enemy armies**: scout report of every foreign army in view (`goto`, `read scout`), classified (main
+   types, commanders, pretender?), dated. Stale sightings marked stale.
+6. **Our armies**: army-check per commander, army-log snapshot (both sides after each battle).
+7. **Threats**: what can reach which province next turn (map move, roads, rivers), where our commanders
+   and mages are exposed, where the enemy is weak.
+8. **Then war-language**: UP (picture) -> THINK (plan, written) -> DOWN (orders, only with the user's go in his
+   game) -> CHECK (photo after each order). End Turn only on the user's go.
 
-- F1 Nation Overview: provinces table (income, unrest, resources, supply, defence, sites,
-  searches) and commanders with their orders.
-- F2 Score Graphs: army size, provinces, ascension points, income, gem income, research...
-- F4 Pretenders: every god, relation, controller (AI/Human), blessing.
-- F5 Research: per school level and RP left, research speed, research queue.
-- F9 Thrones: required ascension points and every throne with its points (the list scrolls).
-  **Left-click a throne's name** for its effects: the unclaimed site effect, then "The throne must
-  be claimed to gain the following effects" (ascension points, dominion spread, gems, gold,
-  recruits, blesses). Exit closes it; closing it can shift the list, so re-read row positions
-  after each popup. Game 1's list: dom6-knowledge play/game1-thrones.md.
-- r Recruit: commanders and units lists, commander points, gold, holy points, recruitment
-  points, resources, repeat recruitment, reset.
-- d Recruit Defence: gold left, unrest reduction, patrol strength.
-- f Fort info: administration, commander point bonus, recruitment point bonus, guards.
-- o Temple and dominion: temples, converted provinces, dominion strength, spread chance, bless
-  effects.
-- i Province chronicle: description and events (e.g. a snowed-in mountain pass).
-- b Mercenaries: companies, employer, price, bid.
+## Looking without changing anything (the user's MP game, 2026-11-03: "click around, just don't change anything")
+Safe: wheel zoom (pointer over the map), arrow keys, Home, `m` Messages -> "Goto province" / "Goto commander"
+(camera only; a province with an enemy army shows its Scout Report top-left), **right-click a province
+to view it** (panel fills; this skill's "Provinces and commanders"), F1-F9 overviews, tooltips.
+NOT safe: **left-click on the map** (moves/sneaks the selected commander there), left-click on commander
+tokens (selects them; the next map click would then be an order), anything in the order menu (space),
+recruitment, research/spell queues, transfers, Return (can open Army Setup), Esc (Options), `e`/End Turn.
+(Corrected 2026-11-03 - the user: "I believe it's right click, go check"; the first version said left-click.) Lock the virtual screen while looking; unlock when the user wants it.
+Interface lessons that hold in every game (hover first, forecast vs commit, verify, popups): game-ui skill.
+
+## Unit cards close by THEIR Exit - its height varies (2026-11-03, near miss in the user's MP game)
+Right-click a unit in Army Setup = its card (Army Setup hides behind it). The card's height follows its
+weapons/armour lines, so Exit moves: Tuatha Warrior (956,686), Sidhe Warrior (956,656), Fir Bolg Slinger
+(956,684) at 1912x1000. Clicking a fixed point missed three times (landed outside the card; no effect - checked
+with F1, orders unchanged). Always find Exit on a fresh shot before clicking, and check the screen after.
+Army Setup's own Exit moves with its rows too (Vician 3 squads (956,708), Gila 2 squads (956,604)).
+
+## Standards (the user, 2026-11-03 - apply in every Dominions session)
+- **Manual first** (manual-first): look a rule up in dom6-mechanics / the manual, then dom6-wiki, before acting
+  on a belief. Order of truth: the game > mod files > the manual > videos > the wiki > what the user says (test it if he insists) > a hypothesis. Mod games: mod-docs rules; SCBM = dom6-scbm skill (its data and notes). Check the
+  mod's .dm for changes before trusting vanilla numbers.
+- **Commit only when absolutely certain.** End Turn only on the user's go for that turn (end-turn rule). Orders and
+  battle setups are the commit in Dominions (no live control): every army through dom6-army-check first,
+  failure case known (what if the battle goes wrong, who is exposed), never batch-script orders blind.
+- **Acting alone** (delegate skill): write intent, bounds and report points in the plan file; self-review with
+  the user's questions; hand back with a clear report.
+- **Plan in doctrine** (battle-tactics, military-doctrine): roles for every army, the decisive point, concentrate,
+  screen, protect commanders and mages; log lessons after every battle (dom6-battle-view -> dom6-tactics).
+
+## Turn and battle tools (generic skills, Dominions settings - 2026-11-03)
+Scripts in `AI Development/.claude/skills/<skill>/scripts/`. All read or write files only - none touch the game.
+- **army-log** (`armylog.py`), one log per battle in the game's plans folder:
+  `armylog.py new LOG.json --sides "Tir na n'Og,Pangaea" --states "Fighting,Routed,Dead" --routed "Routed,Dead"
+  --break 75 --edge 50 --turns 150`. Dominions routs on **HP lost**, not units (dom6-morale p.70): every squad
+  checks from 50% lost, the army routs at 75% - so put each unit's HP in `weight` (mounts and PD x0.25, slaves
+  x0.5). `col,row` = battlefield square from Position Army or the replay grid (dom6-battle-view gridsnap);
+  `ap`/`ammo` blank except archers (ammo). Fill from the Battle Summary + F1 Unit Overview, never from data files.
+  Turn snapshots of our own stacks (strategic map) go in the game's plan file instead (tirnanog-scbm-game.md).
+- **war-language** (`warlang.py up | think | down`), with `dom6-tactics/LEXICON.md` for the terms.
+- **planning** (`plan.py new "Title" --dir "Games/Fantasy Strategy/Dominions 6"`) -> `plans/<slug>.md`.
+- **combat-models** (`combat.py law A B ALPHA BETA --n 2`): first-look force ratio only (Lanchester square law
+  for missile-heavy fights, n 1 for melee lines). Dominions numbers come from unit-combat-math / dom6-combat-math
+  (per-attack odds from the real stats); combat.py says whether concentrating changes the answer.
+  Round limits for any battle plan: 100 twilight (buffs end), 150 attackers rout, 170 defenders rout (p.71).
+
+## Interface lessons that apply here (game-ui "Interface lessons", from FoG II - checked against Dominions)
+- Hover before acting: tooltips sit in the bottom bar (dom6-tooltips); hover the centre of text, not icons.
+- Forecast vs commit: in Dominions almost nothing commits until End Turn, but orders, recruits, research and
+  gem transfers ARE changes - in the user's MP game look only (right-click views; left-click on the map = move).
+- Popups: find the Exit by OCR of the popup's own bounds (`exitdialog`); stop loops when the screen stops changing.
+- **Esc opens Options, not cancel** - close dialogs with their Exit; Return can open Army Setup.
+- Verify every action with a fresh shot; leave the camera on the armies and the mouse parked (idle-view).
+
+## Standards (audit 2026-11-03)
+- **Screen:** coordinates here were measured on the 1920x1044 desktop. On Claude's 1912x1000 virtual screen (dom6bg.py / bgplay) find positions by OCR or re-measure - never reuse a stale coordinate (memory: apply tools universally).
+
+## Related skills
+dom6-ui (driving the window), dom6-tooltips, dom6-army-check (before End Turn), dom6-tactics, dom6-play, delegate, planning, manual-first.
+Also (2026-11-03): dom6-scouting, dom6-battle-ai, dom6-map.

@@ -14,8 +14,13 @@ Generic method: the scouting skill. This file holds the FoG II facts.
   and rough slopes. Height also needs a tooltip ("Open ground (Hill). Height: 25/50/75/100"), and
   what looks like hill can be open ground (e.g. (12,16) in battle 2).
 
+- **But don't hover-sweep (the user, turn 4):** "it's all open terrain and hills, and your image works ... and
+  obviously the tracks." Read terrain from the photo (open, hill contours, tracks, grey-speckled rough,
+  woods, fields). Hover only the squares a move will enter or end on when the photo leaves real doubt.
+  The move itself is a check too: the AP it cost tells the terrain ((12,12) cost 4 = open, (12,13) 6 = rough).
+
 ## Each turn's reading routine
-1. Wait for my turn (turnwait.py), then photograph both strips (photo-map, panorama step 100).
+1. Wait for my turn (turnwait.py works funky (the user, 2026-11-03): confirm by reading the turn text), then photograph both strips (photo-map, panorama step 100).
 2. Hover every enemy unit: the tooltip gives its name, number and general. Line the photo up with the
    panorama (edge match) to get exact squares.
 3. Count and classify against mine (strike, line, shooters, lights, filler). Update the board

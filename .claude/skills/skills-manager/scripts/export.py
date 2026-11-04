@@ -36,6 +36,7 @@ DEFAULT_CFG = {
     },
     "hold_back_files": {
         "se4-modding/wmd.md": "the user's WMD mod decision list",
+        "dom6-scbm/tirnanog.md": "the user's plans for a live multiplayer game (opponents could read them)",
     },
     "tools": {  # standalone tools Claude built outside the skill folders -> DEST/tools/<name>/
         "mapgen": {"from": "Games/Fantasy Strategy/Dominions 6/Maps/mapgen", "skip": ["out"]},
@@ -60,6 +61,8 @@ def text_out(s):
     s = s.replace(ROOT, "<workspace>").replace(os.path.expanduser("~"), "~")
     s = re.sub(r"(^|(?<=[.!?:]\s)|(?<=^- )|(?<=\| )|(?<=\*\*))the user's\b", "The user's", s, flags=re.M)
     s = re.sub(r"(^|(?<=[.!?:]\s)|(?<=^- )|(?<=\| )|(?<=\*\*))the user\b", "The user", s, flags=re.M)
+    s = re.sub(r"\bRYAN'S\b", "THE USER'S", s)
+    s = re.sub(r"\bRYAN\b", "THE USER", s)
     s = re.sub(r"\bRyan's\b", "the user's", s)
     s = re.sub(r"\bRyan\b", "the user", s)
     return s.replace("user-todo", "user-todo")

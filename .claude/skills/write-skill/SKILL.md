@@ -58,6 +58,9 @@ description: <what it covers, specific nouns and methods> ... Use when <triggers
   printed with no args).
 - Run them as `python3 -I <path>`. They must compile, since the checker byte-compiles them.
 - Read inputs as untrusted. Never touch End Turn, installs, the user's settings or saves.
+- **Run with no arguments = print the usage and exit.** A script that drives a game must never act with
+  zero arguments (2026-11-03: panorama.py run "to see its help" held FoG keys in the user's Dominions game;
+  harmless that time). To read a script's usage, read its docstring (`ast.get_docstring`), don't run it.
 - Refer to them from SKILL.md by relative path (scripts/NAME.py).
 
 ## 6. Finish

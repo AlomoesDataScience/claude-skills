@@ -75,3 +75,13 @@ game's scenario folder when the user wants to play it (check what is inside firs
 2. Read combat (80-91) and the what's-new naval appendices in full; summarise them here.
 3. For our own game: the equipment-database and editor chapters show how a data-driven wargame
    is organised.
+
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **operational (hex, fog of war matters)**; domain: **land+air**. Vocabulary: military-operations (FM 3-0) + military-doctrine; soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: The user's land salvo system and Lanchester (concentrate; make fights square when stronger, linear when weaker). air: sorties as salvos, interception, air supremacy/interdiction/close air support (war-concepts).

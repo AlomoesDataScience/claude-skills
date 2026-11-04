@@ -87,16 +87,72 @@ to 4, −1 to all with a fifth; 200: +3 for all five. The Army Setup row shows s
 makes the whole squad undisciplined with −1 morale; undead or demons mixed with living, −1.
 Experience raises leadership (units led) but not these morale bonuses.
 
-## Battle orders
+## Battle orders (manual pp. 44-46, 58-60; read in full 2026-11-03 at the user's request)
+See also **dom6-battle-ai** (the same orders plus how the AI picks spells and targets).
 
-- Squad orders (manual p. 45): None (the commander decides), Attack*, Fire*, Guard commander,
-  Hold and attack*, Hold and fire*, Fire and keep distance*, Retreat. * = takes a target: None,
-  Archers, Cavalry, Fliers, Large monsters (size 7+, else 6), Closest, Rearmost.
-- Commander orders: None, Stay behind troops, Attack, Retreat, plus single-round steps.
-- **Undisciplined squads take no squad orders** (Foul Spawn: the label reads "undisciplined" and
-  opens nothing). Only their commander's order can be set. Tight Rein lifts this.
-- In use: Alae Legionnaires and Velites "Fire closest" (javelins first); commanders "Stay
-  behind troops"; Jaguar slingers + warriors in one squad "Fire closest".
+Nobody steers a battle: units deploy where Position Army puts them and then follow these orders.
+Each squad has its own order, even under one commander. Orders marked * also need a TARGET.
+
+**Squad orders** (p. 44-45)
+| Order | What the squad does | Use it for |
+|---|---|---|
+| None | the computer decides | rarely: write down why if kept |
+| Attack* | moves on the target and melees it | melee squads vs a divided enemy (the expansion guide: Attack picks them apart) |
+| Fire* | shoots the target until **out of missiles** | javelin/missile squads. The manual stops there; **game-tested (T6 Murias): Alae on Fire closest went on to melee with spears once the javelins were gone** |
+| Guard commander | centres on its commander and protects him; may join him in an assassination fight; missile units fire only when an enemy gets too close | bodyguards (Bartholomeus' Communicants) |
+| Hold and attack* | holds **2 rounds** (shoots if it has missiles), then melee | vs heavy cavalry (they arrive alone and get surrounded) and fliers; NOT vs many archers (2 extra volleys taken) |
+| Hold and fire* | holds 2 rounds, then fires or moves into range | archers who should let the enemy close first |
+| Fire and keep distance* | fires until the target is close, then withdraws to a safe range and keeps firing | fast skirmishers, archers that must not be caught |
+| Retreat | leaves the field - treated exactly like a rout, may scatter to neighbouring provinces | scouts, units that must not fight |
+No order makes a squad hold forever ("Can't my soldiers just sit back and defend?" - "No"). Any order can
+fail if the squad is caught in an enemy's zone of control on the way.
+
+**Targets** (p. 45): None = a random enemy and its squad; Archers; Cavalry (also fast units); Fliers;
+Large monsters (size 7+, or 6 if there are none); Closest = the closest enemy squad; Rearmost = a random
+enemy at the back. The expansion guide: Fire Closest is the default (routs the infantry, then the
+archers); Fire at Archers splits our damage; Fire at Large Monsters is anti-cavalry.
+
+**Commander orders** (p. 45-46): up to **five specific orders** (one round each), then **one general
+order** for the rest of the battle. No orders = the AI assigns them.
+- Specific: Hold one turn; Hold or fire missile weapon; Hold or cast a spell (AI picks the spell, casters
+  only); **Cast a specific spell** (if the gems are carried and a target is in range - otherwise the AI
+  picks a spell instead); Attack one turn (a random enemy); Fly attack one turn (fliers).
+- General: **Stay behind troops** (casts spells, fires missiles, keeps to the rearmost part of the army);
+  Attack (melee); Cast spells (AI-chosen); Advance and cast spells (moves near the front, casts on the way);
+  Retreat (routs off the map).
+- **Conservative gem use**: gems only for scripted spells. `[x]` repeats the last order given.
+- Copy a script: hover it, Ctrl+digit; hover another `<set battle orders>`, press the digit (0-9 slots).
+
+**What breaks an army** (p. 58): a squad tests morale when it takes enough casualties and routs if it
+fails; **all commanders dead or routed = the whole army routs**, however big; 75% of the side's hit points
+lost = rout. There is no "attack commanders" order - getting at theirs is a setup question.
+Battle limits (dom6-play): enchantments end at round 100, attackers rout at 150, defenders at 170.
+
+**Formations** (p. 59; chosen per squad in Position Army, top right)
+| Formation | Layout | Notes |
+|---|---|---|
+| Box | as near a square as possible (36 size-3 men = 4 squares wide x 3 deep) | default; a big arrow target; back ranks backfill slowly |
+| Line | one straight rank facing the enemy | good commanders only; the guide's usual best |
+| Double line | half the men in a rank right behind the first | good commanders only; rarely useful |
+| Sparse line | a line with an empty square between squares (twice as long) | -1 morale; good commanders only |
+| Skirmish | checkerboard, empty square on all four sides | -1 morale; undisciplined squads always use it |
+Skirmisher ability removes the -1 in Skirmish / Sparse line; Formation Fighter fits more men per square.
+**One square holds 10 size points** (three size-3 humans). A unit 3+ sizes bigger can push into a
+square by displacing smaller units (1 extra combat speed); tramplers never do this unless routing (p. 60).
+
+**Movement and contact** (p. 58-60): one square costs ~1 combat speed (diagonal 1.5); units halt in an
+enemy's zone of control (adjacent) and stay locked while it lives; routing units ignore it. After a step
+a unit waits a short cooldown (shorter for faster units), after a strike a long one (about a round).
+Missiles: the hit chance depends on how many units are in the square hit and the target's shield;
+**missiles can hit our own men** (dom6-play) - shooters behind a line in contact are a risk.
+
+**Mixing and leadership** (p. 59): see "Leadership and squads" above. Unassigned units: one big squad in
+the centre (no fort) or inside the walls (fort).
+
+**In use (Pythium, T7)**: Alae and Velites Fire closest; Jaguar slingers + warriors Fire closest;
+commanders Stay behind troops with scripts; bodyguards Guard commander; scouts Retreat at the far rear.
+Checked against the manual 2026-11-03: all consistent. Against Bear Tribe (no shields, leather prot 9,
+bare heads, morale 10) Fire closest is right - javelins are for unshielded enemies (expansion guide).
 
 ## Battle log
 
@@ -108,7 +164,8 @@ Experience raises leadership (units led) but not these morale bonuses.
 | T6 | Murias | Theocratus: 28 Alae + 2 Std, 15 Velites, Fire closest; Box (default) | 3 Commanders, 9 Heavy Inf, 4 Light Inf, 22 Militia | Won; enemy routed round 7; 1 Alae dead, 21 wounded | First reviewed battle (`dom6-battle-view/battles/t6_murias.md`). Enemy lost 22. Alae spear ~5 dmg/hit on Militia, ~1.4 on Heavy Inf; Velite javelins ~11/hit on Militia. Enemy Heavy Inf hit Alae 7 times for 3 damage total. Theocratus: Holy Avenger r0, Sermon of Courage r1, Word of Stone r3. |
 | T7 | Copper Woods | Elbalus: Alae 19 + Std, Velites 13, Jaguars 14 (Fire closest); Urgek: 30 Foul Spawn in front; both commanders centred at the rear | ~60 Barbarians (two-handed swords and mauls, no shields) | Won; enemy routed round 5; all 30 Foul Spawn and 3 Velites dead | `battles/t7_copperwoods.md`. Barbarians lost 16. The Foul Spawn took the charge (13 barbarian hits, ~15 damage each, one dead per hit); the Alae took only 2 hits. Velites ~4.3 dmg/hit, Alae ~2.7. |
 | T7 | Dragon Ridge | Theocratus: Alae + 2 Std, 15 Velites, Fire closest | 3 Commanders, 14 Archers, 20 Heavy Inf, 14 Militia | Won; enemy routed round 10; none of ours dead (27 wounded) | `battles/t7_dragonridge.md`. Heavy Inf hit Alae 23 times for 9 damage (0.4/hit); 32 archer hits did 14 damage in all. Alae spear 2.8/hit on Heavy Inf, 6.9 on Militia. Theocratus: Sermon of Courage r0, Holy Avenger r1, Word of Stone r3. |
-| T8 | Azimar (ordered T7) | Elbalus (Alae 19 + Std centre, Velites, Jaguars lower flank) + Lampronius (18 Alae in Line on the upper flank front, 8 Velites behind), 71 men, commanders at the rear | ~40 Bear Tribe | — | First two-commander attack and first Line formation. Check: does the Line hold the flank? |
+| T8 | Azimar | Elbalus (Alae 19 + Std box centre, Velites, Jaguars lower flank) + Lampronius (18 Alae LINE joined above it, 8 Velites behind), one front, 71 men, commanders at the rear | Barbarian Chief, Bear Tribe Shaman, 58 Bear Tribe Warriors (scout said ~40) | Won, conquered; 3 Velites dead (16 of 18 wounded), 16 Alae + 4 Jaguars wounded | Enemy lost 37. First two-commander attack and first Line on a flank. Replay not reviewed yet. |
+| T8 | The Mighty Pillars | Theocratus: 27 Alae + Std LINE centred, 15 Velites + Std behind its middle, prophet centred rear; Sermon, Holy Avenger, Word of Stone x3 | 3 Commanders, 21 Archers, 17 Heavy Inf, 22 Militia (scout said ~40) | Won, conquered; 3 Velites dead, Theocratus 2 wounded, 20 Alae wounded | Enemy lost 28. Replay not reviewed yet. |
 
 "Reported" is the turn the battle message arrived (the fight was during the previous turn's
 processing). The squads' positions in the first four fights were set on turn 1 (Alae in front of Velites) and are not
@@ -128,10 +185,75 @@ recorded in detail; read them from Army Setup before the next Theocratus fight a
 
 ## Open questions (test and record)
 
-- Does "Fire closest" on Alae make them throw javelins and then close to melee on their own, or
-  do they wait? Compare with "Attack closest" in a later fight.
+- **T8: both battles' only dead were Velites (3 + 3), though they stood behind the line.** Were they hit by
+  missiles over the line, or did Fire closest send them into melee once their javelins ran out (Fire = "until
+  out of missiles", then the squad closes)? Review the replays; if it's melee, try Fire and keep distance.
+- Scouts under-counted twice on T8 (~40 reported, 60 and 63 there): plan for +50%.
+
+- ~~Does "Fire closest" on Alae make them throw javelins and then close to melee?~~ Yes (T6 Murias: Alae
+  spear hits after the javelins). Still open: is Attack closest better against shielded enemies?
 - Line vs Box for the Alae front against Barbarians (frontage vs depth). The expansion guide
   says a line as wide as the barbarian blob (spears, repel) plus archers; test it in Copper Woods.
 - How far behind the line should commanders stand to stay out of enemy missile range?
 - ~~Does putting a screen (Foul Spawn) in front change our losses?~~ Yes (T7 Copper Woods, above).
 - Does Line on a flank squad (Lampronius, Azimar T8) hold better than Box?
+
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **tactical (battles run from setup)**; domain: **land (fantasy)**. Vocabulary: military-doctrine (FM 3-90 tactics) first; soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: The user's land salvo system and Lanchester (concentrate; make fights square when stronger, linear when weaker).
+- Dominions battles are set up, not steered: the THINK step is the whole battle - formations, positions and orders ARE the plan.
+
+## Trample, formations and support mages (vanilla rules; checked 2026-11-03)
+Learned in the user's SCBM game (its notes: dom6-scbm `tirnanog.md`); these rules are vanilla manual/wiki facts.
+- Trample is NOT magic (wiki trample): invulnerability counts as protection there (halved), and an
+  ethereal trampler halves 7+size first, so trample is minor. Shield parry does not apply to it.
+- Trample REPLACES the weapon attack (wiki trample, "the free attack"): each action a trampler first looks
+  for a square to walk over in the 3x3 around it (random enemy), and only swings if none can be trampled
+  (largest occupant >= its size). After each trample, 25% chance of one free full attack (antlers + hoof).
+  So keep the tank and everyone near it SMALLER than 9: the moose spends its actions on weak halved
+  tramples (2-4 squares a round) instead of 27-damage magic gores. Do NOT enlarge the tank to size 9.
+  Each trample costs it encumbrance in fatigue - it tires itself.
+- TRAMPLE (manual p.~74, illwiki trample): the trampler picks a random enemy in its 3x3 and tramples that whole
+  square; everyone in it rolls Defence (no shield parry, armour def mods apply, -1 per 10 fatigue) vs open-ended
+  3d6; fail = 7 + trampler size vs HALF protection, pass = 1 damage. 2-4 squares a round. It can only enter a
+  square whose LARGEST occupant is smaller (size-1 reach): one big unit in a square shields the small ones.
+  Stopped only by the Awe family; mirror images (glamour) take the hit and are lost; Twist Fate negates; Ethereal
+  victims 75%. TRUE SIGHT (the moose has it) cuts Blur, Displacement, Invisibility, Dread and Twilight but NOT
+  mirror images, and trample uses neither attack skill nor blur - so True Sight changes nothing for its tramples.
+- LINE vs DOUBLE LINE vs BOX against a trampler: squares fill the same in every formation (up to 10 size points,
+  3 humans), so men lost per trample is the same. Formation changes exposure: a Box has the fewest men on its
+  edges (harder to envelop, inner ranks still throw); a Line puts everyone in front (most melee and missiles at
+  once, easiest to wrap); Double Line is between. Sparse Line/Skirmish (gaps, -1 morale) leave squares half
+  empty only if the squad is small; they don't thin the squares. Verdict: formation is not the answer to
+  trample - high defence (Tuatha evaded most), a big unit in the square, Awe, or killing it with magic are.
+- PURE BUFF SUPPORT (the user): most Dominions mages are best as buffers/debuffers (Blessing, Gaia's Due, Twist
+  Fate, Curse, Horror Mark), unless casting big AoE that doesn't miss. TV Tropes' trinity (damager / healer /
+  tank) is mostly subverted: no aggro, no reliable healing in battle; the roles that do exist are blockers,
+  damage (missiles, thugs, evocations) and buffer/debuffer mages.
+- Mod games: notes that depend on a mod's numbers live in that mod's folder (SCBM: dom6-scbm skill), not here.
+
+
+## Standards (the user, 2026-11-03 - apply in every Dominions session)
+- **Manual first** (manual-first): look a rule up in dom6-mechanics / the manual, then dom6-wiki, before acting
+  on a belief. Order of truth: the game > mod files > the manual > videos > the wiki > what the user says (test it if he insists) > a hypothesis. Mod games: mod-docs rules; SCBM = dom6-scbm skill (its data and notes). Check the
+  mod's .dm for changes before trusting vanilla numbers.
+- **Commit only when absolutely certain.** End Turn only on the user's go for that turn (end-turn rule). Orders and
+  battle setups are the commit in Dominions (no live control): every army through dom6-army-check first,
+  failure case known (what if the battle goes wrong, who is exposed), never batch-script orders blind.
+- **Acting alone** (delegate skill): write intent, bounds and report points in the plan file; self-review with
+  the user's questions; hand back with a clear report.
+- **Plan in doctrine** (battle-tactics, military-doctrine): roles for every army, the decisive point, concentrate,
+  screen, protect commanders and mages; log lessons after every battle (dom6-battle-view -> dom6-tactics).
+
+## Standards (audit 2026-11-03)
+- **Where it runs:** prefer Claude's virtual screen (dom6-ui bgplay, dom6bg.py); lock while working, hand back after (hand-back).
+
+## Related skills
+dom6-army-check, dom6-battle-view, dom6-spells, dom6-items, dom6-mechanics, battle-tactics, military-doctrine, combat-models, delegate.
+Also (2026-11-03): dom6-battle-ai, dom6-supercombatants, dom6-thugs, unit-combat-math, dom6-scouting.

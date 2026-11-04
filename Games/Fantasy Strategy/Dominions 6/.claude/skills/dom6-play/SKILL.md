@@ -208,5 +208,32 @@ years).
   units the replays show doing the killing, and whether research, gems and dominion keep pace.
   Report what was seen. A mod is not "balanced" until it has been played.
 
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **strategic + operational**; domain: **land (fantasy)**. Vocabulary: military-operations (FM 3-0) + military-doctrine; military-operations (strategic/operational levels, principles of war) + war-concepts' strategy section (total/limited war, escalation, war economy, war termination); soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: The user's land salvo system and Lanchester (concentrate; make fights square when stronger, linear when weaker).
+
+
+## Standards (the user, 2026-11-03 - apply in every Dominions session)
+- **Manual first** (manual-first): look a rule up in dom6-mechanics / the manual, then dom6-wiki, before acting
+  on a belief. Order of truth: the game > mod files > the manual > videos > the wiki > what the user says (test it if he insists) > a hypothesis. Mod games: mod-docs rules; SCBM = dom6-scbm skill (its data and notes). Check the
+  mod's .dm for changes before trusting vanilla numbers.
+- **Commit only when absolutely certain.** End Turn only on the user's go for that turn (end-turn rule). Orders and
+  battle setups are the commit in Dominions (no live control): every army through dom6-army-check first,
+  failure case known (what if the battle goes wrong, who is exposed), never batch-script orders blind.
+- **Acting alone** (delegate skill): write intent, bounds and report points in the plan file; self-review with
+  the user's questions; hand back with a clear report.
+- **Plan in doctrine** (battle-tactics, military-doctrine): roles for every army, the decisive point, concentrate,
+  screen, protect commanders and mages; log lessons after every battle (dom6-battle-view -> dom6-tactics).
+
+## Standards (audit 2026-11-03)
+- **Where it runs:** prefer Claude's virtual screen (dom6-ui bgplay, dom6bg.py); lock while working, hand back after (hand-back).
+
 ## Related skills
 learn-to-play (generic method; twin learn-to-mod), battle-tactics, map-usage, dom6-modding.
+Also (2026-11-03): dom6-scouting, dom6-dominion, dom6-economy, dom6-research, dom6-best-by-purpose, dom6-battle-ai.

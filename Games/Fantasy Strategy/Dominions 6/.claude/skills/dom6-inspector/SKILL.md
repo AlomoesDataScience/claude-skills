@@ -81,3 +81,7 @@ page layout, dump.js may need a new hook: it wraps `DMI.initGrids`, then calls e
 `renderOverlay`. `build.dump(repo, out, query)` and `write_data(..., data=DIR)` are also used by
 dom6-modinspector; dump.js also collects the mod parser's console messages and works around a
 site crash on some nation commands.
+
+## Related skills
+dom6-modinspector (mods loaded), dom6-modding, dom6-spells, dom6-items, dom6-tactics (matchups).
+Also (2026-11-03): dom6-spell-db, game-database, dom6-abilities.

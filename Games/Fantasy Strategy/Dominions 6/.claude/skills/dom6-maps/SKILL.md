@@ -229,3 +229,7 @@ MapNuke lists some borders once and some both ways; `maptool.py` counts unordere
   Jungle Temple 872 (Tamoachan), The Forgotten City 732 (Forbidden City), Abandoned Laboratory 692
   (In Search of the Unknown), Circle of Standing Stones 643 (Shattered Circle), Frost Vale 544
   (Glacial Rift), Castle Arcanum 640 (Castle Greyhawk).
+
+## Related skills
+dom6-ui, dom6-modding, map-usage, draw-map.
+Also (2026-11-03): dom6-map (reading a map in play).

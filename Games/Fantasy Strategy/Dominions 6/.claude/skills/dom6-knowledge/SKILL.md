@@ -49,3 +49,10 @@ the Acolyte), so splitting at blank columns (`icon_points`) misses some; use the
   the screen when possible.
 - Before reading or clicking through a screen, `kb.py search` it: the answer may be known.
 - Keep one topic per screen or subject; add pictures (`img/`) for icons, cropped from shots.
+
+## Standards (audit 2026-11-03)
+- **Modded games:** numbers here are vanilla - check the mod first (dom6-scbm for SCBM; mod-docs).
+
+## Related skills
+dom6-nations, dom6-wiki, dom6-mechanics, dom6-tooltips, generalize-learning.
+Also (2026-11-03): rules-skills, dom6-mechanics, order of truth (manual-first).

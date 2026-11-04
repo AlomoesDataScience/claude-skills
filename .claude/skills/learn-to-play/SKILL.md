@@ -192,17 +192,39 @@ notice them on the screenshot, fix them, and write the lesson down so it happens
 7. **One intentional action at a time**, look at the result, report it; repetition only over items
    already seen and chosen. The user leads the walkthrough; don't run ahead (no Create / End Turn on my own).
 
+## After the play guide: a mechanics family (rules-skills)
+Once a game is played regularly, turn its rules into one skill per mechanic a player decides about (combat,
+morale, economy, stealth...) with rules-skills: numbered plan, pages cited, numbers computed (dice-math,
+unit-combat-math), "rank everything" lists from the data (game-database), mods compared (mod-diff), and a
+`## Systems` section for borrow-from-games. Dominions 6 was the first (2026-11-03, ~45 skills).
+
 ## Order of truth (the user, 2026-11-02)
 1. **The game itself** is the holy grail - what it shows and does (tooltips, combat breakdowns,
    results) wins, even over the manual. If the game contradicts the manual, respect the game and
    note the difference.
 2. **The manual** - when gameplay hasn't shown it yet, check the manual (from the page, not memory).
-3. **Hypothesis** - if neither settles it, write it down as a hypothesis with how to test it, and
+   (Mod games: the mod's files come before the manual - mod-docs.)
+3. **Videos** (guides, let's plays - video-watch), then **the wiki**: The user 2026-11-03, "videos is above wiki".
+4. **What the user says** comes below all of these - but if he insists, **test it** in the game (the user,
+   2026-11-03: "what user says should be below all that, but test it if they insist").
+5. **Hypothesis** - if nothing settles it, write it down as a hypothesis with how to test it, and
    test it later. In single-player games, play on until it can be tested; record the result.
 Never present an assumption as a rule. Each game guide keeps a "Hypotheses to test" list AND a
 "Game vs manual" list: every place the game behaves differently from the manual (or the manual is
 silent and the game does something odd) - what the manual says, what the game did, when, evidence
 (screenshot/log). Watch for these actively during play, not only when something breaks.
+
+## War games: speak doctrine both ways (the user, 2026-11-02)
+For any game with fighting (wargame, 4X, grand strategy, tactics), as part of learning it:
+- Write the game's **`LEXICON.md`** in its guide folder (war-language skill, `warlang.py lexicon`):
+  units -> roles, terrain -> OAKOC, rules -> effects, victory -> end state, task -> game actions.
+  Fill it from the manual first, then from play.
+- From the first real battle, **log and evaluate both armies every turn** (army-log, `armylog.py`),
+  reading every unit off the screen; find out how the game counts losses and victory and set the log
+  to it.
+- Each turn: UP (situation in doctrine terms) -> THINK -> DOWN (orders) -> CHECK, using
+  military-doctrine / military-operations / soviet-doctrine / war-concepts / combat-models.
+- Every war game's guide has a "War skills" section saying which level of war and domain it is.
 
 ## Map games: write a `<game>-map` skill (the user, 2026-11-02)
 Every game with a map or board gets its own map skill before real play, next to its guide. The

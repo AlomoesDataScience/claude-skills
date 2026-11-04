@@ -11,6 +11,38 @@ now the enemy cannot simply plan around your advancing line without any problems
 about responding to your raiding party or any unit that is threatening first or losing units like
 their own screens."
 
+## The general definition (Wikipedia "Screening (tactical)", `Military Theory/wiki/Screening_(tactical).wiki`)
+Closer to the user's than US doctrine is. A screening force, smaller and more mobile than the main body
+and usually light (light infantry and light cavalry historically; armoured cars, light tanks, IFVs,
+drones, helicopters and electronic warfare today):
+- hides the main body's nature, strength and position;
+- gives early warning and reports on the enemy;
+- **detects and harasses the enemy's own screens and recon** (counter-screening);
+- **impedes and demoralises the enemy with harassing fire**, and delays their advance;
+- avoids becoming decisively engaged (not expected or wanted), and may rejoin the main body or keep
+  working the fringes of the enemy's lines and flanks.
+It is distinct from a **covering force**, which can fully engage for a time. Screens cover a wide
+frontage because their tasks are few; the "screen line" is the axis they secure, often on the flanks
+and rear rather than the front (citing FM 3-98, Reconnaissance and Security Operations - worth adding
+to the shelf). Screening applies in every domain: land, sea, air, space and cyberspace.
+
+## Our screen vs doctrine (military-doctrine skill, FM 3-90 ch. 13)
+The user's *screen* is the broad term on purpose: "this is US military doctrine, it is necessarily less
+broad, because they have more roles." Doctrine splits the same idea into narrower jobs. Use them
+to say WHICH kind of screen a unit is doing:
+- **Doctrine screen** - watch and warn; fights only in self-defense and kills enemy scouts. (FoG II:
+  a light unit out ahead whose job is just to see and not be surprised.)
+- **Guard** (advance / flank / rear) - strong enough to fix or turn back the enemy's lead elements and
+  buy time; fights. (FoG II: light horse threatening a flank so the enemy line must stop and answer.)
+- **Cover** - independent force far ahead making the enemy deploy early (big games only).
+- The *effects* the user wants are the tasks **fix** (they can't move away), **disrupt** (they react
+  early or piecemeal) and **demonstration / feint** (a show of force that misleads).
+- Doctrine adds two checks worth keeping: every screen has **engagement and disengagement criteria**
+  written down (when it fights, when it falls back), and a screen **stays between its main body and
+  the enemy, moving when the main body moves**.
+- A real threat is what makes it work: a unit that can't hurt them is neither a guard nor a useful
+  screen (FoG II battle 2, turn 5: lone light archers at long range vs armoured knights - dropped).
+
 ## What a screen does
 - **Forces a reaction.** It threatens something the enemy cares about: shooting into a flank,
   reaching their shooters or lights, raiding the rear. Ignoring it costs them, so they spend moves,
@@ -55,8 +87,11 @@ shooting. Don't turn the main line, and don't send strike units chasing lights t
   cohesion tests. Battle 2: the Light Javelin Horse (20 AP) screens the southern lane, the Light
   Archers the northern one. Ahead of the spear line they make the French knights choose between
   chasing them and holding.
+- **Dominions 6:** no live control, so a screen is a setup choice - chaff squads in front to soak the first
+  charge, fliers to interrupt enemy mages' scripts, and units 3+ sizes bigger can wade through screens to
+  the target (LucidTactics' video, untested; dom6-supercombatants). Scouts set to Retreat at the far rear.
 - Other games: write each game's screen units and escape rules in its guide.
 
 ## Related skills
-move-phases (screens move further in the extension pass), scouting (screens are often the scouts too), battle-tactics (the turn method; pin then flank),
+military-doctrine (screen / guard / cover, fix, disrupt - the doctrine underneath), move-phases (screens move further in the extension pass), scouting (screens are often the scouts too), battle-tactics (the turn method; pin then flank),
 draw-moves (draw where the screen goes), map-usage.

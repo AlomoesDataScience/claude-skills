@@ -20,6 +20,14 @@ it and use the time.
 5. **Denial (counter-scouting):** keep the enemy from learning the same about me. Kill or drive off
    their scouts, and hide in the terrain the game lets units hide in.
 
+## Doctrine underneath (military-doctrine skill, FM 3-90 ch. 12)
+Recon orients on the enemy and the ground; security orients on my own force. FM 3-90's seven
+recon fundamentals, as game rules: scout every turn, not just once; **never hold scouts back in
+reserve**; know what question this scouting answers; report it to the plan straight away (board,
+plan file); keep the scout able to get away; once contact is made, keep it; develop the situation
+fast. Forms: route (one path), zone (everything between boundaries), area (one spot), recon in
+force (attack to see how they react), recon by fire (shoot at where they might be).
+
 ## First question: what can be hidden in THIS game?
 Look it up (manual-first) and write it in the game's scouting skill or guide. Then decide:
 - **Nothing or almost nothing hidden:** no look phase. Read the board every turn instead (below).
@@ -56,7 +64,11 @@ Every game with a map keeps its scouting rules in its own skill or guide: what h
 see it (overlays, tooltips, LOS), which units scout, and what the turn clock allows.
 - FoG II Medieval: fog2m-scouting (game folder).
 - TOAW IV: fog of war is a real concern (the user). Learn its rules before the first battle.
+- Dominions 6: detection is an **opposed roll** - patrol strength + 2d25 vs stealth strength + 2d25, both
+  open-ended (commanders count double, unrest weakens patrols); independents never patrol; reports can be
+  wrong about numbers, rarely about unit types (dom6-stealth). Pattern for any game: find the detection
+  formula, compute the odds with dice-math, and park scouts where the odds are good.
 
 ## Related skills
-screening (the forward units that make the enemy react), battle-tactics, photo-map, map-usage,
+military-doctrine (recon fundamentals and forms), screening (the forward units that make the enemy react), battle-tactics, photo-map, map-usage,
 manual-first, learn-to-play.

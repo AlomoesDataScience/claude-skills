@@ -129,11 +129,13 @@ def main(a):
     print("photos:", " ".join(shots))
     if "--finish" in a:   # restore the human view (idle-view hard rule), e.g. --finish "click 1430 807"
         steps = a[a.index("--finish") + 1].split(";")
-        seq(*[x.strip() for x in steps if x.strip()], "move 170 75")
+        seq(*[x.strip() for x in steps if x.strip()], "move 1578 448")
         print("camera restored for a human:", steps)
     elif "--shots" not in a:
         print("WARNING: camera left at the map edge - restore the human view now (idle-view; FoG II: order.py present)")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):   # never drive a game just to see the usage
+        sys.exit(__doc__ + "\n(run with --go and no other options for all the defaults)")
+    main([x for x in sys.argv[1:] if x != "--go"])

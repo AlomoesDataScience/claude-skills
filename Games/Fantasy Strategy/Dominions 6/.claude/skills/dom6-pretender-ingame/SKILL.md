@@ -109,3 +109,11 @@ a scale), change just that part in the game instead of cancelling and rebuilding
 2026-10-27). build_god.py has no edit mode yet: `add_blesses()` only adds. **A taken bless is
 removed by clicking it in the bless panel on the design screen** (user, 2026-10-27). Next: add an
 `--edit` option that skips the nation and form steps and removes/adds only what changed.
+
+## Standards (audit 2026-11-03)
+- **Screen:** coordinates here were measured on the 1920x1044 desktop. On Claude's 1912x1000 virtual screen (dom6bg.py / bgplay) find positions by OCR or re-measure - never reuse a stale coordinate (memory: apply tools universally).
+- **Where it runs:** prefer Claude's virtual screen (dom6-ui bgplay, dom6bg.py); lock while working, hand back after (hand-back).
+
+## Related skills
+dom6-pretender, dom6-ui, dom6-tooltips.
+Also (2026-11-03): dom6-pretender, dom6-ui.

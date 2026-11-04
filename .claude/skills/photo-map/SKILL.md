@@ -66,5 +66,17 @@ Before any photo is used, know what each part of the screen is (game-setup skill
 - Learned on Field of Glory II Medieval (fog2m-guide). Related: game-setup, game-ui (bgplay),
   memory grid-geometry-play.
 
+## Apply the tools universally (the user, 2026-11-03, Dominions: "You missed a metric ton of provinces because you
+## decided to arbitrarily set the zoom. We have tools for this now, man.")
+- Before any sweep or board, name the tool for each step and use it: whole map first, atlas + resnap to know where
+  every shot sits, the game's OWN menus for ownership and visibility (Dominions F1, map filters), click points
+  from a FRESH shot (snap), every read verified (panel title / number). Never a hand-picked zoom, never
+  coordinates from an older screenshot. A tool that doesn't fit gets fixed, not bypassed.
+- Readable beats small: work at a zoom where names and flags read, and move the camera (lookat) instead of
+  zooming far out (the user: "it's hard to see when everything is small").
+- **Wraparound maps** (Dominions): no edge to anchor on. Measure the period (autocorrelation of a zoomed-out
+  shot), keep ONE period as the world picture, tile it 3x3 as the resnap atlas, and do all world positions
+  modulo the period (shortest way round when panning).
+
 ## Related skills
 map-camera (calibrated steps), map-usage (turning photos into a board), battle-tactics, game-ui, planning

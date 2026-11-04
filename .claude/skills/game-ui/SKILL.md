@@ -85,7 +85,10 @@ bgplay.py stop
 
 ## Waiting, held keys, hovering (bgplay seq steps and hoversheet.py)
 
-- `mark` then `waitchange [N]`: whole-screen change against the mark, then settle (loads, turns).
+- **`waitchange --until "TEXT" [--box X0 Y0 X1 Y1]`: READY when the target screen's text shows** (checked at once,
+  so a screen already up counts) - use this for loads and turns. `mark` then `waitchange [N]` (change, then
+  settle) is a fallback only: animated screens fool it (2026-11-03, `.claude/plans/fix-loading-checks.md`).
+  Never pipe a wait through `tail`.
 - `hold KEY MS`: a key held down (3D camera keys act only while held). `scroll up|down N [X Y]`.
 - `hoversheet.py --bg X,Y X,Y ...`: hover each point, find the tooltip by difference, OCR it, one
   contact sheet. Setup, GPU and UI parsing method: the **game-setup** skill.
@@ -143,10 +146,59 @@ See `learn-to-play` for the method. Per game, record in its own skill (in the ga
 the genre folder): window class, window size, screen map with click points and hotkeys, which keys
 are dangerous (end turn, quit, delete), and a template/glossary of what is on each screen.
 
+## Interface lessons from Field of Glory II (battle 2, 2026-11-02/03) - apply in every game
+- **Hover before acting.** Many games only arm an order after the pointer rests on the target (FoG II: ~1.3 s;
+  the icon under the pointer - lance, red X, Move N/M - is the game's own forecast). Read that tooltip first.
+- **Forecast click and commit click are separate steps.** When a game shows odds/costs on a first click and
+  commits on the second, NEVER put both in one script: forecast -> report -> wait for the go -> commit
+  (commit only when certain; a late "don't" can't stop a running script).
+- **Don't move the camera or re-calibrate between linked clicks** (a re-snap between FoG's two charge clicks
+  cancelled the order). Calibrate once, then click.
+- **Read the game's own highlights** (reach area, valid squares, buttons that appear on a square) instead of
+  computing reach yourself; buttons can stack (FoG: Move on top, Turn one square lower) or open sideways near
+  screen edges.
+- **Verify every action on the screen** (AP left, unit card, a fresh shot); an unexpected number is a problem
+  to explain before the next order.
+- **Popups: find their real bounds** (beige/frame rows) and the button from those; a loop must stop when the
+  screen stops changing - never click a fixed point repeatedly (FoG: one combat report re-read 84 times).
+- **Know the undo and cancel keys before you need them** (FoG: right-click own square -> Undo Move, only the
+  last move; Space cancels a pending order; **Esc opens the game menu, not cancel**).
+- **Leave the screen readable for the user**: camera on the action, mouse parked on a neutral panel (idle-view).
+
+## Sharing the virtual screen with the user (Dominions, 2026-11-03)
+- Size it to fit HIS desktop with the window frame (1920x1080 desktop: 1912x1000 fits); move it to the top-left.
+- `start --cursor` draws the pointer; games with their own cursor may need their soft-mouse option (Dominions
+  `--softmouse`). `start --unlocked` / `unlock` when he must click or log in; `lock` while Claude works.
+- **No screenshots while he types a password** - wait for his word. Don't restart it while he is in it.
+- Long jobs (replays, many steps) belong on the virtual screen: the desktop guard stops the moment he
+  switches windows (a Dominions replay record died that way).
+
+## Fast screen sweeps (Dominions province sweep, 2026-11-03: The user "Is there any way you can make this faster?")
+- Don't start a driver process and an OCR per item. Build ONE `bgplay.py seq` per view with every
+  click/wait/`shot --full` step, then OCR the saved shots afterwards in a thread pool (Tesseract is a
+  subprocess; threads are fine), off the game. Verify each read (expected id in the text); wrong or unread
+  items get a second pass with a longer wait. Province sweep: ~12 min -> a few minutes.
+- Slow searches (resnap zoom range) narrow after the first good match; widen again only when a match fails.
+
+## Detect changes before reading them (Dominions replay, 2026-11-03)
+A slow reader in a capture loop loses what it is meant to capture: OCR of the round counter took 0.75 s per
+grab, so rounds and log lines scrolled past unseen. When only "did it change?" matters, compare a cheap
+signature (a thresholded mask of the text's pixels, hashed) and count changes; confirm a change on two grabs;
+read the actual value now and then in a background thread to correct the count. Slow checks (is the battle
+over?) run on a timer, not every loop.
+
+## Which button does what - check the game, not memory (Dominions, 2026-11-03)
+I planned province reads with left-clicks; in Dominions a left-click on the map MOVES the selected commander and
+a right-click views the province (the user: "I believe it's right click, go check"). Before any click in a game
+that isn't mine (an MP game, the user's save), re-read the game skill's click rules and its "looking without
+changing anything" list, and prefer the read-only button. Write the answer into the game skill.
+
 ## Related skills
 game-setup (getting a game running), map-camera and photo-map (camera and photos on bgplay), learn-to-play, stream-panel, obs-record
 
 ## Whose turn is it? (turnwait.py)
+**Unreliable (the user, 2026-11-03: it "works funky" in FoG II; not yet diagnosed).** Don't trust it alone: confirm
+the turn by reading the screen (a named OCR region / the game's own turn text). To do: find out why.
 Turn-based games: never guess from timing alone. Find the on-screen sign of "my turn" (an End Turn
 button that is replaced by an enemy-turn banner, a turn counter, a side colour) by photographing the
 screen every ~1.5 s through one whole enemy turn after End Turn - then cut a reference of it.
@@ -158,3 +210,8 @@ screen every ~1.5 s through one whole enemy turn after End Turn - then cut a ref
   outside the game window: the game keeps the last hover position.
 FoG II: box 1385 30 1590 115, mask 1435 42 1540 92, ref in the game folder ui/turn_mine.png.
 
+## Python libraries on this PC (2026-11-02, system packages - visible to `python3 -I`)
+numpy, Pillow, scipy 1.11, OpenCV 4.6 (`cv2`: template/feature matching, resizing, blob and line
+finding - used by map-measure resnap.py), scikit-image 0.22 (`skimage`: registration, peak/blob
+detection, measuring - for later unit-figure counting). Write scripts so they still run without the
+optional ones (try/except import, numpy fallback).

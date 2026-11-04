@@ -65,3 +65,13 @@ politics 32-38, election of Regent/Emperor 39, ending and winning 40.
    user's go, mapping each screen with game-ui.
 2. Write down the hotkeys (the Orders pulldown lists them) and the unit types.
 3. Diplomacy chapter in detail: how votes and proposals work is the core of winning.
+
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **strategic (4X)**; domain: **space+land**. Vocabulary: military-operations (strategic/operational levels, principles of war) + war-concepts' strategy section (total/limited war, escalation, war economy, war termination); soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: The user's land salvo system and Lanchester (concentrate; make fights square when stronger, linear when weaker). combat-models: the salvo model plus the user's space-warfare essay (military-theory shelf) - tracking, point defence, low staying power, who launches first; war-concepts: space weapon, kill chain, A2/AD.

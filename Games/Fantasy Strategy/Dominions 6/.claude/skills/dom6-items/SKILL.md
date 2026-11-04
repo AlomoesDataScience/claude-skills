@@ -54,3 +54,10 @@ minutes.
 - Cursed items can't be taken off; the tables mark them.
 - Not in the batteries: the Sky Metal Matrix, Ring of Returning, quickness, and other effects
   without a combat number. Judge them by hand.
+
+## Standards (audit 2026-11-03)
+- **Modded games:** numbers here are vanilla - check the mod first (dom6-scbm for SCBM; mod-docs).
+
+## Related skills
+dom6-inspector, dom6-spells, dom6-tactics (thugs.md), dom6-army-check.
+Also (2026-11-03): dom6-forging, dom6-supercombatants, dom6-thugs, game-database.

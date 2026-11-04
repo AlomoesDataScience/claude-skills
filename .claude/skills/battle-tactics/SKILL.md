@@ -10,7 +10,7 @@ ignored terrain (knights into marsh), never asked what the enemy could reach, en
 **Living file - add every lesson the user gives and every battle's result.**
 
 ## The turn method (the user) - every turn, no exceptions
-0. **Look** - photo-map skill: identify the screen elements, photograph the whole field, build the map.
+0. **Look** - photo-map skill, then **army-log** (read and log both armies, evaluate) and **war-language** (UP: the picture in doctrine terms): identify the screen elements, photograph the whole field, build the map.
    No tooltips-for-everything, no Tab, no auto-scripts. Play with intention: being wrong is fine,
    phoning it in is not.
 1. **Picture** of the battlefield: terrain, both armies, facings.
@@ -26,6 +26,15 @@ ignored terrain (knights into marsh), never asked what the enemy could reach, en
    unused only on purpose (e.g. the reserve stays back).
 6. Execute **in phases** (move-phases skill: main body, extension pass, final check; a problem check
    after each phase), one order at a time, photo after each. **Never press End Turn** - that is the user's.
+
+## Say the plan in doctrine (military-doctrine skill - load it with this one; the user 2026-11-02)
+Before drawing moves, write in the plan file: the **type of operation** (attack, defense, movement
+to contact...), the **form of maneuver** (frontal attack, penetration, envelopment...) with its
+**fixing force / main effort / supporting efforts / security / reserve**, one **tactical mission
+task with a purpose** per unit (fix, support by fire, attack by fire, guard, block...), **phase lines**
+in map terms ("col 17 by turn 6"), the **objective**, and the **reserve's commit trigger**. Check
+offense against audacity, concentration, surprise, tempo; defense against disruption, flexibility,
+maneuver, mass, depth, preparation, security; and plan the switch to defense before culmination.
 
 ## Making the plan (before contact; FoG II ch. 30, my words)
 Any plan beats no plan; changing it later is hard. Answer:
@@ -66,6 +75,10 @@ Main line (holds/attacks frontally) - Strike (heavy cavalry/shock: hits flanks o
 Shooters (stand still, concentrate on one target) - Screen (lights in front: delay, harass, evade) -
 Flank guard (stops outflanking; spears vs horse) - Reserve (behind the line: plug holes, exploit) -
 Bait (draws the AI out where Strike can hit it) - Refused wing (delays, doesn't commit).
+Doctrine names for the same jobs (military-doctrine): main line = fixing force (fix) or support
+force; strike = enveloping force / main effort; shooters = attack by fire or support by fire;
+screen = the user's screen, i.e. doctrine screen or guard; flank guard = flank guard (guard or block);
+reserve = reserve; bait = feint / demonstration; refused wing = economy of force (delay).
 
 ## Field of Glory II specifics
 Rules that shape tactics are in the fog2m-guide skill ("Movement and charge rules"). In short: foot
@@ -81,11 +94,67 @@ they charged.
 Dominions battles run from the setup (formations, positions, orders) - no live control - so the plan
 is everything there; FoG lets me adjust every turn but the same principles hold: screen, concentrate,
 protect the flanks and the commanders, break morale. Dominions tactics notes: dom6-tactics skill.
+Lessons from the Dominions mechanics work (2026-11-03) that hold in any game:
+- **Measure a buff or a matchup in rounds-to-kill** both ways before spending on it (unit-combat-math):
+  Barkskin turned Sidhe vs White Centaurs from losing to even.
+- **Every strong unit has a hard counter** (armour vs armour-piercing, dodge vs many attacks, HP vs burst,
+  everything vs spells): send mixes that answer what's likely there, and carry a countermeasure against the
+  enemy's likely trick (dom6-supercombatants).
+- **Scripted casters**: an AI left to choose picks the nearest target and avoids some spells entirely -
+  script what matters, within the fatigue budget (dom6-battle-ai).
 
 ## Lessons log
 - 2026-11-02 FoG II battle 1 (Anglo-Irish vs Irish, attacking): no plan at contact; units pushed by
   script; knights walked into marsh and were charged by skirmishers there; turns ended without the user.
   Lessons: the turn method above; terrain before movement; enemy reach before every move; roles.
+
+- 2026-11-02 FoG II battle 2, turn 7: knights parked straight behind the shooters had no lane - one was boxed
+  in when the moment came. Keep a lane for the strike force (passage of lines); check it when placing reserves.
+- Same turn (the user: "You can turn the knights to face other directions, check the manual"): I read
+  "unmanoeuvrable" as "can't turn" although PLAY.md had the turn costs. Facing is an order: spend leftover AP
+  to face next turn's targets; when a unit seems stuck, check the manual's turn costs before giving up.
+- Same turn (the user): the white squares around a selected unit are its reach - read them before planning a move;
+  and moving the line opens gaps the knights can pass through - sequence line first, strike force second.
+- 2026-11-03 FoG II battle 2 turn 8 (with the user, move by move): shooting, lane, knights' charge on
+  Crossbowmen 8 (Disrupted, 15 v 3 casualties), second knights faced at the enemy knights, pin on the
+  forward spear, bait screen on the heavy cavalry. Mistakes: moved Knights 0 to (18,14) when the user wanted it
+  threatening the spears (undone); placed the bait first without checking its facing (undone, re-placed
+  with Turn and Shoot). Lesson: plan the whole turn with the user BEFORE committing; positions carry facing.
+- Same turn (the user: "there's cavalry behind them"): before any charge, look past the target - where does a
+  winning charge's pursuit end, and what enemy is waiting there? Keep a second strike unit back to counter.
+
+## Recipe: break a line (the user, FoG II battle 2 turn 8 - "you can break their entire line")
+Hammer and anvil, slightly modified: the line is the anvil and SUPPORTS the cavalry; knights are the hammer.
+1. **Shoot first** at the units to be hit (concentrate: shaken targets lose more to charges).
+2. **Clear lanes**: move ONE infantry unit ONE square, then the knights, then the rest (the user's order).
+3. **Hammer where it is soft**: charge the shooters/light foot (knights v crossbows: Win 86%), not the
+   spears head-on. Keep the second knights back, facing the enemy knights, so the hammer isn't flanked.
+4. **Pin** the spear unit that pushed forward with ONE of ours (it loses its ZOC), which frees our others.
+5. **Envelop the pinned unit**: a unit moves behind its flank (facing the threat), turns next turn,
+   charges the turn after - a flank charge on an engaged unit drops its cohesion at once.
+6. **Screen the enemy heavy cavalry while this happens**: bait (mounted shooters) 2 squares IN ITS PATH,
+   FACING it (front ZOC blocks the path of NORMAL moves only - pursuers ignore ZOC; if charged, the bait
+   evades and the pursuit wastes the knights' move - plot where the pursuit ends: leftover AP + 4);
+   light foot further back, out of its one-turn reach, facing it to shoot stationary next turn.
+   Before placing bait or a blocker, CHECK WHAT HAPPENS WHEN IT IS CHARGED (facing, evade, pursuit, who
+   the pursuit can switch to). "The moment the heavy cav cannot hit [our unit] in one turn, you must go."
+7. Read the game's forecasts (shooting, charge chances) for every option before committing; frontal
+   spear-on-spear is ~73% draw - don't.
+
+## Matchups: area and trample attackers eat crowds (Dominions, Troban vs a Ghost Moose, 2026-11-03)
+I called trample "minor"; it killed the user's army (the user: "trampled killed my army"). One trample hits every small
+unit it rolls over, so cheap massed infantry feeds it. Against tramplers, area spells, breath, sweeps: fight
+with FEW strong units (a tank, missiles from behind, elite single units) and keep the crowd away or spread;
+against single big targets, concentrate missiles and armour-negating/magic damage. Read the enemy's special
+abilities (manual/inspector/mod file) before choosing what to send - not after the battle.
+
+## Don't commit (the user, 2026-11-03)
+**Only commit when absolutely certain of the decision - "You're too hasty."** Slow down before every
+irreversible order: plan agreed, numbers checked, failure case known, go given for this order.
+Any order that can't be undone (charge, shot, End Turn, often moves) waits for an explicit go when the user is
+planning the turn with me. Forecast, report, stop - commit as a separate step. A foot charge can't pin
+mounted troops: unengaged horse charged by foot can break off after impact (FoG II 11.13.5 - "Enemy unit
+Falls Back", turn 9). Plot where every evade and pursuit ends; ZOC doesn't stop them.
 
 ## Load the game's guide first (the user, 2026-11-02: "I kinda thought you read the manual")
 - At the start of every session with a game and before every battle/turn sequence, load that game's
@@ -106,4 +175,4 @@ Per game, write down what fog of war hides (in its guide) - it differs a lot:
   first (manual-first) before planning.
 
 ## Related skills
-move-phases (give movement in phases, check each, mandatory extension pass), scouting (what to know before committing), screening (forward units that force reactions), map-usage (read the board), photo-map + map-camera (see it), draw-moves (draw movement proposals: one picture or turn by turn), draw-map, planning (save the battle plan), learn-to-play (learn the game first), manual-first (rules before acting), generalize-learning (lessons log -> generic)
+delegate (acting alone on the user's behalf: self-review checklist and certainty test), military-doctrine (FM 3-90 vocabulary and methods - the base this skill builds on), military-operations (FM 3-0: end state, defeat mechanisms, principles of war - check the whole plan), soviet-doctrine (echelons, wedge formations, encirclement), war-concepts (glossary and lookup of war terms: oblique order, enfilade, feigned retreat, ZOC...), combat-models (Lanchester: concentrate, make fights square when stronger and linear when weaker; combat.py), military-theory (strategy classics, in Military Theory/), move-phases (give movement in phases, check each, mandatory extension pass), scouting (what to know before committing), screening (forward units that force reactions), map-usage (read the board), photo-map + map-camera (see it), draw-moves (draw movement proposals: one picture or turn by turn), draw-map, planning (save the battle plan), learn-to-play (learn the game first), manual-first (rules before acting), generalize-learning (lessons log -> generic)

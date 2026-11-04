@@ -51,3 +51,13 @@ design notes 24; extended example 25; exceptions and special rules 31; set-up li
 1. Read 9.0 (strategy cards) and 12.0 (combat) in full and summarise them here; play the
    introductory scenario with the user, or on Vassal.
 2. Keep a list of the key events (Guns of August, Entrench, Russian revolution chain, US entry).
+
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **strategic (card-driven)**; domain: **land**. Vocabulary: military-operations (strategic/operational levels, principles of war) + war-concepts' strategy section (total/limited war, escalation, war economy, war termination); soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: The user's land salvo system and Lanchester (concentrate; make fights square when stronger, linear when weaker).

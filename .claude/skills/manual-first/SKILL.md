@@ -28,8 +28,11 @@ files for terrain rules instead of reading the manual's terrain chapter.
 
 ## Order of truth
 1. The game: what it shows and does.
-2. The manual.
-3. A hypothesis, tested later. In single-player games, play on until it can be tested.
+2. The mod's files (modded games, mod-docs).
+3. The manual.
+4. Videos, then the wiki (the user 2026-11-03: "videos is above wiki").
+5. What the user says - below all the sources, but if he insists, test it in the game.
+6. A hypothesis, tested later. In single-player games, play on until it can be tested.
 
 ## lookup.py
 - `lookup.py TERM [TERM2 ...] [--game DIR] [-C 2]`
@@ -41,4 +44,4 @@ files for terrain rules instead of reading the manual's terrain chapter.
 - `lookup.py --list [--game DIR]`: the manuals found, and whether each has text.
 
 ## Related skills
-save-scum (DARK ARTS, learning only: save before a test, reload after; never in real games), game-sources (manual.py), learn-to-play and learn-to-mod (where it's used), wiki-scout (when the manual is missing), generalize-learning
+mod-docs (modded games: the mod's files come before the vanilla manual), save-scum (DARK ARTS, learning only: save before a test, reload after; never in real games), game-sources (manual.py), learn-to-play and learn-to-mod (where it's used), wiki-scout (when the manual is missing), generalize-learning

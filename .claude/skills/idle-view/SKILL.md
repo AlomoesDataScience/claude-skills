@@ -52,8 +52,10 @@ Start with a fresh photo of the current view. The game or the user may have chan
 
 ## Per-game parking spots
 - **FoG II Medieval (bgplay 1600×990, game 1600×900):**
-  - Battle and deployment: **(170, 75), on the "Custom Battle" score banner.** It's fixed UI, shows no
-    tooltip and is far from End Turn (tested 2026-11-02).
+  - Battle and deployment: **(1578, 448), the Tools triangle on the right edge.** It's fixed UI and
+    shows only a tiny "Tools" label (tested turn 3, 2026-11-02). NOT the score banner (170,75): the
+    map's terrain tooltip comes through it whenever woods etc. lie under it. NOT the eye button
+    (it shows "Toggle Top View").
     NOT outside the game picture (y 950 or y 12): the game keeps the last hover position, and its
     tooltip stays up. NOT off-map black areas: the camera pans (the AI turn and moving units both move
     it), so the map can end up under the mouse.

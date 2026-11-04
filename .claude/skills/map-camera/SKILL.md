@@ -43,7 +43,17 @@ before/after, matches, prints px moved. Pans are NOT linear (an initial jump, th
 hold times. Choose the photo step so the map moves at most ~60% of the band height (overlap).
 After any view switch or zoom change, re-calibrate - speed depends on zoom.
 
+**Check that a key works by tapping AND holding, and calibrate at the height you work at** (Dominions replay,
+2026-11-03): its camera keys did nothing when tapped (PageUp "x12" in the tool had never worked) and only
+moved while held; pan speed was 103 px/100 ms low and ~40 at the top height, and not linear in hold time.
+So: test tap vs hold once per game, re-measure the pan at the working height, and where speed varies, steer
+by re-measuring after each move (move, look, correct) instead of summing hold times.
+
 ## 5. Move with intention
+- **Show the location you want, don't steer by key presses (the user, 2026-11-02).** Put the spot on
+  screen with a jump (minimap click, unit list, centre-on-unit key), then find the grid by matching
+  the photo against an older one (map-measure resnap.py). Counted pan-key holds drift run to run
+  (FoG II: x0 569-714 for the same holds) and pushed the camera into corners; keep them for photo strips.
 - Jump: click the minimap at the spot, or select a unit (unit list) to centre on it.
 - Pan: hold the key for the calibrated time for the distance wanted.
 - After every move wait ~1.2-1.5 s before a photo - a camera mid-transition gives odd views

@@ -36,3 +36,13 @@ Man Who Would Be King (political randomness, alliances, budgets, winning) and Co
 
 Claude can run a campaign world (finances, politics, random events) and set up battles from
 it, or act as the opponent's command in solo play. Models stay on the user's table.
+
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **tactical (sci-fi miniatures)**; domain: **land**. Vocabulary: military-doctrine (FM 3-90 tactics) first; soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: The user's land salvo system and Lanchester (concentrate; make fights square when stronger, linear when weaker).

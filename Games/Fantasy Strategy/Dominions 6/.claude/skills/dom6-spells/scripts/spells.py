@@ -18,6 +18,8 @@
   python3 -I spells.py rank [--melee-unit 685] [--missile-units 684,32]
       the standard battery: each buff and debuff against the enemies met so far (markdown tables)
 
+Any command: --data DIR uses a modded game's inspector data (SCBM: ../../dom6-scbm/data/inspector).
+
 BUFFS is a comma list: att+N def+N str+N prec+N nat+N (natural protection, like Barkskin 7,
 Stoneskin 10, Ironskin 13), armor+N (worn armour, Temper Armors 3), ap (Weapons of Sharpness),
 ethereal, mistform, luck, twistfate, blur, displace, airshield (80% of missiles stopped),
@@ -882,6 +884,10 @@ def cmd_summons(a):
 
 def main():
     random.seed(6)
+    if "--data" in sys.argv:                       # a modded game (dom6-modinspector output), e.g. dom6-scbm/data/inspector
+        i = sys.argv.index("--data")
+        inspector.DATA = os.path.abspath(sys.argv[i + 1])
+        del sys.argv[i:i + 2]
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
     l = sub.add_parser("list")

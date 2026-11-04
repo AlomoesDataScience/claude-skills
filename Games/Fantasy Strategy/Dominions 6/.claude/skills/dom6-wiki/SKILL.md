@@ -100,3 +100,10 @@ Run Python with `python3 -I` (system Python with PIL only; no pip).
 - **Tabboxes** (`<tabbox ...>`) are kept as tags in the text; pipe through
   `sed 's/<\/\?tabbox[^>]*>//g'` to strip them.
 - Python's broken pipe on `| head` is harmless.
+
+## Standards (audit 2026-11-03)
+- **Modded games:** numbers here are vanilla - check the mod first (dom6-scbm for SCBM; mod-docs).
+
+## Related skills
+dom6-mechanics, dom6-inspector, wiki-scout.
+Also (2026-11-03): video-watch, wiki-scout, rules-skills (order of truth: manual > videos > wiki).

@@ -38,3 +38,14 @@ terms, notes, summaries.
 OCS is the model for semi-abstract logistics that still matter (the user: "you do have to manage
 supply chains somewhat"): physical supply that must be moved and spent, reach limited by HQs and
 extenders, attrition when cut off, and quality (action rating) mattering as much as strength.
+
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **operational (hex, supply-heavy)**; domain: **land+air**. Vocabulary: military-operations (FM 3-0) + military-doctrine; soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: The user's land salvo system and Lanchester (concentrate; make fights square when stronger, linear when weaker). air: sorties as salvos, interception, air supremacy/interdiction/close air support (war-concepts).
+- Logistics and operational reach (military-operations) decide OCS.

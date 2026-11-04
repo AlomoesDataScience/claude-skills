@@ -40,3 +40,13 @@ appendices 133-145.
   armour/speed/firepower: a model for "Component Design".
 - "Influence, not decide, foreign policy" is the user's subfaction idea (play an entity inside a
   state with limited power); interfering ministers are characters with their own agendas.
+
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **tactical (fleet battles) + strategic (navy building)**; domain: **naval**. Vocabulary: military-doctrine (FM 3-90 tactics) first; military-operations (strategic/operational levels, principles of war) + war-concepts' strategy section (total/limited war, escalation, war economy, war termination); soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: Hughes' salvo model fits naval combat directly - scouting decides who fires first; war-concepts: fleet in being, sea denial, line of battle, wolfpack.

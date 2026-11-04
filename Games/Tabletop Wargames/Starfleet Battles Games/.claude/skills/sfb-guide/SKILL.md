@@ -43,3 +43,13 @@ and annexes (annex 2 is the detailed sequence).
 1. Play the cadet's game (A4) with the user: two ships, the basic rules, Claude doing the
    energy allocation sheet and damage tracking.
 2. Learn one race's main weapon each (phasers, photon torpedoes, disruptors, plasma, drones).
+
+## War skills (the user 2026-11-02: call the military skills when playing; build on them)
+- Level of war: **tactical (ship duels)**; domain: **space**. Vocabulary: military-doctrine (FM 3-90 tactics) first; soviet-doctrine for the
+  opposing school; war-concepts (glossary, `warwiki.py look TERM`).
+- Every turn / battle: **war-language** (UP: the situation in doctrine terms -> THINK: intent,
+  form of manoeuvre, a task and purpose per unit -> DOWN: concrete orders -> CHECK) and **army-log**
+  (read, log and evaluate both sides; `armylog.py`). Before the first real game write
+  **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
+  rules -> effects, victory -> end state, task -> game actions.
+- combat-models: the salvo model plus the user's space-warfare essay (military-theory shelf) - tracking, point defence, low staying power, who launches first; war-concepts: space weapon, kill chain, A2/AD.

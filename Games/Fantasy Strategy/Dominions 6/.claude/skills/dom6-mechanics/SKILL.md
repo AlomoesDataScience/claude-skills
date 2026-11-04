@@ -36,6 +36,7 @@ beyond it, look it up (below) instead of guessing, and say when something is not
   MR / MR- resisted / easily resisted, BE battlefield enchantment, NUW not underwater.
 
 ## Dice
+Details: dom6-drn.
 
 - DRN = 2d6, open-ended: a 6 counts 5 and that die is rolled again (and again). A lower-case drn
   is one open-ended die. "Check against 12" means value + DRN vs 12 + DRN.
@@ -44,6 +45,7 @@ beyond it, look it up (below) instead of guessing, and say when something is not
   Equal values lose more often than they win (46%).
 
 ## Melee (pages 58-64)
+Details: dom6-combat-math, dom6-weapons, dom6-armor, dom6-mounts, dom6-abilities.
 
 - Hit: Attack + DRN − fatigue penalty > Defence + DRN − fatigue penalty.
 - Shield: if the attack beats Defence but not Defence + shield Parry (+ the same roll), it is a
@@ -73,6 +75,7 @@ beyond it, look it up (below) instead of guessing, and say when something is not
   hp), damage redistribution, deal damage.
 
 ## Missiles and spells that use precision (pages 65, 75-76)
+Details: dom6-ranged-math, dom6-evocations.
 
 - Missiles land in a square: past range > Precision/2 − 2 they deviate by range × 1.25 /
   Precision. Precision above 10 counts double. Any unit in the square can be hit, friend or foe;
@@ -84,6 +87,7 @@ beyond it, look it up (below) instead of guessing, and say when something is not
   range.
 
 ## Damage types (pages 66-68)
+Details: dom6-battlefield (clouds, false/fatigue damage), dom6-abilities.
 
 - Resistance works like protection, and then the remaining damage is cut by 2 × resistance %
   (resistance 15: −15 then −30%; 50 means immune). Against fatigue damage elemental resistance
@@ -105,6 +109,7 @@ beyond it, look it up (below) instead of guessing, and say when something is not
   sulphur, rust, death, shimmering, leeching, sleep. Monster auras make level 1 clouds (max 2).
 
 ## Fatigue, morale, rout (pages 62, 69-71)
+Details: dom6-fatigue, dom6-morale, dom6-battle-ai.
 
 - Each attack adds fatigue = encumbrance. Defence −1 per 10 fatigue, attack −1 per 20.
   Unconscious at 100 (recovers 5 per round).
@@ -129,6 +134,7 @@ beyond it, look it up (below) instead of guessing, and say when something is not
   170 defenders rout, 200 everyone left dies.
 
 ## Afflictions, XP, age (pages 38-41, 71)
+Details: dom6-healing, dom6-abilities.
 
 - Affliction chance = % of max hp lost in the hit; major chance = that / 1.5 (max 33%). Head: eye
   loss, mute / dementia, feeblemind, blind. Chest: chest wound / disease, never-healing wound.
@@ -139,6 +145,7 @@ beyond it, look it up (below) instead of guessing, and say when something is not
   −5% per Fire level.
 
 ## Magic (pages 73-81)
+Details: dom6-magic-resistance, dom6-magic-duel, dom6-gem-casting, dom6-communions, dom6-research, dom6-site-search, dom6-forging, dom6-summoning, dom6-rituals, dom6-buffs, dom6-blood, dom6-holy, dom6-spell-db.
 
 - Cast needs the school researched to the spell's level, the path levels and the gems. Dual-path
   spells use gems of the first path. Fatigue for a battle spell × 1/(1 + levels above the
@@ -174,6 +181,7 @@ beyond it, look it up (below) instead of guessing, and say when something is not
 - Site search: the mage needs the site's level in its path (sites are level 1-4).
 
 ## Dominion and pretenders (pages 30-37, 82-88)
+Details: dom6-dominion, dom6-holy, dom6-pretender.
 
 The dom6-pretender skill's `pretender.py` applies these costs to every chassis of a nation.
 
@@ -208,6 +216,7 @@ The dom6-pretender skill's `pretender.py` applies these costs to every chassis o
   (Drain the reverse). Extreme (4+) scales have side effects (page 86) and spread to neighbours.
 
 ## Economy (pages 22-29, 42)
+Details: dom6-economy, dom6-sieges, dom6-blood-hunting.
 
 - Income = population/100 × scale modifiers × (1 + fort admin/200), ÷ (1 + 0.02 × unrest). No
   income without a friendly-province link to a friendly fort.
@@ -235,6 +244,7 @@ The dom6-pretender skill's `pretender.py` applies these costs to every chassis o
 - Unrest: max 500 or pop/10. Patrol removes unrest (−10 population per point removed).
 
 ## Movement, stealth, special orders (pages 47-55)
+Details: dom6-stealth, dom6-sieges, dom6-blood-hunting.
 
 - Half-step costs (leave + enter): plains 3, forest 5, waste 5, highlands 6, swamp 7, sea 5,
   cave 4, cave forest 6, crystal cave 6, drip cave 7; +4 enemy province (+3 if stealthy), +1 snow,
@@ -265,3 +275,37 @@ events → item effects → sneak discovery → building → special orders → 
 starvation → upkeep → dominion spread → dominion effects → site effects → aging (midwinter) →
 healing → mercenaries → heroes → PD conscription → scouting → elimination → victory. So recruits
 fight the turn they arrive, and income comes after pillage.
+
+## Systems
+(borrow-from-games taxonomy; parts bin for our 4X, Heresiarch and others - 2026-11-03)
+- **Time**: simultaneous orders, one turn = one month; a fixed 45-step resolution order decides who acts
+  first (research 2, rituals 10, movement 24-25, battles 26, income 38) - order matters as much as the rules
+  (manual pp.55-56; dom6-mechanics "Turn order").
+- **Economy**: income = population/100 x scale modifiers x fort admin, divided by unrest; resources collected
+  by forts from neighbours; recruitment points by population band; upkeep gold/15 - a chain of formulas, each
+  with a lever (dom6-economy). Blood slaves: a risk economy (three chained checks, unrest as the price;
+  dom6-blood-hunting).
+- **Research**: magic schools x levels; research points from mages' path levels; legendary level 9 picked one
+  at a time (dom6-research).
+- **Population / Politics**: dominion = belief as a second territory layer on top of military control,
+  spreading by checks from temples, prophet and god; scales (order, growth, magic...) tip provinces towards
+  the god's choice; losing all dominion = elimination (dom6-dominion). A strong "belief map" system.
+- **Production**: magic items forged by path and construction level, gem costs; summons as production in a
+  different currency (dom6-forging, dom6-summoning).
+- **Tactical combat**: autobattle from a setup (formations, positions, scripts of 5 orders + a general order)
+  with no live control; opposed open-ended 2d6 for everything; harassment makes crowds win; morale per squad
+  and army-wide rout at 75% losses; round limits (100 twilight, 150/170 routs, 200 death) (dom6-battle-ai,
+  dom6-morale, unit-combat-math, dice-math).
+- **Intelligence**: stealth strength vs patrol strength + 2d25 open-ended, both sides; scouts' reports can be
+  wrong about numbers; PD 15+ patrols on its own (dom6-stealth).
+- **Logistics**: supply from population and fort admin x 6 / (distance + 1), starvation -> disease; sieges as
+  wall damage (strength squared) vs repair (strength squared / 2) (dom6-economy, dom6-sieges).
+- **Characters**: commanders with leadership caps, mages with paths, heroes, a single prophet; afflictions and
+  ageing by path (dom6-abilities, dom6-healing).
+- **Modding**: plain-text .dm commands over every object; the mod inspector loads mods for reading
+  (dom6-modding, dom6-modinspector, mod-diff).
+- **UI**: thick - ~500 abilities explained only by hover; the inspector site and wiki fill the gaps.
+
+## Related skills
+dom6-wiki (community detail), dom6-inspector (numbers), dom6-tactics, manual-first, dom6-supercombatants and dom6-thugs
+(tanks and counters), dom6-best-by-purpose and dom6-path-<path> (what is good), dom6-spell-db, rules-skills (how this set was made).

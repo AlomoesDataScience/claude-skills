@@ -67,6 +67,15 @@ class Game6:
             U.key(k)
         time.sleep(wait)
 
+    def hold(self, name, seconds, wait=0.1):
+        """Hold a key down for SECONDS (camera pans: Left/Right/Up/Down)."""
+        self.alive()
+        kc, _ = U.keycode(name)
+        U.XTST.XTestFakeKeyEvent(U.dpy(), kc, 1, 0); U.X11.XFlush(U.dpy())
+        time.sleep(seconds)
+        U.XTST.XTestFakeKeyEvent(U.dpy(), kc, 0, 0); U.X11.XFlush(U.dpy())
+        time.sleep(wait)
+
     def type(self, text):
         self.alive()
         U.type_text(text)

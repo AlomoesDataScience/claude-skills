@@ -59,3 +59,10 @@ lists (Ur EA: 18/14 on screen). Riders whose lances touch are split on the 61-px
 - Site counts are sometimes off by one (touching icons are split by shape). The sprite counts
   are what the screen shows; names of the units are not on this screen
   (right-click a sprite for its stat page; for vanilla the inspector lists are in the file).
+
+## Standards (audit 2026-11-03)
+- **Modded games:** numbers here are vanilla - check the mod first (dom6-scbm for SCBM; mod-docs).
+
+## Related skills
+dom6-knowledge, dom6-inspector, dom6-pretender, dom6-play.
+Also (2026-11-03): dom6-best-by-purpose, dom6-path-fire ... dom6-path-glamour, dom6-holy.
