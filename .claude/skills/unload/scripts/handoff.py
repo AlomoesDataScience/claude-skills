@@ -16,7 +16,7 @@
 Pure standard library."""
 import datetime, glob, gzip, json, os, re, shutil, sys
 
-ROOT = os.path.expanduser("~/Desktop/AI Development")
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), *[".."] * 4))   # workspace = folder holding .claude/
 HO = os.path.join(ROOT, ".claude", "handoff", "HANDOFF.md")
 ARCH = os.path.join(ROOT, "Archive", "sessions")
 PROJ = os.path.expanduser("~/.claude/projects")
@@ -123,7 +123,7 @@ def archive(t, event, sid=None, cwd=None, trigger=""):
             fo.write(img.sub(b'"data":"<image stripped by archive>"', l) if b'"data"' in l else l)
     os.replace(tmp, dst)
     n = sum(1 for _ in open(t, errors="replace"))
-    proj = os.path.basename(os.path.dirname(t)).replace(re.sub(r"[^A-Za-z0-9]", "-", os.path.expanduser("~/Desktop/")), "")
+    proj = os.path.basename(os.path.dirname(t)).replace(re.sub(r"[^A-Za-z0-9]", "-", os.path.dirname(ROOT) + "/"), "")
     with open(os.path.join(ARCH, "INDEX.md"), "a") as f:
         f.write(f"- {datetime.datetime.now():%Y-%m-%d %H:%M} {event}{(' ' + trigger) if trigger else ''} | {sid} | "
                 f"{proj} | {n} lines | {os.path.relpath(dst, ARCH)} | {topic(t)}\n")

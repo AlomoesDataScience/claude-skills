@@ -52,6 +52,8 @@ times its size. **Quality first**: when a rule would make me guess, take the big
 - Finished a task or past ~100k context: **unload** (hand-off file, then the user clears).
 
 ## Measure
+`python3 -I .claude/skills/context-hygiene/scripts/verify.py` - checks the whole context system (settings, hooks,
+routing, budgets, archive, review and cleanup tools); run after changing any of it.
 `context-audit` after a change; compare req, avg ctx and the source table with the 2026-11-09 baseline.
 
 ## Related skills

@@ -18,7 +18,7 @@ import os
 import re
 import sys
 
-ROOT = os.path.expanduser("~/Desktop/AI Development")
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), *[".."] * 4))   # workspace = folder holding .claude/
 STOP = set("""the and for you that this with your are was but not have all can just yeah yah know get got
 gonna wanna its it's out about from into what when then them they there here also some more like make
 check sure want need probably thing things stuff one two now next turn go look load all other relevant

@@ -12,7 +12,7 @@ in full (capped), Claude's replies capped, tool calls one line each - and every 
 Pure standard library."""
 import collections, glob, gzip, json, os, re, sys
 
-ROOT = os.path.expanduser("~/Desktop/AI Development")
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), *[".."] * 4))   # workspace = folder holding .claude/
 ARCH = os.path.join(ROOT, "Archive", "sessions")
 DIG = os.path.join(ARCH, "digests")
 PROJ = os.path.expanduser("~/.claude/projects")

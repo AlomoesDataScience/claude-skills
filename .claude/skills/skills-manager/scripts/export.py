@@ -5,7 +5,8 @@ files) to a git repository folder for sharing.
   export.py [DEST]     default DEST: ~/Desktop/claude-skills (a git repository, outside the workspace)
                        -> the same tree as the workspace: DEST/.claude/skills/<generic>/ and
                           DEST/Games/<Genre>/<Game>/.claude/skills/<name>/, tools at their own paths,
-                          DEST/CATALOGUE.md; README.md and TOOLS.md are hand-written and kept.
+                          DEST/CATALOGUE.md and DEST/DEPENDENCIES-linux.md / -windows.md (deps.py);
+                          README.md is hand-written and kept.
                           DEST/export.json says what is held back (edit it to change).
   export.py --dry      list what would be copied and what is left out, copy nothing
                        Standalone tools (map generator, Sprite Studio): export.json "tools".
@@ -85,7 +86,7 @@ def main(a):
     cfg = json.load(open(cfgp))
     hold, holdf = cfg.get("hold_back_skills", {}), cfg.get("hold_back_files", {})
     sk = S.all_skills()
-    KEEP = {".git", "README.md", "TOOLS.md", "export.json", ".gitignore"}
+    KEEP = {".git", "README.md", "export.json", ".gitignore"}
     if not dry:                      # the copy is regenerated whole; hand-written files and git stay
         for x in os.listdir(dest):
             if x not in KEEP:
@@ -144,6 +145,24 @@ def main(a):
                 f.write(text_out(f"| {n} | {g} | {d.replace('|', '/')} |\n"))
         with open(os.path.join(dest, "LEFT-OUT.txt"), "w") as f:
             f.write(text_out("Not exported (data, screenshots, big files, held back):\n" + "\n".join(left) + "\n"))
+        # routing index (root + each game folder) without held-back skills, and the routing test
+        for src in [os.path.join(ROOT, ".claude", "skills", "INDEX.md")] + \
+                [os.path.join(ROOT, w, ".claude", "skills", "INDEX.md") for _, w in S.nested_bases()]:
+            dst = os.path.join(dest, os.path.relpath(src, ROOT))
+            if os.path.exists(src) and os.path.isdir(os.path.dirname(dst)):
+                keep = [l for l in open(src, encoding="utf-8") if not any(f"**{h}**" in l for h in hold)]
+                open(dst, "w", encoding="utf-8").write(text_out("".join(keep)))
+        tdir = os.path.join(HERE, "..", "tests")
+        os.makedirs(os.path.join(dest, ".claude", "skills", "skills-manager", "tests"), exist_ok=True)
+        for f in ("routetest.py", "routing.json"):
+            if os.path.exists(os.path.join(tdir, f)):
+                open(os.path.join(dest, ".claude", "skills", "skills-manager", "tests", f), "w", encoding="utf-8").write(
+                    text_out(open(os.path.join(tdir, f), encoding="utf-8").read()))
+        sys.path.insert(0, HERE)
+        import deps                                   # dependency files generated from the exported code
+        _, unknown = deps.write(dest)
+        if unknown:
+            print("deps.py: unclassified third-party imports (add them to deps.T):", ", ".join(sorted(unknown)))
     if not dry:
         bad = []
         for dp, dn, fn in os.walk(dest):

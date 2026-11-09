@@ -11,7 +11,8 @@
 Pure standard library. Skips .git, Archive/ and .claude/ (skills have their own tools)."""
 import collections, datetime, hashlib, json, os, re, shutil, sys
 
-ROOT = os.path.expanduser(os.environ.get("CLEANUP_ROOT", "~/Desktop/AI Development"))   # env: tests
+ROOT = os.path.expanduser(os.environ.get("CLEANUP_ROOT") or os.path.abspath(
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), *[".."] * 4)))   # CLEANUP_ROOT: tests
 OUT = os.path.join(ROOT, "Archive", "cleanup")
 SKIP = {".git", "Archive", ".claude", ".venv", "venv"}
 CAT = {  # category: (test, suggestion)

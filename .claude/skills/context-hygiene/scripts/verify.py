@@ -7,7 +7,7 @@ archive hook + recall, hand-off draft, chat-review digest, archive-curator, clea
 sandbox. Leaves no test files behind (sandbox in a temp dir)."""
 import glob, json, os, re, shutil, subprocess, sys, tempfile, time
 
-ROOT = os.path.expanduser("~/Desktop/AI Development")
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), *[".."] * 4))   # workspace = folder holding .claude/
 SK = os.path.join(ROOT, ".claude", "skills")
 PY = [sys.executable, "-I"]
 V = "-v" in sys.argv

@@ -10,7 +10,7 @@
 Pure standard library."""
 import datetime, glob, os, re, sys
 
-ROOT = os.path.expanduser("~/Desktop/AI Development")
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), *[".."] * 4))   # workspace = folder holding .claude/
 MEM = os.path.join(os.path.expanduser("~/.claude/projects"), re.sub(r"[^A-Za-z0-9]", "-", ROOT), "memory")
 STATUSES = "draft active open waiting done superseded archived reviewed accepted digest".split()
 LABEL_RE = re.compile(r"^(\*\*)?Status(\*\*)?:\s*\**\s*(\w+)", re.I | re.M)

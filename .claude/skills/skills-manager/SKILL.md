@@ -19,7 +19,8 @@ skills.py check [NAME]                # lint (exit 1 on errors)
 skills.py new NAME "DESCRIPTION" [--uses a,b] [--script tool.py]
 skills.py import PATH [--name NAME] [--force]     # a folder, a SKILL.md or a .zip
 skills.py disable NAME / enable NAME  # unload to .claude/skills-disabled/, load back
-skills.py index                       # rewrite INDEX.md
+skills.py index                       # rewrite INDEX.md (routing index: routes.md + one line per skill)
+skills.py split NAME [--dry]          # SKILL.md over 150 lines -> big sections to reference/*.md
 ```
 
 
