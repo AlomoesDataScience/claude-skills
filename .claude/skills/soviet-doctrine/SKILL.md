@@ -1,6 +1,7 @@
 ---
 name: soviet-doctrine
-description: The Soviet school of operations and tactics for games, in Claude's words from FM 100-2-1 The Soviet Army - Operations and Tactics (1984) and a 1953 CIA report on the secret Soviet Field Manual 1948 (PU-48), Military Theory shelf - laws of war and principles of military art, offense as the normal form of combat, echelons (first, second, reserve) and 3:1 force ratios, attack from the march, frontal attack combined with flank attack and envelopment, forward detachments and the operational maneuver group, deep battle and tempo, norms vs initiative, encirclement as the end of every offensive, the five 1948 formations (wedge, inverted wedge, staggered, line), artillery as Queen of Battle. Contrasts with the US school (military-operations, military-doctrine). Use when playing an Eastern Front or Cold War game, modelling a Soviet-style AI or opponent, choosing an echeloned attack, or comparing doctrines for game design.
+description: "The Soviet school of operations and tactics for games (FM 100-2-1 and a CIA report): echelons, deep battle, norms. Use for Eastern Front or Cold War games or a Soviet-style AI."
+keywords: "words, army, secret, field, manual, pu-48, military, theory, shelf, laws, principles, art, offense, normal, form, combat, first, second, reserve, force, ratios, attack, march, frontal, combined, flank, envelopment, forward, detachments, operational, maneuver, group, tempo, initiative, encirclement, end, offensive, five, formations, wedge, inverted, staggered, line, artillery, queen"
 ---
 
 # Soviet doctrine for games

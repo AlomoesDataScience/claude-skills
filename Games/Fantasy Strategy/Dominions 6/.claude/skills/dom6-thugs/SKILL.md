@@ -1,6 +1,7 @@
 ---
 name: dom6-thugs
-description: Basic thugging in Dominions 6 - what a thug is (a commander whose job is melee killing, vs army leaders and casting mages; army thugs vs solo thugs; an SC is the far end) from illwiki thugs-and-supercombatants and LucidTactics' tanking video, choosing a chassis (mage with self-buffs and the right paths, high base stats, slots, sacred for the bless), the standard kit (an armour-piercing two-hander or a brand, protection or defence stack, reinvigoration to stay fatigue-neutral, regeneration for chip damage, MR, elemental resistance, Boots of the Messenger or teleport magic), the self-buff script (cheapest buffs first, gems carried, round 100 limit), using thugs (army thugs kill threats troops can't, solo thugs raid PD and pick fights, avoid their counters, retreat early), and the budget (gems in the kit vs what kills it). Use when making or kitting a thug, scripting one, sending one raiding, or when the user asks for a thug for a nation.
+description: "Basic thugging in Dominions 6: what a thug is, kitting, buff scripts, raiding, army thugs vs solo. Use when making, kitting, scripting or sending out a thug."
+keywords: "commander, whose, job, melee, killing, leaders, casting, mages, far, end, illwiki, thugs-and-supercombatants, lucidtactics, tanking, video, choosing, chassis, mage, self-buffs, right, paths, high, base, stats, slots, sacred, bless, standard, kit, armour-piercing, two-hander, brand, protection, defence, stack, reinvigoration, stay, fatigue-neutral, regeneration, chip, damage, elemental, resistance, boots, messenger"
 ---
 
 # Thugs (Dominions 6)

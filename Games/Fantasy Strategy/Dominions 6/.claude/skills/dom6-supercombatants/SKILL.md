@@ -1,6 +1,7 @@
 ---
 name: dom6-supercombatants
-description: Building and beating Dominions 6 supercombatants and army-wiping "cheese" units - the five tank archetypes from LucidTactics' "Guide To Tanking & Fine Cheeses" (2026 video, timestamps) - protection tanks (stack natural + armour protection so hits do 0; beaten by armour-piercing/negating weapons and spells, fatigue crits), defence tanks (defence, Mistform, Shroud of Bewilderment vs harassment; beaten by many attacks, swarms, MR buffs, area spells), fatigue tanks (Phoenix Pyre plus reinvigoration; beaten by fast killers, fatigue-damage weapons), HP tanks (huge HP plus regeneration, e.g. Irminsul; beaten by burst damage or another attack vector), and magic attack vectors (MR-checked death, armour-negating elemental spells, resistances), the counter cycle, round-100 buff loss and protecting an army from cheese. Use when designing an SC or tank, facing one, deciding what to send into an unknown province, or when the user asks how to kill or build an SC.
+description: "Building and beating Dominions 6 supercombatants and army-wiping cheese units: the five tank archetypes and their counters. Use when designing or facing an SC or tank."
+keywords: "lucidtactics, guide, tanking, fine, cheeses, video, timestamps, protection, tanks, stack, natural, armour, hits, beaten, armour-piercing, negating, weapons, spells, fatigue, crits, defence, mistform, shroud, bewilderment, harassment, many, attacks, swarms, buffs, area, phoenix, pyre, plus, reinvigoration, fast, killers, fatigue-damage, huge, regeneration, irminsul, burst, damage, another, attack, vector"
 ---
 
 # Supercombatants and cheese (Dominions 6)

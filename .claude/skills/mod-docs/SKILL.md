@@ -1,6 +1,7 @@
 ---
 name: mod-docs
-description: Generic rules for keeping MODDED games separate from the base game (vanilla) in any game: find out first which mods and versions a game runs, give each mod its own folder (a skill named game-mod, e.g. dom6-scbm) for its database, change tables and playthrough notes, keep vanilla skills vanilla (one pointer line at most), tag every number with its source, check the mod's own files before quoting a vanilla manual, wiki or database number, record changes as diffs against vanilla, and handle mod versions and mod stacks. The user's rule (2026-11-03) after I quoted vanilla Destruction (E3) for his SCBM game, where it is E2. Use when playing or discussing any game that may run mods (balance mods, overhauls, total conversions, Workshop mods), before quoting a stat for it, when saving notes from a modded game, when a mod updates, and when writing or reviewing a game skill.
+description: "Keep modded games apart from vanilla: find the mods and versions first, one folder per mod, check the mod before quoting numbers. Use when a game may run mods, before quoting any stat."
+keywords: "generic, rules, keeping, separate, base, runs, give, skill, named, game-mod, dom6-scbm, database, change, tables, playthrough, notes, skills, pointer, line, most, tag, number, source, mod's, files, manual, wiki, record, changes, diffs, against, handle, stacks, rule, after, quoted, destruction, scbm, playing, discussing, balance, overhauls, total, conversions, workshop"
 ---
 
 # Documenting modded games

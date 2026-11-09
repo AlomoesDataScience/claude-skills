@@ -1,6 +1,7 @@
 ---
 name: dom6-blood-hunting
-description: Blood hunting in Dominions 6, from the manual (pp. 51-52, turn step 18) and illwiki (blood-hunting, Wigglefig's blood magic guide) - the three checks (10 + 30 x hunting level %, population/75 %, unrest/4 % failure; multiply), slaves found (d6 + level, site frequency adjusts), population loss, unrest per hunt, retaliation assassinations and bodyguards, Sanguine Dowsing Rod and Blood Thorn, picking hunting provinces (7500+ population, 0 unrest), patrollers (~25 patrol strength per B3 hunter), reduces-unrest units, unskilled hunters and bootstrapping, a success-chance calculator by hand, and raiding an enemy's hunting grounds. Use when setting Blood Hunt orders, choosing hunters or hunting provinces, planning patrols, judging a blood nation's income, or when the user asks about blood hunting. Spells and slaves: dom6-blood.
+description: "Blood hunting in Dominions 6: the three checks, unrest, hunter choice, patrols and income. Use when setting Blood Hunt orders, choosing hunters or provinces, or judging a blood nation's income."
+keywords: "manual, turn, step, illwiki, blood-hunting, wigglefig's, magic, guide, level, population, failure, multiply, slaves, found, site, frequency, adjusts, loss, retaliation, assassinations, bodyguards, sanguine, dowsing, rod, thorn, picking, patrollers, patrol, strength, reduces-unrest, units, unskilled, bootstrapping, success-chance, calculator, hand, raiding, enemy's, grounds, planning, spells, dom6-blood"
 ---
 
 # Blood hunting (Dominions 6, vanilla)

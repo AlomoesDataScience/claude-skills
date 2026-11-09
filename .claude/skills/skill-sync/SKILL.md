@@ -1,6 +1,7 @@
 ---
 name: skill-sync
-description: Keep skills up to date with the skills they learn from, and move single files in and out of skills (sync.py). A skill's sources are the generic skills it builds on or names and its counterparts in other games (dom6-map <-> fog2m-map); mark records "up to date with these sources", status shows what changed in them since (new, changed, removed SKILL.md sections and scripts), diff shows the changes, gaps lists skills one game has and another lacks, load copies a script or side file into a skill with its origin recorded, unload retires a file to retired/ with the reason, provenance flags loaded files whose original changed. Use when a generic skill or another game's skill gained lessons or tools that should reach this game, at the start of a session with a game whose skills may be stale, after a game session that changed skills (carry it to the other games), when porting a tool from one game to another, when a file in a skill is obsolete, or when the user says skills are out of date.
+description: "Keep skills current with the skills they learn from, and move files in and out of skills (sync.py). Use when a generic or other game's skill gained lessons that should reach this one."
+keywords: "date, single, skill's, sources, builds, names, counterparts, games, dom6-map, fog2m-map, mark, records, these, status, shows, changed, since, new, removed, sections, scripts, diff, changes, gaps, lists, game, has, another, lacks, load, copies, script, side, file, origin, recorded, unload, retires, retired, reason, provenance, flags, loaded, whose, original"
 ---
 
 # Skill sync

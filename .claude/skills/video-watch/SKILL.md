@@ -1,6 +1,7 @@
 ---
 name: video-watch
-description: Read and "watch" videos - YouTube (or any yt-dlp site) by URL, or a local video file - with video.py - info (title, channel, length, chapters, description), the transcript from the uploader's or automatic captions as clean timestamped text with chapter headings, grep the transcript, contact sheets of stamped frames (an hour in about six images; even spacing or scene cuts), full-size frames at chosen times, OCR of on-screen text, and short clips at higher quality. Method for an hour-long video - transcript first, sheets second, close frames only where the transcript points, the user fills in what can't be seen. Use when the user sends a YouTube link or a video file, asks Claude to watch, summarise or learn from a video (game guides, let's plays, lectures, tutorials), or wants a transcript.
+description: "Read and watch videos (YouTube or local files) with video.py: info, transcript, frames at chosen times. Use when the user sends a video or asks Claude to watch, summarise or learn from one."
+keywords: "yt-dlp, site, url, file, title, channel, length, chapters, description, uploader's, automatic, captions, clean, timestamped, text, chapter, headings, grep, contact, sheets, stamped, hour, six, images, even, spacing, scene, cuts, full-size, ocr, on-screen, short, clips, higher, quality, method, hour-long, first, second, close, points, fills, can't, seen, link"
 ---
 
 # Watching videos (video.py)

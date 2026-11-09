@@ -1,6 +1,7 @@
 ---
 name: skills-manager
-description: Manage Claude's own skills in this project. Finds which skills a task needs and in what order to load them (route), lists them with what each builds on, checks them (frontmatter, name, description length, missing files, scripts that do not compile), creates a new skill in the house style when Claude has built a reusable tool or workflow, imports a skill from a folder, SKILL.md or zip, unloads (disables) and reloads skills, and keeps INDEX.md as the catalogue. Use when the user asks to add, make, save, import, install, remove, disable, enable, load, unload, list or check skills, asks which skill to use for something, or when Claude has just built something reusable that should become a skill; also at the start of a multi-part task to see which skills apply.
+description: "Manage Claude's skills: route a task to skills, list, check budgets, make, import, disable, and generate the routing INDEX.md (skills.py). Use when adding, checking, loading or indexing skills."
+keywords: "project, finds, needs, order, load, lists, builds, checks, frontmatter, name, description, length, missing, files, scripts, compile, creates, new, skill, house, style, has, built, reusable, tool, workflow, imports, folder, zip, unloads, disables, reloads, keeps, catalogue, add, save, install, remove, enable, unload, something, should, become, start, multi-part"
 ---
 
 # Skills manager

@@ -1,6 +1,7 @@
 ---
 name: dom6-combat-math
-description: Melee combat math for Dominions 6 - turning unit cards into hit chances, damage per attack and rounds to kill, by hand (DRN tables, shield hits, damage types, harassment, fatigue, buffs and debuffs) and with the simulator (dom6-spells spells.py melee X Y with buffs like nat+10, blur, armor-5, att+N, ethereal, luck, twistfate, --data for a modded game such as SCBM), plus how to turn one-on-one numbers into a battle judgement (concentration, harassment piles, morale breaks before deaths, Lanchester via combat-models). Worked example - our Tuatha and Sidhe against Pangaea's White Centaurs in SCBM, with Barkskin, Stoneskin, Blur and armour damage. Use when judging a fight, choosing buffs or debuffs, picking troops for a matchup, checking whether a thug wins, or when the user asks "who wins" or for combat math. Missiles: dom6-ranged-math.
+description: "Melee combat math for Dominions 6: hit chances, damage per attack and rounds to kill from unit cards, with a calculator. Use when judging a fight, a matchup or a thug, or when asked who wins."
+keywords: "turning, hand, drn, tables, shield, hits, types, harassment, fatigue, buffs, debuffs, simulator, dom6-spells, spells, nat+10, blur, armor-5, att+n, ethereal, luck, twistfate, data, modded, game, such, scbm, plus, turn, one-on-one, numbers, battle, judgement, concentration, piles, morale, breaks, before, deaths, lanchester, combat-models, worked, example, tuatha, sidhe, against"
 ---
 
 # Combat math - melee (Dominions 6)

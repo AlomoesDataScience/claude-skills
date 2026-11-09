@@ -1,6 +1,7 @@
 ---
 name: dom6-magic-resistance
-description: Magic resistance and penetration in Dominions 6, from the manual (p. 76) and illwiki - the check (11 + DRN + caster's extra levels/2 vs MR + DRN + target's level in the spell's path/2, caster wins ties), easy (7) and hard (15) to resist, which spells check MR ("magic resistance negates", partial and secondary effects), typical MR values (human 10, elves 14, mages 13-16, pretenders 18), what raises penetration (overcasting, gems on the primary path, items) and MR (items, Earth bonus, spells), and the odds table. Use when picking a spell that checks MR (Shrink, Torpor, Holy Word, Sleep, Fascination, Soul Slay...), judging what will land on a monster or a pretender, protecting your commanders, or when the user asks about MR or penetration.
+description: "Magic resistance and penetration in Dominions 6: the MR check, penetration, which spells check it, odds. Use when picking MR-checked spells, judging what lands on a monster or pretender, or protecting your own."
+keywords: "manual, illwiki, drn, caster's, extra, levels, target's, level, spell's, path, caster, wins, ties, easy, hard, resist, negates, partial, secondary, effects, typical, values, human, elves, mages, pretenders, raises, overcasting, gems, primary, items, earth, bonus, table, spell, checks, shrink, torpor, holy, word, sleep, fascination, soul, slay, will"
 ---
 
 # Magic resistance (Dominions 6, vanilla)

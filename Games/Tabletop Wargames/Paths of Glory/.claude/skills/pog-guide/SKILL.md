@@ -1,6 +1,7 @@
 ---
 name: pog-guide
-description: Starter guide to Paths of Glory (GMT Games, Ted Raicer), the classic two-player card-driven board wargame of the First World War (Central Powers vs Allies, point-to-point map) - sequence of play (mandated offensives, six action rounds, attrition, siege, war status, replacements, card draw), strategy cards used for operations, strategic redeployment, replacements or events, war commitment levels (Mobilization, Limited War, Total War), the VP track and automatic victory, scenarios, with a page map of POG_Rules-2010.pdf (32 pages; searchable .txt next to it). Uses game-sources (rulebook lookups), learn-to-play (method). Use when the user wants to play, learn, set up or talk about Paths of Glory / PoG, wants a rules question answered or a move planned, or compares it with Triumph of Chaos (toc-guide), which is built on it.
+description: "Starter guide to Paths of Glory (GMT), the card-driven WWI board wargame. Use when playing, learning or setting up PoG, answering a rules question or planning a move."
+keywords: "games, ted, raicer, classic, two-player, first, world, war, central, powers, allies, point-to-point, map, sequence, play, mandated, offensives, six, action, rounds, attrition, siege, status, replacements, card, draw, strategy, cards, operations, strategic, redeployment, events, commitment, levels, mobilization, limited, total, track, automatic, victory, scenarios, page, rules-2010, pdf, pages"
 ---
 
 # Paths of Glory - starter guide

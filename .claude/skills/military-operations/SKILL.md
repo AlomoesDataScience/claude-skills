@@ -1,6 +1,7 @@
 ---
 name: military-operations
-description: The operational level of war for games, from US Army FM 3-0 Operations (2025, Military Theory shelf, page refs), in Claude's words - levels of war, principles of war (objective, offensive, mass, maneuver, economy of force, unity of command, security, surprise, simplicity), tenets (agility, convergence, endurance, depth), defeat mechanisms (destroy, dislocate, disintegrate, isolate), the operational framework (deep/close/rear, decisive/shaping/sustaining, main and supporting effort, supporting distance), elements of operational art (end state, center of gravity, decisive points, lines of operation, phasing, culmination, operational reach) - mapped to games. Sits above military-doctrine (tactics); soviet-doctrine is the opposing school. Use when planning a campaign, front or war in a strategy or operational game (TOAW, Gary Grigsby, AGEOD, Paradox, 4X, Dominions), when judging a whole battle plan, or when designing campaign systems or AI.
+description: "The operational level of war from FM 3-0 for games: principles of war, operational art, lines of operation, culmination. Use when planning a campaign, front or war in a strategy or operational game."
+keywords: "army, theory, shelf, page, refs, words, levels, objective, offensive, mass, maneuver, economy, force, unity, command, security, surprise, simplicity, tenets, agility, convergence, endurance, depth, defeat, mechanisms, destroy, dislocate, disintegrate, isolate, framework, deep, close, rear, decisive, shaping, sustaining, main, supporting, effort, distance, elements, end, state, center, gravity"
 ---
 
 # Military operations (FM 3-0) for games

@@ -1,6 +1,7 @@
 ---
 name: dom6-summoning
-description: Summoning in Dominions 6, from the manual (pp. 73-74, 82 alchemy, turn steps 10 and 36) and illwiki (conjuration, construction, mage-summons) - ritual summons (cast in a lab, gems, arrive in the province), battle summons (combat spells; gone after the battle), constructs from Construction, mage summons that bring new paths, overcasting for more units (+N per level), leadership needs (magic, undead leadership; mindless), upkeep-free monsters, judging value per gem (dom6-spells summons), and alchemy to fund them. Use when choosing summons, comparing summons per gem, planning a summon-based army or path access, or when the user asks about summoning.
+description: "Summoning in Dominions 6: ritual and battle summons, per-gem value, path access, summon-based armies. Use when choosing summons, comparing summons per gem, or planning a summon army."
+keywords: "manual, alchemy, turn, steps, illwiki, conjuration, construction, mage-summons, cast, lab, gems, arrive, province, combat, spells, gone, after, constructs, mage, bring, new, paths, overcasting, units, level, leadership, needs, magic, undead, mindless, upkeep-free, monsters, judging, dom6-spells, fund"
 ---
 
 # Summoning (Dominions 6, vanilla)

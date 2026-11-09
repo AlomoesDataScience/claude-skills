@@ -1,6 +1,7 @@
 ---
 name: dom6-magic-duel
-description: The Magic Duel spell in Dominions 6 (illwiki) - Evocation 3, Astral, 1 astral pearl, picks a random enemy Astral mage, each side rolls 1d6 (not open-ended) + base Astral skill (no boosts, no gems, no communion), lower dies and a tie kills both, mindless can't duel; how to use duel spam against astral-heavy enemies and how to be safe from it (no astral on battlefield casters, out-tier the duelists, Mind Blank / Mirror Mind, bury astral on shapechangers). Use when facing or fielding Astral mages, planning an astral pretender, scripting Magic Duel, or when the user asks about magic duels.
+description: "The Magic Duel spell in Dominions 6: who it picks, the 1d6 plus astral skill roll, odds and counters. Use when facing or fielding astral mages or scripting Magic Duel."
+keywords: "illwiki, evocation, pearl, random, enemy, mage, side, rolls, open-ended, base, boosts, gems, communion, lower, dies, tie, kills, mindless, can't, spam, against, astral-heavy, enemies, safe, battlefield, casters, out-tier, duelists, mind, blank, mirror, bury, shapechangers, planning, pretender, duels"
 ---
 
 # Magic Duel (Dominions 6, illwiki)

@@ -1,6 +1,7 @@
 ---
 name: dom6-path-air
-description: The Air path of Dominions 6 magic, vanilla - what air mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's air page) and the 77 generic spells with Air as their main path, ranked inside each purpose by the spell database (dom6-spell-db: tiers, value, cost; best per purpose in SKILL.md, the full list by research level in spells.md). Use when judging a air mage or a nation's air access, planning air research, scripting air casters, choosing air spells for a purpose, or when the user asks what air magic is good for.
+description: "The Air path of Dominions 6 magic: what air mages get by role, boosters, crosspaths and every generic air spell. Use when judging air mages or access, planning air research, or choosing air spells."
+keywords: "vanilla, indirect, illwiki's, page, main, ranked, inside, purpose, database, dom6-spell-db, tiers, value, cost, best, skill, full, list, level, mage, nation's, scripting, casters, good"
 ---
 
 # Air magic (Dominions 6, vanilla)

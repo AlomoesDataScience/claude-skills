@@ -1,6 +1,7 @@
 ---
 name: military-doctrine
-description: Real military tactics for playing and designing games, distilled in Claude's words from US Army FM 3-90 Tactics (2023, Military Theory shelf, with page refs) - types of operations, forms of maneuver (frontal attack, penetration, envelopment, turning movement, infiltration), tactical mission tasks (fix, block, disrupt, support by fire, attack by fire, seize, retain...), security operations (screen, guard, cover - narrower than the user's broad screen), recon fundamentals, movement techniques (overwatch, bounds), control measures (phase lines, objective, limit of advance), reserve, key terrain, culmination, and how each maps onto game units and turns. The base that battle-tactics, screening, scouting and move-phases build on. Use when planning or reviewing any battle or turn in a wargame or strategy game, when naming a unit's job, when the user uses a military term, or when designing combat or AI for our games.
+description: "Real tactics from US Army FM 3-90 for games: operations, forms of maneuver, tactical tasks, security, recon, control measures. Use when planning or reviewing a battle or turn or naming a unit's job."
+keywords: "playing, designing, distilled, words, theory, shelf, page, refs, types, frontal, attack, penetration, envelopment, turning, movement, infiltration, mission, fix, block, disrupt, support, fire, seize, retain, screen, guard, cover, narrower, broad, fundamentals, techniques, overwatch, bounds, phase, lines, objective, limit, advance, reserve, key, terrain, culmination, maps, onto, game"
 ---
 
 # Military doctrine (FM 3-90 Tactics) for games

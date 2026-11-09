@@ -1,6 +1,7 @@
 ---
 name: rtw3-guide
-description: Starter guide to Rule the Waves 3 (NWS / Naval Warfare Simulations, 1890-1970), the naval ship-design and fleet-command game where the player is Grand Admiral - economy and budget, building and designing ships (hulls, armour schemes, guns, torpedoes, machinery, aircraft carriers, missiles), fleet management and organisation, politics you influence but don't control, wartime operations, tactical battles (day, night, air strikes, radar), with page maps of the manual (2026 patch, 149 pages), the Expanded Battles manual (scenarios, quick battles, scenario editor), the FAQ, the visual parts catalogue and whatsnew - copied from the Steam install into Manuals/ with searchable .txt. Uses game-sources (lookups), game-ui (the game window), learn-to-play (method). Use when the user wants to play, learn or talk about Rule the Waves (RTW3), design a warship, fight a battle, or study it as a model for designing ships and politics in our own 4X engine.
+description: "Starter guide to Rule the Waves 3, the naval ship-design and fleet-command game (1890-1970). Use when playing, learning or discussing RTW3, designing a warship, fighting a battle, or borrowing its systems."
+keywords: "nws, warfare, simulations, player, grand, admiral, economy, budget, building, ships, hulls, armour, schemes, guns, torpedoes, machinery, aircraft, carriers, missiles, fleet, management, organisation, politics, influence, don't, control, wartime, operations, tactical, battles, day, night, air, strikes, radar, page, maps, manual, patch, pages, expanded, scenarios, quick, scenario, editor"
 ---
 
 # Rule the Waves 3 - starter guide

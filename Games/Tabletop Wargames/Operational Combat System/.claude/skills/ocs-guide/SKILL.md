@@ -1,6 +1,7 @@
 ---
 name: ocs-guide
-description: Starter guide to the Operational Combat Series (OCS) rules v4.3 (The Gamers / Multi-Man Publishing, Dean Essig) - operational WWII-era hex wargames at ~5 miles per hex and half-week turns - sequence of play (weather, reinforcements, movement, supply, reaction, combat, exploitation), units and modes (combat, move, strategic, reserve), zones of control, overruns, ground combat with action ratings and surprise, barrages, supply points as physical counters (combat supply, fuel, trace supply, extenders, internal stocks, attrition), specialised units, air power and air bases, hedgehogs, naval power, ports and shipping, breakdowns, optional rules - with a local copy of the online rules site (rules-site/, OCS-4.3-rules.txt) and the series errata. Uses game-sources (lookups), learn-to-play (method). Use when the user wants to play, learn or talk about OCS or any OCS game (DAK, Case Blue, Tunisia, Burma...), answer a rules question, plan a turn, or study its supply model for our own 4X engine.
+description: "Starter guide to the Operational Combat Series v4.3: supply, modes, combat, air, the OCS games. Use when playing or learning any OCS game, answering a rules question or planning a turn."
+keywords: "gamers, multi-man, publishing, dean, essig, wwii-era, hex, wargames, miles, half-week, turns, sequence, play, weather, reinforcements, movement, reaction, exploitation, units, move, strategic, reserve, zones, control, overruns, ground, action, ratings, surprise, barrages, points, physical, counters, fuel, trace, extenders, internal, stocks, attrition, specialised, power, bases, hedgehogs, naval, ports"
 ---
 
 # Operational Combat Series v4.3 - starter guide

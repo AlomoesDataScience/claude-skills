@@ -1,6 +1,7 @@
 ---
 name: map-measure
-description: Get a game map's size and dimensions EARLY - before reading terrain or planning - so every square can be found in the photos. Read the size from the game (setup screen, scenario info, advanced options, editor) or manual; find the border lines in the photos (borders.py); measure the square size from border to border; work out where square (0,0) sits in each photo or strip; check it (rows come out whole, the grid lines up with woods and units, G-grid overlay agrees); then cut every square into a labelled grid for reading (squares.py) and hand it to map-usage and draw-map. Use when starting on a new map, right after the first photos, before building a board, when squares don't line up, or when the zoom or camera changed.
+description: "Get a game map's size and dimensions early so every square can be found in photos. Use when starting a new map, right after the first photos, or when squares don't line up."
+keywords: "before, reading, terrain, planning, read, setup, screen, scenario, info, advanced, options, editor, manual, find, border, lines, borders, work, sits, photo, strip, check, rows, come, whole, grid, woods, units, g-grid, overlay, agrees, cut, labelled, hand, map-usage, draw-map, building, board, zoom, camera, changed"
 ---
 
 # Map measure - size and dimensions first

@@ -1,6 +1,7 @@
 ---
 name: se4-modding
-description: Modding Space Empires IV Deluxe (v1.95) - how mods load (Path.txt "Using Mod Directory", a mod folder under se4/ with all 28 Data files, bitmaps fall back to the base game; mod-loader modinfo.txt "Modinfo2" format), the data file format (self-documenting headers, "Field := value" records), tech requirements, abilities, families, AI files, pictures, the bundled example mods in Extras/, and se4data.py (list, show, fields, diff a mod against vanilla, check references with ERROR/WARN/NOTE, tech tree with unlocks and dead ends, gather game-format records from design notes that a build lacks, merge them into a new build the way the user builds: vanilla first, the mod pasted over). Also holds the status of the user's own total conversion, the WMD Mod (wmd.md). Uses se4-guide (playing the game), game-sources (the manual). Use when the user wants to make, fix, check, compare, install or plan an SE4 mod, edit SE4 data files, work on the WMD mod, or read another SE4 mod.
+description: "Modding Space Empires IV Deluxe (v1.95): how mods load, the data files, checks, the WMD mod. Use when making, fixing, checking, comparing or installing an SE4 mod or editing its data files."
+keywords: "path, txt, directory, folder, under, bitmaps, fall, back, base, game, mod-loader, modinfo, modinfo2, format, file, self-documenting, headers, field, value, records, tech, requirements, abilities, families, pictures, bundled, example, extras, se4data, list, show, fields, diff, against, vanilla, check, references, error, warn, note, tree, unlocks, dead, ends, gather"
 ---
 
 # Space Empires IV modding

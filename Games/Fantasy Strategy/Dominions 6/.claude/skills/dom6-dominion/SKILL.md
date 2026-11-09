@@ -1,6 +1,7 @@
 ---
 name: dom6-dominion
-description: Dominion and scales in Dominions 6, from the manual (pp. 82-87) - belief vs military control, maximum dominion (pretender + 1 per 5 x team-size temples), sources (pretender, home, prophet, temples, thrones, blood sacrifice), the temple check (success 50% + 5% x max; raise 30% - 3% x current or spread on; reduce enemy 50% + 5% x max - 5% x enemy), preaching (30% x priest level, temple +1/2, minus enemy dominion, cap 2 x level), heretics, the prophet, god and prophet bonuses per dominion level, morale +-1, the six scale pairs with their effects, extremes at 4+, how scales tip, and dominion victory. Use when planning temples, prophets and preaching, choosing scales, fighting in enemy dominion, or when the user asks about dominion or scales.
+description: "Dominion and scales in Dominions 6: belief vs control, max dominion, temples, prophets, preaching, scale effects. Use when planning temples, prophets and preaching, choosing scales, or fighting in enemy dominion."
+keywords: "manual, military, maximum, pretender, team-size, sources, home, prophet, thrones, blood, sacrifice, temple, check, success, raise, current, spread, reduce, priest, level, minus, cap, heretics, god, bonuses, morale, six, pairs, extremes, tip, victory"
 ---
 
 # Dominion and scales (Dominions 6, vanilla)

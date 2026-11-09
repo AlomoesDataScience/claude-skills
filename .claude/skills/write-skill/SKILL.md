@@ -1,6 +1,7 @@
 ---
 name: write-skill
-description: How to write a new skill (or rewrite one) so it passes the checker and gets used - the required format (folder and name rules, frontmatter, a description of at most 1024 characters that says what the skill covers AND contains the literal phrase "Use when ..."), where it goes (generic skills in .claude/skills, game-specific ones in the game folder's .claude/skills), the house layout of SKILL.md (title, the user's rule quoted with the date, method, per-game section, Related skills), scripts (scripts/, a docstring usage, run with python3 -I, must compile), keeping SKILL.md under 500 lines, linking both ways, then skills.py check and index. Use when the user asks for a new skill, when Claude has built a reusable method or tool, when renaming or splitting a skill, or when the checker warns about a skill.
+description: "How to write or rewrite a skill so it passes the checker and gets used: format, budgets, keywords, layout, where it goes. Use when making a new skill or rewriting one."
+keywords: "required, folder, name, rules, frontmatter, description, most, characters, says, covers, contains, literal, phrase, generic, skills, game-specific, ones, game, folder's, house, title, rule, quoted, date, method, per-game, section, related, scripts, docstring, usage, run, python3, must, compile, keeping, under, lines, linking, check, index, has, built, reusable, tool"
 ---
 
 # Write a skill - the required format
@@ -26,18 +27,19 @@ use when." This is the checklist. skills-manager has the tools (`skills.py new |
 ```
 ---
 name: <folder-name>
-description: <what it covers, specific nouns and methods> ... Use when <triggers>.
+description: "<what it covers, specific nouns and tools>. Use when <short triggers>."
+keywords: "<trigger words, terms the user uses, game names, script names, comma-separated>"
 ---
 ```
-**The description is what decides whether the skill gets loaded, so write it for that:**
-- **At most 1024 characters.** That's an error otherwise, so aim for 400-900.
-- **It must contain the literal phrase "Use when"** (or "Use whenever"). The checker searches for
-  those words. "Use at the start of..." FAILS. Write "Use when starting...".
-- Name concrete things: the game, the tools, script names, key terms the user uses, and his rule in a few
-  words.
-- The triggers come last: the situations, phrases the user might say, and the moments in a workflow.
-- One line, no line breaks, and no colon-space-heavy YAML tricks (keep it plain).
-- Optional: other frontmatter keys only if the harness supports them. Don't invent keys.
+Budgets (context cost review, 2026-11-09 - the listing is re-sent nearly every turn):
+- **description: at most 40 words**, in double quotes (a `: ` inside plain YAML breaks the file). What it is
+  + a "Use when ..." clause (the checker also accepts Use whenever/at/for/before/after). It is what Claude
+  Code shows in the skill listing.
+- **keywords:** everything else that should route a task here (terms, phrases the user says, tools, games).
+  Not shown in the listing; checkskills.py, `skills.py route` and INDEX.md read it.
+- Add or change a task row in `skills-manager/routes.md` when the skill belongs to a common task, then
+  `skills.py index`. Test routing: `skills-manager/tests/routetest.py` (add a case for the new skill).
+- No other frontmatter keys.
 
 ## 4. Body layout (house style)
 1. `# <Title> - <what it's for in a few words>`

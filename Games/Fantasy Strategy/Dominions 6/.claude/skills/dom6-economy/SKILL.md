@@ -1,6 +1,7 @@
 ---
 name: dom6-economy
-description: The Dominions 6 economy from the manual (pp. 22-29, turn steps 38-41) - income (population/100 x scales x (1 + fort admin/200), divided by 1 + 2% per unrest; no income without a friendly line to a fort), resources (halved without a fort, divided by 1 + 1% per unrest; forts collect from neighbours by admin), recruitment points by population band (+50% palisades upward, +10% per Order step), unrest (what raises and lowers it, recruiting blocked at 100, table of income and resource loss), supply (1 per 30 people up to 15000 then 1 per 60, x growth/death and heat/cold, plus fort admin x 6 / (distance + 1) out to 4), starvation and disease, upkeep (gold cost / 15, sacred and slaves / 30), province defence (cost = level bought, unrest -1 per 10, patrols from 15, 10 people per point), forts (palisades to grand citadel: cost, time, admin), temples and labs (600 gold), mercenaries. Use when planning income, recruitment, forts, temples, labs or PD, when armies starve, or when the user asks about the economy.
+description: "The Dominions 6 economy (manual pp. 22-29): income, scales, forts, unrest, supply, upkeep, labs and temples. Use when planning income, recruitment, forts or PD, or when armies starve."
+keywords: "turn, steps, population, fort, admin, divided, without, friendly, line, resources, halved, collect, neighbours, points, band, palisades, upward, order, step, raises, lowers, recruiting, blocked, table, resource, loss, people, growth, death, heat, cold, plus, distance, starvation, disease, gold, cost, sacred, slaves, province, defence, level, bought, patrols, point"
 ---
 
 # Economy (Dominions 6, vanilla)

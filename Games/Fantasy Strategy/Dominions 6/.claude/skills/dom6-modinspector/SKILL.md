@@ -1,6 +1,7 @@
 ---
 name: dom6-modinspector
-description: Load one or more Dominions 6 mods (.dm files) into the Mod Inspector (larzm42.github.io/dom6inspector) the way its "load mods" option does, and read the result as text. Reports what the mods add and change (units, commanders, pretenders, heroes, spells, items, weapons, armour, sites, mercenaries, events, nations) with full inspector pages, field-by-field differences from vanilla, the mod lines behind each object, and the inspector parser's errors and warnings with file:line. The whole modded game can then be queried like vanilla. Use when the user wants to read, review, summarise or compare a downloaded or third-party mod, see what a balance mod changes, check how their own mod looks in the inspector (gold autocalc, recruit lists, spell chains), look up a unit or spell as a mod changes it, or check that several mods load together.
+description: "Load Dominions 6 mods (.dm) into the Mod Inspector and read what they add and change as text. Use when reading, reviewing or comparing a downloaded mod or checking how our own mod looks."
+keywords: "files, larzm42, github, dom6inspector, option, result, reports, units, commanders, pretenders, heroes, spells, items, weapons, armour, sites, mercenaries, events, nations, full, pages, field-by-field, differences, vanilla, lines, behind, object, parser's, errors, warnings, file, line, whole, modded, game, queried, review, summarise, compare, third-party, see, balance, changes, check, gold"
 ---
 
 # Dominions 6 Mod Inspector with mods loaded

@@ -42,7 +42,7 @@ def prepare(img, box=None, scale=3, dark=False):
 def ocr(img, lang="eng", psm=6, tsv=False):
     buf = io.BytesIO()
     img.save(buf, "PNG")
-    cmd = TESS + ["stdin", "stdout", "-l", lang, "--psm", str(psm)] + (["tsv"] if tsv else [])
+    cmd = TESS + ["stdin", "stdout", "-l", lang, "--psm", str(psm)] + (["-c", "tessedit_create_tsv=1"] if tsv else [])  # "tsv" config file is missing in the NormCap tessdata
     r = subprocess.run(cmd, input=buf.getvalue(), capture_output=True, timeout=300)
     if r.returncode:
         sys.exit(r.stderr.decode(errors="replace").strip())

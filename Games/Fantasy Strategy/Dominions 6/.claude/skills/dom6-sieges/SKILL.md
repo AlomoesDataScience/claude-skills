@@ -1,6 +1,7 @@
 ---
 name: dom6-sieges
-description: Forts and sieges in Dominions 6, from the manual (pp. 26-28, 49-52, 71-73, turn steps 25-27, 35) - entering a fort (Defend = besieged, Patrol/Move and Patrol = fight outside), reducing walls (reduction = besiegers' strength squared, fliers x2; repair = defenders' strength squared / 2, mindless 1/8, animals and undisciplined half), Maintain Siege, Storm Castle (after walls hit 0, next turn, after other battles in the province), Break Siege, supply in a siege (fort supply / turns besieged, starvation, disease), fort defenders, retreats (smart 75% into fort or friendly land, troops follow on a morale check), weather (snow cold x15%, rain growth x10% + 10%). Use when attacking or holding a fort, planning a relief force, deciding Storm vs wait, or when the user asks about forts or sieges.
+description: "Forts and sieges in Dominions 6: besieging, storming, relief forces, defence and fort stats. Use when attacking or holding a fort, planning a relief force, or deciding storm vs wait."
+keywords: "manual, turn, steps, entering, defend, besieged, patrol, move, fight, outside, reducing, walls, reduction, besiegers, strength, squared, fliers, repair, defenders, mindless, animals, undisciplined, half, maintain, siege, castle, after, hit, next, battles, province, break, supply, turns, starvation, disease, retreats, smart, friendly, land, troops, follow, morale, check, weather"
 ---
 
 # Forts and sieges (Dominions 6, vanilla)

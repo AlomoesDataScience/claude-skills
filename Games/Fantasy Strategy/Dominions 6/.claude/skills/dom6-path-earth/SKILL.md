@@ -1,6 +1,7 @@
 ---
 name: dom6-path-earth
-description: The Earth path of Dominions 6 magic, vanilla - what earth mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's earth page) and the 93 generic spells with Earth as their main path, ranked inside each purpose by the spell database (dom6-spell-db: tiers, value, cost; best per purpose in SKILL.md, the full list by research level in spells.md). Use when judging a earth mage or a nation's earth access, planning earth research, scripting earth casters, choosing earth spells for a purpose, or when the user asks what earth magic is good for.
+description: "The Earth path of Dominions 6 magic: what earth mages get by role, boosters, crosspaths and every generic earth spell. Use when judging earth mages or access, planning earth research, or choosing earth spells."
+keywords: "vanilla, indirect, illwiki's, page, main, ranked, inside, purpose, database, dom6-spell-db, tiers, value, cost, best, skill, full, list, level, mage, nation's, scripting, casters, good"
 ---
 
 # Earth magic (Dominions 6, vanilla)

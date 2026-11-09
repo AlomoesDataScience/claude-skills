@@ -1,6 +1,7 @@
 ---
 name: dom6-drn
-description: The Dominions 6 dice roll (DRN, open-ended 2d6) and the modifiers that feed every check - exact probability tables (chance a value + DRN beats another + DRN by difference, with ties; chance DRN reaches k; expected damage by damage minus protection), who wins ties in which check (melee hit strict, penetration and repel to the active side), the lower-case drn, and the list of rolls that use it with their modifiers (attack/defence, damage/protection, morale, repel, penetration vs magic resistance, missiles, awe, fear, afflictions, site search). Use when working out any odds in Dominions, checking a battle log's roll lines ("12+6 vs 8+10"), comparing modifiers, or when the user asks about DRN, DRMs or dice.
+description: "The Dominions 6 dice roll (open-ended 2d6 DRN) with exact probability tables for opposed checks. Use when working out any odds in Dominions or reading a battle log's roll lines."
+keywords: "modifiers, feed, check, chance, value, beats, another, difference, ties, reaches, expected, damage, minus, protection, wins, melee, hit, strict, penetration, repel, active, side, lower-case, list, rolls, attack, defence, morale, magic, resistance, missiles, awe, fear, afflictions, site, search, checking, comparing, drms"
 ---
 
 # DRN - the Dominions dice (vanilla)

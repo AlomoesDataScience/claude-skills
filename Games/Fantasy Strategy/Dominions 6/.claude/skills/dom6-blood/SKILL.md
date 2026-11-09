@@ -1,6 +1,7 @@
 ---
 name: dom6-blood
-description: Blood magic and blood slaves in Dominions 6, from the manual and illwiki (blood-magic, Wigglefig's generic blood magic guide) - blood slaves as gems (no underwater use, fatigue, sacrifices, sabbath communions with slaves as participants), key blood spells and rituals by level (Blood Burst, Reinvigoration, Hell Power, Pain Transfer, the bind-demon summons, Infernal Circle), bootstrapping blood without native mages, and the costs (research school of its own, mages not researching, logistics). Hunting itself: dom6-blood-hunting. Use when planning or fighting a blood economy, using slaves for spells or empowerment, or when the user asks about blood magic or blood slaves.
+description: "Blood magic and blood slaves in Dominions 6: slaves as gems, sacrifices, sabbaths, the blood economy. Use when planning or fighting a blood nation or using slaves for spells."
+keywords: "manual, illwiki, blood-magic, wigglefig's, generic, guide, underwater, fatigue, sabbath, communions, participants, key, rituals, level, burst, reinvigoration, hell, power, pain, transfer, bind-demon, summons, infernal, circle, bootstrapping, without, native, mages, costs, research, school, researching, logistics, hunting, itself, dom6-blood-hunting, empowerment"
 ---
 
 # Blood magic and blood slaves (Dominions 6, vanilla)

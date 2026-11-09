@@ -1,6 +1,7 @@
 ---
 name: obs-record
-description: Record Claude's gameplay with OBS Studio (flatpak) - launch and set up OBS through its UI with the game-ui guard pointed at the OBS window, and control it from scripts through the OBS WebSocket (obs.py - status, start, stop, pause, resume, mute, any v5 request), including a gameplay session mode where the recording runs only while Claude is acting in the game and pauses while it thinks. Video only; the user records commentary separately, so microphone and desktop audio stay muted. Use when the user wants a turn, a battle or any game session recorded, asks about OBS, or wants a recording started, paused, stopped or checked.
+description: "Record Claude's gameplay with OBS Studio (flatpak) via its UI and WebSocket (obs.py): start, stop, pause while thinking. Use when a turn, battle or session should be recorded or OBS needs checking."
+keywords: "launch, set, through, game-ui, guard, pointed, window, control, scripts, status, resume, mute, request, including, mode, recording, runs, acting, game, pauses, thinks, video, records, commentary, separately, microphone, desktop, audio, stay, muted, started, paused, stopped, checked"
 ---
 
 # OBS recording

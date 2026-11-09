@@ -1,6 +1,7 @@
 ---
 name: dom6-maps
-description: Make Dominions 6 maps: generate them with MapNuke 2 (the user's copy in mapnuke/app, a Unity GUI driven through the dom6-ui guard with UI_WMCLASS=MapNuke), pick players, era, layout and nations (including the user's mod nations), export, check the exported .map against its image (one white pixel per province, neighbours, starts, thrones) and install it to ~/.dominions6/maps. Covers the Dom6 map file format from Illwinter's map manual (#terrain masks, #neighbourspec, #specstart, #gate, planes) and MapNuke's data files (nation and layout XMLs). Uses dom6-ui (guarded input, screenshots). Use when the user wants a Dominions 6 map made, changed, checked or installed, asks about MapNuke or map commands, or wants mod nations added to MapNuke.
+description: "Make Dominions 6 maps with MapNuke 2: players, era, layout, nations (mod nations too), install and check. Use when a map is wanted made, changed, checked or installed, or MapNuke questions come up."
+keywords: "generate, copy, app, unity, gui, driven, through, dom6-ui, guard, wmclass, pick, including, export, exported, against, image, white, pixel, province, neighbours, starts, thrones, dominions6, covers, file, format, illwinter's, manual, terrain, masks, neighbourspec, specstart, gate, planes, mapnuke's, data, files, nation, xmls, guarded, input, screenshots, commands, added"
 ---
 
 # Dom6 maps
@@ -38,90 +39,6 @@ First a "MapNuke Configuration" dialog (598x640): pick 1600 x 900 in the list (d
 quality Medium (memory: the laptop has ~7 GB and Dominions may be running), Windowed on, OK
 (515,616). Then the main window "MapNuke" (1600x900). `UI_WMCLASS=MapNuke` (the guard compares
 the class before its first dot; wmctrl shows `MapNuke.x86_64.MapNuke.x86_64`).
-
-## Main screen (1600x900 window pixels)
-
-| Control | Where | Notes |
-|---|---|---|
-| Nation of player 1, 2, 3... | x 150, y 22, 56, 90... (+34 each) | green dropdowns, one per player |
-| Players (2-30) | 394, 20 | list rows 20 px apart, "2 Players" at y 47 |
-| Layout | 394, 50 | layouts for that player count (3 players: only Default Layout) |
-| Age | 394, 80 | Early (107), Middle (127), Late (147), All (167); filters the nation lists |
-| Map art | 394, 110 | Default Map Art |
-| Toggle Hide Settings | 1511, 20 | hides the panels to see the map |
-| Change Viewed Season / Layer | 1511, 50 / 80 | winter look; surface or cave plane |
-| Advanced Settings | 1511, 110 | terrain and border frequencies (GeneratorSettings.cs) |
-| Export Map Files | 1511, 140 | asks a name (field 800,450; OK 799,492) |
-| Generate New Map | 1511, 170 | ~2-3 s for 3 players |
-| Quit | 1565, 880 | never press Enter while it has focus |
-
-Nation lists: 9 "Generic ..." entries, then vanilla nations of the age, then `DE -` (Dominions
-Enhanced), `MOD -` (ModNations.xml, the user's nations), `BZ -` (Bozmod). The list (400 px tall,
-scrollbar at x 283) does not take the mouse wheel: drag its scrollbar with `drag --slow` in the
-same `seq` as the click that opens it. Player 1's list opens at y 37-433; each later player's list
-starts 34 px lower.
-
-On the map: capitals carry the nation name, thrones are labelled "Throne". Province dots are
-coloured by terrain (white plains, green forest, gold farm, blue water...); lines are borders:
-yellow standard, blue river, purple mountain pass, dark red impassable/cliff, orange road.
-
-## Claude's own generator (prototype, 2026-10-28)
-
-`Games/Fantasy Strategy/Dominions 6/Maps/mapgen/mapgen.py NAME [--players 4] [--cols 10] [--rows 6] [--size 1600x1000]
-[--seed N]` writes a whole map without MapNuke in ~16 s: noisy power-diagram provinces, graph from
-touching pixels, sea, spread starts (`#start`), thrones, clustered terrain, rivers and ridges along
-border chains, roads, a drawn art style with winter and terrain-look images, `NAME_preview.png`
-(numbers, S start, T throne). Then `maptool.py check` / `install`. Facts it relies on (checked
-against a MapNuke export): Dominions numbers provinces by scanning white pixels from the bottom
-row up, left to right, and `#pb x y len prov` counts y from the bottom. ClaudeGen (seed 4242,
-60 provinces) loaded in the map editor with matching statistics; the user is reviewing it.
-
-### Maps from a finished picture (2026-10-29)
-
-`Games/Fantasy Strategy/Dominions 6/Maps/mapgen/from_image.py IMAGE REPLICA PICTURE --config CFG [--players N] [--land SP] [--sea SP]
-[--seed N]` makes two maps with one province layout: REPLICA redrawn in mapgen's art style (plus a
-house or castle symbol on every detected town/capital and a numbered tag on every adventure site),
-PICTURE with the picture itself as the map (borders drawn over it, winter tint). The config module
-describes the picture (docstring of from_image.py lists the fields). `greyhawk_hd.py` (for
-`Greyhawk HD.png`, flat colours) is the full example: exact palette per class, water/river colours,
-yellow city fill (several yellow wedges = capital star), ~140 label spots read off gridded crops
-(`NAMES`, `WATER_NAMES`), `NAME_TERRAIN`, `EXTRA_BITS` (ice colder, desert/jungle warmer), `SITES`
-from the adventure key. `greyhawk_classify.py` is the older painted-map config (texture colours,
-dashed rivers; weaker).
-
-- Every label seeds a province (an earlier label within 0.62 spacing wins; the later one only names
-  the province it falls in); jittered grid centres fill gaps 0.8 spacing from any seed; fill
-  provinces are named "<Direction> <nearest label>"; named forests/hills/marshes take that terrain.
-- Provinces grow by Dijkstra on a work grid (`WORK`, 3 for 3200 px) and cannot cross rivers; the
-  full-size labels are mode-filtered to remove grid steps. Labels live in bytes: under 255 provinces
-  (raise --land/--sea if the assert fires).
-- Provinces with an adventure site get many sites (1024); the .map lists the sites as comments.
-- Greyhawk HD (seed 2026, --land 58 --sea 100): 219 provinces, 126 from labels, 203 named,
-  185 cities, 26 sites, 100 river / 30 impassable / 23 pass borders, 12 starts, 11 thrones;
-  ~2 min. Installed as GreyhawkHD and GreyhawkHDPicture.
-
-## Editing a generated map (explored 2026-10-28)
-
-- Camera: left-drag pans the map. Right-click a node to edit it (close panels with their X, top right).
-- **Province node** (the big dots) > "Province Terrain" panel at the right: Plains, Highland/Reef,
-  Mountain, Swamp, Wasteland, Farm, Forest/Kelp, Sea, Deep Sea, Large/Small Province, Cold/Warm,
-  Throne Spawn Point, Random Fort Spawn Point, More Magic Sites, a custom name; "Cave Layer Province
-  Terrain": Has Cave Layer Province, Has Cave Layer Entrance, Cave / Drip / Crystal / Cave Forest /
-  Submerged Cave, a cave name; Apply Changes.
-- **Border node** (small dot halfway along a line) > "Connection": Normal, Road, Mountain
-  (impassable), Mountain Pass, River, Bridged River; "Cave Connection": Normal, River. Clicking a tick
-  applies it.
-- **Change Viewed Layer** shows the cave plane (dark rock, cave provinces as coloured patches, the
-  same nodes); click again for the surface. **Change Viewed Season** toggles the winter art (snow over everything); it takes ~3-5 s to repaint, so wait before judging the screenshot.
-- **Advanced Settings** ("Advanced World Generator Settings", close with X at 1287,158, apply with
-  Apply Changes, Reset Settings): min-max % of swamps 6-8, wastes 6-8, legacy mountains 5-7,
-  highlands 5-7, forests 16-18, farms 14-16, extra lakes 6-8 (plains = the rest, 28%), large 28-32 and
-  small 10-14 provinces, random forts 0-0, extra cave lakes 1-3, "only use mountain terrain flag for
-  provinces with mountain connections"; borders (by % of connections) roads 4-6, bridged rivers 7-9,
-  rivers 7-9, mountains 7-9, mountain passes 7-9; dominion overlay, province border and sea border
-  colours (RGBA); Nation Themed Starts, Cluster Water Nations Together, Cluster Island Nations With
-  Water, Disciples, Generic Starts, Fog Of War Effect; Procedural Name Chance 10 %, Cave Entrances
-  Per Player 1, Underworld Cave Freq 6 %. Defaults are in GeneratorSettings.cs.
 
 ## Layouts and art styles
 
@@ -205,30 +122,14 @@ passes, 11 impassable, 10 rivers, 6 roads), 3 good thrones, 3 cave gates, a cave
 provinces in 52 cave walls, `#domversion 575`, `#nodeepcaves`, `#nodeepchoice`, `#mapnohide`.
 MapNuke lists some borders once and some both ways; `maptool.py` counts unordered pairs.
 
-## Lore for a map (game-sources wikifetch.py and the LORE layer, 2026-10-29)
+## Reference files (read the one the step needs)
 
-- Lore wikis are read with the generic `game-sources` skill (`wikifetch.py` in the project's root
-  `.claude/skills/game-sources/scripts/`): Wayback fetching for Cloudflare sites, page text, links,
-  fact boxes (`infoboxes OUTDIR OUT.json`), or the MediaWiki API (`allpages`, `api`).
-- Greyhawk lore now lives with D&D: `Games/Tabletop RPGs/Dungeons & Dragons/Worlds/Greyhawk/lore/`
-  (Flanaess.html/.txt, `pages/` 143 pages, `infoboxes.json` 89 fact boxes) and the source pictures
-  in `.../Worlds/Greyhawk/maps/` (`Greyhawk HD.png`, `Greyhawk.jpeg`). The `greyhawk-lore` skill
-  there (`lore.py realm/list/search`, `realms.md`) is the quick way to the realm facts.
-- `from_image.py` gives every province a realm (`self.realm`: its own label, or the nearest label
-  for fill provinces). Config fields read by `province_lines` (written as `#setland` blocks at the
-  end of the .map, after the `#pb` lines; mapgen.py's `province_lines(num)` hook):
-  `LORE = {label: {"poptype": n, "people": realm population, "fort": n, "climate": "cold"|"warm"}}`
-  (population spread over the realm by area, towns ×1.35 and capitals ×2 weight, `POP_SCALE`
-  default 0.02, clamped 500-40000, never on start provinces; forts only where a capital symbol is),
-  `SITE_FEATURES = {adventure number: [vanilla site ids]}` → `#feature id`. Climate from LORE
-  replaces the picture's warm/cold bits before starts are chosen.
-- Status: written and parsing, **not yet run** - the Greyhawk LORE table is still to be filled from
-  infoboxes.json. Poptype numbers are in the map manual's table (`#poptype`), site ids from
-  dom6-inspector (`records/sites.jsonl`). Picks so far: Temple of Darkness 843 (Temple of Elemental
-  Evil), Tomb of the Grand Thaumathurg 822 (Tomb of Horrors), Slave Market 1073 (Slave Pits),
-  Jungle Temple 872 (Tamoachan), The Forgotten City 732 (Forbidden City), Abandoned Laboratory 692
-  (In Search of the Unknown), Circle of Standing Stones 643 (Shattered Circle), Frost Vale 544
-  (Glacial Rift), Castle Arcanum 640 (Castle Greyhawk).
+| File | Holds |
+|---|---|
+| `reference/main-screen-1600x900-window-pixels.md` | **Main screen (1600x900 window pixels)** - Control | Where | Notes | |---|---|---| | Nation of player 1, 2, 3.. |
+| `reference/claude-s-own-generator-prototype-2026-10.md` | **Claude's own generator (prototype, 2026-10-28)** - Games/Fantasy Strategy/Dominions 6/Maps/mapgen/mapgen.py NAME [--players 4] [--cols 10] [--rows 6] [--size 160 |
+| `reference/editing-a-generated-map-explored-2026-10.md` | **Editing a generated map (explored 2026-10-28)** - Camera: left-drag pans the map |
+| `reference/lore-for-a-map-game-sources-wikifetch-py.md` | **Lore for a map (game-sources wikifetch.py and the LORE layer, 2026-10-29)** - Lore wikis are read with the generic game-sources skill (wikifetch.py in the project's root   .claude/skills |
 
 ## Related skills
 dom6-ui, dom6-modding, map-usage, draw-map.

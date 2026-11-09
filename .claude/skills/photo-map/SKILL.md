@@ -1,6 +1,7 @@
 ---
 name: photo-map
-description: How Claude finds out what is going on in ANY game with a map or board - identify the screen elements first (what is UI, what is map, where the map borders are), zoom all the way out, photograph the whole map in overlapping steps (north to south, west to east), stitch the photos into one picture (panorama.py) and build the map from the photos - terrain, who is where, both sides - before deciding anything. The user's rule (2026-11-02, FoG II battle 1) - "This is ALWAYS how you check what's going on. No relying on auto commands or tabbing through units." Use when starting every turn or phase of a tactical, wargame, strategy or board game, whenever the situation may have changed (enemy turn, combat), before planning moves, or when asked where things are.
+description: "Find out what is going on in any map game: identify UI vs map, zoom out, photograph the whole map, stitch (panorama.py), build the board. Use at the start of every turn or phase and before planning moves."
+keywords: "finds, screen, elements, first, borders, overlapping, steps, north, south, west, east, photos, picture, terrain, sides, deciding, anything, rule, fog, battle, always, check, what's, relying, auto, commands, tabbing, through, units, starting, tactical, wargame, strategy, situation, may, changed, enemy, combat, asked, things"
 ---
 
 # Photo map - always look at the whole board before acting

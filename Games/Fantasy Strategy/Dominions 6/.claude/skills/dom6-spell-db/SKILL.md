@@ -1,6 +1,7 @@
 ---
 name: dom6-spell-db
-description: Spell evaluation database for Dominions 6 - every spell (1474 vanilla, 1576 SCBM; combat and ritual, generic and national) sorted into a purpose (army damage, single-target damage, army/group/self buff, debuff, fear, battlefield enchantment, battle summon, summon units/commanders, site search, remote attack, global, province enchantment, movement, logistics, healing, economy, utility) and ranked inside it with a tier (S-D), a value and a cost-efficiency - simulated kills per cast for damage spells, simulated melee trades for summons, weighted effect x coverage for buffs and debuffs, cost only for other rituals - plus my hand tiers from dom6-spells where they exist. spelldb.py builds it (vanilla or any mod via --data) as SQLite + CSV + one markdown page per purpose and queries it (top PURPOSE --paths --nation, spell NAME, sql). Use when ranking or choosing spells for a purpose, checking what a mage or nation can cast that's good, comparing vanilla and a mod, or when the user asks what's good in vanilla or a mod.
+description: "Spell evaluation database for Dominions 6: every vanilla and SCBM spell sorted by purpose and ranked. Use when ranking or choosing spells for a purpose or comparing vanilla with a mod."
+keywords: "combat, ritual, generic, national, army, damage, single-target, group, self, buff, debuff, fear, battlefield, enchantment, battle, summon, units, commanders, site, search, remote, attack, global, province, movement, logistics, healing, economy, utility, inside, tier, s-d, value, cost-efficiency, simulated, kills, cast, melee, trades, summons, weighted, effect, coverage, buffs, debuffs"
 ---
 
 # Spell evaluation database (dom6-spell-db)

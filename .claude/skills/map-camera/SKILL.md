@@ -1,6 +1,7 @@
 ---
 name: map-camera
-description: How Claude drives a game's map camera so it can see everything it needs - find every camera control (in-game key list first, then manual), clear the screen of overlays, choose top-down vs angled view, zoom out for the whole board and in for detail, calibrate how far a held pan key moves the map (camcal.py) so photos overlap and moves land where intended, recentre by minimap or unit list, rotate/pitch to look behind woods and hills, and wait out camera transitions before photographing. Works with photo-map (panorama.py) and game-ui bgplay. Learned on Field of Glory II Medieval with the user, 2026-11-02. Use whenever a game has a movable map camera - before photographing the board, when something is hidden, off screen or covered, when photos don't stitch, or on a new game's first battle.
+description: "Drive a game's map camera to see everything: find the camera controls, clear overlays, centre, zoom, pan. Use whenever a game has a movable camera, before photographing the board, or when something is hidden."
+keywords: "drives, needs, control, in-game, key, list, first, manual, screen, choose, top-down, angled, view, whole, detail, calibrate, far, held, moves, camcal, photos, overlap, land, intended, recentre, minimap, unit, rotate, pitch, look, behind, woods, hills, wait, transitions, works, photo-map, panorama, game-ui, bgplay, learned, field, glory, medieval, off"
 ---
 
 # Map camera - see everything you'd want to look at

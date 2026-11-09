@@ -1,6 +1,7 @@
 ---
 name: delegate
-description: Acting as the user's delegate - when he hands control over ("I'm handing off all control", "the follow up is all yours") and Claude must decide and act alone in a game, a battle, a build or any long task. Mission command in Claude's words (intent, bounds, disciplined initiative, accepted risk, faithful reports), the self-review that replaces the user's live corrections (the questions he asks every turn, turned into a checklist), the certainty test before any irreversible step, what to do when not certain (look it up, forecast, take the reversible option, hold, ask only when the choice is truly his), a decision log, and how to hand back. Use when the user delegates a task or a turn, when he says he is only helping for now and Claude will act alone later, before every irreversible action taken without him, and when reporting back after acting alone.
+description: "Acting as the user's delegate when he hands over control: mission command, self-review checklist, certainty test, decision log, hand-back. Use when the user delegates a task or turn and before any irreversible step taken alone."
+keywords: "i'm, handing, off, follow, yours, must, decide, act, game, battle, build, long, words, intent, bounds, disciplined, initiative, accepted, risk, faithful, reports, replaces, live, corrections, questions, turned, certain, look, forecast, take, reversible, option, hold, ask, choice, truly, hand, back, says, helping, now, will, later, action, without"
 ---
 
 # Acting as a delegate

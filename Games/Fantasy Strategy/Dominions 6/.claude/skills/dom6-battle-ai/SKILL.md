@@ -1,6 +1,7 @@
 ---
 name: dom6-battle-ai
-description: How Dominions 6 battles run themselves and what the battle AI does, from the manual (pp. 44-46, 58-59, 71) and the casting-AI notes in dom6-tactics/ai-casting.md (Loggy's Dom5 reverse-engineering) - no live control, squad orders (None lets the commander decide, Attack, Fire, Hold and attack = 2 rounds then charge, Hold and fire, Fire and keep distance, Guard commander, Retreat = rout) and targets (random, archers, cavalry, fliers, large = size 7+, closest, rearmost), zone of control, commander orders (up to 5 scripted one-round steps, then a general order; no orders = the AI assigns them), mage scripting (a scripted spell is cast whenever it can be; else the AI picks), how the AI scores unscripted spells (nearest targets, resistances, rounds 1-2 buffs, enchantments it almost never casts, fatigue avoidance), and turn-limit routs. Use when writing battle scripts and army setups, predicting what an unscripted mage or squad will do, or when the user asks why the AI did something in a battle.
+description: "How Dominions 6 battles run themselves and what the battle AI does (manual and casting-AI notes): orders, targeting, unscripted mages. Use when writing battle scripts or predicting what an army will do."
+keywords: "dom6-tactics, ai-casting, loggy's, dom5, reverse-engineering, live, control, squad, none, lets, commander, decide, attack, fire, hold, rounds, charge, keep, distance, guard, retreat, rout, targets, random, archers, cavalry, fliers, large, size, closest, rearmost, zone, scripted, one-round, steps, general, order, assigns, mage, scripting, spell, cast, else, picks, scores"
 ---
 
 # The battle AI (Dominions 6)

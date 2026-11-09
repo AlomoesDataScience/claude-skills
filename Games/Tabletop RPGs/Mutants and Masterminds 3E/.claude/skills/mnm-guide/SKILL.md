@@ -1,6 +1,7 @@
 ---
 name: mnm-guide
-description: Starter guide to Mutants & Masterminds Third Edition (Green Ronin), the point-buy superhero RPG - d20 checks against difficulty, power level caps, abilities, skills, advantages, the effects-based power system with extras and flaws, gadgets and gear, conditions and damage via Toughness resistance checks, hero points, plus the Gamemaster's Guide (settings, adversaries, archetypes, plots, challenges, adventures, options, villain lairs), with page maps of the Deluxe Heroes Handbook (353 pages) and Deluxe Gamemaster's Guide (298 pages), both bookmarked with searchable .txt. Uses game-sources (rule lookups), learn-to-play (method). Use when the user wants to play, run or talk about Mutants & Masterminds / M&M 3E, build a hero or villain, cost a power, or have Claude GM an adventure; compare with FASERIP (faserip-guide), the user's other superhero system.
+description: "Starter guide to Mutants & Masterminds 3E: d20 checks, power level, point-buy powers, conditions. Use when playing or running M&M, building a hero or villain, or costing a power."
+keywords: "third, edition, green, ronin, superhero, rpg, against, difficulty, caps, abilities, skills, advantages, effects-based, system, extras, flaws, gadgets, gear, damage, toughness, resistance, points, plus, gamemaster's, settings, adversaries, archetypes, plots, challenges, adventures, options, lairs, page, maps, deluxe, heroes, handbook, pages, bookmarked, searchable, txt, game-sources, rule, lookups, learn-to-play"
 ---
 
 # Mutants & Masterminds 3E - starter guide

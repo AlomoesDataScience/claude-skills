@@ -1,6 +1,7 @@
 ---
 name: stars-guide
-description: Starter guide to Stars! (1995-96, Jeff Johnson and Jeff McBride; Empire Interactive), the classic turn-based space 4X built for play-by-email - race creation with advantage points (primary and lesser racial traits, habitability, growth, factories and mines), production queues, research fields, ship and starbase design, fleets and waypoints, colonisation, mining the three minerals, freight, combat and battle plans, minefields, cloaking and scanning, diplomacy, and "the guts" chapters with the exact formulas, with a page map of Stars.pdf (the 277-page user guide, bookmarked; searchable .txt). Uses game-sources (lookups), learn-to-play (method). Use when the user wants to play, learn or talk about Stars!, design a race or ship, check a formula, or borrow its ideas for our own 4X engine.
+description: "Starter guide to Stars! (1995-96), the classic play-by-email space 4X: race design, ships, formulas. Use when playing or learning Stars!, designing a race or ship, or borrowing its ideas for our 4X engine."
+keywords: "jeff, johnson, mcbride, empire, interactive, turn-based, built, creation, advantage, points, primary, lesser, racial, traits, habitability, growth, factories, mines, production, queues, research, fields, starbase, fleets, waypoints, colonisation, mining, three, minerals, freight, combat, battle, plans, minefields, cloaking, scanning, diplomacy, guts, chapters, exact, page, map, pdf, bookmarked, searchable"
 ---
 
 # Stars! - starter guide

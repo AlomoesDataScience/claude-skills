@@ -7,7 +7,8 @@
                                                    exits 0; prints nothing it can't work out)
 
 Scores every SKILL.md under the workspace (.claude/skills/*/SKILL.md, game and genre folders included,
-skills-disabled left out) by the task's words: name x4, folder path x2, description x1, plus a bonus when
+skills-disabled left out) by the task's words: name x4, folder path x2, description + keywords: line x1 (words
+stemmed), plus a bonus when
 the session's working folder is inside the skill's folder. skills-manager `route` is the slower, deeper
 version (dependency order) - use it when planning; this one is for every message.
 Pure standard library.
@@ -27,9 +28,19 @@ please okay ok alright also how why should would could did does done let lets i'
 ALIAS = {"dominions": "dom6", "dom": "dom6", "fog": "fog2m", "glory": "fog2m", "se4": "se4", "sprites": "sprite"}
 
 
+def stem(w):
+    """crude English stem so 'odds'/'odd', 'rolling'/'roll', 'skills'/'skill' meet."""
+    for suf in ("ing", "ies", "es", "ed", "s"):
+        if len(w) > len(suf) + 3 and w.endswith(suf):
+            return w[: -len(suf)] + ("y" if suf == "ies" else "")
+    return w
+
+
 def words(t):
     ws = [w for w in re.findall(r"[a-z0-9][a-z0-9'-]{2,}", t.lower()) if w not in STOP]
-    return ws + [ALIAS[w] for w in ws if w in ALIAS]
+    ws += [ALIAS[w] for w in ws if w in ALIAS]
+    ws += ["dice"] if any(re.fullmatch(r"\d*d\d+\S*", w) for w in ws) else []   # 3d6, 1d20+5 -> dice
+    return ws + [stem(w) for w in ws if stem(w) != w]
 
 
 def hits_prefix(tw, nw):
@@ -50,8 +61,10 @@ def skills():
                 continue
             m = re.search(r"^name:\s*(.+)$", head, re.M)
             dm = re.search(r"^description:\s*(.+)$", head, re.M)
+            km = re.search(r"^keywords:\s*(.+)$", head, re.M)      # routing words kept out of the listing
             home = os.path.dirname(os.path.dirname(os.path.dirname(d)))   # folder that owns .claude/
-            out.append((m.group(1).strip() if m else os.path.basename(d), dm.group(1) if dm else "", home))
+            out.append((m.group(1).strip() if m else os.path.basename(d),
+                        (dm.group(1) if dm else "") + " " + (km.group(1) if km else ""), home))
     return out
 
 
@@ -59,11 +72,16 @@ def rank(task, cwd=None, n=8):
     tw = set(words(task))
     cwd = os.path.abspath(cwd or os.getcwd())
     res = []
-    for name, desc, home in skills():
+    sk = skills()
+    df = {}                                         # how many skills use each word: rare words count double
+    for _, desc, _ in sk:
+        for w in set(words(desc)):
+            df[w] = df.get(w, 0) + 1
+    for name, desc, home in sk:
         rel = os.path.relpath(home, ROOT)
         nw, pw, dw = set(words(name.replace("-", " "))), set(words(rel)), set(words(desc))
         nh = hits_prefix(tw, nw)
-        s = 4 * len(nh) + 2 * len(tw & pw) + len(tw & dw)
+        s = 4 * len(nh) + 2 * len(tw & pw) + sum(2 if df.get(w, 0) <= 3 else 1 for w in tw & dw)
         if rel != "." and (cwd == home or cwd.startswith(home + os.sep)):
             s += 3                                  # we are working in this skill's game/genre folder
         if s >= 3:
@@ -80,13 +98,15 @@ def hook():
     ev = data.get("hook_event_name", "UserPromptSubmit")
     prompt = data.get("prompt", "") or ""
     cwd = data.get("cwd") or os.getcwd()
-    rule = ("check-skills (the user's rule): before acting on this message, load every relevant skill with the Skill "
-            "tool - generic method skills AND the game/topic ones - plus what they build on. Game-folder skills "
-            "load once a file in that folder is read; if one is not loadable, Read its SKILL.md. Already loaded "
-            "this session (and not compacted away)? No need to reload. Say which skills were loaded.")
-    hits = rank(prompt, cwd) if prompt else []
+    rule = ("check-skills (light, 2026-11-09): load only the 1-3 skills THIS step needs (already loaded = don't "
+            "reload); prefer reading one section of a SKILL.md over loading it whole. Context rules: context-hygiene.")
+    hits = rank(prompt, cwd, n=5) if prompt else []
     if hits:
         rule += " Likely matches: " + ", ".join(f"{h[1]}" + (f" [{h[2]}]" if h[2] != "." else "") for h in hits) + "."
+    if ev == "SessionStart" and data.get("source") in ("clear", "compact"):
+        h = os.path.join(ROOT, ".claude", "handoff", "HANDOFF.md")
+        if os.path.exists(h):
+            rule += f" A hand-off exists: read {h} first (unload skill)."
     print(json.dumps({"hookSpecificOutput": {"hookEventName": ev, "additionalContext": rule}}))
 
 

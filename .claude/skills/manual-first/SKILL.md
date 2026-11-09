@@ -1,6 +1,7 @@
 ---
 name: manual-first
-description: The default reflex whenever something new pops up in a game - a new screen, option, setting, map type, term, unit line, order or icon - look it up in the game's manual FIRST, before guessing, clicking or reading game files, then write what it says into the game's guide with the page. lookup.py finds the game's manuals, searches every one for the term, shows each hit with its page and chapter heading and says which pages to read as pictures (the colour/ebook version has labelled screenshots). Order of truth - the game wins over the manual, the manual over a hypothesis. The user's rule (2026-11-02, FoG II). Use whenever a game shows something not yet in its guide, when the user names something to check, before acting on any belief about a rule, and before opening game data or scripts.
+description: "The reflex when anything new shows in a game: look it up in the manual first (lookup.py), then write it into the guide with the page. Use whenever a game shows something not yet in its guide."
+keywords: "default, pops, screen, option, setting, map, type, term, unit, line, order, icon, game's, before, guessing, clicking, reading, files, says, finds, manuals, searches, hit, chapter, heading, pages, read, pictures, colour, ebook, version, has, labelled, screenshots, truth, wins, over, hypothesis, rule, fog, names, check, acting, belief, opening"
 ---
 
 # Manual first

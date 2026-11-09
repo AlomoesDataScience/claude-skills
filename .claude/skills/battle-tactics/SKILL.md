@@ -1,6 +1,7 @@
 ---
 name: battle-tactics
-description: How Claude plans and fights tactical battles in any wargame - the turn method the user set (picture of the battlefield, assign every unit an intentional role, draw movement proposals, check they can work, assess), the questions that make a plan (how do the armies differ, where is the ground good for whom, where is the decisive point), principles that hold across games (break cohesion not bodies, concentrate fire, pin then flank, refuse one wing, keep reserves, terrain decides matchups) and per-game notes - first Field of Glory II Medieval (manual ch. 23 Hints and ch. 30 Tactics, in Claude's words), with Dominions 6 as the comparison. Use when fighting any battle (before and during it), when making or reviewing a battle plan, when the user teaches tactics, or after a battle to record what worked.
+description: "How Claude plans and fights tactical battles in any wargame: The user's turn method, the planning questions, general principles, per-game notes. Use before and during any battle, for battle plans, or after one for lessons."
+keywords: "set, picture, battlefield, assign, unit, intentional, role, draw, movement, proposals, check, work, assess, make, plan, armies, differ, ground, good, whom, decisive, point, hold, across, games, break, cohesion, bodies, concentrate, fire, pin, flank, refuse, wing, keep, reserves, terrain, decides, matchups, first, field, glory, medieval, manual, hints"
 ---
 
 # Battle tactics
@@ -52,24 +53,6 @@ Any plan beats no plan; changing it later is hard. Answer:
 - **Simple:** most troops in lines under commanders, no gaps unless covered; depth (second line,
   reserves) beats an over-wide front; reserves near the centre and behind the wings.
 
-## Principles that cross games
-- **Break cohesion/morale, not bodies.** Units run long before they die, and a rout shakes neighbours.
-  (FoG: cohesion levels; Dominions: morale checks and army-wide rout.)
-- **Concentrate.** Shoot one target with several units the same turn; gang up in melee (a unit fighting
-  two enemies fights each worse). Spread damage wins nothing.
-- **Pin, then flank.** Flank/rear attacks are devastating only when the target is already engaged to
-  its front. Set up the frontal fight first, flank second. Don't offer your own flanks.
-- **Matchups.** Charge only where you have the advantage (FoG: check the Win:Draw:Lose tooltip; Ctrl
-  for detail). A strong unit loses in the wrong spot (knights in marsh).
-- **Skirmishers first.** Use lights to drive off enemy lights, then shoot at the heavy wings; they
-  fall back and evade. Lights die to horse in the open - keep them near cover.
-- **Generals** in a fight boost it a lot but stop commanding while fighting and can be lost; commit
-  them when the fight is critical or even. A general helps a wavering unit rally.
-- **Pursuit:** chasing a beaten enemy with disordered troops throws away the win.
-- **Use the AI's habits** (FoG ch. 31): an infantry AI that is outmatched won't advance; its cavalry
-  hangs back too; lights stay near; units avoid flank exposure, seek flanks, avoid bad matchups,
-  shooters stop outside enemy range, near-broken lights retreat. Bait accordingly.
-
 ## Roles (assign every unit, every turn)
 Main line (holds/attacks frontally) - Strike (heavy cavalry/shock: hits flanks or disrupted units) -
 Shooters (stand still, concentrate on one target) - Screen (lights in front: delay, harass, evade) -
@@ -103,44 +86,6 @@ Lessons from the Dominions mechanics work (2026-11-03) that hold in any game:
 - **Scripted casters**: an AI left to choose picks the nearest target and avoids some spells entirely -
   script what matters, within the fatigue budget (dom6-battle-ai).
 
-## Lessons log
-- 2026-11-02 FoG II battle 1 (Anglo-Irish vs Irish, attacking): no plan at contact; units pushed by
-  script; knights walked into marsh and were charged by skirmishers there; turns ended without the user.
-  Lessons: the turn method above; terrain before movement; enemy reach before every move; roles.
-
-- 2026-11-02 FoG II battle 2, turn 7: knights parked straight behind the shooters had no lane - one was boxed
-  in when the moment came. Keep a lane for the strike force (passage of lines); check it when placing reserves.
-- Same turn (the user: "You can turn the knights to face other directions, check the manual"): I read
-  "unmanoeuvrable" as "can't turn" although PLAY.md had the turn costs. Facing is an order: spend leftover AP
-  to face next turn's targets; when a unit seems stuck, check the manual's turn costs before giving up.
-- Same turn (the user): the white squares around a selected unit are its reach - read them before planning a move;
-  and moving the line opens gaps the knights can pass through - sequence line first, strike force second.
-- 2026-11-03 FoG II battle 2 turn 8 (with the user, move by move): shooting, lane, knights' charge on
-  Crossbowmen 8 (Disrupted, 15 v 3 casualties), second knights faced at the enemy knights, pin on the
-  forward spear, bait screen on the heavy cavalry. Mistakes: moved Knights 0 to (18,14) when the user wanted it
-  threatening the spears (undone); placed the bait first without checking its facing (undone, re-placed
-  with Turn and Shoot). Lesson: plan the whole turn with the user BEFORE committing; positions carry facing.
-- Same turn (the user: "there's cavalry behind them"): before any charge, look past the target - where does a
-  winning charge's pursuit end, and what enemy is waiting there? Keep a second strike unit back to counter.
-
-## Recipe: break a line (the user, FoG II battle 2 turn 8 - "you can break their entire line")
-Hammer and anvil, slightly modified: the line is the anvil and SUPPORTS the cavalry; knights are the hammer.
-1. **Shoot first** at the units to be hit (concentrate: shaken targets lose more to charges).
-2. **Clear lanes**: move ONE infantry unit ONE square, then the knights, then the rest (the user's order).
-3. **Hammer where it is soft**: charge the shooters/light foot (knights v crossbows: Win 86%), not the
-   spears head-on. Keep the second knights back, facing the enemy knights, so the hammer isn't flanked.
-4. **Pin** the spear unit that pushed forward with ONE of ours (it loses its ZOC), which frees our others.
-5. **Envelop the pinned unit**: a unit moves behind its flank (facing the threat), turns next turn,
-   charges the turn after - a flank charge on an engaged unit drops its cohesion at once.
-6. **Screen the enemy heavy cavalry while this happens**: bait (mounted shooters) 2 squares IN ITS PATH,
-   FACING it (front ZOC blocks the path of NORMAL moves only - pursuers ignore ZOC; if charged, the bait
-   evades and the pursuit wastes the knights' move - plot where the pursuit ends: leftover AP + 4);
-   light foot further back, out of its one-turn reach, facing it to shoot stationary next turn.
-   Before placing bait or a blocker, CHECK WHAT HAPPENS WHEN IT IS CHARGED (facing, evade, pursuit, who
-   the pursuit can switch to). "The moment the heavy cav cannot hit [our unit] in one turn, you must go."
-7. Read the game's forecasts (shooting, charge chances) for every option before committing; frontal
-   spear-on-spear is ~73% draw - don't.
-
 ## Matchups: area and trample attackers eat crowds (Dominions, Troban vs a Ghost Moose, 2026-11-03)
 I called trample "minor"; it killed the user's army (the user: "trampled killed my army"). One trample hits every small
 unit it rolls over, so cheap massed infantry feeds it. Against tramplers, area spells, breath, sweeps: fight
@@ -173,6 +118,14 @@ Per game, write down what fog of war hides (in its guide) - it differs a lot:
 - TOAW IV: fog of war is a real concern (the user, 2026-11-02) - expect unknown enemy positions and
   strengths; recon, probing and reading reports matter there. Check its manual's fog-of-war rules
   first (manual-first) before planning.
+
+## Reference files (read the one the step needs)
+
+| File | Holds |
+|---|---|
+| `reference/principles-that-cross-games.md` | **Principles that cross games** - Break cohesion/morale, not bodies |
+| `reference/lessons-log.md` | **Lessons log** - 2026-11-02 FoG II battle 1 (Anglo-Irish vs Irish, attacking): no plan at contact; units pushed by   script;  |
+| `reference/recipe-break-a-line-fog-ii-battle-2.md` | **Recipe: break a line (the user, FoG II battle 2 turn 8 - "you can break their entire line")** - Hammer and anvil, slightly modified: the line is the anvil and SUPPORTS the cavalry; knights are the hammer |
 
 ## Related skills
 delegate (acting alone on the user's behalf: self-review checklist and certainty test), military-doctrine (FM 3-90 vocabulary and methods - the base this skill builds on), military-operations (FM 3-0: end state, defeat mechanisms, principles of war - check the whole plan), soviet-doctrine (echelons, wedge formations, encirclement), war-concepts (glossary and lookup of war terms: oblique order, enfilade, feigned retreat, ZOC...), combat-models (Lanchester: concentrate, make fights square when stronger and linear when weaker; combat.py), military-theory (strategy classics, in Military Theory/), move-phases (give movement in phases, check each, mandatory extension pass), scouting (what to know before committing), screening (forward units that force reactions), map-usage (read the board), photo-map + map-camera (see it), draw-moves (draw movement proposals: one picture or turn by turn), draw-map, planning (save the battle plan), learn-to-play (learn the game first), manual-first (rules before acting), generalize-learning (lessons log -> generic)

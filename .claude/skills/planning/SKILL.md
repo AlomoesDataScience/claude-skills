@@ -1,6 +1,7 @@
 ---
 name: planning
-description: Make a detailed plan before any non-trivial work, SAVE it as a file, and USE it - re-read it whenever it should be referenced (start of a session, before each step, before a decision, when something goes off-plan, when the user asks what's next), tick steps as they're done and record changes with the reason. Generic, not tied to tactics or any game (the user, 2026-11-02). plan.py creates a plan from the template next to the work (plans/ folder), lists open plans across the workspace and shows one. Use when starting a task with more than a few steps, a game session, a battle, a build, a research or sorting job, when resuming work, or when the user says "make a plan", "what's the plan" or "stick to the plan".
+description: "Make a detailed plan before non-trivial work, save it as a file (plan.py) and re-read and tick it as work goes. Use when starting a multi-step task, a game session or battle, or when resuming work."
+keywords: "should, referenced, start, step, decision, something, off-plan, what's, next, steps, they're, done, record, changes, reason, generic, tied, tactics, creates, template, plans, folder, lists, open, across, workspace, shows, few, build, research, sorting, job, says, stick"
 ---
 
 # Planning - make it, save it, use it

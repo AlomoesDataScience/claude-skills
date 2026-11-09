@@ -1,6 +1,7 @@
 ---
 name: dom6-path-glamour
-description: The Glamour path of Dominions 6 magic, vanilla - what glamour mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's glamour page) and the 105 generic spells with Glamour as their main path, ranked inside each purpose by the spell database (dom6-spell-db: tiers, value, cost; best per purpose in SKILL.md, the full list by research level in spells.md). Use when judging a glamour mage or a nation's glamour access, planning glamour research, scripting glamour casters, choosing glamour spells for a purpose, or when the user asks what glamour magic is good for.
+description: "The Glamour path of Dominions 6 magic: what glamour mages get by role, boosters, crosspaths and every generic glamour spell. Use when judging glamour mages or access, planning glamour research, or choosing glamour spells."
+keywords: "vanilla, indirect, illwiki's, page, main, ranked, inside, purpose, database, dom6-spell-db, tiers, value, cost, best, skill, full, list, level, mage, nation's, scripting, casters, good"
 ---
 
 # Glamour magic (Dominions 6, vanilla)

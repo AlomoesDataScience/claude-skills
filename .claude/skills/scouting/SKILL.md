@@ -1,6 +1,7 @@
 ---
 name: scouting
-description: Generic scouting for any strategy or tactics game, with or without fog of war - what it is for (composition, positions, intent, ground, denying the enemy the same), whether a look turn or recon unit is worth it (what this game can hide vs the turn clock), scouting WITHOUT fog of war (reading - count, classify, read intent, diff turns, hiding places, invisible terrain, threat ranges), WITH fog of war (recon, probes, stale sightings), counter-scouting. Use when starting every battle or turn, when a plan has a look phase, when the enemy is out of sight, or when learning a game's fog-of-war rules.
+description: "Generic scouting for any strategy or tactics game: purposes, fog of war, what to look for, reports, counter-scouting. Use at the start of every battle or turn or when the enemy is out of sight."
+keywords: "without, composition, positions, intent, ground, denying, same, whether, recon, unit, worth, hide, clock, reading, count, classify, read, diff, turns, hiding, places, invisible, terrain, threat, ranges, probes, stale, sightings, starting, plan, has, phase, learning, game's, fog-of-war, rules"
 ---
 
 # Scouting - knowing before committing

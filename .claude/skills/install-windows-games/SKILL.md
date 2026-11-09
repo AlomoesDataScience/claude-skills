@@ -1,6 +1,7 @@
 ---
 name: install-windows-games
-description: Install Windows games (GOG offline installers, other setup.exe) and GOG Linux .sh installers on the user's Linux PC so they show up in Lutris - silent installs into one Wine prefix per game under ~/Games through Lutris's own umu-run and Proton builds, launch command read from GOG's goggame-*.info, then the Lutris config and database entry written (wininstall.py). Use when the user drops game installers (.exe, .msi, gog_*.sh), asks to install something with Lutris or Wine, says GOG has no Linux launcher, or a Windows game needs to run.
+description: "Install Windows games (GOG offline installers, setup.exe) and GOG Linux .sh installers into Lutris, one Wine prefix each (wininstall.py). Use when the user drops installers or a Windows game must run."
+keywords: "show, silent, installs, under, through, lutris's, umu-run, proton, builds, launch, command, read, gog's, goggame, info, config, database, entry, written, msi, something, says, has, launcher, needs"
 ---
 
 # Install Windows games (Lutris)

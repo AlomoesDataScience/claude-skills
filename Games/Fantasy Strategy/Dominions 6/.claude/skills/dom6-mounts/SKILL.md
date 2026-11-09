@@ -1,6 +1,7 @@
 ---
 name: dom6-mounts
-description: How mounted units work in Dominions 6, from the manual (pp. 64-65) and illwiki - rider and mount as two units, who gets hit (size gap, reach, missiles 50/50, AoE and lightning hit both, trample hits the mount), half armour encumbrance for riders and the mount's carry encumbrance, two-handed -3 attack, rider +3 defence, Skilled Rider, fear and morale (rider rout takes the mount, mount rout throws the rider, falling damage), lance charges, mounted commanders' barding and saddle, losing the mount (riders walk home, half-cost rerecruit, smart mounts, Reclaim Mount). Use when recruiting or fighting cavalry, centaurs or chariots, putting a commander on a mount, judging what fear or trample does to cavalry, or when the user asks how mounts work.
+description: "How mounted units work in Dominions 6: rider and mount, who gets hit, trample, fear, dismounting. Use when recruiting or fighting cavalry, centaurs or chariots, or mounting a commander."
+keywords: "manual, illwiki, size, gap, reach, missiles, aoe, lightning, hits, half, armour, encumbrance, riders, mount's, carry, two-handed, attack, defence, skilled, morale, rout, takes, throws, falling, damage, lance, charges, commanders, barding, saddle, losing, walk, home, half-cost, rerecruit, smart, reclaim, putting, judging"
 ---
 
 # Mounts (Dominions 6, vanilla)

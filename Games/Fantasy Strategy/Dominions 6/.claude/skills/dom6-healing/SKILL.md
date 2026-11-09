@@ -1,6 +1,7 @@
 ---
 name: dom6-healing
-description: Hit points, healing, regeneration, reconstruction and afflictions in Dominions 6, from the manual (pp. 41-42, 71) and illwiki - full HP back each turn (not diseased, not Never Heals), in-battle regeneration (% of max HP a round, also cuts affliction chance), reforming flesh (undead) and reconstruction (inanimate), afflictions (chance = % of max HP lost in one blow, minor/major by body part, profuse bleeding, limp and cripple on the march), healing them (recuperation, healers, disease healers, Gift of Health, The Chalice, immortality), affliction resistance, curses, XP stat gains. Use when an elite unit or commander is wounded or afflicted, when judging thugs and regenerating monsters, choosing healing items or blesses, or when the user asks about regen, reconstruction or afflictions.
+description: "Hit points, healing, regeneration and afflictions in Dominions 6. Use when an elite unit or commander is wounded or afflicted, when judging regenerating thugs, or choosing healing items or blesses."
+keywords: "reconstruction, manual, illwiki, full, back, turn, diseased, never, heals, in-battle, max, round, cuts, affliction, chance, reforming, flesh, undead, inanimate, lost, blow, minor, major, body, part, profuse, bleeding, limp, cripple, march, recuperation, healers, disease, gift, health, chalice, immortality, resistance, curses, stat, gains, monsters, regen"
 ---
 
 # Healing, regeneration and afflictions (Dominions 6, vanilla)

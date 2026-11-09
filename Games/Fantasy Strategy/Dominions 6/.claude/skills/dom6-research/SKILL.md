@@ -1,6 +1,7 @@
 ---
 name: dom6-research
-description: Magic research in Dominions 6, from the manual (pp. 73-74, 80, turn step 2) and illwiki - the seven schools (Conjuration, Alteration, Evocation, Construction, Enchantment, Thaumaturgy, Blood), what a spell needs (school level + path levels + gems), research points per mage (5 + 2 x magic levels +- bonuses, Magic/Drain scales, dementia halves), non-mage researchers (philosophers, Divine Insight up to dominion strength), labs, legendary level 9, and how to plan research around what your mages can actually cast (dom6-spells castable). Use when setting research orders or the research queue, planning which school to push, judging research speed, or when the user asks about research.
+description: "Magic research in Dominions 6: the seven schools, research points, queue, labs and speed. Use when setting research orders or the queue, choosing which school to push, or judging research speed."
+keywords: "manual, turn, step, illwiki, conjuration, alteration, evocation, construction, enchantment, thaumaturgy, blood, spell, needs, level, path, levels, gems, mage, bonuses, drain, scales, dementia, halves, non-mage, researchers, philosophers, divine, insight, dominion, strength, legendary, plan, around, mages, actually, cast, dom6-spells, castable, planning"
 ---
 
 # Research (Dominions 6, vanilla)

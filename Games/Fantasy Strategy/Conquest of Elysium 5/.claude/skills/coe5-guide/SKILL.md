@@ -1,6 +1,7 @@
 ---
 name: coe5-guide
-description: Starter guide to Conquest of Elysium 5 (Illwinter, the makers of Dominions) - what the game is, how a turn works, resources, commanders and armies, combat, magic and the 24 classes, with a page map of the manual (coe5manual.pdf, searchable as coe5manual.txt) and what is still to learn. Uses game-sources (manual lookups), game-ui (driving the game window), learn-to-play (method). Use when the user wants to play, learn, mod or talk about Conquest of Elysium 5 / CoE5, or asks how one of its rules, classes or screens works.
+description: "Starter guide to Conquest of Elysium 5 (Illwinter): turns, resources, armies, combat, magic, the 24 classes, manual page map. Use when playing, learning or modding CoE5 or asking how a rule works."
+keywords: "makers, dominions, game, turn, commanders, coe5manual, pdf, searchable, txt, still, learn, game-sources, lookups, game-ui, driving, window, learn-to-play, method, play, mod, talk, rules, screens"
 ---
 
 # Conquest of Elysium 5 - starter guide

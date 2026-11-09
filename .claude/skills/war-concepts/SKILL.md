@@ -1,6 +1,7 @@
 ---
 name: war-concepts
-description: Glossary of war concepts for playing and designing games, from Wikipedia's Index of war-related articles (local copy, Military Theory/wiki/) triaged by Claude into A (221 concepts that matter for games, full text local), B (681 specific weapons, platforms, troop types and wars, fetched on demand) and C (244 not useful - ranks, law cases, atrocities, culture, wrong links). Concepts grouped by theme in Claude's words with what each means at the table - forms of war and strategy, fronts, offence and defence moves, fire and manoeuvre, combined arms, terrain and fortification, deception and intelligence, command, logistics, morale, air, naval, space, irregular and information war, escalation and war termination, and the wargame mechanics (zone of control, order of battle, fog of war). warwiki.py looks up any term, searches the full texts and fetches more. Use when the user uses a military term, when naming what a unit or plan is doing, when a game introduces a concept, or when designing systems for our games.
+description: "Glossary of war concepts for games, triaged from Wikipedia's war index into what matters for play and design. Use when the user uses a military term or a game introduces a concept."
+keywords: "playing, designing, war-related, articles, local, copy, theory, wiki, matter, full, text, specific, weapons, platforms, troop, types, wars, fetched, demand, useful, ranks, law, cases, atrocities, culture, wrong, links, grouped, theme, words, means, table, forms, strategy, fronts, offence, defence, moves, fire, manoeuvre, combined, arms, terrain, fortification, deception"
 ---
 
 # War concepts (Wikipedia's Index of war-related articles, triaged)
@@ -31,29 +32,6 @@ requests" a few times; one full article per 2.5 s worked. Back off and retry, ne
 - **C** - left out: ranks and titles, legal tribunals, atrocities, memorials and the arts, and links
   that point at the wrong thing (Firebase = Google's product, Overwatch = the video game, Scouting =
   the youth movement, Cannonade = a racehorse, Proxy fight = shareholders, Reinforcement = psychology).
-
-## Forms of war and strategy
-- **Absolute / total war** (everything mobilised, no limits) vs **limited war** (limited aims and
-  means) - sets how far an AI or player escalates. **Grand strategy** - all a state's means toward
-  its long-term ends; **military strategy** - force toward political aims; **operational level**
-  between strategy and tactics (military-operations).
-- **Attrition** (wear them down; Lanchester's square-law world) vs **manoeuvre warfare** (make
-  their position useless, break cohesion; Blitzkrieg, AirLand Battle, deep operation, Soviet OMG).
-- **Fabian strategy** - avoid the decisive battle, harass, let time and supply beat the stronger
-  side (the French AI's time-out win in our FoG II battle is Fabian by default).
-- **Conventional / irregular / asymmetric / hybrid / fourth-generation / grey-zone** - from army
-  vs army to mixes of regulars, guerrillas, information and economic pressure below open war.
-- **Generations of warfare** - massed line -> massed firepower -> manoeuvre -> blurred war and
-  politics; a frame for era design in our games.
-- **Pre-emptive war** (strike first at an imminent attack) vs **preventive war** (strike before
-  they become able) - AI war-declaration logic. **Security dilemma** - my defence looks like your
-  threat; arms races follow. **Deterrence**, **counterforce** (hit their weapons) vs **countervalue**
-  (hit their cities), **first/second strike**, **brinkmanship**, **horizontal escalation** (widen the
-  war to new places), **conflict escalation** ladders - diplomacy and AI in 4X design.
-- **Pyrrhic victory** - a win that costs as much as a loss; check the exchange ratio, not the result.
-- **War economy, economic warfare, blockade, mobilisation, war-weariness, war termination** - the
-  economy and politics layer: wars are won by producing and sustaining more, lost when the home
-  front quits; plan how a war ends before starting it.
 
 ## Fronts and space
 **Theatre** (region of operations) > **front** (a sector, or the line of contact) > **front line**;
@@ -136,29 +114,6 @@ line; operational reach in military-operations), **convoy**, **airlift**, **bloc
 levels, Dominions morale; "break cohesion, not bodies" in battle-tactics), **war-weariness** at the
 national level.
 
-## Domains
-- **Land / mountain / jungle / cold-weather / urban / subterranean / night** warfare - each changes
-  speed, sight, supply and which arm dominates (urban and jungle favour infantry and short range;
-  mountains favour the defender and light troops).
-- **Air**: **aerial warfare**, **air supremacy** (they cannot fly at all) vs air superiority,
-  **offensive counter air** (destroy their air force, on the ground best), **suppression of enemy
-  air defences**, **air interdiction** (hit supply and reinforcements behind the front), **close air
-  support**, **strategic** vs **tactical bombing**, **area bombardment**, **dogfight**, **drone
-  warfare**, **precision-guided munitions**.
-- **Naval**: **naval / surface / submarine / anti-submarine warfare**, **line of battle** (the
-  broadside era: single line so every gun bears), **wolfpack** (subs mass on a convoy), **sea
-  denial** (stop them using the sea without controlling it yourself), **fleet in being** (a fleet
-  that never fights still pins the enemy by existing - Corbett on the shelf), **amphibious warfare
-  / landing operation**.
-- **Space and missiles**: **space weapon**, **kinetic bombardment** (rods from orbit), **missile
-  defence**, **point defence** (defend one object - the salvo model's interception), **active
-  protection system** (vehicle-level hard kill of incoming rounds), **anti-access/area denial**
-  (A2/AD: make an area too costly to enter - long-range missiles, sensors, mines).
-- **Information**: **information warfare**, **cyberwarfare**, **psychological warfare**,
-  **political warfare**.
-- **Irregular**: **guerrilla warfare**, **insurgency**, **counterinsurgency**, **people's war**
-  (Mao, on the shelf), **partisans**, **unconventional warfare**, **low-intensity conflict**.
-
 ## Wargame mechanics named in the index
 - **Zone of control** (board wargames: the hexes next to a unit). **Rigid** = an enemy entering it
   must stop; **semi-rigid** = it may enter but not move directly from one ZOC hex to another. Some
@@ -168,6 +123,13 @@ national level.
   one too; FoG II has primary and secondary ZOCs (fog2m-guide PLAY.md). (Checked against the text.)
 - **Wargame**, **military simulation**, **operations research** (the science behind combat models
   - combat-models skill), **order of battle**.
+
+## Reference files (read the one the step needs)
+
+| File | Holds |
+|---|---|
+| `reference/forms-of-war-and-strategy.md` | **Forms of war and strategy** - Absolute / total war (everything mobilised, no limits) vs limited war (limited aims and   means) - sets how  |
+| `reference/domains.md` | **Domains** - Land / mountain / jungle / cold-weather / urban / subterranean / night warfare - each changes   speed, sight |
 
 ## Related skills
 military-doctrine (FM 3-90 terms with page refs - fuller on the tactical tasks), military-operations

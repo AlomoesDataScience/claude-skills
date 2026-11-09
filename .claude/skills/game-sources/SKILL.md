@@ -1,6 +1,7 @@
 ---
 name: game-sources
-description: Turn a game's written sources into something Claude can search, and list the user's Steam library (steamlib.py) - manual PDFs as page-numbered text with a chapter outline (bookmarks, printed table of contents, or headings by font size) and grep/page lookups (manual.py), and wiki/lore sites (MediaWiki) fetched as HTML, text and infobox facts, through the Wayback Machine when the site blocks downloads (wikifetch.py). Scanned manuals go through game-ui's ocr.py. Use when starting on a new game (read its manual), looking up a rule or screen in a manual, when the user drops a manual or names a wiki or lore page to read, or when a site gives 403/Cloudflare to curl and WebFetch.
+description: "Turn a game's manuals and wikis into searchable page-numbered text and list the user's Steam library (steamlib.py). Use when starting a new game, looking up a rule in a manual, or when a manual is dropped."
+keywords: "written, something, search, pdfs, chapter, outline, bookmarks, printed, table, contents, headings, font, size, grep, page, lookups, wiki, lore, sites, mediawiki, fetched, html, infobox, facts, through, wayback, machine, site, blocks, downloads, wikifetch, scanned, game-ui's, ocr, read, screen, drops, names, gives, cloudflare, curl, webfetch"
 ---
 
 # Game sources: manuals and wikis

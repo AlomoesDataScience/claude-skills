@@ -17,6 +17,7 @@ order), checking them, making new ones, importing, and unloading/loading them.
   python3 -I skills.py disable NAME              unload: move it to .claude/skills-disabled/ (its
                                                  description no longer takes context in new sessions)
   python3 -I skills.py enable NAME               load it again
+  python3 -I skills.py split NAME [--budget 140] [--dry]   move big sections to reference/*.md
   python3 -I skills.py index                     rewrite .claude/skills/INDEX.md (the catalogue) and
                                                  each game folder's own .claude/skills/INDEX.md
 
@@ -46,6 +47,8 @@ NEST_DEPTH = 5                                                       # genre/gam
 DISABLED = os.path.join(CLAUDE, "skills-disabled")
 USER = os.path.expanduser("~/.claude/skills")
 DESC_MAX = 1024
+DESC_WORDS = 40      # budget (doc-standards, 2026-11-09): the listing is re-sent nearly every turn
+BODY_LINES = 150     # budget: SKILL.md over this -> split detail into reference/ files
 NAME_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 STOP = set("""a an the and or of to in on for with by from at as is are be it its this that these those
 when whenever use used uses using user users asks ask wants want claude skill skills any all
@@ -173,7 +176,7 @@ def route(task, skills, n=5):
     tw = {stem(w) for w in words(task)}
     scored = []
     for s in skills.values():
-        desc = {stem(w) for w in words(s["description"])}
+        desc = {stem(w) for w in words(s["description"] + " " + s["meta"].get("keywords", ""))}
         name = {stem(w) for w in words(s["name"].replace("-", " "))}
         heads = {stem(w) for line in s["body"].splitlines() if line.startswith("#") for w in words(line)}
         hits = {w: 3 * (w in desc) + 4 * (w in name) + 1 * (w in heads) for w in tw}
@@ -218,11 +221,15 @@ def check(s, skills):
         out.append(("error", "no description (Claude cannot tell when to use the skill)"))
     elif len(d) > DESC_MAX:
         out.append(("error", f"description is {len(d)} characters (max {DESC_MAX})"))
-    elif "use when" not in d.lower() and "use whenever" not in d.lower():
+    elif not re.search(r"\bUse (when|whenever|at|for|in|before|after|to)\b", d, re.I):
         out.append(("warn", "description does not say when to use it ('Use when ...')"))
-    if s["lines"] > 500:
-        out.append(("warn", f"SKILL.md is {s['lines']} lines; move detail into side files it links"))
-    for ref in sorted(set(re.findall(r"`((?:scripts|examples|templates|tests)/[\w./-]+)`", s["body"]))):
+    if d and len(d.split()) > DESC_WORDS:
+        out.append(("warn", f"description is {len(d.split())} words (budget {DESC_WORDS}); move trigger words to keywords:"))
+    if not m.get("keywords"):
+        out.append(("warn", "no keywords: line (routing words for check-skills and INDEX.md)"))
+    if s["lines"] > BODY_LINES:
+        out.append(("warn", f"SKILL.md is {s['lines']} lines (budget {BODY_LINES}); move detail into reference/ files it links"))
+    for ref in sorted(set(re.findall(r"`((?:scripts|examples|templates|tests|reference)/[\w./-]+)`", s["body"]))):
         if "*" in ref or "<" in ref:
             continue
         if not os.path.exists(os.path.join(s["folder"], ref)) and \
@@ -247,6 +254,7 @@ def check(s, skills):
 TEMPLATE = """---
 name: {name}
 description: {description}
+keywords: {keywords}
 ---
 
 # {title}
@@ -288,7 +296,7 @@ def new(name, description, uses_=(), script=None, where=None):
         files += f"- Builds on the **{u}** skill.\n"
     os.makedirs(folder)
     with open(os.path.join(folder, "SKILL.md"), "w", encoding="utf-8") as f:
-        f.write(TEMPLATE.format(name=name, description=description,
+        f.write(TEMPLATE.format(name=name, description=description, keywords="",
                                 title=name.replace("-", " ").capitalize(), files=files or "- ...\n"))
     if script:
         os.makedirs(os.path.join(folder, "scripts"))
@@ -373,30 +381,38 @@ def move(name, to_disabled):
     return dst
 
 
-def _table(rows):
-    lines = ["| Skill | Builds on | What it is for |", "|---|---|---|"]
+def _lines(rows):
+    """one line per skill: name - short description (first sentence) - keywords."""
+    out = []
     for s in sorted(rows, key=lambda s: s["name"]):
-        d = s["description"].split(". Use when")[0].split(". Use whenever")[0]
-        d = d if len(d) <= 220 else d[:217].rsplit(" ", 1)[0] + "..."
-        lines.append(f"| {s['name']} | {', '.join(s['uses']) or '-'} | {d.replace('|', '/')} |")
-    return lines
+        d = s["description"].split(". Use when")[0].split(". Use whenever")[0].rstrip(".")
+        d = d if len(d) <= 160 else d[:157].rsplit(" ", 1)[0] + "..."
+        k = s["meta"].get("keywords", "")
+        k = k if len(k) <= 120 else k[:117].rsplit(",", 1)[0] + ", ..."
+        out.append(f"- **{s['name']}** - {d}" + (f" _[{k}]_" if k else ""))
+    return out
 
 
 def write_index(skills):
-    """Root INDEX.md: generic skills, then every game/genre folder's skills; each folder also gets
-    its own INDEX.md. Returns the root index path."""
+    """INDEX.md = the routing index (the user, 2026-11-09: "an index file to call the proper skills after the
+    skills refactor"). Routes table (hand-edited in skills-manager/routes.md) on top, then one line per skill
+    by folder. Each game folder also gets its own short INDEX.md. Returns the root index path."""
     places = {}
     for s in skills.values():
         places.setdefault(s["where"], []).append(s)
-    head = ["Written by `skills-manager/scripts/skills.py index`; do not edit by hand.", ""]
-    lines = ["# Skills in this project", ""] + head + [
-        "Generic skills live here (loaded at startup). Game and genre skills live in that folder's own",
-        "`.claude/skills/` and load once Claude works on a file there (or `/add-dir FOLDER`).", "",
-        "## Generic (project root)", ""] + _table(places.get("project", []))
+    head = ["Generated by `skills-manager/scripts/skills.py index` from each SKILL.md (description + keywords:)",
+            "and `skills-manager/routes.md`; edit those, not this file.", ""]
+    routes = open(os.path.join(HERE, "..", "routes.md"), encoding="utf-8").read().strip()
+    lines = ["# Skill index", ""] + head + [
+        "How to use: find the task in Routes, load only what the current step needs (Skill tool; game skills",
+        "outside the session list: Read their SKILL.md), read one section rather than a whole skill.",
+        "Fast matcher: `python3 -I .claude/skills/check-skills/scripts/checkskills.py \"TASK\"`.", "",
+        "## Routes", "", routes, "", "## Generic skills (project root)", ""] + _lines(places.get("project", []))
     for where in sorted(w for w in places if w not in ("project", "user") and not w.startswith("disabled")):
-        lines += ["", f"## {where}", ""] + _table(places[where])
+        lines += ["", f"## {where}", ""] + _lines(places[where])
         with open(os.path.join(PROJECT, where, ".claude", "skills", "INDEX.md"), "w", encoding="utf-8") as f:
-            f.write("\n".join([f"# Skills for {where}", ""] + head + _table(places[where])) + "\n")
+            f.write("\n".join([f"# Skills for {where}", ""] + head + _lines(places[where])
+                              + ["", "Generic skills and routes: `.claude/skills/INDEX.md` at the workspace root."]) + "\n")
     dis = sorted(os.listdir(DISABLED)) if os.path.isdir(DISABLED) else []
     if dis:
         lines += ["", "Disabled (in `.claude/skills-disabled/`, `skills.py enable NAME` loads one): "
@@ -405,6 +421,77 @@ def write_index(skills):
     with open(p, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
     return p
+
+
+
+KEEP_RE = re.compile(r"rule|hard|never|always|quick|start|routine|checklist|related|safety|first|method|workflow|steps|procedure|turn method", re.I)
+
+
+def split(name, skills, budget=140, dry=False):
+    """Move the biggest '## ' sections of a SKILL.md into reference/<slug>.md until the SKILL.md is at most
+    BUDGET lines. Sections whose heading says rule/hard/never/always/quick/start/routine/checklist/related/
+    safety/first stay. Leaves a 'Reference files' table (file - what it holds). No text is dropped:
+    returns (words before, words after across SKILL.md + new files, moved [(file, heading)])."""
+    s = skills[name]
+    p = os.path.join(s["folder"], "SKILL.md")
+    text = s["text"]
+    end = text.find("\n---", 3) + 4
+    fm, body = text[:end], text[end:]
+    parts = re.split(r"(?m)^(?=## )", body)
+    intro, secs = parts[0], parts[1:]
+    in_code = False                      # '## ' inside a code fence is not a heading: re-join such pieces
+    merged = []
+    for sec in secs:
+        if merged and in_code:
+            merged[-1] += sec
+        else:
+            merged.append(sec)
+        in_code = (merged[-1].count("```") % 2) == 1
+    secs = merged
+    n = lambda t: t.count("\n")
+    total = n(fm) + n(intro) + sum(n(x) for x in secs)
+    order = sorted(range(len(secs)), key=lambda i: -n(secs[i]))
+    move, table_cost = set(), 6
+    for i in order:
+        if total + table_cost + len(move) <= budget:
+            break
+        head = secs[i].splitlines()[0]
+        if KEEP_RE.search(head):
+            continue
+        move.add(i)
+        total -= n(secs[i])
+    if not move:
+        return None
+    os.makedirs(os.path.join(s["folder"], "reference"), exist_ok=True)
+    kept, moved, files = [], [], {}
+    for i, sec in enumerate(secs):
+        if i not in move:
+            kept.append(sec)
+            continue
+        head = sec.splitlines()[0][3:].strip()
+        slug = re.sub(r"\b(" + "ry" + "an'?s?|the user'?s?)\b", "", head.lower())   # no names in file names (pieces: export check)
+        slug = re.sub(r"[^a-z0-9]+", "-", slug).strip("-")[:40].strip("-") or f"part{i}"
+        f = f"reference/{slug}.md"
+        while f in files:
+            f = f.replace(".md", "-2.md")
+        files[f] = f"# {name} - {head}\n\nPart of the {name} skill; SKILL.md links here.\n\n" + sec.rstrip() + "\n"
+        first = re.sub(r"[`*_]", "", " ".join(sec.splitlines()[1:]).strip()).lstrip("-|# ").split(". ")[0][:110]
+        moved.append((f, head, first))
+    table = ["## Reference files (read the one the step needs)", "", "| File | Holds |", "|---|---|"]
+    table += [f"| `{f}` | **{h}** - {d} |" for f, h, d in moved]
+    rel = [k for k in kept if k.startswith("## Related")]
+    kept = [k for k in kept if not k.startswith("## Related")]
+    new = fm + intro + "".join(kept).rstrip() + "\n\n" + "\n".join(table) + "\n\n" + "".join(rel)
+    wc = lambda t: len(t.split())
+    before = wc(body)
+    after = wc(intro) + sum(wc(k) for k in kept) + sum(wc(k) for k in rel) + sum(wc(secs[i]) for i in move)
+    if not dry:
+        for f, c in files.items():
+            with open(os.path.join(s["folder"], f), "w", encoding="utf-8") as fh:
+                fh.write(c)
+        with open(p, "w", encoding="utf-8") as fh:
+            fh.write(new.rstrip() + "\n")
+    return before, after, [(f, h) for f, h, _ in moved], new.count("\n") + 1
 
 
 # ---------------------------------------------------------------- command line
@@ -442,6 +529,10 @@ def main(argv):
     a = sub.add_parser("enable")
     a.add_argument("name")
     sub.add_parser("index")
+    a = sub.add_parser("split")
+    a.add_argument("name")
+    a.add_argument("--budget", type=int, default=140)
+    a.add_argument("--dry", action="store_true")
     o = ap.parse_args(argv)
 
     if o.cmd in ("disable", "enable"):
@@ -510,6 +601,16 @@ def main(argv):
             for lv, msg in probs:
                 print(f"  {lv}: {msg}")
         sys.exit(1 if bad else 0)
+    elif o.cmd == "split":
+        r = split(o.name, all_skills(), o.budget, o.dry)
+        if not r:
+            print(f"{o.name}: nothing to move")
+        else:
+            b, a_, mv, ln = r
+            print(f"{o.name}: {'would move' if o.dry else 'moved'} {len(mv)} sections, SKILL.md -> {ln} lines, "
+                  f"words {b} -> {a_} {'OK' if b == a_ else 'MISMATCH'}")
+            for f, h in mv:
+                print(f"  {f}  ({h})")
     elif o.cmd == "index":
         print(write_index(sk))
 

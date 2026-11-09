@@ -1,6 +1,7 @@
 ---
 name: economic-theory
-description: The user's economic theory shelf as searchable text - Adam Smith The Wealth of Nations, John Stuart Mill Principles of Political Economy, Karl Marx Capital volumes I-III - with each work's core ideas in Claude's words and how they map onto the economy of the user's 4X engine (division of labour and markets, value and prices, capital and crises, rent, trade, money and credit, distribution paradigms) and his design goals (real supply chains, a "fog of market", debt, bonds, stocks and derivatives, multiple economic systems that can all work). The user plans to add his own economic theories here. Use when the user discusses economics, wants a classic looked up or compared, or when designing economies, markets, finance or production for our games.
+description: "the user's economic theory shelf (Smith, Mill, Marx and more) as searchable text with each work's core ideas. Use when discussing economics, looking up a classic, or designing economies, markets or production for our games."
+keywords: "adam, wealth, nations, john, stuart, principles, political, economy, karl, capital, volumes, i-iii, words, map, onto, engine, division, labour, value, prices, crises, rent, trade, money, credit, distribution, paradigms, design, goals, real, supply, chains, fog, market, debt, bonds, stocks, derivatives, multiple, systems, work, plans, add, theories, discusses"
 ---
 
 # Economic theory shelf

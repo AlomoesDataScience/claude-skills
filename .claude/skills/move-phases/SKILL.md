@@ -1,6 +1,7 @@
 ---
 name: move-phases
-description: Give a turn's movement in PHASES instead of all at once, with a problem check at the end of every phase and a mandatory extension pass before the turn is called done - phase 1 the main body (block advance, line kept together), phase 2 the extension pass (every unit's leftover moves or AP checked against its role - screens further out, flank guards placed, reserves held back on purpose), phase 3 the final check of the whole picture (gaps, blocked units, enemy reach next turn, nothing left unordered by accident). Each phase gets planned, drawn, executed one order at a time, verified (photo, AP read, hover) and then checked for problems before the next starts. The user's method, FoG II battle 2 (2026-11-02). Use when giving any turn's movement orders in a tactical or wargame, when a block advance is ordered, when units have different speeds, or before handing a turn to the user for review.
+description: "Give a turn's movement in phases (main body, extension pass, final check), verifying each before the next. Use when giving movement orders in any tactical or wargame turn."
+keywords: "instead, once, problem, end, phase, mandatory, called, done, block, advance, line, kept, together, unit's, leftover, moves, checked, against, role, screens, further, flank, guards, placed, reserves, held, back, purpose, whole, picture, gaps, blocked, units, enemy, reach, nothing, left, unordered, accident, gets, planned, drawn, executed, order, time"
 ---
 
 # Move in phases - and check before the turn is done

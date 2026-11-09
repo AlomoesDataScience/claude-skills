@@ -1,6 +1,7 @@
 ---
 name: war-language
-description: A higher-order language for warfare in games - translate what is going on in a game (units, squares, points, morale bars, turns) UP into military terms (situation in METT-TC and OAKOC, enemy in SALUTE with most-likely and most-dangerous courses of action, our plan as mission, intent, form of maneuver and one task-and-purpose per unit, control measures), reason at that level, then translate it back DOWN into concrete game orders (which unit, which square, which action, how many points, what to check after) - with a per-game lexicon (game element <-> doctrine term) in each game's guide, written templates (warlang.py prints them) and back-translation checks so nothing is lost either way. Built on military-doctrine, military-operations, soviet-doctrine, war-concepts, combat-models. Use when a turn or phase of a wargame or strategy game starts, when explaining to the user what is happening in a battle or war, when turning a plan into orders, when reviewing a turn, and when making a lexicon for a new game.
+description: "Translate a game's situation up into military terms (METT-TC, SALUTE, mission, intent), reason there, and back down into orders. Use when a wargame turn starts, explaining a battle, or turning a plan into orders."
+keywords: "higher-order, warfare, games, going, game, units, squares, points, morale, bars, turns, oakoc, enemy, most-likely, most-dangerous, courses, action, form, maneuver, task-and-purpose, unit, control, measures, level, concrete, square, many, check, after, per-game, lexicon, element, doctrine, term, guide, written, templates, warlang, prints, back-translation, checks, nothing, lost, either, built"
 ---
 
 # War language - translate up, think, translate down

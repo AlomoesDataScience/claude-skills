@@ -1,6 +1,7 @@
 ---
 name: draw-moves
-description: Draw a movement plan on a game board - the "draw your movement proposals" step of the user's turn method - either as ONE picture (every turn's moves on one board, arrows coloured and numbered by turn, units at their final squares, outlines where they started) or as ONE PICTURE PER TURN, or both, from a short plan file (start positions + moves per turn, in map coordinates) with turnplan.py on top of draw-map's drawmap.py. Use when proposing moves for a turn, planning an advance, deployment or manoeuvre over several turns, showing the user a plan for review, or checking a plan's geometry (reach, gaps, flanks, terrain) before giving orders.
+description: "Draw a movement plan on a game board, all turns in one picture or one per turn, from a plan file with turnplan.py. Use when proposing or reviewing moves for a turn or a multi-turn manoeuvre."
+keywords: "proposals, step, method, either, turn's, arrows, coloured, numbered, units, final, squares, outlines, started, short, start, positions, map, coordinates, top, draw-map's, drawmap, planning, advance, deployment, over, several, showing, review, checking, plan's, geometry, reach, gaps, flanks, terrain, before, giving, orders"
 ---
 
 # Draw moves - movement plans as pictures

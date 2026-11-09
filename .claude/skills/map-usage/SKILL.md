@@ -1,6 +1,7 @@
 ---
 name: map-usage
-description: Generic method for using any game's map or board to make decisions - what to establish about a map (layout, grid, borders, coordinates, deployment zones, sides, fog of war), reading terrain from photos and knowing which terrain is invisible and needs a tooltip, using the game's overlays (grid, line of sight, ranges, zones of control, movement and attack highlights), locating and identifying units, building a text board for geometry, and checking the map after every action. Also defines what every per-game map skill (<game>-map) must contain, and when to write one. Builds on map-camera (seeing) and photo-map (photographing); per-game rules live in each game's guide. Use when starting any game with a map, before planning moves, when a game's map skill doesn't exist yet, or when unsure what something on a map is.
+description: "Generic method for using any game's map to make decisions: layout, grid, coordinates, zones, sides, fog, terrain. Use when starting a game with a map, before planning moves, or when a map skill is missing."
+keywords: "board, establish, borders, deployment, war, reading, photos, knowing, invisible, needs, tooltip, overlays, line, sight, ranges, control, movement, attack, highlights, locating, identifying, units, building, text, geometry, checking, after, action, defines, per-game, must, contain, write, builds, map-camera, seeing, photo-map, photographing, rules, live, guide, doesn't, exist, yet, unsure"
 ---
 
 # Map usage - generic

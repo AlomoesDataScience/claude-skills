@@ -1,6 +1,7 @@
 ---
 name: fogk-guide
-description: Guide to Field of Glory - Kingdoms (AGEOD / Slitherine, 2024; Rajas and Tribes DLC 2025), a turn-based medieval grand strategy game of realms, vassals, dynasties and population from 1054 - where its 300-page manual (text) and the 40-odd data tables copied from the install live, the manual's map, how a turn works (regions grouped into provinces and a demesne, population by social class assigned to tasks, buildings, authority and local authority, loyalty and revolt, Peers of the Realm with traits, vassals, diplomacy and legacy points as the score), its self-describing CSV data format, and how its battles can be exported to Field of Glory II Medieval. Use when the user wants to play, learn or talk about Field of Glory Kingdoms (or Empires, its ancient predecessor), look up a rule, read its data, or borrow its population, vassal, authority and data-format systems for our 4X.
+description: "Guide to Field of Glory Kingdoms (AGEOD/Slitherine), medieval grand strategy of realms, vassals and population: manual map, rules, data. Use when playing, learning or modding it, or borrowing its systems."
+keywords: "rajas, tribes, dlc, turn-based, game, dynasties, page, text, odd, tables, copied, install, live, manual's, turn, works, regions, grouped, provinces, demesne, social, class, assigned, tasks, buildings, authority, local, loyalty, revolt, peers, realm, traits, diplomacy, legacy, points, score, self-describing, csv, format, battles, exported, play, learn, talk, empires"
 ---
 
 # Field of Glory: Kingdoms

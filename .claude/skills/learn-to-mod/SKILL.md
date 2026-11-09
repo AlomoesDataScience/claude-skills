@@ -1,6 +1,7 @@
 ---
 name: learn-to-mod
-description: How Claude learns to MOD a game it knows or is learning - find how mods load and where the data lives, read the manual's modding chapter and the official docs, map the file formats (self-documenting headers, CSV comment rows, scripts, command lists), study the shipped example and community mods, build a reader/checker tool, make one small change and test it in the game, then grow, keeping only changed files over vanilla, never touching the install, Steam Workshop or the user's settings without the user's go, and balancing against the rules learned by playing. Twin of learn-to-play - the two compound, do both. Learned on Dominions 6 (.dm mods, Ananke, Black Magic, Mad Science), Space Empires IV (the user's WMD conversion, se4data.py) and Field of Glory II (Squads.csv, BSF scripts). Use when the user wants a mod built, changed, checked or balanced, when starting to mod a new game, or when asking how a game's data or scripts work.
+description: "How Claude learns to mod a game: how mods load, where data lives, the manual's modding chapter, a test mod. Use when a mod is wanted built, changed or balanced, or when starting to mod a new game."
+keywords: "knows, learning, find, read, official, docs, map, file, formats, self-documenting, headers, csv, comment, rows, scripts, command, lists, study, shipped, example, community, build, reader, checker, tool, make, small, change, grow, keeping, files, over, vanilla, never, touching, install, steam, workshop, settings, without, balancing, against, rules, learned, playing"
 ---
 
 # Learn a game to mod

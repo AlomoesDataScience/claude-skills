@@ -46,6 +46,8 @@ clicks and screenshots never touch the user's desktop, focus or keyboard.
   bgplay.py zoom X Y W H [--scale 2]          crop of the last full shot
   bgplay.py key K [K...] | type "text" | click X Y [--right] | move X Y | scroll up|down N [X Y] | hold KEY MS | drag X1 Y1 X2 Y2 [--right] [--slow]
   bgplay.py seq "key o" "wait 800" "type abc" "click 400 300" "shot"
+  bgplay.py text [X0 Y0 X1 Y1] [--find W] [--dark]  OCR lines with their CENTRE "x,y  text" - find and click
+                                              without a screenshot (use this before any shot)
   bgplay.py read [REGION|X0 Y0 X1 Y1]...      text of screen regions by OCR (cheaper and faster than a
                                               screenshot); named regions come from the game folder's
                                               .claude/game-ui.json "regions" (found from the current folder)
@@ -315,6 +317,49 @@ def read(names):
             feed_tracker(prof["tracker"], n, txt)
 
 
+def text(args):
+    """OCR the whole screen (or a box) and print one line per text line: 'x,y  text' with the line's CENTRE in
+    screen pixels - click targets without a screenshot (context rule, 2026-11-09: OCR over pictures).
+    args: [X0 Y0 X1 Y1] [--find WORD] [--dark] [--min 60] (confidence floor)."""
+    need()
+    import ocr as O
+    find = args[args.index("--find") + 1].lower() if "--find" in args else None
+    dark = "--dark" in args
+    floor = float(args[args.index("--min") + 1]) if "--min" in args else 40.0
+    nums = [int(a) for a in args if a.lstrip("-").isdigit()][:4]
+    im = ImageGrab.grab(xdisplay=DISP)
+    box = tuple(nums) if len(nums) == 4 else (0, 0, im.width, im.height)
+    sc = 2
+    tsv = O.ocr(O.prepare(im, box, scale=sc, dark=dark), psm=11, tsv=True)
+    lines = {}
+    for row in tsv.splitlines()[1:]:
+        f = row.split("\t")
+        if len(f) < 12 or not f[11].strip():
+            continue
+        try:
+            conf = float(f[10])
+        except ValueError:
+            continue
+        if conf < floor:
+            continue
+        key = (f[2], f[3], f[4])                     # block, paragraph, line
+        x, y, w, h = (int(v) for v in f[6:10])
+        L = lines.setdefault(key, [10 ** 9, 10 ** 9, 0, 0, []])
+        L[0] = min(L[0], x); L[1] = min(L[1], y); L[2] = max(L[2], x + w); L[3] = max(L[3], y + h)
+        L[4].append(f[11])
+    out = []
+    for x0, y0, x1, y1, words in lines.values():
+        t = " ".join(words)
+        cx, cy = box[0] + (x0 + x1) // (2 * sc), box[1] + (y0 + y1) // (2 * sc)
+        if len(re.findall(r"[A-Za-z0-9]", t)) < 2 or (find and find not in t.lower()):
+            continue                                 # art fragments ("~~", "=") and non-matches
+        out.append((cy, cx, t))
+    for cy, cx, t in sorted(out):
+        print(f"{cx},{cy}  {t}")
+    if not out:
+        print("(no text found" + (f" matching {find!r}" if find else "") + ")")
+
+
 def feed_tracker(hooks, region, text):
     """Stream-panel hook: fill tracker fields from this read (game-ui.json "tracker" block)."""
     try:
@@ -390,8 +435,8 @@ def loading_signs(window=1.0, words=True, pre=None):
     if words and not ev:
         import ocr as O
         im = ImageGrab.grab(xdisplay=DISP)
-        t = re.sub(r"\s+", "", O.ocr(O.prepare(im, (0, 0, im.width, im.height), scale=1, dark=False), psm=11).lower())
-        hit = next((w for w in LOADING_WORDS if w in t), None)
+        txt = O.ocr(O.prepare(im, (0, 0, im.width, im.height), scale=1, dark=False), psm=11)
+        hit = loading_word(txt)
         if hit:
             ev.append(f"says '{hit}'")
             if weak:
@@ -476,6 +521,24 @@ def act(name, step, timeout=180.0, took_s=3.0, tol=12.0):
     else:
         print(f"READY at {int((time.time() - t0) * 1000)} ms: the loading screen lasted {load_ms} ms")
     shot()
+
+
+def loading_word(txt):
+    """The loading word in OCR text, if it reads like a STATUS line, else None. A loading word counts only when it
+    starts its line ("Loading...", "Generating new turn", "Saving game") or is followed by dots, a count or a
+    percentage ("AI thinking (3/36)", "Saving 40%"). A menu entry like "Quit without saving" doesn't count (false
+    LOADING on Dominions' Options menu, 2026-11-03)."""
+    for line in txt.lower().splitlines():
+        line = line.strip()
+        flat = re.sub(r"\s+", "", line)
+        for w in LOADING_WORDS:
+            i = flat.find(w)
+            if i < 0:
+                continue
+            after = flat[i + len(w):]
+            if i <= 2 or re.match(r"(\.\.|…|\(?\d+(/\d+|%))", after):
+                return w
+    return None
 
 
 LOADING_WORDS = ("loading", "pleasewait", "thinking", "generating", "saving", "connecting", "initializing",
@@ -776,6 +839,8 @@ def main(a):
         need()
         for s in a[1:]:
             do(s)
+    elif c == "text":
+        text(a[1:])
     elif c == "read":
         read(a[1:])
     elif c in ("key", "type", "click", "move", "scroll", "hold", "drag"):

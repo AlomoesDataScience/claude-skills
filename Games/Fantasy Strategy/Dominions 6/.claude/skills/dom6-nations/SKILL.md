@@ -1,6 +1,7 @@
 ---
 name: dom6-nations
-description: Read Dominions 6 nations from the running game's own nation info screens (right-click a nation in Select Nation) into the knowledge base, one markdown and JSON file per nation (description, National Features - race, military, magic, priests, scales and blesses, buildings - commander, unit and site counts, a picture of the screen, and the inspector's recruit lists for vanilla nations), and build the nations overview table. Works for mod nations whose mod is enabled. Uses dom6-ui (guarded input, vision.py OCR), dom6-knowledge (where the files go) and dom6-inspector. Use when the user asks for a nation overview or nation files, wants to know what the game says about a nation (description, features), wants all nations of an era read, or wants a mod nation's in-game info checked.
+description: "Read Dominions 6 nations from the game's own nation info screens into one markdown and JSON file per nation. Use when a nation overview or nation file is wanted, or a whole era needs reading."
+keywords: "running, right-click, select, knowledge, base, description, national, features, race, military, magic, priests, scales, blesses, buildings, commander, unit, site, counts, picture, screen, inspector's, recruit, lists, vanilla, build, table, works, mod, whose, enabled, dom6-ui, guarded, input, vision, ocr, dom6-knowledge, files, dom6-inspector, know, game, says, nation's, in-game, checked"
 ---
 
 # Nation files from the game

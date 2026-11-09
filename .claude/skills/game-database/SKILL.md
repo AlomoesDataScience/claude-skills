@@ -1,6 +1,7 @@
 ---
 name: game-database
-description: Build a "rank everything" database for any game - every unit, spell, item, tech or building read from the game's data files (never from memory), sorted by PURPOSE (what it's for), scored inside each purpose with value, cost, efficiency and a stated basis (simulated / weights / cost / stat), tiered by percentile (S-D), hand tiers kept beside the automatic ones, and written as SQLite + CSV + one markdown page per purpose. gamedb.py does the building and querying from a rows file plus a small scorer file (purpose() and score()); the method covers choosing purposes, scoring by simulation where possible, cost models, the trust section, and the sanity checks that catch bad rows. Worked case - Dominions 6 dom6-spell-db (1474 spells). Use when the user asks to rank or evaluate all of something in a game, wants "what's good for X" lists, when comparing options across a big catalogue, or when building an evaluation table for one of our own games.
+description: "Build a rank-everything database for any game: every unit, spell or item from the data files, sorted and ranked by purpose. Use when asked to rank or evaluate all of something in a game."
+keywords: "everything, tech, building, read, game's, never, memory, scored, inside, value, cost, efficiency, stated, basis, simulated, weights, stat, tiered, percentile, s-d, hand, tiers, kept, beside, automatic, ones, written, sqlite, csv, markdown, page, gamedb, querying, rows, file, plus, small, scorer, score, method, covers, choosing, purposes, scoring, simulation"
 ---
 
 # Rank-everything databases (any game)

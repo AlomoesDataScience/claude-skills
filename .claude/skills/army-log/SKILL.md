@@ -1,6 +1,7 @@
 ---
 name: army-log
-description: Evaluate and log BOTH armies every turn of any wargame or battle (the user, 2026-11-02) - read every unit off the screen (cards, hovers, banners; never game data), write one CSV per side per turn (who, type, quality, armour, points, men, cohesion, action points, ammo, square, facing, role, task, commanders), store them in one battle log (armylog.py), then evaluate - losses, cohesion states, ammo, rout progress against the game's victory rules and units still to break, combat power (points x men left) by type and by sector for force ratios at the decisive point, unread units flagged - and diff turns (moves, losses, cohesion changes). Feeds war-language's UP step (Troops and Enemy) and the turn report to the user. Use when a battle turn starts (after the photo), after the enemy's turn, when reporting a battle, and after a battle for the lessons log.
+description: "Read and log both armies every wargame turn (one CSV per side), then evaluate losses, cohesion, combat power and force ratios with armylog.py. Use at the start of a battle turn, after the enemy's turn, and when reporting."
+keywords: "unit, off, screen, cards, hovers, banners, never, game, data, write, type, quality, armour, points, men, action, ammo, square, facing, role, task, commanders, store, states, rout, progress, against, game's, victory, rules, units, still, break, left, sector, decisive, point, unread, flagged, diff, turns, moves, changes, feeds, war-language's"
 ---
 
 # Army log - evaluate and log each army, every turn

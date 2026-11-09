@@ -1,6 +1,7 @@
 ---
 name: mod-diff
-description: Find out what a mod or patch changed in any game and what got better or worse - export the game's tables before and after (vanilla vs mod, patch 1.0 vs 1.1), match rows by id, and sort every changed row into new / removed / better / worse / mixed / AI-only / other with a score from field weights (lower-is-better and higher-is-better fields, good and bad flags, ignored derived columns), then read the top lists, filter to what your faction can use, and check the big ones with the game's calculator or database. moddiff.py does it for any two CSV/JSON tables with a small rules file (summary by group, ranked diff, one row's changes line by line). Use when a game runs a mod or a new patch, when the user asks what a mod or patch changed or what became good, before planning research or builds in a modded game, or when comparing two versions of any data table.
+description: "Find what a mod or patch changed in any game and what got better or worse, by diffing exported tables. Use when a game runs a mod or new patch, or the user asks what changed."
+keywords: "export, game's, before, after, vanilla, match, rows, sort, row, removed, mixed, ai-only, score, field, weights, lower-is-better, higher-is-better, fields, good, bad, flags, ignored, derived, columns, read, top, lists, filter, faction, check, big, ones, calculator, database, moddiff, csv, json, small, rules, file, summary, group, ranked, row's, changes"
 ---
 
 # What a mod or patch changed (any game)

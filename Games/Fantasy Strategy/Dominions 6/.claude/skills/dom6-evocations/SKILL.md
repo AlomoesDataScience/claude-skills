@@ -1,6 +1,7 @@
 ---
 name: dom6-evocations
-description: How damage spells (evocations and other battle damage magic) work in Dominions 6, from the manual (pp. 65-66, 75-76) and the dom6-spells model - casting time and interrupts, landing (caster + spell precision, deviation, precision 100), area (nearest N squares, both armies, rider and mount), the shield roll (blockable unless "ignores shields"), damage types (AP halves protection, AN ignores it, fire/cold/shock/poison resistances x2 %), MR-checked spells, secondary effects, clouds, overcasting (+damage, +area, +range per level), fatigue, friendly fire, and what to cast against what (shields, armour, MR, packed vs spread). Use when choosing or scripting damage spells, judging an enemy's evocation threat, placing troops against area spells, or when the user asks about evocations. Rankings: dom6-spells evocations.md and kill-spells.md.
+description: "How damage spells work in Dominions 6: casting time, landing, area, precision, MR, killing power. Use when choosing or scripting damage spells or placing troops against enemy evocations."
+keywords: "battle, magic, manual, dom6-spells, model, interrupts, caster, spell, deviation, nearest, squares, armies, rider, mount, shield, roll, blockable, unless, ignores, shields, types, halves, protection, fire, cold, shock, poison, resistances, mr-checked, secondary, effects, clouds, overcasting, range, level, fatigue, friendly, cast, armour, packed, spread, judging, enemy's, evocation, threat"
 ---
 
 # Evocations and damage spells (Dominions 6, vanilla)

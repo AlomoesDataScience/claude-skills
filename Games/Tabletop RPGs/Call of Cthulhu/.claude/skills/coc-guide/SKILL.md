@@ -1,6 +1,7 @@
 ---
 name: coc-guide
-description: Starter guide to Call of Cthulhu 7th Edition (Chaosium) - the investigative horror RPG of the Cthulhu Mythos - percentile (d100 roll-under) skills with regular/hard/extreme successes, pushed rolls, bonus and penalty dice, luck, combat and chases, Sanity and madness, magic and tomes, monsters and gods, running investigations (Keeper advice, scenarios), and investigator creation (occupations, skills, the 1920s), plus Pulp Cthulhu (two-fisted 1930s heroes: archetypes, talents, pulp sanity, weird science, four scenarios), with page maps of the Keeper Rulebook (449 pages), Investigator Handbook (289 pages) and Pulp Cthulhu (274 pages), all bookmarked with searchable .txt. Uses game-sources (rule lookups), learn-to-play (method). Use when the user wants to play, run, prepare or talk about Call of Cthulhu / CoC, make an investigator, answer a rules question, or have Claude act as Keeper or write a scenario.
+description: "Starter guide to Call of Cthulhu 7th Edition (Chaosium): d100 skills, sanity, investigation, keeper advice. Use when playing, running or preparing CoC, making an investigator, or answering a rules question."
+keywords: "investigative, horror, rpg, mythos, percentile, roll-under, regular, hard, extreme, successes, pushed, rolls, bonus, penalty, dice, luck, combat, chases, madness, magic, tomes, monsters, gods, investigations, scenarios, creation, occupations, plus, pulp, two-fisted, heroes, archetypes, talents, weird, science, four, page, maps, rulebook, pages, handbook, bookmarked, searchable, txt, game-sources"
 ---
 
 # Call of Cthulhu 7th Edition - starter guide

@@ -1,6 +1,7 @@
 ---
 name: greyhawk-lore
-description: World of Greyhawk (the original Dungeons & Dragons campaign world, Gary Gygax) lore reference - the Flanaess and its regions, the 58 realms with ruler, capital, towns, population, peoples, faiths, allies, enemies and resources (realms.md, from the wiki's fact boxes), the human peoples, the big history (Twin Cataclysms, Great Migrations, the Great Kingdom, the Greyhawk Wars, Iuz), climate, and a lookup script over the local copy of 143 greyhawkonline wiki pages (lore.py realm/page/search/list). Use when the user asks about Greyhawk, Oerth, the Flanaess or one of its realms, peoples, places or wars, wants a D&D campaign or adventure set there, or wants Greyhawk turned into a game map or nation (dom6-maps from_image.py LORE table).
+description: "World of Greyhawk lore reference (the original D&D world): the Flanaess, its realms, rulers, peoples, places and wars. Use when Greyhawk or Oerth comes up or a D&D campaign or map needs lore."
+keywords: "dungeons, dragons, gary, gygax, regions, ruler, capital, towns, population, faiths, allies, enemies, resources, wiki's, fact, boxes, human, big, history, twin, cataclysms, great, migrations, kingdom, iuz, climate, lookup, script, over, local, copy, greyhawkonline, wiki, pages, realm, page, search, list, adventure, set, turned, game, nation, dom6-maps, image"
 ---
 
 # World of Greyhawk - lore reference

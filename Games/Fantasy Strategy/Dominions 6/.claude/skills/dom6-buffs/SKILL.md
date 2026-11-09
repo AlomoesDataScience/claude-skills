@@ -1,6 +1,7 @@
 ---
 name: dom6-buffs
-description: How buffs and debuffs work in Dominions 6, from the manual (pp. 62-65, 69, 76-77), illwiki and the dom6-spells rankings - kinds (self, one target, group area, army-wide, battlefield enchantments, items), coverage per cast (1 square = ~3 humans), range from where the caster stands, duration (the battle; ended at twilight round 100; battlefield enchantments end with their caster), what doesn't stack (skin spells, same spell twice, multiple elemental shields), what does (different stats from different spells), the magic morale bonus, MR on debuffs, AI-cast vs scripted buffs (SCBM AI-avoided buffs must be scripted), measuring a buff with spells.py, and self-buff packages for thugs. Use when choosing or scripting buffs and debuffs, ordering a buff script, kitting a thug, or when the user asks about buffs. Rankings: dom6-spells buffs-debuffs.md.
+description: "How buffs and debuffs work in Dominions 6: kinds, stacking, scripting order, item buffs. Use when choosing or scripting buffs and debuffs, ordering a buff script or kitting a thug."
+keywords: "manual, illwiki, dom6-spells, rankings, self, target, group, area, army-wide, battlefield, enchantments, items, coverage, cast, square, humans, range, caster, stands, duration, battle, ended, twilight, round, end, doesn't, stack, skin, spells, same, spell, twice, multiple, elemental, shields, different, stats, magic, morale, bonus, ai-cast, scripted, scbm, ai-avoided, must"
 ---
 
 # Buffs and debuffs (Dominions 6, vanilla)

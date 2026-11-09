@@ -1,6 +1,7 @@
 ---
 name: dom6-path-fire
-description: The Fire path of Dominions 6 magic, vanilla - what fire mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's fire page) and the 81 generic spells with Fire as their main path, ranked inside each purpose by the spell database (dom6-spell-db: tiers, value, cost; best per purpose in SKILL.md, the full list by research level in spells.md). Use when judging a fire mage or a nation's fire access, planning fire research, scripting fire casters, choosing fire spells for a purpose, or when the user asks what fire magic is good for.
+description: "The Fire path of Dominions 6 magic: what fire mages get by role, boosters, crosspaths and every generic fire spell. Use when judging fire mages or access, planning fire research, or choosing fire spells."
+keywords: "vanilla, indirect, illwiki's, page, main, ranked, inside, purpose, database, dom6-spell-db, tiers, value, cost, best, skill, full, list, level, mage, nation's, scripting, casters, good"
 ---
 
 # Fire magic (Dominions 6, vanilla)

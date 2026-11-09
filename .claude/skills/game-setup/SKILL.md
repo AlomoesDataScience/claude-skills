@@ -1,6 +1,7 @@
 ---
 name: game-setup
-description: Getting a game running properly for Claude and then parsing its UI, before any real play - the run and graphics setup (launch on the locked bgplay screen, Steam launch option, windowed mode and resolution set by Claude, assume it's broken until gamecheck says otherwise, popups as separate windows, GPU drawing through VirtualGL with WineD3D, video memory override, fixing lag, reading Proton/Steam/game logs, backing up the user's settings file) and the UI parsing setup (find every element that stands out from the background, hover each with hoversheet.py and read its tooltip, use the manual's annotated screenshots, check held keys such as the camera, write the element map into the game's guide). Learned on Field of Glory II Medieval with the user, 2026-11-02. Use when launching a game for the first time, when a game lags, crashes, shows a black or textureless screen or the wrong size in bgplay, or on any new screen before clicking things.
+description: "Get a game running properly for Claude (bgplay, Steam launch options, windowed mode, GPU, logs) and parse its UI by hovering every element. Use when launching a game first time or when it lags, crashes or shows black."
+keywords: "getting, parsing, before, real, play, run, graphics, locked, screen, option, resolution, set, assume, broken, until, gamecheck, says, otherwise, popups, separate, windows, drawing, through, virtualgl, wined3d, video, memory, override, fixing, lag, reading, proton, backing, settings, file, find, stands, background, hover, hoversheet, read, tooltip, manual's, annotated, screenshots"
 ---
 
 # Game setup: run, graphics, UI parsing

@@ -1,6 +1,7 @@
 ---
 name: dom6-items
-description: Claude's ranked guide to Dominions 6 magic items for its own play: every forgeable item sorted into killing items (weapons, missile and dancing weapons, offensive item spells), protection items (armour, shields, helmets, protective amulets and rings) and utility items (path boosters, penetration, research, gem income, flight, leadership), measured with the dom6-spells combat model on a Pythium Emerald Lord (heavy infantry killed a round, attacks and arrows it takes to kill the wearer), with gem cost, construction level and which Pythium mage can forge each. Uses dom6-inspector (item data), dom6-spells (combat model), dom6-mechanics (rules). Use when choosing what to forge, kitting a thug or mage, asking what an item is worth, or planning Construction research.
+description: "Claude's ranked guide to Dominions 6 magic items: killing, protection, utility and boosters, by worth. Use when choosing what to forge, kitting a thug or mage, or judging an item's value."
+keywords: "play, forgeable, item, sorted, weapons, missile, dancing, offensive, spells, armour, shields, helmets, protective, amulets, rings, path, penetration, research, gem, income, flight, leadership, measured, dom6-spells, combat, model, pythium, emerald, lord, heavy, infantry, killed, round, attacks, arrows, takes, kill, wearer, cost, construction, level, dom6-inspector, data, dom6-mechanics, rules"
 ---
 
 # Dom6 items

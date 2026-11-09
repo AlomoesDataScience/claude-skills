@@ -1,6 +1,7 @@
 ---
 name: dom6-path-water
-description: The Water path of Dominions 6 magic, vanilla - what water mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's water page) and the 96 generic spells with Water as their main path, ranked inside each purpose by the spell database (dom6-spell-db: tiers, value, cost; best per purpose in SKILL.md, the full list by research level in spells.md). Use when judging a water mage or a nation's water access, planning water research, scripting water casters, choosing water spells for a purpose, or when the user asks what water magic is good for.
+description: "The Water path of Dominions 6 magic: what water mages get by role, boosters, crosspaths and every generic water spell. Use when judging water mages or access, planning water research, or choosing water spells."
+keywords: "vanilla, indirect, illwiki's, page, main, ranked, inside, purpose, database, dom6-spell-db, tiers, value, cost, best, skill, full, list, level, mage, nation's, scripting, casters, good"
 ---
 
 # Water magic (Dominions 6, vanilla)

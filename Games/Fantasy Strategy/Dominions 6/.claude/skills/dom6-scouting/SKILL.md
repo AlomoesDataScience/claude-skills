@@ -1,6 +1,7 @@
 ---
 name: dom6-scouting
-description: Scouting and intelligence in Dominions 6 - what each source reveals (manual p.30 - scout, priest, spy, own dominion, scrying, owning a province and its 1-3 step reveal by era), Dominions' real fog of war (unseen provinces show only terrain, sightings go stale, scout reports are "about N units, mainly X" and can be wrong about numbers but rarely about types), stealthy scouts and the detection roll (dom6-stealth), where to park scouts, the per-turn reading routine on the strategic map (dom6-map), scrying and remote-viewing spells, and counter-scouting (patrols, PD 15+, killing scouts, feints). Use when deciding where scouts go, reading what the enemy has before an attack or defence, judging how fresh or reliable a report is, hiding your own moves, or when the user asks what's known about an enemy army.
+description: "Scouting and intelligence in Dominions 6: what each source reveals, report freshness, scout placement, hiding. Use when deciding where scouts go or reading the enemy before an attack or defence."
+keywords: "manual, priest, spy, dominion, scrying, owning, province, step, reveal, era, real, fog, war, unseen, provinces, show, terrain, sightings, stale, reports, units, mainly, wrong, numbers, rarely, types, stealthy, detection, roll, dom6-stealth, park, per-turn, routine, strategic, map, dom6-map, remote-viewing, spells, counter-scouting, patrols, killing, feints, has, judging, fresh"
 ---
 
 # Scouting and intelligence (Dominions 6)

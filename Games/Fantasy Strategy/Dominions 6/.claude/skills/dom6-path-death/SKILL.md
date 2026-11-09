@@ -1,6 +1,7 @@
 ---
 name: dom6-path-death
-description: The Death path of Dominions 6 magic, vanilla - what death mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's death page) and the 85 generic spells with Death as their main path, ranked inside each purpose by the spell database (dom6-spell-db: tiers, value, cost; best per purpose in SKILL.md, the full list by research level in spells.md). Use when judging a death mage or a nation's death access, planning death research, scripting death casters, choosing death spells for a purpose, or when the user asks what death magic is good for.
+description: "The Death path of Dominions 6 magic: what death mages get by role, boosters, crosspaths and every generic death spell. Use when judging death mages or access, planning death research, or choosing death spells."
+keywords: "vanilla, indirect, illwiki's, page, main, ranked, inside, purpose, database, dom6-spell-db, tiers, value, cost, best, skill, full, list, level, mage, nation's, scripting, casters, good"
 ---
 
 # Death magic (Dominions 6, vanilla)

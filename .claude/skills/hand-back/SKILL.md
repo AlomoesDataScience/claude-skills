@@ -1,6 +1,7 @@
 ---
 name: hand-back
-description: Sharing the game screen with the user - lock his input while Claude drives the virtual screen, and hand mouse and keyboard control back to him the moment Claude is done (bgplay.py unlock + show), with the screen left exactly as he had it (dialogs Claude opened closed, his own screen and orders untouched, mouse parked, camera on the subject) and one line telling him it's his. The user's praise (2026-11-03) - "I really like that you give me mouse control after you're done". Use whenever Claude starts or finishes acting on a shared game screen, when the user asks to look at or click something himself, when he says "go look", and at the end of every look, test, battle replay or turn sequence on bgplay.
+description: "Lock the user's input while Claude drives the virtual screen and hand control back the moment it is done, screen left as he had it. Use whenever Claude starts or finishes acting on a shared game screen."
+keywords: "sharing, mouse, keyboard, bgplay, unlock, show, exactly, dialogs, opened, closed, orders, untouched, parked, camera, subject, line, telling, praise, really, give, after, you're, look, click, something, himself, says, end, test, battle, replay, turn, sequence"
 ---
 
 # Hand control back when done

@@ -1,6 +1,7 @@
 ---
 name: dom6-battlefield
-description: Battlefield conditions in Dominions 6, from the manual (pp. 11, 49, 67-72) - clouds (frost, heat, poison, disease, sulphur, rust, death, shimmering light, leeching, sleep: effect per level, armour-negating, fading about 1 level a round, no overlap so they spread), long battles and twilight (round 100 enchantments and berserk end plus Twilight -2 prec, 150 nightfall: attackers rout and darkness -3, 170 defenders rout, 200 everyone left dies; mindless dissolve), darkness (night -3, Utterdark -6, blind -9 to att/def/prec; darkvision), weather (snow cold x15%, rain growth x10% + 10%), battlefield obstacles, special damage (fatigue damage and the 200 cap, false damage from glamour, paralysis stacking), and battlefield enchantments ending with the caster. Use when planning a long fight, fighting in clouds, at night or in darkness, scripting cloud or glamour spells, or when the user asks about battlefield effects.
+description: "Dominions 6 battlefield conditions: clouds, darkness, night, battlefield enchantments and their effects (manual pp. 11, 49, 67-72). Use when planning long fights, fighting in clouds or darkness, or scripting cloud spells."
+keywords: "frost, heat, poison, disease, sulphur, rust, death, shimmering, light, leeching, sleep, effect, level, armour-negating, fading, round, overlap, spread, battles, twilight, berserk, end, plus, prec, nightfall, attackers, rout, defenders, everyone, left, dies, mindless, dissolve, utterdark, blind, att, def, darkvision, weather, snow, cold, x15, rain, growth, x10"
 ---
 
 # Battlefield conditions (Dominions 6, vanilla)

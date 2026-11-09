@@ -1,6 +1,7 @@
 ---
 name: draw-map
-description: OPTIONAL tool - draw a game map (or just some of its elements) as Claude reads it, as a clean schematic picture - grid with numbered columns and rows, terrain colours with a legend, units of both sides with facing, movement or attack arrows and notes - from a simple text board (drawmap.py). A thinking aid, not a replacement for looking at the game. Use when it'd be easier to figure out the map from a drawn picture than from the in-game map, when the game's map is hard to read (dark tints, perspective, clutter, overlays, tiny models, odd fonts), when only some map elements need laying out (one flank, a charge lane, deployment lines, ranges), or when drawing movement proposals for a plan.
+description: "Draw a game map as a clean schematic picture (grid, terrain colours, units, arrows) from a text board with drawmap.py. Use when the in-game map is hard to read or only some map elements need laying out."
+keywords: "optional, tool, reads, numbered, columns, rows, legend, sides, facing, movement, attack, notes, simple, thinking, aid, replacement, looking, it'd, easier, figure, drawn, game's, dark, tints, perspective, clutter, overlays, tiny, models, odd, fonts, flank, charge, lane, deployment, lines, ranges, drawing, proposals, plan"
 ---
 
 # Draw map - optional

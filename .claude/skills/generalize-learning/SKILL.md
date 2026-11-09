@@ -1,6 +1,7 @@
 ---
 name: generalize-learning
-description: Guidelines for when and why to push what Claude learns in a game-specific skill (a game's guide, map, commands or units file) up into a generic skill (learn-to-play, map-usage, map-camera, photo-map, battle-tactics, manual-first, planning, game-ui...) - the tests (would it help in a second game? is it a method, not a number? did the user state it as a rule? did it go wrong in a way any game could?), what stays game-specific (coordinates, key bindings, unit stats, rules), how to write the generic version (abstract the method, keep the game example as an example, link back), where it goes, and when to do it (end of each lesson, when the user corrects a method, when a second game repeats a pattern, when a tool proves itself). Use when something in a game was just learned or fixed, when the user gives a rule, when writing a new game skill, at the end of a session, or when unsure where a lesson belongs.
+description: "When and how to lift a lesson from a game-specific skill into a generic one, and what stays game-specific. Use when something in a game was just learned or fixed, when the user gives a rule, or at session end."
+keywords: "guidelines, push, learns, game's, guide, map, commands, units, file, learn-to-play, map-usage, map-camera, photo-map, battle-tactics, manual-first, planning, game-ui, tests, would, help, second, method, number, did, state, wrong, could, coordinates, key, bindings, unit, stats, rules, write, version, abstract, keep, example, link, back, goes, corrects, repeats, pattern, tool"
 ---
 
 # Generalize learning - game skill → generic skill

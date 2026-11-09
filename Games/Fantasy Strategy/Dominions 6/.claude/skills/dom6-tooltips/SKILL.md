@@ -1,6 +1,7 @@
 ---
 name: dom6-tooltips
-description: How to read the Dominions 6 user interface through tooltips and exact pointing - hover or click the centre of the word or number (not the icon beside it, not the space around it), find where a screen shows its tooltip, wait for it, and OCR it. tooltips.py hovers a list of points or on-screen texts and prints each tooltip. Uses dom6-ui (guarded input, vision.py OCR). Use whenever a screen element's meaning is unknown, a tooltip has to be read, a hover or click keeps missing, or a number or icon on a game screen needs explaining.
+description: "Reading the Dominions 6 interface through tooltips and exact pointing (centre of the text, not the icon). Use whenever a screen element's meaning is unknown, a tooltip must be read, or a hover keeps missing."
+keywords: "click, word, number, beside, space, around, find, shows, wait, ocr, hovers, list, points, on-screen, texts, prints, dom6-ui, guarded, input, vision, has, game, needs, explaining"
 ---
 
 # Dom6 tooltips and exact pointing

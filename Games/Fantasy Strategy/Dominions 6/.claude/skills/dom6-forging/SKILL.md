@@ -1,6 +1,7 @@
 ---
 name: dom6-forging
-description: Forging magic items in Dominions 6, from the manual (pp. 79-80, turn step 5) and illwiki (construction, forge-bonus) - the Forge Item order (a mage in a lab, Construction level, path levels, gems), item tiers (Const 1 trinkets, 3 lesser, 5 greater, 7 powerful, 9 artifacts - unique, yearning at half cost), repeat forging (shift), national and discounted items, forge bonus and Master Smith (Forge of the Ancients), boosters, item slots, and what to forge first (boosters, thug kits, gem-makers). Use when choosing items to forge, kitting thugs or mages, planning Construction research, or when the user asks about forging or items.
+description: "Forging magic items in Dominions 6: the Forge Item order, Construction levels, path levels, gems, forge bonus. Use when choosing items to forge, kitting thugs or mages, or planning Construction research."
+keywords: "manual, turn, step, illwiki, forge-bonus, mage, lab, level, tiers, const, trinkets, lesser, greater, powerful, artifacts, unique, yearning, half, cost, repeat, shift, national, discounted, master, smith, ancients, boosters, slots, first, thug, kits, gem-makers"
 ---
 
 # Forging items (Dominions 6, vanilla)

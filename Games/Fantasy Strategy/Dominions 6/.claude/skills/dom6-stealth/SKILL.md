@@ -1,6 +1,7 @@
 ---
 name: dom6-stealth
-description: Stealth, scouting, patrols and assassins in Dominions 6, from the manual (pp. 49-53, turn steps 20 and 33) - stealthy movement (Sneak is the default, ctrl-click to move normally, every unit with the commander must be stealthy), preaching spies (stealth bonus from population), discovery (patrol strength + 2d25 vs stealth strength + 2d25, both open-ended; stealth strength = leader's stealth - 1 per stealthy unit), patrol strength (precision + map move or 30 flying, / 20; commanders x2; undisciplined and mindless half; - unrest/2; + province defence - 14 at 15+), Patrol vs Defend vs Move and Patrol near forts, assassination (random target, bodyguards 50%, unprepared victim, location, townsfolk and guards, scale walls), seduction and other spy orders, scouting reports and their errors. Use when sending scouts or assassins, guarding against them, setting patrols to cut unrest or catch spies, or when the user asks about stealth, scouting or patrol.
+description: "Stealth, patrols and assassins in Dominions 6: sneaking, detection, patrol strength, assassination. Use when sending scouts or assassins, guarding against them, or setting patrols."
+keywords: "scouting, manual, turn, steps, stealthy, movement, sneak, default, ctrl-click, move, normally, unit, commander, must, preaching, spies, bonus, population, discovery, 2d25, open-ended, leader's, precision, map, flying, commanders, undisciplined, mindless, half, unrest, province, defence, defend, near, forts, random, target, bodyguards, unprepared, victim, location, townsfolk, guards, scale, walls"
 ---
 
 # Stealth, scouting and patrol (Dominions 6, vanilla)

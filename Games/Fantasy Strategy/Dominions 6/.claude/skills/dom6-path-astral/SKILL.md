@@ -1,6 +1,7 @@
 ---
 name: dom6-path-astral
-description: The Astral path of Dominions 6 magic, vanilla - what astral mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's astral page) and the 83 generic spells with Astral as their main path, ranked inside each purpose by the spell database (dom6-spell-db: tiers, value, cost; best per purpose in SKILL.md, the full list by research level in spells.md). Use when judging a astral mage or a nation's astral access, planning astral research, scripting astral casters, choosing astral spells for a purpose, or when the user asks what astral magic is good for.
+description: "The Astral path of Dominions 6 magic: what astral mages get by role, boosters, crosspaths and every generic astral spell. Use when judging astral mages or access, planning astral research, or choosing astral spells."
+keywords: "vanilla, indirect, illwiki's, page, main, ranked, inside, purpose, database, dom6-spell-db, tiers, value, cost, best, skill, full, list, level, mage, nation's, scripting, casters, good"
 ---
 
 # Astral magic (Dominions 6, vanilla)

@@ -1,6 +1,7 @@
 ---
 name: dom6-army-check
-description: Checklist for making sure every Dominions 6 army and unit is set up properly before ending a turn - for each commander, (1) is it a mage or priest, (2) does it have spells scripted and should it, setting them if wanted, and what its default orders do, (3) which units are in its squads and whether leadership, morale and squad orders are right, (4) where each squad and the commander stand and in which formation. Uses dom6-game (screens and click points), dom6-tooltips (reading numbers), dom6-tactics (layouts and lessons). Use when a turn is about to end, after recruiting, merging, moving or buying mercenaries, before any attack, and when the user asks whether the armies are ready.
+description: "Pre-End-Turn checklist for every Dominions 6 army and commander: mage/priest scripts, gems, positions, orders, items. Use before ending a turn, after recruiting or moving, before any attack."
+keywords: "making, sure, unit, set, properly, spells, scripted, should, setting, wanted, default, units, squads, whether, leadership, morale, squad, right, stand, formation, dom6-game, screens, click, points, dom6-tooltips, reading, numbers, dom6-tactics, layouts, lessons, end, merging, buying, mercenaries, armies, ready"
 ---
 
 # Dom6 army check

@@ -1,6 +1,7 @@
 ---
 name: aurora-guide
-description: Starter guide to Aurora 4X (C# version 2.x, Steve Walmsley), the deep sandbox space 4X simulation - race and system generation, colonies, population, environment and terraforming, eleven Trans-Newtonian minerals and mining, construction, wealth and the civilian economy, research with scientists, ship design (hulls, armor, engines, sensors, weapons), shipyards and task groups, jump points and survey, thermal/EM signatures and stealth, fire controls, beams, missiles, point defense, EW, ground forces, fuel and maintenance, aliens and diplomacy, officers, xenoarchaeology, time increments, SpaceMaster mode - with a page map of the 1716-page community manual (aurora-manual-2026.03.01.01.pdf, bookmarked; searchable .txt) and the game database (AuroraDB.db, SQLite). Uses game-sources (lookups), learn-to-play (method). Use when the user wants to play, learn or talk about Aurora 4X, design a ship or missile, check a formula, or study Aurora as a model for the user's own 4X engine.
+description: "Starter guide to Aurora 4X (C# 2.x), the deep sandbox space 4X: colonies, industry, ship and missile design, formulas. Use when playing or learning Aurora, designing a ship, checking a formula, or borrowing its systems."
+keywords: "version, steve, walmsley, simulation, race, system, generation, population, environment, terraforming, eleven, trans-newtonian, minerals, mining, construction, wealth, civilian, economy, research, scientists, hulls, armor, engines, sensors, weapons, shipyards, task, groups, jump, points, survey, thermal, signatures, stealth, fire, controls, beams, missiles, point, defense, ground, forces, fuel, maintenance, aliens"
 ---
 
 # Aurora 4X - starter guide

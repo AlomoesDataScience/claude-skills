@@ -1,6 +1,7 @@
 ---
 name: dom6-morale
-description: Morale and rout in Dominions 6, from the manual (pp. 59, 69-71) and illwiki - squad morale (average of the squad), the morale check (squad morale + DRN + survivor bonus 0-5 vs 14 + DRN), what triggers checks (heavy losses, four or fewer left, fear, army below 50% HP every round), army rout at 75% HP lost (mounts, PD and slaves count less), morale modifiers (leadership stars +1/+2/+3, inspirational, standards, home province, dominion, blessing, sparse/skirmish -1, undead/demon squadmates -1), the magic morale bonus (-10 to +1; Sermon of Courage and Fanaticism +1, fear and frighten), fear auras and dread, awe, repel and morale, mindless and magic-being leadership, berserkers, rout effects and where routers end up, turn-routs at rounds 150/170. Use when planning squads and commanders, judging whether an army will hold, choosing morale spells or fear, reading a rout in a battle log, or when the user asks about morale or routing.
+description: "Morale and rout in Dominions 6: squad morale checks, triggers, leadership, fear, routing armies. Use when planning squads and commanders, judging whether an army holds, or reading a rout in a battle log."
+keywords: "manual, illwiki, average, check, drn, survivor, bonus, heavy, losses, four, fewer, left, below, round, lost, mounts, slaves, count, less, modifiers, stars, inspirational, standards, home, province, dominion, blessing, sparse, skirmish, undead, demon, squadmates, magic, sermon, courage, fanaticism, frighten, auras, dread, awe, repel, mindless, magic-being, berserkers, effects"
 ---
 
 # Morale and rout (Dominions 6, vanilla)

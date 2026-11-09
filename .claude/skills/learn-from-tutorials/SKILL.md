@@ -1,6 +1,7 @@
 ---
 name: learn-from-tutorials
-description: How Claude learns any game through its built-in tutorials, lessons, training missions or hint modes - play every lesson in order, read each prompt as a rule, test each taught key once, note numbers, and update the game's skill after every lesson (the user's rule). Fast loop - background play (game-ui bgplay.py), text reads of message/stat regions instead of screenshots, batched keys, little deliberation on routine steps. Use when starting a new game that has a tutorial, when the user asks Claude to play through tutorials, or when a game offers hints or training scenarios.
+description: "Learn any game through its built-in tutorials, lessons and hint modes: play every lesson, read each prompt as a rule, write it down. Use when a new game has a tutorial or the user asks Claude to play through one."
+keywords: "learns, training, missions, order, test, taught, key, once, note, numbers, update, game's, skill, after, fast, loop, background, game-ui, bgplay, text, reads, message, stat, regions, instead, screenshots, batched, keys, little, deliberation, routine, steps, starting, offers, hints, scenarios"
 ---
 
 # Learn a game from its tutorials

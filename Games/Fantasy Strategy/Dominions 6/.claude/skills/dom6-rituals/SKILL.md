@@ -1,6 +1,7 @@
 ---
 name: dom6-rituals
-description: Ritual magic in Dominions 6, from the manual (pp. 28, 55-56, 77-78) and illwiki (magic) - rituals are cast outside battle, only in a lab, take the mage's whole turn, cost gems, and gem-boosting doesn't apply (only items, other rituals and sites boost); kinds (summons, remote attacks, site searches, scrying, province enchantments, globals, alchemy, healing); range (provinces, +Far Caster, Infernal Circle) and extra effects per extra level; turn order (rituals step 10, remote attacks 11, magic battles 12, globals take effect 28, special orders 36); global enchantments and dispelling (Grand Communion). Use when planning a mage's ritual orders, remote attacks or defences, global enchantments, or when the user asks about rituals.
+description: "Ritual magic in Dominions 6: lab casting, costs, remote attacks and defences, global enchantments. Use when planning a mage's ritual orders, remote strikes or defences, or globals."
+keywords: "manual, illwiki, cast, outside, battle, take, whole, turn, cost, gems, gem-boosting, doesn't, apply, items, sites, boost, kinds, summons, site, searches, scrying, province, alchemy, healing, range, provinces, far, caster, infernal, circle, extra, effects, level, order, step, battles, effect, special, dispelling, grand, communion"
 ---
 
 # Rituals (Dominions 6, vanilla)

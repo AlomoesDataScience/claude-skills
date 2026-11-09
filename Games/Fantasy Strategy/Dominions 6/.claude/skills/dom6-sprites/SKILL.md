@@ -1,6 +1,7 @@
 ---
 name: dom6-sprites
-description: Make Dominions 6 unit sprites (TGA, black-transparent, magenta-shadow, facing left) by modelling the unit as a signed-distance 3D figure and rendering it with painted cel shading, posed after a Dominions Enhanced unit. Use whenever the user asks for a unit/commander/mage/summon/mech picture or sprite for a Dominions mod, wants a sprite changed (pose, colours, proportions, contrast), or wants an image "converted" into a Dominions-ready sprite.
+description: "Make Dominions 6 unit sprites (TGA, black-transparent, facing left) by modelling 3D figures and rendering them cel-shaded. Use whenever a sprite for a Dominions mod unit, commander or monster is wanted or changed."
+keywords: "magenta-shadow, signed-distance, figure, painted, cel, shading, posed, after, enhanced, mage, summon, mech, picture, pose, colours, proportions, contrast, image, converted, dominions-ready"
 ---
 
 # Dominions 6 sprite building
@@ -95,91 +96,6 @@ Firefox and the game are open (each worker holds the whole model).
 5. **Check** with `check.py`, then copy the TGAs and the standalone generator into
    the nation folder. Report what was made and that it is untested in-game.
 
-## Rig API (rig.py)
-
-Coordinates are model metres, y up, x = the unit's LEFT, z = its front. The camera
-turns the unit's front 30° toward screen-left, so its right side (−x) is the far
-side and screen-left is "forward".
-
-- `W(f, y, d)` — point `f` m screen-left of the body axis, height `y`, `d` m toward
-  the viewer. Use it for hand and foot targets. 1 px ≈ 0.05 m at human scale.
-- `aim(elev, side=0)` — unit direction pointing screen-left raised `elev` degrees
-  (>90 leans back toward screen-right; negative points down). Weapon directions.
-- `FEET(f_right, f_left, d_right, d_left)` — ankle targets for `"feet"`.
-- Pose keys: `feet`, `body` (offset of the upper body, e.g. `(0,-0.08,0.03)` to drop
-  into a lunge), `lean` (deg, tips toward screen-left), `twist` (deg about y;
-  negative turns the chest toward screen-left), `nod` (head), `splay`, `knee`,
-  `hand_r`, `hand_l`, `pole_r`, `pole_l` (elbow pole directions), plus any custom
-  keys your build function reads (`blade`, `gun`, `fire`, …), and `halo=True` to give
-  big glowing things a soft glow ring.
-- `Rig` methods: `R.body(g)` for torso parts modelled upright (pelvis 0.92, chest
-  1.3, shoulders 1.4); `R.head(g)` for head parts (head centre `HEAD_C`, radii
-  `HEAD_R`); `R.world(g)` for things placed in world space (arms, weapons).
-- Parts: `legs(R, thigh, shin, boot, lt, boot_top, bare, extra)`,
-  `arm(R, s, hand, upper, fore, glove, at, pole, extra, sh_w)` (s = −1 right, +1 left;
-  returns shoulder, elbow, wrist, forearm dir, hand centre), `face`, `hair_short`,
-  `eyes`, `lumpy` (bumpy hair/rags), `shell` (bands/trim cut from a surface),
-  `cone_skirt` (coats, robes, capes with z-limits), `disc` (flat cylinder),
-  `limb`.
-- Equipment: `sword`, `rifle(k=thickness)`, `pistol`, `flash` (muzzle flash),
-  `bolt` (lightning), `blade_basis(d)` (flat of a blade facing the viewer),
-  `bar_basis(d)`. In the examples: `torus`, `plate` (shields), `flask`, `syringe`,
-  `goggles`, `oriented_ellipsoid` (portals), `robe_body`, `trooper_*`, `lightning`
-  (forked bolt; use `kinks=5, amp≈0.1, branches≤1` for hand-cast bolts so they read as
-  zig-zags, not a fuzzy band), `cable` (wires as capsule chains).
-- Flyers/hover: raise the upper body with `body=(0, 0.32, 0)` and set the ankle targets
-  above the ground (y 0.35-0.5) so the legs dangle over the shadow.
-- Non-human builds (towers, machines) can ignore the rig: just add groups with
-  `R.world(g)` and give the poses empty dicts plus custom keys.
-- Unit options: `scale` (size relative to a 1.73 m human), `res` (64, 128 or (w, h)),
-  `shadow` (x0, x1 of the shadow ellipse, or None), `cx`, `y0`, `yaw`/`pitch` (re-aim the
-  camera, e.g. yaw 0 for a face-on flag), `free_rows=False` (let a pole reach the
-  bottom), `file` (output name prefix if it differs from the key). A pose key of `""`
-  writes a single `<name>.tga` (flags).
-- Beasts and vehicles: `Q(f, y, s)` places points along a heading `QF` (screen-left,
-  turned 17° to the viewer; `QS` is the side facing the viewer). `beast(R, k, fur, paw,
-  bulk)` builds a quadruped from pose keys `c` (body centre), `pitch`, `feet` (4 x (f,y,s)),
-  `qhead` makes muzzled heads with an opening jaw, `chain` tapers tails/necks/horns,
-  `wheel` makes tyres. Seated riders: `twist=-43` faces the rider along `QF`, `body`
-  drops the pelvis onto the seat, `knee` points the knees forward-up.
-
-## Lessons learned (avoid repeating these)
-
-- **Contrast beats detail.** A dark rifle across white armour vanished until it was
-  ~1.5x thicker, held further from the body (depth gap → ink outline) and coloured
-  near-black with mid-grey furniture (so it also shows against the black background).
-- Copper next to skin reads as skin (a copper stole looked like bare chest): use gold
-  or a contrasting trim on robes.
-- A giant boxy helmet (box + large rounding) looks like a TV head; keep helmet half-size
-  ≤ head radii and rounding ≤ 0.03.
-- All-dark power armour becomes a blob: light steel plates with copper trim and a dark
-  undersuit read far better.
-- Quadrupeds read as lanky dogs/hyenas unless they are bulky (`bulk` 1.45-1.5) with the
-  body lowered so the legs bend; grafted extra heads need a thick neck and a head ≥ 0.065
-  or they look like pipes.
-- White coats shaded with the blue-grey COAT tones read as blue; use LABW (neutral white)
-  when the user wants no blue.
-- Grey hair on a white coat disappears: use a blue-grey. Light-on-light and
-  dark-on-black need a tone shift or an outline.
-- Weapons held on the far (right) side hide behind the body: bring them toward the
-  viewer (`d` > 0.2) or into the left hand.
-- `Group.cut` subtracts from the **whole group** — put a hood/cutaway in its own group
-  or it will also delete the visor under it.
-- Helmets sitting too low hide the face; keep the helmet's lower edge above y≈1.62.
-- Thin layered plates: the outer plate's thickness + rounding must stay below the
-  inner layers' offset, or the inner stripe/emblem is buried.
-- `lean` < 25° barely reads at 35 px; hunched creatures need 30-36° plus a raised
-  `nod`.
-- Emissive parts get no shading; ink around them uses a darker shade of their own
-  colour; use `halo` only on frames with big lights (shots, spells), not for eyes.
-- 1-px features (unibrows, buttons, stitches) are noise — the user removed a
-  unibrow. Prefer bigger, simpler shapes.
-- At 35 px, ink only where a nearer part overlaps a clearly farther one; full
-  contour inking turns into noise.
-- When the user names a real-world reference (Gundam, Star Wars, a cartoon), make
-  it recognisable but use neutral file names; the user renames things to avoid
-  clashes.
-
 ## User preferences seen so far
 
 - Facing left, always. Accuracy to the user's reference images over sample units.
@@ -189,6 +105,13 @@ side and screen-left is "forward".
 - Realistic proportions, not cartoony.
 - Stances copied from Dominions Enhanced; each unit gets an idle and an attack frame.
 - Output into the nation folder (`Games/Fantasy Strategy/Dominions 6/Mods/<nation>/`) with the generator script.
+
+## Reference files (read the one the step needs)
+
+| File | Holds |
+|---|---|
+| `reference/rig-api-rig-py.md` | **Rig API (rig.py)** - Coordinates are model metres, y up, x = the unit's LEFT, z = its front |
+| `reference/lessons-learned-avoid-repeating-these.md` | **Lessons learned (avoid repeating these)** - Contrast beats detail |
 
 ## Related skills
 dom6-modding, art direction (memory), spritestudio.

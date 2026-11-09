@@ -1,6 +1,7 @@
 ---
 name: dom6-weapons
-description: How weapons work in Dominions 6 melee, from the manual (pp. 60-65) and illwiki - the attack/defence and damage/protection rolls, weapon stats (damage, attack, defence, length, attacks), damage types (slash +25% after protection and lops limbs, pierce -15% protection, blunt +25% on heads and vs shields), armour-piercing and armour-negating, two-handed (125% strength), multiple weapons and ambidextrous, bonus weapons, repel by length (full roll sequence), reach and hit locations, harassment, lance charge bonus, dancing weapons, magic weapons vs ethereal, rusty and damaged weapons, underwater penalties, and the order of a melee attack. Use when comparing units or weapons, choosing thugs or equipment, reading a battle log's hits, judging what can hurt a monster, or when the user asks how a weapon works. Missiles: dom6-precision. Armour side: dom6-armor.
+description: "How weapons work in Dominions 6 melee: attack and damage rolls, weapon stats, length, multiple attacks, damage types. Use when comparing units or weapons, choosing equipment, or reading battle-log hits."
+keywords: "manual, illwiki, defence, protection, slash, after, lops, limbs, pierce, blunt, heads, shields, armour-piercing, armour-negating, two-handed, strength, ambidextrous, bonus, repel, full, roll, sequence, reach, hit, locations, harassment, lance, charge, dancing, magic, ethereal, rusty, damaged, underwater, penalties, order, thugs, battle, log's, judging, hurt, monster, works, missiles, dom6-precision"
 ---
 
 # Weapons (Dominions 6, vanilla)

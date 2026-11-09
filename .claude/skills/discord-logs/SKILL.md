@@ -1,6 +1,7 @@
 ---
 name: discord-logs
-description: Read the user's Discord history from Discord's own data export ("Request my data", Settings > Data & Privacy - a zip of his own messages in servers, DMs and group DMs, emailed in a few days) - discordlogs.py reads the zip directly (nothing extracted or run) and builds readable logs (one markdown file per channel under logs/<server>/, by day) and a searchable SQLite database with full-text search (search words, phrases, by server, channel and date), plus channel lists and stats. No tokens, no bots, no scraping of Discord itself. Use when the user wants to find something he wrote on Discord, keep or read his Discord logs, pull MP game talk (turn deadlines, deals) into notes, or asks for a Discord log scraper.
+description: "Read the user's Discord history from Discord's data export zip into per-channel logs and a searchable database (discordlogs.py). Use when the user wants to find or keep something he wrote on Discord."
+keywords: "request, settings, privacy, messages, servers, dms, group, emailed, few, days, reads, directly, nothing, extracted, run, builds, readable, markdown, file, channel, under, server, day, sqlite, full-text, search, words, phrases, date, plus, lists, stats, tokens, bots, scraping, itself, pull, game, talk, turn, deadlines, deals, notes, log, scraper"
 ---
 
 # Discord logs from the data export (discord-logs)

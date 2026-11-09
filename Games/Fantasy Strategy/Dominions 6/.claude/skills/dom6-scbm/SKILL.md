@@ -1,6 +1,7 @@
 ---
 name: dom6-scbm
-description: Everything specific to the SCBM balance mod (Sloop's Comfy Balance Mod v1.13) for Dominions 6, kept apart from the vanilla Dominions skills - the whole modded game loaded into the mod inspector (data/inspector, queryable like vanilla), every SCBM spell change as a table (spell-changes.md, spellchanges.py - vanilla to SCBM, by school and level, filter by a mage's paths), what the changes mean in play (spells.md - cheaper casting, lower path and research levels, AI cast weights that make buffs script-only), and the user's SCBM multiplayer game as EA Tir na n'Og (tirnanog.md - Ghost Moose, Troban battles, Dagda's spells, his decisions). Use whenever the game being played or discussed runs SCBM (the user's Tir na n'Og MP game), before quoting any unit, spell or item number for it, when a vanilla skill's number might be changed by SCBM, or when a new SCBM version needs loading.
+description: "Everything specific to the SCBM balance mod for Dominions 6, kept apart from vanilla: modded units, spells, items, numbers. Use whenever the game runs SCBM (the user's MP game), before quoting any number for it."
+keywords: "sloop's, comfy, skills, whole, loaded, inspector, data, queryable, spell, change, table, spell-changes, spellchanges, school, level, filter, mage's, paths, changes, mean, play, cheaper, casting, lower, path, research, levels, cast, weights, make, buffs, script-only, multiplayer, tir, n'og, tirnanog, ghost, moose, troban, battles, dagda's, decisions, being, played, discussed"
 ---
 
 # SCBM (Dominions 6 balance mod)

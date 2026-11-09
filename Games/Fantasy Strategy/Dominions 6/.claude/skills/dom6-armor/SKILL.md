@@ -1,6 +1,7 @@
 ---
 name: dom6-armor
-description: How armour and protection work in Dominions 6, from the manual (pp. 60-62, 76) and illwiki - body and head protection, the protection roll, natural protection and how it combines with armour (N + A - N*A/40), shields (parry, shield hits, shield destruction 3x/5x), armour-defeating hits (protection roll 2/3/4 by fatigue), armour piercing/negating, encumbrance (melee vs spellcasting, mounted halving, severe heat/cold), defence penalties of armour, protection buffs (Barkskin, Stoneskin, Ironskin - they don't stack), armour damage (rust, Destruction, Armor of Achilles), invulnerability. Use when choosing armour for a unit or commander (casters vs thugs), working out what a hit does, judging protection buffs, reading a battle log's damage lines, or when the user asks how armour works.
+description: "How armour and protection work in Dominions 6: protection roll, natural plus armour, shields, encumbrance. Use when choosing armour for casters or thugs, working out what a hit does, or reading damage lines."
+keywords: "manual, illwiki, body, head, combines, parry, shield, hits, destruction, armour-defeating, fatigue, piercing, negating, melee, spellcasting, mounted, halving, severe, heat, cold, defence, penalties, buffs, barkskin, stoneskin, ironskin, don't, stack, rust, achilles, invulnerability, unit, commander, judging, battle, log's, works"
 ---
 
 # Armour and protection (Dominions 6, vanilla)

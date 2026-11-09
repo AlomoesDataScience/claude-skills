@@ -1,6 +1,7 @@
 ---
 name: unit-combat-math
-description: Unit-versus-unit combat math for any game - the chain hit chance -> damage per hit (after armour) -> damage per round -> rounds to kill, both ways, and what to do with it - judge a matchup by who kills whom faster, measure a buff or debuff by the rounds it saves or costs (not by its stat number), gang up because harassment-style penalties make crowds kill faster than their numbers, treat armour-piercing / armour-negating / defence / HP / regeneration / fatigue as different "tank" axes with different counters, and only then scale up to armies (combat-models). unitcombat.py does it exactly per attack (dice-math) and simulated over whole fights, with rule presets (Dominions opposed 2d6!d, d20 to-hit vs AC, custom dice) and commands expect, duel, buff, crowd. Use when deciding whether a unit, thug or champion wins a fight, choosing buffs, debuffs or gear, comparing troops for a matchup in any wargame or RPG, designing combat for our games, or when the user asks "who wins".
+description: "Unit-versus-unit combat math for any game: hit chance, damage after armour, rounds to kill, both ways. Use when deciding whether a unit or champion wins a fight or choosing gear and buffs."
+keywords: "chain, round, judge, matchup, kills, whom, faster, measure, buff, debuff, saves, costs, stat, number, gang, because, harassment-style, penalties, make, crowds, numbers, treat, armour-piercing, armour-negating, defence, regeneration, fatigue, different, tank, axes, counters, scale, armies, combat-models, unitcombat, exactly, attack, dice-math, simulated, over, whole, fights, rule, presets, dominions"
 ---
 
 # Unit combat math (any game)

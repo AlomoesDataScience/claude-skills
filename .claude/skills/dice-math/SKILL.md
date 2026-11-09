@@ -1,6 +1,7 @@
 ---
 name: dice-math
-description: Exact dice odds for any game, tabletop or computer - dice.py enumerates every outcome (no simulation) for sums (2d6, 1d20+5), keep-highest/lowest (4d6kh3), exploding dice (2d6!), Dominions-style open-ended dice (2d6!d), and re-roll-once rules (2d6r<=2, FoG II quality re-rolls), and answers the questions games ask - a distribution with P(>=k), an opposed roll (X + dice vs Y + dice, with ties), the difference table of an opposed system, the chance to reach a target, expected damage after armour when both sides roll, chained checks (all must pass), and binomial "k hits out of n tries". Plus the method - find the game's dice and tie rule in the manual, compute the table once, write it into the game's skill, and reason in differences. Use when a game rolls dice and odds matter (combat, morale and cohesion tests, magic resistance, stealth, hunting, events), when writing a game's rules skill, or when the user asks "what are the odds".
+description: "Exact dice odds for any game with dice.py: sums, keep-highest, exploding and open-ended dice, re-rolls, opposed rolls, chance to hit a target. Use when a game rolls dice and the odds matter."
+keywords: "tabletop, computer, enumerates, outcome, simulation, 2d6, 1d20, lowest, 4d6, kh3, dominions-style, re-roll-once, rules, fog, quality, answers, questions, games, ask, distribution, roll, ties, difference, table, system, reach, expected, damage, after, armour, sides, chained, checks, must, pass, binomial, hits, tries, plus, method, find, game's, tie, rule, manual"
 ---
 
 # Dice math (any game)

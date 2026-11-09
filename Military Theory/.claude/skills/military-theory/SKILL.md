@@ -1,6 +1,7 @@
 ---
 name: military-theory
-description: The user's military theory shelf - his own essay "On the Nature of Space Warfare" (space war today and tomorrow: everything is tracked, armor loses, EW/stealth/PD and denial matter, low-intensity and cyber war, interstellar wars planned decades ahead, other planets as "other dimensions") plus the classics as searchable text - Clausewitz On War, Jomini The Art of War (two copies), Corbett Some Principles of Maritime Strategy, Napoleon's Maxims, Theodore Roosevelt The Naval War of 1812, Mao on Guerrilla Warfare (FMFRP 12-18, Griffith) - with each work's core ideas in Claude's words and how they feed game design (the 4X engine's space war, sea/space control and denial, logistics, insurgency). Use when the user talks military theory or strategy, wants a classic looked up or compared, wants the user's space-warfare view applied, or when designing combat, doctrine, logistics or AI for our games.
+description: "the user's military theory shelf as searchable text, with his essay on space warfare and the classics. Use when discussing military theory or strategy, looking up a classic, or applying the user's space-warfare view."
+keywords: "nature, war, today, tomorrow, everything, tracked, armor, loses, stealth, denial, matter, low-intensity, cyber, interstellar, wars, planned, decades, ahead, planets, dimensions, plus, clausewitz, jomini, art, copies, corbett, principles, maritime, napoleon's, maxims, theodore, roosevelt, naval, mao, guerrilla, fmfrp, griffith, work's, core, ideas, words, feed, game, design, engine's"
 ---
 
 # Military theory shelf

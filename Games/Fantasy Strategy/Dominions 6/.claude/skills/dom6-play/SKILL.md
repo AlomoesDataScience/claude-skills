@@ -1,6 +1,7 @@
 ---
 name: dom6-play
-description: How to play Dominions 6 well, from the official game manual: setting up a game (eras, AI levels, thrones, settings), designing a pretender, the interface and hotkeys, a turn-by-turn checklist, expanding and running the economy, army setup, battle orders and mage scripts, research and gem use, spreading dominion, sieges, scouting, stealth and assassination, and playtesting a mod in a real game. Use when the user asks for help playing Dominions 6, wants a strategy, a pretender or army plan, advice on a turn or battle, or wants to test their mod nation in play. For exact formulas use the dom6-mechanics skill.
+description: "How to play Dominions 6 well, from the manual: game setup, pretender, interface, a turn-by-turn checklist, expansion, war. Use when asked for help playing, a strategy, an army plan, or to test a mod nation in play."
+keywords: "official, setting, eras, levels, thrones, settings, designing, hotkeys, expanding, running, economy, battle, orders, mage, scripts, research, gem, spreading, dominion, sieges, scouting, stealth, assassination, playtesting, real, advice, turn, exact, formulas, dom6-mechanics, skill"
 ---
 
 # Playing Dominions 6
@@ -33,48 +34,6 @@ beforehand and watch the replay.
 - Save a pretender design with Ctrl+S in the pretender screen and load it with Ctrl+L.
 - Online: password your pretender or anyone can play your turn.
 
-## Designing a pretender (pages 30-37)
-
-For an actual design (cheapest chassis, bless points, costs, AI template) use the dom6-pretender skill.
-To operate the running game itself (menus, new game setup, the pretender screen) use the dom6-ui skill.
-
-You have 450 points. Spend them on a body (form cost), magic paths, dominion strength and scales.
-Sleeping gives more points: Dormant +150 (awakens around a year in), Imprisoned +350 (around three
-years).
-
-- Magic: buying levels gets more expensive (8, 16, 24... each). A form that already has the paths
-  you want is cheaper. Paths decide your blesses (each level above 1 is a bless point), your
-  priests' Smite/Banishment variant (at 4+), the rituals the god can cast, and research.
-- Dominion strength sets how fast faith spreads (50% + 5% per point per temple check) and your
-  maximum dominion. It is also your sacred-unit recruitment cap in the capital.
-- Scales: each step costs or gives 40 points. Taking bad scales pays for magic or dominion. Order
-  and Productivity boost the economy, Growth helps supply and income, and Magic speeds research
-  and lowers enemy MR. Steps of 4 or more have side effects.
-- *(reasoning)* Match the blesses to your sacred troops: a nation with many sacreds wants bless
-  points. An awake, fighting pretender (a "rush" god) needs survivability more than extra paths.
-  A sleeping mage god gives a stronger late game.
-- A god that dies loses a path level or a dominion point and needs about 50 priest levels of
-  Call God. Immortal forms re-form instead (dominion-immortal ones only inside your dominion).
-
-## Interface (pages 18-20, 55-58)
-
-- Right-click a province to view it. Left-click a commander to select, then left-click a province
-  to move. Right-click anything (unit, spell, item) for details.
-- Province keys: e end turn, t army setup, y setup at destination, u patrolling setup,
-  r recruit, b mercenaries, i chronicles, d buy province defence, f fortification.
-- Nation keys: m messages, s send messages, gold or items, F1 nation overview (all commanders, PD,
-  site searches), F2 graphs, F3 hall of fame, F4 pretenders, F5 research, F6 globals,
-  F7 gem and item treasury, F8 item overview, F9 thrones. h hides the UI.
-- Map: Ctrl+1-9 toggle layers. Ctrl+3 shows dominion, Ctrl+4 the income/resources capsule (unused
-  hammers stay bright), Ctrl+8 neighbours. g jumps to a province by number. Home goes to the
-  capital, Ctrl+Home to the god.
-- Army setup: double-click selects all of a type, shift-click selects several. Over a squad,
-  w selects the wounded, e selects units with 2+ XP stars and m selects the slowest.
-- Battle replay: space pauses, f/t/s set speed, z is slow motion, v shows a unit's combat log,
-  1-4 set log detail, F2 shows weather and scales, q quits.
-- Shift+M repeats a ritual every month and Shift+O repeats a forge. To copy a mage's script,
-  hover it, press Ctrl+digit, then press the digit over another commander.
-
 ## Every turn
 
 1. Read messages (m): battles, events, research done and new heroes.
@@ -88,58 +47,6 @@ years).
 5. Move armies, set formations and orders (t), and script the mages (gems in their inventory).
 6. Spend spare gold on province defence where raids come, temples (600) and labs (600). Plan forts.
 7. Scan Ctrl+4 for idle resources and F1 for idle commanders, then end the turn (e).
-
-## Economy and expansion (pages 21-29, 42)
-
-- Early game: take independent provinces with your starting army and one or two recruited
-  commanders. Look at the defenders first (a scout, or the estimate shown on the province).
-  *(reasoning)* Farms and rivers pay gold, while highlands, mountains and forests give resources
-  and sites.
-- Units need a commander to move. Units left alone in enemy land die. Armies move at the speed of
-  their slowest unit.
-- Forts: palisades cost 1000 gold and take 5 months. Upgrades cost 600 and take 3 months, up to
-  your era's standard (masons go one level higher). A fort collects admin % of each adjacent
-  province's full resources, but not from provinces that have their own fort. *(reasoning)* Space
-  forts two provinces apart, next to resource-rich land.
-- Income needs an unbroken chain of your provinces to a fort, and gems need one to a lab. Cut
-  enemy supply lines to starve their treasury.
-- Unrest cuts income and resources, and at 100 recruiting stops. Lower it with patrols, PD (−1
-  per 10 points each turn) and Order scales. Enemy spies, blood hunting and some sites raise it.
-- Upkeep is gold/15 each month (sacreds gold/30). Mercenaries are hired for 3 months by auction.
-- Supply: big armies starve in poor provinces (morale −4, then disease). Forts feed provinces up
-  to 4 away. Nature mages add supply.
-
-## Armies and battles (pages 43-46, 57-72)
-
-- A commander leads up to its leadership in units, in up to 5 squads. Mages often have
-  leadership 10, so pair them with a real commander. Undead, demons and magic beings need the
-  matching special leadership. Mindless units fall apart when their commander dies.
-- The attacker deploys on the left, the defender on the right. In the setup box the left side is
-  your rear.
-- Squad orders: Attack, Fire, Hold and attack (holds 2 rounds), Hold and fire, Fire and keep
-  distance, Guard commander (can also defend against assassins), Retreat. Targets: closest,
-  archers, cavalry, flyers, large monsters, rearmost or random. Nothing holds forever.
-- Commander orders: up to 5 scripted actions (hold, cast a named spell, fire, attack), then a
-  general order (stay behind troops, attack, cast spells, advance and cast, retreat). Tick
-  "conservative gem use" to save gems.
-- Win by breaking morale, not by killing everyone. A squad checks morale after heavy losses, and
-  the whole army routs at 75% hp lost or when every commander is dead or fled. *(reasoning)*
-  Protect your commanders (guard squads, rear placement), and use flyers, assassins or long-range
-  spells on theirs.
-- Rules worth exploiting:
-  - Long weapons repel attackers, best against low-morale troops.
-  - Shields work best against missiles (parry counts double).
-  - Missiles hit friends as well as enemies.
-  - Armour piercing and armour negating attacks punish heavy armour.
-  - Fatigue makes armour-defeating hits likely, so tired troops die fast.
-  - Mages lose more fatigue in armour.
-  - Blessing (H1) adds the god's blesses to sacred units.
-- Formation: box for most squads. Line, double line and sparse line need good commanders.
-  Skirmish and sparse line give −1 morale, and undisciplined squads always skirmish.
-- Battles run to turn 200. At 100 all enchantments end. At 150 attackers rout, at 170 defenders
-  rout, and at 200 whoever remains dies.
-- Retreat: 75% of commanders retreat smartly into a fort or friendly land. A retreat into enemy
-  land is death.
 
 ## Magic and research (pages 73-81)
 
@@ -172,26 +79,6 @@ years).
   weakens your god and prophet (−1 str, −½ MR and −10% hp per candle).
 - *(reasoning)* A god parked in its capital plus many temples makes a wall of faith. To finish a
   turtling enemy, besiege the last fort and push their dominion off the map.
-
-## Sieges, scouting and stealth (pages 30, 49-54, 71-72)
-
-- A defended fort must be besieged until its walls reach 0, then stormed. Defenders inside repair
-  the walls. Wall defenders shoot with tower-shield cover and never run out of ammo. Relief armies
-  fight before the storm.
-- In a fort province, Patrol fights outside the walls, while Defend (the default) goes inside and
-  is besieged. Move and Patrol makes an arriving army fight outside.
-- Information:
-  - A scout shows the army and the fort.
-  - A priest also shows dominion.
-  - A spy also shows income, sites, unrest and PD.
-  - Scrying shows everything.
-  - Owning a province reveals its neighbours.
-- Stealth units sneak by default; hold Ctrl when giving a move order to make them fight. Spies can
-  instill uprising (unrest) or infiltrate a capital (score graphs). Assassins strike a random
-  commander. Bodyguards are present 50% of the time. Walls block assassins unless they fly,
-  teleport or scale walls.
-- PD of 15+ and patrolling armies find hidden units. Fast and flying units and commanders patrol
-  better.
 
 ## Playtesting a mod in a real game
 
@@ -233,6 +120,16 @@ years).
 
 ## Standards (audit 2026-11-03)
 - **Where it runs:** prefer Claude's virtual screen (dom6-ui bgplay, dom6bg.py); lock while working, hand back after (hand-back).
+
+## Reference files (read the one the step needs)
+
+| File | Holds |
+|---|---|
+| `reference/designing-a-pretender-pages-30-37.md` | **Designing a pretender (pages 30-37)** - For an actual design (cheapest chassis, bless points, costs, AI template) use the dom6-pretender skill |
+| `reference/interface-pages-18-20-55-58.md` | **Interface (pages 18-20, 55-58)** - Right-click a province to view it |
+| `reference/economy-and-expansion-pages-21-29-42.md` | **Economy and expansion (pages 21-29, 42)** - Early game: take independent provinces with your starting army and one or two recruited   commanders |
+| `reference/armies-and-battles-pages-43-46-57-72.md` | **Armies and battles (pages 43-46, 57-72)** - A commander leads up to its leadership in units, in up to 5 squads |
+| `reference/sieges-scouting-and-stealth-pages-30-49-.md` | **Sieges, scouting and stealth (pages 30, 49-54, 71-72)** - A defended fort must be besieged until its walls reach 0, then stormed |
 
 ## Related skills
 learn-to-play (generic method; twin learn-to-mod), battle-tactics, map-usage, dom6-modding.

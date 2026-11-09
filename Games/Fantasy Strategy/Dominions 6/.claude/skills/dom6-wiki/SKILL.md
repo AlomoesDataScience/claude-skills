@@ -1,6 +1,7 @@
 ---
 name: dom6-wiki
-description: Local mirror of illwiki (illwiki.com, the Dominions community wiki: Dominions 6 pages at the top level, the old Dominions 5 wiki under dom5/) with wiki.py to search it, show a page or one section as clean text, list a page's sections, and list pages by category (nations, unit abilities, mechanics, magic schools, guides, community research by Loggy and others), plus a catalogue of what the wiki covers and which skill each part feeds. Uses dom6-knowledge (where distilled lessons go), dom6-inspector (to check wiki claims against game data). Use when a question might be answered by the community wiki: a nation's strategy, what an ability does, how a mechanic works (morale, stealth, scout reports, AI spell casting, site generation, province defence, turn order), expansion and thug guides, independents, globals, pretender design, or when the user mentions illwiki.
+description: "Local mirror of illwiki (the Dominions community wiki, Dom6 and Dom5) with wiki.py to search and read it. Use when the community wiki might answer it: a nation's strategy, an ability, a mechanic."
+keywords: "com, pages, top, level, old, under, show, page, section, clean, text, list, page's, sections, category, nations, unit, abilities, mechanics, magic, schools, guides, research, loggy, plus, catalogue, covers, skill, part, feeds, dom6-knowledge, distilled, lessons, dom6-inspector, check, claims, against, game, data, question, answered, works, morale, stealth, scout"
 ---
 
 # Dom6 wiki

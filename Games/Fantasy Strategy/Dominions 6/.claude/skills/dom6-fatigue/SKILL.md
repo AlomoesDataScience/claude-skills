@@ -1,6 +1,7 @@
 ---
 name: dom6-fatigue
-description: Fatigue in Dominions 6 battles, from the manual (pp. 46, 61-62, 76) and illwiki - what builds it (encumbrance per attack, spell fatigue cut by skill levels above the requirement, spellcasting encumbrance = base + 2x armour encumbrance per cast, gems, magic/drain scales), what it does (defence -1 per 10, attack -1 per 20, armour-defeating hits likelier from 50, unconscious at 100, HP damage past 200), recovery (1 a round, 5 while unconscious, reinvigoration, drain), and how to plan a mage's script with it - order spells by value and let him pass out after his job is done (the user's rule), except in communions or long gem-heavy battles. Use when scripting mages, budgeting a caster's spells, choosing armour for a caster or a thug, reading fatigue in a battle log, or when the user asks how fatigue works.
+description: "Fatigue in Dominions 6 battles: what builds it, spell fatigue, encumbrance, unconsciousness and recovery. Use when scripting or budgeting a caster's spells, choosing armour, or reading fatigue in a battle log."
+keywords: "manual, illwiki, attack, cut, skill, levels, above, requirement, spellcasting, base, cast, gems, magic, drain, scales, defence, armour-defeating, hits, likelier, unconscious, damage, past, round, while, reinvigoration, plan, mage's, script, order, value, let, pass, after, job, done, rule, except, communions, long, gem-heavy, mages, caster, thug, works"
 ---
 
 # Fatigue (Dominions 6, vanilla)

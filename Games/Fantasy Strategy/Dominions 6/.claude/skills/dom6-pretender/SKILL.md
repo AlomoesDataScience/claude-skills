@@ -1,6 +1,7 @@
 ---
 name: dom6-pretender
-description: Design a Dominions 6 pretender god well, the way the Pretenders Calculator (zollqir.github.io/pretenders-dom6) does and beyond it: for a nation (vanilla or modded) and a goal, find the cheapest chassis for the wanted magic paths, dominion and scales, maximise bless points, pick blesses for the nation's sacred units, compare chassis stats, and write the final design with itemised costs and an AI pretender template. Uses the dom6-inspector, dom6-mechanics, dom6-play, dom6-modding and dom6-modinspector skills. Use whenever the user asks for a pretender or god design, which chassis or body to take, how many points something costs, what blesses or scales to take, a bless or rush or rainbow or sleeper god for a nation, or an AI god template for a mod.
+description: "Design a Dominions 6 pretender god like the Pretenders Calculator and beyond: chassis, paths, dominion, scales, blesses, costs. Use whenever a pretender or god design, bless, scale or rush plan is wanted."
+keywords: "well, zollqir, github, pretenders-dom6, nation, vanilla, modded, goal, find, cheapest, magic, maximise, points, pick, nation's, sacred, units, compare, stats, write, final, itemised, template, dom6-inspector, dom6-mechanics, dom6-play, dom6-modding, dom6-modinspector, skills, body, take, many, something, rainbow, sleeper, mod"
 ---
 
 # Designing a Dominions 6 pretender
@@ -92,35 +93,6 @@ pretender screen and pass `--cost 6440=150`.
    The dom6-pretender-ingame skill (`build_god.py`) enters and saves the design in the running
    game through Game Tools and reads the game's points back; dom6-ui drives the game by hand.
 
-## What strong players do (illwiki, Cybertron2's "Basics of Higher Level Pretender Design", Dom6)
-
-Read it with `wiki.py show basics_of_higher_level_pretender_design` (dom6-wiki skill).
-Multiplayer advice; against the AI the early pressure is softer.
-
-- **"To get to turn 50 you must first get past turn 10."** A late-game build is weak early, and
-  other players will notice and attack it. At high level, players **trade scales for a bigger
-  bless and a better god**.
-- **Scales they give up first:**
-  - Misfortune and temperature (they don't affect unit production);
-  - then some Order and Production (keep the thresholds the nation's recruiting needs);
-  - often Drain.
-  - Magic is divisive: it doesn't win the first war.
-- **Rainbow bless on a good sacred:** many small stats make the unit the capital already
-  pumps out more efficient. Strength is +1 damage per hit; defence on high-defence cavalry
-  makes it near unhittable.
-- **Mage rainbow bless** (hp on communion slaves, resistances, penetration): strong late, weak
-  early. The guide names **MA Pythium** as the nation it suits, because it has a strong early
-  game *and* mages that want it late.
-- **Incarnates are picked to synergise:**
-  - Fire Shield + Fateweaving;
-  - Invulnerability + Fear;
-  - Hardskin + 10 fire / 10 shock resistance.
-  - Blesses get better faster than linearly, so combinations beat lone picks.
-  - Usually take them awake: high-level wars start before turn 12.
-- **Expanders** suit MA and LA (harder independents) and nations that can't expand before
-  taking their capital circle.
-- **"Resist rainbows"** haven't done well in Dom6.
-
 ## Where the data and the manual disagree
 
 The site tracks game patches; the game manual is older. Differences in the bless list (the site's
@@ -144,6 +116,12 @@ and chassis classes (by base dominion 1-4: humanoid, monster, titan, immobile) a
 (its JSON files, plus the bless list and nation fixes read from its JavaScript as plain data,
 without running the site's code). Chassis stats come from dom6-inspector's `data/`; rebuild that
 skill after a game patch too.
+
+## Reference files (read the one the step needs)
+
+| File | Holds |
+|---|---|
+| `reference/what-strong-players-do-illwiki-cybertron.md` | **What strong players do (illwiki, Cybertron2's "Basics of Higher Level Pretender Design", Dom6)** - Read it with wiki.py show basicsofhigherlevelpretenderdesign (dom6-wiki skill) |
 
 ## Related skills
 dom6-pretender-ingame (build it in game), dom6-nations, dom6-inspector, dom6-play.

@@ -1,6 +1,7 @@
 ---
 name: dom6-battle-view
-description: Review a Dominions 6 battle from its replay so Claude can learn from it - battle_review.py reads the Battle Summary (units, wounded, dead per side), records the replay's detail-4 combat log with the round counter, saves the F1 Unit Overview on the last round, and writes a report (losses, per-unit attacks, hits, damage and kills, who hit whom and how hard, kills and routs by round, spells cast, every unit's end state). Uses dom6-ui for guarded input and OCR; reports feed the dom6-tactics battle log. Use when a battle has been fought, when the user asks what happened in a fight, why it was won or lost, or how a unit or layout performed.
+description: "Review a Dominions 6 battle replay: battle_review.py reads the summary and combat log so Claude learns from it. Use after a battle, or when asked what happened, why it was lost, or how a unit performed."
+keywords: "learn, units, wounded, dead, side, records, replay's, detail-4, round, counter, saves, overview, last, writes, report, losses, per-unit, attacks, hits, damage, kills, hit, whom, hard, routs, spells, cast, unit's, end, state, dom6-ui, guarded, input, ocr, reports, feed, dom6-tactics, has, been, fought, fight, won, layout"
 ---
 
 # Dom6 battle view

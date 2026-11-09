@@ -1,6 +1,7 @@
 ---
 name: thirdreich-guide
-description: Starter guide to Rise and Decline of the Third Reich (Avalon Hill's classic WWII grand-strategy board wargame of Europe 1939-1946), using the free fan "Fourth-and-a-half Edition" rules with Definitive Question Box (DQB) answers - BRPs (basic resource points) as the economy, quarterly turns, offensive/attrition/pass options per front, year start sequence with strategic warfare, objective-hex victory, minor countries, air and naval warfare, scenarios (1939 campaign, 1942, 1944), for 2-6 players, with a page map of 3r4-5th-DQB-v7.pdf (71 pages; searchable .txt) and the older v4. Uses game-sources (rule lookups), learn-to-play (method). Use when the user wants to play, learn or talk about Third Reich / Rise and Decline of the Third Reich / 3R, wants a rules question answered, or wants help planning a front, the BRP budget or a scenario.
+description: "Starter guide to Rise and Decline of the Third Reich (Avalon Hill WWII grand strategy) with the fan 4.5 rules. Use when playing or learning 3R or answering a rules question."
+keywords: "hill's, classic, grand-strategy, board, wargame, europe, free, fourth-and-a-half, edition, definitive, box, dqb, answers, brps, basic, resource, points, economy, quarterly, turns, offensive, attrition, pass, options, front, year, start, sequence, strategic, warfare, objective-hex, victory, minor, countries, air, naval, scenarios, campaign, players, page, map, r4-5th-dqb-v7, pdf, pages, searchable"
 ---
 
 # Rise and Decline of the Third Reich - starter guide

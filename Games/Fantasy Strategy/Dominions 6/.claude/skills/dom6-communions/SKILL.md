@@ -1,6 +1,7 @@
 ---
 name: dom6-communions
-description: Communions in Dominions 6, from the manual (pp. 78-79) and illwiki - astral Communion (Communion Master / Communion Slave, Thaumaturgy 1, S1), blood Sabbath and MA Man's Chorus, the master's path boost (+n levels in every path he has for 2^n slaves), how spell fatigue (including encumbrance) is split among the participants and multiplied for weaker slaves, slaves being helpless and sharing the master's self-buffs, the backlash when the masters die or flee (3d50 fatigue, a round stunned), the communion items (Crystal Matrix, Slave Matrix, Slave's Heart, Master's Athame), the 200-fatigue HP damage on slaves, and Grand Communions for globals. Use when planning a mage line around a communion, scripting masters and slaves, judging whether a master or slave may pass out, reading a battle where a communion broke, or when the user mentions communions.
+description: "Communions in Dominions 6: astral Communion, blood Sabbath, master and slave scripting, path boosts and fatigue. Use when planning a communion mage line or reading a battle where one broke."
+keywords: "manual, illwiki, thaumaturgy, man's, chorus, master's, boost, levels, has, slaves, spell, including, encumbrance, split, among, participants, multiplied, weaker, being, helpless, sharing, self-buffs, backlash, masters, die, flee, 3d50, round, stunned, items, crystal, matrix, slave's, heart, athame, damage, grand, globals, around, judging, whether, may, pass, mentions"
 ---
 
 # Communions (Dominions 6, vanilla)

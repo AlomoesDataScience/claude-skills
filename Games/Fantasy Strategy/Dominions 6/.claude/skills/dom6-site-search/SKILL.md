@@ -1,6 +1,7 @@
 ---
 name: dom6-site-search
-description: Finding magic sites in Dominions 6, from the manual (pp. 28-29, turn step 14) and illwiki (magic-sites) - the Search for Magic Sites order (a mage finds sites of his paths up to his level, difficulty 1-4), which terrains hold more sites, effects that work before discovery (scales, disease, horror marks), remote searching rituals (Augury, Auspex, Voice of Apsu, Gnome Lore, Arcane Probing, Haruspex, Acashic Knowledge, Bowl of Blood...), site frequency settings, and a search plan (who searches where, avoid re-searching, track it in the province chronicle). Use when ordering mages to search, choosing which provinces and paths to search, casting search rituals, planning gem income, or when the user asks about site searching.
+description: "Finding magic sites in Dominions 6: the search order, site levels, search rituals and gem income. Use when ordering mages to search, choosing provinces and paths, or planning gem income."
+keywords: "manual, turn, step, illwiki, magic-sites, mage, finds, level, difficulty, terrains, hold, effects, work, before, discovery, scales, disease, horror, marks, remote, searching, augury, auspex, voice, apsu, gnome, lore, arcane, probing, haruspex, acashic, knowledge, bowl, blood, frequency, settings, plan, searches, avoid, re-searching, track, province, chronicle, casting"
 ---
 
 # Site searching (Dominions 6, vanilla)

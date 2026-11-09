@@ -1,6 +1,7 @@
 ---
 name: dom6-knowledge
-description: Claude's knowledge base about Dominions 6 learned from the running game itself - nation files and the nations overview (written by dom6-nations), how screens work (the nation info screen, the unit stat screen, what its icons and magic symbols mean, what right-clicking shows), and facts the user teaches. Markdown topic files with kb.py to list, show, search and add facts (dated, with their source). Use when looking up something learned in game before, when the user teaches how a screen, icon or symbol works, after reading a new screen, or when asked what Claude knows or has learned about Dominions 6.
+description: "Claude's Dominions 6 knowledge base learned from the running game: nation files, screens, icons, magic symbols. Use when looking up something learned in game, when the user teaches a screen or icon, or after reading a new screen."
+keywords: "itself, nations, overview, written, dom6-nations, work, info, unit, stat, mean, right-clicking, shows, facts, markdown, topic, list, show, search, add, dated, source, before, symbol, works, asked, knows, has"
 ---
 
 # Dominions 6 knowledge base

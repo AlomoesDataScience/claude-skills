@@ -1,6 +1,7 @@
 ---
 name: dom6-holy
-description: Holy magic, priests and sacred units in Dominions 6, from the manual (pp. 81-85) and illwiki (holy, divine-magic, bless) - priest levels and what each unlocks (H1 Blessing and Banishment, H2 Sermon of Courage, Smite Demon, Holy Word, Holy Avenger, H3 Divine Blessing and Smite, H4 Fanaticism, H5 Divine Channeling), divine spells cost no fatigue (only casting encumbrance) and need no research, Banishment and Smite replaced by the god's top path at 4+, sacred units (temples to recruit, half upkeep, blessable), the bless (+1 morale plus the god's bless effects; incarnate blesses need the god on the map), Holy boosters, preaching, thrones, blood sacrifice, recalling a dead god (50 points), prophets. Use when scripting priests in battle, planning sacred armies and blessings, choosing priests for preaching, or when the user asks about priests, holy magic or blesses.
+description: "Holy magic, priests and sacred units in Dominions 6: priest levels, blessings, banishment, sermons, preaching. Use when scripting priests, planning sacred armies and blesses, or choosing preachers."
+keywords: "manual, illwiki, divine-magic, bless, unlocks, blessing, sermon, courage, smite, demon, word, avenger, divine, fanaticism, channeling, spells, cost, fatigue, casting, encumbrance, need, research, replaced, god's, top, path, temples, recruit, half, upkeep, blessable, morale, plus, effects, incarnate, god, map, boosters, thrones, blood, sacrifice, recalling, dead, points, prophets"
 ---
 
 # Holy magic, priests and blesses (Dominions 6, vanilla)

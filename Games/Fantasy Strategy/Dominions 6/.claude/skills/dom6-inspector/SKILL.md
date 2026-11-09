@@ -1,6 +1,7 @@
 ---
 name: dom6-inspector
-description: Local copy of the Dominions 6 Mod Inspector (larzm42.github.io/dom6inspector), every vanilla unit, commander, pretender, hero, spell, magic item, weapon, armour, magic site, mercenary band, event and nation with all the stats the site shows (gold and resource costs, recruit lists, weapon and armour breakdowns, spell effects, event requirements and effects, descriptions, internal mod keys and ids) plus the unit sprites and item/site icons. Use whenever the user asks about a specific vanilla Dominions 6 unit, spell, item, site, nation, mercenary or event, wants vanilla numbers or ids for a mod (#copystats, #weapon, #armor, #selectmonster, #req_monster...), wants to compare a modded unit with vanilla ones, needs a vanilla sprite to look at, or asks what a nation recruits.
+description: "Local copy of the Dominions 6 Mod Inspector with every vanilla unit, spell, item, site, nation and event, searchable from scripts. Use for any vanilla Dominions 6 lookup or the ids and numbers a mod needs."
+keywords: "larzm42, github, dom6inspector, commander, pretender, hero, magic, weapon, armour, mercenary, band, stats, shows, gold, resource, costs, recruit, lists, breakdowns, effects, requirements, descriptions, internal, keys, plus, sprites, icons, specific, copystats, armor, selectmonster, req, monster, compare, modded, ones, sprite, look, recruits"
 ---
 
 # Dominions 6 Mod Inspector (local copy)

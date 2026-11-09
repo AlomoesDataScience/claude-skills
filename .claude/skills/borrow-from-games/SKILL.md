@@ -1,6 +1,7 @@
 ---
 name: borrow-from-games
-description: Use every game Claude has learned as a parts bin for designing other games (our 4X engine, Heresiarch, Pocket 4X, AMBS, anything new) - regardless of genre or theme. The user's rule - pull from all games to figure out what is what; a historical game doesn't want magic, but keep the options open and consider how a system could translate. A fixed systems taxonomy (time, map, economy, production, research, characters, politics, war, logistics, AI, victory, UI, modding...), a "## Systems" section in every game guide, borrow.py to build a cross-game catalogue (systems.md), search it, list guides still missing the section and lay out every option for a design question, and a procedure for turning a borrowed system into a design decision with its source. Use when designing or reviewing a mechanic for one of our games, when the user asks how other games handle something, after learning a new game (fill its Systems section), or when comparing games.
+description: "Use every learned game as a parts bin for designing ours: a systems taxonomy, borrow.py catalogue and search. Use when designing a mechanic for one of our games or asked how other games handle something."
+keywords: "has, engine, heresiarch, pocket, ambs, anything, new, regardless, genre, theme, rule, pull, figure, historical, doesn't, magic, keep, options, open, consider, system, could, translate, fixed, time, map, economy, production, research, characters, politics, war, logistics, victory, modding, section, guide, build, cross-game, list, guides, still, missing, lay, option"
 ---
 
 # Borrow from games

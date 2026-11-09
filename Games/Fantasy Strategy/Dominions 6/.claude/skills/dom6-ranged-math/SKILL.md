@@ -1,6 +1,7 @@
 ---
 name: dom6-ranged-math
-description: Precision and ranged combat math for Dominions 6, from the manual and illwiki - where a missile lands (deviation = range x 1.25 / precision past precision/2 - 2; precision above 10 counts double), who in the square is hit, the hit roll (square size points and shield parry, no defence skill), missile damage, spell precision (caster + spell; 100 never misses), multi-bolt and AoE spells, interrupts, precision modifiers (Eagle Eyes, Trueshot, darkness, twilight, storms), arrow protection, deviation tables and the spells.py missile simulator (--data for SCBM), with a worked example of slingers and javelins vs White Centaurs. Use when judging archers, javelins, slingers or damage spells, placing missile troops, choosing precision buffs or arrow protection, or when the user asks about precision or ranged math.
+description: "Precision and ranged combat math for Dominions 6: deviation, who gets hit, shields, arrow protection. Use when judging archers, javelins or damage spells, placing missile troops, or choosing precision buffs."
+keywords: "manual, illwiki, lands, range, past, above, counts, double, square, roll, size, points, shield, parry, defence, skill, spell, caster, never, misses, multi-bolt, aoe, interrupts, modifiers, eagle, eyes, trueshot, darkness, twilight, storms, tables, simulator, data, scbm, worked, example, slingers, white, centaurs"
 ---
 
 # Precision and ranged combat math (Dominions 6, vanilla)

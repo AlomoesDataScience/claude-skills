@@ -1,6 +1,7 @@
 ---
 name: sfgc-guide
-description: Starter guide to Star Fleet Universe Galactic Conquest (Amarillo Design Bureau, John D. Berg, Version 5C 2014), a gamemaster-run strategic campaign system for the Star Fleet Universe (Star Fleet Battles, Federation & Empire) - squadrons, admiral's orders with battle and disengagement intensity, statistical combat (attack and defence factors), six-month turns of twelve segments, economics (EPs, trade routes, morale and rebellion, exhaustion, surrender), strategic operations (repair, minefields, cloaking, espionage, R&D, X-ships), strategic movement, merchant marine, buying a starting navy, with a page map of Star_Fleet_Galactic_Conquest.pdf (117 pages; searchable .txt). Uses game-sources (rulebook lookups), learn-to-play (method). Use when the user wants to play, run, learn or talk about Galactic Conquest / Star Fleet Universe campaigns, wants a rules question answered, orders written, or Claude to act as the gamemaster.
+description: "Starter guide to Star Fleet Universe Galactic Conquest (5C), a GM-run strategic campaign system. Use when playing, running or learning a Galactic Conquest campaign or answering a rules question."
+keywords: "amarillo, design, bureau, john, berg, version, gamemaster-run, battles, federation, empire, squadrons, admiral's, orders, battle, disengagement, intensity, statistical, combat, attack, defence, factors, six-month, turns, twelve, segments, economics, eps, trade, routes, morale, rebellion, exhaustion, surrender, operations, repair, minefields, cloaking, espionage, x-ships, movement, merchant, marine, buying, starting, navy"
 ---
 
 # Star Fleet Universe: Galactic Conquest - starter guide

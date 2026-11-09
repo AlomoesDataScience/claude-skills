@@ -1,6 +1,7 @@
 ---
 name: idle-view
-description: Where to leave a game's camera and mouse while Claude is idle (thinking, reading the manual, writing files, waiting for the user) so the screen looks natural to anyone watching or recording - camera resting on what's being thought about, mouse parked on a neutral spot that shows no tooltip or order icon and is far from commit buttons (End Turn, Accept, Retreat), no unit left selected unless it's the subject, overlays left in a sensible state, no sudden jumps. Per-game parking spots. Use when Claude is about to stop acting for more than a few seconds, after taking photos or calibration runs, before handing control back to the user, and during recordings or streams.
+description: "Where to leave a game's camera and mouse while Claude is idle so the screen looks natural for viewers and recordings. Use before pausing for more than a few seconds and before handing control back."
+keywords: "thinking, reading, manual, writing, files, waiting, anyone, watching, recording, resting, what's, being, thought, parked, neutral, spot, shows, tooltip, order, icon, far, commit, buttons, end, turn, accept, retreat, unit, left, selected, unless, subject, overlays, sensible, state, sudden, jumps, per-game, parking, spots, stop, acting, after, taking, photos"
 ---
 
 # Idle view - a natural screen while thinking

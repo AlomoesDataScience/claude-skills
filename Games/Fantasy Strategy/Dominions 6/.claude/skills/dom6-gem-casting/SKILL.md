@@ -1,6 +1,7 @@
 ---
 name: dom6-gem-casting
-description: How magic gems work in Dominions 6, from the manual: in battle a gem gives a mage +1 skill in its path for one spell in one round (cast one level above his skill, or halve the fatigue; max +1, gems per round <= his skill, never a path he lacks); gem-cost spells need the gems in his inventory before battle; the Conservative gem usage box; spell fatigue (cut by levels above, plus encumbrance per cast); the 40-gem carry limit and gem squires; transferring gems (F7, a commander's gem slot, the lab pool); and gems outside battle - rituals, extra gems for enchantment duration and dispel strength, forging, empowerment, alchemy, cataclysm horrors. Use when scripting mages, handing out gems before a battle, planning which spells a mage can reach with gems, budgeting fatigue, casting rituals or forging, or when the user mentions gems.
+description: "How magic gems work in Dominions 6: battle gem boosts, fatigue halving, rituals and forging costs. Use when scripting mages, handing out gems before a battle, or planning which spells gems can reach."
+keywords: "manual, gives, mage, skill, path, spell, round, cast, level, above, halve, max, never, lacks, gem-cost, need, inventory, conservative, usage, box, cut, levels, plus, encumbrance, carry, limit, squires, transferring, commander's, slot, lab, pool, outside, extra, enchantment, duration, dispel, strength, empowerment, alchemy, cataclysm, horrors, budgeting, mentions"
 ---
 
 # Gem casting (Dominions 6, vanilla manual)

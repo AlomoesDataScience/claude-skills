@@ -1,6 +1,7 @@
 ---
 name: fftow-guide
-description: Starter guide to A Fistful of TOWs 3 (miniatures rules for mechanized warfare from the 1930s to the present, any scale 2mm-15mm) - sequence of play, troop quality, movement and cohesion, spotting, anti-vehicle and anti-infantry fire, artillery, close combat, helicopters, air strikes, engineering, chemical and nuclear weapons, scenario and campaign design with a point system, the huge equipment data and army lists, with a page map of Fist Full of Tow.pdf (462 pages, bookmarked; searchable .txt) - and the user's own forces: North and South Korean army and equipment lists, a custom DPRK vehicle, and the fictional nation Novanglia (equipment, aircraft, National Guard, the new-model combat force). Uses game-sources (rule lookups), learn-to-play (method). Use when the user wants to play, set up or talk about Fistful of TOWs / FFT3, build or check an army list, cost a force with points, or design a scenario or campaign (Korea, Novanglia).
+description: "Starter guide to A Fistful of TOWs 3, miniatures rules for mechanized war 1930s-present: sequence, quality, fire, points. Use when playing or setting up FFT3, building or costing an army list."
+keywords: "warfare, present, scale, mm-15mm, play, troop, movement, cohesion, spotting, anti-vehicle, anti-infantry, artillery, close, combat, helicopters, air, strikes, engineering, chemical, nuclear, weapons, scenario, campaign, design, point, system, huge, equipment, data, lists, page, map, fist, full, tow, pdf, pages, bookmarked, searchable, txt, forces, north, south, korean, custom"
 ---
 
 # A Fistful of TOWs 3 - starter guide

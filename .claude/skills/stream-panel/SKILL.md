@@ -1,6 +1,7 @@
 ---
 name: stream-panel
-description: A window for the right-hand column of a recording or stream (the user's streamer layout) - a tracker on top (game, mode, status line, fields such as HP/place/turn, goals with ticks, recent events, session timer) and Claude's live terminal log below (what Claude says, every tool call with its description, full results, the user's messages including ones typed mid-turn). panel.py runs it (hide/show/toggle/stop, never takes focus); tracker.py and its Python API feed the tracker, and bgplay.py reads fill fields automatically through a "tracker" block in the game folder's game-ui.json. Use when recording or streaming gameplay, when the user wants to see what Claude is doing while it plays, or to show game stats beside the game.
+description: "A side window for recordings and streams: tracker on top (game, status, goals) and Claude's live log below. Use when recording or streaming gameplay or showing stats beside the game."
+keywords: "right-hand, column, streamer, layout, mode, line, fields, such, place, turn, ticks, recent, events, session, timer, terminal, says, tool, call, description, full, results, messages, including, ones, typed, mid-turn, runs, hide, show, toggle, stop, never, takes, focus, python, api, feed, bgplay, reads, fill, automatically, through, block, folder's"
 ---
 
 # Stream panel

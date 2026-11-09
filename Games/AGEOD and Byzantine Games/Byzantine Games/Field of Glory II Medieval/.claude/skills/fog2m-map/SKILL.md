@@ -1,6 +1,7 @@
 ---
 name: fog2m-map
-description: How to use the battle map in Field of Glory II Medieval - its layout (square grid, grey stone border, deployment zones and the "Enemy Front Line" label, darker enemy side), getting the whole map into photos (top view, zoom, pan numbers), recognising each terrain type from a photo and which ones are invisible and need a tooltip, the map overlays (grid, LOS, LOF, command range, ZOC, move and charge highlights), finding and identifying units on it, and turning photos into a text board for planning. Game-specific companion to the generic map-usage, map-camera and photo-map skills; rules for what terrain does are in fog2m-guide PLAY.md. Use when deploying and on every turn of a FoG II battle, when reading or drawing the battlefield, or when unsure what a square is.
+description: "Using the Field of Glory II Medieval battle map: layout, deployment zones, whole-map photos, reading squares and terrain. Use when deploying and on every FoG II turn, or when unsure what a square is."
+keywords: "grid, grey, stone, border, enemy, front, line, label, darker, side, getting, whole, top, view, zoom, pan, numbers, recognising, type, photo, ones, invisible, need, tooltip, overlays, los, lof, command, range, zoc, move, charge, highlights, finding, identifying, units, turning, text, board, planning, game-specific, companion, generic, map-usage, map-camera"
 ---
 
 # FoG II Medieval - using the map

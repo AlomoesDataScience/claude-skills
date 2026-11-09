@@ -1,6 +1,7 @@
 ---
 name: starfire-guide
-description: Starter guide to Solar Starfire (Starfire Design Studio, 2013 edition), the space wargame and 4X campaign system - tactical ship combat on hex maps (movement, facing, warp point transits, combat, damage, sensors, small craft, ship design), and the strategic campaign (empire setup, populations and economy, construction, research and development, communications, survey, politics, intelligence, campaign combat), run by a Space Master with NPR generation and galaxy setup, with a page map of Solar_Starfire.pdf (429 pages, bookmarked; searchable .txt). Uses game-sources (rulebook lookups), learn-to-play (method). Use when the user wants to play, run, learn or talk about Starfire / Solar Starfire, design a ship, answer a rules question, or have Claude run a campaign as Space Master.
+description: "Starter guide to Solar Starfire (2013): tactical ship combat on hexes and the 4X campaign system. Use when playing, running or learning Starfire, designing a ship, or answering a rules question."
+keywords: "design, studio, edition, space, wargame, hex, maps, movement, facing, warp, point, transits, damage, sensors, small, craft, strategic, empire, setup, populations, economy, construction, research, development, communications, survey, politics, intelligence, run, master, npr, generation, galaxy, page, map, pdf, pages, bookmarked, searchable, txt, game-sources, rulebook, lookups, learn-to-play, method"
 ---
 
 # Solar Starfire - starter guide

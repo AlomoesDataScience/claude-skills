@@ -1,6 +1,7 @@
 ---
 name: faserip-guide
-description: Starter guide to Advanced FASERIP (a free retro-clone of the 1980s Marvel Super Heroes RPG: Fighting, Agility, Strength, Endurance, Reason, Intuition, Psyche in named ranks, Karma, a universal results table) and to the user's own FASERIP superhero campaign in Facerip RPG/ - his characters (Grimsly/Walter McDermott, The Visitor, Stanley Carter "The Master", Moisture Maiden, The Blue Blur, Tzitzimiml and more, with art), villains, encounter seeds (mugging, car jacking, museum robbery, demon apocalypse) and session plans ("A Week In the Life", "Plans for session 2"). Uses game-sources (rule lookups), learn-to-play (method). Use when the user wants to play, run, continue or talk about FASERIP or their superhero campaign, build a character, look up a rule, or have Claude GM a session.
+description: "Starter guide to Advanced FASERIP (free Marvel Super Heroes retro-clone): ranks, FEAT rolls, Karma, characters. Use when playing, running or continuing the superhero campaign, building a character or checking a rule."
+keywords: "rpg, fighting, agility, strength, endurance, reason, intuition, psyche, named, universal, results, table, facerip, grimsly, walter, mcdermott, visitor, stanley, carter, master, moisture, maiden, blue, blur, tzitzimiml, art, villains, encounter, seeds, mugging, car, jacking, museum, robbery, demon, apocalypse, session, plans, week, life, game-sources, lookups, learn-to-play, method, play"
 ---
 
 # Advanced FASERIP and the user's campaign - starter guide

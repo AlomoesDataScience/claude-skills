@@ -1,6 +1,7 @@
 ---
 name: gearcity-guide
-description: Starter guide to GearCity (Visual Entertainment and Technologies), the automobile-industry business simulation from 1900 onward - designing chassis, engines, gearboxes and vehicles from dated sub-components, factories, branches and districts, sales, pricing, marketing, contracts, racing, stocks and financing, unions, taxes, lobbying, war, popularity - plus its modding (Components.xml and other XML scripts in media/Scripts, maps, the Qt ModTools suite with editors for AI, cities, components, events). Points to the official DokuWiki manual (wiki.gearcity.info) and the local install. Uses learn-to-play (method), game-ui (the game window). Use when the user wants to play, learn, mod or talk about GearCity, or study its component-design and market systems for our own 4X engine (the user's Component Design doc names GearCity).
+description: "Starter guide to GearCity, the car-industry business sim: component design, factories, markets. Use when playing, learning or modding GearCity, or borrowing its design and market systems for our 4X engine."
+keywords: "visual, entertainment, technologies, automobile-industry, simulation, onward, designing, chassis, engines, gearboxes, vehicles, dated, sub-components, branches, districts, sales, pricing, marketing, contracts, racing, stocks, financing, unions, taxes, lobbying, war, popularity, plus, components, xml, scripts, media, maps, modtools, suite, editors, cities, events, points, official, dokuwiki, manual, wiki, info, local"
 ---
 
 # GearCity - starter guide

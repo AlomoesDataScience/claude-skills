@@ -1,6 +1,7 @@
 ---
 name: uscw-guide
-description: Guide to GMT's The U.S. Civil War (Mark Simonitch, 3rd edition rules August 2021), a two-player strategic board wargame of the whole war that the user owns boxed - where the rules, naval rules, errata, Q&A, player aid cards, setup cards and the ZunTzu module live in the workspace (all pulled from GMT's product page as PDF + page-numbered text), the rulebook's section map, and the core loop (dice-differential action points shared by both players, SPs of 5,000 men, generals, reaction movement, supply, Special Action Cards, automatic victory). Use when the user wants to play, learn or talk about The U.S. Civil War, look up a rule, set up a scenario (1861, 1862, 1863, campaign), or compare its systems with other wargames or the 4X engine.
+description: "Guide to GMT's The U.S. Civil War (3rd edition rules): manual map, rules, scenarios. Use when playing or learning it, looking up a rule, or setting up a scenario."
+keywords: "mark, simonitch, august, two-player, strategic, board, wargame, whole, owns, boxed, naval, errata, player, aid, cards, setup, zuntzu, module, live, workspace, pulled, product, page, pdf, page-numbered, text, rulebook's, section, core, loop, dice-differential, action, points, shared, players, sps, men, generals, reaction, movement, supply, special, automatic, victory, play"
 ---
 
 # The U.S. Civil War (GMT Games)

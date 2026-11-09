@@ -1,6 +1,7 @@
 ---
 name: sfb-guide
-description: Starter guide to Star Fleet Battles (Amarillo Design Bureau, Captain's Edition Basic Set rulebook, fifth edition 2012), the detailed starship-combat board game of the Star Fleet Universe - each player commands one or a few ships through energy allocation, proportional impulse movement, simultaneous fire, shields and damage on the ship systems display (SSD), seeking weapons (drones, plasma), races (Federation, Klingon, Romulan, Kzinti, Gorn, Tholian), the cadet training game, with a map of the 250-page rulebook (searchable .txt). Uses game-sources (rule lookups), learn-to-play (method). Use when the user wants to play, learn or talk about Star Fleet Battles / SFB, wants an energy allocation or firing plan, a rules question answered, or a battle fought out for Galactic Conquest (sfgc-guide) or Federation & Empire (fe-guide).
+description: "Starter guide to Star Fleet Battles (Captain's Edition): energy allocation, impulses, weapons, damage. Use when playing or learning SFB, planning energy or fire, or answering a rules question."
+keywords: "amarillo, design, bureau, basic, set, rulebook, fifth, detailed, starship-combat, board, game, universe, player, commands, few, ships, through, proportional, impulse, movement, simultaneous, shields, ship, systems, display, ssd, seeking, drones, plasma, races, federation, klingon, romulan, kzinti, gorn, tholian, cadet, training, map, page, searchable, txt, game-sources, rule, lookups"
 ---
 
 # Star Fleet Battles - starter guide

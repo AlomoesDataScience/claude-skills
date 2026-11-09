@@ -1,6 +1,7 @@
 ---
 name: dom6-path-nature
-description: The Nature path of Dominions 6 magic, vanilla - what nature mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's nature page) and the 128 generic spells with Nature as their main path, ranked inside each purpose by the spell database (dom6-spell-db: tiers, value, cost; best per purpose in SKILL.md, the full list by research level in spells.md). Use when judging a nature mage or a nation's nature access, planning nature research, scripting nature casters, choosing nature spells for a purpose, or when the user asks what nature magic is good for.
+description: "The Nature path of Dominions 6 magic: what nature mages get by role, boosters, crosspaths and every generic nature spell. Use when judging nature mages or access, planning nature research, or choosing nature spells."
+keywords: "vanilla, indirect, illwiki's, page, main, ranked, inside, purpose, database, dom6-spell-db, tiers, value, cost, best, skill, full, list, level, mage, nation's, scripting, casters, good"
 ---
 
 # Nature magic (Dominions 6, vanilla)

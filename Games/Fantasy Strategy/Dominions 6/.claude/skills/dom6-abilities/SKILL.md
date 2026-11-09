@@ -1,6 +1,7 @@
 ---
 name: dom6-abilities
-description: Unit attributes and special abilities in Dominions 6, from the manual (pp. 38-41) - the basic stats (size and supply, strength, attack, defence, protection, morale, MR, precision, encumbrance, map move, combat speed, fatigue, age and max age by path, the three leaderships) and the abilities the manual explains (ambidextrous, berserker, ethereal 75% miss, glamour, recuperation, regeneration / reconstruction / reforming flesh, awe 10 + awe, fear area 6 + fear and strength 10 + 1 per 5, heat and chill auras, poison cloud, stun, invisibility -9, petrification, standards, horror marks, trample 3d6 vs defence for 7 + size AP, swallow) and unit classes (magic beings, mindless, undead, demons, inanimate). Use when reading a unit card, judging a monster or summon, planning against awe, fear, ethereal or trample, or when the user asks what an ability does.
+description: "Dominions 6 unit stats and special abilities (manual pp. 38-41): size, MR, precision, awe, fear, ethereal, trample and more. Use when reading a unit card, judging a monster or summon, or asked what an ability does."
+keywords: "attributes, basic, supply, strength, attack, defence, protection, morale, encumbrance, map, move, combat, speed, fatigue, age, max, path, three, leaderships, explains, ambidextrous, berserker, miss, glamour, recuperation, regeneration, reconstruction, reforming, flesh, area, heat, chill, auras, poison, cloud, stun, invisibility, petrification, standards, horror, marks, 3d6, swallow, classes, magic"
 ---
 
 # Unit attributes and abilities (Dominions 6, vanilla)

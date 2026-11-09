@@ -1,6 +1,7 @@
 ---
 name: loading-screens
-description: Tell whether a game's screen is a loading screen and wait through loads properly, in any game on Claude's virtual screen - the user's method (2026-11-03) - shoot the screen BEFORE starting a load, act, grab frames as fast as possible (~33 ms) until the screen changes (else the action DID NOT TAKE), then decide with ONE GENERAL test whether what came up is a loading screen (blank, fade, spinner/progress-bar-only motion, loading words) - no per-game learning - and poll it out every second. bgplay.py act / isloading / waitload. Use whenever Claude clicks or presses something that loads (Play game, End Turn, battle replays, menus, map screens), when a script waits for a game, when a wait timed out or ended early, or to check "is it still loading?".
+description: "Tell whether a game screen is loading and wait through loads properly (shot before, frames after, one general loading test). Use whenever a click loads something or a wait timed out or ended early."
+keywords: "game's, virtual, method, shoot, starting, load, act, grab, fast, possible, until, changes, else, action, did, take, decide, came, blank, fade, spinner, progress-bar-only, motion, words, per-game, learning, poll, second, bgplay, isloading, waitload, clicks, presses, play, end, turn, battle, replays, menus, map, script, waits, check, still"
 ---
 
 # Loading screens
@@ -26,7 +27,7 @@ Watch ~1 s of frames (one every ~33 ms) and read the screen once:
 | blank | dark (mean < 25) or near-uniform (spread < 10) frame; or much darker than before the click | black screens, fade bottoms, plain colour |
 | fade | brightness ramps one way by 6+ over the window | fade in / out |
 | local motion only | the changing pixels fit in < 12% of the screen and are 0.1-3% of it - WEAK: counts only with a loading word | spinners, progress bars, "Loading..." dots |
-| words | "loading", "please wait", "thinking" (Dominions "AI thinking"), "reticulating" (The Sims), ... | text loading screens |
+| words | "loading", "please wait", "thinking" (Dominions "AI thinking"), "reticulating" (The Sims), ... - only as a STATUS line: the word starts its line or comes before dots, a count or a % (`loading_word`) | text loading screens |
 | (temporary) | it gives way to another screen with no input - the polling | confirms it |
 
 An animated game screen (Dominions' sea, idle units) changes all over the frame, so it is NOT "local motion".
@@ -36,6 +37,9 @@ Splines...") and Dominions' real fade frame -> LOADING; Dominions' real animated
 small animation, 0% of the screen) and the wait ran on. So it is a weak sign: alone it means nothing. Cost: a
 silent spinner/progress bar on a still picture with no text is missed (act then calls it a button click) -
 if a game has one, add its text or picture sign here.
+**Lesson 2 (same day)**: Dominions' Options menu ("Quit without saving") read as LOADING because "saving" appeared
+anywhere on screen. Now a loading word counts only as a status line ("Saving game", "Loading...", "AI thinking
+(3/36)"), never inside a menu entry.
 
 ## Commands (game-ui `bgplay.py`)
 ```

@@ -1,6 +1,7 @@
 ---
 name: dom6-pretender-ingame
-description: Build a pretender god inside the running Dominions 6 through Tools & Manuals (Game Tools) > Create a Pretender God and save it to the user's created pretenders, from a design checked with the dom6-pretender calculator. Picks the era and nation, the physical form (telling same-name forms like the Dragons apart), sleep state, magic paths, dominion, scales and blesses, reads the game's points back and names and saves the god. Uses the dom6-ui guard (waits for the user to be idle, works only while the game is focused). Use when the user asks Claude to make, enter, save or check a pretender in the game itself, to put a designed god into the game's pretender list, or to see what the game charges for a design.
+description: "Build a designed pretender inside the running Dominions 6 (Game Tools > Create a Pretender God) and save it. Use when asked to make, enter, save or check a pretender in the game itself."
+keywords: "through, manuals, created, pretenders, design, checked, dom6-pretender, calculator, picks, era, nation, physical, form, telling, same-name, forms, dragons, apart, sleep, state, magic, paths, dominion, scales, blesses, reads, game's, points, back, names, saves, dom6-ui, guard, waits, idle, works, while, focused, put, list, see, charges"
 ---
 
 # Building a pretender in the game

@@ -1,6 +1,7 @@
 ---
 name: rules-skills
-description: How Claude turns a game's rules into a family of mechanics skills and guides (the method behind the Dominions 6 set, 2026-11-03) - a numbered plan file first (one skill per mechanic a player decides about, pages per item, the user approves extras, ticks), sources in order of truth (game > mod files > manual > videos > wiki > user's word), citing pp. on every rule, the skill body (formulas, worked numbers or odds tables, a Using-it section, the user's examples, Related skills), computing numbers instead of eyeballing (exact dice tables, simulators, checks against game data), databases for rank-everything requests (purpose, score, basis, trust section, sanity-checked top lists), mods kept apart, videos as sources, and the finish (check, index, loose-line sweep, plan ticks, report). Use when building rules, mechanics or strategy skills or a guide for any game, when the user asks for a skill about game rules, or when ranking a game's units, spells or items.
+description: "Turn a game's rules into a family of mechanics skills and guides (the method behind the Dominions 6 set). Use when building rules, mechanics or strategy skills for any game."
+keywords: "turns, numbered, plan, file, first, skill, mechanic, player, decides, pages, item, approves, extras, ticks, sources, order, truth, mod, files, manual, videos, wiki, word, citing, rule, body, formulas, worked, numbers, odds, tables, using-it, section, examples, related, computing, instead, eyeballing, exact, dice, simulators, checks, against, data, databases"
 ---
 
 # Rules into skills (rules-skills)

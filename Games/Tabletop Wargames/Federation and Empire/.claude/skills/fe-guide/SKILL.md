@@ -1,6 +1,7 @@
 ---
 name: fe-guide
-description: Starter stub for Federation & Empire (Amarillo Design Bureau), the strategic board wargame of the Star Fleet Universe's General War - empires, fleets as counters, a hex map of the galaxy's border regions, economy and production. The user owns the physical game; no rulebook file here yet. Links to sfgc-guide (Galactic Conquest campaign, which borrows F&E's statistical combat) and sfb-guide (fighting battles out in Star Fleet Battles). Use when the user wants to play, set up or talk about Federation & Empire / F&E.
+description: "Starter stub for Federation & Empire (ADB), the Star Fleet Universe strategic board wargame. Use when playing, setting up or discussing F&E."
+keywords: "amarillo, design, bureau, universe's, general, war, empires, fleets, counters, hex, map, galaxy's, border, regions, economy, production, owns, physical, game, rulebook, file, yet, links, sfgc-guide, galactic, conquest, campaign, borrows, e's, statistical, combat, sfb-guide, fighting, battles, play, set, talk"
 ---
 
 # Federation & Empire - starter stub

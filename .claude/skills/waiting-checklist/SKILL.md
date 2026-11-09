@@ -1,6 +1,7 @@
 ---
 name: waiting-checklist
-description: Make a checklist document for work that is PARKED until something happens - the game or app is free, the user gives the go, a file or answer arrives, a machine is available - so it can start cold later without re-deriving anything. checklist.py writes it into the work's folder (<folder>/checklists/<slug>.md) from a fixed template (Status / Waits on / Go from header, a gate of conditions that must all be true, the session's safety rules, numbered items each with steps, "done when" and where results go, an After section and a dated log), lists every waiting checklist in the workspace, and sets status (waiting, ready, in-progress, done). Use when the user says he'll wait for something or do it later, when a plan's remaining items need a game, screen, file or go that isn't available now, when phase 2 of a job is blocked, and at session start (checklist.py list) to see what may now be unblocked.
+description: "Make a checklist document for work parked until something happens (game free, the user's go, a file). Use when the user says he will do something later or remaining work waits on something."
+keywords: "app, gives, answer, arrives, machine, available, start, cold, without, re-deriving, anything, writes, work's, folder, checklists, slug, fixed, template, status, header, gate, conditions, must, true, session's, safety, rules, numbered, items, steps, done, results, after, section, dated, log, lists, workspace, sets, ready, in-progress, he'll, wait, plan's, need"
 ---
 
 # Waiting checklists

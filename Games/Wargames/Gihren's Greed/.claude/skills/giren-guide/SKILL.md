@@ -1,6 +1,7 @@
 ---
 name: giren-guide
-description: Starter guide to Gihren's Greed (Kidou Senshi Gundam - Giren no Yabou, Bandai's Gundam grand-strategy wargame series; the community wiki covers Axis no Kyoui V for PSP/PS2), a Japanese-language game - what it is (strategic map phase plus hex battles, factions and campaigns, tech levels, production, pilots and their stats, scanning and Minovsky particles), how Claude reads its Japanese screens (game-ui ocr.py --lang jpn plus Claude's own translation, a glossary kept here), and the local copy of the girensgreed.fandom.com wiki (sources/wiki/*.wiki, fetched through the MediaWiki API). Uses game-ui, game-sources, learn-to-play. Use when the user wants to play, learn or talk about Gihren's Greed / Giren no Yabou, needs its Japanese screens read or translated, or asks about its factions, units, pilots, events or mechanics.
+description: "Starter guide to Gihren's Greed (Gundam Giren no Yabou grand strategy), with Japanese screen reading. Use when playing or learning it, or when its Japanese screens need reading or translating."
+keywords: "kidou, senshi, bandai's, grand-strategy, wargame, series, community, wiki, covers, axis, kyoui, psp, ps2, japanese-language, game, strategic, map, phase, plus, hex, battles, factions, campaigns, tech, levels, production, pilots, stats, scanning, minovsky, particles, reads, game-ui, ocr, lang, jpn, translation, glossary, kept, local, copy, girensgreed, fandom, com, sources"
 ---
 
 # Gihren's Greed (Giren no Yabou) - starter guide

@@ -1,6 +1,7 @@
 ---
 name: dom6-mod-magic
-description: Find out what a Dominions 6 mod does to magic and what became good - modmagic.py reads any dom6-modinspector output folder and sorts every touched spell into new / better / worse / mixed / AI-weight-only, scores the changes (path level, research level, gem cost, area, effects, damage, fatigue, precision, range, cast time, MR and shield flags), ranks what got better or worse (filtered by a mage's paths or a school), lists new spells, explains one spell's diff, and summarises by school and path; plus the method (load the mod, summary, filter by your nations' mage paths, check the top changes in the spell database and the calculator, write findings into the mod's own folder per mod-docs). Use when a game runs a mod (SCBM or any balance/magic mod), when the user asks what's good or changed in a mod, or before planning research and scripts in a modded game.
+description: "What a Dominions 6 mod does to magic: modmagic.py sorts every touched spell into new, better, worse or mixed. Use when a game runs a mod such as SCBM, or before planning research and scripts in a modded game."
+keywords: "find, became, good, reads, dom6-modinspector, output, folder, ai-weight-only, scores, changes, path, level, gem, cost, area, effects, damage, fatigue, precision, range, cast, time, shield, flags, ranks, got, filtered, mage's, paths, school, lists, spells, explains, spell's, diff, summarises, plus, method, load, summary, filter, nations, mage, check, top"
 ---
 
 # What a mod does to magic (dom6-mod-magic)

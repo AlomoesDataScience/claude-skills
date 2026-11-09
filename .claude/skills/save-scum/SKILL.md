@@ -1,6 +1,7 @@
 ---
 name: save-scum
-description: DARK ARTS, learning only - save the game before a test and reload it afterwards to run the test again, try another option or undo a result Claude didn't like (save scumming). The user (2026-11-02) - it is dubiously a form of cheating, so it is only for LEARNING a game (testing rules, hypotheses, unknown buttons, what an order does, how dice spread), NEVER in a real game - there every result stands. Per-game how-to (where saves go, how to save and load, when saving is blocked). Use when a learn-to-play or manual-first test could cost units or the game, when a hypothesis needs repeated trials, or before pressing an unknown button in a learning session - and check first that the session is a learning one.
+description: "Learning-only save and reload around tests to repeat them or undo a bad result. Use when a learning test could cost units or the game, or a hypothesis needs repeated trials."
+keywords: "dark, arts, before, afterwards, run, again, try, another, option, didn't, scumming, dubiously, form, cheating, testing, rules, hypotheses, unknown, buttons, order, dice, spread, never, real, stands, per-game, how-to, saves, load, saving, blocked, learn-to-play, manual-first, pressing, button, session, check, first"
 ---
 
 # Save scum - dark arts, for learning only

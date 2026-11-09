@@ -1,6 +1,7 @@
 ---
 name: fog2m-scouting
-description: Scouting in Field of Glory II Medieval, where units are generally only hidden in forests (the user) - the per-turn reading routine (photos, hover every enemy unit, count and classify, diff, knight threat ranges), forests that could hide units, invisible terrain by tooltip, LOS overlay, who probes, and when a look turn is worth it under the 24-turn limit. Use when starting every FoG II turn or deployment, when planning an advance, or when something might be in a wood.
+description: "Scouting in Field of Glory II Medieval: the per-turn enemy reading routine (photos, hovers, counts, diffs, hidden units in woods). Use at every FoG II turn or deployment and when planning an advance."
+keywords: "generally, forests, hover, unit, count, classify, diff, knight, threat, ranges, could, hide, invisible, terrain, tooltip, los, overlay, probes, look, worth, under, limit, starting, something, might, wood"
 ---
 
 # FoG II scouting - almost everything is visible

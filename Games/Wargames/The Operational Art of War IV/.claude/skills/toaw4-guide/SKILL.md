@@ -1,14 +1,23 @@
 ---
 name: toaw4-guide
-description: Starter guide to The Operational Art of War IV (Matrix/Slitherine 2017, the series begun by Norm Koger), an operational-level hex wargame and scenario editor covering a century of warfare - units built from individual equipment (TO&E), proficiency, readiness and supply, combat rounds that use up the player-turn (median-round turn advance and battlefield time stamps), variable initiative, the programmed opponent (Elmer), the scenario editor and equipment database, key commands, with a page map of its 176-page manual and the user's extra guides (what's new in 4.0, Elmer Assist primer, editing the equipment database, recolouring counters, scenario bitmaps, the older TOAW3 manual). Uses game-sources (manual lookups), game-ui (window driving), learn-to-play (method). Use when the user wants to play, learn or talk about The Operational Art of War / TOAW, or asks how one of its rules, screens, its editor or the equipment database works.
+description: "Starter guide to The Operational Art of War IV, operational hex wargame and scenario editor. Use when playing or learning TOAW, or asking how a rule, screen or the editor works."
+keywords: "matrix, slitherine, series, begun, norm, koger, operational-level, covering, century, warfare, units, built, individual, equipment, proficiency, readiness, supply, combat, rounds, player-turn, median-round, turn, advance, battlefield, time, stamps, variable, initiative, programmed, opponent, elmer, database, key, commands, page, map, manual, extra, guides, what's, new, assist, primer, editing, recolouring"
 ---
 
 # The Operational Art of War IV - starter guide
 
-Status 2026-10-29: the user added the manual and its companion files; read the outline,
-introduction, turn and time-stamp rules, and the key commands. Not played yet.
+Status 2026-11-03: installed version **4.1** (readme 4.1.0.40) - update notes override the manual: read
+**SOURCES.md** (source-triage: which document for what, read order). **COMMANDS.md** = keys, screens, menus,
+options and the danger list from the manual (not yet checked in game). Not played yet.
 
-## Files here (all in `Manuals/` since the user's reorganisation; mod scenarios in `Modded Scenarios/`)
+**Launch on Claude's virtual screen: NOT WORKING YET (2026-11-03).** Steam launch option set (game-ui recipe).
+`bgplay.py steam 792660` (GPU and `--nogpu`) brings up the Game Menu launcher (autorun.exe, 900x550 at
+506,225, plus hidden "Debug" and "Steam" windows) but the screen grab of it is pure black; the user saw the launcher
+pop up and close several times (my relaunches). Running `Opart 4.exe` directly with `proton run` exited with
+code 1 at once. Next: ask the user where he saw it (the Claude game screen window or his desktop); try the launcher
+with `BGPLAY_VGL=egl`, and a Proton log (`PROTON_LOG=1`); try `proton run` with the Steam runtime env.
+
+## Files here (SOURCES.md rates them; Whatsnew 4.1 and the 4.1 readme copied from the install 2026-11-03) (all in `Manuals/` since the user's reorganisation; mod scenarios in `Modded Scenarios/`)
 
 - `Operational Art of War manual EBOOK.pdf` (176 pages, bookmarked, PDF page = printed page) and
   its `.txt`: **the TOAW IV manual, the main source**. `... TO PRINT.pdf` is damaged (no trailer,

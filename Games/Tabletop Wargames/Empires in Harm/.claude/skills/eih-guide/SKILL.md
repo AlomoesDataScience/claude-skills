@@ -1,6 +1,7 @@
 ---
 name: eih-guide
-description: Starter guide to Empires in Harm (v5.2, a fan successor to Avalon Hill's Empires in Arms), a 7-10 player strategic and diplomatic board wargame of European wars in the 18th and early 19th centuries (the 1792 campaign: Revolutionary France against the old powers) - monthly turns with political, reinforcement, naval, land, quarterly economic and time phases, diplomacy, minor countries, status quo powers and the HRE, corps and squadrons, depots and forage, sieges, victory and political points, peace conditions, plus the Middle East in Harm (Persia) and Spanish Dynastic Crisis add-ons, with a map of the rules (Word files converted to .txt) and the counter sheets. Uses game-sources (rule lookups), learn-to-play (method). Use when the user wants to play, run, learn or talk about Empires in Harm / Empires in Arms, wants a rules question answered, a power's diplomacy or campaign planned, or Claude to keep the game's records.
+description: "Starter guide to Empires in Harm (Empires in Arms successor), the 7-10 player Napoleonic strategic and diplomatic board wargame. Use when playing, running or learning it, or answering a rules question."
+keywords: "fan, avalon, hill's, european, wars, early, centuries, campaign, revolutionary, france, against, old, powers, monthly, turns, political, reinforcement, naval, land, quarterly, economic, time, phases, diplomacy, minor, countries, status, quo, hre, corps, squadrons, depots, forage, sieges, victory, points, peace, conditions, plus, middle, east, persia, spanish, dynastic, crisis"
 ---
 
 # Empires in Harm - starter guide

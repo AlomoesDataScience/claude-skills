@@ -1,6 +1,7 @@
 ---
 name: dom6-map
-description: How to read and use the Dominions 6 strategic map (province map) from Claude's virtual screen - the screen elements (title, resource bar, commander list, province panel, scout report, flag strip), owners by flag, orders shown as arrows, scout reports, terrain from a photo, the camera (wheel zoom, arrow-key pan measured at 72 px per 100 ms, Home = capital, Messages Goto province), and the atlas trick from FoG II - one zoomed-out map photo as the reference, then resnap.py finds where any later screenshot sits on it at any zoom (tested match 0.87) - plus building a province board for planning. Read only in the user's MP games. Use when looking at a Dominions game's map, finding a province or army, planning moves or a war, reading what an enemy has where, or when a screenshot needs placing on the whole map.
+description: "Reading and using the Dominions 6 strategic map from the virtual screen: panels, provinces, armies, scout reports. Use when looking at the map, finding a province or army, or planning moves and wars."
+keywords: "read, elements, title, resource, bar, commander, list, panel, report, flag, strip, owners, orders, shown, arrows, terrain, photo, camera, wheel, zoom, arrow-key, pan, measured, home, capital, messages, goto, atlas, trick, fog, zoomed-out, reference, resnap, finds, later, screenshot, sits, tested, match, plus, building, board, games, game's, war"
 ---
 
 # Dominions 6 strategic map

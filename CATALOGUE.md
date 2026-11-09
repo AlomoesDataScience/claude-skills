@@ -5,162 +5,170 @@ others were built for one game or one shelf (folder shown) and work as knowledge
 
 | Skill | From | What it is |
 |---|---|---|
-| army-log | generic | Evaluate and log BOTH armies every turn of any wargame or battle (the user, 2026-11-02) - read every unit off the screen (cards, hovers, banners; never game data), write one CSV per side per turn (who, ty |
-| battle-tactics | generic | How Claude plans and fights tactical battles in any wargame - the turn method the user set (picture of the battlefield, assign every unit an intentional role, draw movement proposals, check they can work, |
-| borrow-from-games | generic | Use every game Claude has learned as a parts bin for designing other games (our 4X engine, Heresiarch, Pocket 4X, AMBS, anything new) - regardless of genre or theme. |
-| check-skills | generic | Before acting on ANY request, check which skills are relevant and load them all (the user, 2026-11-03 - "make a skill that tells you to check relevant skills, and set it to auto load"; it auto-loads throu |
-| combat-models | generic | Mathematical combat models for playing and designing games, in Claude's words from the Wikipedia articles on the salvo combat model and Lanchester's laws (copies in Military Theory/wiki/). |
-| delegate | generic | Acting as the user's delegate - when he hands control over ("I'm handing off all control", "the follow up is all yours") and Claude must decide and act alone in a game, a battle, a build or any long task. |
-| dice-math | generic | Exact dice odds for any game, tabletop or computer - dice.py enumerates every outcome (no simulation) for sums (2d6, 1d20+5), keep-highest/lowest (4d6kh3), exploding dice (2d6!), Dominions-style open- |
-| discord-logs | generic | Read the user's Discord history from Discord's own data export ("Request my data", Settings > Data & Privacy - a zip of his own messages in servers, DMs and group DMs, emailed in a few days) - discordlogs |
-| draw-map | generic | OPTIONAL tool - draw a game map (or just some of its elements) as Claude reads it, as a clean schematic picture - grid with numbered columns and rows, terrain colours with a legend, units of both side |
-| draw-moves | generic | Draw a movement plan on a game board - the "draw your movement proposals" step of the user's turn method - either as ONE picture (every turn's moves on one board, arrows coloured and numbered by turn, uni |
-| game-database | generic | Build a "rank everything" database for any game - every unit, spell, item, tech or building read from the game's data files (never from memory), sorted by PURPOSE (what it's for), scored inside each p |
-| game-setup | generic | Getting a game running properly for Claude and then parsing its UI, before any real play - the run and graphics setup (launch on the locked bgplay screen, Steam launch option, windowed mode and resolu |
-| game-sources | generic | Turn a game's written sources into something Claude can search, and list the user's Steam library (steamlib.py) - manual PDFs as page-numbered text with a chapter outline (bookmarks, printed table of cont |
-| game-ui | generic | Drive any running game (or app) window on the user's X11 desktop - screenshots of that window only, clicks, drags, scrolls, hotkeys, typing - through a guard that waits while the user is busy and stop |
-| generalize-learning | generic | Guidelines for when and why to push what Claude learns in a game-specific skill (a game's guide, map, commands or units file) up into a generic skill (learn-to-play, map-usage, map-camera, photo-map,  |
-| hand-back | generic | Sharing the game screen with the user - lock his input while Claude drives the virtual screen, and hand mouse and keyboard control back to him the moment Claude is done (bgplay.py unlock + show), with the |
-| idle-view | generic | Where to leave a game's camera and mouse while Claude is idle (thinking, reading the manual, writing files, waiting for the user) so the screen looks natural to anyone watching or recording - camera resti |
-| install-windows-games | generic | Install Windows games (GOG offline installers, other setup.exe) and GOG Linux .sh installers on the user's Linux PC so they show up in Lutris - silent installs into one Wine prefix per game under ~/Ga |
-| learn-from-tutorials | generic | How Claude learns any game through its built-in tutorials, lessons, training missions or hint modes - play every lesson in order, read each prompt as a rule, test each taught key once, note numbers, a |
-| learn-to-mod | generic | How Claude learns to MOD a game it knows or is learning - find how mods load and where the data lives, read the manual's modding chapter and the official docs, map the file formats (self-documenting h |
-| learn-to-play | generic | How Claude learns to PLAY a video game it does not know yet (its twin learn-to-mod covers learning a game to mod it - the two compound, do both), the way it learned Dominions 6 with the user: read the |
-| loading-screens | generic | Tell whether a game's screen is a loading screen and wait through loads properly, in any game on Claude's virtual screen - the user's method (2026-11-03) - shoot the screen BEFORE starting a load, act, gr |
-| manual-first | generic | The default reflex whenever something new pops up in a game - a new screen, option, setting, map type, term, unit line, order or icon - look it up in the game's manual FIRST, before guessing, clicking |
-| map-camera | generic | How Claude drives a game's map camera so it can see everything it needs - find every camera control (in-game key list first, then manual), clear the screen of overlays, choose top-down vs angled view, |
-| map-measure | generic | Get a game map's size and dimensions EARLY - before reading terrain or planning - so every square can be found in the photos. |
-| map-usage | generic | Generic method for using any game's map or board to make decisions - what to establish about a map (layout, grid, borders, coordinates, deployment zones, sides, fog of war), reading terrain from photo |
-| military-doctrine | generic | Real military tactics for playing and designing games, distilled in Claude's words from US Army FM 3-90 Tactics (2023, Military Theory shelf, with page refs) - types of operations, forms of maneuver ( |
-| military-operations | generic | The operational level of war for games, from US Army FM 3-0 Operations (2025, Military Theory shelf, page refs), in Claude's words - levels of war, principles of war (objective, offensive, mass, maneu |
-| mod-diff | generic | Find out what a mod or patch changed in any game and what got better or worse - export the game's tables before and after (vanilla vs mod, patch 1.0 vs 1.1), match rows by id, and sort every changed r |
-| mod-docs | generic | Generic rules for keeping MODDED games separate from the base game (vanilla) in any game: find out first which mods and versions a game runs, give each mod its own folder (a skill named game-mod, e.g. |
-| move-phases | generic | Give a turn's movement in PHASES instead of all at once, with a problem check at the end of every phase and a mandatory extension pass before the turn is called done - phase 1 the main body (block adv |
-| obs-record | generic | Record Claude's gameplay with OBS Studio (flatpak) - launch and set up OBS through its UI with the game-ui guard pointed at the OBS window, and control it from scripts through the OBS WebSocket (obs.p |
-| photo-map | generic | How Claude finds out what is going on in ANY game with a map or board - identify the screen elements first (what is UI, what is map, where the map borders are), zoom all the way out, photograph the wh |
-| planning | generic | Make a detailed plan before any non-trivial work, SAVE it as a file, and USE it - re-read it whenever it should be referenced (start of a session, before each step, before a decision, when something g |
-| rules-skills | generic | How Claude turns a game's rules into a family of mechanics skills and guides (the method behind the Dominions 6 set, 2026-11-03) - a numbered plan file first (one skill per mechanic a player decides a |
-| save-scum | generic | DARK ARTS, learning only - save the game before a test and reload it afterwards to run the test again, try another option or undo a result Claude didn't like (save scumming). |
-| scouting | generic | Generic scouting for any strategy or tactics game, with or without fog of war - what it is for (composition, positions, intent, ground, denying the enemy the same), whether a look turn or recon unit i |
-| screening | generic | Generic screening for any tactics or strategy game - the user's definition (a unit out in front that forces the enemy to react to it; not strong enough to win if the fight happens, but the enemy has to re |
-| skill-sync | generic | Keep skills up to date with the skills they learn from, and move single files in and out of skills (sync.py). |
-| skills-manager | generic | Manage Claude's own skills in this project. |
-| soviet-doctrine | generic | The Soviet school of operations and tactics for games, in Claude's words from FM 100-2-1 The Soviet Army - Operations and Tactics (1984) and a 1953 CIA report on the secret Soviet Field Manual 1948 (P |
-| stream-panel | generic | A window for the right-hand column of a recording or stream (the user's streamer layout) - a tracker on top (game, mode, status line, fields such as HP/place/turn, goals with ticks, recent events, session |
-| unit-combat-math | generic | Unit-versus-unit combat math for any game - the chain hit chance -> damage per hit (after armour) -> damage per round -> rounds to kill, both ways, and what to do with it - judge a matchup by who kill |
-| video-watch | generic | Read and "watch" videos - YouTube (or any yt-dlp site) by URL, or a local video file - with video.py - info (title, channel, length, chapters, description), the transcript from the uploader's or autom |
-| waiting-checklist | generic | Make a checklist document for work that is PARKED until something happens - the game or app is free, the user gives the go, a file or answer arrives, a machine is available - so it can start cold later wi |
-| war-concepts | generic | Glossary of war concepts for playing and designing games, from Wikipedia's Index of war-related articles (local copy, Military Theory/wiki/) triaged by Claude into A (221 concepts that matter for game |
-| war-language | generic | A higher-order language for warfare in games - translate what is going on in a game (units, squares, points, morale bars, turns) UP into military terms (situation in METT-TC and OAKOC, enemy in SALUTE |
-| wiki-scout | generic | Find and pull the wikis, manuals and documentation for a game or a franchise (IP), gently and as safe text. |
-| write-skill | generic | How to write a new skill (or rewrite one) so it passes the checker and gets used - the required format (folder and name rules, frontmatter, a description of at most 1024 characters that says what the  |
+| archive-curator | generic | Turn archived Claude Code sessions into lasting knowledge (skill edits, new skills, memory, BACKLOG, plans) and track which sessions are done with curate.py. |
+| army-log | generic | Read and log both armies every wargame turn (one CSV per side), then evaluate losses, cohesion, combat power and force ratios with armylog.py. |
+| battle-tactics | generic | How Claude plans and fights tactical battles in any wargame: The user's turn method, the planning questions, general principles, per-game notes. |
+| borrow-from-games | generic | Use every learned game as a parts bin for designing ours: a systems taxonomy, borrow.py catalogue and search. |
+| chat-review | generic | Review past Claude Code sessions without loading raw transcripts: chatreview.py makes a short digest, then summarise it or mine it for lessons and new skills. |
+| check-skills | generic | Check which skills a task needs and load only those, via the hook's hints, checkskills.py and the routing INDEX.md. |
+| cleanup | generic | Cleanup pipeline: cleanup.py catalogues a folder's clutter (duplicates, installers, archives, caches, temp, empty, loose files) for the user to tick; ticked items move to a reversible holding folder. |
+| combat-models | generic | Combat models for playing and designing games: Hughes' salvo model, Lanchester's laws, Helmbold, with combat.py. |
+| context-audit | generic | Measure where Claude Code's context and usage go from the session transcripts (ctxaudit.py): requests, context size, compactions, tokens by source. |
+| context-hygiene | generic | Working rules that keep context small: OCR over screenshots, crops, batched calls, capped outputs, sections not whole files, few skills loaded. |
+| delegate | generic | Acting as the user's delegate when he hands over control: mission command, self-review checklist, certainty test, decision log, hand-back. |
+| dice-math | generic | Exact dice odds for any game with dice.py: sums, keep-highest, exploding and open-ended dice, re-rolls, opposed rolls, chance to hit a target. |
+| discord-logs | generic | Read the user's Discord history from Discord's data export zip into per-channel logs and a searchable database (discordlogs.py). |
+| doc-standards | generic | Documentation standards for this workspace: progressive disclosure, Diataxis kinds, one fact in one place, dates and sources, lifecycle labels, decision records, size budgets, with the docs.py checker |
+| draw-map | generic | Draw a game map as a clean schematic picture (grid, terrain colours, units, arrows) from a text board with drawmap.py. |
+| draw-moves | generic | Draw a movement plan on a game board, all turns in one picture or one per turn, from a plan file with turnplan.py. |
+| game-database | generic | Build a rank-everything database for any game: every unit, spell or item from the data files, sorted and ranked by purpose. |
+| game-setup | generic | Get a game running properly for Claude (bgplay, Steam launch options, windowed mode, GPU, logs) and parse its UI by hovering every element. |
+| game-sources | generic | Turn a game's manuals and wikis into searchable page-numbered text and list the user's Steam library (steamlib.py). |
+| game-ui | generic | Drive any game or app window on the X11 desktop or the background bgplay screen: shots, clicks, keys, typing, plus Tesseract OCR. |
+| generalize-learning | generic | When and how to lift a lesson from a game-specific skill into a generic one, and what stays game-specific. |
+| hand-back | generic | Lock the user's input while Claude drives the virtual screen and hand control back the moment it is done, screen left as he had it. |
+| idle-view | generic | Where to leave a game's camera and mouse while Claude is idle so the screen looks natural for viewers and recordings. |
+| install-windows-games | generic | Install Windows games (GOG offline installers, setup.exe) and GOG Linux .sh installers into Lutris, one Wine prefix each (wininstall.py). |
+| learn-from-tutorials | generic | Learn any game through its built-in tutorials, lessons and hint modes: play every lesson, read each prompt as a rule, write it down. |
+| learn-to-mod | generic | How Claude learns to mod a game: how mods load, where data lives, the manual's modding chapter, a test mod. |
+| learn-to-play | generic | How Claude learns to play a new video game: manual and in-game help first, map the screen, safe exploration, one test at a time, lessons written down. |
+| loading-screens | generic | Tell whether a game screen is loading and wait through loads properly (shot before, frames after, one general loading test). |
+| manual-first | generic | The reflex when anything new shows in a game: look it up in the manual first (lookup.py), then write it into the guide with the page. |
+| map-camera | generic | Drive a game's map camera to see everything: find the camera controls, clear overlays, centre, zoom, pan. |
+| map-measure | generic | Get a game map's size and dimensions early so every square can be found in photos. |
+| map-usage | generic | Generic method for using any game's map to make decisions: layout, grid, coordinates, zones, sides, fog, terrain. |
+| military-doctrine | generic | Real tactics from US Army FM 3-90 for games: operations, forms of maneuver, tactical tasks, security, recon, control measures. |
+| military-operations | generic | The operational level of war from FM 3-0 for games: principles of war, operational art, lines of operation, culmination. |
+| mod-diff | generic | Find what a mod or patch changed in any game and what got better or worse, by diffing exported tables. |
+| mod-docs | generic | Keep modded games apart from vanilla: find the mods and versions first, one folder per mod, check the mod before quoting numbers. |
+| move-phases | generic | Give a turn's movement in phases (main body, extension pass, final check), verifying each before the next. |
+| obs-record | generic | Record Claude's gameplay with OBS Studio (flatpak) via its UI and WebSocket (obs.py): start, stop, pause while thinking. |
+| photo-map | generic | Find out what is going on in any map game: identify UI vs map, zoom out, photograph the whole map, stitch (panorama.py), build the board. |
+| planning | generic | Make a detailed plan before non-trivial work, save it as a file (plan.py) and re-read and tick it as work goes. |
+| rules-skills | generic | Turn a game's rules into a family of mechanics skills and guides (the method behind the Dominions 6 set). |
+| save-scum | generic | Learning-only save and reload around tests to repeat them or undo a bad result. |
+| scouting | generic | Generic scouting for any strategy or tactics game: purposes, fog of war, what to look for, reports, counter-scouting. |
+| screening | generic | Generic screening for any tactics or strategy game: The user's definition, what screens do, placement, when to pull back. |
+| skill-sync | generic | Keep skills current with the skills they learn from, and move files in and out of skills (sync.py). |
+| skills-manager | generic | Manage Claude's skills: route a task to skills, list, check budgets, make, import, disable, and generate the routing INDEX.md (skills.py). |
+| source-triage | generic | Sort which of a game's documents are worth reading and in what order when a pile is dropped. |
+| soviet-doctrine | generic | The Soviet school of operations and tactics for games (FM 100-2-1 and a CIA report): echelons, deep battle, norms. |
+| stream-panel | generic | A side window for recordings and streams: tracker on top (game, status, goals) and Claude's live log below. |
+| unit-combat-math | generic | Unit-versus-unit combat math for any game: hit chance, damage after armour, rounds to kill, both ways. |
+| unload | generic | Unload context: write a hand-off file, then clear or compact; find old context again with recall. |
+| video-watch | generic | Read and watch videos (YouTube or local files) with video.py: info, transcript, frames at chosen times. |
+| waiting-checklist | generic | Make a checklist document for work parked until something happens (game free, the user's go, a file). |
+| war-concepts | generic | Glossary of war concepts for games, triaged from Wikipedia's war index into what matters for play and design. |
+| war-language | generic | Translate a game's situation up into military terms (METT-TC, SALUTE, mission, intent), reason there, and back down into orders. |
+| wiki-scout | generic | Find and pull wikis, manuals and docs for a game or franchise as safe text (Wayback first) with scout.py. |
+| write-skill | generic | How to write or rewrite a skill so it passes the checker and gets used: format, budgets, keywords, layout, where it goes. |
 | mapgen | tool | standalone tool in Games/Fantasy Strategy/Dominions 6/Maps/mapgen/ |
 | spritestudio | tool | standalone tool in Games/Fantasy Strategy/Dominions 6/spritestudio/ |
-| economic-theory | Economic Theory/.claude | The user's economic theory shelf as searchable text - Adam Smith The Wealth of Nations, John Stuart Mill Principles of Political Economy, Karl Marx Capital volumes I-III - with each work's core ideas in C |
-| fogk-guide | Games/AGEOD and Byzantine Games/AGEOD/Field of Glory Kingdoms/.claude | Guide to Field of Glory - Kingdoms (AGEOD / Slitherine, 2024; Rajas and Tribes DLC 2025), a turn-based medieval grand strategy game of realms, vassals, dynasties and population from 1054 - where its 3 |
-| fog2m-guide | Games/AGEOD and Byzantine Games/Byzantine Games/Field of Glory II Medieval/.claude | Guide to Field of Glory II - Medieval (Byzantine Games / Slitherine, 2021), a turn-based tactical battle wargame of medieval armies on a square grid with 3D models - where its manual (117 pages, text  |
-| fog2m-map | Games/AGEOD and Byzantine Games/Byzantine Games/Field of Glory II Medieval/.claude | How to use the battle map in Field of Glory II Medieval - its layout (square grid, grey stone border, deployment zones and the "Enemy Front Line" label, darker enemy side), getting the whole map into  |
-| fog2m-scouting | Games/AGEOD and Byzantine Games/Byzantine Games/Field of Glory II Medieval/.claude | Scouting in Field of Glory II Medieval, where units are generally only hidden in forests (the user) - the per-turn reading routine (photos, hover every enemy unit, count and classify, diff, knight threat  |
-| gearcity-guide | Games/Economic Games/Gear City/.claude | Starter guide to GearCity (Visual Entertainment and Technologies), the automobile-industry business simulation from 1900 onward - designing chassis, engines, gearboxes and vehicles from dated sub-comp |
-| coe5-guide | Games/Fantasy Strategy/Conquest of Elysium 5/.claude | Starter guide to Conquest of Elysium 5 (Illwinter, the makers of Dominions) - what the game is, how a turn works, resources, commanders and armies, combat, magic and the 24 classes, with a page map of |
-| dom6-abilities | Games/Fantasy Strategy/Dominions 6/.claude | Unit attributes and special abilities in Dominions 6, from the manual (pp. |
-| dom6-armor | Games/Fantasy Strategy/Dominions 6/.claude | How armour and protection work in Dominions 6, from the manual (pp. |
-| dom6-army-check | Games/Fantasy Strategy/Dominions 6/.claude | Checklist for making sure every Dominions 6 army and unit is set up properly before ending a turn - for each commander, (1) is it a mage or priest, (2) does it have spells scripted and should it, sett |
-| dom6-battle-ai | Games/Fantasy Strategy/Dominions 6/.claude | How Dominions 6 battles run themselves and what the battle AI does, from the manual (pp. |
-| dom6-battle-view | Games/Fantasy Strategy/Dominions 6/.claude | Review a Dominions 6 battle from its replay so Claude can learn from it - battle_review.py reads the Battle Summary (units, wounded, dead per side), records the replay's detail-4 combat log with the r |
-| dom6-battlefield | Games/Fantasy Strategy/Dominions 6/.claude | Battlefield conditions in Dominions 6, from the manual (pp. |
-| dom6-best-by-purpose | Games/Fantasy Strategy/Dominions 6/.claude | What's good in vanilla Dominions 6 for each purpose - the top generic spells (all paths) for army damage, single-target damage, army/group/self buffs, debuffs, fear, battlefield enchantments, battle s |
-| dom6-blood | Games/Fantasy Strategy/Dominions 6/.claude | Blood magic and blood slaves in Dominions 6, from the manual and illwiki (blood-magic, Wigglefig's generic blood magic guide) - blood slaves as gems (no underwater use, fatigue, sacrifices, sabbath co |
-| dom6-blood-hunting | Games/Fantasy Strategy/Dominions 6/.claude | Blood hunting in Dominions 6, from the manual (pp. |
-| dom6-buffs | Games/Fantasy Strategy/Dominions 6/.claude | How buffs and debuffs work in Dominions 6, from the manual (pp. |
-| dom6-combat-math | Games/Fantasy Strategy/Dominions 6/.claude | Melee combat math for Dominions 6 - turning unit cards into hit chances, damage per attack and rounds to kill, by hand (DRN tables, shield hits, damage types, harassment, fatigue, buffs and debuffs) a |
-| dom6-communions | Games/Fantasy Strategy/Dominions 6/.claude | Communions in Dominions 6, from the manual (pp. |
-| dom6-dominion | Games/Fantasy Strategy/Dominions 6/.claude | Dominion and scales in Dominions 6, from the manual (pp. |
-| dom6-drn | Games/Fantasy Strategy/Dominions 6/.claude | The Dominions 6 dice roll (DRN, open-ended 2d6) and the modifiers that feed every check - exact probability tables (chance a value + DRN beats another + DRN by difference, with ties; chance DRN reache |
-| dom6-economy | Games/Fantasy Strategy/Dominions 6/.claude | The Dominions 6 economy from the manual (pp. |
-| dom6-evocations | Games/Fantasy Strategy/Dominions 6/.claude | How damage spells (evocations and other battle damage magic) work in Dominions 6, from the manual (pp. |
-| dom6-fatigue | Games/Fantasy Strategy/Dominions 6/.claude | Fatigue in Dominions 6 battles, from the manual (pp. |
-| dom6-forging | Games/Fantasy Strategy/Dominions 6/.claude | Forging magic items in Dominions 6, from the manual (pp. |
-| dom6-game | Games/Fantasy Strategy/Dominions 6/.claude | Play an ongoing Dominions 6 game in the running client: the main map screen's hotkeys (province, commander, statistics, magic, map view, map filters, unit orders, gem transfer), what the screen shows  |
-| dom6-gem-casting | Games/Fantasy Strategy/Dominions 6/.claude | How magic gems work in Dominions 6, from the manual: in battle a gem gives a mage +1 skill in its path for one spell in one round (cast one level above his skill, or halve the fatigue; max +1, gems pe |
-| dom6-healing | Games/Fantasy Strategy/Dominions 6/.claude | Hit points, healing, regeneration, reconstruction and afflictions in Dominions 6, from the manual (pp. |
-| dom6-holy | Games/Fantasy Strategy/Dominions 6/.claude | Holy magic, priests and sacred units in Dominions 6, from the manual (pp. |
-| dom6-inspector | Games/Fantasy Strategy/Dominions 6/.claude | Local copy of the Dominions 6 Mod Inspector (larzm42.github.io/dom6inspector), every vanilla unit, commander, pretender, hero, spell, magic item, weapon, armour, magic site, mercenary band, event and  |
-| dom6-items | Games/Fantasy Strategy/Dominions 6/.claude | Claude's ranked guide to Dominions 6 magic items for its own play: every forgeable item sorted into killing items (weapons, missile and dancing weapons, offensive item spells), protection items (armou |
-| dom6-knowledge | Games/Fantasy Strategy/Dominions 6/.claude | Claude's knowledge base about Dominions 6 learned from the running game itself - nation files and the nations overview (written by dom6-nations), how screens work (the nation info screen, the unit sta |
-| dom6-magic-duel | Games/Fantasy Strategy/Dominions 6/.claude | The Magic Duel spell in Dominions 6 (illwiki) - Evocation 3, Astral, 1 astral pearl, picks a random enemy Astral mage, each side rolls 1d6 (not open-ended) + base Astral skill (no boosts, no gems, no  |
-| dom6-magic-resistance | Games/Fantasy Strategy/Dominions 6/.claude | Magic resistance and penetration in Dominions 6, from the manual (p. |
-| dom6-map | Games/Fantasy Strategy/Dominions 6/.claude | How to read and use the Dominions 6 strategic map (province map) from Claude's virtual screen - the screen elements (title, resource bar, commander list, province panel, scout report, flag strip), own |
-| dom6-maps | Games/Fantasy Strategy/Dominions 6/.claude | Make Dominions 6 maps: generate them with MapNuke 2 (the user's copy in mapnuke/app, a Unity GUI driven through the dom6-ui guard with UI_WMCLASS=MapNuke), pick players, era, layout and nations (inclu |
-| dom6-mechanics | Games/Fantasy Strategy/Dominions 6/.claude | Dominions 6 game rules and formulas from the official game manual (dom6manual.pdf): dice (DRN), melee, missiles, armour, shields, damage types, resistances, fatigue, morale and rout, leadership, magic |
-| dom6-mod-magic | Games/Fantasy Strategy/Dominions 6/.claude | Find out what a Dominions 6 mod does to magic and what became good - modmagic.py reads any dom6-modinspector output folder and sorts every touched spell into new / better / worse / mixed / AI-weight-o |
-| dom6-modding | Games/Fantasy Strategy/Dominions 6/.claude | Write, change or check Dominions 6 mod files (.dm): new nations, units and commanders, pretenders, heroes, weapons, armour, spells, magic items, sites, name lists, AI templates and events (random even |
-| dom6-modinspector | Games/Fantasy Strategy/Dominions 6/.claude | Load one or more Dominions 6 mods (.dm files) into the Mod Inspector (larzm42.github.io/dom6inspector) the way its "load mods" option does, and read the result as text. |
-| dom6-morale | Games/Fantasy Strategy/Dominions 6/.claude | Morale and rout in Dominions 6, from the manual (pp. |
-| dom6-mounts | Games/Fantasy Strategy/Dominions 6/.claude | How mounted units work in Dominions 6, from the manual (pp. |
-| dom6-nations | Games/Fantasy Strategy/Dominions 6/.claude | Read Dominions 6 nations from the running game's own nation info screens (right-click a nation in Select Nation) into the knowledge base, one markdown and JSON file per nation (description, National F |
-| dom6-path-air | Games/Fantasy Strategy/Dominions 6/.claude | The Air path of Dominions 6 magic, vanilla - what air mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's air page) and the 77 generic spells with Air as their main pa |
-| dom6-path-astral | Games/Fantasy Strategy/Dominions 6/.claude | The Astral path of Dominions 6 magic, vanilla - what astral mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's astral page) and the 83 generic spells with Astral as t |
-| dom6-path-death | Games/Fantasy Strategy/Dominions 6/.claude | The Death path of Dominions 6 magic, vanilla - what death mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's death page) and the 85 generic spells with Death as their |
-| dom6-path-earth | Games/Fantasy Strategy/Dominions 6/.claude | The Earth path of Dominions 6 magic, vanilla - what earth mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's earth page) and the 93 generic spells with Earth as their |
-| dom6-path-fire | Games/Fantasy Strategy/Dominions 6/.claude | The Fire path of Dominions 6 magic, vanilla - what fire mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's fire page) and the 81 generic spells with Fire as their mai |
-| dom6-path-glamour | Games/Fantasy Strategy/Dominions 6/.claude | The Glamour path of Dominions 6 magic, vanilla - what glamour mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's glamour page) and the 105 generic spells with Glamour |
-| dom6-path-nature | Games/Fantasy Strategy/Dominions 6/.claude | The Nature path of Dominions 6 magic, vanilla - what nature mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's nature page) and the 128 generic spells with Nature as  |
-| dom6-path-water | Games/Fantasy Strategy/Dominions 6/.claude | The Water path of Dominions 6 magic, vanilla - what water mages get (spells by role, indirect magic, path boosters, crosspaths, from illwiki's water page) and the 96 generic spells with Water as their |
-| dom6-play | Games/Fantasy Strategy/Dominions 6/.claude | How to play Dominions 6 well, from the official game manual: setting up a game (eras, AI levels, thrones, settings), designing a pretender, the interface and hotkeys, a turn-by-turn checklist, expandi |
-| dom6-pretender | Games/Fantasy Strategy/Dominions 6/.claude | Design a Dominions 6 pretender god well, the way the Pretenders Calculator (zollqir.github.io/pretenders-dom6) does and beyond it: for a nation (vanilla or modded) and a goal, find the cheapest chassi |
-| dom6-pretender-ingame | Games/Fantasy Strategy/Dominions 6/.claude | Build a pretender god inside the running Dominions 6 through Tools & Manuals (Game Tools) > Create a Pretender God and save it to the user's created pretenders, from a design checked with the dom6-pre |
-| dom6-ranged-math | Games/Fantasy Strategy/Dominions 6/.claude | Precision and ranged combat math for Dominions 6, from the manual and illwiki - where a missile lands (deviation = range x 1.25 / precision past precision/2 - 2; precision above 10 counts double), who |
-| dom6-research | Games/Fantasy Strategy/Dominions 6/.claude | Magic research in Dominions 6, from the manual (pp. |
-| dom6-rituals | Games/Fantasy Strategy/Dominions 6/.claude | Ritual magic in Dominions 6, from the manual (pp. |
-| dom6-scbm | Games/Fantasy Strategy/Dominions 6/.claude | Everything specific to the SCBM balance mod (Sloop's Comfy Balance Mod v1.13) for Dominions 6, kept apart from the vanilla Dominions skills - the whole modded game loaded into the mod inspector (data/ |
-| dom6-scouting | Games/Fantasy Strategy/Dominions 6/.claude | Scouting and intelligence in Dominions 6 - what each source reveals (manual p.30 - scout, priest, spy, own dominion, scrying, owning a province and its 1-3 step reveal by era), Dominions' real fog of  |
-| dom6-sieges | Games/Fantasy Strategy/Dominions 6/.claude | Forts and sieges in Dominions 6, from the manual (pp. |
-| dom6-site-search | Games/Fantasy Strategy/Dominions 6/.claude | Finding magic sites in Dominions 6, from the manual (pp. |
-| dom6-spell-db | Games/Fantasy Strategy/Dominions 6/.claude | Spell evaluation database for Dominions 6 - every spell (1474 vanilla, 1576 SCBM; combat and ritual, generic and national) sorted into a purpose (army damage, single-target damage, army/group/self buf |
-| dom6-spells | Games/Fantasy Strategy/Dominions 6/.claude | Claude's complete reference to Dominions 6 combat spells, built piece by piece: every combat spell extracted from the inspector (spells.py list with path, school, range, area, effect filters), the spe |
-| dom6-sprites | Games/Fantasy Strategy/Dominions 6/.claude | Make Dominions 6 unit sprites (TGA, black-transparent, magenta-shadow, facing left) by modelling the unit as a signed-distance 3D figure and rendering it with painted cel shading, posed after a Domini |
-| dom6-stealth | Games/Fantasy Strategy/Dominions 6/.claude | Stealth, scouting, patrols and assassins in Dominions 6, from the manual (pp. |
-| dom6-summoning | Games/Fantasy Strategy/Dominions 6/.claude | Summoning in Dominions 6, from the manual (pp. |
-| dom6-supercombatants | Games/Fantasy Strategy/Dominions 6/.claude | Building and beating Dominions 6 supercombatants and army-wiping "cheese" units - the five tank archetypes from LucidTactics' "Guide To Tanking & Fine Cheeses" (2026 video, timestamps) - protection ta |
-| dom6-tactics | Games/Fantasy Strategy/Dominions 6/.claude | How to lay out a Dominions 6 army for battle and what has worked: Position Army (squad and commander placement, formations), squad and commander battle orders, leadership and morale limits per squad,  |
-| dom6-thugs | Games/Fantasy Strategy/Dominions 6/.claude | Basic thugging in Dominions 6 - what a thug is (a commander whose job is melee killing, vs army leaders and casting mages; army thugs vs solo thugs; an SC is the far end) from illwiki thugs-and-superc |
-| dom6-tooltips | Games/Fantasy Strategy/Dominions 6/.claude | How to read the Dominions 6 user interface through tooltips and exact pointing - hover or click the centre of the word or number (not the icon beside it, not the space around it), find where a screen  |
-| dom6-ui | Games/Fantasy Strategy/Dominions 6/.claude | Drive the running Dominions 6 window (through the generic game-ui guard: screenshots of the game only, clicks, drags, scrolls, hotkeys, typing, waits while the user is busy). |
-| dom6-weapons | Games/Fantasy Strategy/Dominions 6/.claude | How weapons work in Dominions 6 melee, from the manual (pp. |
-| dom6-wiki | Games/Fantasy Strategy/Dominions 6/.claude | Local mirror of illwiki (illwiki.com, the Dominions community wiki: Dominions 6 pages at the top level, the old Dominions 5 wiki under dom5/) with wiki.py to search it, show a page or one section as c |
-| rtw3-guide | Games/Historical Strategy/Rule The Waves/.claude | Starter guide to Rule the Waves 3 (NWS / Naval Warfare Simulations, 1890-1970), the naval ship-design and fleet-command game where the player is Grand Admiral - economy and budget, building and design |
-| dcss-guide | Games/Roguelikes/Dungeon Crawl Stone Soup/.claude | Guide to Dungeon Crawl Stone Soup (DCSS 0.34.1, free and open source, installed as the Flatpak org.develz.Crawl), the classic roguelike of diving for the Orb of Zot - where its manual, quick-start, op |
-| quasimorph-guide | Games/Roguelikes/Quasimorph/.claude | Starter guide to Quasimorph (Magnum Scriptum), a dark sci-fi turn-based roguelike with extraction - a PMC mercenary company with a ship, clone bodies and mercenary classes takes missions on stations i |
-| aurora-guide | Games/Space Strategy/Aurora 4x/.claude | Starter guide to Aurora 4X (C# version 2.x, Steve Walmsley), the deep sandbox space 4X simulation - race and system generation, colonies, population, environment and terraforming, eleven Trans-Newtoni |
-| efs-guide | Games/Space Strategy/Emperor of the Fading Suns/.claude | Starter guide to Emperor of the Fading Suns (Holistic Design / SegaSoft, 1996), a hex-based space and planetary strategy game of feudal noble Houses - what it is, the turn sequence, the Regency/Empero |
-| se4-guide | Games/Space Strategy/Space Empires/Space Empires IV/.claude | Starter guide to Space Empires IV Deluxe (Malfador Machinations, 2000/2005), a space 4X game - what it is, the first-turns flow (design a ship, build queue, research, warp-point exploration, colony sh |
-| se4-modding | Games/Space Strategy/Space Empires/Space Empires IV/.claude | Modding Space Empires IV Deluxe (v1.95) - how mods load (Path.txt "Using Mod Directory", a mod folder under se4/ with all 28 Data files, bitmaps fall back to the base game; mod-loader modinfo.txt "Mod |
-| swr-guide | Games/Space Strategy/Star Wars Rebellion/.claude | Starter guide to Star Wars Rebellion (1998, Coolhand Interactive / LucasArts), the galactic grand-strategy game of Alliance vs Empire - sectors and systems, popular support and uprisings, mines, refin |
+| economic-theory | Economic Theory/.claude | The user's economic theory shelf (Smith, Mill, Marx and more) as searchable text with each work's core ideas. |
+| fogk-guide | Games/AGEOD and Byzantine Games/AGEOD/Field of Glory Kingdoms/.claude | Guide to Field of Glory Kingdoms (AGEOD/Slitherine), medieval grand strategy of realms, vassals and population: manual map, rules, data. |
+| fog2m-guide | Games/AGEOD and Byzantine Games/Byzantine Games/Field of Glory II Medieval/.claude | Guide to Field of Glory II Medieval, a turn-based tactical battle wargame on a square grid: manual page map, rules, UI, lessons. |
+| fog2m-map | Games/AGEOD and Byzantine Games/Byzantine Games/Field of Glory II Medieval/.claude | Using the Field of Glory II Medieval battle map: layout, deployment zones, whole-map photos, reading squares and terrain. |
+| fog2m-scouting | Games/AGEOD and Byzantine Games/Byzantine Games/Field of Glory II Medieval/.claude | Scouting in Field of Glory II Medieval: the per-turn enemy reading routine (photos, hovers, counts, diffs, hidden units in woods). |
+| gearcity-guide | Games/Economic Games/Gear City/.claude | Starter guide to GearCity, the car-industry business sim: component design, factories, markets. |
+| coe5-guide | Games/Fantasy Strategy/Conquest of Elysium 5/.claude | Starter guide to Conquest of Elysium 5 (Illwinter): turns, resources, armies, combat, magic, the 24 classes, manual page map. |
+| dom6-abilities | Games/Fantasy Strategy/Dominions 6/.claude | Dominions 6 unit stats and special abilities (manual pp. |
+| dom6-armor | Games/Fantasy Strategy/Dominions 6/.claude | How armour and protection work in Dominions 6: protection roll, natural plus armour, shields, encumbrance. |
+| dom6-army-check | Games/Fantasy Strategy/Dominions 6/.claude | Pre-End-Turn checklist for every Dominions 6 army and commander: mage/priest scripts, gems, positions, orders, items. |
+| dom6-battle-ai | Games/Fantasy Strategy/Dominions 6/.claude | How Dominions 6 battles run themselves and what the battle AI does (manual and casting-AI notes): orders, targeting, unscripted mages. |
+| dom6-battle-view | Games/Fantasy Strategy/Dominions 6/.claude | Review a Dominions 6 battle replay: battle_review.py reads the summary and combat log so Claude learns from it. |
+| dom6-battlefield | Games/Fantasy Strategy/Dominions 6/.claude | Dominions 6 battlefield conditions: clouds, darkness, night, battlefield enchantments and their effects (manual pp. |
+| dom6-best-by-purpose | Games/Fantasy Strategy/Dominions 6/.claude | What is good in vanilla Dominions 6 for each purpose: top generic spells for damage, buffs, debuffs, fear, enchantments, rituals. |
+| dom6-blood | Games/Fantasy Strategy/Dominions 6/.claude | Blood magic and blood slaves in Dominions 6: slaves as gems, sacrifices, sabbaths, the blood economy. |
+| dom6-blood-hunting | Games/Fantasy Strategy/Dominions 6/.claude | Blood hunting in Dominions 6: the three checks, unrest, hunter choice, patrols and income. |
+| dom6-buffs | Games/Fantasy Strategy/Dominions 6/.claude | How buffs and debuffs work in Dominions 6: kinds, stacking, scripting order, item buffs. |
+| dom6-combat-math | Games/Fantasy Strategy/Dominions 6/.claude | Melee combat math for Dominions 6: hit chances, damage per attack and rounds to kill from unit cards, with a calculator. |
+| dom6-communions | Games/Fantasy Strategy/Dominions 6/.claude | Communions in Dominions 6: astral Communion, blood Sabbath, master and slave scripting, path boosts and fatigue. |
+| dom6-dominion | Games/Fantasy Strategy/Dominions 6/.claude | Dominion and scales in Dominions 6: belief vs control, max dominion, temples, prophets, preaching, scale effects. |
+| dom6-drn | Games/Fantasy Strategy/Dominions 6/.claude | The Dominions 6 dice roll (open-ended 2d6 DRN) with exact probability tables for opposed checks. |
+| dom6-economy | Games/Fantasy Strategy/Dominions 6/.claude | The Dominions 6 economy (manual pp. |
+| dom6-evocations | Games/Fantasy Strategy/Dominions 6/.claude | How damage spells work in Dominions 6: casting time, landing, area, precision, MR, killing power. |
+| dom6-fatigue | Games/Fantasy Strategy/Dominions 6/.claude | Fatigue in Dominions 6 battles: what builds it, spell fatigue, encumbrance, unconsciousness and recovery. |
+| dom6-forging | Games/Fantasy Strategy/Dominions 6/.claude | Forging magic items in Dominions 6: the Forge Item order, Construction levels, path levels, gems, forge bonus. |
+| dom6-game | Games/Fantasy Strategy/Dominions 6/.claude | Play an ongoing Dominions 6 game in the running client: main-screen hotkeys, what the screen shows, orders, transfers, turn routine. |
+| dom6-gem-casting | Games/Fantasy Strategy/Dominions 6/.claude | How magic gems work in Dominions 6: battle gem boosts, fatigue halving, rituals and forging costs. |
+| dom6-healing | Games/Fantasy Strategy/Dominions 6/.claude | Hit points, healing, regeneration and afflictions in Dominions 6. |
+| dom6-holy | Games/Fantasy Strategy/Dominions 6/.claude | Holy magic, priests and sacred units in Dominions 6: priest levels, blessings, banishment, sermons, preaching. |
+| dom6-inspector | Games/Fantasy Strategy/Dominions 6/.claude | Local copy of the Dominions 6 Mod Inspector with every vanilla unit, spell, item, site, nation and event, searchable from scripts. |
+| dom6-items | Games/Fantasy Strategy/Dominions 6/.claude | Claude's ranked guide to Dominions 6 magic items: killing, protection, utility and boosters, by worth. |
+| dom6-knowledge | Games/Fantasy Strategy/Dominions 6/.claude | Claude's Dominions 6 knowledge base learned from the running game: nation files, screens, icons, magic symbols. |
+| dom6-magic-duel | Games/Fantasy Strategy/Dominions 6/.claude | The Magic Duel spell in Dominions 6: who it picks, the 1d6 plus astral skill roll, odds and counters. |
+| dom6-magic-resistance | Games/Fantasy Strategy/Dominions 6/.claude | Magic resistance and penetration in Dominions 6: the MR check, penetration, which spells check it, odds. |
+| dom6-map | Games/Fantasy Strategy/Dominions 6/.claude | Reading and using the Dominions 6 strategic map from the virtual screen: panels, provinces, armies, scout reports. |
+| dom6-maps | Games/Fantasy Strategy/Dominions 6/.claude | Make Dominions 6 maps with MapNuke 2: players, era, layout, nations (mod nations too), install and check. |
+| dom6-mechanics | Games/Fantasy Strategy/Dominions 6/.claude | Dominions 6 rules and formulas from the official manual: dice, melee, missiles, armour, morale, magic and more, with page refs. |
+| dom6-mod-magic | Games/Fantasy Strategy/Dominions 6/.claude | What a Dominions 6 mod does to magic: modmagic.py sorts every touched spell into new, better, worse or mixed. |
+| dom6-modding | Games/Fantasy Strategy/Dominions 6/.claude | Write, change or check Dominions 6 mod files (.dm): nations, units, pretenders, spells, items, sites, events. |
+| dom6-modinspector | Games/Fantasy Strategy/Dominions 6/.claude | Load Dominions 6 mods (.dm) into the Mod Inspector and read what they add and change as text. |
+| dom6-morale | Games/Fantasy Strategy/Dominions 6/.claude | Morale and rout in Dominions 6: squad morale checks, triggers, leadership, fear, routing armies. |
+| dom6-mounts | Games/Fantasy Strategy/Dominions 6/.claude | How mounted units work in Dominions 6: rider and mount, who gets hit, trample, fear, dismounting. |
+| dom6-nations | Games/Fantasy Strategy/Dominions 6/.claude | Read Dominions 6 nations from the game's own nation info screens into one markdown and JSON file per nation. |
+| dom6-path-air | Games/Fantasy Strategy/Dominions 6/.claude | The Air path of Dominions 6 magic: what air mages get by role, boosters, crosspaths and every generic air spell. |
+| dom6-path-astral | Games/Fantasy Strategy/Dominions 6/.claude | The Astral path of Dominions 6 magic: what astral mages get by role, boosters, crosspaths and every generic astral spell. |
+| dom6-path-death | Games/Fantasy Strategy/Dominions 6/.claude | The Death path of Dominions 6 magic: what death mages get by role, boosters, crosspaths and every generic death spell. |
+| dom6-path-earth | Games/Fantasy Strategy/Dominions 6/.claude | The Earth path of Dominions 6 magic: what earth mages get by role, boosters, crosspaths and every generic earth spell. |
+| dom6-path-fire | Games/Fantasy Strategy/Dominions 6/.claude | The Fire path of Dominions 6 magic: what fire mages get by role, boosters, crosspaths and every generic fire spell. |
+| dom6-path-glamour | Games/Fantasy Strategy/Dominions 6/.claude | The Glamour path of Dominions 6 magic: what glamour mages get by role, boosters, crosspaths and every generic glamour spell. |
+| dom6-path-nature | Games/Fantasy Strategy/Dominions 6/.claude | The Nature path of Dominions 6 magic: what nature mages get by role, boosters, crosspaths and every generic nature spell. |
+| dom6-path-water | Games/Fantasy Strategy/Dominions 6/.claude | The Water path of Dominions 6 magic: what water mages get by role, boosters, crosspaths and every generic water spell. |
+| dom6-play | Games/Fantasy Strategy/Dominions 6/.claude | How to play Dominions 6 well, from the manual: game setup, pretender, interface, a turn-by-turn checklist, expansion, war. |
+| dom6-pretender | Games/Fantasy Strategy/Dominions 6/.claude | Design a Dominions 6 pretender god like the Pretenders Calculator and beyond: chassis, paths, dominion, scales, blesses, costs. |
+| dom6-pretender-ingame | Games/Fantasy Strategy/Dominions 6/.claude | Build a designed pretender inside the running Dominions 6 (Game Tools > Create a Pretender God) and save it. |
+| dom6-ranged-math | Games/Fantasy Strategy/Dominions 6/.claude | Precision and ranged combat math for Dominions 6: deviation, who gets hit, shields, arrow protection. |
+| dom6-research | Games/Fantasy Strategy/Dominions 6/.claude | Magic research in Dominions 6: the seven schools, research points, queue, labs and speed. |
+| dom6-rituals | Games/Fantasy Strategy/Dominions 6/.claude | Ritual magic in Dominions 6: lab casting, costs, remote attacks and defences, global enchantments. |
+| dom6-scbm | Games/Fantasy Strategy/Dominions 6/.claude | Everything specific to the SCBM balance mod for Dominions 6, kept apart from vanilla: modded units, spells, items, numbers. |
+| dom6-scouting | Games/Fantasy Strategy/Dominions 6/.claude | Scouting and intelligence in Dominions 6: what each source reveals, report freshness, scout placement, hiding. |
+| dom6-sieges | Games/Fantasy Strategy/Dominions 6/.claude | Forts and sieges in Dominions 6: besieging, storming, relief forces, defence and fort stats. |
+| dom6-site-search | Games/Fantasy Strategy/Dominions 6/.claude | Finding magic sites in Dominions 6: the search order, site levels, search rituals and gem income. |
+| dom6-spell-db | Games/Fantasy Strategy/Dominions 6/.claude | Spell evaluation database for Dominions 6: every vanilla and SCBM spell sorted by purpose and ranked. |
+| dom6-spells | Games/Fantasy Strategy/Dominions 6/.claude | Claude's complete reference to Dominions 6 combat spells: every spell from the inspector with path, school, range, effects and worth. |
+| dom6-sprites | Games/Fantasy Strategy/Dominions 6/.claude | Make Dominions 6 unit sprites (TGA, black-transparent, facing left) by modelling 3D figures and rendering them cel-shaded. |
+| dom6-stealth | Games/Fantasy Strategy/Dominions 6/.claude | Stealth, patrols and assassins in Dominions 6: sneaking, detection, patrol strength, assassination. |
+| dom6-summoning | Games/Fantasy Strategy/Dominions 6/.claude | Summoning in Dominions 6: ritual and battle summons, per-gem value, path access, summon-based armies. |
+| dom6-supercombatants | Games/Fantasy Strategy/Dominions 6/.claude | Building and beating Dominions 6 supercombatants and army-wiping cheese units: the five tank archetypes and their counters. |
+| dom6-tactics | Games/Fantasy Strategy/Dominions 6/.claude | Laying out a Dominions 6 army for battle and what has worked: positions, formations, squad and commander orders, leadership, lessons. |
+| dom6-thugs | Games/Fantasy Strategy/Dominions 6/.claude | Basic thugging in Dominions 6: what a thug is, kitting, buff scripts, raiding, army thugs vs solo. |
+| dom6-tooltips | Games/Fantasy Strategy/Dominions 6/.claude | Reading the Dominions 6 interface through tooltips and exact pointing (centre of the text, not the icon). |
+| dom6-ui | Games/Fantasy Strategy/Dominions 6/.claude | Drive the running Dominions 6 window through the game-ui guard: menus, game setup, mods, pretenders, hotkeys, font tools. |
+| dom6-weapons | Games/Fantasy Strategy/Dominions 6/.claude | How weapons work in Dominions 6 melee: attack and damage rolls, weapon stats, length, multiple attacks, damage types. |
+| dom6-wiki | Games/Fantasy Strategy/Dominions 6/.claude | Local mirror of illwiki (the Dominions community wiki, Dom6 and Dom5) with wiki.py to search and read it. |
+| rtw3-guide | Games/Historical Strategy/Rule The Waves/.claude | Starter guide to Rule the Waves 3, the naval ship-design and fleet-command game (1890-1970). |
+| dcss-guide | Games/Roguelikes/Dungeon Crawl Stone Soup/.claude | Guide to Dungeon Crawl Stone Soup (DCSS 0.34, flatpak): rules, species, gods, level design language. |
+| quasimorph-guide | Games/Roguelikes/Quasimorph/.claude | Starter guide to Quasimorph, a dark sci-fi turn-based extraction roguelike (PMC, clones, wounds). |
+| aurora-guide | Games/Space Strategy/Aurora 4x/.claude | Starter guide to Aurora 4X (C# 2.x), the deep sandbox space 4X: colonies, industry, ship and missile design, formulas. |
+| efs-guide | Games/Space Strategy/Emperor of the Fading Suns/.claude | Starter guide to Emperor of the Fading Suns (1996), hex-based space and planetary strategy of feudal Houses. |
+| se4-guide | Games/Space Strategy/Space Empires/Space Empires IV/.claude | Starter guide to Space Empires IV Deluxe, a space 4X: first turns, ship design, research, combat, screens. |
+| se4-modding | Games/Space Strategy/Space Empires/Space Empires IV/.claude | Modding Space Empires IV Deluxe (v1.95): how mods load, the data files, checks, the WMD mod. |
+| swr-guide | Games/Space Strategy/Star Wars Rebellion/.claude | Starter guide to Star Wars Rebellion (1998), galactic grand strategy of Alliance vs Empire: systems, support, characters, missions. |
 | stars-guide | Games/Space Strategy/Stars!/.claude | Starter guide to Stars! |
-| vgap-guide | Games/Space Strategy/VGA Planets Nu/.claude | Starter guide to VGA Planets Nu (planets.nu, the browser-based remake of Tim Wisseman's classic play-by-e-mail space 4X VGA Planets) - what it is, what is known so far, where its documentation lives,  |
-| coc-guide | Games/Tabletop RPGs/Call of Cthulhu/.claude | Starter guide to Call of Cthulhu 7th Edition (Chaosium) - the investigative horror RPG of the Cthulhu Mythos - percentile (d100 roll-under) skills with regular/hard/extreme successes, pushed rolls, bo |
-| greyhawk-lore | Games/Tabletop RPGs/Dungeons & Dragons/.claude | World of Greyhawk (the original Dungeons & Dragons campaign world, Gary Gygax) lore reference - the Flanaess and its regions, the 58 realms with ruler, capital, towns, population, peoples, faiths, all |
-| faserip-guide | Games/Tabletop RPGs/FASERIP/.claude | Starter guide to Advanced FASERIP (a free retro-clone of the 1980s Marvel Super Heroes RPG: Fighting, Agility, Strength, Endurance, Reason, Intuition, Psyche in named ranks, Karma, a universal results |
-| mnm-guide | Games/Tabletop RPGs/Mutants and Masterminds 3E/.claude | Starter guide to Mutants & Masterminds Third Edition (Green Ronin), the point-buy superhero RPG - d20 checks against difficulty, power level caps, abilities, skills, advantages, the effects-based powe |
-| paranoia-guide | Games/Tabletop RPGs/Paranoia/.claude | Starter guide to PARANOIA (Mongoose Publishing, 2023 core book; Goldberg and Costikyan), the darkly comic RPG of Troubleshooters serving The Computer in Alpha Complex - clones, treason, security clear |
-| fftow-guide | Games/Tabletop Tactics/Fistful of TOWs/.claude | Starter guide to A Fistful of TOWs 3 (miniatures rules for mechanized warfare from the 1930s to the present, any scale 2mm-15mm) - sequence of play, troop quality, movement and cohesion, spotting, ant |
-| eih-guide | Games/Tabletop Wargames/Empires in Harm/.claude | Starter guide to Empires in Harm (v5.2, a fan successor to Avalon Hill's Empires in Arms), a 7-10 player strategic and diplomatic board wargame of European wars in the 18th and early 19th centuries (t |
-| fe-guide | Games/Tabletop Wargames/Federation and Empire/.claude | Starter stub for Federation & Empire (Amarillo Design Bureau), the strategic board wargame of the Star Fleet Universe's General War - empires, fleets as counters, a hex map of the galaxy's border regi |
-| hellfire-guide | Games/Tabletop Wargames/Hellfire/.claude | Starter guide to Hellfire, a generic 1/300 (6mm) science-fiction tabletop miniatures wargame in a low-key, mercenary-and-militia universe (Jack Vance flavour), plus its campaign book Hellfire Campaign |
-| ocs-guide | Games/Tabletop Wargames/Operational Combat System/.claude | Starter guide to the Operational Combat Series (OCS) rules v4.3 (The Gamers / Multi-Man Publishing, Dean Essig) - operational WWII-era hex wargames at ~5 miles per hex and half-week turns - sequence o |
-| pog-guide | Games/Tabletop Wargames/Paths of Glory/.claude | Starter guide to Paths of Glory (GMT Games, Ted Raicer), the classic two-player card-driven board wargame of the First World War (Central Powers vs Allies, point-to-point map) - sequence of play (mand |
-| thirdreich-guide | Games/Tabletop Wargames/Rise and Decline of the Third Reich/.claude | Starter guide to Rise and Decline of the Third Reich (Avalon Hill's classic WWII grand-strategy board wargame of Europe 1939-1946), using the free fan "Fourth-and-a-half Edition" rules with Definitive |
-| starfire-guide | Games/Tabletop Wargames/Solar Starfire/.claude | Starter guide to Solar Starfire (Starfire Design Studio, 2013 edition), the space wargame and 4X campaign system - tactical ship combat on hex maps (movement, facing, warp point transits, combat, dama |
-| sfb-guide | Games/Tabletop Wargames/Starfleet Battles Games/.claude | Starter guide to Star Fleet Battles (Amarillo Design Bureau, Captain's Edition Basic Set rulebook, fifth edition 2012), the detailed starship-combat board game of the Star Fleet Universe - each player |
-| sfgc-guide | Games/Tabletop Wargames/Starfleet Battles Games/Starfleet Galactic Conquest/.claude | Starter guide to Star Fleet Universe Galactic Conquest (Amarillo Design Bureau, John D. |
+| vgap-guide | Games/Space Strategy/VGA Planets Nu/.claude | Starter guide to VGA Planets Nu, the browser remake of the classic play-by-email space 4X. |
+| coc-guide | Games/Tabletop RPGs/Call of Cthulhu/.claude | Starter guide to Call of Cthulhu 7th Edition (Chaosium): d100 skills, sanity, investigation, keeper advice. |
+| greyhawk-lore | Games/Tabletop RPGs/Dungeons & Dragons/.claude | World of Greyhawk lore reference (the original D&D world): the Flanaess, its realms, rulers, peoples, places and wars. |
+| faserip-guide | Games/Tabletop RPGs/FASERIP/.claude | Starter guide to Advanced FASERIP (free Marvel Super Heroes retro-clone): ranks, FEAT rolls, Karma, characters. |
+| mnm-guide | Games/Tabletop RPGs/Mutants and Masterminds 3E/.claude | Starter guide to Mutants & Masterminds 3E: d20 checks, power level, point-buy powers, conditions. |
+| paranoia-guide | Games/Tabletop RPGs/Paranoia/.claude | Starter guide to PARANOIA (Mongoose 2023), the comic RPG of Troubleshooters serving The Computer. |
+| fftow-guide | Games/Tabletop Tactics/Fistful of TOWs/.claude | Starter guide to A Fistful of TOWs 3, miniatures rules for mechanized war 1930s-present: sequence, quality, fire, points. |
+| eih-guide | Games/Tabletop Wargames/Empires in Harm/.claude | Starter guide to Empires in Harm (Empires in Arms successor), the 7-10 player Napoleonic strategic and diplomatic board wargame. |
+| fe-guide | Games/Tabletop Wargames/Federation and Empire/.claude | Starter stub for Federation & Empire (ADB), the Star Fleet Universe strategic board wargame. |
+| hellfire-guide | Games/Tabletop Wargames/Hellfire/.claude | Starter guide to Hellfire, a 6mm sci-fi miniatures wargame with a campaign system. |
+| ocs-guide | Games/Tabletop Wargames/Operational Combat System/.claude | Starter guide to the Operational Combat Series v4.3: supply, modes, combat, air, the OCS games. |
+| pog-guide | Games/Tabletop Wargames/Paths of Glory/.claude | Starter guide to Paths of Glory (GMT), the card-driven WWI board wargame. |
+| thirdreich-guide | Games/Tabletop Wargames/Rise and Decline of the Third Reich/.claude | Starter guide to Rise and Decline of the Third Reich (Avalon Hill WWII grand strategy) with the fan 4.5 rules. |
+| starfire-guide | Games/Tabletop Wargames/Solar Starfire/.claude | Starter guide to Solar Starfire (2013): tactical ship combat on hexes and the 4X campaign system. |
+| sfb-guide | Games/Tabletop Wargames/Starfleet Battles Games/.claude | Starter guide to Star Fleet Battles (Captain's Edition): energy allocation, impulses, weapons, damage. |
+| sfgc-guide | Games/Tabletop Wargames/Starfleet Battles Games/Starfleet Galactic Conquest/.claude | Starter guide to Star Fleet Universe Galactic Conquest (5C), a GM-run strategic campaign system. |
 | uscw-guide | Games/Tabletop Wargames/The US Civil War/.claude | Guide to GMT's The U.S. |
-| toc-guide | Games/Tabletop Wargames/Triumph of Chaos/.claude | Starter guide to Triumph of Chaos v2 DELUXE (Clash of Arms, D B Dockter), a two-player card-driven board wargame of the Russian Civil War 1918-1921 (RED vs WHITE) in the Paths of Glory tradition - tur |
-| vbam-guide | Games/Tabletop Wargames/Victory by Any Means/.claude | Starter guide to Victory by Any Means 2nd Edition (VBAM), a generic space-empire campaign system for tabletop (freeform 4X like Master of Orion, or historical scenarios for any setting) - campaign mod |
-| ww1dx-guide | Games/Tabletop Wargames/World War 1 Deluxe Edition/.claude | Starter guide to World War I Deluxe Edition (Decision Games 2018, after Jim Dunnigan's SPI classic; design Joseph Miranda), a two-player hex board wargame of the Great War in Europe and the Middle Eas |
-| atg-guide | Games/Wargames/Advanced Tactics Gold/.claude | Starter guide to Advanced Tactics Gold (VR Designs / Matrix, Victor Reijkersz), a hex wargame engine and construction set - random 4X-style games and scenarios, production with oil and ore, research,  |
-| giren-guide | Games/Wargames/Gihren's Greed/.claude | Starter guide to Gihren's Greed (Kidou Senshi Gundam - Giren no Yabou, Bandai's Gundam grand-strategy wargame series; the community wiki covers Axis no Kyoui V for PSP/PS2), a Japanese-language game - |
-| hos-guide | Games/Wargames/Hex of Steel/.claude | Starter guide to Hex of Steel (a WWII-and-beyond hex wargame in the Panzer General tradition, native Linux build) - victory points, commander rank and core units, unit XP and heroes, two action points |
-| toaw4-guide | Games/Wargames/The Operational Art of War IV/.claude | Starter guide to The Operational Art of War IV (Matrix/Slitherine 2017, the series begun by Norm Koger), an operational-level hex wargame and scenario editor covering a century of warfare - units buil |
-| witp-guide | Games/Wargames/War in the Pacific/.claude | Starter guide to War in the Pacific - Admiral's Edition (2by3 Games / Matrix, 2009), the grand-scale WWII Pacific theatre wargame (daily turns, task forces, air and naval ops, logistics) - what it is, |
-| military-theory | Military Theory/.claude | The user's military theory shelf - his own essay "On the Nature of Space Warfare" (space war today and tomorrow: everything is tracked, armor loses, EW/stealth/PD and denial matter, low-intensity and cybe |
+| toc-guide | Games/Tabletop Wargames/Triumph of Chaos/.claude | Starter guide to Triumph of Chaos v2 Deluxe, the card-driven Russian Civil War board wargame. |
+| vbam-guide | Games/Tabletop Wargames/Victory by Any Means/.claude | Starter guide to Victory by Any Means 2E, a generic tabletop space-empire campaign system. |
+| ww1dx-guide | Games/Tabletop Wargames/World War 1 Deluxe Edition/.claude | Starter guide to World War I Deluxe (Decision Games 2018), a two-player hex wargame of the Great War. |
+| atg-guide | Games/Wargames/Advanced Tactics Gold/.claude | Starter guide to Advanced Tactics Gold, a hex wargame engine and construction set with random 4X-style games. |
+| giren-guide | Games/Wargames/Gihren's Greed/.claude | Starter guide to Gihren's Greed (Gundam Giren no Yabou grand strategy), with Japanese screen reading. |
+| hos-guide | Games/Wargames/Hex of Steel/.claude | Starter guide to Hex of Steel, a WWII-and-beyond hex wargame in the Panzer General tradition. |
+| toaw4-guide | Games/Wargames/The Operational Art of War IV/.claude | Starter guide to The Operational Art of War IV, operational hex wargame and scenario editor. |
+| witp-guide | Games/Wargames/War in the Pacific/.claude | Starter guide to War in the Pacific Admiral's Edition, the grand-scale WWII Pacific wargame. |
+| military-theory | Military Theory/.claude | The user's military theory shelf as searchable text, with his essay on space warfare and the classics. |

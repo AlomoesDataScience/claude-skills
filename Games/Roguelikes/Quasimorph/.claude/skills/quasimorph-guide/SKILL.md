@@ -1,6 +1,7 @@
 ---
 name: quasimorph-guide
-description: Starter guide to Quasimorph (Magnum Scriptum), a dark sci-fi turn-based roguelike with extraction - a PMC mercenary company with a ship, clone bodies and mercenary classes takes missions on stations in the Solar System, fights in turn-based tactical maps (health, wounds, effects, perks, quasimorphosis), loots and extracts or loses everything carried; bartering, crafting, ship upgrades (navigation, engineering, supply, research, hangar, cloning), factions, quasimorphs - with the wiki's structure (quasimorph.wiki.gg) and the local install. Uses learn-to-play (method), game-ui (the game window). Use when the user wants to play, learn or talk about Quasimorph, or borrow its systems (wounds, extraction, factions) for Heresiarch or our own games.
+description: "Starter guide to Quasimorph, a dark sci-fi turn-based extraction roguelike (PMC, clones, wounds). Use when playing, learning or discussing it, or borrowing its systems for Heresiarch or our games."
+keywords: "magnum, scriptum, mercenary, company, ship, clone, bodies, classes, takes, missions, stations, solar, system, fights, tactical, maps, health, effects, perks, quasimorphosis, loots, extracts, loses, everything, carried, bartering, crafting, upgrades, navigation, engineering, supply, research, hangar, cloning, factions, quasimorphs, wiki's, structure, wiki, local, install, learn-to-play, method, game-ui, game"
 ---
 
 # Quasimorph - starter guide

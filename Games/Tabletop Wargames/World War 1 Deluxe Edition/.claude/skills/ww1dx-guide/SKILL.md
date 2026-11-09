@@ -1,6 +1,7 @@
 ---
 name: ww1dx-guide
-description: Starter guide to World War I Deluxe Edition (Decision Games 2018, after Jim Dunnigan's SPI classic; design Joseph Miranda), a two-player hex board wargame of the Great War in Europe and the Middle East at 36 miles a hex and six months a turn - initiative from mobilization points, three impulses with front activation by plan markers, entrenched/mobile unit status, supply and lines of communication, ZOC, loss-point combat, mobilization points to build and absorb losses, campaign markers, neutrals, collapse and surrender, victory points, with a page map of BX-U_WorldWarI-Rules_V6F-ERULES.pdf (32 pages; searchable .txt). Uses game-sources (rulebook lookups), learn-to-play (method). Use when the user wants to play, learn, set up or talk about World War I Deluxe / Decision Games' World War I, or wants a rules question answered or a move planned.
+description: "Starter guide to World War I Deluxe (Decision Games 2018), a two-player hex wargame of the Great War. Use when playing, learning or setting up it, or answering a rules question."
+keywords: "edition, after, jim, dunnigan's, spi, classic, design, joseph, miranda, board, europe, middle, east, miles, six, months, turn, initiative, mobilization, points, three, impulses, front, activation, plan, markers, entrenched, mobile, unit, status, supply, lines, communication, zoc, loss-point, combat, build, absorb, losses, campaign, neutrals, collapse, surrender, victory, page"
 ---
 
 # World War I Deluxe Edition - starter guide

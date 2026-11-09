@@ -1,6 +1,7 @@
 ---
 name: witp-guide
-description: Starter guide to War in the Pacific - Admiral's Edition (2by3 Games / Matrix, 2009), the grand-scale WWII Pacific theatre wargame (daily turns, task forces, air and naval ops, logistics) - what it is, what the user's promo manual excerpt covers and lacks, the full manual's chapter map, and what to learn next. Uses game-sources (manual lookups), game-ui (window driving), learn-to-play (method). Use when the user wants to play, learn or talk about War in the Pacific / WITP / WitP AE, or asks how one of its systems works.
+description: "Starter guide to War in the Pacific Admiral's Edition, the grand-scale WWII Pacific wargame. Use when playing, learning or discussing WitP AE or how one of its systems works."
+keywords: "by3, games, matrix, theatre, daily, turns, task, forces, air, naval, ops, logistics, promo, manual, excerpt, covers, lacks, full, manual's, chapter, map, learn, next, game-sources, lookups, game-ui, window, driving, learn-to-play, method, play, talk"
 ---
 
 # War in the Pacific: Admiral's Edition - starter guide

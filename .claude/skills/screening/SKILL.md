@@ -1,6 +1,7 @@
 ---
 name: screening
-description: Generic screening for any tactics or strategy game - the user's definition (a unit out in front that forces the enemy to react to it; not strong enough to win if the fight happens, but the enemy has to respect it, so they can no longer plan around the advancing line and must answer the screen or raiding party first, or lose units such as their own screens), what screens do (force reactions, cost the enemy tempo, delay and pin, cover the main body from skirmishers and scouts, hide movement, kill enemy screens), the conditions that make a screen work (a real threat, able to escape, supported, not isolated), placement, when to pull a screen back, counter-screening, and per-game notes (FoG II light horse and light foot). Use when planning an advance, a defence or a deployment with light or fast units, when the enemy has screens or skirmishers out, or when deciding what light units should do each turn.
+description: "Generic screening for any tactics or strategy game: The user's definition, what screens do, placement, when to pull back. Use when planning an advance, defence or deployment with light or fast units."
+keywords: "unit, front, forces, enemy, react, strong, enough, win, fight, happens, has, respect, longer, plan, around, advancing, line, must, answer, screen, raiding, party, first, lose, such, force, reactions, cost, tempo, delay, pin, cover, main, body, skirmishers, scouts, hide, movement, kill, conditions, make, work, real, threat, able"
 ---
 
 # Screening - make the enemy answer you first

@@ -1,6 +1,7 @@
 ---
 name: swr-guide
-description: Starter guide to Star Wars Rebellion (1998, Coolhand Interactive / LucasArts), the galactic grand-strategy game of Alliance vs Empire - sectors and systems, popular support and uprisings, mines, refineries and maintenance, construction yards, shipyards and training facilities, fleets and troops, characters with diplomacy/espionage/combat/leadership ratings and the Force, missions (diplomacy, recruitment, espionage, sabotage, assassination, abduction, rescue, inciting and subduing uprisings, Jedi training), decoys, special forces, tactical space battles, and victory by capturing the enemy headquarters and leaders - with the manual and the Prima strategy guide (both scans, OCR'd to .txt). Uses game-sources (lookups), learn-to-play (method). Use when the user wants to play, learn or talk about Star Wars Rebellion (Supremacy), or study its characters-and-agents system for our own 4X engine (the user's Tactics doc names it).
+description: "Starter guide to Star Wars Rebellion (1998), galactic grand strategy of Alliance vs Empire: systems, support, characters, missions. Use when playing or learning it, or borrowing its agents system."
+keywords: "coolhand, interactive, lucasarts, grand-strategy, game, sectors, popular, uprisings, mines, refineries, maintenance, construction, yards, shipyards, training, facilities, fleets, troops, diplomacy, espionage, combat, leadership, ratings, force, recruitment, sabotage, assassination, abduction, rescue, inciting, subduing, jedi, decoys, special, forces, tactical, space, battles, victory, capturing, enemy, headquarters, leaders, manual, prima"
 ---
 
 # Star Wars Rebellion - starter guide

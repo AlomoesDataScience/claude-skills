@@ -1,6 +1,7 @@
 ---
 name: wiki-scout
-description: Find and pull the wikis, manuals and documentation for a game or a franchise (IP), gently and as safe text. scout.py finds where a wiki lives (Fandom, wiki.gg, Paradox wikis, StrategyWiki, PCGamingWiki, Wikipedia) through the Wayback Machine with no requests to the wiki, lists its archived pages, pulls the newest good snapshot of each as plain text (scripts and ads dropped, resumable), falls back to the live MediaWiki API only for missing pages (honest User-Agent, robots.txt, maxlag, slow), checks the output is plain text and records the source. docpull.py pulls every rules PDF, errata, play aid and module linked from a publisher page (GMT and the like), checks file types, unpacks archives safely and makes text of each PDF. Use when a game or IP needs its wiki or documentation fetched, when the user names a wiki, franchise or publisher page to pull, when a folder is empty but the user owns the game, or when a site blocks scripts or is full of ads.
+description: "Find and pull wikis, manuals and docs for a game or franchise as safe text (Wayback first) with scout.py. Use when a game or IP needs its wiki or documentation fetched."
+keywords: "gently, finds, lives, fandom, paradox, strategywiki, pcgamingwiki, wikipedia, through, machine, requests, lists, archived, pages, pulls, newest, good, snapshot, plain, scripts, ads, dropped, resumable, falls, back, live, mediawiki, api, missing, honest, user-agent, robots, txt, maxlag, slow, checks, output, records, source, docpull, rules, pdf, errata, play, aid"
 ---
 
 # Wiki scout
