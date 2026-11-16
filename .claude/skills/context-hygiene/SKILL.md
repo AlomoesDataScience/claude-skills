@@ -7,7 +7,7 @@ keywords: "without, losing, quality, text, full, shots, tool, scripts, pasted, f
 # Context hygiene
 
 The user (2026-11-09): "the full size screens are not necessary, OCR is better, we do need to set up proper rules"
-... "I'm afraid this will impact performance if we do it wrong." Measured basis: `Proposals/Context cost
+... "I'm afraid this will impact performance if we do it wrong." Measured basis: `Proposals/Done/Context cost/Context cost
 review.md` (screenshots 17%, Bash output 27%, inline scripts and file contents 21%, average context 240k).
 Everything that enters the context is re-sent on every later request until a clear - so each rule saves many
 times its size. **Quality first**: when a rule would make me guess, take the bigger look and say why.
@@ -32,6 +32,21 @@ times its size. **Quality first**: when a rule would make me guess, take the big
   needed, load a whole skill only when its method is being used.
 - **Write big files with a script or a template on disk**, not pasted through Write when avoidable; never
   read a file back just to check a write.
+
+## When a call errors (failure protocol, the user 2026-11-16)
+Origin: the Skill tool said "Unknown skill: engine4x-dev" and Claude retried the same call six times over the
+session, with two spellings. The user: "consider failure protocols for if there's an error."
+1. **Never resend the same failing call.** One error = stop that path. Change something real (the input, the
+   tool, the fallback) before the next try. The one exception is a transient error (timeout, "no verdict"),
+   which may be tried once more, unchanged.
+2. **Read the error, then look for a known answer**: grep the skills and memory for the error text
+   (`grep -rn "<text>" .claude/skills`). Example: check-skills already says to Read a folder skill's SKILL.md
+   on "Unknown skill".
+3. **Use the fallback and carry on**: Read in place of Skill, Read and Edit in place of Bash, another source in
+   place of a site that refuses. Never work around a permission denial or a site's block. Those go to the user.
+4. **Fix it at the source if it cost a wasted call**: a hint in the hook, a line in the skill. Then say so to
+   the user in one line.
+5. **Twice on the same wall = stop and report** what failed, what was tried and what is needed. Don't loop.
 
 ## Shell commands (short commands in ~/.local/bin, scripts in this skill's bin/)
 | Command | Instead of |

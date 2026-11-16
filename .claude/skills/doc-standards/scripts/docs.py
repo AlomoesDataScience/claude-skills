@@ -21,7 +21,7 @@ def default_set():
     fs = glob.glob(os.path.join(MEM, "*.md"))
     fs += [f for f in glob.glob(os.path.join(ROOT, "**", ".claude", "skills", "*", "SKILL.md"), recursive=True)
            if "/Archive/" not in f]
-    fs += glob.glob(os.path.join(ROOT, "Proposals", "*.md"))
+    fs += glob.glob(os.path.join(ROOT, "Proposals", "**", "*.md"), recursive=True)
     fs += [f for f in glob.glob(os.path.join(ROOT, "**", "plans", "*.md"), recursive=True) if "/Archive/" not in f]
     fs += [f for f in glob.glob(os.path.join(ROOT, "**", "checklists", "*.md"), recursive=True) if "/Archive/" not in f]
     fs += [os.path.join(ROOT, "BACKLOG.md")]
@@ -116,6 +116,8 @@ def main():
         sys.exit(__doc__)
     if a[0] == "check":
         paths = [p for p in a[1:] if not p.startswith("--")] or default_set()
+        paths = [os.path.join(d, n) for p in paths for d, _, ns in (os.walk(p) if os.path.isdir(p) else [(os.path.dirname(p), 0, [os.path.basename(p)])])
+                 for n in ns if not os.path.isdir(p) or n.endswith(".md")]
         errs = warns = shown = 0
         for f in sorted(paths):
             for lvl, msg in check(os.path.abspath(f)):

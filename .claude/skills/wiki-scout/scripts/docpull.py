@@ -16,7 +16,7 @@ import os, re, sys, time, json, shutil, zipfile, subprocess, urllib.parse, html,
 signal.signal(signal.SIGPIPE, signal.SIG_DFL)
 HERE = os.path.dirname(os.path.abspath(__file__))
 MANUAL = os.path.join(HERE, "..", "..", "game-sources", "scripts", "manual.py")
-UA = "AI-Development-workspace-docpull/1.0 (personal offline reading; low rate)"
+UA = "AI-Development-workspace-filepull/1.0 (personal offline reading; low rate)"  # not "docpull": substring robots matchers read that as the blocked bot "DOC" (site-rules)
 DEFAULT_EXT = ["pdf", "zip", "doc", "docx", "rtf", "txt", "vmod", "ztb"]
 SAFE_IN_ARCHIVE = {".pdf", ".txt", ".rtf", ".doc", ".docx", ".odt", ".png", ".jpg", ".jpeg", ".gif", ".bmp",
                    ".tif", ".tiff", ".svg", ".csv", ".xls", ".xlsx", ".htm", ".html", ".xml", ".json", ".md",

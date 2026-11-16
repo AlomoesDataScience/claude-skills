@@ -103,6 +103,10 @@ def hook():
     hits = rank(prompt, cwd, n=5) if prompt else []
     if hits:
         rule += " Likely matches: " + ", ".join(f"{h[1]}" + (f" [{h[2]}]" if h[2] != "." else "") for h in hits) + "."
+        # 2026-11-16: folder skills are often not in the Skill tool's list ("Unknown skill", tried 6 times);
+        # say up front to Read them, so no call is wasted
+        if any(h[2] != "." for h in hits):
+            rule += " [folder] skills: Read <folder>/.claude/skills/<name>/SKILL.md, not the Skill tool."
     if ev == "SessionStart" and data.get("source") in ("clear", "compact"):
         h = os.path.join(ROOT, ".claude", "handoff", "HANDOFF.md")
         if os.path.exists(h):

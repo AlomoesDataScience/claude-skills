@@ -2,8 +2,9 @@
 """Play a game in the background: on a virtual X screen (Xephyr) of its own, so Claude's keys,
 clicks and screenshots never touch the user's desktop, focus or keyboard.
 
-  bgplay.py start [--size 1600x990]          start the virtual screen (a window titled "Claude game
-                                              screen" appears; the user can minimise or ignore it)
+  bgplay.py start [--size WxH]               start the virtual screen (a window titled "Claude game
+                                              screen" appears; the user can minimise or ignore it).
+                                              Size: the last one used (kept in bg5/size), else 1600x990
   bgplay.py launch CMD [ARGS...]              start a game on it, e.g.  launch flatpak run org.develz.Crawl
   bgplay.py steam APPID [--wait 180] [--env K=V ...]
                                               start a Steam game on it. Steam starts games itself, so the
@@ -269,11 +270,42 @@ def root_geo():
     return (0, 0, im.width, im.height, True)
 
 
+ACTIVE = os.path.join(OUT, "active-window")    # the window the last click landed in (the user 2026-11-15)
+
+
+def viewable(wid):
+    out = subprocess.run(["xwininfo", "-display", DISP, "-id", wid], capture_output=True, text=True).stdout
+    return "IsViewable" in out
+
+
+def remember_window(x, y):
+    """A click makes the window it lands in the active one: the smallest viewable window holding the point
+    (a dialog over the main window), as a window manager would focus it. Keys then go there."""
+    hits = [r for r in windows() if r[5] <= x < r[5] + r[3] and r[6] <= y < r[6] + r[4]]
+    for r in sorted(hits, key=lambda r: r[3] * r[4]):
+        if viewable(r[0]):
+            os.makedirs(OUT, exist_ok=True)
+            open(ACTIVE, "w").write(r[0])
+            return
+
+
 def point_at_game():
-    """Without a window manager, keys go to the window under the pointer: park it in the biggest window's top-right corner."""
+    """Without a window manager, keys go to the window under the pointer: park it in the top-right corner of the
+    window last clicked (if still viewable), else of the biggest viewable window. Hidden windows (a closed GTK
+    file dialog stays listed) don't count."""
     ws = windows()
-    if ws:
-        wid, title, cls, w, h, x, y = max(ws, key=lambda r: r[3] * r[4])
+    try:
+        last = open(ACTIVE).read().strip()
+    except OSError:
+        last = ""
+    pick = next((r for r in ws if r[0] == last and viewable(r[0])), None)
+    if pick is None:
+        for r in sorted(ws, key=lambda r: -r[3] * r[4]):
+            if viewable(r[0]):
+                pick = r
+                break
+    if pick:
+        wid, title, cls, w, h, x, y = pick
         U.move(root_geo(), x + w - 3, y + 3)     # top-right corner: no hover tooltips over map or messages
 
 
@@ -636,6 +668,7 @@ def do(step):
         if c == "move":
             U.move(geo, x, y)
         else:
+            remember_window(x, y)
             U.click(geo, x, y, right="--right" in p)
     else:
         sys.exit(f"unknown step {step!r}")
@@ -650,6 +683,12 @@ def host_window():
         if line.endswith(TITLE):
             return line.split()[0]
     return None
+
+
+def viewable_host(wid):
+    """Is the game window shown on the user's desktop (False = minimised)? Asks the user's display only."""
+    info = subprocess.run(["xwininfo", "-display", HOST, "-id", wid], capture_output=True, text=True).stdout
+    return "IsViewable" in info
 
 
 def repaint():
@@ -669,18 +708,27 @@ def show():
 
 
 def keeper():
-    """Repaint on hidden->visible and every 4 s while the virtual screen lives."""
-    last, tick = None, 0
+    """Repaint on hidden->visible and every 4 s while the window is on screen. While it is minimised, touch
+    nothing on the virtual screen: ANY new client on Xephyr's display (xrefresh, xinput, even xprop or
+    xdpyinfo) maps its window back onto the user's desktop (the user 2026-11-15: "when I try to minimize claude
+    gaming window, it pops back up"; tested one by one). So Claude's own commands also bring it back."""
+    last, tick, lock_failed = None, 0, False
     while running():
         wid = host_window()
         state = None
         if wid:
-            info = subprocess.run(["xwininfo", "-display", HOST, "-id", wid], capture_output=True, text=True).stdout
-            state = "IsViewable" in info
-        if (state and last is False) or tick % 8 == 0:
+            state = viewable_host(wid)
+        if state is False:                      # minimised: leave the virtual screen alone
+            last, tick = state, tick + 1
+            time.sleep(0.5)
+            continue
+        if last is False or tick % 8 == 0:
             repaint()
-        if tick % 8 == 4 and os.path.exists(LOCK_FILE) and not is_locked():
-            set_lock(True, quiet=True)          # something re-enabled the user's devices: lock again
+        # something re-enabled the user's devices: lock again - ONCE. A failed lock is not retried every 4 s:
+        # each try is ~100 xinput runs on the virtual screen, each maps the window back, so a lock that keeps
+        # failing (as since 2026-11-09) kept un-minimising the window (the user 2026-11-16: "The thing broke again")
+        if tick % 8 == 4 and not lock_failed and os.path.exists(LOCK_FILE) and not is_locked():
+            lock_failed = not set_lock(True, quiet=True, wid=wid, tries=1)   # one try: no burst
         last, tick = state, tick + 1
         time.sleep(0.5)
 
@@ -688,10 +736,11 @@ def keeper():
 USER_DEVICES = ("Xephyr virtual mouse", "Xephyr virtual keyboard")   # the window's input = the user's
 
 
+SIZE_FILE = os.path.join(OUT, "size")     # the last --size, reused by the next start
 LOCK_FILE = os.path.join(OUT, "locked")   # the wish to be locked; the keeper re-applies it
 
 
-def set_lock(on, quiet=False):
+def set_lock(on, quiet=False, wid=None, tries=30):
     """Disable/enable the Xephyr window's own input devices; Claude's input uses the XTEST devices.
     Retries until it holds (right after `start` the devices may not exist yet: the first lock used
     to fail silently and leave the screen open to the user)."""
@@ -700,7 +749,9 @@ def set_lock(on, quiet=False):
         open(LOCK_FILE, "w").close()
     elif os.path.exists(LOCK_FILE):
         os.remove(LOCK_FILE)
-    for _ in range(30):
+    for _ in range(tries):
+        if wid and not viewable_host(wid):
+            return False                        # the user minimised it: stop touching the screen
         for dev in USER_DEVICES:
             subprocess.run(["xinput", "--disable" if on else "--enable", dev], env=dict(os.environ, DISPLAY=DISP),
                            capture_output=True)
@@ -709,9 +760,10 @@ def set_lock(on, quiet=False):
         time.sleep(0.2)
     else:
         print(f"WARNING: could not {'lock' if on else 'unlock'} the virtual screen")
-        return
+        return False
     if not quiet:
         print("locked: the user's input can't reach the virtual screen" if on else "unlocked: the user can play it too")
+    return True
 
 
 def is_locked():
@@ -797,7 +849,9 @@ def main(a):
     if c == "start":
         unlocked = "--unlocked" in a
         a = [x for x in a if x != "--unlocked"]
-        start(opt(a, "--size", "1600x990"), glamor="--glamor" in a, cursor="--cursor" in a)
+        size = opt(a, "--size", None) or (open(SIZE_FILE).read().strip() if os.path.exists(SIZE_FILE) else "1600x990")
+        open(SIZE_FILE, "w").write(size + "\n")   # kept: a restart comes back at this size (the user 2026-11-16)
+        start(size, glamor="--glamor" in a, cursor="--cursor" in a)
         if not unlocked:
             set_lock(True)
         subprocess.Popen([sys.executable, "-I", os.path.abspath(__file__), "--display", DISP, "keeper"],

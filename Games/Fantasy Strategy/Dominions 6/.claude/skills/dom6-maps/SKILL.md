@@ -16,7 +16,7 @@ covered yet.
 
 - `Games/Fantasy Strategy/Dominions 6/Maps/mapnuke/app/LINUX/MapNuke.x86_64` - the app (v1.1.2, Dom6 edition, Linux build).
   Data in `MapNuke_Data/`: `Nations/*.xml`, `Layouts/*.xml`, `NameData/`, exports in `Export/<map>/`.
-- `Games/Fantasy Strategy/Dominions 6/Maps/mapnuke/source/` - its C# source. `Assets/Scripts/Output/MapFileWriter.cs` writes
+- `Code Sources/MapNuke/source/` (moved 2026-11-15; `mapnuke/source` links there) - its C# source. `Assets/Scripts/Output/MapFileWriter.cs` writes
   the .map, `Data/ProvinceData.cs` the terrain enum, `WorldGen/GeneratorSettings.cs` terrain and
   border frequencies, `Interactive/GenerationManager.cs` the UI actions.
 - `Games/Fantasy Strategy/Dominions 6/Manuals/dom6mapman.pdf` - Illwinter's Dom6 Map Making Manual v6.26 (the format rules).

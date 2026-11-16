@@ -7,7 +7,7 @@ keywords: "safely, state, next, steps, files, read, stretch, starts, small, with
 # Unload - hand off, clear, recall
 
 The user (2026-11-09): "make an unload skill thing". Why: context is re-sent on every request until it is cleared
-(review: `Proposals/Context cost review.md`). Compaction keeps re-injecting skills loaded earlier; `/clear`
+(review: `Proposals/Done/Context cost/Context cost review.md`). Compaction keeps re-injecting skills loaded earlier; `/clear`
 drops everything. Claude can't run `/clear` itself - the user types it.
 
 ## Unload (end of a task, or context getting big)

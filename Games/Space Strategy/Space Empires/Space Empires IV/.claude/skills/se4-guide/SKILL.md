@@ -63,6 +63,11 @@ XiChung), communications/diplomacy 81, modding guide 85-96 (files, graphics, too
    game-ui, and play the built-in Tutorial (main menu) with the user's go.
 3. Keep a design notebook here (good early hulls and component layouts) as they are tested.
 
+## Systems
+- **Tactical combat**: each battle strategic (auto, a second or two) or tactical (hand-played); ships fight by **strategies** stored with the design: primary and fallback movement (don't get hurt, max/optimal/short range, point blank, board, ram), targeting priority, type priority, don't fire on, fighter launch group size, who breaks formation (manual p47-48, p65)
+- **Production**: ship design from components (the user's WMD mod reworks every component, see se4-modding/wmd.md)
+- **Modding**: plain text data files (`Name := value`), mods load as a folder over Data/ (se4-modding)
+
 ## War skills (the user 2026-11-02: call the military skills when playing; build on them)
 - Level of war: **strategic (4X)**; domain: **space**. Vocabulary: military-operations (strategic/operational levels, principles of war) + war-concepts' strategy section (total/limited war, escalation, war economy, war termination); soviet-doctrine for the
   opposing school; war-concepts (glossary, `warwiki.py look TERM`).

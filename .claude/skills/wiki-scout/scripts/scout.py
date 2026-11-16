@@ -11,6 +11,9 @@
                     and <title>.infobox.json; raw HTML deleted unless --keep-html; resumable
   scout.py live API_URL TITLES.txt OUTDIR [--pause 4]   pages Wayback lacks, from the live MediaWiki API
                     (api.php): honest User-Agent, robots.txt respected, maxlag, slow; plain-text extracts
+  scout.py index URL OUTDIR [--name TOPIC]   index first: save the index, portal or category page, list
+                    its articles (and subcategories, not followed), TOPIC-index.json with a short
+                    description + first two sentences each (Wikipedia API, 20 a request); then tier and pull
   scout.py check OUTDIR    safety check: every file is plain UTF-8 text with no script or iframe left
   scout.py record OUTDIR BASE    write OUTDIR/SOURCE.md (what, where from, when, how many)
 
@@ -216,6 +219,82 @@ def cmd_record(outdir, base):
     print(f"recorded {n} pages")
 
 
+def index_links(raw):
+    """(articles, subcategories) linked from an index or category page, in page order."""
+    def links(html):
+        out = []
+        for m in re.finditer(r'href="/wiki/([^"#?]+)"', html):
+            t = urllib.parse.unquote(m.group(1))
+            if t not in out:
+                out.append(t)
+        return out
+    def section(id_):
+        m = re.search(r'id="%s"(.*?)(?=<div id="mw-(?:pages|subcategories|category-media)"|<div class="printfooter"|\Z)' % id_, raw, re.S)
+        return m.group(1) if m else ""
+    pages, subs = section("mw-pages"), section("mw-subcategories")
+    if pages or subs:                                  # a category page
+        return ([t for t in links(pages) if ":" not in t],
+                [t for t in links(subs) if t.startswith("Category:")])
+    body = raw.split('id="mw-content-text"', 1)[-1].split('class="printfooter"', 1)[0]
+    return [t for t in links(body) if ":" not in t and t != "Main_Page"], []
+
+
+def cmd_index(url, outdir, name=""):
+    """Index first (the topic-scrape standard): drop the page, list its links, build NAME-index.json."""
+    os.makedirs(outdir, exist_ok=True)
+    page = urllib.parse.unquote(url.rstrip("/").rsplit("/", 1)[-1])
+    name = name or re.sub(r"\W+", "-", page.split(":")[-1]).strip("-").lower()
+    raw = None
+    for y in range(int(time.strftime("%Y")), int(time.strftime("%Y")) - 4, -1):
+        code, body = patient(f"https://web.archive.org/web/{y}id_/{url}")
+        if code == "200" and body and is_article(body):
+            raw = body; break
+        time.sleep(2)
+    if raw is None:
+        sys.exit(f"no Wayback snapshot of {url} in 4 years: try scout.py live, or ask the user")
+    save_text(raw, outdir, page, False)
+    arts, subs = index_links(raw)
+    if "next page" in raw and "mw-pages" in raw:
+        print("note: the category has more than one page of members; only the first page was listed")
+    open(os.path.join(outdir, f"{name}-titles.txt"), "w").write("\n".join(arts) + "\n")
+    rows = {t: {"title": t.replace("_", " "), "desc": "", "intro": "", "missing": False, "tier": ""} for t in arts}
+    api = re.match(r"(https?://[^/]+)", url).group(1) + "/w/api.php"
+    if "wikipedia.org" in url:                         # robots.txt disallows /w/ for bots (site-rules skill)
+        rp = urllib.robotparser.RobotFileParser(); rp.set_url(re.match(r"(https?://[^/]+)", url).group(1) + "/robots.txt")
+        try:
+            rp.read()
+        except Exception:
+            rp.disallow_all = True
+        if not rp.can_fetch(UA, api):
+            print("note: robots.txt disallows api.php, so no short descriptions or intros (site-rules skill)")
+            url = ""                                    # skip the block below
+    if "wikipedia.org" in url:                         # short description + first two sentences, 20 a request
+        for i in range(0, len(arts), 20):
+            q = {"action": "query", "prop": "extracts|description", "exintro": "1", "explaintext": "1",
+                 "exsentences": "2", "exlimit": "20", "titles": "|".join(a.replace("_", " ") for a in arts[i:i + 20]),
+                 "redirects": "1", "format": "json", "formatversion": "2", "maxlag": "5"}
+            code, body = patient(api + "?" + urllib.parse.urlencode(q))
+            try:
+                data = json.loads(body)["query"]
+            except Exception:
+                print("MISS intros", code, i, flush=True); continue
+            back = {r["to"]: r["from"] for r in data.get("redirects", []) + data.get("normalized", [])}
+            for pg in data.get("pages", []):
+                t = pg["title"]
+                while t in back:
+                    t = back[t]
+                key = t.replace(" ", "_")
+                if key in rows:
+                    rows[key].update(desc=pg.get("description", ""), intro=pg.get("extract", "").strip(),
+                                     missing="missing" in pg)
+            time.sleep(4)
+    json.dump(list(rows.values()), open(os.path.join(outdir, f"{name}-index.json"), "w"), ensure_ascii=False, indent=1)
+    if subs:
+        open(os.path.join(outdir, f"{name}-subcategories.txt"), "w").write("\n".join(subs) + "\n")
+    print(f"{page}: {len(arts)} articles -> {name}-index.json, {len(subs)} subcategories (not followed; "
+          f"{name}-subcategories.txt). Next: tier them (A full text, B on demand, C no), then pull the A tier.")
+
+
 def main(a):
     if not a or a[0] in ("-h", "--help"):
         sys.exit(__doc__)
@@ -235,6 +314,7 @@ def main(a):
     elif c == "titles": cmd_titles(pos[0], pos[1], opt.get("prefix", ""), int(opt.get("limit", 0)))
     elif c == "pull": cmd_pull(pos[0], pos[1], pos[2], float(opt.get("pause", 4)), int(opt.get("max", 0)), opt.get("keep", False))
     elif c == "live": cmd_live(pos[0], pos[1], pos[2], float(opt.get("pause", 4)))
+    elif c == "index": cmd_index(pos[0], pos[1], opt.get("name", ""))
     elif c == "check": sys.exit(1 if cmd_check(pos[0]) else 0)
     elif c == "record": cmd_record(pos[0], pos[1])
     else: sys.exit(__doc__)

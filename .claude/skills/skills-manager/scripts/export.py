@@ -31,18 +31,21 @@ DEFAULT_CFG = {
     "hold_back_skills": {
         "heresiarch-guide": "the user's own game in development (private project notes)",
         "engine4x-design": "the user's own 4X design (his design documents)",
+        "engine4x-dev": "the user's private 4X engine (build notes for a private repo)",
+        "engine4x-economy": "the user's private 4X engine (his economic design)",
         "political-theory": "notes on the user's own unpublished writing",
         "user-todo": "built around the user himself (his to-do folder)",
         "library-intake": "built around the user's workspace and his placement decisions",
     },
     "hold_back_files": {
         "se4-modding/wmd.md": "the user's WMD mod decision list",
+        "economic-theory/THE USER.md": "the user's own economic theory in his words (unpublished)",
         "dom6-scbm/tirnanog.md": "the user's plans for a live multiplayer game (opponents could read them)",
     },
     "tools": {  # standalone tools Claude built outside the skill folders -> DEST/tools/<name>/
         "mapgen": {"from": "Games/Fantasy Strategy/Dominions 6/Maps/mapgen", "skip": ["out"]},
         "spritestudio": {"from": "Games/Fantasy Strategy/Dominions 6/spritestudio",
-                         "skip": ["dist", "output", "SpriteStudio", "Sprite Studio.desktop",
+                         "skip": ["dist", "output", "reference", "SpriteStudio", "Sprite Studio.desktop",
                                   "models/old_sprite_editing_tutorial.json", "models/sprite_editing_tutorial.json",
                                   "models/sprite_editing_tutorial_3d.json", "models/sprite_editing_tutorial_3d_2.json",
                                   "models/sprite_editing_tutorial_3d_3.json", "models/sprite_editing_tutorial_3d_4.json"]},
@@ -66,7 +69,9 @@ def text_out(s):
     s = re.sub(r"\bRYAN\b", "THE USER", s)
     s = re.sub(r"\bRyan's\b", "the user's", s)
     s = re.sub(r"\bRyan\b", "the user", s)
-    return s.replace("user-todo", "user-todo")
+    s = s.replace("user-todo", "user-todo")
+    s = re.sub(r"\bryan's\b", "the user's", s)  # lowercase, e.g. in keyword lists (2026-11-16)
+    return re.sub(r"\bryan\b", "the user", s)
 
 
 def skill_home(s):

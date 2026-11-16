@@ -18,6 +18,7 @@ Windows: see [DEPENDENCIES-windows.md](DEPENDENCIES-windows.md).
 | Dependency | Install | Used by |
 |---|---|---|
 | Pillow (PIL) | `sudo apt install python3-pil` or `pip install pillow` | context-audit, dom6-battle-view, dom6-knowledge, dom6-map, dom6-maps, dom6-nations, dom6-pretender-ingame, dom6-sprites +10 more |
+| Requests | `sudo apt install python3-requests` or `pip install requests` | wiki-scout |
 | NumPy | `sudo apt install python3-numpy` | dom6-battle-view, dom6-map, fog2m-guide, game-ui, map-camera, map-measure, photo-map, video-watch |
 | OpenCV | `sudo apt install python3-opencv` | dom6-battle-view, map-measure |
 | faster-whisper | `pip install faster-whisper` (optional: speech to text) | video-watch |

@@ -18,6 +18,10 @@ order), checking them, making new ones, importing, and unloading/loading them.
                                                  description no longer takes context in new sessions)
   python3 -I skills.py enable NAME               load it again
   python3 -I skills.py split NAME [--budget 140] [--dry]   move big sections to reference/*.md
+  python3 -I skills.py wanted                    skills the backlog and proposals ask for (intake step 1)
+  python3 -I skills.py intake scan NAME | --topic TEXT    skills and documents relevant to it (step 2)
+  python3 -I skills.py intake run NAME           after writing a skill: what disagrees, proposals,
+                                                 manual review -> .claude/skill-intake/DATE-NAME.md
   python3 -I skills.py index                     rewrite .claude/skills/INDEX.md (the catalogue) and
                                                  each game folder's own .claude/skills/INDEX.md
 
@@ -501,6 +505,10 @@ def kb(n):
 
 
 def main(argv):
+    if argv and argv[0] in ("intake", "wanted"):     # the intake pipeline lives in intake.py
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import intake
+        return intake.main(argv if argv[0] == "wanted" else argv[1:])
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     a = sub.add_parser("list")

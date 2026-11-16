@@ -7,12 +7,12 @@ keywords: "dungeons, dragons, gary, gygax, regions, ruler, capital, towns, popul
 # World of Greyhawk - lore reference
 
 Status 2026-10-29: the wiki's Flanaess page and 143 linked pages (realms, regions, seas, forests,
-hills, peoples) are in `Worlds/Greyhawk/lore/` (fetched through the Wayback Machine; 33 linked
-pages had no archive copy, listed in `pages.txt`). Maps in `Worlds/Greyhawk/maps/`. The lore text
+hills, peoples) are in `IPs/Greyhawk/lore/` at the workspace top (moved 2026-11-15, the user: IP lore in IPs/) (fetched through the Wayback Machine; 33 linked
+pages had no archive copy, listed in `pages.txt`). Maps in `IPs/Greyhawk/maps/`. The lore text
 is the wiki's: summarise it in your own words, never paste it into a game or document.
 
 Other D&D worlds (Forgotten Realms, Eberron, Dark Sun, ...) come later, each as its own
-`Worlds/<world>/` folder and `<world>-lore` skill next to this one.
+`IPs/<world>/` folder and `<world>-lore` skill next to this one.
 
 ## Look it up
 

@@ -45,4 +45,4 @@ files for terrain rules instead of reading the manual's terrain chapter.
 - `lookup.py --list [--game DIR]`: the manuals found, and whether each has text.
 
 ## Related skills
-mod-docs (modded games: the mod's files come before the vanilla manual), save-scum (DARK ARTS, learning only: save before a test, reload after; never in real games), game-sources (manual.py), learn-to-play and learn-to-mod (where it's used), wiki-scout (when the manual is missing), generalize-learning
+mod-docs (modded games: the mod's files come before the vanilla manual), solve-once (the same rule for code: read the source before testing), save-scum (DARK ARTS, learning only: save before a test, reload after; never in real games), game-sources (manual.py), learn-to-play and learn-to-mod (where it's used), wiki-scout (when the manual is missing), generalize-learning

@@ -16,7 +16,7 @@ strikes, a squad's volley); use **Lanchester** as the smoothed big-picture view 
 exchanges, or for fights that really are continuous streams (massed small-arms, melee lines).
 
 Sources (CC BY-SA, summarised in Claude's words): Wikipedia "Lanchester's laws" and "Salvo combat
-model", wikitext in `Military Theory/wiki/*.wiki` (fetched 2026-11-02 via the API). Further reading
+model", wikitext in `Theory/Sources/Military Theory/wiki/*.wiki` (fetched 2026-11-02 via the API). Further reading
 named there: Lanchester, *Aircraft in Warfare* (1916, on Wikisource); Hughes (1995) salvo model;
 Helmbold (2021) *The Key to Victory*; Dupuy, *Numbers, Predictions and War*; Ernest Adams'
 "Kicking Butt by the Numbers" (game design column).
@@ -115,7 +115,7 @@ attack where you can make it square in your favour, defend where you can make it
 
 | File | Holds |
 |---|---|
-| `reference/salvo-combat-system-for-land-battles.md` | **The user's Salvo Combat System for Land Battles (his design - `Military Theory/Salvo Combat System for Land Battles`)** - An earlier version of his own system (the newer one is somewhere from before the move to this PC) |
+| `reference/salvo-combat-system-for-land-battles.md` | **The user's Salvo Combat System for Land Battles (his design - `Theory/Derived/the user/Salvo Combat System for Land Battles`)** - An earlier version of his own system (the newer one is somewhere from before the move to this PC) |
 
 ## Related skills
 war-concepts (glossary: kill chain, point defence, A2/AD, time on target...), military-doctrine (mass, fix and envelop - how to make the fight lopsided), military-operations

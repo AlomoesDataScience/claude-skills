@@ -19,9 +19,31 @@ For lore wikis that sit behind Cloudflare (curl and WebFetch get 403 "Just a mom
 import html, os, re, subprocess, sys, time
 
 
+_ROBOTS = {}
+def robots_ok(url, ua):
+    """robots.txt verdict for url (site-rules skill). 200: obey it; 404: none, allowed; anything else: refuse."""
+    import urllib.parse, urllib.robotparser
+    root = "{0.scheme}://{0.netloc}".format(urllib.parse.urlsplit(url))
+    if root not in _ROBOTS:
+        r = subprocess.run(["curl", "-sSL", "--compressed", "-A", ua, "--max-time", "30", "-w", "\n%{http_code}",
+                            root + "/robots.txt"], capture_output=True, text=True)
+        body, _, code = r.stdout.rpartition("\n")
+        rp = urllib.robotparser.RobotFileParser()
+        if code == "200":
+            rp.parse(body.splitlines())
+        elif code == "404":
+            rp.allow_all = True
+        else:
+            rp.disallow_all = True
+        _ROBOTS[root] = rp
+    return _ROBOTS[root].can_fetch(ua, url)
+
+
 def get(url, out):
     """curl with gzip; returns the HTTP code (archive pages arrive gzip-compressed)."""
-    r = subprocess.run(["curl", "-sSL", "--compressed", "-A", "AI-Development-workspace-wikifetch/1.0 (personal offline reading; low rate)", "--max-time", "60",
+    if not robots_ok(url, "AI-Development-workspace-wikitext/1.0"):
+        sys.exit(f"STOP: robots.txt disallows {url} for bots (site-rules skill). Ask the user.")
+    r = subprocess.run(["curl", "-sSL", "--compressed", "-A", "AI-Development-workspace-wikitext/1.0 (personal offline reading; low rate)", "--max-time", "60",
                         "-o", out, "-w", "%{http_code}", url], capture_output=True, text=True)
     return r.stdout.strip() or "000"
 
@@ -59,10 +81,12 @@ def fetch(base, titles, outdir, year=None, pause=4.0):
 
 
 def api_get(api, params):
+    if not robots_ok(api, "AI-Development-workspace-wikitext/1.0"):
+        sys.exit(f"STOP: robots.txt disallows {api} for bots (site-rules skill). Ask the user.")
     import json
     import urllib.parse
     url = api + "?" + urllib.parse.urlencode(dict(params, format="json"))
-    r = subprocess.run(["curl", "-sSL", "--compressed", "-A", "AI-Development-workspace-wikifetch/1.0 (personal offline reading; low rate)", "--max-time", "60", url],
+    r = subprocess.run(["curl", "-sSL", "--compressed", "-A", "AI-Development-workspace-wikitext/1.0 (personal offline reading; low rate)", "--max-time", "60", url],
                        capture_output=True, text=True)
     return json.loads(r.stdout or "{}")
 

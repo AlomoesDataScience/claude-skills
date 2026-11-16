@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Look up World of Greyhawk lore in the local wiki copy (Worlds/Greyhawk/lore/).
+"""Look up World of Greyhawk lore in the local wiki copy (IPs/Greyhawk/lore/, moved there 2026-11-15).
 
   lore.py realm NAME            a realm's fact box (ruler, capital, towns, population, peoples,
                                 religions, allies, enemies, resources); NAME may be part of a title
@@ -15,7 +15,8 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DND = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(HERE))))   # Dungeons & Dragons/
-LORE = os.path.join(DND, "Worlds", "Greyhawk", "lore")
+WS = os.path.dirname(os.path.dirname(os.path.dirname(DND)))   # the workspace (Games/Tabletop RPGs/D&D -> up 3)
+LORE = os.path.join(WS, "IPs", "Greyhawk", "lore")
 PAGES = os.path.join(LORE, "pages")
 
 

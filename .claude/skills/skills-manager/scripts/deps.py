@@ -18,6 +18,8 @@ T = {
                      "scripts are run as `python -I script.py` instead of `python3 -I`"),
     "Pillow (PIL)": ("python", r"^\s*(from|import) PIL\b", "`sudo apt install python3-pil` or `pip install pillow`",
                      "Pillow", "`pip install pillow`", "ImageGrab works natively on Windows"),
+    "Requests": ("python", r"^\s*(from|import) requests\b", "`sudo apt install python3-requests` or `pip install requests`",
+                 "Requests", "`pip install requests`", "only wiki-scout's wdpull.py"),
     "NumPy": ("python", r"^\s*(from|import) numpy\b", "`sudo apt install python3-numpy`", "NumPy", "`pip install numpy`", ""),
     "OpenCV": ("python", r"^\s*(from|import) cv2\b", "`sudo apt install python3-opencv`", "OpenCV",
                "`pip install opencv-python`", ""),
@@ -97,7 +99,7 @@ def scan(tree):
         if f.endswith(".py"):
             for m in re.finditer(r"^\s*(?:import\s+([A-Za-z_]\w*)\s*(?:$|,|\s+as\b)|from\s+([A-Za-z_]\w*)(?:\.\w+)*\s+import\b)", t, re.M):
                 mod = m.group(1) or m.group(2)
-                if mod not in std and mod not in local and mod not in ("PIL", "numpy", "cv2", "faster_whisper", "yaml", "__future__"):
+                if mod not in std and mod not in local and mod not in ("PIL", "numpy", "cv2", "faster_whisper", "yaml", "requests", "__future__"):
                     unknown[mod].add(sk)
     return used, unknown
 

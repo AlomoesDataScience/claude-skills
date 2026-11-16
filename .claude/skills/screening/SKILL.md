@@ -12,7 +12,7 @@ now the enemy cannot simply plan around your advancing line without any problems
 about responding to your raiding party or any unit that is threatening first or losing units like
 their own screens."
 
-## The general definition (Wikipedia "Screening (tactical)", `Military Theory/wiki/Screening_(tactical).wiki`)
+## The general definition (Wikipedia "Screening (tactical)", `Theory/Sources/Military Theory/wiki/Screening_(tactical).wiki`)
 Closer to the user's than US doctrine is. A screening force, smaller and more mobile than the main body
 and usually light (light infantry and light cavalry historically; armoured cars, light tanks, IFVs,
 drones, helicopters and electronic warfare today):

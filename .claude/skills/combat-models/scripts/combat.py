@@ -16,7 +16,7 @@
         W/X hits needed to put one unit out (staying power). dA = -(BETA*B - Y*A)/W, clipped.
         --first red|blue : one side fires first (surprise / out-scouting).
   combat.py land RED.json BLUE.json [--salvos N] [--dice] [--seed S] [--first red|blue]
-        the user's Salvo Combat System for Land Battles (Military Theory/, prototype numbers): each salvo,
+        the user's Salvo Combat System for Land Battles (Theory/Derived/the user/, prototype numbers): each salvo,
         engaged strength (frontage) x rate of fire = shots; x accuracy (training, equipment, fatigue,
         range) = hits; minus tactics saves (target's defensive or offensive tactics by its posture);
         x armour penetration chance = losses. Both sides fire together unless --first. Expected values,

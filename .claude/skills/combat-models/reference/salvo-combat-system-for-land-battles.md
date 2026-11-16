@@ -1,8 +1,8 @@
-# combat-models - the user's Salvo Combat System for Land Battles (his design - `Military Theory/Salvo Combat System for Land Battles`)
+# combat-models - the user's Salvo Combat System for Land Battles (his design - `Theory/Derived/the user/Salvo Combat System for Land Battles`)
 
 Part of the combat-models skill; SKILL.md links here.
 
-## the user's Salvo Combat System for Land Battles (his design - `Military Theory/Salvo Combat System for Land Battles`)
+## the user's Salvo Combat System for Land Battles (his design - `Theory/Derived/the user/Salvo Combat System for Land Battles`)
 An earlier version of his own system (the newer one is somewhere from before the move to this PC).
 Hughes' salvo model taken down to company/platoon engagements, period = one hour:
 - **Scale**: split the battle into many company/platoon (or battalion, 400-800 men) engagements that

@@ -17,6 +17,9 @@ use when." This is the checklist. skills-manager has the tools (`skills.py new |
   holds the facts and links back (generalize-learning).
 - **Check first** that no existing skill covers it (`skills.py route "<task>"`, INDEX.md). Extend one
   rather than duplicate it.
+- **Intake (the user 2026-11-14).** Before writing, run `skills.py wanted` (is it already asked for?) and
+  `skills.py intake scan --topic "<what it covers>"` (skills and documents to read first). After writing,
+  run `skills.py intake run NAME` and work through its report (section 6). skills-manager has the details.
 
 ## 2. Folder and name
 - The folder name equals `name:` in the frontmatter.
@@ -69,7 +72,10 @@ Budgets (context cost review, 2026-11-09 - the listing is re-sent nearly every t
 ```
 python3 -I .claude/skills/skills-manager/scripts/skills.py check    # fix every error and warning
 python3 -I .claude/skills/skills-manager/scripts/skills.py index    # rebuild INDEX.md
+python3 -I .claude/skills/skills-manager/scripts/skills.py intake run NAME   # .claude/skill-intake/ report
 ```
+- Work through the intake report: make the listed rule lines agree, add the links and test case, look over
+  the documents. Tick each line and set its Status to done.
 - Add the new skill to the Related skills of the skills that should lead to it.
 - If it changes how I work in general, add or adjust the memory pointer (MEMORY.md, one line).
 - If it should go public: the claude-skills export (skills only, the user's name stripped, push only

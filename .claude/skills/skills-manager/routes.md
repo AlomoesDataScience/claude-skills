@@ -10,6 +10,7 @@
 | Screen work / recording | game-ui, idle-view, hand-back, obs-record, stream-panel |
 | Designing our games | borrow-from-games, engine4x-design, heresiarch-guide, combat-models, dice-math |
 | Library and documents | library-intake, source-triage, wiki-scout, game-sources, doc-standards, cleanup |
-| Skills work | skills-manager, write-skill, generalize-learning, skill-sync, rules-skills |
+| Skills work (new skill: wanted, intake scan, write, intake run) | skills-manager, write-skill, generalize-learning, skill-sync, rules-skills |
+| Bug checking / code or paper read | summarize-logic, logic-check, solve-once, context-audit |
 | Context / usage | context-hygiene, unload, context-audit, chat-review, archive-curator |
 | The user away / long task | delegate, waiting-checklist, planning, user-todo |

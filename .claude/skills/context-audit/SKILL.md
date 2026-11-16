@@ -6,7 +6,7 @@ keywords: "average, peak, processed, entered, tool, draining"
 
 # Context audit
 
-The user (2026-11-09): "we're burning too much usage" - review in `Proposals/Context cost review.md`.
+The user (2026-11-09): "we're burning too much usage" - review in `Proposals/Done/Context cost/Context cost review.md`.
 
 `python3 -I .claude/skills/context-audit/scripts/ctxaudit.py [FILE.jsonl ...] [--top 12]`
 (no files = every transcript in ~/.claude/projects). Output stays short: one line per session, then the
@@ -21,4 +21,4 @@ source and tool tables.
   Bash output 27%, tool inputs 21%, screenshots 17%.
 
 ## Related skills
-check-skills (its hook adds to every message), game-ui (screenshot sizes), skills-manager (description sweep).
+check-skills (its hook adds to every message), game-ui (screenshot sizes), skills-manager (description sweep), solve-once (compare a method's token cost).

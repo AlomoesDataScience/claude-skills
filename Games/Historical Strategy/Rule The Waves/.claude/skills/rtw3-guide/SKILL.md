@@ -42,6 +42,14 @@ appendices 133-145.
 - "Influence, not decide, foreign policy" is the user's subfaction idea (play an entity inside a
   state with limited power); interfering ministers are characters with their own agendas.
 
+## Systems
+- **Victory**: prestige = your standing (victories, tough answers to events); spent as a currency to sway events; too low and you are sacked (game over); end score for the Hall of Fame (manual p12)
+- **Economy**: yearly budget from national resources x share given to the navy, paid monthly; a big surplus gets taken by politicians; colony income declines and democracies free their colonies late (p12-13)
+- **Politics**: national characteristics (efficient yards, cautious, surprise attack, hidden faults...); government types change by revolution; tension per nation rises toward war - the player influences but does not decide (p59-60)
+- **Population**: unrest (workers) rises with military spending, long wars, blockade, defeats; falls with victories, social programmes, lower spending; acts as a brake on the budget and can bring revolution (p62); fleet morale follows it
+- **Operational war**: surprise attacks at war start change with the era (destroyers, submarines, carriers); blockade (p67-68)
+- **Tactical combat**: battles on a tactical map where you command divisions; AI-controlled divisions follow national traits (Cautious) (p77+); look: ship silhouettes, health bars, division flags (shot `Proposal/UI References/images.jpeg` in the 4x project)
+
 ## War skills (the user 2026-11-02: call the military skills when playing; build on them)
 - Level of war: **tactical (fleet battles) + strategic (navy building)**; domain: **naval**. Vocabulary: military-doctrine (FM 3-90 tactics) first; military-operations (strategic/operational levels, principles of war) + war-concepts' strategy section (total/limited war, escalation, war economy, war termination); soviet-doctrine for the
   opposing school; war-concepts (glossary, `warwiki.py look TERM`).

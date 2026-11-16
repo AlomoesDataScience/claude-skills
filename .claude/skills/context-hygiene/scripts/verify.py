@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the whole context-saving system works (Proposals/Context cost review.md, built 2026-11-09).
+"""Verify the whole context-saving system works (Proposals/Done/Context cost/Context cost review.md, built 2026-11-09).
   verify.py [-v]      runs every check, prints PASS/FAIL per check and a total; exit 1 if any fails.
 Checks: settings (compaction, retention, 4 hooks and their scripts), the check-skills hook (JSON out, speed,
 hand-off notice), routing test, skills lint and budgets, frontmatter YAML, INDEX.md complete, docs.py check,

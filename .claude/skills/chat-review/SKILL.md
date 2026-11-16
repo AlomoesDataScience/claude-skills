@@ -6,7 +6,7 @@ keywords: "past chat, old session, conversation history, transcript, jsonl, dige
 
 # Chat review - digest, then summarise or mine
 
-The user's proposal (2026-11-09, `Proposals/Skills for reducing context cost overhead`): "A review skill, split into
+The user's proposal (2026-11-09, `Proposals/Done/Context cost/Skills for reducing context cost overhead`): "A review skill, split into
 review for past chat context understanding and summarization, and review for building new skills."
 Raw transcripts are megabytes (screenshots, tool dumps, thinking); a digest is ~1-2% of that.
 

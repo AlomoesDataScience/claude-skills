@@ -53,6 +53,16 @@ communication lag. Also: ship design checks, rules lookups, or advising one play
 1. Read B (tactical sequence) and D (combat), then fight a small tactical battle with the user.
 2. Read CC (the example month) before any campaign; then K and L for empire setup.
 
+## Systems
+- **Time**: campaign in monthly turns processed by the Space Master (X1 checklist); battles drop to tactical turns (B, X)
+- **Intelligence**: communications are a technology ladder: starships and civilian freight network first, then courier drones and buoys at warp points, then comm modules; messages cross warp points only aboard a ship or drone; tightbeam needs a contact point, broadbeam is less secret; data takes hours to turn into information; ships keep **sensor records** of battles that must be carried home (P1-P5, p141-143)
+- **Characters**: graded leaders (Average, Crack, Elite, Legendary); a chain of command where a higher rank overrides, same rank follows diplomats > admirals > generals > governors; good leaders keep units loyal in rebellions (S, p152)
+- **Diplomacy**: first contact needs sustained communication first; a cut-off contact ship may sign treaties up to restricted trade only; NPRs negotiate in fixed stylised states like "dummy hands"; suspicious behaviour (hiding, splitting up near their star) triggers a war check (T, p158-160)
+- **Economy**: everything in MegaCredits; population units give income; Gross Planetary and Empire Value (L, p103)
+- **Operational war**: in a system under attack, governors and leaders order arriving units to fight, pass or retreat; outside orders can't arrive in time (V1.01.5, p182)
+- **AI**: NPRs generated from tables with their own tendencies; most systems have no civilisation (Y, p220)
+- **Production**: ships designed as rows of system boxes on a control sheet (H)
+
 ## War skills (the user 2026-11-02: call the military skills when playing; build on them)
 - Level of war: **tactical + strategic**; domain: **space**. Vocabulary: military-doctrine (FM 3-90 tactics) first; military-operations (strategic/operational levels, principles of war) + war-concepts' strategy section (total/limited war, escalation, war economy, war termination); soviet-doctrine for the
   opposing school; war-concepts (glossary, `warwiki.py look TERM`).

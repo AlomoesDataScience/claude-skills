@@ -33,6 +33,7 @@ others were built for one game or one shelf (folder shown) and work as knowledge
 | learn-to-mod | generic | How Claude learns to mod a game: how mods load, where data lives, the manual's modding chapter, a test mod. |
 | learn-to-play | generic | How Claude learns to play a new video game: manual and in-game help first, map the screen, safe exploration, one test at a time, lessons written down. |
 | loading-screens | generic | Tell whether a game screen is loading and wait through loads properly (shot before, frames after, one general loading test). |
+| logic-check | generic | Sanity check code or a paper against the result it should give: units, signs, both sides of a transfer, bounds, indices, order, copied lines, limit cases. |
 | manual-first | generic | The reflex when anything new shows in a game: look it up in the manual first (lookup.py), then write it into the guide with the page. |
 | map-camera | generic | Drive a game's map camera to see everything: find the camera controls, clear overlays, centre, zoom, pan. |
 | map-measure | generic | Get a game map's size and dimensions early so every square can be found in photos. |
@@ -43,17 +44,21 @@ others were built for one game or one shelf (folder shown) and work as knowledge
 | mod-docs | generic | Keep modded games apart from vanilla: find the mods and versions first, one folder per mod, check the mod before quoting numbers. |
 | move-phases | generic | Give a turn's movement in phases (main body, extension pass, final check), verifying each before the next. |
 | obs-record | generic | Record Claude's gameplay with OBS Studio (flatpak) via its UI and WebSocket (obs.py): start, stop, pause while thinking. |
+| own-theories | generic | Build our own theories from everything we pull: claims notes while reading, theory files with evidence for and against, a test, and the user's ruling. |
 | photo-map | generic | Find out what is going on in any map game: identify UI vs map, zoom out, photograph the whole map, stitch (panorama.py), build the board. |
 | planning | generic | Make a detailed plan before non-trivial work, save it as a file (plan.py) and re-read and tick it as work goes. |
 | rules-skills | generic | Turn a game's rules into a family of mechanics skills and guides (the method behind the Dominions 6 set). |
 | save-scum | generic | Learning-only save and reload around tests to repeat them or undo a bad result. |
 | scouting | generic | Generic scouting for any strategy or tactics game: purposes, fog of war, what to look for, reports, counter-scouting. |
 | screening | generic | Generic screening for any tactics or strategy game: The user's definition, what screens do, placement, when to pull back. |
+| site-rules | generic | What each website we pull from allows bots: robots.txt and bot policy per host, dated copies, sitecheck.py for User-Agent collisions and path verdicts. |
 | skill-sync | generic | Keep skills current with the skills they learn from, and move files in and out of skills (sync.py). |
 | skills-manager | generic | Manage Claude's skills: route a task to skills, list, check budgets, make, import, disable, and generate the routing INDEX.md (skills.py). |
+| solve-once | generic | Fix problems from the source, once: read all the logic in order, check it, then test only written hypotheses drawn from specific lines, not run-and-patch loops. |
 | source-triage | generic | Sort which of a game's documents are worth reading and in what order when a pile is dropped. |
 | soviet-doctrine | generic | The Soviet school of operations and tactics for games (FM 100-2-1 and a CIA report): echelons, deep battle, norms. |
 | stream-panel | generic | A side window for recordings and streams: tracker on top (game, status, goals) and Claude's live log below. |
+| summarize-logic | generic | Write down what a text actually says, line by line and in order (code, a paper, a rules document), before judging or changing it. |
 | unit-combat-math | generic | Unit-versus-unit combat math for any game: hit chance, damage after armour, rounds to kill, both ways. |
 | unload | generic | Unload context: write a hand-off file, then clear or compact; find old context again with recall. |
 | video-watch | generic | Read and watch videos (YouTube or local files) with video.py: info, transcript, frames at chosen times. |
@@ -64,7 +69,6 @@ others were built for one game or one shelf (folder shown) and work as knowledge
 | write-skill | generic | How to write or rewrite a skill so it passes the checker and gets used: format, budgets, keywords, layout, where it goes. |
 | mapgen | tool | standalone tool in Games/Fantasy Strategy/Dominions 6/Maps/mapgen/ |
 | spritestudio | tool | standalone tool in Games/Fantasy Strategy/Dominions 6/spritestudio/ |
-| economic-theory | Economic Theory/.claude | The user's economic theory shelf (Smith, Mill, Marx and more) as searchable text with each work's core ideas. |
 | fogk-guide | Games/AGEOD and Byzantine Games/AGEOD/Field of Glory Kingdoms/.claude | Guide to Field of Glory Kingdoms (AGEOD/Slitherine), medieval grand strategy of realms, vassals and population: manual map, rules, data. |
 | fog2m-guide | Games/AGEOD and Byzantine Games/Byzantine Games/Field of Glory II Medieval/.claude | Guide to Field of Glory II Medieval, a turn-based tactical battle wargame on a square grid: manual page map, rules, UI, lessons. |
 | fog2m-map | Games/AGEOD and Byzantine Games/Byzantine Games/Field of Glory II Medieval/.claude | Using the Field of Glory II Medieval battle map: layout, deployment zones, whole-map photos, reading squares and terrain. |
@@ -171,4 +175,5 @@ others were built for one game or one shelf (folder shown) and work as knowledge
 | hos-guide | Games/Wargames/Hex of Steel/.claude | Starter guide to Hex of Steel, a WWII-and-beyond hex wargame in the Panzer General tradition. |
 | toaw4-guide | Games/Wargames/The Operational Art of War IV/.claude | Starter guide to The Operational Art of War IV, operational hex wargame and scenario editor. |
 | witp-guide | Games/Wargames/War in the Pacific/.claude | Starter guide to War in the Pacific Admiral's Edition, the grand-scale WWII Pacific wargame. |
-| military-theory | Military Theory/.claude | The user's military theory shelf as searchable text, with his essay on space warfare and the classics. |
+| economic-theory | Theory/Sources/Economic Theory/.claude | The user's own economic theory (THE USER.md), the classics (Smith, Mill, Marx) as searchable text, and paradigm notes from the economics portal (PARADIGMS.md). |
+| military-theory | Theory/Sources/Military Theory/.claude | The user's military theory shelf as searchable text, with his essay on space warfare and the classics. |

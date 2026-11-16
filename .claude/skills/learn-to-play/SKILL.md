@@ -234,4 +234,4 @@ tooltip → rule class → visible or invisible), overlays, units on the map, bu
 hypotheses. Example: FoG II `fog2m-map`.
 
 ## Related skills
-save-scum (DARK ARTS, learning only: save before a test, reload after; never in real games), learn-to-mod (twin - they compound), manual-first (reflex for anything new), game-setup, game-ui, map-usage + map-camera + photo-map (map games), battle-tactics, planning, learn-from-tutorials, generalize-learning, skills-manager
+save-scum (DARK ARTS, learning only: save before a test, reload after; never in real games), learn-to-mod (twin - they compound), manual-first (reflex for anything new), game-setup, game-ui, map-usage + map-camera + photo-map (map games), battle-tactics, planning, learn-from-tutorials, generalize-learning, skills-manager, wiki-scout (pull the game's wiki as text)

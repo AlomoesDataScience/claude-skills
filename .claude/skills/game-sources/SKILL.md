@@ -57,7 +57,7 @@ wikifetch.py api API_URL TITLES.txt OUTDIR       # each page's wikitext as OUTDI
   turn lore into game data. Keep the HTML: it is the source.
 - Lore and wiki text is the authors' work: keep it as local reference, summarise it in your own
   words in skills, quote only short bits.
-- Example: the Greyhawk lore (D&D) in `Games/Tabletop RPGs/Dungeons & Dragons/Worlds/Greyhawk/lore/`
+- Example: the Greyhawk lore (D&D) in `IPs/Greyhawk/lore/` (an IP's lore goes in IPs/)
   (Flanaess overview + 143 pages, infoboxes.json).
 
 ## Where things go

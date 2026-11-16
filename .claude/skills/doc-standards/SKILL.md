@@ -7,7 +7,7 @@ keywords: "documentation, docs, standards, document management, writing docs, bu
 # Doc standards - how documents are kept here
 
 The user's proposal (2026-11-09): "documentation for documentation standards I should get or develop and adopt".
-Source: `Proposals/Context cost review.md` section 4. The point: an AI re-reads documents constantly, so
+Source: `Proposals/Done/Context cost/Context cost review.md` section 4. The point: an AI re-reads documents constantly, so
 small, layered, single-source documents cost less context and go stale less.
 
 ## The rules
@@ -44,4 +44,4 @@ docs.py adr "TITLE"                new decision record
 Run `check` after any documentation sweep and at the end of a task that wrote documents.
 
 ## Related skills
-skills-manager (split, index), write-skill, unload, archive-curator, cleanup, library-intake, planning.
+skills-manager (split, index), write-skill, unload, archive-curator, cleanup, library-intake, planning, summarize-logic (code and paper read reports).

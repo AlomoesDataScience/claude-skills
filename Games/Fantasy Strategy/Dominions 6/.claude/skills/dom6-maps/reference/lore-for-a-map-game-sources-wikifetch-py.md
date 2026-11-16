@@ -7,9 +7,9 @@ Part of the dom6-maps skill; SKILL.md links here.
 - Lore wikis are read with the generic `game-sources` skill (`wikifetch.py` in the project's root
   `.claude/skills/game-sources/scripts/`): Wayback fetching for Cloudflare sites, page text, links,
   fact boxes (`infoboxes OUTDIR OUT.json`), or the MediaWiki API (`allpages`, `api`).
-- Greyhawk lore now lives with D&D: `Games/Tabletop RPGs/Dungeons & Dragons/Worlds/Greyhawk/lore/`
+- Greyhawk lore now lives in `IPs/Greyhawk/lore/`
   (Flanaess.html/.txt, `pages/` 143 pages, `infoboxes.json` 89 fact boxes) and the source pictures
-  in `.../Worlds/Greyhawk/maps/` (`Greyhawk HD.png`, `Greyhawk.jpeg`). The `greyhawk-lore` skill
+  in `IPs/Greyhawk/maps/` (`Greyhawk HD.png`, `Greyhawk.jpeg`). The `greyhawk-lore` skill
   there (`lore.py realm/list/search`, `realms.md`) is the quick way to the realm facts.
 - `from_image.py` gives every province a realm (`self.realm`: its own label, or the nearest label
   for fill provinces). Config fields read by `province_lines` (written as `#setland` blocks at the

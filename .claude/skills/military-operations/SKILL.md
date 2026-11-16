@@ -6,7 +6,7 @@ keywords: "army, theory, shelf, page, refs, words, levels, objective, offensive,
 
 # Military operations (FM 3-0) for games
 
-Source: `Military Theory/ARN43326-FM_3-0-000-WEB-1.pdf` (+ `.txt`, "=== page N" = PDF page),
+Source: `Theory/Sources/Military Theory/ARN43326-FM_3-0-000-WEB-1.pdf` (+ `.txt`, "=== page N" = PDF page),
 21 March 2025 edition. Claude's own summary; PDF pages in brackets. Tactics (how one battle is
 fought) live in **military-doctrine**; the Soviet school in **soviet-doctrine**.
 

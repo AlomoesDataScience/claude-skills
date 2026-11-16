@@ -7,7 +7,7 @@ keywords: "playing, designing, war-related, articles, local, copy, theory, wiki,
 # War concepts (Wikipedia's Index of war-related articles, triaged)
 
 The user, 2026-11-02: "Lot of stuff to pull from that ... some of it is less useful than others."
-Source: `Military Theory/wiki/Index_of_war-related_articles.wiki` (wikitext) -> `war-index.json`
+Source: `Theory/Sources/Military Theory/wiki/Index_of_war-related_articles.wiki` (wikitext) -> `war-index.json`
 (every article: title, short description, opening two sentences, tier) and `war/<title>.txt`
 (full text of tier A). Wikipedia text is CC BY-SA; the files are a local reading copy; everything
 below is Claude's own summary.
@@ -132,7 +132,7 @@ national level.
 | `reference/domains.md` | **Domains** - Land / mountain / jungle / cold-weather / urban / subterranean / night warfare - each changes   speed, sight |
 
 ## Related skills
-military-doctrine (FM 3-90 terms with page refs - fuller on the tactical tasks), military-operations
+wiki-scout (this index is its worked example of an index-first topic scrape), military-doctrine (FM 3-90 terms with page refs - fuller on the tactical tasks), military-operations
 (FM 3-0), soviet-doctrine, combat-models (Lanchester and salvo math), screening, scouting,
-battle-tactics, military-theory shelf skill in Military Theory/ (Clausewitz, Jomini, Corbett, Mao,
+battle-tactics, military-theory shelf skill in Theory/Sources/Military Theory/ (Clausewitz, Jomini, Corbett, Mao,
 The user's space essay), borrow-from-games (design).

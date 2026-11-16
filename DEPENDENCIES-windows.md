@@ -27,6 +27,7 @@ On Windows:
 | Linux | Windows equivalent | Install | Notes | Used by |
 |---|---|---|---|---|
 | Pillow (PIL) | Pillow | `pip install pillow` | ImageGrab works natively on Windows | context-audit, dom6-battle-view, dom6-knowledge, dom6-map, dom6-maps, dom6-nations, dom6-pretender-ingame, dom6-sprites +10 more |
+| Requests | Requests | `pip install requests` | only wiki-scout's wdpull.py | wiki-scout |
 | NumPy | NumPy | `pip install numpy` | - | dom6-battle-view, dom6-map, fog2m-guide, game-ui, map-camera, map-measure, photo-map, video-watch |
 | OpenCV | OpenCV | `pip install opencv-python` | - | dom6-battle-view, map-measure |
 | faster-whisper | faster-whisper | `pip install faster-whisper` | optional | video-watch |

@@ -37,6 +37,11 @@ alternate reality races 213, **the guts of combat 217, cloaking 227, mass driver
 - Simultaneous turns with a host = a clean multiplayer model; mass-driver packets are an early
   version of "throw rocks/missiles across systems" from his space warfare notes.
 
+## Systems
+- **Tactical combat**: auto-resolved; per-fleet **battle plans** (primary and secondary target type, tactic, who to attack) set before; up to 16 rounds; tokens (same-design groups) move and fire in phases; **Battle VCR** replays any battle on demand from the message's View button (user guide 15-11, "Reviewing a Space Battle")
+- **UI**: one main screen: star map, left column of stacked tiles for the selected planet or fleet (minerals, status, production, starbase), message pane with Prev/Goto/Next, summary pane for the object under the cursor, distance readout (the user's reference shot `Proposal/UI References/stars_1.png` in the 4x project)
+- **Production**: per-planet production queue; three minerals (Ironium, Boranium, Germanium) gate everything
+
 ## War skills (the user 2026-11-02: call the military skills when playing; build on them)
 - Level of war: **strategic (4X)**; domain: **space**. Vocabulary: military-operations (strategic/operational levels, principles of war) + war-concepts' strategy section (total/limited war, escalation, war economy, war termination); soviet-doctrine for the
   opposing school; war-concepts (glossary, `warwiki.py look TERM`).

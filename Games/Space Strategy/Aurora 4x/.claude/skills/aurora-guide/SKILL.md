@@ -61,6 +61,15 @@ assistant with the manual).
 - Designable components (engines, missiles) at chosen sizes; civilian economy running beside
   the state's; SpaceMaster mode = his "Universe Control Tools".
 
+## Systems
+- **Time**: player picks the increment (5 s to 30 days); sub-pulses inside; automatic interrupts (contact, missile launch, ship under fire, fleet arrival, construction/research done, fuel, breakdowns); C# removed false interrupts (no-target fire controls make a message, not a stop) (manual p1312-1313)
+- **Tactical combat**: fixed phase order each increment: movement + defensive fire, beams + area PD, missile launch, missile movement, CIWS, damage (p853); no separate battle screen - it happens on the system map
+- **Population**: unrest points cut ALL output by the same percent (25 unrest = -25%); sources with yearly rates (radiation, overcrowding, too few occupation troops, too little local protection, forced labour); police strength above the requirement reduces it; natural fall depends on Determination (formulas p1387, p330-331)
+- **Politics**: political status per colony (slave, conquered, occupied, subjugated) multiplies the troops needed; colonies expect armed ships in the system (protection value) (p330, p1387)
+- **Diplomacy**: communication rating 0-100% with each alien race before any treaty (p1133)
+- **UI**: one window per subject behind a row of 30 icon buttons; system map with display checkboxes per layer; dense, powerful, hard to learn (the user's reference shot `Projects/Our Games/4x Game Engine/Proposal/UI References/innersol1.png`)
+- **Modding**: all data in one SQLite database (DIM_ tables)
+
 ## War skills (the user 2026-11-02: call the military skills when playing; build on them)
 - Level of war: **strategic + tactical (4X)**; domain: **space**. Vocabulary: military-doctrine (FM 3-90 tactics) first; military-operations (strategic/operational levels, principles of war) + war-concepts' strategy section (total/limited war, escalation, war economy, war termination); soviet-doctrine for the
   opposing school; war-concepts (glossary, `warwiki.py look TERM`).

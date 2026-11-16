@@ -6,7 +6,7 @@ keywords: "playing, designing, distilled, words, theory, shelf, page, refs, type
 
 # Military doctrine (FM 3-90 Tactics) for games
 
-Source: `Military Theory/ARN38160-FM_3-90-000-WEB-1.pdf` (+ `.txt`, page markers "=== page N" =
+Source: `Theory/Sources/Military Theory/ARN38160-FM_3-90-000-WEB-1.pdf` (+ `.txt`, page markers "=== page N" =
 PDF page). Search it: `python3 -I .claude/skills/game-sources/scripts/manual.py` or grep the .txt.
 Everything below is Claude's own summary; PDF page numbers in brackets.
 
@@ -137,4 +137,4 @@ mechanisms, main effort, culmination), soviet-doctrine (the opposing school: ech
 from the march, encirclement), battle-tactics (the turn method - uses this vocabulary), screening (the user's broad screen, mapped to
 screen/guard/cover), scouting (recon fundamentals and forms), move-phases (phases as bounds and
 phase lines), draw-moves (draw phase lines and objectives), military-theory shelf skill in
-Military Theory/ (Clausewitz, Jomini, Corbett, Mao - strategy level), borrow-from-games (design).
+Theory/Sources/Military Theory/ (Clausewitz, Jomini, Corbett, Mao - strategy level), borrow-from-games (design).

@@ -21,7 +21,8 @@ Fast matcher: `python3 -I .claude/skills/check-skills/scripts/checkskills.py "TA
 | Screen work / recording | game-ui, idle-view, hand-back, obs-record, stream-panel |
 | Designing our games | borrow-from-games, engine4x-design, heresiarch-guide, combat-models, dice-math |
 | Library and documents | library-intake, source-triage, wiki-scout, game-sources, doc-standards, cleanup |
-| Skills work | skills-manager, write-skill, generalize-learning, skill-sync, rules-skills |
+| Skills work (new skill: wanted, intake scan, write, intake run) | skills-manager, write-skill, generalize-learning, skill-sync, rules-skills |
+| Bug checking / code or paper read | summarize-logic, logic-check, solve-once, context-audit |
 | Context / usage | context-hygiene, unload, context-audit, chat-review, archive-curator |
 | The user away / long task | delegate, waiting-checklist, planning, user-todo |
 
@@ -55,6 +56,7 @@ Fast matcher: `python3 -I .claude/skills/check-skills/scripts/checkskills.py "TA
 - **learn-to-mod** - How Claude learns to mod a game: how mods load, where data lives, the manual's modding chapter, a test mod _[knows, learning, find, read, official, docs, map, file, formats, self-documenting, headers, csv, comment, rows, ...]_
 - **learn-to-play** - How Claude learns to play a new video game: manual and in-game help first, map the screen, safe exploration, one test at a time, lessons written down _[know, yet, twin, learn-to-mod, covers, learning, mod, compound, learned, dominions, read, controls, explore, menus, ...]_
 - **loading-screens** - Tell whether a game screen is loading and wait through loads properly (shot before, frames after, one general loading test) _[game's, virtual, method, shoot, starting, load, act, grab, fast, possible, until, changes, else, action, did, take, ...]_
+- **logic-check** - Sanity check code or a paper against the result it should give: units, signs, both sides of a transfer, bounds, indices, order, copied lines, limit cases.... _[check, logic check, sanity check, bug check, math typo, broken math, review a paper, check the logic, proof check, ...]_
 - **manual-first** - The reflex when anything new shows in a game: look it up in the manual first (lookup.py), then write it into the guide with the page _[default, pops, screen, option, setting, map, type, term, unit, line, order, icon, game's, before, guessing, clicking, ...]_
 - **map-camera** - Drive a game's map camera to see everything: find the camera controls, clear overlays, centre, zoom, pan _[drives, needs, control, in-game, key, list, first, manual, screen, choose, top-down, angled, view, whole, detail, ...]_
 - **map-measure** - Get a game map's size and dimensions early so every square can be found in photos _[before, reading, terrain, planning, read, setup, screen, scenario, info, advanced, options, editor, manual, find, ...]_
@@ -65,29 +67,29 @@ Fast matcher: `python3 -I .claude/skills/check-skills/scripts/checkskills.py "TA
 - **mod-docs** - Keep modded games apart from vanilla: find the mods and versions first, one folder per mod, check the mod before quoting numbers _[generic, rules, keeping, separate, base, runs, give, skill, named, game-mod, dom6-scbm, database, change, tables, ...]_
 - **move-phases** - Give a turn's movement in phases (main body, extension pass, final check), verifying each before the next _[instead, once, problem, end, phase, mandatory, called, done, block, advance, line, kept, together, unit's, leftover, ...]_
 - **obs-record** - Record Claude's gameplay with OBS Studio (flatpak) via its UI and WebSocket (obs.py): start, stop, pause while thinking _[launch, set, through, game-ui, guard, pointed, window, control, scripts, status, resume, mute, request, including, ...]_
+- **own-theories** - Build our own theories from everything we pull: claims notes while reading, theory files with evidence for and against, a test, and the user's ruling _[theory, theories, own theories, derived theory, claims, claims notes, hypothesis, evidence, Theory/Derived, ...]_
 - **photo-map** - Find out what is going on in any map game: identify UI vs map, zoom out, photograph the whole map, stitch (panorama.py), build the board. Use at the start... _[finds, screen, elements, first, borders, overlapping, steps, north, south, west, east, photos, picture, terrain, ...]_
 - **planning** - Make a detailed plan before non-trivial work, save it as a file (plan.py) and re-read and tick it as work goes _[should, referenced, start, step, decision, something, off-plan, what's, next, steps, they're, done, record, changes, ...]_
 - **rules-skills** - Turn a game's rules into a family of mechanics skills and guides (the method behind the Dominions 6 set) _[turns, numbered, plan, file, first, skill, mechanic, player, decides, pages, item, approves, extras, ticks, sources, ...]_
 - **save-scum** - Learning-only save and reload around tests to repeat them or undo a bad result _[dark, arts, before, afterwards, run, again, try, another, option, didn't, scumming, dubiously, form, cheating, ...]_
 - **scouting** - Generic scouting for any strategy or tactics game: purposes, fog of war, what to look for, reports, counter-scouting. Use at the start of every battle or... _[without, composition, positions, intent, ground, denying, same, whether, recon, unit, worth, hide, clock, reading, ...]_
 - **screening** - Generic screening for any tactics or strategy game: The user's definition, what screens do, placement, when to pull back _[unit, front, forces, enemy, react, strong, enough, win, fight, happens, has, respect, longer, plan, around, ...]_
+- **site-rules** - What each website we pull from allows bots: robots.txt and bot policy per host, dated copies, sitecheck.py for User-Agent collisions and path verdicts. Use... _[robots.txt, robot policy, bot policy, crawl-delay, rate limit, 429, retry-after, user-agent, user agent policy, ...]_
 - **skill-sync** - Keep skills current with the skills they learn from, and move files in and out of skills (sync.py) _[date, single, skill's, sources, builds, names, counterparts, games, dom6-map, fog2m-map, mark, records, these, ...]_
 - **skills-manager** - Manage Claude's skills: route a task to skills, list, check budgets, make, import, disable, and generate the routing INDEX.md (skills.py) _[project, finds, needs, order, load, lists, builds, checks, frontmatter, name, description, length, missing, files, ...]_
+- **solve-once** - Fix problems from the source, once: read all the logic in order, check it, then test only written hypotheses drawn from specific lines, not run-and-patch loops _[debug, bug fixing, solve once, iterate, trial and error, guessing, poking around, hypothesis, test design, ...]_
 - **source-triage** - Sort which of a game's documents are worth reading and in what order when a pile is dropped _[drops, files, folder, toaw, literally, took, docs, threw, scans, install, guesses, one's, role, keys, hotkey, lists, ...]_
 - **soviet-doctrine** - The Soviet school of operations and tactics for games (FM 100-2-1 and a CIA report): echelons, deep battle, norms. Use for Eastern Front or Cold War games... _[words, army, secret, field, manual, pu-48, military, theory, shelf, laws, principles, art, offense, normal, form, ...]_
 - **stream-panel** - A side window for recordings and streams: tracker on top (game, status, goals) and Claude's live log below _[right-hand, column, streamer, layout, mode, line, fields, such, place, turn, ticks, recent, events, session, timer, ...]_
+- **summarize-logic** - Write down what a text actually says, line by line and in order (code, a paper, a rules document), before judging or changing it _[summarize, summary, summarise, line by line, what it reads, how does this work, explain the code, logic report, ...]_
 - **unit-combat-math** - Unit-versus-unit combat math for any game: hit chance, damage after armour, rounds to kill, both ways _[chain, round, judge, matchup, kills, whom, faster, measure, buff, debuff, saves, costs, stat, number, gang, because, ...]_
 - **unload** - Unload context: write a hand-off file, then clear or compact; find old context again with recall _[safely, state, next, steps, files, read, stretch, starts, small, without, loading, games, hand, off]_
 - **video-watch** - Read and watch videos (YouTube or local files) with video.py: info, transcript, frames at chosen times _[yt-dlp, site, url, file, title, channel, length, chapters, description, uploader's, automatic, captions, clean, ...]_
 - **waiting-checklist** - Make a checklist document for work parked until something happens (game free, the user's go, a file) _[app, gives, answer, arrives, machine, available, start, cold, without, re-deriving, anything, writes, work's, folder, ...]_
 - **war-concepts** - Glossary of war concepts for games, triaged from Wikipedia's war index into what matters for play and design _[playing, designing, war-related, articles, local, copy, theory, wiki, matter, full, text, specific, weapons, ...]_
 - **war-language** - Translate a game's situation up into military terms (METT-TC, SALUTE, mission, intent), reason there, and back down into orders _[higher-order, warfare, games, going, game, units, squares, points, morale, bars, turns, oakoc, enemy, most-likely, ...]_
-- **wiki-scout** - Find and pull wikis, manuals and docs for a game or franchise as safe text (Wayback first) with scout.py _[gently, finds, lives, fandom, paradox, strategywiki, pcgamingwiki, wikipedia, through, machine, requests, lists, ...]_
+- **wiki-scout** - Find and pull wikis, manuals and docs for a game or franchise as safe text (Wayback first) with scout.py _[wiki, wikis, wikipedia dump, dumppass, xml dump, multistream, scrape, scraping, fandom, wiki.gg, paradox wiki, ...]_
 - **write-skill** - How to write or rewrite a skill so it passes the checker and gets used: format, budgets, keywords, layout, where it goes _[required, folder, name, rules, frontmatter, description, most, characters, says, covers, contains, literal, phrase, ...]_
-
-## Economic Theory
-
-- **economic-theory** - the user's economic theory shelf (Smith, Mill, Marx and more) as searchable text with each work's core ideas _[adam, wealth, nations, john, stuart, principles, political, economy, karl, capital, volumes, i-iii, words, map, onto, ...]_
 
 ## Games/AGEOD and Byzantine Games/AGEOD/Field of Glory Kingdoms
 
@@ -309,15 +311,19 @@ Fast matcher: `python3 -I .claude/skills/check-skills/scripts/checkskills.py "TA
 
 - **witp-guide** - Starter guide to War in the Pacific Admiral's Edition, the grand-scale WWII Pacific wargame _[by3, games, matrix, theatre, daily, turns, task, forces, air, naval, ops, logistics, promo, manual, excerpt, covers, ...]_
 
-## Military Theory
-
-- **military-theory** - the user's military theory shelf as searchable text, with his essay on space warfare and the classics _[nature, war, today, tomorrow, everything, tracked, armor, loses, stealth, denial, matter, low-intensity, cyber, ...]_
-
-## Political Theory
-
-
 ## Projects/Our Games/4x Game Engine
 
 
 ## Projects/Our Games/Heresiarch
+
+
+## Theory/Sources/Economic Theory
+
+- **economic-theory** - the user's own economic theory (THE USER.md), the classics (Smith, Mill, Marx) as searchable text, and paradigm notes from the economics portal (PARADIGMS.md) _[adam, wealth, nations, john, stuart, principles, political, economy, karl, capital, volumes, i-iii, words, map, onto, ...]_
+
+## Theory/Sources/Military Theory
+
+- **military-theory** - the user's military theory shelf as searchable text, with his essay on space warfare and the classics _[nature, war, today, tomorrow, everything, tracked, armor, loses, stealth, denial, matter, low-intensity, cyber, ...]_
+
+## Theory/Sources/Political Theory
 

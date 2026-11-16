@@ -20,7 +20,11 @@ skills.py new NAME "DESCRIPTION" [--uses a,b] [--script tool.py]
 skills.py import PATH [--name NAME] [--force]     # a folder, a SKILL.md or a .zip
 skills.py disable NAME / enable NAME  # unload to .claude/skills-disabled/, load back
 skills.py index                       # rewrite INDEX.md (routing index: routes.md + one line per skill)
+skillsdata.py all                     # Skills Data/CATALOGUE.md (what + why per skill) and COVERAGE.md (folders without skills)
 skills.py split NAME [--dry]          # SKILL.md over 150 lines -> big sections to reference/*.md
+skills.py wanted                      # skills the backlog and proposals ask for (intake step 1)
+skills.py intake scan NAME | --topic TEXT   # skills and documents relevant to it (step 2)
+skills.py intake run NAME              # after writing: disagreements, proposals, review report (3, 5, 6)
 ```
 
 
@@ -68,6 +72,17 @@ Make a skill when Claude has built a tool or worked out a workflow that will be 
 (a script that drives the game, a file format worked out, a checked procedure), or when the user
 asks. Not for one-off answers.
 
+**The intake pipeline** (the user 2026-11-14, "New Skills Documentation"; `scripts/intake.py`), for
+every new or rewritten skill:
+- (1) `skills.py wanted` lists the ideas the backlog and proposals already ask for. Pick one, or fold it into a near skill.
+- (2) `skills.py intake scan --topic "..."` (or `scan NAME` for a rewrite) names the skills and documents
+  to read first. Read their matching sections only.
+- (4) Write the skill (steps 1 to 3 below, and write-skill).
+- (3, 5, 6) `skills.py intake run NAME` writes `.claude/skill-intake/DATE-NAME.md`. It lists the rule
+  lines in other skills that share its terms (make them agree), link, overlap, keyword, routes and test
+  proposals, and the documents and ideas for manual review. Work through it, tick it, and set the report's
+  Status to done.
+
 1. `skills.py new NAME "WHAT IT DOES. Use when ..." --uses dep1,dep2 --script tool.py [--dir FOLDER]`.
    Names: lowercase with hyphens, a game prefix for game skills (`dom6-`, `coe5-`, `se4-`, `hos-`...).
    Pick the level: generic tool → no `--dir`; one game → `--dir "<Genre>/<Game>"`; shared by a
@@ -76,7 +91,7 @@ asks. Not for one-off answers.
 2. Fill in SKILL.md in the house style of the other skills: short intro, files, commands, a
    workflow, facts verified (with their source), gotchas and the user's rules. Move the scripts in
    (`scripts/`), and point to other skills by name instead of copying them.
-3. `skills.py check NAME`, then `skills.py index`. Tell the user what was added.
+3. `skills.py check NAME`, then `skills.py index` and `skillsdata.py all`. Tell the user what was added.
 4. Growing an existing skill is often better than a new one: add the section there and update
    its description (keep it under 1024 characters; `check` says).
 
