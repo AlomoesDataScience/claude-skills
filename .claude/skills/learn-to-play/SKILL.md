@@ -25,11 +25,6 @@ Generic tools: **game-ui** (guarded input, screenshots, OCR in any language), **
 (`<Genre>/<Game>/.claude/skills/<prefix>-...`); Dominions' are dom6-ui, dom6-knowledge, dom6-game.
 Start a new game with its starter skill (`<prefix>-guide`): what the manual covers, where to look.
 
-## The loop
-
-**Read → look → try one thing → check the screen → write it down → repeat.**
-Each step is small, so a wrong guess costs one click, not a turn or a life.
-
 ## Workflow
 
 ### 1. Set the ground rules first
@@ -103,66 +98,6 @@ Each step is small, so a wrong guess costs one click, not a turn or a life.
   province scanner, a list reader that re-finds rows after popups.
 - If a script works across sessions, put it in a skill (skills-manager `new`).
 
-## Real-time strategy with pause (Paradox: Stellaris, CK, EU, HOI, Victoria)
-
-The user's note (2026-11-01): Paradox games run in real time, not turns, so a single screenshot is
-not enough. And his PC is weak, so they run slowly (late game worst).
-- **Play pause-driven:** pause (Space), read the screen, give every order, unpause at speed 1 or 2
-  for a short stretch, pause again. Pause on events too (the games can auto-pause on chosen alerts:
-  set that up first). This turns them into short turns that screenshot reading can handle.
-- **Watch while it runs:** a loop that captures the window every few seconds and OCRs only the
-  bits that matter (date, resources, alert icons, popups), pausing when something changes. Build
-  this on game-ui's ocr.py as a `watch` mode when we first play one. Keep it light, since the game
-  already struggles on this machine.
-- Low settings, small galaxies or maps, fewer AI empires: faster ticks and fewer popups.
-
-## Real-time games: platformers and metroidvanias (Metroid and similar)
-
-The loop is the same, but time does not wait, so the order changes:
-- **Pause or slow down where possible.** Read the screen while paused. Tests in real time are
-  short bursts followed by a screenshot.
-- **Movement physics first, in a safe room:** walk speed, jump height and length (tap vs hold),
-  run-jump distance, wall and ledge behaviour, crouch and morph, how long a dash or shot lasts.
-  Measure in tiles or pixels and write the numbers down. "A full jump clears 3 tiles up, 5
-  across" is a fact you can plan with.
-- **Enemies one at a time:** their pattern, their reach, how many hits they take, what drops.
-  Note what hurts the player and how much (health bar pixels).
-- **Deaths and retries are experiments**, as long as they are cheap. Know where the last save or
-  checkpoint is before trying something risky. Never save over a slot without a go-ahead.
-- **Keep a map with notes.** Rooms, doors by colour or type, blocked paths and *why* they are
-  blocked (a high ledge, a missile door, a morph tunnel), save rooms, items. The metroidvania
-  loop is: find a gate, note it, find the ability, come back. This is the platformer version of
-  "red dots = blocked, needs flying".
-- **Abilities change the map.** After each new power, check the gate list for paths it opens.
-- **Timing and reaction** may be beyond screenshot-speed play. Say so honestly, and focus on
-  routing, planning and mechanics, where careful study wins.
-
-## Strategy games in general (4X, wargames)
-
-- Find the win condition and its numbers early. Dominions: 100 ascension points, and the 60
-  thrones are worth exactly 100.
-- Learn the economy screens before spending: income, upkeep, what limits buying. On Dominions
-  turn 2 that was resources, not gold.
-- Scout before attacking, and read every report. Compare the enemy's count and type with your
-  own army.
-- Settings screens (battle orders, formations, scripts) matter as much as big decisions. Learn
-  them on a safe turn.
-- Opponents' public announcements (proclamations, the epithet list) are free intelligence.
-
-## Gotchas seen while learning Dominions
-
-Mistakes are part of building a skill, for anyone (the user). Make them where they are cheap,
-notice them on the screenshot, fix them, and write the lesson down so it happens once.
-
-
-- OCR misses words on coloured bars and map labels. Check by screenshot, and click by position
-  only after the label has been read once.
-- A background watcher can be fooled by another window on top. Check the game window itself.
-- Popups can be drawn *instead of* a screen, not over it. Close them with their own Exit.
-- Checks that are too strict stop good work: a window may have no title, or a lone commander no
-  formations. Loosen the check, then look at the screenshot.
-- Don't guess what a symbol, title or term means. Say it is unknown and ask, or test it.
-
 ## Load the game's guide first (the user, 2026-11-02: "I kinda thought you read the manual")
 - At the start of every session with a game and before every battle/turn sequence, load that game's
   guide skill and read its play reference (FoG II: fog2m-guide PLAY.md). Game guides live in the
@@ -194,44 +129,21 @@ notice them on the screenshot, fix them, and write the lesson down so it happens
    already seen and chosen. The user leads the walkthrough; don't run ahead (no Create / End Turn on my own).
 
 ## After the play guide: a mechanics family (rules-skills)
-Once a game is played regularly, turn its rules into one skill per mechanic a player decides about (combat,
-morale, economy, stealth...) with rules-skills: numbered plan, pages cited, numbers computed (dice-math,
-unit-combat-math), "rank everything" lists from the data (game-database), mods compared (mod-diff), and a
-`## Systems` section for borrow-from-games. Dominions 6 was the first (2026-11-03, ~45 skills).
+Once a game is played regularly, make one skill per mechanic a player decides about with rules-skills (pages
+cited, numbers computed, a `## Systems` section). Dominions 6 was the first (2026-11-03, ~45 skills).
 
-## Order of truth (the user, 2026-11-02)
-1. **The game itself** is the holy grail - what it shows and does (tooltips, combat breakdowns,
-   results) wins, even over the manual. If the game contradicts the manual, respect the game and
-   note the difference.
-2. **The manual** - when gameplay hasn't shown it yet, check the manual (from the page, not memory).
-   (Mod games: the mod's files come before the manual - mod-docs.)
-3. **Videos** (guides, let's plays - video-watch), then **the wiki**: The user 2026-11-03, "videos is above wiki".
-4. **What the user says** comes below all of these - but if he insists, **test it** in the game (the user,
-   2026-11-03: "what user says should be below all that, but test it if they insist").
-5. **Hypothesis** - if nothing settles it, write it down as a hypothesis with how to test it, and
-   test it later. In single-player games, play on until it can be tested; record the result.
-Never present an assumption as a rule. Each game guide keeps a "Hypotheses to test" list AND a
-"Game vs manual" list: every place the game behaves differently from the manual (or the manual is
-silent and the game does something odd) - what the manual says, what the game did, when, evidence
-(screenshot/log). Watch for these actively during play, not only when something breaks.
+## Reference files (read the one the step needs)
 
-## War games: speak doctrine both ways (the user, 2026-11-02)
-For any game with fighting (wargame, 4X, grand strategy, tactics), as part of learning it:
-- Write the game's **`LEXICON.md`** in its guide folder (war-language skill, `warlang.py lexicon`):
-  units -> roles, terrain -> OAKOC, rules -> effects, victory -> end state, task -> game actions.
-  Fill it from the manual first, then from play.
-- From the first real battle, **log and evaluate both armies every turn** (army-log, `armylog.py`),
-  reading every unit off the screen; find out how the game counts losses and victory and set the log
-  to it.
-- Each turn: UP (situation in doctrine terms) -> THINK -> DOWN (orders) -> CHECK, using
-  military-doctrine / military-operations / soviet-doctrine / war-concepts / combat-models.
-- Every war game's guide has a "War skills" section saying which level of war and domain it is.
-
-## Map games: write a `<game>-map` skill (the user, 2026-11-02)
-Every game with a map or board gets its own map skill before real play, next to its guide. The
-required sections are in the **map-usage** skill, part 4: layout, camera, terrain legend (look →
-tooltip → rule class → visible or invisible), overlays, units on the map, building the board,
-hypotheses. Example: FoG II `fog2m-map`.
+| File | Holds |
+|---|---|
+| `reference/the-loop.md` | **The loop** - Read → look → try one thing → check the screen → write it down → repeat |
+| `reference/real-time-strategy-with-pause-paradox-st.md` | **Real-time strategy with pause (Paradox: Stellaris, CK, EU, HOI, Victoria)** - the user's note (2026-11-01): Paradox games run in real time, not turns, so a single screenshot is not enough |
+| `reference/real-time-games-platformers-and-metroidv.md` | **Real-time games: platformers and metroidvanias (Metroid and similar)** - The loop is the same, but time does not wait, so the order changes: - Pause or slow down where possible |
+| `reference/strategy-games-in-general-4x-wargames.md` | **Strategy games in general (4X, wargames)** - Find the win condition and its numbers early |
+| `reference/gotchas-seen-while-learning-dominions.md` | **Gotchas seen while learning Dominions** - Mistakes are part of building a skill, for anyone (the user) |
+| `reference/order-of-truth-the user-2026-11-02.md` | **Order of truth (the user, 2026-11-02)** - 1 |
+| `reference/war-games-speak-doctrine-both-ways-the user.md` | **War games: speak doctrine both ways (the user, 2026-11-02)** - For any game with fighting (wargame, 4X, grand strategy, tactics), as part of learning it: - Write the game's  |
+| `reference/map-games-write-a-game-map-skill-the user-20.md` | **Map games: write a `<game>-map` skill (the user, 2026-11-02)** - Every game with a map or board gets its own map skill before real play, next to its guide |
 
 ## Related skills
 save-scum (DARK ARTS, learning only: save before a test, reload after; never in real games), learn-to-mod (twin - they compound), manual-first (reflex for anything new), game-setup, game-ui, map-usage + map-camera + photo-map (map games), battle-tactics, planning, learn-from-tutorials, generalize-learning, skills-manager, wiki-scout (pull the game's wiki as text)
