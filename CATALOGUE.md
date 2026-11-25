@@ -5,6 +5,7 @@ others were built for one game or one shelf (folder shown) and work as knowledge
 
 | Skill | From | What it is |
 |---|---|---|
+| abc-notation | generic | ABC music notation: read and write tunes as plain text (header fields, notes, lengths, chords, voices, MIDI programs) and check bar lengths with abccheck.py. |
 | archive-curator | generic | Turn archived Claude Code sessions into lasting knowledge (skill edits, new skills, memory, BACKLOG, plans) and track which sessions are done with curate.py. |
 | army-log | generic | Read and log both armies every wargame turn (one CSV per side), then evaluate losses, cohesion, combat power and force ratios with armylog.py. |
 | balance-of-power-method | generic | Crawford's Balance of Power reasoning as our design method: outline every model, few quantities with named causes, pressures not scripts, judge by the record (import = stake x care). |

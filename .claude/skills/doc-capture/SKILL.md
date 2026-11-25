@@ -42,4 +42,4 @@ turn.
 
 ## Related skills
 compaction-review (finds words that never made it in), doc-standards (labels, one fact one place), planning,
-own-theories (claims and Fails-when), user-todo (what only the user can decide).
+own-theories (claims and Fails-when), user-todo (what only the user can decide), abc-notation (the user's music theory lessons).

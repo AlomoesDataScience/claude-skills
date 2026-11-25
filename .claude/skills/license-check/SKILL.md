@@ -73,4 +73,4 @@ This is a working guide, not legal advice. Anything with money or doubt goes to 
 ## Related skills
 site-rules (rules for each host before any call), wiki-scout (text sources, cite and use our own words),
 engine4x-dev (the release step ships the notices), review-inbox memory (identify drops; check their licence),
-library-intake (filing)
+library-intake (filing), abc-notation (EasyABC is GPL: read only)

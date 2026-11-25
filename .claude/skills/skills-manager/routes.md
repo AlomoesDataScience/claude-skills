@@ -9,6 +9,7 @@
 | Install / launch a game | install-windows-games, game-setup, loading-screens |
 | Screen work / recording | game-ui, idle-view, hand-back, obs-record, stream-panel |
 | Designing our games | borrow-from-games, balance-of-power-method, engine4x-design, heresiarch-guide, combat-models, dice-math |
+| Music, ABC tunes | abc-notation, license-check, engine4x-design |
 | Licences, outside code or assets, releases | license-check, site-rules |
 | WW2 facts, units, weapons, battles | ww2, ww2-armour, ww2-tactics, ww2-air, ww2-eastern-front, soviet-doctrine |
 | Library and documents | library-intake, source-triage, wiki-scout, game-sources, doc-standards, cleanup |

@@ -20,6 +20,7 @@ Fast matcher: `python3 -I .claude/skills/check-skills/scripts/checkskills.py "TA
 | Install / launch a game | install-windows-games, game-setup, loading-screens |
 | Screen work / recording | game-ui, idle-view, hand-back, obs-record, stream-panel |
 | Designing our games | borrow-from-games, balance-of-power-method, engine4x-design, heresiarch-guide, combat-models, dice-math |
+| Music, ABC tunes | abc-notation, license-check, engine4x-design |
 | Licences, outside code or assets, releases | license-check, site-rules |
 | WW2 facts, units, weapons, battles | ww2, ww2-armour, ww2-tactics, ww2-air, ww2-eastern-front, soviet-doctrine |
 | Library and documents | library-intake, source-triage, wiki-scout, game-sources, doc-standards, cleanup |
@@ -30,6 +31,7 @@ Fast matcher: `python3 -I .claude/skills/check-skills/scripts/checkskills.py "TA
 
 ## Generic skills (project root)
 
+- **abc-notation** - ABC music notation: read and write tunes as plain text (header fields, notes, lengths, chords, voices, MIDI programs) and check bar lengths with abccheck.py _[abc, abc notation, music, tune, score, melody, chord, voice, midi, abc2midi, abcm2ps, EasyABC, %%MIDI program, metre, ...]_
 - **archive-curator** - Turn archived Claude Code sessions into lasting knowledge (skill edits, new skills, memory, BACKLOG, plans) and track which sessions are done with curate.py _[archive, archived sessions, curate, curation, ledger, proposals, split info, knowledge, manage archived information, ...]_
 - **army-log** - Read and log both armies every wargame turn (one CSV per side), then evaluate losses, cohesion, combat power and force ratios with armylog.py. Use at the... _[unit, off, screen, cards, hovers, banners, never, game, data, write, type, quality, armour, points, men, action, ...]_
 - **balance-of-power-method** - Crawford's Balance of Power reasoning as our design method: outline every model, few quantities with named causes, pressures not scripts, judge by the... _[balance of power, crawford, chris crawford, design reasoning, reasoning behind the rules, import, stake, care, ...]_

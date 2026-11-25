@@ -288,5 +288,11 @@
   [
    "ww2-tactics"
   ]
+ ],
+ [
+  "write an abc notation tune and check the bars",
+  [
+   "abc-notation"
+  ]
  ]
 ]
