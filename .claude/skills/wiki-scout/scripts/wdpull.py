@@ -253,7 +253,8 @@ def coords(raw):
         return None
     a = [x.strip() for x in m.group(1).split("|") if "=" not in x]
     try:
-        if len(a) >= 2 and all(re.match(r"^-?[\d.]+$", x) for x in a[:2]):
+        # decimal only when no hemisphere letter follows: {{coord|51|9|N|16|...}} is degrees-minutes, not 51, 9
+        if len(a) >= 2 and all(re.match(r"^-?[\d.]+$", x) for x in a[:2]) and not any(x.upper() in ("N", "S", "E", "W") for x in a):
             return [float(a[0]), float(a[1])]
         nums, out = [], []
         for x in a:

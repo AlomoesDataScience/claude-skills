@@ -64,11 +64,13 @@ think we want now". It downloads the enwiki pages-articles parts (71, plain: the
 checks the sha1, catalogues every article and keeps the whole text (the user, after the trial: keep everything). It sorts:
 field matches from `dump-rules.json` -> `text/`, every other article -> `rest/` (with the reason), Template/Category/
 Portal pages -> `other/` (campaignboxes, navboxes); `catalogue/` lists all. It checks the row counts, then deletes
-the part (rm: The user's rule for dump parts). Plan: `.claude/plans/wikipedia-dump-pull.md`.
+the part (rm: The user's rule for dump parts). Plan: `plans/wikipedia-dump-pull.md`.
 ```
 dumppass.py sums OUT PARTS ; dumppass.py run OUT PARTS --parts 1,36 --keep ; dumppass.py report OUT
 dumppass.py extract OUT PARTFILE      # retune dump-rules.json on a kept part, no requests
 ```
+Reading the dump: `scripts/dumpget.py DUMP --find REGEX` lists titles. `dumpget.py DUMP OUTDIR "Title" ...` writes
+whole articles as `.wiki`, following redirects, with no requests (about 1 minute per call, so batch titles).
 
 ## Order of sources (gentlest first)
 
@@ -128,4 +130,5 @@ category page (Category:Capitalism, 2026-11-15: 114 articles, 7 subcategories li
 ## Related skills
 site-rules (what each host's robots.txt and bot policy allow; check before the first request),
 game-sources (manuals and wikis as text), manual-first (manual before wiki), library-intake, learn-to-play, learn-to-mod,
-war-concepts (the war index: the worked index-first example), economic-theory (Portal:Economics pull), dom6-wiki (the illwiki mirror)
+war-concepts (the war index: the worked index-first example), economic-theory (Portal:Economics pull), dom6-wiki (the illwiki mirror),
+ww2 (the WW2 group reads the dump with dumpget.py)

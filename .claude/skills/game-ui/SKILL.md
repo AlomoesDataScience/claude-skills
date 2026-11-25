@@ -53,7 +53,7 @@ NormCap tessdata has no "tsv" config, so `-c tessedit_create_tsv=1` is used.)
 
 - **`waitchange --until "TEXT" [--box X0 Y0 X1 Y1]`: READY when the target screen's text shows** (checked at once,
   so a screen already up counts) - use this for loads and turns. `mark` then `waitchange [N]` (change, then
-  settle) is a fallback only: animated screens fool it (2026-11-03, `.claude/plans/fix-loading-checks.md`).
+  settle) is a fallback only: animated screens fool it (2026-11-03, `plans/fix-loading-checks.md`).
   Never pipe a wait through `tail`.
 - `hold KEY MS`: a key held down (3D camera keys act only while held). `scroll up|down N [X Y]`.
 - `hoversheet.py --bg X,Y X,Y ...`: hover each point, find the tooltip by difference, OCR it, one

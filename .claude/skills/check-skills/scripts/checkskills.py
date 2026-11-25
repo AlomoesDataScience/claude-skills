@@ -98,8 +98,11 @@ def hook():
     ev = data.get("hook_event_name", "UserPromptSubmit")
     prompt = data.get("prompt", "") or ""
     cwd = data.get("cwd") or os.getcwd()
-    rule = ("check-skills (light, 2026-11-09): load only the 1-3 skills THIS step needs (already loaded = don't "
-            "reload); prefer reading one section of a SKILL.md over loading it whole. Context rules: context-hygiene.")
+    # 2026-11-09 "light" rule ("load only the 1-3 skills ... prefer one section") made Claude stop loading skills.
+    # the user 2026-11-17: "If you're not loading them, they are switched off ... put them back on, please."
+    rule = ("check-skills (ON, 2026-11-17): before acting, load every skill that fits this step (Skill tool, or Read "
+            "SKILL.md for [folder] skills) and follow it. Skills already loaded in this context need no reload; after "
+            "a compaction they count as not loaded. Context rules: context-hygiene.")
     hits = rank(prompt, cwd, n=5) if prompt else []
     if hits:
         rule += " Likely matches: " + ", ".join(f"{h[1]}" + (f" [{h[2]}]" if h[2] != "." else "") for h in hits) + "."
@@ -108,10 +111,54 @@ def hook():
         if any(h[2] != "." for h in hits):
             rule += " [folder] skills: Read <folder>/.claude/skills/<name>/SKILL.md, not the Skill tool."
     if ev == "SessionStart" and data.get("source") in ("clear", "compact"):
+        # the user 2026-11-17: "You also need a skill to say ah compaction, let's review."
+        rule += " Compaction/clear: run the compaction-review skill FIRST, before any change."
         h = os.path.join(ROOT, ".claude", "handoff", "HANDOFF.md")
         if os.path.exists(h):
             rule += f" A hand-off exists: read {h} first (unload skill)."
+    if ev == "SessionStart" and data.get("source") == "compact":
+        rule += after_compact(data)
     print(json.dumps({"hookSpecificOutput": {"hookEventName": ev, "additionalContext": rule}}))
+
+
+def after_compact(data, words_budget=6000, working_budget=2500):
+    """Re-inject what a compaction summary loses: The user's own words (verbatim) and the working set.
+    the user 2026-11-24, after I doubted settled answers post-compaction: "Chill, you're hallucinating or forgetting
+    things. We need to fix it" / "No we gotta do it now, we're doing this cause we're literally building all this
+    next!" The summary is in my words; his words and the documents in play must come back as they were."""
+    out = ""
+    wf = os.path.join(ROOT, ".claude", "handoff", "WORKING.md")
+    if os.path.exists(wf):
+        w = open(wf, encoding="utf-8", errors="replace").read().strip()
+        if len(w) > working_budget:
+            w = w[:working_budget] + f" ... (cut; read {wf})"
+        out += f"\n\nWORKING SET ({wf}; the task and the documents it depends on, re-read them before acting):\n{w}"
+    tp = data.get("transcript_path") or ""
+    if tp and os.path.exists(tp):
+        try:
+            sys.path.insert(0, os.path.join(ROOT, ".claude", "skills", "compaction-review", "scripts"))
+            import ryanwords
+            rows, seen = [], set()
+            for ts, queued, txt in ryanwords.words(tp):
+                key = " ".join(txt.split())
+                if not key or txt.startswith(ryanwords.SKIP) or key in seen:
+                    continue
+                seen.add(key)
+                rows.append(f"{ts[11:16]} {'[q] ' if queued else ''}{key}")
+            keep, size = [], 0
+            for r in reversed(rows):             # the most recent words first, whole messages only
+                if size + len(r) > words_budget:
+                    break
+                keep.append(r); size += len(r) + 1
+            keep.reverse()
+            if keep:
+                cut = len(rows) - len(keep)
+                out += ("\n\nRYAN'S OWN WORDS THIS SESSION, verbatim (they win over the summary; "
+                        + (f"{cut} older messages left out, run ryanwords.py for them" if cut else "complete")
+                        + "):\n" + "\n".join(keep))
+        except Exception as e:
+            out += f"\n\n(the user's words could not be re-injected: {e}; run ryanwords.py.)"
+    return out
 
 
 def main():

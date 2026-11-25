@@ -1,6 +1,6 @@
 ---
 name: context-hygiene
-description: "Working rules that keep context small: OCR over screenshots, crops, batched calls, capped outputs, sections not whole files, few skills loaded. Use in every task, especially screens, shell work and long sessions."
+description: "Working rules that keep context small: OCR over screenshots, crops, batched calls, capped outputs, sections not whole files. Use in every task, especially screens, shell work and long sessions."
 keywords: "without, losing, quality, text, full, shots, tool, scripts, pasted, file, contents, load, step, needs, unload, ends, doing, check-skills, hook, points, message, commands"
 ---
 
@@ -60,7 +60,8 @@ session, with two spellings. The user: "consider failure protocols for if there'
 - One `cd` + several steps joined with `;` in one call beats several calls.
 
 ## Skills and memory
-- Load only the 1-3 skills the current step needs (check-skills light hook); already loaded = don't reload.
+- Load every skill the step needs (check-skills; light mode ended 2026-11-17, the user: "put them back on"); already
+  loaded in this context = don't reload. Skills are not where context should be saved.
 - Durable facts go to their home (skill, memory, plan file) at once - then they don't need to stay in context.
 
 ## Task ends

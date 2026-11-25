@@ -38,14 +38,14 @@ def curl(url, out=None, timeout=60):
     return code, body.decode("utf-8", errors="replace")
 
 
-def patient(url, tries=5, **kw):
-    """Retry on 429/5xx/000 and on the archive's 'Temporarily Offline' page, backing off."""
-    for t in range(tries):
-        code, body = curl(url, **kw)
-        busy = code in ("000", "429", "502", "503", "504") or (body and "Temporarily Offline" in body[:400])
-        if not busy:
-            return code, body
-        time.sleep(20 * (t + 1))
+def patient(url, **kw):
+    """One request. On 401/403/429/5xx, no answer (000) or the archive's 'Temporarily Offline' page, STOP the
+    run with a message: no retries (stop rule, the user 2026-11-16; site-rules)."""
+    code, body = curl(url, **kw)
+    busy = code in ("000", "401", "403", "429", "500", "502", "503", "504") or (
+        body and "Temporarily Offline" in body[:400])
+    if busy:
+        sys.exit(f"STOP: {url} answered {code} - no retry. Wait, then rerun later (pages saved are kept).")
     return code, body
 
 

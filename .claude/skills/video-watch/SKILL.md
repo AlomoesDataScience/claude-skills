@@ -1,6 +1,6 @@
 ---
 name: video-watch
-description: "Read and watch videos (YouTube or local files) with video.py: info, transcript, frames at chosen times. Use when the user sends a video or asks Claude to watch, summarise or learn from one."
+description: "Read and watch local video files with video.py: info, transcript, frames at chosen times. YouTube URLs are refused (robots.txt and terms). Use when the user gives a video file or asks Claude to watch, summarise or learn from one."
 keywords: "yt-dlp, site, url, file, title, channel, length, chapters, description, uploader's, automatic, captions, clean, timestamped, text, chapter, headings, grep, contact, sheets, stamped, hour, six, images, even, spacing, scene, cuts, full-size, ocr, on-screen, short, clips, higher, quality, method, hour-long, first, second, close, points, fills, can't, seen, link"
 ---
 
@@ -8,6 +8,15 @@ keywords: "yt-dlp, site, url, file, title, channel, length, chapters, descriptio
 
 The user (2026-11-03): "can you build an app to scrape and read youtube transcripts and watch videos?" He
 offered to answer questions about what's on screen, so the video doesn't have to be watched frame by frame.
+
+**YouTube is OFF (the user 2026-11-16: "make sure our scraper is within rules, if it's not then stop").** It isn't:
+- robots.txt denies `/youtubei/` and `/api/` to all bots, and yt-dlp gets metadata and captions through
+  `/youtubei/v1/player` and `/api/timedtext`;
+- YouTube's Terms of Service (from memory, not fetched: `/t/terms` is itself denied to bots) forbid automated
+  access except search engines that follow robots.txt, and downloading except through YouTube's own download
+  links. `frames`, `clip` and `audio` download the video.
+So `video.py` refuses every remote URL and works on local video files only. A transcript or video file that the user
+gives us is fine. Other sites need a site-rules entry first.
 
 ## Commands (`scripts/video.py`, run with `python3 -I`)
 | Command | Does |

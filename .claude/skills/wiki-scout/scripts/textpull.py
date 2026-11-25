@@ -6,6 +6,8 @@
   textpull.py book URL OUTDIR --follow REGEX [--pause 4] [--max 200]
         fetch the index page and every same-site link matching REGEX, in page order, into
         OUTDIR/NNN-<slug>.txt plus OUTDIR/ALL.txt (all chapters joined) and OUTDIR/SOURCE.md
+  textpull.py list URLFILE OUTDIR [--pause 4] [--max 200]
+        like book, but the pages are the URLs in URLFILE (one per line, # comments; e.g. from a sitemap)
   textpull.py check URL                                 robots.txt verdict and Crawl-delay for URL
   (No search command: Google and Bing disallow /search in robots.txt and DuckDuckGo drops script
    connections. Find URLs with Claude's WebSearch tool, or an official search API with the user's key.)
@@ -178,12 +180,16 @@ def main(a):
                 f.write(to_text(raw, ct))
             record(os.path.dirname(os.path.abspath(a[2])), [(os.path.basename(a[2]), a[1])])
             print("saved", a[2], os.path.getsize(a[2]), "bytes")
-        elif cmd == "book" and len(a) == 3 and follow:
+        elif (cmd == "book" and len(a) == 3 and follow) or (cmd == "list" and len(a) == 3):
             url, outdir = a[1], a[2]
             os.makedirs(outdir, exist_ok=True)
-            raw, ct = fetch(url)
-            pages = [url] + site_links(url, raw, follow)[:maxn]
-            rows, parts = [], []
+            if cmd == "list":
+                pages = [ln.strip() for ln in open(url) if ln.strip() and not ln.startswith("#")][:maxn]
+                raw = ct = None
+            else:
+                raw, ct = fetch(url)
+                pages = [url] + site_links(url, raw, follow)[:maxn]
+            parts = []
             for i, u in enumerate(pages):
                 slug = re.sub(r"[^A-Za-z0-9]+", "-", urllib.parse.urlparse(u).path.strip("/"))[-60:] or "index"
                 name = f"{i:03d}-{slug}.txt"
@@ -191,18 +197,18 @@ def main(a):
                 if os.path.exists(path):
                     parts.append(open(path).read())
                     continue
-                if i:
-                    wait(u, pause)
+                if i or raw is None:
+                    if i:
+                        wait(u, pause)
                     raw, ct = fetch(u)
                 t = to_text(raw, ct)
                 with open(path, "w") as f:
                     f.write(f"[source: {u}]\n\n{t}")
                 parts.append(f"[source: {u}]\n\n{t}")
-                rows.append((name, u))
+                record(outdir, [(name, u)])  # row per page, so a stopped run still lists what it saved
                 print(f"{i + 1}/{len(pages)} {name}", flush=True)
             with open(os.path.join(outdir, "ALL.txt"), "w") as f:
                 f.write("\n\n".join(parts))
-            record(outdir, rows)
         else:
             print(__doc__)
     except Stop as e:

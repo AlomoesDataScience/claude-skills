@@ -1,0 +1,6 @@
+User-agent: *
+Crawl-Delay: 5
+Disallow: /rss
+Disallow: /search
+Disallow /record/*/export/*$
+Sitemap: https://digicoll.lib.berkeley.edu/sitemap_index.xml.gz

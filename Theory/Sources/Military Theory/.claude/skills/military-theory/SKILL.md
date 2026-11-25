@@ -84,3 +84,5 @@ Space combat (E-War/stealth/PD layers, tracking vs targeting), sea-control/denia
 system-scale war, logistics and culmination (OCS supply, Clausewitz), insurgency and rebellion
 (Mao), AI doctrines (Jomini's principles are easy to script). Keep the user's essay as the default
 view and the classics as support.
+
+Related: ww2 (the WW2 skill group, which uses the Japanese handbooks and Svechin from this shelf).

@@ -118,7 +118,7 @@ attack where you can make it square in your favour, defend where you can make it
 | `reference/salvo-combat-system-for-land-battles.md` | **The user's Salvo Combat System for Land Battles (his design - `Theory/Derived/the user/Salvo Combat System for Land Battles`)** - An earlier version of his own system (the newer one is somewhere from before the move to this PC) |
 
 ## Related skills
-war-concepts (glossary: kill chain, point defence, A2/AD, time on target...), military-doctrine (mass, fix and envelop - how to make the fight lopsided), military-operations
+ww2-armour and ww2-air (WW2 penetration and sortie salvos), balance-of-power-method (import = stake x care for commitment), war-concepts (glossary: kill chain, point defence, A2/AD, time on target...), military-doctrine (mass, fix and envelop - how to make the fight lopsided), military-operations
 (principles of war: mass, economy of force), soviet-doctrine (3:1 norms), battle-tactics,
 scouting (finding them first = firing first), borrow-from-games and the 4X engine design (combat
 resolution), military-theory shelf (the user's space-warfare essay).

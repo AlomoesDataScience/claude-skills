@@ -7,17 +7,20 @@ others were built for one game or one shelf (folder shown) and work as knowledge
 |---|---|---|
 | archive-curator | generic | Turn archived Claude Code sessions into lasting knowledge (skill edits, new skills, memory, BACKLOG, plans) and track which sessions are done with curate.py. |
 | army-log | generic | Read and log both armies every wargame turn (one CSV per side), then evaluate losses, cohesion, combat power and force ratios with armylog.py. |
+| balance-of-power-method | generic | Crawford's Balance of Power reasoning as our design method: outline every model, few quantities with named causes, pressures not scripts, judge by the record (import = stake x care). |
 | battle-tactics | generic | How Claude plans and fights tactical battles in any wargame: The user's turn method, the planning questions, general principles, per-game notes. |
 | borrow-from-games | generic | Use every learned game as a parts bin for designing ours: a systems taxonomy, borrow.py catalogue and search. |
 | chat-review | generic | Review past Claude Code sessions without loading raw transcripts: chatreview.py makes a short digest, then summarise it or mine it for lessons and new skills. |
-| check-skills | generic | Check which skills a task needs and load only those, via the hook's hints, checkskills.py and the routing INDEX.md. |
+| check-skills | generic | Check which skills a task needs and load all that fit, via the hook's hints, checkskills.py and the routing INDEX.md. |
 | cleanup | generic | Cleanup pipeline: cleanup.py catalogues a folder's clutter (duplicates, installers, archives, caches, temp, empty, loose files) for the user to tick; ticked items move to a reversible holding folder. |
 | combat-models | generic | Combat models for playing and designing games: Hughes' salvo model, Lanchester's laws, Helmbold, with combat.py. |
+| compaction-review | generic | Review right after a context compaction or summary: reload skills, re-read plans and the project doc, read the user's own words (ryanwords.py, queued messages too), fix gaps, then act. |
 | context-audit | generic | Measure where Claude Code's context and usage go from the session transcripts (ctxaudit.py): requests, context size, compactions, tokens by source. |
-| context-hygiene | generic | Working rules that keep context small: OCR over screenshots, crops, batched calls, capped outputs, sections not whole files, few skills loaded. |
+| context-hygiene | generic | Working rules that keep context small: OCR over screenshots, crops, batched calls, capped outputs, sections not whole files. |
 | delegate | generic | Acting as the user's delegate when he hands over control: mission command, self-review checklist, certainty test, decision log, hand-back. |
 | dice-math | generic | Exact dice odds for any game with dice.py: sums, keep-highest, exploding and open-ended dice, re-rolls, opposed rolls, chance to hit a target. |
 | discord-logs | generic | Read the user's Discord history from Discord's data export zip into per-channel logs and a searchable database (discordlogs.py). |
+| doc-capture | generic | Write the user's design words into the project's design doc the same turn he says them: verbatim quote, meaning, built-vs-documented status, never overwriting older text. |
 | doc-standards | generic | Documentation standards for this workspace: progressive disclosure, Diataxis kinds, one fact in one place, dates and sources, lifecycle labels, decision records, size budgets, with the docs.py checker |
 | draw-map | generic | Draw a game map as a clean schematic picture (grid, terrain colours, units, arrows) from a text board with drawmap.py. |
 | draw-moves | generic | Draw a movement plan on a game board, all turns in one picture or one per turn, from a plan file with turnplan.py. |
@@ -32,6 +35,7 @@ others were built for one game or one shelf (folder shown) and work as knowledge
 | learn-from-tutorials | generic | Learn any game through its built-in tutorials, lessons and hint modes: play every lesson, read each prompt as a rule, write it down. |
 | learn-to-mod | generic | How Claude learns to mod a game: how mods load, where data lives, the manual's modding chapter, a test mod. |
 | learn-to-play | generic | How Claude learns to play a new video game: manual and in-game help first, map the screen, safe exploration, one test at a time, lessons written down. |
+| license-check | generic | Check the licence of any code, library, asset or tool before we use or ship it, keep a THIRD-PARTY-NOTICES register, ship notices in builds, with licensecheck.py. |
 | loading-screens | generic | Tell whether a game screen is loading and wait through loads properly (shot before, frames after, one general loading test). |
 | logic-check | generic | Sanity check code or a paper against the result it should give: units, signs, both sides of a transfer, bounds, indices, order, copied lines, limit cases. |
 | manual-first | generic | The reflex when anything new shows in a game: look it up in the manual first (lookup.py), then write it into the guide with the page. |
@@ -61,12 +65,17 @@ others were built for one game or one shelf (folder shown) and work as knowledge
 | summarize-logic | generic | Write down what a text actually says, line by line and in order (code, a paper, a rules document), before judging or changing it. |
 | unit-combat-math | generic | Unit-versus-unit combat math for any game: hit chance, damage after armour, rounds to kill, both ways. |
 | unload | generic | Unload context: write a hand-off file, then clear or compact; find old context again with recall. |
-| video-watch | generic | Read and watch videos (YouTube or local files) with video.py: info, transcript, frames at chosen times. |
+| video-watch | generic | Read and watch local video files with video.py: info, transcript, frames at chosen times. |
 | waiting-checklist | generic | Make a checklist document for work parked until something happens (game free, the user's go, a file). |
 | war-concepts | generic | Glossary of war concepts for games, triaged from Wikipedia's war index into what matters for play and design. |
 | war-language | generic | Translate a game's situation up into military terms (METT-TC, SALUTE, mission, intent), reason there, and back down into orders. |
 | wiki-scout | generic | Find and pull wikis, manuals and docs for a game or franchise as safe text (Wayback first) with scout.py. |
 | write-skill | generic | How to write or rewrite a skill so it passes the checker and gets used: format, budgets, keywords, layout, where it goes. |
+| ww2 | generic | Hub for Second World War knowledge: where our WW2 sources, data and docs live, pulling more from the local Wikipedia dump, source grades, the nation rule. |
+| ww2-air | generic | WW2 air war as we model it: air armies, Luftflotten, airfields as places, aircraft as counts, the sortie cycle, ground attack, Flak, maintenance, losses per sortie. |
+| ww2-armour | generic | WW2 armour and anti-tank fire: penetration tables and their criteria, armour profiles by angle, the lab hit rule, and our equipment.json. |
+| ww2-eastern-front | generic | Eastern Front 1941-45 as our sources hold it, Kursk 1943 above all: timeline, order of battle, pass targets, the operations (Citadel, Kutuzov, Rumyantsev, Roland), command decisions. |
+| ww2-tactics | generic | WW2 small-unit and anti-tank tactics as our design reads them: squads, close-combat kit, German Panzerjäger and Panzerabwehr units, Soviet PTOP and Pakfront, mines, the Japanese handbooks. |
 | mapgen | tool | standalone tool in Games/Fantasy Strategy/Dominions 6/Maps/mapgen/ |
 | spritestudio | tool | standalone tool in Games/Fantasy Strategy/Dominions 6/spritestudio/ |
 | fogk-guide | Games/AGEOD and Byzantine Games/AGEOD/Field of Glory Kingdoms/.claude | Guide to Field of Glory Kingdoms (AGEOD/Slitherine), medieval grand strategy of realms, vassals and population: manual map, rules, data. |

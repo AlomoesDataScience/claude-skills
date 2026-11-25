@@ -77,4 +77,5 @@ Sources (Military Theory shelf; Claude's own summary):
 ## Related skills
 military-operations (US operational level - compare: main effort vs main axis, reserve vs second
 echelon), military-doctrine (US tactics), battle-tactics, military-theory shelf (Clausewitz,
-Jomini), borrow-from-games (doctrines as AI personalities).
+Jomini), borrow-from-games (doctrines as AI personalities),
+ww2 and ww2-eastern-front (the WW2 group: Kursk data, timeline, sources).

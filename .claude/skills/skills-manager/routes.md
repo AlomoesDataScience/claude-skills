@@ -8,7 +8,9 @@
 | New game | learn-to-play, manual-first, game-sources, game-setup, game-ui, wiki-scout, learn-to-mod |
 | Install / launch a game | install-windows-games, game-setup, loading-screens |
 | Screen work / recording | game-ui, idle-view, hand-back, obs-record, stream-panel |
-| Designing our games | borrow-from-games, engine4x-design, heresiarch-guide, combat-models, dice-math |
+| Designing our games | borrow-from-games, balance-of-power-method, engine4x-design, heresiarch-guide, combat-models, dice-math |
+| Licences, outside code or assets, releases | license-check, site-rules |
+| WW2 facts, units, weapons, battles | ww2, ww2-armour, ww2-tactics, ww2-air, ww2-eastern-front, soviet-doctrine |
 | Library and documents | library-intake, source-triage, wiki-scout, game-sources, doc-standards, cleanup |
 | Skills work (new skill: wanted, intake scan, write, intake run) | skills-manager, write-skill, generalize-learning, skill-sync, rules-skills |
 | Bug checking / code or paper read | summarize-logic, logic-check, solve-once, context-audit |

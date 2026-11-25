@@ -78,3 +78,4 @@ Our games: engine4x-design (the user's 4X), heresiarch-guide, Pocket 4X and AMBS
 
 ## Related skills
 learn-to-play and learn-to-mod (where the systems knowledge comes from), game-sources and wiki-scout (manuals, wikis), generalize-learning
+balance-of-power-method (Crawford's reasoning behind the rules: our design method).

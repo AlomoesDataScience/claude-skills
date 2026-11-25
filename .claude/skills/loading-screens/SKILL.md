@@ -10,7 +10,7 @@ The user (2026-11-03, loading Claude's Dominions game): "the checking for if stu
 a skill to check if something is a loading screen" ... "the necessary part is generalizing how you check if it's a
 loading screen. Once you can do that, you can apply the same logic across other things." The old waits asked "has
 the picture stopped changing?" - animated games never stop, and a screen already up never "changes" (map of the
-old waits: `.claude/plans/fix-loading-checks.md`).
+old waits: `plans/fix-loading-checks.md`).
 
 ## the user's method
 1. **Poll before the load is started**: a shot of the screen just before the click.

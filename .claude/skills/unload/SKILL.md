@@ -17,8 +17,8 @@ drops everything. Claude can't run `/clear` itself - the user types it.
    force) and write it to `.claude/handoff/HANDOFF.md`. Durable facts go to their real home first (skill,
    memory, plan file, BACKLOG) - the hand-off only points to them.
 3. Tell the user in one line: "Good point to clear: type `/clear` (or `/compact <focus>`)".
-4. After the clear, the SessionStart hook says a hand-off exists: read it, reload only the skills the first
-   next step needs, carry on. Task finished -> `handoff.py done` (moves it to Archive/sessions/handoffs/).
+4. After the clear, the SessionStart hook says a hand-off exists: read it, run compaction-review (reload every
+   skill the pending work needs), carry on. Task finished -> `handoff.py done` (moves it to Archive/sessions/handoffs/).
 
 ## Recall (old context without loading it)
 `handoff.py recall WORD [WORD...] [--n 12] [--chars 240]` - short snippets from every transcript, newest
@@ -33,4 +33,4 @@ session, project, lines, file, first prompt. `cleanupPeriodDays` is 365; the arc
 Turning archived sessions into skills, memory and backlog items: chat-review (digest) -> archive-curator.
 
 ## Related skills
-context-hygiene (the working rules), context-audit (measure), chat-review + archive-curator (use the archive), check-skills (light hook), planning (plan files).
+context-hygiene (the working rules), context-audit (measure), chat-review + archive-curator (use the archive), check-skills (hook, ON), compaction-review (after a compaction), planning (plan files).

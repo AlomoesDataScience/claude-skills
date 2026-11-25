@@ -94,3 +94,4 @@ game's scenario folder when the user wants to play it (check what is inside firs
   **`LEXICON.md`** in this skill folder (`warlang.py lexicon`): units -> roles, terrain -> OAKOC,
   rules -> effects, victory -> end state, task -> game actions.
 - combat-models: The user's land salvo system and Lanchester (concentrate; make fights square when stronger, linear when weaker). air: sorties as salvos, interception, air supremacy/interdiction/close air support (war-concepts).
+- ww2 and ww2-eastern-front: the WW2 skill group (our Kursk data and sources; panzerworld and manoftin files here).

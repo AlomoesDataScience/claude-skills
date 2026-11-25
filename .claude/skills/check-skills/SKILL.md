@@ -1,6 +1,6 @@
 ---
 name: check-skills
-description: "Check which skills a task needs and load only those, via the hook's hints, checkskills.py and the routing INDEX.md. Use when starting a task, when the task shifts, or when unsure a skill exists."
+description: "Check which skills a task needs and load all that fit, via the hook's hints, checkskills.py and the routing INDEX.md. Use when starting a task, when the task shifts, or when unsure a skill exists."
 keywords: "before, acting, request, relevant, make, tells, set, auto, auto-loads, through, userpromptsubmit, sessionstart, hook, settings, json, runs, names, likely, matches, covers, generic, method, game, topic, build, game-folder, aren't, list, yet, read, re-checking, changes, new, battle, end, turn, kind, screen, saying, were, loaded, reading, message, says, whether"
 ---
 
@@ -11,9 +11,11 @@ probably want to load all the other relevant skills" ... "make a skill that yah 
 relevant skills, and set it to auto load." What went wrong that day: I wrote the manual's battle orders into
 dom6-tactics while **dom6-battle-ai already had them** - I never knew it existed. Skills only help if loaded.
 
-## Light mode (the user, 2026-11-09 - context cost)
-The hook now says: load only the 1-3 skills THIS step needs, read one section rather than a whole skill
-(context-hygiene). The full check below is for the START of a new task or game, not every message.
+## Back ON (the user, 2026-11-17) - light mode is off
+Light mode (2026-11-09, for context cost) said "load only the 1-3 skills THIS step needs, read one section".
+In practice I stopped loading skills, and design decisions got lost. The user, 2026-11-17: "If you're not loading
+them, they are switched off ... put them back on, please." The hook now says: before acting, load every skill
+that fits the step, and follow it. Already loaded in this context = no reload; after a compaction = not loaded.
 Backup of the old hook: `Archive/backups/2026-11-09-context-settings/check-skills/`.
 
 ## Auto-load (the hook)

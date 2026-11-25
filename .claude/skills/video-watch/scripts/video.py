@@ -16,7 +16,7 @@
   python3 -I video.py stt SRC [--model small]   speech-to-text on the audio (faster-whisper in a venv:
         VIDEO_WHISPER_PY, else ~/.venvs/whisper/bin/python) -> captions.stt.srt; then `transcript` uses it
 
-SRC = a YouTube (or other yt-dlp site) URL or id, or a local video file (no download then).
+SRC = a local video file. Remote URLs are refused (2026-11-16: YouTube's robots.txt and terms; site-rules).
 OUT = ~/.cache/video-watch/<id>/ (VIDEO_WATCH_CACHE to change). Captions need nothing but yt-dlp;
 frames need ffmpeg; contact sheets need Pillow; ocr needs tesseract.
 yt-dlp: VIDEO_YTDLP, else this skill's bin/yt-dlp, else /usr/local/bin, ~/.local/bin, then PATH;
@@ -445,6 +445,10 @@ def main():
     if len(a) < 2:
         sys.exit(__doc__)
     c, src = a[0], a[1]
+    if not is_local(src):                      # the user 2026-11-16: within the rules, or stop
+        sys.exit("video.py reads local video files only. YouTube's robots.txt denies the endpoints yt-dlp uses\n"
+                 "(/youtubei/, /api/timedtext) and its terms forbid scraping and downloading, so remote URLs\n"
+                 "are off (site-rules, www.youtube.com). Other sites need a site-rules entry first.")
     if c == "info":
         cmd_info(src)
     elif c == "transcript":

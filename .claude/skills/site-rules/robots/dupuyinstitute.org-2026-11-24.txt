@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /stats/
+
+Sitemap: https://dupuyinstitute.org/sitemap.xml
+Sitemap: https://dupuyinstitute.org/sitemap.rss
