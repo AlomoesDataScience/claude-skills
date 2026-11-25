@@ -1,7 +1,7 @@
 ---
 name: compaction-review
-description: "Review right after a context compaction or summary: reload skills, re-read plans and the project doc, read the user's own words (ryanwords.py, queued messages too), fix gaps, then act. Use when a session resumes from a summary."
-keywords: "compaction, compacted, compact, summary, session continued, resume, context reset, lost context, forgot, let's review, ah compaction, post-compaction, ryanwords, queued messages, mid-turn messages"
+description: "Review right after a context compaction or summary: reload skills, re-read plans and the project doc, read the user's own words (userwords.py, queued messages too), fix gaps, then act. Use when a session resumes from a summary."
+keywords: "compaction, compacted, compact, summary, session continued, resume, context reset, lost context, forgot, let's review, ah compaction, post-compaction, userwords, queued messages, mid-turn messages"
 ---
 
 # Compaction review - "ah compaction, let's review"
@@ -26,7 +26,7 @@ saying the source is compact/clear. Do it **before** any other tool call that ch
 2. **Skills.** None count as loaded. Load every skill the pending work needs (check-skills), including the
    project's folder skills (Read their SKILL.md).
 3. **The user's own words** since the last summary, or the whole day if unsure:
-   `python3 -I .claude/skills/compaction-review/scripts/ryanwords.py SESSION --since HH:MM`.
+   `python3 -I .claude/skills/compaction-review/scripts/userwords.py SESSION --since HH:MM`.
    The session id is in the summary's transcript path. This reads queued messages too ([q]): what he typed
    while I was working is NOT stored as a user message, and a type == "user" filter misses it.
    The summary is in my words; his words win where they differ.
@@ -42,10 +42,10 @@ saying the source is compact/clear. Do it **before** any other tool call that ch
 7. **Report.** A few lines to the user: what is pending, what the summary got wrong or left out, what I'm doing
    next. Then carry on. If he said "hold" or "stop" just before the compaction, wait for him.
 
-Keep it cheap: read sections, not whole files. Cap ryanwords output with `--chars`.
+Keep it cheap: read sections, not whole files. Cap userwords output with `--chars`.
 
 ## Fails when
-- The transcript was cut or rotated: ryanwords finds nothing new. Then search the archive
+- The transcript was cut or rotated: userwords finds nothing new. Then search the archive
   (`handoff.py recall WORD`) and say the review is partial.
 - The decisions were never written down anywhere. This review can't recover what was only in my head, so
   doc-capture is what prevents it.

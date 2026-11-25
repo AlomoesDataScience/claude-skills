@@ -1,6 +1,6 @@
 """the user's own words from a Claude Code session, including messages he typed mid-turn.
 
-  ryanwords.py SESSION [--since TIME] [--grep REGEX] [--chars N]
+  userwords.py SESSION [--since TIME] [--grep REGEX] [--chars N]
 
 SESSION  8-char session id, or a .jsonl / .jsonl.gz path (live sessions in ~/.claude/projects/*/, archived in
          Archive/sessions/**). TIME = ISO prefix ("2026-11-17T10:50") or "HH:MM" (same day as the session's last

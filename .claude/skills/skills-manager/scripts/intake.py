@@ -165,8 +165,8 @@ def doc_files(include_old):
         dirs[:] = sorted(d for d in dirs if d not in skip and not (d.startswith(".") and d != ".claude"))
         for f in files:
             p = os.path.join(root, f)
-            ryan_note = "." not in f and os.path.relpath(root, PROJECT).startswith("Proposals")
-            if (f.endswith(".md") and f != "INDEX.md" or ryan_note) and os.path.getsize(p) < DOC_MAX:
+            user_note = "." not in f and os.path.relpath(root, PROJECT).startswith("Proposals")
+            if (f.endswith(".md") and f != "INDEX.md" or user_note) and os.path.getsize(p) < DOC_MAX:
                 yield p
 
 

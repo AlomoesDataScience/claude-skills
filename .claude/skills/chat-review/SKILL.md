@@ -37,7 +37,7 @@ SESSION is the 8-character id from `list` or Archive/sessions/INDEX.md. Archived
 - The user's words are quoted exactly; dates kept.
 
 Gap (2026-11-17): `lessons` reads only type=="user" lines; messages the user types mid-turn are "queue-operation"
-lines. For his complete words use compaction-review's `scripts/ryanwords.py`.
+lines. For his complete words use compaction-review's `scripts/userwords.py`.
 
 ## Related skills
 archive-curator (where findings go, tracking), unload (archive + recall), write-skill, generalize-learning, context-hygiene.

@@ -59,19 +59,30 @@ _N = "Ry" + "an"   # built in pieces so this file passes its own check
 NAME_BAD = re.compile(r"\b" + _N + r"\b|Hof" + "mann|" + _N.lower() + "hof|alo" + "moes|@gm" + "ail", re.I)
 
 
+try:
+    NAME = open(os.path.join(ROOT, ".claude", "private", "export-name.txt"), encoding="utf-8").read().strip()
+except OSError:
+    NAME = ""
+
+
 def text_out(s):
     """The shared copy: no personal sections, no name, no local paths."""
     s = PERSONAL.sub("", s)
     s = s.replace(ROOT, "<workspace>").replace(os.path.expanduser("~"), "~")
-    s = re.sub(r"(^|(?<=[.!?:]\s)|(?<=^- )|(?<=\| )|(?<=\*\*))the user's\b", "The user's", s, flags=re.M)
-    s = re.sub(r"(^|(?<=[.!?:]\s)|(?<=^- )|(?<=\| )|(?<=\*\*))the user\b", "The user", s, flags=re.M)
-    s = re.sub(r"\bRYAN'S\b", "THE USER'S", s)
-    s = re.sub(r"\bRYAN\b", "THE USER", s)
-    s = re.sub(r"\bRyan's\b", "the user's", s)
-    s = re.sub(r"\bRyan\b", "the user", s)
-    s = s.replace("user-todo", "user-todo")
-    s = re.sub(r"\bryan's\b", "the user's", s)  # lowercase, e.g. in keyword lists (2026-11-16)
-    return re.sub(r"\bryan\b", "the user", s)
+    # The owner's name comes from .claude/private/export-name.txt (never exported), so this script holds no name
+    # (2026-11-25, the user: "rename it all"; the old literal version is in .claude/private/).
+    if not NAME:
+        return s
+    N, n, U = NAME, NAME.lower(), NAME.upper()
+    s = re.sub(rf"(^|(?<=[.!?:]\s)|(?<=^- )|(?<=\| )|(?<=\*\*)){N}'s\b", "The user's", s, flags=re.M)
+    s = re.sub(rf"(^|(?<=[.!?:]\s)|(?<=^- )|(?<=\| )|(?<=\*\*)){N}\b", "The user", s, flags=re.M)
+    s = s.replace(f"{U}'S", "THE USER'S")
+    s = re.sub(rf"\b{U}\b", "THE USER", s)
+    s = re.sub(rf"\b{N}'s\b", "the user's", s)
+    s = re.sub(rf"\b{N}\b", "the user", s)
+    s = s.replace(f"{n}-todo", "user-todo").replace(f"{n}words", "userwords").replace(f"{n}_", "user_")
+    s = re.sub(rf"\b{n}'s\b", "the user's", s)
+    return re.sub(rf"\b{n}\b", "the user", s)
 
 
 def skill_home(s):
@@ -114,7 +125,7 @@ def main(a):
                     left.append(f"{key} ({os.path.getsize(p) // 1024} KB)"); continue
                 copied += 1
                 if not dry:
-                    t = os.path.join(dest, skill_home(s), name, rel)
+                    t = os.path.join(dest, skill_home(s), name, rel.replace(f"{NAME.lower()}words", "userwords") if NAME else rel)
                     os.makedirs(os.path.dirname(t), exist_ok=True)
                     try:
                         open(t, "w", encoding="utf-8").write(text_out(open(p, encoding="utf-8").read()))

@@ -137,11 +137,11 @@ def after_compact(data, words_budget=6000, working_budget=2500):
     if tp and os.path.exists(tp):
         try:
             sys.path.insert(0, os.path.join(ROOT, ".claude", "skills", "compaction-review", "scripts"))
-            import ryanwords
+            import userwords
             rows, seen = [], set()
-            for ts, queued, txt in ryanwords.words(tp):
+            for ts, queued, txt in userwords.words(tp):
                 key = " ".join(txt.split())
-                if not key or txt.startswith(ryanwords.SKIP) or key in seen:
+                if not key or txt.startswith(userwords.SKIP) or key in seen:
                     continue
                 seen.add(key)
                 rows.append(f"{ts[11:16]} {'[q] ' if queued else ''}{key}")
@@ -153,11 +153,11 @@ def after_compact(data, words_budget=6000, working_budget=2500):
             keep.reverse()
             if keep:
                 cut = len(rows) - len(keep)
-                out += ("\n\nRYAN'S OWN WORDS THIS SESSION, verbatim (they win over the summary; "
-                        + (f"{cut} older messages left out, run ryanwords.py for them" if cut else "complete")
+                out += ("\n\nTHE USER'S OWN WORDS THIS SESSION, verbatim (they win over the summary; "
+                        + (f"{cut} older messages left out, run userwords.py for them" if cut else "complete")
                         + "):\n" + "\n".join(keep))
         except Exception as e:
-            out += f"\n\n(the user's words could not be re-injected: {e}; run ryanwords.py.)"
+            out += f"\n\n(the user's words could not be re-injected: {e}; run userwords.py.)"
     return out
 
 

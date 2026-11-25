@@ -14,7 +14,7 @@ others were built for one game or one shelf (folder shown) and work as knowledge
 | check-skills | generic | Check which skills a task needs and load all that fit, via the hook's hints, checkskills.py and the routing INDEX.md. |
 | cleanup | generic | Cleanup pipeline: cleanup.py catalogues a folder's clutter (duplicates, installers, archives, caches, temp, empty, loose files) for the user to tick; ticked items move to a reversible holding folder. |
 | combat-models | generic | Combat models for playing and designing games: Hughes' salvo model, Lanchester's laws, Helmbold, with combat.py. |
-| compaction-review | generic | Review right after a context compaction or summary: reload skills, re-read plans and the project doc, read the user's own words (ryanwords.py, queued messages too), fix gaps, then act. |
+| compaction-review | generic | Review right after a context compaction or summary: reload skills, re-read plans and the project doc, read the user's own words (userwords.py, queued messages too), fix gaps, then act. |
 | context-audit | generic | Measure where Claude Code's context and usage go from the session transcripts (ctxaudit.py): requests, context size, compactions, tokens by source. |
 | context-hygiene | generic | Working rules that keep context small: OCR over screenshots, crops, batched calls, capped outputs, sections not whole files. |
 | delegate | generic | Acting as the user's delegate when he hands over control: mission command, self-review checklist, certainty test, decision log, hand-back. |
